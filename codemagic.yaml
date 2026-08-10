@@ -44,6 +44,7 @@ workflows:
           keychain initialize
           app-store-connect fetch-signing-files "com.codeascent.qbit" \
             --type IOS_APP_STORE \
+            --certificate-key @env:CERTIFICATE_PRIVATE_KEY \
             --create
           keychain add-certificates
           xcode-project use-profiles
