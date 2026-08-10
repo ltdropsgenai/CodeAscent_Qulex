@@ -1,0 +1,31 @@
+name: qbit
+description: "Qbit — a timed vocabulary quiz game (MVP base)."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  shared_preferences: ^2.2.2
+  google_fonts: ^6.2.1
+  flutter_tts: ^4.2.0
+  supabase_flutter: ^2.5.0
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.1
+  speech_to_text: ^6.6.0
+  home_widget: ^0.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/words.json

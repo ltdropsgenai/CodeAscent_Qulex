@@ -1,0 +1,73 @@
+# Codemagic CI/CD for Qbit (CodeAscent)
+# Builds iOS + Android on a cloud Mac (no local Mac required) and ships to
+# TestFlight (internal) and Google Play internal testing.
+#
+# One-time setup in the Codemagic UI (see qbit-release-setup.md):
+#   1. Team settings > Integrations > App Store Connect  -> connect an ASC API key.
+#   2. Code signing identities > Android keystores        -> upload the upload keystore,
+#      reference name: qbit_upload_keystore
+#   3. Environment variables > group "google_credentials"  -> PLAY_SERVICE_ACCOUNT_JSON
+#      (paste the Play service-account JSON, mark Secure).
+#   4. After the ASC app record exists, put its Apple ID (numeric) in APP_STORE_APPLE_ID.
+
+workflows:
+  qbit-test:
+    name: Qbit — iOS + Android (test tracks)
+    max_build_duration: 90
+    instance_type: mac_mini_m2
+    environment:
+      groups:
+        - google_credentials        # -> PLAY_SERVICE_ACCOUNT_JSON
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.codeascent.qbit
+      android_signing:
+        - qbit_upload_keystore
+      vars:
+        BUNDLE_ID: "com.codeascent.qbit"
+        PACKAGE_NAME: "com.codeascent.qbit"
+        APP_STORE_APPLE_ID: 0000000000   # <-- replace with the numeric Apple ID of the ASC app record
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Flutter packages
+        script: flutter pub get
+      - name: Static analysis (non-blocking)
+        script: flutter analyze || true
+      - name: Write Android key.properties from Codemagic keystore
+        script: |
+          cat > "$CM_BUILD_DIR/android/key.properties" <<KEYS
+          storeFile=$CM_KEYSTORE_PATH
+          storePassword=$CM_KEYSTORE_PASSWORD
+          keyAlias=$CM_KEY_ALIAS
+          keyPassword=$CM_KEY_PASSWORD
+          KEYS
+      - name: Build Android App Bundle
+        script: |
+          flutter build appbundle --release \
+            --build-name=0.1.0 \
+            --build-number=$BUILD_NUMBER
+      - name: Set up iOS provisioning profiles
+        script: xcode-project use-profiles
+      - name: Build iOS IPA
+        script: |
+          flutter build ipa --release \
+            --build-name=0.1.0 \
+            --build-number=$BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/**/outputs/bundle/**/*.aab
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - flutter_drive.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        beta_groups:
+          - Internal Testers        # create this group in TestFlight (or remove this line)
+      google_play:
+        credentials: $PLAY_SERVICE_ACCOUNT_JSON
+        track: internal
+        submit_as_draft: false

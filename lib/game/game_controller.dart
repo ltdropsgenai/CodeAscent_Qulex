@@ -1,0 +1,301 @@
+import 'dart:async';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show HapticFeedback;
+import '../data/progress_store.dart';
+import '../models/word.dart';
+import '../services/voice.dart';
+import 'daily.dart';
+import 'track.dart';
+
+enum Phase { question, revealed, finished }
+
+enum GameMode {
+  quickPlay, // timed, drawn from the chosen track; word -> pick meaning
+  review, // no timer, drawn from due + new words (spaced repetition)
+  daily, // timed, deterministic 10-word set for today
+  reverse, // timed; definition shown -> pick the WORD
+  listen, // timed; word spoken (hidden) -> pick the meaning
+}
+
+/// Holds all state for one match and records results into the ProgressStore.
+class GameController extends ChangeNotifier {
+  GameController(
+    this._all, {
+    required this.store,
+    required this.locale,
+    this.mode = GameMode.quickPlay,
+    this.recordProgress = true,
+  });
+
+  final List<Word> _all;
+  final ProgressStore store;
+  final String locale;
+  final GameMode mode;
+
+  /// When false (custom sets), answers don't feed the SRS / streak / stats.
+  final bool recordProgress;
+
+  Gloss get _g => current.glossFor(locale);
+
+  bool get isReverse => mode == GameMode.reverse;
+  bool get isListen => mode == GameMode.listen;
+
+  /// The answer that counts as correct this round (a word in reverse mode,
+  /// a meaning otherwise).
+  String get correctAnswer => isReverse ? current.word : _g.correct;
+
+  /// Reverse mode: three WORDS to choose from (correct + 2 same-difficulty).
+  List<String> _reverseOptions() {
+    final same = _all
+        .where((w) => w.id != current.id && w.difficulty == current.difficulty)
+        .toList()
+      ..shuffle();
+    final pool = same.length >= 2
+        ? same
+        : (_all.where((w) => w.id != current.id).toList()..shuffle());
+    // Dedupe by surface form so no option repeats the correct word or itself.
+    final seen = <String>{current.word};
+    final distractors = <String>[];
+    for (final w in pool) {
+      if (distractors.length >= 2) break;
+      if (seen.add(w.word)) distractors.add(w.word);
+    }
+    if (distractors.length < 2) {
+      for (final w in _all) {
+        if (distractors.length >= 2) break;
+        if (seen.add(w.word)) distractors.add(w.word);
+      }
+    }
+    final opts = <String>[current.word, ...distractors]..shuffle();
+    return opts;
+  }
+
+  static const int roundsPerMatch = 10;
+  static const int totalMs = 8000;
+  static const int _tickMs = 16;
+
+  bool get timed => mode != GameMode.review;
+
+  final List<Word> _deck = [];
+  int index = 0;
+  int score = 0;
+  int streak = 0;
+  int bestStreak = 0;
+  int correctCount = 0;
+
+  Phase phase = Phase.question;
+  List<String> currentOptions = const [];
+  String? chosen;
+  bool wasCorrect = false;
+  double remainingMs = totalMs.toDouble();
+  bool timedOut = false;
+
+  Timer? _timer;
+
+  Word get current => _deck[index];
+  int get total => _deck.length;
+  bool get isLast => index == _deck.length - 1;
+  double get progress => (remainingMs / totalMs).clamp(0.0, 1.0);
+  int get accuracy =>
+      _deck.isEmpty ? 0 : ((correctCount / _deck.length) * 100).round();
+
+  /// Persisted, growing rank from the store (falls back to a session estimate).
+  int get vocabRank => store.vocabRank();
+
+  void start(Track track) {
+    final List<Word> pool;
+    if (mode == GameMode.review) {
+      pool = _reviewDeck();
+    } else if (mode == GameMode.daily) {
+      pool = dailyDeck(_all, DateTime.now(), count: roundsPerMatch);
+    } else {
+      pool = _all
+          .where(track.filter)
+          .where((w) => !store.progressFor(w.id).suspended)
+          .toList()
+        ..shuffle();
+    }
+    _deck
+      ..clear()
+      ..addAll(pool.take(roundsPerMatch));
+    index = 0;
+    score = 0;
+    streak = 0;
+    bestStreak = 0;
+    correctCount = 0;
+    _beginQuestion();
+  }
+
+  /// Due words first (spaced repetition), then a capped number of NEW words
+  /// (the daily new-word budget — the forgiving catch-up guard), then
+  /// not-yet-due words to fill the match. Known/suspended words are skipped.
+  List<Word> _reviewDeck() {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final due = <Word>[];
+    final unseen = <Word>[];
+    final future = <Word>[];
+    for (final w in _all) {
+      final wp = store.progressFor(w.id);
+      if (wp.suspended) continue;
+      if (wp.seen == 0) {
+        unseen.add(w);
+      } else if (wp.dueAtMillis <= now) {
+        due.add(w);
+      } else {
+        future.add(w);
+      }
+    }
+    due.shuffle();
+    future.shuffle();
+    // If the learner has been placed, introduce NEW words near their level
+    // (at or just above it) instead of at random.
+    if (store.placed) {
+      final r = store.placementRank;
+      int dist(Word w) =>
+          w.freqRank < r ? (r - w.freqRank) * 2 : (w.freqRank - r);
+      unseen.sort((a, b) => dist(a).compareTo(dist(b)));
+    } else {
+      unseen.shuffle();
+    }
+    final cappedUnseen = unseen.take(store.newRemainingToday()).toList();
+    return [...due, ...cappedUnseen, ...future];
+  }
+
+  /// Mark the current word "known" so it stops appearing (learner control).
+  void markCurrentKnown() {
+    if (recordProgress) store.markKnown(current.id); // not for custom sets
+    notifyListeners();
+  }
+
+  bool get currentKnown => store.progressFor(current.id).suspended;
+
+  /// Report the current question as having a content problem.
+  void flagCurrent() {
+    if (recordProgress) store.flagWord(current.id); // not for custom sets
+    notifyListeners();
+  }
+
+  bool get currentFlagged => store.isFlagged(current.id);
+
+  void _beginQuestion() {
+    phase = Phase.question;
+    chosen = null;
+    wasCorrect = false;
+    timedOut = false;
+    currentOptions = isReverse ? _reverseOptions() : _g.shuffledOptions();
+    remainingMs = totalMs.toDouble();
+    if (!isReverse) Voice.instance.speak(current.word, langCode: current.lang);
+    _timer?.cancel();
+    if (timed) {
+      _timer = Timer.periodic(const Duration(milliseconds: _tickMs), (_) {
+        remainingMs -= _tickMs;
+        if (remainingMs <= 0) {
+          remainingMs = 0;
+          _onTimeout();
+        }
+        notifyListeners();
+      });
+    }
+    notifyListeners();
+  }
+
+  void choose(String option) {
+    if (phase != Phase.question) return;
+    _timer?.cancel();
+    chosen = option;
+    wasCorrect = option == correctAnswer;
+    if (wasCorrect) {
+      correctCount++;
+      streak++;
+      if (streak > bestStreak) bestStreak = streak;
+      final speedBonus =
+          timed ? ((remainingMs / totalMs) * 50).round() : 30;
+      final diffBonus = _difficultyBonus(current.difficulty);
+      score += diffBonus + speedBonus + streak * 5;
+      HapticFeedback.lightImpact();
+    } else {
+      streak = 0;
+      HapticFeedback.mediumImpact();
+    }
+    _record(wasCorrect);
+    _speakReveal();
+    phase = Phase.revealed;
+    notifyListeners();
+  }
+
+  void _speakReveal() {
+    // Reverse + Listen reinforce the target word; classic reads the meaning.
+    if (isReverse || isListen) {
+      Voice.instance.speak(current.word, langCode: current.lang);
+    } else {
+      Voice.instance.speak(_g.correct, langCode: locale);
+    }
+  }
+
+  void _onTimeout() {
+    _timer?.cancel();
+    streak = 0;
+    chosen = null;
+    wasCorrect = false;
+    timedOut = true;
+    _record(false);
+    _speakReveal();
+    phase = Phase.revealed;
+    notifyListeners();
+  }
+
+  void _record(bool correct) {
+    if (!recordProgress) return; // custom sets don't touch the SRS
+    // Fire-and-forget; the store persists asynchronously.
+    store.recordAnswer(
+      current.id,
+      correct,
+      DateTime.now().millisecondsSinceEpoch,
+    );
+  }
+
+  void next() {
+    if (isLast) {
+      _timer?.cancel();
+      phase = Phase.finished;
+      if (recordProgress) {
+        _registerStreak();
+        if (mode == GameMode.daily) {
+          store.recordDaily(_ymd(DateTime.now()), score, accuracy);
+        }
+      }
+      notifyListeners();
+    } else {
+      index++;
+      _beginQuestion();
+    }
+  }
+
+  void _registerStreak() {
+    final now = DateTime.now();
+    final yesterday = now.subtract(const Duration(days: 1));
+    store.registerPlay(_ymd(now), _ymd(yesterday));
+  }
+
+  String _ymd(DateTime d) =>
+      '${d.year.toString().padLeft(4, '0')}-'
+      '${d.month.toString().padLeft(2, '0')}-'
+      '${d.day.toString().padLeft(2, '0')}';
+
+  int _difficultyBonus(String d) {
+    switch (d) {
+      case 'hard':
+        return 120;
+      case 'medium':
+        return 80;
+      default:
+        return 50;
+    }
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+}
