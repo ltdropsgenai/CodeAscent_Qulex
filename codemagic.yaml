@@ -18,6 +18,8 @@ workflows:
     environment:
       groups:
         - google_credentials        # -> PLAY_SERVICE_ACCOUNT_JSON
+      integrations:
+        app_store_connect: Qbit_ASC_Key
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.codeascent.qbit
