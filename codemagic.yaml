@@ -12,9 +12,6 @@ workflows:
     environment:
       groups:
         - google_credentials
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.codeascent.qbit
       android_signing:
         - qbit_upload_keystore
       vars:
