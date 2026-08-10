@@ -1,14 +1,6 @@
 # Codemagic CI/CD for Qbit (CodeAscent)
 # Builds iOS + Android on a cloud Mac (no local Mac required) and ships to
 # TestFlight (internal) and Google Play internal testing.
-#
-# One-time setup in the Codemagic UI (see qbit-release-setup.md):
-#   1. Team settings > Integrations > App Store Connect  -> connect an ASC API key.
-#   2. Code signing identities > Android keystores        -> upload the upload keystore,
-#      reference name: qbit_upload_keystore
-#   3. Environment variables > group "google_credentials"  -> PLAY_SERVICE_ACCOUNT_JSON
-#      (paste the Play service-account JSON, mark Secure).
-#   4. After the ASC app record exists, put its Apple ID (numeric) in APP_STORE_APPLE_ID.
 
 workflows:
   qbit-test:
@@ -19,7 +11,7 @@ workflows:
       app_store_connect: Qbit_ASC_Key
     environment:
       groups:
-        - google_credentials        # -> PLAY_SERVICE_ACCOUNT_JSON
+        - google_credentials
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.codeascent.qbit
@@ -50,8 +42,14 @@ workflows:
           flutter build appbundle --release \
             --build-name=0.1.0 \
             --build-number=$BUILD_NUMBER
-      - name: Set up iOS provisioning profiles
-        script: xcode-project use-profiles
+      - name: Set up iOS code signing (create cert + profile if missing)
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "com.codeascent.qbit" \
+            --type IOS_APP_STORE \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles
       - name: Build iOS IPA
         script: |
           flutter build ipa --release \
@@ -68,7 +66,7 @@ workflows:
         auth: integration
         submit_to_testflight: true
         beta_groups:
-          - Internal Testers        # create this group in TestFlight (or remove this line)
+          - Internal Testers
       google_play:
         credentials: $PLAY_SERVICE_ACCOUNT_JSON
         track: internal
