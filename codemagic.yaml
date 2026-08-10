@@ -24,6 +24,8 @@ workflows:
     scripts:
       - name: Flutter packages
         script: flutter pub get
+      - name: Generate app icons
+        script: dart run flutter_launcher_icons
       - name: Static analysis (non-blocking)
         script: flutter analyze || true
       - name: Write Android key.properties from Codemagic keystore

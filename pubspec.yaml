@@ -24,9 +24,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
   assets:
     - assets/words.json
     - assets/backgrounds/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/qbit_icon_1024.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "assets/icon/qbit_icon_bg.png"
+  adaptive_icon_foreground: "assets/icon/qbit_icon_fg.png"
+  min_sdk_android: 21
