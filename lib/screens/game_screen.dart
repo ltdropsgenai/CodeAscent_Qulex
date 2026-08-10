@@ -412,7 +412,7 @@ class _Reveal extends StatelessWidget {
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             onPressed: () => Navigator.of(context).push(PageRouteBuilder(
-              opaque: false,
+              opaque: true,
               transitionDuration: const Duration(milliseconds: 240),
               pageBuilder: (_, __, ___) => PronounceScreen(word: c.current),
               transitionsBuilder: (_, anim, __, child) =>

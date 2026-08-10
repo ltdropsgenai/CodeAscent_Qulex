@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _openSettings(List<Word> words) async {
     await Navigator.of(context).push(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 280),
       reverseTransitionDuration: const Duration(milliseconds: 200),
       pageBuilder: (_, __, ___) => SettingsScreen(store: _store, words: words),
@@ -125,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _openSets(List<Word> words) async {
     await Navigator.of(context).push(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 280),
       pageBuilder: (_, __, ___) =>
           SetsListScreen(library: words, store: _store),
@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _openAccount() async {
     await Navigator.of(context).push(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 280),
       reverseTransitionDuration: const Duration(milliseconds: 200),
       pageBuilder: (_, __, ___) => const AccountScreen(),
@@ -153,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _openPaywall() async {
     await Navigator.of(context).push(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 280),
       reverseTransitionDuration: const Duration(milliseconds: 200),
       pageBuilder: (_, __, ___) => const PaywallScreen(),

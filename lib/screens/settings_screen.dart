@@ -180,7 +180,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   void _open(Widget page) {
     Navigator.of(context).push(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 240),
       pageBuilder: (_, __, ___) => page,
       transitionsBuilder: (_, anim, __, child) =>

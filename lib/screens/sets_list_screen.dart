@@ -35,7 +35,7 @@ class _SetsListScreenState extends State<SetsListScreen> {
 
   Future<void> _openEditor([CustomSet? existing]) async {
     final saved = await Navigator.of(context).push<bool>(PageRouteBuilder(
-      opaque: false,
+      opaque: true,
       transitionDuration: const Duration(milliseconds: 240),
       pageBuilder: (_, __, ___) =>
           SetEditorScreen(existing: existing, setStore: _setStore),
