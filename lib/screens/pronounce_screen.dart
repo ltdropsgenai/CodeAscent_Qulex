@@ -32,7 +32,10 @@ class _PronounceScreenState extends State<PronounceScreen> {
     super.initState();
     // Speak the target once so the learner has a model to imitate.
     if (appState.voiceOn) {
-      Voice.instance.speak(widget.word.word, langCode: widget.word.lang);
+      Voice.instance.speak(widget.word.word,
+          langCode: widget.word.lang,
+          headword: widget.word.word,
+          headwordPos: widget.word.pos);
     }
     _init();
   }
@@ -161,7 +164,8 @@ class _PronounceScreenState extends State<PronounceScreen> {
                 const SizedBox(width: 14),
                 GestureDetector(
                   onTap: () =>
-                      Voice.instance.speak(w.word, langCode: w.lang),
+                      Voice.instance.speak(w.word,
+                          langCode: w.lang, headword: w.word, headwordPos: w.pos),
                   child: const Icon(Icons.volume_up, color: QColors.coral, size: 26),
                 ),
               ]),

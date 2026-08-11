@@ -223,7 +223,10 @@ class GameController extends ChangeNotifier {
     timedOut = false;
     currentOptions = isReverse ? _reverseOptions() : _g.shuffledOptions();
     remainingMs = totalMs.toDouble();
-    if (!isReverse) Voice.instance.speak(current.word, langCode: current.lang);
+    if (!isReverse) {
+      Voice.instance.speak(current.word,
+          langCode: current.lang, headword: current.word, headwordPos: current.pos);
+    }
     _timer?.cancel();
     if (timed) {
       _timer = Timer.periodic(const Duration(milliseconds: _tickMs), (_) {
@@ -265,9 +268,11 @@ class GameController extends ChangeNotifier {
   void _speakReveal() {
     // Reverse + Listen reinforce the target word; classic reads the meaning.
     if (isReverse || isListen) {
-      Voice.instance.speak(current.word, langCode: current.lang);
+      Voice.instance.speak(current.word,
+          langCode: current.lang, headword: current.word, headwordPos: current.pos);
     } else {
-      Voice.instance.speak(_g.correct, langCode: locale);
+      Voice.instance.speak(_g.correct,
+          langCode: locale, headword: current.word, headwordPos: current.pos);
     }
   }
 
