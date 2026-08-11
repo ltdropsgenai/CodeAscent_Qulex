@@ -1,0 +1,121 @@
+import 'package:flutter/material.dart';
+import '../data/word_repository.dart';
+import '../l10n/strings.dart';
+import '../state/app_state.dart';
+import '../theme.dart';
+import '../widgets/wordmark.dart';
+import 'home_screen.dart';
+
+/// First-launch intro: Qbit's differentiators, front and center. Shown once
+/// (gated by `appState.seenIntro`), then never again — this is a pitch to
+/// convert a fresh install into an active learner, not a tutorial to click
+/// through every time.
+class SplashScreen extends StatelessWidget {
+  final WordRepository repository;
+  const SplashScreen({super.key, required this.repository});
+
+  Future<void> _enter(BuildContext context) async {
+    await appState.markIntroSeen();
+    if (context.mounted) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => HomeScreen(repository: repository)),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final locale = appState.locale;
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(28, 24, 28, 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Wordmark(size: 34),
+              const Spacer(),
+              Text(Strings.t(locale, 'splashHeadline'),
+                  style: QType.serif(size: 34, weight: FontWeight.w600, color: QColors.cream, height: 1.12)),
+              const SizedBox(height: 12),
+              Text(Strings.t(locale, 'splashSub'),
+                  style: QType.sans(size: 14.5, color: QColors.muted, height: 1.4)),
+              const SizedBox(height: 28),
+              _Point(icon: Icons.autorenew, titleKey: 'splashPoint1Title', bodyKey: 'splashPoint1Body', locale: locale),
+              _Point(icon: Icons.translate, titleKey: 'splashPoint2Title', bodyKey: 'splashPoint2Body', locale: locale),
+              _Point(icon: Icons.auto_stories_outlined, titleKey: 'splashPoint3Title', bodyKey: 'splashPoint3Body', locale: locale),
+              _Point(icon: Icons.bolt, titleKey: 'splashPoint4Title', bodyKey: 'splashPoint4Body', locale: locale),
+              _Point(icon: Icons.verified_outlined, titleKey: 'splashPoint5Title', bodyKey: 'splashPoint5Body', locale: locale, last: true),
+              const Spacer(flex: 2),
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  style: FilledButton.styleFrom(
+                    backgroundColor: QColors.coral,
+                    foregroundColor: const Color(0xFF160603),
+                    padding: const EdgeInsets.symmetric(vertical: 17),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+                  ),
+                  onPressed: () => _enter(context),
+                  child: Text(Strings.t(locale, 'splashCta').toUpperCase(),
+                      style: QType.mono(size: 13, color: const Color(0xFF160603), spacing: 2)),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _Point extends StatelessWidget {
+  final IconData icon;
+  final String titleKey;
+  final String bodyKey;
+  final String locale;
+  final bool last;
+  const _Point({
+    required this.icon,
+    required this.titleKey,
+    required this.bodyKey,
+    required this.locale,
+    this.last = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(bottom: last ? 0 : 16),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 34,
+            height: 34,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              border: Border.all(color: QColors.rule),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Icon(icon, size: 17, color: QColors.coral),
+          ),
+          const SizedBox(width: 13),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(Strings.t(locale, titleKey),
+                    style: QType.sans(size: 14.5, weight: FontWeight.w700, color: QColors.ink)),
+                const SizedBox(height: 2),
+                Text(Strings.t(locale, bodyKey),
+                    style: QType.sans(size: 12.5, color: QColors.muted, height: 1.3)),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

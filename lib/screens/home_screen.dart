@@ -21,6 +21,10 @@ import 'placement_screen.dart';
 import 'sets_list_screen.dart';
 import 'settings_screen.dart';
 
+/// Thrown internally when a player dismisses the Resume/Start-New prompt
+/// without choosing — signals "stay on the home screen, do nothing."
+class _CancelOpen implements Exception {}
+
 class HomeScreen extends StatefulWidget {
   final WordRepository repository;
   const HomeScreen({super.key, required this.repository});
@@ -83,7 +87,63 @@ class _HomeScreenState extends State<HomeScreen> {
     if (mounted) setState(() {});
   }
 
+  /// Review/Daily draw from one global deck, not a chosen track — matches the
+  /// key GameScreen uses when saving/looking up an in-progress round.
+  String _roundTrackId(GameMode mode) =>
+      (mode == GameMode.review || mode == GameMode.daily)
+          ? '_global'
+          : kTracks[_selected].id;
+
+  /// If there's a saved unfinished round for this track+mode, ask Resume vs
+  /// Start New before dealing a fresh deck. Returns the snapshot to resume
+  /// with (or null to start fresh), or throws _CancelOpen if the player
+  /// dismissed the prompt without choosing (stay on the home screen).
+  Future<Map<String, dynamic>?> _resolveResume(GameMode mode) async {
+    final snap = _store.roundSnapshot(_roundTrackId(mode), mode.name);
+    if (snap == null) return null;
+    final locale = appState.locale;
+    final total = (snap['deckIds'] as List).length;
+    final cur = (((snap['index'] as num?)?.toInt() ?? 0) + 1).clamp(1, total);
+    final score = (snap['score'] as num?)?.toInt() ?? 0;
+    final resume = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: const Color(0xFF14141A),
+        title: Text(Strings.t(locale, 'resumeRoundTitle'),
+            style: QType.serif(size: 18, color: QColors.cream)),
+        content: Text(
+            Strings.t(locale, 'resumeRoundBody')
+                .replaceFirst('{cur}', '$cur')
+                .replaceFirst('{total}', '$total')
+                .replaceFirst('{score}', '$score'),
+            style: QType.sans(size: 13.5, color: QColors.muted)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(Strings.t(locale, 'startNewRound').toUpperCase(),
+                style: QType.mono(size: 11, color: QColors.dim, spacing: 1)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(Strings.t(locale, 'resumeRound').toUpperCase(),
+                style: QType.mono(size: 11, color: QColors.coral, spacing: 1)),
+          ),
+        ],
+      ),
+    );
+    if (resume == null) throw _CancelOpen(); // dismissed — stay on home
+    if (resume) return snap;
+    await _store.clearRoundSnapshot(_roundTrackId(mode), mode.name);
+    return null;
+  }
+
   Future<void> _openGame(List<Word> words, GameMode mode) async {
+    Map<String, dynamic>? resumeSnapshot;
+    try {
+      resumeSnapshot = await _resolveResume(mode);
+    } on _CancelOpen {
+      return;
+    }
     await Navigator.of(context).push(PageRouteBuilder(
       transitionDuration: const Duration(milliseconds: 320),
       reverseTransitionDuration: const Duration(milliseconds: 240),
@@ -92,6 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
         track: kTracks[_selected],
         store: _store,
         mode: mode,
+        resumeSnapshot: resumeSnapshot,
       ),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -261,6 +322,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
+          const SizedBox(height: 6),
+          Text(Strings.t(locale, 'answerLangHint'),
+              style: QType.mono(size: 8.5, color: QColors.dim, spacing: 0.3, weight: FontWeight.w500),
+              maxLines: 2),
           const SizedBox(height: 4),
           const Wordmark(size: 72),
           const SizedBox(height: 14),

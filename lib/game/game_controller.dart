@@ -92,6 +92,10 @@ class GameController extends ChangeNotifier {
 
   Timer? _timer;
 
+  /// Fired once, right when the round transitions to [Phase.finished] —
+  /// GameScreen uses this to clear any saved mid-round snapshot.
+  VoidCallback? onFinished;
+
   Word get current => _deck[index];
   int get total => _deck.length;
   bool get isLast => index == _deck.length - 1;
@@ -123,6 +127,41 @@ class GameController extends ChangeNotifier {
     streak = 0;
     bestStreak = 0;
     correctCount = 0;
+    _beginQuestion();
+  }
+
+  /// True once a round has been dealt and isn't finished yet — used to decide
+  /// whether exiting mid-round has anything worth saving.
+  bool get inProgress =>
+      _deck.isNotEmpty && phase != Phase.finished && index < _deck.length;
+
+  /// Serialize enough state to resume this exact round later (mid-round exit).
+  Map<String, dynamic> snapshot() => {
+        'deckIds': _deck.map((w) => w.id).toList(),
+        'index': index,
+        'score': score,
+        'streak': streak,
+        'bestStreak': bestStreak,
+        'correctCount': correctCount,
+        'savedAtMillis': DateTime.now().millisecondsSinceEpoch,
+      };
+
+  /// Resume a previously-saved round instead of dealing a fresh deck. Throws
+  /// [StateError] if none of the saved words are available any more (e.g. the
+  /// library changed) — the caller should fall back to [start] in that case.
+  void resume(Map<String, dynamic> snap) {
+    final ids = (snap['deckIds'] as List).cast<String>();
+    final byId = {for (final w in _all) w.id: w};
+    final restored = ids.map((id) => byId[id]).whereType<Word>().toList();
+    if (restored.isEmpty) throw StateError('snapshot words unavailable');
+    _deck
+      ..clear()
+      ..addAll(restored);
+    index = ((snap['index'] as num?)?.toInt() ?? 0).clamp(0, _deck.length - 1);
+    score = (snap['score'] as num?)?.toInt() ?? 0;
+    streak = (snap['streak'] as num?)?.toInt() ?? 0;
+    bestStreak = (snap['bestStreak'] as num?)?.toInt() ?? 0;
+    correctCount = (snap['correctCount'] as num?)?.toInt() ?? 0;
     _beginQuestion();
   }
 
@@ -264,6 +303,7 @@ class GameController extends ChangeNotifier {
           store.recordDaily(_ymd(DateTime.now()), score, accuracy);
         }
       }
+      onFinished?.call();
       notifyListeners();
     } else {
       index++;

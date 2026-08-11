@@ -10,9 +10,11 @@ class ProgressStore {
   static const _kWords = 'qbit_word_progress_v1';
   static const _kProfile = 'qbit_profile_v1';
   static const _kFlagged = 'qbit_flagged_v1';
+  static const _kRoundSnapshots = 'qbit_round_snapshots_v1';
 
   final Map<String, WordProgress> _words = {};
   final Set<String> _flagged = {};
+  final Map<String, Map<String, dynamic>> _roundSnapshots = {};
   PlayerProfile profile = PlayerProfile();
 
   /// Learner-tunable spaced-repetition settings (driven by app settings).
@@ -41,6 +43,38 @@ class ProgressStore {
     _flagged
       ..clear()
       ..addAll(p.getStringList(_kFlagged) ?? const []);
+    final rawSnapshots = p.getString(_kRoundSnapshots);
+    _roundSnapshots.clear();
+    if (rawSnapshots != null) {
+      final m = json.decode(rawSnapshots) as Map<String, dynamic>;
+      m.forEach((k, v) => _roundSnapshots[k] = (v as Map).cast<String, dynamic>());
+    }
+  }
+
+  // --- Mid-round exit / resume ---------------------------------------------
+  // A round in progress (deck + position + score) is keyed by "trackId|mode"
+  // so returning to the same track+mode can offer Resume vs Start New instead
+  // of silently discarding an unfinished round.
+
+  String _roundKey(String trackId, String mode) => '$trackId|$mode';
+
+  /// Save (or overwrite) the in-progress round for [trackId]/[mode].
+  Future<void> saveRoundSnapshot(
+      String trackId, String mode, Map<String, dynamic> data) async {
+    _roundSnapshots[_roundKey(trackId, mode)] = data;
+    final p = await SharedPreferences.getInstance();
+    await p.setString(_kRoundSnapshots, json.encode(_roundSnapshots));
+  }
+
+  /// The saved in-progress round for [trackId]/[mode], if any.
+  Map<String, dynamic>? roundSnapshot(String trackId, String mode) =>
+      _roundSnapshots[_roundKey(trackId, mode)];
+
+  /// Clear the saved round for [trackId]/[mode] (round finished or discarded).
+  Future<void> clearRoundSnapshot(String trackId, String mode) async {
+    if (_roundSnapshots.remove(_roundKey(trackId, mode)) == null) return;
+    final p = await SharedPreferences.getInstance();
+    await p.setString(_kRoundSnapshots, json.encode(_roundSnapshots));
   }
 
   /// Flag a word/question as having a content problem (user report).

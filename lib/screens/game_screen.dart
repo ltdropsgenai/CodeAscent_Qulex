@@ -17,6 +17,12 @@ class GameScreen extends StatefulWidget {
   final ProgressStore store;
   final GameMode mode;
   final bool recordProgress;
+
+  /// A previously-saved mid-round snapshot to resume instead of dealing a
+  /// fresh round (see ProgressStore.roundSnapshot / HomeScreen's resume
+  /// prompt). Null starts a normal fresh round.
+  final Map<String, dynamic>? resumeSnapshot;
+
   const GameScreen({
     super.key,
     required this.words,
@@ -24,6 +30,7 @@ class GameScreen extends StatefulWidget {
     required this.store,
     this.mode = GameMode.quickPlay,
     this.recordProgress = true,
+    this.resumeSnapshot,
   });
 
   @override
@@ -33,6 +40,17 @@ class GameScreen extends StatefulWidget {
 class _GameScreenState extends State<GameScreen> {
   late final GameController c;
 
+  /// Key under which this track+mode's in-progress round is saved, so we can
+  /// resume it later — only meaningful when [widget.recordProgress] is true
+  /// (custom/one-off sets don't track progress and aren't resumable). Review
+  /// and Daily draw from one global rotating deck, not a chosen track, so
+  /// they share a single key regardless of which track chip was selected.
+  String get _trackKey =>
+      (widget.mode == GameMode.review || widget.mode == GameMode.daily)
+          ? '_global'
+          : widget.track.id;
+  String get _modeKey => widget.mode.name;
+
   @override
   void initState() {
     super.initState();
@@ -41,7 +59,22 @@ class _GameScreenState extends State<GameScreen> {
         locale: appState.locale,
         mode: widget.mode,
         recordProgress: widget.recordProgress);
-    c.start(widget.track);
+    c.onFinished = () {
+      if (widget.recordProgress) {
+        widget.store.clearRoundSnapshot(_trackKey, _modeKey);
+      }
+    };
+    var resumed = false;
+    if (widget.resumeSnapshot != null) {
+      try {
+        c.resume(widget.resumeSnapshot!);
+        resumed = true;
+      } catch (_) {
+        // Saved words are no longer available (library changed) — fall
+        // through to a fresh round below.
+      }
+    }
+    if (!resumed) c.start(widget.track);
   }
 
   @override
@@ -51,29 +84,74 @@ class _GameScreenState extends State<GameScreen> {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.transparent,
-      body: Stack(
-        children: [
-          const _GameScrim(),
-          SafeArea(
-            child: AnimatedBuilder(
-              animation: c,
-              builder: (context, _) {
-                if (c.phase == Phase.finished) {
-                  return _ResultView(
-                    c: c,
-                    onPlayAgain: () => c.start(widget.track),
-                    onChangePath: () => Navigator.of(context).pop(),
-                  );
-                }
-                return _GameView(c: c);
-              },
-            ),
+  /// Exit the round: if it's unfinished, save a snapshot so the player is
+  /// offered Resume next time they pick this same track+mode, then leave.
+  /// Confirms first so an accidental back-tap doesn't feel like data loss.
+  Future<void> _confirmExit(BuildContext context) async {
+    if (c.phase == Phase.finished) {
+      Navigator.of(context).pop();
+      return;
+    }
+    final locale = c.locale;
+    final leave = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: const Color(0xFF14141A),
+        title: Text(Strings.t(locale, 'exitRoundTitle'),
+            style: QType.serif(size: 18, color: QColors.cream)),
+        content: Text(Strings.t(locale, 'exitRoundBody'),
+            style: QType.sans(size: 13.5, color: QColors.muted)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(Strings.t(locale, 'cancel').toUpperCase(),
+                style: QType.mono(size: 11, color: QColors.dim, spacing: 1)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(Strings.t(locale, 'exitRound').toUpperCase(),
+                style: QType.mono(size: 11, color: QColors.coral, spacing: 1)),
           ),
         ],
+      ),
+    );
+    if (leave != true) return;
+    if (widget.recordProgress && c.inProgress) {
+      await widget.store.saveRoundSnapshot(_trackKey, _modeKey, c.snapshot());
+    }
+    if (context.mounted) Navigator.of(context).pop();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) {
+        if (didPop) return;
+        _confirmExit(context);
+      },
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Stack(
+          children: [
+            const _GameScrim(),
+            SafeArea(
+              child: AnimatedBuilder(
+                animation: c,
+                builder: (context, _) {
+                  if (c.phase == Phase.finished) {
+                    return _ResultView(
+                      c: c,
+                      onPlayAgain: () => c.start(widget.track),
+                      onChangePath: () => Navigator.of(context).pop(),
+                    );
+                  }
+                  return _GameView(c: c, onExit: () => _confirmExit(context));
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -81,7 +159,8 @@ class _GameScreenState extends State<GameScreen> {
 
 class _GameView extends StatelessWidget {
   final GameController c;
-  const _GameView({required this.c});
+  final VoidCallback onExit;
+  const _GameView({required this.c, required this.onExit});
 
   @override
   Widget build(BuildContext context) {
@@ -98,6 +177,13 @@ class _GameView extends StatelessWidget {
         children: [
           // HUD
           Row(children: [
+            IconButton(
+              onPressed: onExit,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+              icon: const Icon(Icons.arrow_back, color: QColors.muted, size: 19),
+            ),
+            const SizedBox(width: 4),
             const Wordmark(size: 19),
             const Spacer(),
             _stat('${c.streak}', QColors.coral),
@@ -152,6 +238,10 @@ class _GameView extends StatelessWidget {
             _DiffTag(difficulty: w.difficulty),
             const SizedBox(width: 12),
             Text(w.pos.toUpperCase(), style: QType.mono(size: 10, color: QColors.dim, spacing: 2)),
+            if (locale != 'en') ...[
+              const SizedBox(width: 12),
+              _LangFlow(locale: locale, reverse: c.isReverse),
+            ],
           ]),
           const SizedBox(height: 8),
           Text(Strings.t(locale, _askKey(c)).toUpperCase(),
@@ -272,6 +362,32 @@ class _DiffTag extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 3),
       decoration: BoxDecoration(border: Border(bottom: BorderSide(color: col))),
       child: Text(difficulty.toUpperCase(), style: QType.mono(size: 10, color: col, spacing: 2)),
+    );
+  }
+}
+
+/// Small "which language is which" tag shown during play whenever the answer
+/// language differs from English — the direct fix for the confusion where a
+/// user sees an English word with, say, Spanish answer options and assumes
+/// something's broken. Classic/Listen: word is EN, answers are in [locale].
+/// Reverse: the definition is in [locale], the answer options are EN words.
+class _LangFlow extends StatelessWidget {
+  final String locale;
+  final bool reverse;
+  const _LangFlow({required this.locale, required this.reverse});
+  @override
+  Widget build(BuildContext context) {
+    final tag = reverse ? '${locale.toUpperCase()} → EN' : 'EN → ${locale.toUpperCase()}';
+    return Tooltip(
+      message: Strings.t(locale, 'answerLangHint'),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+        decoration: BoxDecoration(
+          border: Border.all(color: QColors.rule),
+          borderRadius: BorderRadius.circular(3),
+        ),
+        child: Text(tag, style: QType.mono(size: 9, color: QColors.dim, spacing: 1)),
+      ),
     );
   }
 }

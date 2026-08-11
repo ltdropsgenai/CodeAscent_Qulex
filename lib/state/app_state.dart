@@ -12,9 +12,14 @@ class AppState extends ChangeNotifier {
   static const _kReminderHour = 'qbit_reminder_hour';
   static const _kNewPerDay = 'qbit_new_per_day';
   static const _kIntensity = 'qbit_review_intensity';
+  static const _kSeenIntro = 'qbit_seen_intro';
 
   String locale = 'en';
   bool voiceOn = true;
+
+  /// Whether the player has been through the splash/intro screen. False on a
+  /// brand-new install — that's when we show the differentiator pitch.
+  bool seenIntro = false;
 
   /// Daily "word from your collection" reminders (mobile only).
   bool remindersOn = false;
@@ -40,7 +45,15 @@ class AppState extends ChangeNotifier {
     reminderHour = p.getInt(_kReminderHour) ?? 9;
     newPerDay = p.getInt(_kNewPerDay) ?? 20;
     reviewIntensity = p.getInt(_kIntensity) ?? 1;
+    seenIntro = p.getBool(_kSeenIntro) ?? false;
     notifyListeners();
+  }
+
+  Future<void> markIntroSeen() async {
+    seenIntro = true;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    await p.setBool(_kSeenIntro, true);
   }
 
   Future<void> setNewPerDay(int n) async {

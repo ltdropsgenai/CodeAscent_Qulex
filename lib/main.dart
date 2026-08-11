@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'data/word_repository.dart';
 import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 import 'services/supabase_config.dart';
@@ -70,7 +71,9 @@ class QbitApp extends StatelessWidget {
           },
         ),
       ),
-      home: HomeScreen(repository: WordRepository()),
+      home: appState.seenIntro
+          ? HomeScreen(repository: WordRepository())
+          : SplashScreen(repository: WordRepository()),
     );
   }
 }
