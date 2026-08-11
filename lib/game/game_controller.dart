@@ -127,6 +127,7 @@ class GameController extends ChangeNotifier {
     streak = 0;
     bestStreak = 0;
     correctCount = 0;
+    _prefetchDeck();
     _beginQuestion();
   }
 
@@ -162,7 +163,31 @@ class GameController extends ChangeNotifier {
     streak = (snap['streak'] as num?)?.toInt() ?? 0;
     bestStreak = (snap['bestStreak'] as num?)?.toInt() ?? 0;
     correctCount = (snap['correctCount'] as num?)?.toInt() ?? 0;
+    _prefetchDeck();
     _beginQuestion();
+  }
+
+  /// Fire-and-forget cache warm-up for the whole deck, so ElevenLabs audio
+  /// for upcoming words (and their definitions) is already cached on-device
+  /// by the time each question needs it. Voice.speak() only waits ~2.5s for
+  /// a fresh network fetch before degrading to the instant on-device voice —
+  /// this is what makes that timeout rarely get hit at all instead of the
+  /// auto-read feeling like it "didn't happen". Batched with limited
+  /// concurrency so it doesn't starve the current question's live request.
+  void _prefetchDeck() {
+    final words = List<Word>.from(_deck);
+    () async {
+      const batchSize = 3;
+      for (var i = 0; i < words.length; i += batchSize) {
+        final batch = words.skip(i).take(batchSize);
+        await Future.wait(batch.map((w) async {
+          await Voice.instance.prefetch(w.word,
+              langCode: w.lang, headword: w.word, headwordPos: w.pos);
+          await Voice.instance.prefetch(w.glossFor(locale).correct,
+              langCode: locale, headword: w.word, headwordPos: w.pos);
+        }));
+      }
+    }();
   }
 
   /// Due words first (spaced repetition), then a capped number of NEW words

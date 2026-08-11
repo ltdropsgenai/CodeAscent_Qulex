@@ -16,9 +16,10 @@ import 'supabase_config.dart';
 /// app and every generated clip is cached server-side — the same text+
 /// language is only ever synthesized once, for any user. Clips are cached
 /// again on-device after first fetch so replays are instant and work
-/// offline. If ElevenLabs/Supabase is unreachable for any reason (offline,
-/// function down, not configured), we fall back to the device's built-in
-/// voice (flutter_tts) so playback never goes silent — degraded, not broken.
+/// offline. If ElevenLabs/Supabase is unreachable, slow, or not configured,
+/// we fall back to the device's built-in voice (flutter_tts) so playback
+/// never goes silent, or feels absent, for more than ~2.5s — degraded, not
+/// broken.
 class Voice {
   Voice._();
   static final Voice instance = Voice._();
@@ -27,6 +28,19 @@ class Voice {
   final AudioPlayer _player = AudioPlayer();
   bool _fallbackInit = false;
   Directory? _cacheDir;
+
+  // Bumped on every speak() call. Lets a slow ElevenLabs response that
+  // arrives after we've already timed-out-and-fallen-back (or after a newer
+  // speak() call superseded this one) recognize it's stale and skip
+  // playback — it still finishes writing to the on-device cache so the
+  // *next* time this word is spoken it's instant.
+  int _generation = 0;
+  // The most recent generation that already spoke via the on-device
+  // fallback voice — guards against a same-generation late ElevenLabs
+  // response talking over/after it.
+  int _fallbackGeneration = -1;
+
+  static const _elevenLabsTimeout = Duration(milliseconds: 2500);
 
   Future<void> _ensureFallback() async {
     if (_fallbackInit) return;
@@ -61,6 +75,14 @@ class Voice {
   /// when [text] IS (or contains) a catalogued word's own headword — its
   /// `pos` disambiguates heteronyms (see heteronyms.dart) for both the
   /// standalone word and full-sentence definitions/examples.
+  ///
+  /// Races the ElevenLabs fetch against a short timeout: if it hasn't
+  /// resolved (or wasn't already cached) within [_elevenLabsTimeout], we
+  /// speak immediately with the instant on-device voice instead of leaving
+  /// the learner waiting in silence. The network attempt is left running in
+  /// the background purely to warm the cache for next time — see
+  /// [prefetch] for warming a whole deck ahead of time so this timeout is
+  /// rarely hit at all.
   Future<void> speak(
     String text, {
     String langCode = 'en',
@@ -68,20 +90,68 @@ class Voice {
     String? headwordPos,
   }) async {
     if (!appState.voiceOn) return;
+    final gen = ++_generation;
     await _player.stop();
     await _fallbackTts.stop();
 
     final spoken = ttsRespell(text, headword: headword, headwordPos: headwordPos);
-    if (await _speakViaElevenLabs(spoken, langCode)) return;
+
+    bool played = false;
+    try {
+      played = await _speakViaElevenLabs(spoken, langCode, gen)
+          .timeout(_elevenLabsTimeout);
+    } catch (_) {
+      played = false; // timeout, network error, or any other failure
+    }
+    if (played) return;
+
+    if (gen != _generation) return; // a newer speak() call superseded this one
+    _fallbackGeneration = gen;
     await _speakViaFallback(spoken, langCode);
   }
 
-  Future<bool> _speakViaElevenLabs(String text, String langCode) async {
+  /// Cache-warming only — fetches and writes [text]'s clip to the on-device
+  /// cache (via the same Edge Function + Storage cache as [speak]) without
+  /// playing anything. Call this ahead of time (e.g. for a whole deck of
+  /// upcoming quiz words) so the real [speak] call later hits an instant
+  /// on-device cache hit instead of racing a cold network fetch.
+  Future<void> prefetch(
+    String text, {
+    String langCode = 'en',
+    String? headword,
+    String? headwordPos,
+  }) async {
+    if (!appState.voiceOn) return;
+    if (!SupabaseConfig.isConfigured) return;
+    try {
+      final spoken = ttsRespell(text, headword: headword, headwordPos: headwordPos);
+      final localPath = await _localCachePath(spoken, langCode);
+      if (await File(localPath).exists()) return;
+
+      final res = await Supabase.instance.client.functions.invoke(
+        'tts',
+        body: {'text': spoken, 'lang': langCode},
+      );
+      final data = res.data;
+      final url = (data is Map) ? data['url'] as String? : null;
+      if (url == null) return;
+
+      final bytes = await _download(url);
+      if (bytes == null) return;
+      await File(localPath).writeAsBytes(bytes, flush: true);
+    } catch (_) {
+      // Best-effort only — speak() will fetch (and fall back) on demand
+      // if this didn't manage to warm the cache in time.
+    }
+  }
+
+  Future<bool> _speakViaElevenLabs(String text, String langCode, int gen) async {
     if (!SupabaseConfig.isConfigured) return false;
     try {
       final localPath = await _localCachePath(text, langCode);
       final localFile = File(localPath);
       if (await localFile.exists()) {
+        if (gen != _generation || gen == _fallbackGeneration) return false;
         await _player.play(DeviceFileSource(localPath));
         return true;
       }
@@ -97,6 +167,12 @@ class Voice {
       final bytes = await _download(url);
       if (bytes == null) return false;
       await localFile.writeAsBytes(bytes, flush: true);
+
+      // This request may have taken long enough that speak() already timed
+      // out and fell back to the on-device voice (or a newer speak() call
+      // started). Either way the cache write above still happened — we just
+      // must not also play over whatever already spoke.
+      if (gen != _generation || gen == _fallbackGeneration) return false;
       await _player.play(DeviceFileSource(localPath));
       return true;
     } catch (_) {
