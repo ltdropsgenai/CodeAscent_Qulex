@@ -14,6 +14,7 @@ import 'feedback_screen.dart';
 import 'placement_screen.dart';
 import 'privacy_screen.dart';
 import 'security_screen.dart';
+import 'splash_screen.dart';
 
 /// Learner controls, rebuilt on the editorial UI kit: hairline-separated rows
 /// under mono signpost labels, squared toggle / stepper / segmented controls,
@@ -183,6 +184,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       title: Strings.t(locale, 'about'),
                       onTap: () => _open(const AboutScreen())),
                   QRow(
+                      icon: Icons.play_circle_outline,
+                      title: Strings.t(locale, 'replayIntro'),
+                      onTap: () => _open(
+                          const SplashScreen(fromSettings: true))),
+                  QRow(
                       icon: Icons.privacy_tip_outlined,
                       title: Strings.t(locale, 'privacy'),
                       onTap: () => _open(const PrivacyScreen())),
@@ -222,7 +228,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             style: QType.serif(size: 16.5, color: QColors.cream)),
         const SizedBox(height: 3),
         Text(Strings.t(locale, 'reviewIntensitySub'),
-            style: QType.mono(size: 10, color: QColors.dim, spacing: 0.3)),
+            style: QType.mono(size: 11.5, color: QColors.dim, spacing: 0.3)),
         const SizedBox(height: 12),
         QSegment(
           labels: labels,
@@ -245,7 +251,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           const SizedBox(width: 12),
           Expanded(
             child: Text(text,
-                style: QType.sans(size: 13, color: QColors.muted, height: 1.45)),
+                style: QType.sans(size: 13.5, color: QColors.muted, height: 1.45)),
           ),
         ],
       );

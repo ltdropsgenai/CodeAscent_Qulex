@@ -13,6 +13,7 @@ import '../services/voice.dart';
 import '../services/widget_service.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
+import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 import 'account_screen.dart';
 import 'game_screen.dart';
@@ -324,13 +325,13 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(height: 6),
           Text(Strings.t(locale, 'answerLangHint'),
-              style: QType.mono(size: 8.5, color: QColors.dim, spacing: 0.3, weight: FontWeight.w500),
+              style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.2, weight: FontWeight.w500),
               maxLines: 2),
           const SizedBox(height: 4),
           const Wordmark(size: 72),
           const SizedBox(height: 14),
           Text(Strings.t(locale, 'wordMastery'),
-              style: QType.mono(size: 10.5, color: QColors.coral, spacing: 3)),
+              style: QType.mono(size: 11.5, color: QColors.coral, spacing: 3)),
           const SizedBox(height: 10),
           Text(Strings.t(locale, 'tagline'),
               style: QType.serif(size: 23, weight: FontWeight.w500, color: QColors.ink, height: 1.25)),
@@ -348,7 +349,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 20),
           ],
           Text(Strings.t(locale, 'quickPlay').toUpperCase(),
-              style: QType.mono(size: 10, color: QColors.dim, spacing: 2.5)),
+              style: QType.mono(size: 11, color: QColors.muted, spacing: 2.5)),
           const SizedBox(height: 12),
           for (var i = 0; i < kTracks.length; i++)
             _TrackTile(
@@ -392,7 +393,7 @@ class _LangToggle extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: QColors.rule),
-        borderRadius: BorderRadius.circular(6),
+        borderRadius: BorderRadius.circular(kQRadius),
       ),
       child: Row(mainAxisSize: MainAxisSize.min, children: [
         for (final l in Strings.supported)
@@ -403,8 +404,8 @@ class _LangToggle extends StatelessWidget {
               color: locale == l ? QColors.coral : Colors.transparent,
               child: Text(l.toUpperCase(),
                   style: QType.mono(
-                      size: 11,
-                      color: locale == l ? const Color(0xFF160603) : QColors.dim,
+                      size: 12,
+                      color: locale == l ? const Color(0xFF160603) : QColors.muted,
                       spacing: 1)),
             ),
           ),
@@ -447,7 +448,7 @@ class _StatStrip extends StatelessWidget {
             const SizedBox(height: 3),
             Text(l.toUpperCase(),
                 textAlign: TextAlign.center,
-                style: QType.mono(size: 8.5, color: QColors.dim, spacing: 1.2)),
+                style: QType.mono(size: 10.5, color: QColors.muted, spacing: 1.2)),
           ]),
         ),
       );
@@ -462,14 +463,14 @@ class _DailyBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(6),
+      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: QColors.coral.withOpacity(0.06),
           border: Border.all(color: QColors.coral),
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
         child: Row(children: [
           Icon(done ? Icons.check_circle : Icons.calendar_today_outlined,
@@ -519,14 +520,14 @@ class _TrackTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 9),
       child: InkWell(
-        borderRadius: BorderRadius.circular(6),
+        borderRadius: BorderRadius.circular(kQRadius),
         onTap: onTap,
         child: Container(
           padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(
             color: QColors.panel,
             border: Border.all(color: selected ? QColors.coral : QColors.rule),
-            borderRadius: BorderRadius.circular(6),
+            borderRadius: BorderRadius.circular(kQRadius),
           ),
           child: Row(children: [
             Icon(_icon, color: QColors.coral, size: 20),
@@ -536,7 +537,7 @@ class _TrackTile extends StatelessWidget {
                 Text(_title, style: QType.serif(size: 16.5, color: QColors.cream)),
                 const SizedBox(height: 3),
                 Text(_sub.toUpperCase(),
-                    style: QType.mono(size: 10, color: QColors.dim, spacing: 1)),
+                    style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
               ]),
             ),
             _Radio(selected: selected),
@@ -581,14 +582,14 @@ class _ReviewButton extends StatelessWidget {
         : Strings.t(locale, 'learnNew');
     final sub = due > 0 ? Strings.t(locale, 'reviewSub') : Strings.t(locale, 'learnSub');
     return InkWell(
-      borderRadius: BorderRadius.circular(6),
+      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: QColors.panel,
           border: Border.all(color: due > 0 ? QColors.coral : QColors.rule),
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
         child: Row(children: [
           Icon(Icons.school_outlined, color: due > 0 ? QColors.coral : QColors.muted, size: 20),
@@ -597,7 +598,7 @@ class _ReviewButton extends StatelessWidget {
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(label, style: QType.serif(size: 16, color: QColors.cream)),
               const SizedBox(height: 2),
-              Text(sub, style: QType.mono(size: 10, color: QColors.dim, spacing: 1)),
+              Text(sub, style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
             ]),
           ),
           const Icon(Icons.chevron_right, color: QColors.dim),
@@ -615,14 +616,14 @@ class _MySetsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(6),
+      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: QColors.panel,
           border: Border.all(color: QColors.rule),
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
         child: Row(children: [
           const Icon(Icons.collections_bookmark_outlined,
@@ -634,7 +635,7 @@ class _MySetsButton extends StatelessWidget {
                   style: QType.serif(size: 16, color: QColors.cream)),
               const SizedBox(height: 2),
               Text(Strings.t(locale, 'mySetsShort'),
-                  style: QType.mono(size: 10, color: QColors.dim, spacing: 1)),
+                  style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
             ]),
           ),
           const Icon(Icons.chevron_right, color: QColors.dim),
@@ -658,7 +659,7 @@ class _CoralButton extends StatelessWidget {
           disabledBackgroundColor: QColors.coral.withOpacity(0.25),
           foregroundColor: const Color(0xFF160603),
           padding: const EdgeInsets.symmetric(vertical: 16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(kQRadius)),
         ),
         onPressed: onPressed,
         child: Text(label.toUpperCase(), style: QType.mono(size: 13, color: const Color(0xFF160603), spacing: 2)),
@@ -676,14 +677,14 @@ class _PlacementCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(6),
+      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: QColors.amber.withOpacity(0.07),
           border: Border.all(color: QColors.amber),
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
         child: Row(children: [
           const Icon(Icons.explore_outlined, color: QColors.amber, size: 20),
@@ -739,7 +740,7 @@ class _ModeChips extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isSel ? QColors.coral.withOpacity(0.12) : QColors.panel,
                   border: Border.all(color: isSel ? QColors.coral : QColors.rule),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(kQRadius),
                 ),
                 child: Column(children: [
                   Stack(
@@ -760,8 +761,8 @@ class _ModeChips extends StatelessWidget {
                   const SizedBox(height: 4),
                   Text(Strings.t(locale, items[k].$3).toUpperCase(),
                       style: QType.mono(
-                          size: 9,
-                          color: isSel ? QColors.coral : QColors.dim,
+                          size: 10.5,
+                          color: isSel ? QColors.coral : QColors.muted,
                           spacing: 1)),
                 ]),
               );
@@ -789,13 +790,13 @@ class _GoProChip extends StatelessWidget {
         decoration: BoxDecoration(
           color: QColors.coral.withOpacity(0.12),
           border: Border.all(color: QColors.coral),
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
         child: Row(mainAxisSize: MainAxisSize.min, children: [
           const Icon(Icons.workspace_premium, size: 13, color: QColors.coral),
           const SizedBox(width: 5),
           Text(Strings.t(locale, 'goPro').toUpperCase(),
-              style: QType.mono(size: 10, color: QColors.coral, spacing: 1.5)),
+              style: QType.mono(size: 11, color: QColors.coral, spacing: 1.5)),
         ]),
       ),
     );

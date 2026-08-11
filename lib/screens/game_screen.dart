@@ -8,6 +8,7 @@ import '../models/word.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
+import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 import 'pronounce_screen.dart';
 
@@ -124,9 +125,9 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return PopScope(
+    return PopScope<Object?>(
       canPop: false,
-      onPopInvoked: (didPop) {
+      onPopInvokedWithResult: (didPop, result) {
         if (didPop) return;
         _confirmExit(context);
       },
@@ -230,14 +231,14 @@ class _GameView extends StatelessWidget {
               const Icon(Icons.school_outlined, size: 13, color: QColors.coral),
               const SizedBox(width: 6),
               Text(Strings.t(locale, 'review'),
-                  style: QType.mono(size: 10, color: QColors.coral, spacing: 1.5)),
+                  style: QType.mono(size: 11, color: QColors.coral, spacing: 1.5)),
             ]),
           const Spacer(),
           // meta
           Row(children: [
             _DiffTag(difficulty: w.difficulty),
             const SizedBox(width: 12),
-            Text(w.pos.toUpperCase(), style: QType.mono(size: 10, color: QColors.dim, spacing: 2)),
+            Text(w.pos.toUpperCase(), style: QType.mono(size: 11, color: QColors.muted, spacing: 2)),
             if (locale != 'en') ...[
               const SizedBox(width: 12),
               _LangFlow(locale: locale, reverse: c.isReverse),
@@ -245,7 +246,7 @@ class _GameView extends StatelessWidget {
           ]),
           const SizedBox(height: 8),
           Text(Strings.t(locale, _askKey(c)).toUpperCase(),
-              style: QType.mono(size: 11, color: QColors.muted, spacing: 3)),
+              style: QType.mono(size: 11.5, color: QColors.muted, spacing: 3)),
           const SizedBox(height: 8),
           _prompt(c, w, g, locale, revealed),
           const SizedBox(height: 22),
@@ -281,7 +282,7 @@ class _GameView extends StatelessWidget {
                 icon: const Icon(Icons.check_circle_outline,
                     size: 15, color: QColors.dim),
                 label: Text(Strings.t(locale, 'knowIt').toUpperCase(),
-                    style: QType.mono(size: 10, color: QColors.dim, spacing: 1)),
+                    style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
               ),
             ),
           ],
@@ -361,7 +362,7 @@ class _DiffTag extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(bottom: 3),
       decoration: BoxDecoration(border: Border(bottom: BorderSide(color: col))),
-      child: Text(difficulty.toUpperCase(), style: QType.mono(size: 10, color: col, spacing: 2)),
+      child: Text(difficulty.toUpperCase(), style: QType.mono(size: 11, color: col, spacing: 2)),
     );
   }
 }
@@ -384,9 +385,9 @@ class _LangFlow extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
         decoration: BoxDecoration(
           border: Border.all(color: QColors.rule),
-          borderRadius: BorderRadius.circular(3),
+          borderRadius: BorderRadius.circular(kQRadius),
         ),
-        child: Text(tag, style: QType.mono(size: 9, color: QColors.dim, spacing: 1)),
+        child: Text(tag, style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
       ),
     );
   }
@@ -451,14 +452,14 @@ class _Option extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: InkWell(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(kQRadius),
           onTap: onTap,
           child: Container(
             padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               color: bg,
               border: Border.all(color: border),
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(kQRadius),
             ),
             child: Row(children: [
               Text(index >= 0 && index < 3 ? keys[index] : '?',
@@ -499,7 +500,7 @@ class _Reveal extends StatelessWidget {
         Row(children: [
           if (c.currentFlagged)
             Text(Strings.t(locale, 'reported').toUpperCase(),
-                style: QType.mono(size: 9.5, color: QColors.dim, spacing: 1))
+                style: QType.mono(size: 11, color: QColors.muted, spacing: 1))
           else
             TextButton.icon(
               style: TextButton.styleFrom(
@@ -518,7 +519,7 @@ class _Reveal extends StatelessWidget {
               },
               icon: const Icon(Icons.flag_outlined, size: 13, color: QColors.dim),
               label: Text(Strings.t(locale, 'reportItem').toUpperCase(),
-                  style: QType.mono(size: 9.5, color: QColors.dim, spacing: 1)),
+                  style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
             ),
           const Spacer(),
           TextButton.icon(
@@ -536,7 +537,7 @@ class _Reveal extends StatelessWidget {
             )),
             icon: const Icon(Icons.mic_none, size: 14, color: QColors.coral),
             label: Text(Strings.t(locale, 'practiceSay').toUpperCase(),
-                style: QType.mono(size: 9.5, color: QColors.coral, spacing: 1)),
+                style: QType.mono(size: 11, color: QColors.coral, spacing: 1)),
           ),
         ]),
       ]),
@@ -568,7 +569,7 @@ class _ResultView extends StatelessWidget {
           child: Column(children: [
             Text(Strings.t(locale, 'estRank').toUpperCase(),
                 textAlign: TextAlign.center,
-                style: QType.mono(size: 10, color: QColors.muted, spacing: 3)),
+                style: QType.mono(size: 11, color: QColors.muted, spacing: 3)),
             TweenAnimationBuilder<double>(
               tween: Tween(begin: 0.0, end: c.vocabRank.toDouble()),
               duration: const Duration(milliseconds: 900),
@@ -577,7 +578,7 @@ class _ResultView extends StatelessWidget {
                   Text('${v.round()}', style: QType.serif(size: 52, color: QColors.coral)),
             ),
             Text(Strings.t(locale, 'wordsYouKnow'),
-                style: QType.mono(size: 10, color: QColors.dim, spacing: 1)),
+                style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
             const SizedBox(height: 16),
             const Divider(color: QColors.rule, height: 1),
             const SizedBox(height: 16),
@@ -597,7 +598,7 @@ class _ResultView extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               side: const BorderSide(color: QColors.rule),
               padding: const EdgeInsets.symmetric(vertical: 16),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(kQRadius)),
             ),
             onPressed: onChangePath,
             child: Text(Strings.t(locale, 'changePath').toUpperCase(),
@@ -628,7 +629,7 @@ class _ResultView extends StatelessWidget {
   Widget _rstat(String n, String l) => Column(children: [
         Text(n, style: QType.serif(size: 24, color: QColors.cream)),
         const SizedBox(height: 2),
-        Text(l.toUpperCase(), style: QType.mono(size: 9, color: QColors.dim, spacing: 1.5)),
+        Text(l.toUpperCase(), style: QType.mono(size: 10.5, color: QColors.muted, spacing: 1.5)),
       ]);
 }
 
@@ -647,7 +648,7 @@ class _CoralBtn extends StatelessWidget {
           foregroundColor: enabled ? const Color(0xFF160603) : QColors.dim,
           disabledBackgroundColor: QColors.panel,
           padding: const EdgeInsets.symmetric(vertical: 16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(kQRadius)),
         ),
         onPressed: onPressed,
         child: Text(label.toUpperCase(),

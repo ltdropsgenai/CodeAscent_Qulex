@@ -3,22 +3,29 @@ import '../data/word_repository.dart';
 import '../l10n/strings.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
+import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 import 'home_screen.dart';
 
-/// First-launch intro: Qbit's differentiators, front and center. Shown once
-/// (gated by `appState.seenIntro`), then never again — this is a pitch to
-/// convert a fresh install into an active learner, not a tutorial to click
-/// through every time.
+/// Qbit's differentiators, front and center. On first launch this is gated
+/// behind the animated [IntroScreen] and shown once (`appState.seenIntro`),
+/// then never again automatically — but it stays reachable any time from
+/// Settings → About & legal → Replay welcome intro (pass [fromSettings]:
+/// true so the CTA just closes back to Settings instead of relaunching Home).
 class SplashScreen extends StatelessWidget {
-  final WordRepository repository;
-  const SplashScreen({super.key, required this.repository});
+  final WordRepository? repository;
+  final bool fromSettings;
+  const SplashScreen({super.key, this.repository, this.fromSettings = false});
 
   Future<void> _enter(BuildContext context) async {
+    if (fromSettings) {
+      if (context.mounted) Navigator.of(context).maybePop();
+      return;
+    }
     await appState.markIntroSeen();
     if (context.mounted) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => HomeScreen(repository: repository)),
+        MaterialPageRoute(builder: (_) => HomeScreen(repository: repository!)),
       );
     }
   }
@@ -34,7 +41,17 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Wordmark(size: 34),
+              Row(children: [
+                const Wordmark(size: 34),
+                if (fromSettings) ...[
+                  const Spacer(),
+                  GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: () => Navigator.of(context).maybePop(),
+                    child: const Icon(Icons.close, color: QColors.muted),
+                  ),
+                ],
+              ]),
               const Spacer(),
               Text(Strings.t(locale, 'splashHeadline'),
                   style: QType.serif(size: 34, weight: FontWeight.w600, color: QColors.cream, height: 1.12)),
@@ -55,7 +72,7 @@ class SplashScreen extends StatelessWidget {
                     backgroundColor: QColors.coral,
                     foregroundColor: const Color(0xFF160603),
                     padding: const EdgeInsets.symmetric(vertical: 17),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(kQRadius)),
                   ),
                   onPressed: () => _enter(context),
                   child: Text(Strings.t(locale, 'splashCta').toUpperCase(),
@@ -97,7 +114,7 @@ class _Point extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               border: Border.all(color: QColors.rule),
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(kQRadius),
             ),
             child: Icon(icon, size: 17, color: QColors.coral),
           ),

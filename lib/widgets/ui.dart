@@ -20,7 +20,7 @@ class QLabel extends StatelessWidget {
   Widget build(BuildContext context) => Padding(
         padding: padding,
         child: Text(text.toUpperCase(),
-            style: QType.mono(size: 10, color: QColors.dim, spacing: 2.5)),
+            style: QType.mono(size: 11, color: QColors.muted, spacing: 2.5)),
       );
 }
 
@@ -73,8 +73,8 @@ class QRow extends StatelessWidget {
               if (sub != null) ...[
                 const SizedBox(height: 3),
                 Text(sub!,
-                    style:
-                        QType.mono(size: 10, color: QColors.dim, spacing: 0.3)),
+                    style: QType.mono(
+                        size: 11.5, color: QColors.muted, spacing: 0.3)),
               ],
             ],
           ),
@@ -210,9 +210,9 @@ class QSegment extends StatelessWidget {
                 ),
                 child: Text(labels[i].toUpperCase(),
                     style: QType.mono(
-                        size: 9.5,
+                        size: 10.5,
                         spacing: 1,
-                        color: i == index ? QColors.coral : QColors.dim)),
+                        color: i == index ? QColors.coral : QColors.muted)),
               ),
             ),
           ),
@@ -263,7 +263,7 @@ class QButton extends StatelessWidget {
             const SizedBox(width: 8),
           ],
           Text(label.toUpperCase(),
-              style: QType.mono(size: 11, spacing: 1.5, color: fg)),
+              style: QType.mono(size: 12, spacing: 1.5, color: fg)),
         ],
       ),
     );
