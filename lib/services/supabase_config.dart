@@ -1,6 +1,6 @@
-/// Backend configuration for Qbit cloud sync.
+/// Backend configuration for Qulex cloud sync.
 ///
-/// Defaults point at the Qbit Supabase project. They can be overridden at build
+/// Defaults point at the Qulex Supabase project. They can be overridden at build
 /// time without editing source:
 ///   flutter run --dart-define=SUPABASE_URL=... --dart-define=SUPABASE_ANON_KEY=...
 ///

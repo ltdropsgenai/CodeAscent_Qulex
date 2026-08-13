@@ -170,7 +170,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   const SizedBox(height: 30),
 
                   // ── promise ──
-                  QLabel(Strings.t(locale, 'qbitPromise')),
+                  QLabel(Strings.t(locale, 'qulexPromise')),
                   _promise(Icons.lock_open, Strings.t(locale, 'promiseFree')),
                   const SizedBox(height: 14),
                   _promise(

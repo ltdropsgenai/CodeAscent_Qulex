@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Qbit palette — CodeAscent design language, Qbit's own coral / night-city world.
+/// Qulex palette — CodeAscent design language, Qulex's own coral / night-city world.
 class QColors {
   static const bg = Color(0xFF07070A);
   static const coral = Color(0xFFFF5A3C);
@@ -68,7 +68,7 @@ class QType {
       );
 }
 
-ThemeData buildQbitTheme() {
+ThemeData buildQulexTheme() {
   final base = ThemeData.dark(useMaterial3: true);
   return base.copyWith(
     scaffoldBackgroundColor: QColors.bg,

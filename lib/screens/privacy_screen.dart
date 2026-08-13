@@ -12,7 +12,7 @@ class PrivacyScreen extends StatelessWidget {
       children: [
         docNote('Last updated: August 2026'),
         docBody(
-            'Qbit is designed to respect your privacy. You can learn without an '
+            'Qulex is designed to respect your privacy. You can learn without an '
             'account, your data is never sold, and there are no third-party '
             'advertising trackers in the app.'),
         docHeading('What we store'),
@@ -21,7 +21,7 @@ class PrivacyScreen extends StatelessWidget {
             'streaks, and spaced-repetition schedule) and your app settings. '
             'This stays on your device unless you choose to sign in.'),
         docBody(
-            'If you sign in (Apple or Google): a Qbit account is created with a '
+            'If you sign in (Apple or Google): a Qulex account is created with a '
             'unique ID and the email associated with that sign-in, and a copy '
             'of your progress and your Pro status is stored on our secure '
             'backend so it survives reinstalls and syncs across your devices.'),
@@ -43,7 +43,7 @@ class PrivacyScreen extends StatelessWidget {
             'in-app account deletion is on the roadmap.'),
         docHeading('Children'),
         docBody(
-            'Qbit is not directed to children under 13, and we do not knowingly '
+            'Qulex is not directed to children under 13, and we do not knowingly '
             'collect data from them.'),
         docHeading('Changes & contact'),
         docBody(

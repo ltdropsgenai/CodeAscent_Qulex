@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "qbit" "\0"
+            VALUE "FileDescription", "qulex" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "qbit" "\0"
+            VALUE "InternalName", "qulex" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "qbit.exe" "\0"
-            VALUE "ProductName", "qbit" "\0"
+            VALUE "OriginalFilename", "qulex.exe" "\0"
+            VALUE "ProductName", "qulex" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

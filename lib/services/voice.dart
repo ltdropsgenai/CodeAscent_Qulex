@@ -56,7 +56,7 @@ class Voice {
   Future<Directory> _ensureCacheDir() async {
     if (_cacheDir != null) return _cacheDir!;
     final base = await getTemporaryDirectory();
-    final dir = Directory('${base.path}/qbit_tts_cache');
+    final dir = Directory('${base.path}/qulex_tts_cache');
     if (!await dir.exists()) await dir.create(recursive: true);
     return _cacheDir = dir;
   }

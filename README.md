@@ -1,4 +1,4 @@
-# Qbit — App Base (v0.1)
+# Qulex — App Base (v0.1)
 
 A timed vocabulary-quiz game. This is the **MVP base** from the build spec: the
 core loop, onboarding tracks, a progression-ready game controller, and the seed

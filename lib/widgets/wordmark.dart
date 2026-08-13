@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
 
-/// The "Qbit" wordmark: serif cream letters with a coral accent slash over the Q
+/// The "Qulex" wordmark: serif cream letters with a coral accent slash over the Q
 /// (echoes the CodeAscent / Lexicon brand-slash motif).
 class Wordmark extends StatelessWidget {
   final double size;
@@ -12,7 +12,7 @@ class Wordmark extends StatelessWidget {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        Text('Qbit',
+        Text('Qulex',
             style: QType.serif(size: size, color: QColors.cream, weight: FontWeight.w600)),
         Positioned(
           left: size * 0.40,

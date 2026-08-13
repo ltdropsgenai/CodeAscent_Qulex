@@ -1,10 +1,10 @@
-# Codemagic CI/CD for Qbit (CodeAscent)
+# Codemagic CI/CD for Qulex (CodeAscent)
 # Builds iOS + Android on a cloud Mac (no local Mac required) and ships to
 # TestFlight (internal) and Google Play internal testing.
 
 workflows:
   qbit-test:
-    name: Qbit — iOS + Android (test tracks)
+    name: Qulex — iOS + Android (test tracks)
     max_build_duration: 90
     instance_type: mac_mini_m2
     integrations:

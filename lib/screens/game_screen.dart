@@ -610,7 +610,7 @@ class _ResultView extends StatelessWidget {
           onPressed: () {
             Clipboard.setData(ClipboardData(
                 text:
-                    'Qbit · CodeAscent — I know ~${c.vocabRank} words 🧠 (${c.correctCount}/${c.total} this round)'));
+                    'Qulex · CodeAscent — I know ~${c.vocabRank} words 🧠 (${c.correctCount}/${c.total} this round)'));
             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: Text(Strings.t(locale, 'copied'),
                   style: QType.mono(size: 12, color: QColors.cream)),

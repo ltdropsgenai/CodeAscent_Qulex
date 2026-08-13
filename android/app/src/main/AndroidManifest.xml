@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
-        android:label="qbit"
+        android:label="qulex"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -46,11 +46,11 @@
             </intent-filter>
         </receiver>
         <!-- Home-screen word-of-the-moment widget -->
-        <receiver android:name=".QbitWidgetProvider" android:exported="true">
+        <receiver android:name=".QulexWidgetProvider" android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/qbit_widget_info"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/qulex_widget_info"/>
         </receiver>
     </application>
     <!-- Required to query activities that can process text, see:

@@ -6,9 +6,9 @@ import '../services/auth_service.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/wordmark.dart';
-import 'about_screen.dart' show kQbitVersion;
+import 'about_screen.dart' show kQulexVersion;
 
-/// Send feedback (bug or idea) to the Qbit backend. Requires a session (sign in,
+/// Send feedback (bug or idea) to the Qulex backend. Requires a session (sign in,
 /// or Continue as guest) because row-level security ties each note to its author.
 class FeedbackScreen extends StatefulWidget {
   const FeedbackScreen({super.key});
@@ -54,7 +54,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
         'user_id': uid,
         'kind': _kind,
         'message': text,
-        'app_version': kQbitVersion,
+        'app_version': kQulexVersion,
       });
       _snack(Strings.t(locale, 'feedbackThanks'));
       if (mounted) Navigator.of(context).maybePop();

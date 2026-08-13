@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/qbit_widget_bg"
+    android:background="@drawable/qulex_widget_bg"
     android:padding="14dp">
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="Qbit"
+        android:text="Qulex"
         android:textColor="#F4F1EA"
         android:textSize="22sp"
         android:textStyle="bold"

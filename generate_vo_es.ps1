@@ -1,4 +1,4 @@
-# Qbit reel narration (ES) -- TWO clips per word (question + answer), Spanish.
+# Qulex reel narration (ES) -- TWO clips per word (question + answer), Spanish.
 # Produces a separate QUESTION clip and ANSWER clip for each word so the mux can
 # place the answer exactly at the visual reveal. ElevenLabs -> local vo\ folder.
 # Spanish accents are sent as UTF-8 so they survive (no mojibake).

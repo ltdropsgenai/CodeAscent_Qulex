@@ -5,7 +5,7 @@ import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/wordmark.dart';
 
-/// Qbit Pro paywall — the monetization ladder.
+/// Qulex Pro paywall — the monetization ladder.
 ///
 /// Payment backend note: prices are shown statically here. On a mobile build,
 /// wire RevenueCat's `purchases_flutter` in a PurchaseService: init with the

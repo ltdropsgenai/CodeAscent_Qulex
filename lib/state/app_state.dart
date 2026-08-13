@@ -32,7 +32,7 @@ class AppState extends ChangeNotifier {
   /// Interval multiplier for the chosen intensity (relaxed reviews less often).
   double get intensityScale => const [2.0, 1.0, 0.5][reviewIntensity.clamp(0, 2)];
 
-  /// Whether the user has Qbit Pro. Currently persisted locally; on mobile this
+  /// Whether the user has Qulex Pro. Currently persisted locally; on mobile this
   /// gets driven by RevenueCat's "pro" entitlement (see PurchaseService drop-in).
   bool isPro = false;
 

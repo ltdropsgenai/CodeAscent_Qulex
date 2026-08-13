@@ -6,10 +6,10 @@ import '../state/app_state.dart';
 import '../theme.dart';
 import 'splash_screen.dart';
 
-/// Brief animated first-launch beat: the "Qbit" wordmark assembles (letters
+/// Brief animated first-launch beat: the "Qulex" wordmark assembles (letters
 /// settle in, then the coral slash swings across the Q), and once it has
 /// settled the "Word Mastery" subtitle scrolls up beneath it. After it plays
-/// out (or the player taps to skip) we hand off to [SplashScreen] for Qbit's
+/// out (or the player taps to skip) we hand off to [SplashScreen] for Qulex's
 /// bragging-rights pitch. This screen itself never sets `seenIntro` — only
 /// reaching the end of the splash screen does — so a killed app before that
 /// point simply replays this intro on next launch instead of losing it.
@@ -112,7 +112,7 @@ class _IntroScreenState extends State<IntroScreen>
   }
 }
 
-/// The "Qbit" mark assembling: cream letters settle first (scale + fade),
+/// The "Qulex" mark assembling: cream letters settle first (scale + fade),
 /// then the coral slash swings in over the Q from a wide angle down to its
 /// resting mark — echoing the static [Wordmark] used everywhere else.
 class _AssemblingMark extends StatelessWidget {
@@ -126,7 +126,7 @@ class _AssemblingMark extends StatelessWidget {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        Text('Qbit',
+        Text('Qulex',
             style: QType.serif(
                 size: _size, color: QColors.cream, weight: FontWeight.w600)),
         Positioned(

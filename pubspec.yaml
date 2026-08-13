@@ -1,5 +1,5 @@
-name: qbit
-description: "Qbit — a timed vocabulary quiz game (MVP base)."
+name: qulex
+description: "Qulex — a timed vocabulary quiz game (MVP base)."
 publish_to: "none"
 version: 0.1.0+1
 
@@ -37,8 +37,8 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/icon/qbit_icon_1024.png"
+  image_path: "assets/icon/qulex_icon_1024.png"
   remove_alpha_ios: true
-  adaptive_icon_background: "assets/icon/qbit_icon_bg.png"
-  adaptive_icon_foreground: "assets/icon/qbit_icon_fg.png"
+  adaptive_icon_background: "assets/icon/qulex_icon_bg.png"
+  adaptive_icon_foreground: "assets/icon/qulex_icon_fg.png"
   min_sdk_android: 21

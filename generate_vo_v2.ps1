@@ -1,4 +1,4 @@
-# Qbit reel narration v2 (EN) -- TWO clips per word (question + answer).
+# Qulex reel narration v2 (EN) -- TWO clips per word (question + answer).
 # Produces a separate QUESTION clip and ANSWER clip for each word so the mux can
 # place the answer exactly at the visual reveal. ElevenLabs -> local vo\ folder.
 # Prereq: an ElevenLabs API key. Get one at https://elevenlabs.io (Profile -> API Keys).

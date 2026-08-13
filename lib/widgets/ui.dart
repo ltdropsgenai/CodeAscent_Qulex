@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
 
-/// Qbit editorial UI kit.
+/// Qulex editorial UI kit.
 /// ---------------------------------------------------------------------------
 /// Structure comes from hairline rules and type, never from rounded filled
 /// boxes. Corners are squared (a 2px hint at most), coral touches only the one

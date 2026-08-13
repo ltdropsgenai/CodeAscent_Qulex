@@ -1,4 +1,4 @@
-# Qbit reel narration — generates ElevenLabs voiceovers into a local folder.
+# Qulex reel narration — generates ElevenLabs voiceovers into a local folder.
 # Prereq: an ElevenLabs API key. Get one at https://elevenlabs.io (Profile -> API Keys).
 # Usage (PowerShell):  $env:ELEVENLABS_API_KEY="sk_..."; .\generate_vo.ps1
 $ErrorActionPreference = "Stop"

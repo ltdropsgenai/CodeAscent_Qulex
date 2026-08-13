@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/doc_scaffold.dart';
 
 /// A public changelog — WordUp's most-cited failing was silent, feature-removing
-/// updates. Qbit keeps this visible and honest.
+/// updates. Qulex keeps this visible and honest.
 class ChangelogScreen extends StatelessWidget {
   const ChangelogScreen({super.key});
 
@@ -13,7 +13,7 @@ class ChangelogScreen extends StatelessWidget {
       title: "What's new",
       children: [
         docHeading('0.1.0 — beta'),
-        docNote('The first Qbit.'),
+        docNote('The first Qulex.'),
         docBody(
             '• 2,200+ words across English, Spanish, Portuguese, Italian, and '
             'French — every word with a definition and an example sentence.\n'

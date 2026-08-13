@@ -42,8 +42,8 @@ class WidgetService {
       await HomeWidget.saveWidgetData<String>(
           'meaning', w.glossFor(locale).correct);
       await HomeWidget.updateWidget(
-        androidName: 'QbitWidgetProvider',
-        iOSName: 'QbitWidget',
+        androidName: 'QulexWidgetProvider',
+        iOSName: 'QulexWidget',
       );
     } catch (_) {/* best-effort */}
   }

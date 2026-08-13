@@ -33,18 +33,18 @@ Future<void> main() async {
   // the home screen once words + progress are loaded.
   await NotificationService.instance.init();
   await WidgetService.instance.init();
-  runApp(const QbitApp());
+  runApp(const QulexApp());
 }
 
-class QbitApp extends StatelessWidget {
-  const QbitApp({super.key});
+class QulexApp extends StatelessWidget {
+  const QulexApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Qbit',
+      title: 'Qulex',
       debugShowCheckedModeBanner: false,
-      theme: buildQbitTheme(),
+      theme: buildQulexTheme(),
       // Constrain to a phone-width column so desktop web previews look right;
       // on a real phone the column is simply full width.
       builder: (context, child) => ColoredBox(

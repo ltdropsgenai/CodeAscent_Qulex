@@ -1,6 +1,6 @@
 {
-    "name": "qbit",
-    "short_name": "qbit",
+    "name": "qulex",
+    "short_name": "qulex",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

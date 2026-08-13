@@ -8,7 +8,7 @@ import '../theme.dart';
 import '../widgets/wordmark.dart';
 
 /// Sign-in + cloud-sync surface. Progress and Pro live locally first; signing
-/// in mirrors them to the Qbit backend so they survive reinstalls and move
+/// in mirrors them to the Qulex backend so they survive reinstalls and move
 /// across devices.
 class AccountScreen extends StatefulWidget {
   const AccountScreen({super.key});

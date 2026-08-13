@@ -9,7 +9,7 @@ import es.antonborri.home_widget.HomeWidgetProvider
 
 /// Home-screen widget: shows a "word of the moment" from the learner's pile.
 /// Data is written from Flutter via the home_widget plugin.
-class QbitWidgetProvider : HomeWidgetProvider() {
+class QulexWidgetProvider : HomeWidgetProvider() {
     override fun onUpdate(
         context: Context,
         appWidgetManager: AppWidgetManager,
@@ -17,8 +17,8 @@ class QbitWidgetProvider : HomeWidgetProvider() {
         widgetData: SharedPreferences
     ) {
         appWidgetIds.forEach { widgetId ->
-            val views = RemoteViews(context.packageName, R.layout.qbit_widget).apply {
-                val word = widgetData.getString("word", "Qbit") ?: "Qbit"
+            val views = RemoteViews(context.packageName, R.layout.qulex_widget).apply {
+                val word = widgetData.getString("word", "Qulex") ?: "Qulex"
                 val meaning = widgetData.getString("meaning", "Tap to learn a word") ?: ""
                 setTextViewText(R.id.widget_word, word)
                 setTextViewText(R.id.widget_meaning, meaning)

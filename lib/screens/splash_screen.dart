@@ -7,7 +7,7 @@ import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 import 'home_screen.dart';
 
-/// Qbit's differentiators, front and center. On first launch this is gated
+/// Qulex's differentiators, front and center. On first launch this is gated
 /// behind the animated [IntroScreen] and shown once (`appState.seenIntro`),
 /// then never again automatically — but it stays reachable any time from
 /// Settings → About & legal → Replay welcome intro (pass [fromSettings]:

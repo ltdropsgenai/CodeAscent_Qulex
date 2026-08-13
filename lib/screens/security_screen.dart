@@ -11,7 +11,7 @@ class SecurityScreen extends StatelessWidget {
       title: 'Security',
       children: [
         docBody(
-            'Qbit is built local-first, and the cloud layer is designed so that '
+            'Qulex is built local-first, and the cloud layer is designed so that '
             'you — and only you — can reach your data.'),
         docHeading('In transit'),
         docBody(
@@ -25,7 +25,7 @@ class SecurityScreen extends StatelessWidget {
             'server-side, so it cannot be spoofed on the device.'),
         docHeading('Sign-in'),
         docBody(
-            'Sign-in uses Apple and Google. Qbit never sees or stores a '
+            'Sign-in uses Apple and Google. Qulex never sees or stores a '
             'password — authentication is handled by the provider, and we '
             'receive only a secure token and your basic profile.'),
         docHeading('Local-first resilience'),
