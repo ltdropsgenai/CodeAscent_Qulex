@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_bioavailability",
+    "lang": "en",
+    "word": "bioavailability",
+    "pos": "noun",
+    "freqRank": 20760,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fraction of an administered drug that reaches the bloodstream in active, unchanged form",
+        "distractors": [
+          "the total amount of a drug that can be stored safely in body fat",
+          "the speed at which a drug crystallizes once it leaves solution"
+        ],
+        "example": {
+          "text": "Because grapefruit juice inhibits gut enzymes, it can raise the oral bioavailability of certain calcium channel blockers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agonist",
+    "lang": "en",
+    "word": "agonist",
+    "pos": "noun",
+    "freqRank": 28820,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that binds a receptor and activates it to produce a biological response",
+        "distractors": [
+          "a substance that permanently destroys a receptor after binding",
+          "a molecule that only binds receptors located inside the cell nucleus"
+        ],
+        "example": {
+          "text": "Morphine acts as an agonist at mu-opioid receptors to relieve pain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antagonist",
+    "lang": "en",
+    "word": "antagonist",
+    "pos": "noun",
+    "freqRank": 22060,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that binds a receptor without activating it and thereby blocks the receptor's natural ligand",
+        "distractors": [
+          "a substance that speeds up a drug's absorption from the gut",
+          "a substance that converts a prodrug into its active form"
+        ],
+        "example": {
+          "text": "Naloxone is an antagonist that displaces opioids from their receptors during an overdose.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_half_life",
+    "lang": "en",
+    "word": "half-life",
+    "pos": "noun",
+    "freqRank": 44290,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the time required for the plasma concentration of a drug to fall by half",
+        "distractors": [
+          "the time it takes for a drug to be fully absorbed into the bloodstream",
+          "the interval between two consecutive doses in a treatment regimen"
+        ],
+        "example": {
+          "text": "A drug with a short half-life must usually be dosed more frequently to maintain steady blood levels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_titration",
+    "lang": "en",
+    "word": "titration",
+    "pos": "noun",
+    "freqRank": 35450,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual adjustment of a drug dose upward or downward until the desired clinical effect is reached with minimal side effects",
+        "distractors": [
+          "the process of dissolving a tablet completely in gastric fluid",
+          "the binding of a drug to plasma proteins in the bloodstream"
+        ],
+        "example": {
+          "text": "The physician began careful titration of the anticoagulant, checking clotting times after each dose change.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacokinetics",
+    "lang": "en",
+    "word": "pharmacokinetics",
+    "pos": "noun",
+    "freqRank": 25180,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the branch of pharmacology concerned with how the body absorbs, distributes, metabolizes, and eliminates a drug",
+        "distractors": [
+          "the study of how a drug produces its effect at the molecular level",
+          "the classification system used to rank drugs by their addictive potential"
+        ],
+        "example": {
+          "text": "Understanding the pharmacokinetics of a new antibiotic helps determine how often it should be dosed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacodynamics",
+    "lang": "en",
+    "word": "pharmacodynamics",
+    "pos": "noun",
+    "freqRank": 43510,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the branch of pharmacology concerned with how a drug produces its biological and physiological effects on the body",
+        "distractors": [
+          "the study of how quickly a drug is cleared from the kidneys",
+          "the process by which a drug is packaged and labeled for distribution"
+        ],
+        "example": {
+          "text": "The pharmacodynamics of the sedative explained why it caused such profound respiratory depression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metabolite",
+    "lang": "en",
+    "word": "metabolite",
+    "pos": "noun",
+    "freqRank": 44420,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compound produced when the body chemically alters a drug, which may be active, inactive, or toxic",
+        "distractors": [
+          "a synthetic filler added to a tablet to bulk out its size",
+          "the outer coating applied to a capsule to delay its dissolution"
+        ],
+        "example": {
+          "text": "One metabolite of the painkiller retains significant analgesic activity even after the parent drug is cleared.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_clearance",
+    "lang": "en",
+    "word": "clearance",
+    "pos": "noun",
+    "freqRank": 29990,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the volume of blood or plasma from which a drug is completely removed per unit of time",
+        "distractors": [
+          "the total dose of a drug administered over the course of treatment",
+          "the concentration of a drug remaining in tissue after a single dose"
+        ],
+        "example": {
+          "text": "Reduced kidney function lowers the clearance of many drugs, raising the risk of accumulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_first_pass_metabolism",
+    "lang": "en",
+    "word": "first-pass metabolism",
+    "pos": "noun",
+    "freqRank": 22190,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reduction in an orally administered drug's concentration by liver enzymes before it reaches systemic circulation",
+        "distractors": [
+          "the initial binding of a drug to its target receptor immediately after injection",
+          "the breakdown of a drug that occurs only after it has left the bloodstream through the kidneys"
+        ],
+        "example": {
+          "text": "Because of extensive first-pass metabolism, some drugs must be given by injection rather than by mouth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_therapeutic_index",
+    "lang": "en",
+    "word": "therapeutic index",
+    "pos": "noun",
+    "freqRank": 41040,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio between a drug's toxic dose and its effective dose, indicating its margin of safety",
+        "distractors": [
+          "the average number of prescriptions written for a drug each year",
+          "the score assigned to a drug based on patient satisfaction surveys"
+        ],
+        "example": {
+          "text": "Warfarin has a narrow therapeutic index, so its dose must be monitored closely to avoid bleeding or clotting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_potency",
+    "lang": "en",
+    "word": "potency",
+    "pos": "noun",
+    "freqRank": 22450,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of how much of a drug is required to produce a given effect, with a more potent drug needing a smaller dose",
+        "distractors": [
+          "the maximum effect a drug is capable of producing at any dose",
+          "the length of time a drug remains active in the bloodstream"
+        ],
+        "example": {
+          "text": "Fentanyl's extremely high potency means only a tiny dose is needed to achieve pain relief.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_efficacy",
+    "lang": "en",
+    "word": "efficacy",
+    "pos": "noun",
+    "freqRank": 40390,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the maximum effect a drug can produce, regardless of the dose given",
+        "distractors": [
+          "the smallest dose of a drug that produces any measurable response",
+          "the percentage of patients who experience side effects from a drug"
+        ],
+        "example": {
+          "text": "Although both drugs bind the same receptor, one has greater efficacy in relieving severe pain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_affinity",
+    "lang": "en",
+    "word": "affinity",
+    "pos": "noun",
+    "freqRank": 27390,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the strength with which a drug binds to its receptor",
+        "distractors": [
+          "the rate at which a drug is excreted unchanged in urine",
+          "the number of receptor subtypes a single drug can activate"
+        ],
+        "example": {
+          "text": "The new compound was designed to have higher affinity for the target receptor than the original drug.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_receptor",
+    "lang": "en",
+    "word": "receptor",
+    "pos": "noun",
+    "freqRank": 37140,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a specific protein molecule on or in a cell that binds a drug or signaling molecule and triggers a cellular response",
+        "distractors": [
+          "a enzyme that breaks a drug down into inactive fragments",
+          "a transport protein that carries a drug across the intestinal wall"
+        ],
+        "example": {
+          "text": "Beta-blockers work by binding to the beta-adrenergic receptor and preventing its activation by adrenaline.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioaccumulation",
+    "lang": "en",
+    "word": "bioaccumulation",
+    "pos": "noun",
+    "freqRank": 26220,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual buildup of a substance within an organism because intake exceeds the rate of elimination",
+        "distractors": [
+          "the sudden release of a stored toxin into the bloodstream after fasting",
+          "the process by which a drug is broken down by gut bacteria before absorption"
+        ],
+        "example": {
+          "text": "Certain heavy metals undergo bioaccumulation in the liver and kidneys over years of low-level exposure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biotransformation",
+    "lang": "en",
+    "word": "biotransformation",
+    "pos": "noun",
+    "freqRank": 39870,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the chemical alteration of a drug by the body's enzymes, typically to make it easier to excrete",
+        "distractors": [
+          "the physical breakdown of a tablet into smaller particles in the stomach",
+          "the transfer of a drug from the bloodstream into breast milk"
+        ],
+        "example": {
+          "text": "Hepatic biotransformation converts the lipophilic drug into a water-soluble compound that the kidneys can excrete.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytochrome",
+    "lang": "en",
+    "word": "cytochrome",
+    "pos": "noun",
+    "freqRank": 25960,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a family of heme-containing liver enzymes, including the P450 family, that chemically oxidize drugs to prepare them for elimination",
+        "distractors": [
+          "a protein that transports oxygen from the lungs to peripheral tissues",
+          "a receptor found exclusively on the surface of white blood cells"
+        ],
+        "example": {
+          "text": "Several antidepressants inhibit a specific cytochrome enzyme, slowing the metabolism of other co-administered drugs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_teratogen",
+    "lang": "en",
+    "word": "teratogen",
+    "pos": "noun",
+    "freqRank": 21150,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance capable of causing structural or functional abnormalities in a developing embryo or fetus",
+        "distractors": [
+          "a substance that increases a person's tolerance to alcohol over time",
+          "a compound used to sterilize surgical instruments"
+        ],
+        "example": {
+          "text": "Because it is a known teratogen, the acne medication carries strict warnings against use during pregnancy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mutagen",
+    "lang": "en",
+    "word": "mutagen",
+    "pos": "noun",
+    "freqRank": 34930,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance capable of causing a permanent change in an organism's genetic material",
+        "distractors": [
+          "a substance that reverses genetic mutations after they occur",
+          "an inactive ingredient added to stabilize a drug's genetic testing sample"
+        ],
+        "example": {
+          "text": "Exposure to certain industrial solvents is thought to act as a mutagen in laboratory animal studies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_carcinogen",
+    "lang": "en",
+    "word": "carcinogen",
+    "pos": "noun",
+    "freqRank": 41560,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance capable of causing or promoting the development of cancer",
+        "distractors": [
+          "a substance that shrinks existing tumors without affecting healthy cells",
+          "a compound used to visualize tumors during medical imaging"
+        ],
+        "example": {
+          "text": "Long-term exposure to the industrial chemical was later classified as a probable human carcinogen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenobiotic",
+    "lang": "en",
+    "word": "xenobiotic",
+    "pos": "noun",
+    "freqRank": 38830,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemical compound, such as a drug or pollutant, that is foreign to a living organism",
+        "distractors": [
+          "a naturally occurring hormone produced by the adrenal gland",
+          "an antibody manufactured to target a specific bacterial toxin"
+        ],
+        "example": {
+          "text": "The liver's enzyme systems evolved primarily to detoxify plant-derived xenobiotics encountered in the diet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hepatotoxicity",
+    "lang": "en",
+    "word": "hepatotoxicity",
+    "pos": "noun",
+    "freqRank": 39220,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "damage to the liver caused by a drug, chemical, or other toxic substance",
+        "distractors": [
+          "excessive bleeding caused by a drug's effect on blood clotting",
+          "a drop in blood pressure caused by rapid intravenous administration"
+        ],
+        "example": {
+          "text": "Routine liver function tests are ordered during treatment to monitor for hepatotoxicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nephrotoxicity",
+    "lang": "en",
+    "word": "nephrotoxicity",
+    "pos": "noun",
+    "freqRank": 24400,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "damage to the kidneys caused by a drug, chemical, or other toxic substance",
+        "distractors": [
+          "a buildup of fluid in the lungs caused by heart failure",
+          "an allergic skin rash triggered by sun exposure during treatment"
+        ],
+        "example": {
+          "text": "Certain antibiotics carry a risk of nephrotoxicity, especially in patients with pre-existing kidney disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neurotoxicity",
+    "lang": "en",
+    "word": "neurotoxicity",
+    "pos": "noun",
+    "freqRank": 35840,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "damage to nerve cells or the nervous system caused by a drug, chemical, or other toxic substance",
+        "distractors": [
+          "inflammation of the joints caused by prolonged drug use",
+          "a decrease in white blood cell count caused by chemotherapy"
+        ],
+        "example": {
+          "text": "Chronic exposure to the pesticide was linked to neurotoxicity, including tremors and memory loss.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cardiotoxicity",
+    "lang": "en",
+    "word": "cardiotoxicity",
+    "pos": "noun",
+    "freqRank": 35060,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "damage to the heart's structure or function caused by a drug, chemical, or other toxic substance",
+        "distractors": [
+          "a sudden allergic reaction confined to the skin",
+          "impaired clotting caused by a reduction in platelet count"
+        ],
+        "example": {
+          "text": "Some chemotherapy agents carry a known risk of cardiotoxicity, requiring regular monitoring of heart function.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anaphylaxis",
+    "lang": "en",
+    "word": "anaphylaxis",
+    "pos": "noun",
+    "freqRank": 34150,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a severe, rapid-onset, potentially life-threatening allergic reaction affecting multiple body systems",
+        "distractors": [
+          "a mild, localized skin reaction to a topical medication",
+          "a gradual decline in kidney function following repeated drug exposure"
+        ],
+        "example": {
+          "text": "The patient required immediate epinephrine after developing anaphylaxis to the antibiotic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synergism",
+    "lang": "en",
+    "word": "synergism",
+    "pos": "noun",
+    "freqRank": 25310,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an interaction in which the combined effect of two drugs is greater than the sum of their individual effects",
+        "distractors": [
+          "an interaction in which one drug completely blocks the action of another",
+          "the process by which two drugs are manufactured together in a single tablet"
+        ],
+        "example": {
+          "text": "The synergism between the two antibiotics allowed for lower doses of each while maintaining effectiveness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tolerance",
+    "lang": "en",
+    "word": "tolerance",
+    "pos": "noun",
+    "freqRank": 20890,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a diminished response to a drug after repeated exposure, requiring larger doses to achieve the same effect",
+        "distractors": [
+          "an allergic sensitivity that develops after a single exposure to a drug",
+          "the maximum single dose of a drug that can be safely administered"
+        ],
+        "example": {
+          "text": "Patients on long-term opioid therapy often develop tolerance and need dose increases over time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tachyphylaxis",
+    "lang": "en",
+    "word": "tachyphylaxis",
+    "pos": "noun",
+    "freqRank": 38050,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rapid, short-term decrease in response to a drug occurring after repeated doses given in quick succession",
+        "distractors": [
+          "a slow, permanent loss of receptor sensitivity that develops over years",
+          "an increase in drug potency after repeated administration"
+        ],
+        "example": {
+          "text": "The nasal decongestant's effect diminished sharply after just a few days, an example of tachyphylaxis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dependence",
+    "lang": "en",
+    "word": "dependence",
+    "pos": "noun",
+    "freqRank": 37010,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a physiological state in which the body has adapted to a drug and requires continued exposure to avoid withdrawal symptoms",
+        "distractors": [
+          "a legal classification determining whether a drug requires a prescription",
+          "the process by which a drug is bound to plasma proteins"
+        ],
+        "example": {
+          "text": "Physical dependence on the sedative developed after several weeks of continuous use.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioequivalence",
+    "lang": "en",
+    "word": "bioequivalence",
+    "pos": "noun",
+    "freqRank": 29080,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the demonstration that two drug formulations release their active ingredient into the bloodstream at a similar rate and extent",
+        "distractors": [
+          "the requirement that a drug produce identical side effects in every patient",
+          "the process of testing a drug's stability under varying storage temperatures"
+        ],
+        "example": {
+          "text": "Generic manufacturers must prove bioequivalence to the original brand-name product before approval.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_formulary",
+    "lang": "en",
+    "word": "formulary",
+    "pos": "noun",
+    "freqRank": 24660,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an approved list of medications, along with guidance on their use, maintained by a hospital or health plan",
+        "distractors": [
+          "a laboratory notebook recording the results of drug trials",
+          "a legal document authorizing a pharmacist to dispense controlled substances"
+        ],
+        "example": {
+          "text": "The hospital's formulary restricted use of the expensive antibiotic to cases of confirmed resistant infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_excipient",
+    "lang": "en",
+    "word": "excipient",
+    "pos": "noun",
+    "freqRank": 28300,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inactive substance combined with a drug's active ingredient to aid its manufacture, stability, or delivery",
+        "distractors": [
+          "the active chemical responsible for a drug's therapeutic effect",
+          "a byproduct formed when a drug is metabolized in the liver"
+        ],
+        "example": {
+          "text": "Lactose is a common excipient used as a filler in tablet formulations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prodrug",
+    "lang": "en",
+    "word": "prodrug",
+    "pos": "noun",
+    "freqRank": 33890,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pharmacologically inactive compound that is converted into its active form after being metabolized in the body",
+        "distractors": [
+          "a drug that has been withdrawn from the market due to safety concerns",
+          "a drug formulated specifically for use before surgery"
+        ],
+        "example": {
+          "text": "Codeine functions as a prodrug that the liver converts into morphine to produce pain relief.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_steady_state",
+    "lang": "en",
+    "word": "steady state",
+    "pos": "noun",
+    "freqRank": 27260,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the condition in which a drug's rate of administration equals its rate of elimination, so its plasma concentration remains stable",
+        "distractors": [
+          "the point at which a drug is completely eliminated from the body",
+          "the first measurable rise in plasma drug concentration after a single dose"
+        ],
+        "example": {
+          "text": "It typically takes about five half-lives of regular dosing for a drug to reach steady state.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_loading_dose",
+    "lang": "en",
+    "word": "loading dose",
+    "pos": "noun",
+    "freqRank": 28430,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an initial, larger-than-usual dose given to rapidly achieve a target drug concentration in the blood",
+        "distractors": [
+          "the final dose given at the end of a treatment course to taper off a drug",
+          "a reduced dose given to patients with impaired kidney function"
+        ],
+        "example": {
+          "text": "A loading dose of the antiarrhythmic drug was given intravenously to quickly control the irregular heartbeat.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_maintenance_dose",
+    "lang": "en",
+    "word": "maintenance dose",
+    "pos": "noun",
+    "freqRank": 33630,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dose administered after a loading dose to keep a drug's plasma concentration within the therapeutic range",
+        "distractors": [
+          "the very first dose given to a patient before any blood tests are performed",
+          "an emergency dose given only in the event of a severe adverse reaction"
+        ],
+        "example": {
+          "text": "Once the loading dose took effect, the patient was switched to a lower maintenance dose taken daily.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_volume_of_distribution",
+    "lang": "en",
+    "word": "volume of distribution",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a theoretical value relating the total amount of drug in the body to its concentration in the plasma",
+        "distractors": [
+          "the physical size of the container used to store a liquid medication",
+          "the surface area of the gut available for drug absorption"
+        ],
+        "example": {
+          "text": "A drug with a very large volume of distribution tends to concentrate heavily in tissues rather than remaining in the blood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_therapeutic_window",
+    "lang": "en",
+    "word": "therapeutic window",
+    "pos": "noun",
+    "freqRank": 35970,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the range of drug concentrations between the minimum level needed for effect and the level that causes toxicity",
+        "distractors": [
+          "the time of day when a drug is most effective if taken",
+          "the period during a clinical trial when new patients can be enrolled"
+        ],
+        "example": {
+          "text": "Lithium has a narrow therapeutic window, so blood levels must be checked regularly to avoid toxicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antidote",
+    "lang": "en",
+    "word": "antidote",
+    "pos": "noun",
+    "freqRank": 34670,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance administered to counteract the effects of a specific poison or toxin",
+        "distractors": [
+          "a substance that enhances the absorption of a co-administered drug",
+          "a preservative added to prevent bacterial growth in a liquid medication"
+        ],
+        "example": {
+          "text": "Naloxone serves as an antidote for opioid overdose, rapidly reversing respiratory depression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chelation",
+    "lang": "en",
+    "word": "chelation",
+    "pos": "noun",
+    "freqRank": 41820,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemical process in which an agent binds metal ions so they can be safely removed from the body",
+        "distractors": [
+          "the process of coating a tablet to protect it from stomach acid",
+          "the binding of a drug to red blood cells during circulation"
+        ],
+        "example": {
+          "text": "Chelation therapy is used to treat severe lead poisoning by helping the body excrete the metal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_detoxification",
+    "lang": "en",
+    "word": "detoxification",
+    "pos": "noun",
+    "freqRank": 29470,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the physiological process of removing or neutralizing a poisonous or harmful substance from the body",
+        "distractors": [
+          "the process of converting an inactive prodrug into its active form",
+          "the gradual buildup of tolerance to a drug's sedative effects"
+        ],
+        "example": {
+          "text": "Medical detoxification from alcohol is often supervised to manage dangerous withdrawal symptoms safely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biomarker",
+    "lang": "en",
+    "word": "biomarker",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measurable biological indicator used to assess a drug's effect, a disease state, or exposure to a toxin",
+        "distractors": [
+          "a warning label required on all prescription medication packaging",
+          "a synthetic compound used to preserve blood samples for later testing"
+        ],
+        "example": {
+          "text": "Elevated liver enzymes served as a biomarker for early drug-induced liver injury in the trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacovigilance",
+    "lang": "en",
+    "word": "pharmacovigilance",
+    "pos": "noun",
+    "freqRank": 36100,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ongoing monitoring, collection, and evaluation of information about adverse drug effects after a medicine reaches the market",
+        "distractors": [
+          "the process of testing a new drug's safety before its first clinical trial",
+          "the pricing strategy pharmaceutical companies use when launching a new product"
+        ],
+        "example": {
+          "text": "Pharmacovigilance programs identified a rare cardiac side effect only after the drug had been on the market for years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contraindication",
+    "lang": "en",
+    "word": "contraindication",
+    "pos": "noun",
+    "freqRank": 32850,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a specific condition or factor that makes the use of a particular drug or treatment inadvisable",
+        "distractors": [
+          "a listed benefit that a drug is officially approved to treat",
+          "a recommended combination of two drugs known to work well together"
+        ],
+        "example": {
+          "text": "Severe kidney impairment is a contraindication for that particular pain medication.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polypharmacy",
+    "lang": "en",
+    "word": "polypharmacy",
+    "pos": "noun",
+    "freqRank": 30380,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the concurrent use of multiple medications by a single patient, which increases the risk of drug interactions",
+        "distractors": [
+          "the practice of prescribing a single drug for multiple unrelated conditions",
+          "the process of combining several active ingredients into one manufactured tablet"
+        ],
+        "example": {
+          "text": "Polypharmacy is especially common among elderly patients managing several chronic conditions at once.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross_reactivity",
+    "lang": "en",
+    "word": "cross-reactivity",
+    "pos": "noun",
+    "freqRank": 34020,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phenomenon in which an antibody, drug, or immune response directed at one substance also reacts with a structurally similar substance",
+        "distractors": [
+          "the tendency of two drugs to cancel out each other's therapeutic effects entirely",
+          "the process by which a drug crosses the blood-brain barrier"
+        ],
+        "example": {
+          "text": "Patients allergic to penicillin sometimes show cross-reactivity to related antibiotics due to their similar chemical structure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunogenicity",
+    "lang": "en",
+    "word": "immunogenicity",
+    "pos": "noun",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the capacity of a drug or foreign substance to provoke an immune response in the body",
+        "distractors": [
+          "the ability of a drug to suppress the immune system entirely",
+          "the speed at which a vaccine is metabolized after injection"
+        ],
+        "example": {
+          "text": "Biologic drugs are monitored for immunogenicity, since patients can develop antibodies that reduce their effectiveness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioassay",
+    "lang": "en",
+    "word": "bioassay",
+    "pos": "noun",
+    "freqRank": 36880,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a laboratory method that measures the biological activity of a substance using living cells, tissue, or organisms",
+        "distractors": [
+          "a chemical test that measures a drug's exact molecular weight",
+          "a legal review process required before a drug patent is granted"
+        ],
+        "example": {
+          "text": "Researchers used a bioassay on cultured cells to determine the new compound's relative potency.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacophore",
+    "lang": "en",
+    "word": "pharmacophore",
+    "pos": "noun",
+    "freqRank": 22580,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the specific three-dimensional arrangement of molecular features required for a compound to bind a target and trigger a biological response",
+        "distractors": [
+          "the packaging insert that lists a drug's approved uses and warnings",
+          "a class of drugs derived exclusively from natural plant sources"
+        ],
+        "example": {
+          "text": "Medicinal chemists mapped the pharmacophore of the enzyme inhibitor to guide the design of related compounds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_partial_agonist",
+    "lang": "en",
+    "word": "partial agonist",
+    "pos": "noun",
+    "freqRank": 37530,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a drug that binds a receptor and produces a submaximal response even when all receptors are occupied",
+        "distractors": [
+          "a drug that binds a receptor but produces no biological response whatsoever",
+          "a drug that binds two different receptor types simultaneously"
+        ],
+        "example": {
+          "text": "Buprenorphine is a partial agonist at opioid receptors, producing a ceiling effect on respiratory depression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inverse_agonist",
+    "lang": "en",
+    "word": "inverse agonist",
+    "pos": "noun",
+    "freqRank": 32720,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a drug that binds a receptor and reduces its baseline activity below the level seen with no drug present",
+        "distractors": [
+          "a drug that binds a receptor and produces the same maximal effect as a full agonist",
+          "a drug that reverses the effects of an overdose by accelerating drug clearance"
+        ],
+        "example": {
+          "text": "Some inverse agonists at histamine receptors actively suppress baseline receptor signaling rather than simply blocking it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_downregulation",
+    "lang": "en",
+    "word": "downregulation",
+    "pos": "noun",
+    "freqRank": 44160,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cell's reduction in the number or sensitivity of its receptors, often occurring after prolonged exposure to an agonist",
+        "distractors": [
+          "an increase in enzyme activity following exposure to an inducing drug",
+          "a temporary rise in blood pressure following intravenous drug administration"
+        ],
+        "example": {
+          "text": "Chronic stimulation of the receptor by the agonist led to its downregulation, blunting the drug's effect over time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_upregulation",
+    "lang": "en",
+    "word": "upregulation",
+    "pos": "noun",
+    "freqRank": 40260,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increase in the number or sensitivity of a cell's receptors, often occurring after prolonged reduction in stimulation",
+        "distractors": [
+          "a decrease in the rate at which a drug is absorbed from the gut",
+          "the process of converting a drug into a more water-soluble metabolite"
+        ],
+        "example": {
+          "text": "Long-term use of a receptor antagonist can trigger upregulation, making withdrawal symptoms more severe.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_desensitization",
+    "lang": "en",
+    "word": "desensitization",
+    "pos": "noun",
+    "freqRank": 39610,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reduction in a receptor's responsiveness following repeated or continuous exposure to a stimulus",
+        "distractors": [
+          "a treatment used to eliminate all traces of a drug from the bloodstream",
+          "the process by which a drug's chemical structure degrades in sunlight"
+        ],
+        "example": {
+          "text": "Continuous exposure to the agonist caused receptor desensitization, reducing the drug's therapeutic effect.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dose_response_curve",
+    "lang": "en",
+    "word": "dose-response curve",
+    "pos": "noun",
+    "freqRank": 44810,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a graph showing how the magnitude of a drug's effect changes as the administered dose increases",
+        "distractors": [
+          "a chart recording how quickly a drug is eliminated from plasma over time",
+          "a diagram showing which organs a drug accumulates in after repeated dosing"
+        ],
+        "example": {
+          "text": "The dose-response curve flattened at higher concentrations, indicating the drug had reached its maximum effect.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_threshold_dose",
+    "lang": "en",
+    "word": "threshold dose",
+    "pos": "noun",
+    "freqRank": 25440,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the smallest dose of a substance capable of producing a detectable biological effect",
+        "distractors": [
+          "the largest dose of a drug considered completely safe for any patient",
+          "the standard dose recommended on a drug's package label"
+        ],
+        "example": {
+          "text": "Below the threshold dose, the compound produced no measurable change in blood pressure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ceiling_effect",
+    "lang": "en",
+    "word": "ceiling effect",
+    "pos": "noun",
+    "freqRank": 38960,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point at which increasing a drug's dose no longer produces a greater effect",
+        "distractors": [
+          "the moment a drug reaches its peak plasma concentration after administration",
+          "a sudden drop in drug effectiveness caused by enzyme inhibition"
+        ],
+        "example": {
+          "text": "Because of its ceiling effect on respiratory depression, buprenorphine is considered safer than a full opioid agonist.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hormesis",
+    "lang": "en",
+    "word": "hormesis",
+    "pos": "noun",
+    "freqRank": 26090,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phenomenon in which a substance produces beneficial effects at low doses but harmful effects at higher doses",
+        "distractors": [
+          "the process by which a drug becomes more toxic the longer it is stored",
+          "a condition in which a drug has no effect at any dose tested"
+        ],
+        "example": {
+          "text": "Some researchers cite hormesis to explain why low-level radiation exposure sometimes shows no detectable harm.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biomagnification",
+    "lang": "en",
+    "word": "biomagnification",
+    "pos": "noun",
+    "freqRank": 35190,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the increasing concentration of a persistent substance in organisms at each successive level of a food chain",
+        "distractors": [
+          "the process by which a drug spreads evenly throughout body tissues",
+          "a laboratory technique used to enlarge microscopic images of cell damage"
+        ],
+        "example": {
+          "text": "Mercury undergoes biomagnification, reaching its highest concentrations in predators near the top of the food chain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lipophilicity",
+    "lang": "en",
+    "word": "lipophilicity",
+    "pos": "noun",
+    "freqRank": 21800,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tendency of a compound to dissolve readily in fats and nonpolar solvents rather than in water",
+        "distractors": [
+          "the tendency of a compound to bind tightly to plasma proteins",
+          "the rate at which a compound is excreted unchanged in the urine"
+        ],
+        "example": {
+          "text": "High lipophilicity allows a drug to cross the fatty membranes of the blood-brain barrier more easily.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pka",
+    "lang": "en",
+    "word": "pKa",
+    "pos": "noun",
+    "freqRank": 43380,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the pH value at which a compound is half ionized and half unionized, which influences its absorption and distribution",
+        "distractors": [
+          "the maximum plasma concentration a drug reaches after a single dose",
+          "the percentage of a drug that binds irreversibly to its receptor"
+        ],
+        "example": {
+          "text": "A drug's pKa relative to the pH of the stomach helps determine how readily it will be absorbed there.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enterohepatic_circulation",
+    "lang": "en",
+    "word": "enterohepatic circulation",
+    "pos": "noun",
+    "freqRank": 22970,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the recycling of a drug or its metabolites between the intestine and the liver by way of bile",
+        "distractors": [
+          "the direct transport of a drug from the stomach into the bloodstream",
+          "the movement of a drug across the placenta into fetal circulation"
+        ],
+        "example": {
+          "text": "Enterohepatic circulation can prolong a drug's effective half-life by allowing it to be reabsorbed after excretion in bile.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glomerular_filtration",
+    "lang": "en",
+    "word": "glomerular filtration",
+    "pos": "noun",
+    "freqRank": 22320,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which the kidney's glomeruli filter small molecules, including many drugs, out of the blood into urine",
+        "distractors": [
+          "the process by which the liver breaks down a drug into inactive metabolites",
+          "the active transport of a drug across the intestinal wall during absorption"
+        ],
+        "example": {
+          "text": "Drugs that are small and not tightly bound to plasma proteins are readily removed by glomerular filtration.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tubular_secretion",
+    "lang": "en",
+    "word": "tubular secretion",
+    "pos": "noun",
+    "freqRank": 42210,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the active transport of a drug from the blood into the kidney's renal tubule for elimination in urine",
+        "distractors": [
+          "the passive movement of water from the tubule back into the bloodstream",
+          "the process by which a drug is absorbed from the small intestine"
+        ],
+        "example": {
+          "text": "Active tubular secretion allows the kidney to eliminate some drugs faster than filtration alone would predict.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tubular_reabsorption",
+    "lang": "en",
+    "word": "tubular reabsorption",
+    "pos": "noun",
+    "freqRank": 37790,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which drug molecules filtered into the renal tubule are transported back into the bloodstream",
+        "distractors": [
+          "the process by which a drug is filtered out of the blood by the glomerulus",
+          "the conversion of a drug into a more water-soluble form within the kidney"
+        ],
+        "example": {
+          "text": "Highly lipophilic drugs undergo significant tubular reabsorption, which can prolong their presence in the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biliary_excretion",
+    "lang": "en",
+    "word": "biliary excretion",
+    "pos": "noun",
+    "freqRank": 31420,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the elimination of a drug or its metabolites from the liver into bile, ultimately leaving the body through the feces",
+        "distractors": [
+          "the elimination of a drug through the sweat glands of the skin",
+          "the process by which a drug is absorbed directly into the lymphatic system"
+        ],
+        "example": {
+          "text": "Some large or highly polar drug metabolites are removed primarily through biliary excretion rather than by the kidneys.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glucuronidation",
+    "lang": "en",
+    "word": "glucuronidation",
+    "pos": "noun",
+    "freqRank": 28950,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phase II metabolic reaction that attaches glucuronic acid to a drug molecule to make it more water-soluble for excretion",
+        "distractors": [
+          "a phase I metabolic reaction that adds an oxygen atom to a drug molecule",
+          "the process by which a drug crystallizes out of solution in the kidney"
+        ],
+        "example": {
+          "text": "Glucuronidation of the drug in the liver produces a metabolite that is readily excreted in urine.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_acetylation",
+    "lang": "en",
+    "word": "acetylation",
+    "pos": "noun",
+    "freqRank": 30640,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phase II metabolic reaction that adds an acetyl group to a drug molecule, often altering its activity or aiding its elimination",
+        "distractors": [
+          "a reaction in which a drug is broken down by stomach acid before absorption",
+          "the process by which a drug binds irreversibly to a receptor"
+        ],
+        "example": {
+          "text": "Individuals who are slow acetylators metabolize certain drugs more gradually, raising their risk of side effects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deamination",
+    "lang": "en",
+    "word": "deamination",
+    "pos": "noun",
+    "freqRank": 33240,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metabolic reaction that removes an amine group from a drug molecule",
+        "distractors": [
+          "a metabolic reaction that adds a sugar molecule to a drug for excretion",
+          "the process by which a drug is absorbed through the skin"
+        ],
+        "example": {
+          "text": "Deamination of the compound produced a metabolite with markedly reduced pharmacological activity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_demethylation",
+    "lang": "en",
+    "word": "demethylation",
+    "pos": "noun",
+    "freqRank": 36360,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metabolic reaction that removes a methyl group from a drug molecule, sometimes yielding an active or inactive metabolite",
+        "distractors": [
+          "a reaction in which a methyl group is added to a drug to increase its potency",
+          "the process by which a drug's tablet coating dissolves in the stomach"
+        ],
+        "example": {
+          "text": "Demethylation of the parent compound in the liver generates an active metabolite responsible for much of its effect.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacogenomics",
+    "lang": "en",
+    "word": "pharmacogenomics",
+    "pos": "noun",
+    "freqRank": 39480,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of how an individual's genetic makeup influences their response to drugs",
+        "distractors": [
+          "the study of how drugs interact with bacteria in the gut microbiome",
+          "the branch of pharmacology focused on drug pricing and access"
+        ],
+        "example": {
+          "text": "Pharmacogenomics testing can help predict which patients are likely to metabolize a drug unusually slowly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_poor_metabolizer",
+    "lang": "en",
+    "word": "poor metabolizer",
+    "pos": "noun",
+    "freqRank": 27520,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an individual whose genetic variant results in reduced activity of a drug-metabolizing enzyme, leading to higher-than-expected drug levels",
+        "distractors": [
+          "an individual who cannot absorb any oral medication due to gut disease",
+          "an individual who requires higher doses because their receptors are less sensitive to the drug"
+        ],
+        "example": {
+          "text": "As a poor metabolizer of the enzyme responsible for breaking down the drug, she experienced side effects at a standard dose.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ultrarapid_metabolizer",
+    "lang": "en",
+    "word": "ultrarapid metabolizer",
+    "pos": "noun",
+    "freqRank": 30770,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an individual whose genetic variant results in unusually fast activity of a drug-metabolizing enzyme, leading to lower-than-expected drug levels",
+        "distractors": [
+          "an individual whose kidneys filter drugs unusually quickly, shortening their half-life",
+          "an individual who develops drug tolerance more quickly than average"
+        ],
+        "example": {
+          "text": "An ultrarapid metabolizer may fail to respond to a standard dose of codeine because it is broken down too fast to build up an effect.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_zero_order_kinetics",
+    "lang": "en",
+    "word": "zero-order kinetics",
+    "pos": "noun",
+    "freqRank": 40780,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pattern of drug elimination in which a constant amount of drug is metabolized per unit of time, regardless of its concentration",
+        "distractors": [
+          "a pattern of drug elimination in which a constant fraction of drug is metabolized per unit of time",
+          "a pattern in which a drug's absorption rate doubles with each administered dose"
+        ],
+        "example": {
+          "text": "At high doses, alcohol is eliminated by zero-order kinetics, so the body clears only a fixed amount per hour.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_first_order_kinetics",
+    "lang": "en",
+    "word": "first-order kinetics",
+    "pos": "noun",
+    "freqRank": 33370,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pattern of drug elimination in which a constant fraction of the drug present is metabolized per unit of time",
+        "distractors": [
+          "a pattern of drug elimination in which a fixed amount of drug is metabolized per unit of time regardless of concentration",
+          "a pattern in which a drug is eliminated only after all receptors have been saturated"
+        ],
+        "example": {
+          "text": "Most drugs follow first-order kinetics, meaning their concentration falls by the same percentage during each half-life.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_michaelis_menten_kinetics",
+    "lang": "en",
+    "word": "Michaelis-Menten kinetics",
+    "pos": "noun",
+    "freqRank": 36490,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mathematical model describing the rate of enzyme-catalyzed reactions, often used to describe drug metabolism that becomes saturated at high concentrations",
+        "distractors": [
+          "a model describing how a drug diffuses passively across a cell membrane",
+          "a statistical method used to compare the results of two clinical trials"
+        ],
+        "example": {
+          "text": "Phenytoin metabolism follows Michaelis-Menten kinetics, which is why small dose increases can cause disproportionately large rises in blood levels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compartment_model",
+    "lang": "en",
+    "word": "compartment model",
+    "pos": "noun",
+    "freqRank": 37920,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pharmacokinetic model that represents the body as one or more interconnected compartments to describe how a drug moves through it over time",
+        "distractors": [
+          "a diagram showing the chemical structure of a drug molecule",
+          "a model used to predict how many patients will respond to a given treatment"
+        ],
+        "example": {
+          "text": "A two-compartment model was needed to accurately describe the drug's rapid initial distribution followed by slower elimination.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bolus",
+    "lang": "en",
+    "word": "bolus",
+    "pos": "noun",
+    "freqRank": 24790,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a single, relatively large dose of a drug administered rapidly, often directly into a vein",
+        "distractors": [
+          "a slow, continuous infusion of a drug given over many hours",
+          "the coating applied to a tablet to control where it dissolves"
+        ],
+        "example": {
+          "text": "The nurse administered a bolus of the antibiotic before starting the slower maintenance infusion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enteric_coating",
+    "lang": "en",
+    "word": "enteric coating",
+    "pos": "noun",
+    "freqRank": 22840,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a polymer coating applied to an oral drug that prevents it from dissolving in the stomach so it releases in the intestine instead",
+        "distractors": [
+          "a protective wrapping used to keep injectable drugs sterile",
+          "a layer added to a capsule purely to improve its color and appearance"
+        ],
+        "example": {
+          "text": "The enteric coating on the tablet protected the stomach lining from irritation while allowing the drug to be absorbed further down the gut.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_receptor_occupancy",
+    "lang": "en",
+    "word": "receptor occupancy",
+    "pos": "noun",
+    "freqRank": 36750,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the proportion of a tissue's available receptors that are bound by a drug at a given time",
+        "distractors": [
+          "the total number of receptor types found on a single cell",
+          "the rate at which new receptors are synthesized after drug exposure"
+        ],
+        "example": {
+          "text": "Imaging studies estimated receptor occupancy to determine the minimum effective dose of the new antipsychotic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dissociation_constant",
+    "lang": "en",
+    "word": "dissociation constant",
+    "pos": "noun",
+    "freqRank": 41950,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a numerical value describing the concentration at which a drug and its receptor are half bound, reflecting the strength of their interaction",
+        "distractors": [
+          "the numerical value describing how quickly a drug is metabolized by the liver",
+          "the numerical value describing the maximum safe dose of a drug"
+        ],
+        "example": {
+          "text": "A lower dissociation constant generally indicates that a drug binds its receptor more tightly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ec50",
+    "lang": "en",
+    "word": "EC50",
+    "pos": "noun",
+    "freqRank": 28690,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the concentration of a drug that produces fifty percent of its maximum possible effect",
+        "distractors": [
+          "the concentration of a drug that is lethal to fifty percent of test subjects",
+          "the dose at which fifty percent of patients report a side effect"
+        ],
+        "example": {
+          "text": "Researchers compared the EC50 values of two compounds to determine which was more potent at the receptor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ic50",
+    "lang": "en",
+    "word": "IC50",
+    "pos": "noun",
+    "freqRank": 31290,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the concentration of a substance required to inhibit a particular biological process by fifty percent",
+        "distractors": [
+          "the concentration of a drug required to fully saturate all available receptors",
+          "the dose of a drug that produces fifty percent of its maximum therapeutic benefit"
+        ],
+        "example": {
+          "text": "The compound's low IC50 against the viral enzyme suggested it could be an effective antiviral candidate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hill_coefficient",
+    "lang": "en",
+    "word": "Hill coefficient",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a numerical value describing the steepness of a dose-response curve and the degree of cooperative binding among ligand sites",
+        "distractors": [
+          "a numerical value describing a drug's total plasma clearance rate",
+          "a numerical value describing how many metabolites a single drug produces"
+        ],
+        "example": {
+          "text": "A Hill coefficient greater than one suggests positive cooperativity between multiple binding sites on the receptor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cooperativity",
+    "lang": "en",
+    "word": "cooperativity",
+    "pos": "noun",
+    "freqRank": 38180,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phenomenon in which the binding of one ligand molecule to a protein affects the binding affinity of additional ligand molecules",
+        "distractors": [
+          "a phenomenon in which two unrelated drugs are metabolized by entirely separate enzyme pathways",
+          "the joint decision-making process used by regulators to approve a new drug"
+        ],
+        "example": {
+          "text": "Hemoglobin's cooperativity with oxygen binding is a classic example studied alongside receptor pharmacology.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allosteric_modulator",
+    "lang": "en",
+    "word": "allosteric modulator",
+    "pos": "noun",
+    "freqRank": 29860,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compound that binds a receptor at a site distinct from its primary binding site and thereby alters the receptor's activity",
+        "distractors": [
+          "a compound that binds directly to the primary active site of a receptor",
+          "a compound that has no measurable effect on receptor activity at any concentration"
+        ],
+        "example": {
+          "text": "Benzodiazepines act as an allosteric modulator of the GABA receptor, enhancing the effect of the natural neurotransmitter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rebound_effect",
+    "lang": "en",
+    "word": "rebound effect",
+    "pos": "noun",
+    "freqRank": 24010,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a return of symptoms, often more severe than before treatment, that occurs after a drug is stopped or its dose reduced",
+        "distractors": [
+          "a gradual improvement in symptoms that continues after a drug is discontinued",
+          "an immediate allergic reaction that occurs upon first exposure to a drug"
+        ],
+        "example": {
+          "text": "Abruptly stopping the blood pressure medication caused a dangerous rebound effect, with pressure spiking higher than before treatment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_paradoxical_reaction",
+    "lang": "en",
+    "word": "paradoxical reaction",
+    "pos": "noun",
+    "freqRank": 43120,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unexpected drug response that is opposite to the effect the drug is normally intended to produce",
+        "distractors": [
+          "a drug response that occurs only in patients with a known allergy",
+          "a delayed response that appears weeks after a drug is first started"
+        ],
+        "example": {
+          "text": "Some children experience a paradoxical reaction to sedatives, becoming agitated rather than calm.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross_tolerance",
+    "lang": "en",
+    "word": "cross-tolerance",
+    "pos": "noun",
+    "freqRank": 33760,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reduced sensitivity to one drug that develops because of repeated exposure to a different, pharmacologically related drug",
+        "distractors": [
+          "an allergic reaction that occurs with several unrelated drug classes at once",
+          "the transfer of drug tolerance from a mother to her child during pregnancy"
+        ],
+        "example": {
+          "text": "Because of cross-tolerance among sedatives, someone with heavy alcohol use may need higher doses of anesthesia.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reactive_metabolite",
+    "lang": "en",
+    "word": "reactive metabolite",
+    "pos": "noun",
+    "freqRank": 27130,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemically unstable byproduct of drug metabolism that can bind to and damage cellular proteins or DNA",
+        "distractors": [
+          "a metabolite that retains the full therapeutic activity of the parent drug",
+          "a metabolite that is immediately and completely inert once formed"
+        ],
+        "example": {
+          "text": "Acetaminophen overdose generates a reactive metabolite that depletes the liver's protective glutathione stores.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_oxidative_stress",
+    "lang": "en",
+    "word": "oxidative stress",
+    "pos": "noun",
+    "freqRank": 40910,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "cellular damage resulting from an imbalance between reactive oxygen species and the body's antioxidant defenses",
+        "distractors": [
+          "damage to tissue caused directly by mechanical injury during surgery",
+          "a decline in enzyme activity caused by prolonged drug storage at high temperatures"
+        ],
+        "example": {
+          "text": "Chronic exposure to the toxin led to oxidative stress, damaging mitochondria within liver cells.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_genotoxicity",
+    "lang": "en",
+    "word": "genotoxicity",
+    "pos": "noun",
+    "freqRank": 21020,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the capacity of a substance to cause damage to an organism's genetic material",
+        "distractors": [
+          "the capacity of a substance to trigger an allergic skin reaction",
+          "the capacity of a substance to reduce blood pressure rapidly"
+        ],
+        "example": {
+          "text": "Genotoxicity testing is a required step before a new chemical can be approved for widespread use.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytotoxicity",
+    "lang": "en",
+    "word": "cytotoxicity",
+    "pos": "noun",
+    "freqRank": 24270,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the degree to which a substance is capable of damaging or killing living cells",
+        "distractors": [
+          "the degree to which a substance dissolves in water versus fat",
+          "the degree to which a drug binds to plasma proteins"
+        ],
+        "example": {
+          "text": "The compound showed significant cytotoxicity toward cancer cells in laboratory testing, while sparing healthy tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunotoxicity",
+    "lang": "en",
+    "word": "immunotoxicity",
+    "pos": "noun",
+    "freqRank": 43770,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "adverse effects of a substance on the structure or function of the immune system",
+        "distractors": [
+          "adverse effects of a substance limited strictly to the digestive tract",
+          "adverse effects of a substance that only appear after a single acute exposure"
+        ],
+        "example": {
+          "text": "Long-term exposure to the pesticide raised concerns about immunotoxicity, including suppressed antibody responses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_embryotoxicity",
+    "lang": "en",
+    "word": "embryotoxicity",
+    "pos": "noun",
+    "freqRank": 25830,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "harmful effects of a substance on a developing embryo",
+        "distractors": [
+          "harmful effects of a substance limited to the mother's cardiovascular system",
+          "harmful effects that appear only many years after childhood exposure"
+        ],
+        "example": {
+          "text": "Animal studies revealed embryotoxicity at doses far below those causing any harm to the adult animals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_noael",
+    "lang": "en",
+    "word": "NOAEL",
+    "pos": "noun",
+    "freqRank": 41430,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the highest tested dose of a substance found to produce no detectable adverse effect in a study population",
+        "distractors": [
+          "the lowest tested dose of a substance found to produce a measurable adverse effect",
+          "the average dose of a substance used across all human clinical trials"
+        ],
+        "example": {
+          "text": "Regulators used the NOAEL from animal studies to help set a safe exposure limit for the chemical in humans.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_margin_of_safety",
+    "lang": "en",
+    "word": "margin of safety",
+    "pos": "noun",
+    "freqRank": 44680,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the difference between a drug's effective dose and the dose that would produce serious toxicity",
+        "distractors": [
+          "the difference between a drug's cost and its market price",
+          "the percentage of patients who successfully complete a course of treatment"
+        ],
+        "example": {
+          "text": "Regulators required a wider margin of safety before approving the drug for use in children.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_toxidrome",
+    "lang": "en",
+    "word": "toxidrome",
+    "pos": "noun",
+    "freqRank": 42340,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a recognizable cluster of signs and symptoms associated with poisoning by a specific class of toxin",
+        "distractors": [
+          "a legal document listing all chemicals banned from a particular workplace",
+          "a laboratory test that identifies the exact molecular structure of an unknown poison"
+        ],
+        "example": {
+          "text": "The patient's pinpoint pupils, slowed breathing, and reduced consciousness formed a classic opioid toxidrome.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antivenom",
+    "lang": "en",
+    "word": "antivenom",
+    "pos": "noun",
+    "freqRank": 39350,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a biological product containing antibodies used to neutralize the toxic effects of venom from a bite or sting",
+        "distractors": [
+          "a topical cream applied to soothe the skin irritation caused by a bite",
+          "a vaccine given in advance to prevent future venomous bites from causing harm"
+        ],
+        "example": {
+          "text": "Paramedics administered antivenom promptly after the patient was bitten by the venomous snake.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agonism",
+    "lang": "en",
+    "word": "agonism",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the pharmacological action of binding a receptor and activating it to produce a biological response",
+        "distractors": [
+          "the pharmacological action of blocking a receptor without activating it",
+          "the process by which a drug is transported across the blood-brain barrier"
+        ],
+        "example": {
+          "text": "The drug's agonism at dopamine receptors accounted for both its therapeutic benefit and its side effects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antagonism",
+    "lang": "en",
+    "word": "antagonism",
+    "pos": "noun",
+    "freqRank": 35580,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the pharmacological action of blocking or reducing the effect of another substance at a shared receptor or pathway",
+        "distractors": [
+          "the pharmacological action of enhancing the effect of another drug beyond the sum of their individual effects",
+          "the process by which two drugs are combined in a single fixed-dose tablet"
+        ],
+        "example": {
+          "text": "The antagonism between the two drugs meant that combining them actually reduced the overall therapeutic effect.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_potentiation",
+    "lang": "en",
+    "word": "potentiation",
+    "pos": "noun",
+    "freqRank": 26740,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increase in the effect of one drug caused by the presence of a second substance that has little effect on its own",
+        "distractors": [
+          "a decrease in the effect of a drug caused by repeated administration over time",
+          "the process by which a drug is chemically modified to reduce its side effects"
+        ],
+        "example": {
+          "text": "Alcohol's potentiation of sedative drugs can dangerously deepen central nervous system depression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sensitization",
+    "lang": "en",
+    "word": "sensitization",
+    "pos": "noun",
+    "freqRank": 42470,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increased responsiveness to a drug or stimulus that develops after repeated exposure",
+        "distractors": [
+          "a decreased responsiveness to a drug or stimulus that develops after repeated exposure",
+          "the process by which a drug becomes chemically unstable during storage"
+        ],
+        "example": {
+          "text": "Repeated low-dose exposure to the stimulant led to sensitization, with the same dose producing a stronger effect over time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_photosensitivity",
+    "lang": "en",
+    "word": "photosensitivity",
+    "pos": "noun",
+    "freqRank": 36230,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormal skin reaction to light exposure that is caused or worsened by a drug",
+        "distractors": [
+          "an abnormal drop in blood pressure triggered by exposure to bright light",
+          "an increased tolerance to sunlight that develops after long-term drug use"
+        ],
+        "example": {
+          "text": "Patients taking the antibiotic were warned about photosensitivity and advised to avoid direct sun exposure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enzyme_induction",
+    "lang": "en",
+    "word": "enzyme induction",
+    "pos": "noun",
+    "freqRank": 38700,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increase in the amount or activity of a drug-metabolizing enzyme, which can speed the elimination of drugs it acts upon",
+        "distractors": [
+          "a decrease in the amount or activity of a drug-metabolizing enzyme",
+          "the process by which an enzyme is transported from the liver into the bloodstream"
+        ],
+        "example": {
+          "text": "Rifampin causes strong enzyme induction, which can reduce the effectiveness of many co-administered drugs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enzyme_inhibition",
+    "lang": "en",
+    "word": "enzyme inhibition",
+    "pos": "noun",
+    "freqRank": 32590,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a decrease in the activity of a drug-metabolizing enzyme, which can cause other drugs it acts upon to accumulate to toxic levels",
+        "distractors": [
+          "an increase in the activity of a drug-metabolizing enzyme",
+          "the complete and permanent destruction of an enzyme by a drug"
+        ],
+        "example": {
+          "text": "Grapefruit juice causes enzyme inhibition in the gut wall, raising blood levels of certain heart medications.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_titrate",
+    "lang": "en",
+    "word": "titrate",
+    "pos": "verb",
+    "freqRank": 29340,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to gradually adjust the dose of a drug upward or downward until the desired therapeutic effect is achieved",
+        "distractors": [
+          "to combine two drugs together into a single dose",
+          "to measure the exact chemical purity of a manufactured drug"
+        ],
+        "example": {
+          "text": "The endocrinologist continued to titrate the insulin dose based on the patient's daily glucose readings.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metabolize",
+    "lang": "en",
+    "word": "metabolize",
+    "pos": "verb",
+    "freqRank": 23230,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to chemically break down or transform a drug within the body, usually through enzymatic action",
+        "distractors": [
+          "to absorb a drug directly into the bloodstream without any chemical change",
+          "to store a drug within fatty tissue for later release"
+        ],
+        "example": {
+          "text": "The liver metabolizes most orally administered drugs before they reach the rest of the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_potentiate",
+    "lang": "en",
+    "word": "potentiate",
+    "pos": "verb",
+    "freqRank": 36620,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to enhance the effect of one drug by combining it with another substance",
+        "distractors": [
+          "to reduce the effect of one drug by combining it with another substance",
+          "to convert a drug into an inactive metabolite"
+        ],
+        "example": {
+          "text": "Monoamine oxidase inhibitors can dangerously potentiate the effects of certain other antidepressants.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chelate",
+    "lang": "en",
+    "word": "chelate",
+    "pos": "verb",
+    "freqRank": 30510,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to bind a metal ion with a chemical agent so that it can be safely removed from the body",
+        "distractors": [
+          "to bind a drug tightly to a plasma protein so it cannot act on tissues",
+          "to convert a water-soluble drug into a fat-soluble one for storage"
+        ],
+        "example": {
+          "text": "Doctors used a chemical agent to chelate the excess iron from the patient's bloodstream.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_detoxify",
+    "lang": "en",
+    "word": "detoxify",
+    "pos": "verb",
+    "freqRank": 21670,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to remove or neutralize a poisonous or harmful substance from the body",
+        "distractors": [
+          "to increase the potency of a drug through chemical modification",
+          "to convert an active drug into a prodrug form"
+        ],
+        "example": {
+          "text": "The liver works continuously to detoxify both ingested toxins and the body's own metabolic byproducts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antagonize",
+    "lang": "en",
+    "word": "antagonize",
+    "pos": "verb",
+    "freqRank": 31160,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to block or counteract the action of a drug, receptor, or physiological process",
+        "distractors": [
+          "to enhance or amplify the action of a drug beyond its normal effect",
+          "to permanently bind and destroy a receptor"
+        ],
+        "example": {
+          "text": "The new compound was designed to antagonize the receptor responsible for triggering nausea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sensitize",
+    "lang": "en",
+    "word": "sensitize",
+    "pos": "verb",
+    "freqRank": 40650,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to make a person, tissue, or receptor more responsive to a drug or stimulus following exposure",
+        "distractors": [
+          "to make a person, tissue, or receptor less responsive to a drug or stimulus following exposure",
+          "to remove all traces of a drug from a person's system"
+        ],
+        "example": {
+          "text": "Repeated small doses of the allergen appeared to sensitize the patient's immune system rather than build tolerance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_desensitize",
+    "lang": "en",
+    "word": "desensitize",
+    "pos": "verb",
+    "freqRank": 32070,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to reduce a person's or receptor's responsiveness to a drug or stimulus after repeated exposure",
+        "distractors": [
+          "to increase a person's or receptor's responsiveness to a drug or stimulus after repeated exposure",
+          "to filter a drug out of the bloodstream using dialysis"
+        ],
+        "example": {
+          "text": "Allergists gradually desensitize patients to an allergen by administering carefully increasing doses over time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioaccumulate",
+    "lang": "en",
+    "word": "bioaccumulate",
+    "pos": "verb",
+    "freqRank": 24920,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to build up within an organism's tissues because the rate of intake of a substance exceeds its rate of elimination",
+        "distractors": [
+          "to spread evenly and briefly through an organism's bloodstream before rapid excretion",
+          "to break down rapidly once inside a living cell"
+        ],
+        "example": {
+          "text": "Certain pesticides bioaccumulate in fatty tissue, reaching much higher concentrations than in the surrounding environment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extravasate",
+    "lang": "en",
+    "word": "extravasate",
+    "pos": "verb",
+    "freqRank": 31550,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to leak out of a blood vessel into the surrounding tissue, as an intravenously infused drug sometimes does",
+        "distractors": [
+          "to bind tightly and permanently to a plasma protein",
+          "to evaporate from an open wound during treatment"
+        ],
+        "example": {
+          "text": "When the chemotherapy drug began to extravasate at the injection site, the nurse immediately stopped the infusion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sequester",
+    "lang": "en",
+    "word": "sequester",
+    "pos": "verb",
+    "freqRank": 41300,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to isolate and store a toxic substance within a particular tissue, keeping it away from general circulation",
+        "distractors": [
+          "to rapidly eliminate a toxic substance through the kidneys",
+          "to chemically convert a toxic substance into a harmless metabolite"
+        ],
+        "example": {
+          "text": "Lead can sequester in bone for decades, gradually releasing back into the bloodstream over a person's lifetime.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synergize",
+    "lang": "en",
+    "word": "synergize",
+    "pos": "verb",
+    "freqRank": 26350,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to interact with another agent so that their combined effect exceeds the sum of their individual effects",
+        "distractors": [
+          "to interact with another agent so that their combined effect is less than either alone",
+          "to convert into an inactive metabolite when combined with another drug"
+        ],
+        "example": {
+          "text": "The two chemotherapy agents were chosen because they synergize, allowing lower individual doses to be used.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hepatotoxic",
+    "lang": "en",
+    "word": "hepatotoxic",
+    "pos": "adjective",
+    "freqRank": 26610,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing damage to the liver",
+        "distractors": [
+          "capable of causing damage to the lungs",
+          "capable of increasing the absorption of other drugs"
+        ],
+        "example": {
+          "text": "Excessive acetaminophen use can be hepatotoxic, leading to acute liver failure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nephrotoxic",
+    "lang": "en",
+    "word": "nephrotoxic",
+    "pos": "adjective",
+    "freqRank": 37400,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing damage to the kidneys",
+        "distractors": [
+          "capable of causing damage to the skin",
+          "capable of accelerating a drug's absorption from the gut"
+        ],
+        "example": {
+          "text": "Certain contrast dyes used in imaging are nephrotoxic and must be used cautiously in patients with kidney disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neurotoxic",
+    "lang": "en",
+    "word": "neurotoxic",
+    "pos": "adjective",
+    "freqRank": 26480,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing damage to nerve cells or the nervous system",
+        "distractors": [
+          "capable of causing damage exclusively to bone tissue",
+          "capable of increasing a drug's binding affinity for its receptor"
+        ],
+        "example": {
+          "text": "Some heavy metals are neurotoxic even at very low levels of chronic exposure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cardiotoxic",
+    "lang": "en",
+    "word": "cardiotoxic",
+    "pos": "adjective",
+    "freqRank": 34280,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing damage to the heart's structure or function",
+        "distractors": [
+          "capable of causing damage exclusively to the digestive tract",
+          "capable of reversing the effects of an overdose"
+        ],
+        "example": {
+          "text": "Anthracycline chemotherapy drugs are known to be cardiotoxic, particularly with cumulative high doses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_teratogenic",
+    "lang": "en",
+    "word": "teratogenic",
+    "pos": "adjective",
+    "freqRank": 31030,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing developmental abnormalities in an embryo or fetus",
+        "distractors": [
+          "capable of curing a genetic disorder before birth",
+          "capable of increasing fertility in women trying to conceive"
+        ],
+        "example": {
+          "text": "Isotretinoin is strongly teratogenic, so pregnancy must be strictly avoided during treatment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_carcinogenic",
+    "lang": "en",
+    "word": "carcinogenic",
+    "pos": "adjective",
+    "freqRank": 37660,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing or promoting the development of cancer",
+        "distractors": [
+          "capable of shrinking existing tumors",
+          "capable of boosting the immune system's response to infection"
+        ],
+        "example": {
+          "text": "Long-term exposure to asbestos fibers is well documented to be carcinogenic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mutagenic",
+    "lang": "en",
+    "word": "mutagenic",
+    "pos": "adjective",
+    "freqRank": 44030,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing mutations in an organism's genetic material",
+        "distractors": [
+          "capable of repairing damaged genetic material",
+          "capable of increasing a cell's resistance to chemotherapy"
+        ],
+        "example": {
+          "text": "Ultraviolet radiation is mutagenic, which is why prolonged sun exposure raises skin cancer risk.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lipophilic",
+    "lang": "en",
+    "word": "lipophilic",
+    "pos": "adjective",
+    "freqRank": 39740,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "tending to dissolve readily in fats and nonpolar solvents rather than in water",
+        "distractors": [
+          "tending to dissolve readily in water rather than fats",
+          "tending to bind irreversibly to plasma proteins"
+        ],
+        "example": {
+          "text": "Because it is highly lipophilic, the anesthetic drug crosses cell membranes and reaches the brain very quickly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrophilic",
+    "lang": "en",
+    "word": "hydrophilic",
+    "pos": "adjective",
+    "freqRank": 23750,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "tending to dissolve readily in water rather than in fats or nonpolar solvents",
+        "distractors": [
+          "tending to dissolve readily in fats rather than water",
+          "tending to accumulate in adipose tissue over time"
+        ],
+        "example": {
+          "text": "The hydrophilic drug remained largely confined to the bloodstream rather than penetrating fatty tissues.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_idiosyncratic",
+    "lang": "en",
+    "word": "idiosyncratic",
+    "pos": "adjective",
+    "freqRank": 42600,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an unusual, unpredictable drug reaction peculiar to a particular individual that cannot be explained by the drug's normal pharmacology",
+        "distractors": [
+          "describing a drug reaction that occurs in nearly every patient who takes the medication",
+          "describing a reaction that only occurs when a drug is combined with alcohol"
+        ],
+        "example": {
+          "text": "Her severe reaction to the standard dose was considered idiosyncratic, since it could not be explained by any known mechanism.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subtherapeutic",
+    "lang": "en",
+    "word": "subtherapeutic",
+    "pos": "adjective",
+    "freqRank": 38440,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a drug concentration or dose too low to produce the intended clinical effect",
+        "distractors": [
+          "describing a drug concentration high enough to cause toxicity",
+          "describing a dose that is adjusted specifically for pediatric patients"
+        ],
+        "example": {
+          "text": "Missed doses left the patient's blood levels subtherapeutic, allowing the infection to persist.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_supratherapeutic",
+    "lang": "en",
+    "word": "supratherapeutic",
+    "pos": "adjective",
+    "freqRank": 30120,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a drug concentration or dose higher than the range needed for a safe therapeutic effect",
+        "distractors": [
+          "describing a drug concentration too low to produce any measurable effect",
+          "describing a dose reserved for emergency situations only"
+        ],
+        "example": {
+          "text": "Accidental double dosing pushed the patient's blood levels into the supratherapeutic range, causing toxicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allosteric",
+    "lang": "en",
+    "word": "allosteric",
+    "pos": "adjective",
+    "freqRank": 28040,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a binding site on a protein that is distinct from its primary active site, where binding alters the protein's activity",
+        "distractors": [
+          "describing the primary active site where a receptor's natural ligand normally binds",
+          "describing a drug that has no effect on receptor activity at any concentration"
+        ],
+        "example": {
+          "text": "Benzodiazepines bind an allosteric site on the GABA receptor rather than the site used by the natural neurotransmitter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_orthosteric",
+    "lang": "en",
+    "word": "orthosteric",
+    "pos": "adjective",
+    "freqRank": 42080,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing the primary binding site on a receptor where its natural ligand normally binds",
+        "distractors": [
+          "describing a secondary binding site located away from a receptor's main active site",
+          "describing a receptor that has no known natural ligand"
+        ],
+        "example": {
+          "text": "The new drug candidate competes directly at the orthosteric site, blocking the receptor's usual activation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parenteral",
+    "lang": "en",
+    "word": "parenteral",
+    "pos": "adjective",
+    "freqRank": 22710,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "administered by a route other than the digestive tract, such as by injection",
+        "distractors": [
+          "administered by mouth and absorbed through the digestive tract",
+          "administered exclusively through inhalation into the lungs"
+        ],
+        "example": {
+          "text": "Because the protein drug would be destroyed by stomach acid, it must be given by a parenteral route.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sublingual",
+    "lang": "en",
+    "word": "sublingual",
+    "pos": "adjective",
+    "freqRank": 26870,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "administered by placing under the tongue for absorption through the oral mucosa",
+        "distractors": [
+          "administered by injection directly into a vein",
+          "administered by absorption through unbroken skin over several hours"
+        ],
+        "example": {
+          "text": "Nitroglycerin is often given sublingual for rapid relief of chest pain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transdermal",
+    "lang": "en",
+    "word": "transdermal",
+    "pos": "adjective",
+    "freqRank": 32460,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "administered by absorption through the skin, typically using an adhesive patch",
+        "distractors": [
+          "administered by absorption through the lining of the nose",
+          "administered by direct injection into muscle tissue"
+        ],
+        "example": {
+          "text": "The transdermal patch delivered a steady dose of the pain medication over several days.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_intrathecal",
+    "lang": "en",
+    "word": "intrathecal",
+    "pos": "adjective",
+    "freqRank": 30250,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "administered by injection into the fluid-filled space surrounding the spinal cord",
+        "distractors": [
+          "administered by injection just beneath the surface of the skin",
+          "administered by absorption through the lining of the cheek"
+        ],
+        "example": {
+          "text": "Certain chemotherapy drugs are given intrathecal to reach cancer cells that have spread to the central nervous system.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synergistic",
+    "lang": "en",
+    "word": "synergistic",
+    "pos": "adjective",
+    "freqRank": 23100,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a combined effect of two agents that is greater than the sum of their individual effects",
+        "distractors": [
+          "describing a combined effect of two agents that cancels out entirely",
+          "describing two drugs that must never be combined under any circumstances"
+        ],
+        "example": {
+          "text": "The synergistic combination of the two antibiotics allowed doctors to use lower, safer doses of each.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antagonistic",
+    "lang": "en",
+    "word": "antagonistic",
+    "pos": "adjective",
+    "freqRank": 32980,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an interaction in which one substance reduces or blocks the effect of another",
+        "distractors": [
+          "describing an interaction in which one substance enhances the effect of another",
+          "describing a drug that has an identical mechanism of action to a second drug"
+        ],
+        "example": {
+          "text": "Vitamin K has an antagonistic relationship with warfarin, reducing the blood thinner's effectiveness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioavailable",
+    "lang": "en",
+    "word": "bioavailable",
+    "pos": "adjective",
+    "freqRank": 24530,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing the fraction of an administered drug that reaches systemic circulation in active, unchanged form",
+        "distractors": [
+          "describing a drug that has been withdrawn from clinical use",
+          "describing a drug that acts only on receptors within the central nervous system"
+        ],
+        "example": {
+          "text": "Intravenous administration makes a drug one hundred percent bioavailable, since it bypasses absorption entirely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anaphylactic",
+    "lang": "en",
+    "word": "anaphylactic",
+    "pos": "adjective",
+    "freqRank": 38310,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to or characteristic of a severe, rapid-onset, potentially life-threatening allergic reaction",
+        "distractors": [
+          "relating to a mild, slow-developing skin rash",
+          "relating to the gradual loss of drug effectiveness over time"
+        ],
+        "example": {
+          "text": "The patient went into anaphylactic shock within minutes of receiving the medication.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ld50",
+    "lang": "en",
+    "word": "LD50",
+    "pos": "noun",
+    "freqRank": 35710,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dose of a substance that is lethal to fifty percent of a test population",
+        "distractors": [
+          "the dose of a substance that produces the maximum therapeutic effect in all subjects",
+          "the dose of a substance below which no toxicity has ever been recorded"
+        ],
+        "example": {
+          "text": "Toxicologists compare LD50 values across species to estimate the relative danger of a new chemical.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ed50",
+    "lang": "en",
+    "word": "ED50",
+    "pos": "noun",
+    "freqRank": 21930,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dose of a drug that produces a specified therapeutic effect in fifty percent of a test population",
+        "distractors": [
+          "the dose of a drug that is fatal to fifty percent of a test population",
+          "the dose of a drug required to completely eliminate a disease in a population"
+        ],
+        "example": {
+          "text": "Comparing a drug's ED50 to its LD50 gives researchers an early estimate of its therapeutic index.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_toxicokinetics",
+    "lang": "en",
+    "word": "toxicokinetics",
+    "pos": "noun",
+    "freqRank": 29210,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of how a toxic substance is absorbed, distributed, metabolized, and eliminated by the body",
+        "distractors": [
+          "the study of how a toxin damages cellular DNA",
+          "the study of how toxic exposure affects population-level cancer rates"
+        ],
+        "example": {
+          "text": "Toxicokinetics studies in animals help predict how quickly a chemical will build up to dangerous levels in humans.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_idiosyncrasy",
+    "lang": "en",
+    "word": "idiosyncrasy",
+    "pos": "noun",
+    "freqRank": 31940,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unusual, individual-specific reaction to a drug that cannot be explained by its known pharmacology",
+        "distractors": [
+          "a common side effect experienced by the majority of patients taking a drug",
+          "the standard dosing schedule listed on a drug's package insert"
+        ],
+        "example": {
+          "text": "His severe reaction to a normally safe dose was later attributed to a rare metabolic idiosyncrasy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioactivation",
+    "lang": "en",
+    "word": "bioactivation",
+    "pos": "noun",
+    "freqRank": 32330,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the metabolic conversion of a relatively inert compound into a chemically or biologically active form",
+        "distractors": [
+          "the metabolic conversion of an active drug into a completely inert compound",
+          "the physical process of dissolving a tablet in the stomach"
+        ],
+        "example": {
+          "text": "Bioactivation of the industrial solvent by liver enzymes produced the reactive compound responsible for its toxicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_protein_binding",
+    "lang": "en",
+    "word": "protein binding",
+    "pos": "noun",
+    "freqRank": 23620,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reversible attachment of a drug to plasma proteins, which limits the fraction of free, active drug available to tissues",
+        "distractors": [
+          "the permanent covalent attachment of a drug to a cell membrane receptor",
+          "the process by which two different proteins combine to form a new drug target"
+        ],
+        "example": {
+          "text": "Highly protein-bound drugs can be displaced by other medications, suddenly increasing the amount of free active drug.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biotransform",
+    "lang": "en",
+    "word": "biotransform",
+    "pos": "verb",
+    "freqRank": 33110,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to chemically convert a drug or foreign substance into a different compound through metabolic processes",
+        "distractors": [
+          "to physically dissolve a tablet into smaller absorbable particles",
+          "to transport a drug across the blood-brain barrier without any chemical change"
+        ],
+        "example": {
+          "text": "Liver enzymes biotransform the lipophilic compound into a water-soluble metabolite suitable for excretion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pharmacokinetic",
+    "lang": "en",
+    "word": "pharmacokinetic",
+    "pos": "adjective",
+    "freqRank": 42860,
+    "difficulty": "hard",
+    "tags": [
+      "pharmacology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the absorption, distribution, metabolism, and excretion of a drug within the body",
+        "distractors": [
+          "relating to the molecular mechanism by which a drug produces its effect",
+          "relating to the marketing and pricing strategy used to launch a new drug"
+        ],
+        "example": {
+          "text": "A pharmacokinetic study measured how quickly the new drug reached peak concentration in the bloodstream.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

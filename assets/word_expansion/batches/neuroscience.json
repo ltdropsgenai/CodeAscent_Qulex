@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_afferent",
+    "lang": "en",
+    "word": "afferent",
+    "pos": "adjective",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "carrying nerve impulses inward toward the brain or spinal cord",
+        "distractors": [
+          "carrying nerve impulses away from the central nervous system toward muscles or glands",
+          "describing a neuron that has lost its myelin sheath"
+        ],
+        "example": {
+          "text": "Afferent fibers from the skin's touch receptors relay sensory information up the spinal cord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_efferent",
+    "lang": "en",
+    "word": "efferent",
+    "pos": "adjective",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "carrying nerve impulses outward from the brain or spinal cord to muscles or glands",
+        "distractors": [
+          "carrying nerve impulses inward toward the central nervous system",
+          "restricted to fibers that synapse only within the cortex"
+        ],
+        "example": {
+          "text": "Efferent motor neurons carry the signal from the spinal cord to the leg muscles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_myelination",
+    "lang": "en",
+    "word": "myelination",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which glial cells wrap axons in a fatty insulating sheath that speeds signal conduction",
+        "distractors": [
+          "the process by which neurons form new synaptic connections with each other",
+          "the gradual loss of dendritic branches during aging"
+        ],
+        "example": {
+          "text": "Myelination of the corticospinal tract continues well into early adulthood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synaptic_pruning",
+    "lang": "en",
+    "word": "synaptic pruning",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the elimination of weak or unused synaptic connections during development to refine neural circuits",
+        "distractors": [
+          "the strengthening of frequently used synapses through repeated activation",
+          "the surgical removal of damaged axons after a brain injury"
+        ],
+        "example": {
+          "text": "Synaptic pruning during adolescence removes a large fraction of the excess connections formed in early childhood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dendritic_spine",
+    "lang": "en",
+    "word": "dendritic spine",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small protrusion on a dendrite that typically receives input from a single synapse",
+        "distractors": [
+          "the branch point where an axon divides into two separate terminals",
+          "a cluster of neuron cell bodies found outside the central nervous system"
+        ],
+        "example": {
+          "text": "Under the electron microscope, each dendritic spine showed a distinct postsynaptic density.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interneuron",
+    "lang": "en",
+    "word": "interneuron",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neuron that connects other neurons within a local circuit rather than directly innervating muscle or sensory receptors",
+        "distractors": [
+          "a neuron whose axon leaves the central nervous system to reach a peripheral organ",
+          "a supportive glial cell that does not transmit electrical signals"
+        ],
+        "example": {
+          "text": "Inhibitory interneurons in the cortex shape the timing of pyramidal cell firing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glutamatergic",
+    "lang": "en",
+    "word": "glutamatergic",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons or synapses that use glutamate as their neurotransmitter",
+        "distractors": [
+          "relating to neurons that release dopamine as their primary signaling molecule",
+          "describing synapses that have become permanently inactive"
+        ],
+        "example": {
+          "text": "Glutamatergic transmission mediates most fast excitatory signaling in the mammalian brain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gabaergic",
+    "lang": "en",
+    "word": "GABAergic",
+    "pos": "adjective",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons or synapses that use GABA as their neurotransmitter, producing inhibitory effects",
+        "distractors": [
+          "relating to neurons that generate excitatory postsynaptic potentials",
+          "describing receptors activated exclusively by acetylcholine"
+        ],
+        "example": {
+          "text": "GABAergic interneurons dampen excessive excitatory activity in the hippocampus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dopaminergic",
+    "lang": "en",
+    "word": "dopaminergic",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons, pathways, or receptors that use dopamine as their signaling molecule",
+        "distractors": [
+          "relating to circuits that rely exclusively on electrical rather than chemical synapses",
+          "describing brain regions with no synaptic input"
+        ],
+        "example": {
+          "text": "Degeneration of dopaminergic neurons in the substantia nigra underlies the motor symptoms of Parkinson's disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cholinergic",
+    "lang": "en",
+    "word": "cholinergic",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons or synapses that use acetylcholine as their neurotransmitter",
+        "distractors": [
+          "relating to neurons that respond only to painful stimuli",
+          "describing the myelin-forming cells of the peripheral nervous system"
+        ],
+        "example": {
+          "text": "Cholinergic projections from the basal forebrain support attention and memory encoding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serotonergic",
+    "lang": "en",
+    "word": "serotonergic",
+    "pos": "adjective",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons, pathways, or receptors that use serotonin as their signaling molecule",
+        "distractors": [
+          "relating to circuits governed entirely by glial rather than neuronal activity",
+          "describing synapses that lack any neurotransmitter release"
+        ],
+        "example": {
+          "text": "Many antidepressants act by prolonging serotonergic signaling in the synaptic cleft.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_noradrenergic",
+    "lang": "en",
+    "word": "noradrenergic",
+    "pos": "adjective",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to neurons or pathways that use norepinephrine as their neurotransmitter",
+        "distractors": [
+          "relating to neurons found exclusively in the cerebellar cortex",
+          "describing receptors that bind only to peptide hormones"
+        ],
+        "example": {
+          "text": "The locus coeruleus is the main source of noradrenergic input to the forebrain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_astrocyte",
+    "lang": "en",
+    "word": "astrocyte",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a star-shaped glial cell that supports neurons metabolically, regulates the extracellular environment, and helps form the blood-brain barrier",
+        "distractors": [
+          "a specialized neuron responsible for generating rhythmic motor patterns",
+          "an immune cell that migrates into the brain from the bloodstream"
+        ],
+        "example": {
+          "text": "Astrocytes surrounding the synapse help clear excess glutamate from the extracellular space.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_oligodendrocyte",
+    "lang": "en",
+    "word": "oligodendrocyte",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a glial cell in the central nervous system that produces the myelin sheath around multiple axons",
+        "distractors": [
+          "a neuron that transmits pain signals from the periphery to the spinal cord",
+          "a cell responsible for engulfing and removing cellular debris after injury"
+        ],
+        "example": {
+          "text": "A single oligodendrocyte can myelinate segments of several different axons at once.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microglia",
+    "lang": "en",
+    "word": "microglia",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the resident immune cells of the central nervous system that survey tissue and clear debris or pathogens",
+        "distractors": [
+          "the cells that generate myelin along peripheral nerve fibers",
+          "the excitatory neurons that form the bulk of the cerebral cortex"
+        ],
+        "example": {
+          "text": "Microglia become activated and proliferate rapidly following traumatic brain injury.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neurogenesis",
+    "lang": "en",
+    "word": "neurogenesis",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the generation of new neurons from progenitor cells, occurring mainly during development and in limited adult brain regions",
+        "distractors": [
+          "the process by which existing neurons form additional dendritic branches",
+          "the gradual breakdown of neurons following prolonged inactivity"
+        ],
+        "example": {
+          "text": "Adult neurogenesis in the hippocampal dentate gyrus has been linked to certain forms of learning.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_excitotoxicity",
+    "lang": "en",
+    "word": "excitotoxicity",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "neuronal damage caused by excessive stimulation from excitatory neurotransmitters, particularly glutamate",
+        "distractors": [
+          "the protective effect of mild synaptic stimulation on neuron survival",
+          "the process by which inhibitory neurotransmitters silence overactive circuits"
+        ],
+        "example": {
+          "text": "During ischemic stroke, excitotoxicity contributes significantly to neuronal death in the affected region.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_depolarization",
+    "lang": "en",
+    "word": "depolarization",
+    "pos": "noun",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a shift in a neuron's membrane potential toward a less negative value, moving it closer to firing threshold",
+        "distractors": [
+          "a shift in membrane potential toward a more negative resting value",
+          "the permanent loss of a neuron's ability to generate electrical signals"
+        ],
+        "example": {
+          "text": "Sodium influx through open channels causes rapid depolarization of the axon membrane.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hyperpolarization",
+    "lang": "en",
+    "word": "hyperpolarization",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a shift in a neuron's membrane potential toward a more negative value, moving it farther from firing threshold",
+        "distractors": [
+          "a shift in membrane potential toward a less negative, more excitable state",
+          "the buildup of neurotransmitter within presynaptic vesicles"
+        ],
+        "example": {
+          "text": "Potassium efflux following an action potential produces a brief hyperpolarization of the membrane.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_saltatory_conduction",
+    "lang": "en",
+    "word": "saltatory conduction",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rapid jumping of an action potential from one node of Ranvier to the next along a myelinated axon",
+        "distractors": [
+          "the continuous, gradually decaying spread of a signal along an unmyelinated axon",
+          "the transfer of neurotransmitter molecules across a synaptic gap"
+        ],
+        "example": {
+          "text": "Saltatory conduction allows myelinated axons to transmit signals far faster than unmyelinated ones of the same diameter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_long-term_potentiation",
+    "lang": "en",
+    "word": "long-term potentiation",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a persistent strengthening of synaptic transmission following intense or repeated stimulation, thought to underlie learning and memory",
+        "distractors": [
+          "a gradual, permanent weakening of a synapse after repeated low-frequency stimulation",
+          "the brief refractory period immediately following an action potential"
+        ],
+        "example": {
+          "text": "Long-term potentiation in the hippocampus can persist for hours after a brief burst of high-frequency stimulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_long-term_depression",
+    "lang": "en",
+    "word": "long-term depression",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a persistent weakening of synaptic transmission following prolonged low-frequency stimulation",
+        "distractors": [
+          "a lasting strengthening of a synapse following repeated high-frequency stimulation",
+          "a clinical mood disorder caused by chronic understimulation of reward circuits"
+        ],
+        "example": {
+          "text": "Long-term depression at cerebellar synapses is thought to contribute to motor learning.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synaptogenesis",
+    "lang": "en",
+    "word": "synaptogenesis",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the formation of new synapses between neurons",
+        "distractors": [
+          "the elimination of redundant synaptic connections during development",
+          "the process of myelinating a bundle of peripheral axons"
+        ],
+        "example": {
+          "text": "Synaptogenesis peaks in early childhood before excess connections are later pruned.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_postsynaptic",
+    "lang": "en",
+    "word": "postsynaptic",
+    "pos": "adjective",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located on or pertaining to the receiving side of a synapse",
+        "distractors": [
+          "located on or pertaining to the signal-releasing side of a synapse",
+          "describing a neuron whose axon has not yet formed any connections"
+        ],
+        "example": {
+          "text": "Receptors on the postsynaptic membrane bind neurotransmitter released from the presynaptic terminal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_presynaptic",
+    "lang": "en",
+    "word": "presynaptic",
+    "pos": "adjective",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located on or pertaining to the signal-releasing side of a synapse",
+        "distractors": [
+          "located on or pertaining to the receiving side of a synapse",
+          "describing glial cells that surround a synaptic junction"
+        ],
+        "example": {
+          "text": "Calcium influx into the presynaptic terminal triggers vesicle release.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ionotropic",
+    "lang": "en",
+    "word": "ionotropic",
+    "pos": "adjective",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a receptor that directly forms an ion channel and opens rapidly upon ligand binding",
+        "distractors": [
+          "describing a receptor that acts slowly through an intracellular second-messenger cascade",
+          "describing a channel that opens only in response to changes in membrane voltage"
+        ],
+        "example": {
+          "text": "Ionotropic glutamate receptors mediate fast excitatory transmission at most central synapses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metabotropic",
+    "lang": "en",
+    "word": "metabotropic",
+    "pos": "adjective",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a receptor that triggers a slower intracellular signaling cascade via G-proteins rather than directly opening an ion channel",
+        "distractors": [
+          "describing a receptor that opens an ion channel immediately upon binding its ligand",
+          "describing a channel gated purely by changes in membrane voltage"
+        ],
+        "example": {
+          "text": "Metabotropic glutamate receptors modulate synaptic strength over a longer timescale than ionotropic ones.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allosteric",
+    "lang": "en",
+    "word": "allosteric",
+    "pos": "adjective",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a binding site on a receptor or enzyme distinct from the primary active site that, when occupied, changes the molecule's activity",
+        "distractors": [
+          "describing a receptor that can only be activated by its natural neurotransmitter",
+          "describing a synapse located far from the cell body"
+        ],
+        "example": {
+          "text": "Benzodiazepines act at an allosteric site on the GABA-A receptor to enhance its response to GABA.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agonist",
+    "lang": "en",
+    "word": "agonist",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that binds to a receptor and activates it, mimicking the effect of the natural ligand",
+        "distractors": [
+          "a substance that binds to a receptor and blocks its normal activation",
+          "a molecule that transports neurotransmitter back into the presynaptic terminal"
+        ],
+        "example": {
+          "text": "Nicotine acts as an agonist at certain acetylcholine receptors.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antagonist",
+    "lang": "en",
+    "word": "antagonist",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that binds to a receptor without activating it, thereby blocking the natural ligand's effect",
+        "distractors": [
+          "a substance that binds to a receptor and triggers the same response as its natural ligand",
+          "an enzyme that breaks down neurotransmitter within the synaptic cleft"
+        ],
+        "example": {
+          "text": "Naloxone acts as an antagonist at opioid receptors, rapidly reversing an overdose.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuromodulation",
+    "lang": "en",
+    "word": "neuromodulation",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the adjustment of neuronal excitability or synaptic strength by chemical signals that act more diffusely and slowly than classical fast neurotransmission",
+        "distractors": [
+          "the rapid, point-to-point transmission of signals across a single synapse",
+          "the physical rewiring of axons to form entirely new pathways"
+        ],
+        "example": {
+          "text": "Dopamine provides neuromodulation that shifts the overall gain of cortical circuits rather than driving individual synapses directly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_homeostatic_plasticity",
+    "lang": "en",
+    "word": "homeostatic plasticity",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of mechanisms that adjust a neuron's or circuit's overall excitability to keep activity within a stable range",
+        "distractors": [
+          "the process by which specific synapses are strengthened based on correlated firing",
+          "the permanent silencing of a neuron following excessive stimulation"
+        ],
+        "example": {
+          "text": "Homeostatic plasticity scales synaptic strengths up or down to counteract prolonged changes in network activity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voltage-gated",
+    "lang": "en",
+    "word": "voltage-gated",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an ion channel that opens or closes in response to changes in membrane potential",
+        "distractors": [
+          "describing an ion channel that opens only when bound by a specific neurotransmitter",
+          "describing a channel that remains permanently open regardless of cellular state"
+        ],
+        "example": {
+          "text": "Voltage-gated sodium channels drive the rapid upstroke of the action potential.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ligand-gated",
+    "lang": "en",
+    "word": "ligand-gated",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an ion channel that opens or closes in response to the binding of a specific chemical messenger",
+        "distractors": [
+          "describing an ion channel that opens or closes based on changes in membrane voltage alone",
+          "describing a channel activated exclusively by mechanical stretch"
+        ],
+        "example": {
+          "text": "Ligand-gated channels at the neuromuscular junction open when acetylcholine binds their receptor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuropeptide",
+    "lang": "en",
+    "word": "neuropeptide",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a short chain of amino acids that neurons release to signal other cells, often acting more slowly and diffusely than classical neurotransmitters",
+        "distractors": [
+          "a lipid molecule embedded in the neuronal membrane that stabilizes myelin",
+          "a structural protein that forms the cytoskeleton of an axon"
+        ],
+        "example": {
+          "text": "Substance P is a neuropeptide involved in transmitting pain signals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neurotrophin",
+    "lang": "en",
+    "word": "neurotrophin",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a protein that promotes the survival, growth, and differentiation of neurons",
+        "distractors": [
+          "an enzyme that degrades excess neurotransmitter in the synaptic cleft",
+          "a receptor found exclusively on glial cell membranes"
+        ],
+        "example": {
+          "text": "Brain-derived neurotrophic factor is a neurotrophin that supports synaptic plasticity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_axonal_transport",
+    "lang": "en",
+    "word": "axonal transport",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the movement of proteins, organelles, and other materials along an axon between the cell body and the axon terminal",
+        "distractors": [
+          "the diffusion of neurotransmitter molecules across the synaptic cleft",
+          "the process by which an axon acquires its myelin sheath"
+        ],
+        "example": {
+          "text": "Disruption of axonal transport is implicated in several neurodegenerative diseases.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anterograde",
+    "lang": "en",
+    "word": "anterograde",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "moving in the normal forward direction, such as from cell body toward axon terminal, or forward in time from an event",
+        "distractors": [
+          "moving backward from the axon terminal toward the cell body",
+          "describing a signal that spreads simultaneously in both directions"
+        ],
+        "example": {
+          "text": "Anterograde amnesia impairs the formation of new memories after the onset of injury.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_retrograde",
+    "lang": "en",
+    "word": "retrograde",
+    "pos": "adjective",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "moving in the reverse direction, such as from axon terminal back toward the cell body, or backward in time before an event",
+        "distractors": [
+          "moving forward from the cell body toward the axon terminal",
+          "describing transmission that occurs only across electrical synapses"
+        ],
+        "example": {
+          "text": "Some viruses exploit retrograde axonal transport to travel from peripheral nerves back to the central nervous system.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytoarchitecture",
+    "lang": "en",
+    "word": "cytoarchitecture",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the characteristic arrangement, density, and layering of cell types within a region of brain tissue",
+        "distractors": [
+          "the network of blood vessels supplying a particular brain region",
+          "the pattern of white matter tracts connecting distant brain areas"
+        ],
+        "example": {
+          "text": "Differences in cytoarchitecture across cortical areas were used to define the classic Brodmann map.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tonotopic",
+    "lang": "en",
+    "word": "tonotopic",
+    "pos": "adjective",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a neural map in which sound frequency is spatially organized across a structure",
+        "distractors": [
+          "describing a neural map organized according to touch location on the body surface",
+          "describing a map organized purely by the timing rather than location of neural firing"
+        ],
+        "example": {
+          "text": "The tonotopic organization of the cochlea is preserved in the auditory cortex.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_somatotopic",
+    "lang": "en",
+    "word": "somatotopic",
+    "pos": "adjective",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a neural map in which regions of the body surface are spatially represented in an orderly arrangement",
+        "distractors": [
+          "describing a neural map organized according to sound frequency",
+          "describing a map that changes randomly with every sensory event"
+        ],
+        "example": {
+          "text": "The somatotopic map in primary motor cortex gives disproportionate space to the hands and face.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_retinotopic",
+    "lang": "en",
+    "word": "retinotopic",
+    "pos": "adjective",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a neural map in which positions on the retina are spatially represented in an orderly arrangement",
+        "distractors": [
+          "describing a neural map organized according to auditory frequency",
+          "describing a map that represents abstract concepts rather than sensory space"
+        ],
+        "example": {
+          "text": "Retinotopic mapping studies reveal how visual space is represented across multiple cortical areas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lateralization",
+    "lang": "en",
+    "word": "lateralization",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tendency for a particular cognitive function to be more dominant in one cerebral hemisphere than the other",
+        "distractors": [
+          "the process by which a neuron extends processes toward both hemispheres equally",
+          "the gradual loss of hemispheric specialization with aging"
+        ],
+        "example": {
+          "text": "Language functions show strong lateralization to the left hemisphere in most right-handed individuals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contralateral",
+    "lang": "en",
+    "word": "contralateral",
+    "pos": "adjective",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "situated on or affecting the opposite side of the body from a given reference point",
+        "distractors": [
+          "situated on or affecting the same side of the body as a given reference point",
+          "located deep within a structure rather than near its surface"
+        ],
+        "example": {
+          "text": "Damage to the right motor cortex typically produces weakness on the contralateral, left side of the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ipsilateral",
+    "lang": "en",
+    "word": "ipsilateral",
+    "pos": "adjective",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "situated on or affecting the same side of the body as a given reference point",
+        "distractors": [
+          "situated on or affecting the opposite side of the body from a given reference point",
+          "located near the midline rather than toward the periphery"
+        ],
+        "example": {
+          "text": "Some cerebellar pathways influence movement on the ipsilateral side of the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proprioception",
+    "lang": "en",
+    "word": "proprioception",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sense of the relative position and movement of one's own body parts",
+        "distractors": [
+          "the sense of pain arising from tissue damage",
+          "the sense of internal bodily states such as hunger or heart rate"
+        ],
+        "example": {
+          "text": "Proprioception allows a person to touch their nose with a finger even with their eyes closed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interoception",
+    "lang": "en",
+    "word": "interoception",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sense of the physiological condition of the internal organs and body, such as heartbeat or hunger",
+        "distractors": [
+          "the sense of the position and movement of the limbs and joints",
+          "the sense of external stimuli such as light and sound"
+        ],
+        "example": {
+          "text": "Altered interoception has been linked to differences in emotional awareness in some clinical populations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exteroception",
+    "lang": "en",
+    "word": "exteroception",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sense of stimuli arising outside the body, such as touch, sound, or light",
+        "distractors": [
+          "the sense of the body's internal physiological states",
+          "the sense of limb position derived from muscle and joint receptors"
+        ],
+        "example": {
+          "text": "Vision and hearing are classic examples of exteroception.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nociception",
+    "lang": "en",
+    "word": "nociception",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the neural process of encoding and processing harmful or potentially damaging stimuli",
+        "distractors": [
+          "the perceptual experience of pleasant touch",
+          "the process by which the brain suppresses awareness of internal sensations"
+        ],
+        "example": {
+          "text": "Nociception can occur even under anesthesia, though the conscious experience of pain does not.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allodynia",
+    "lang": "en",
+    "word": "allodynia",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a condition in which normally non-painful stimuli, such as light touch, are perceived as painful",
+        "distractors": [
+          "a heightened but still normal pain response to an already painful stimulus",
+          "a complete loss of the ability to feel pain"
+        ],
+        "example": {
+          "text": "Patients with allodynia may find that even light clothing against the skin causes pain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sensitization",
+    "lang": "en",
+    "word": "sensitization",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increase in responsiveness to a stimulus following repeated exposure, often to an intense or noxious one",
+        "distractors": [
+          "a decrease in responsiveness to a stimulus following repeated, harmless exposure",
+          "the permanent silencing of a neural pathway after injury"
+        ],
+        "example": {
+          "text": "Central sensitization can cause chronic pain to persist long after the original tissue injury has healed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_desensitization",
+    "lang": "en",
+    "word": "desensitization",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a decrease in responsiveness of a receptor or system following repeated or prolonged exposure to a stimulus",
+        "distractors": [
+          "an increase in responsiveness of a system following repeated exposure to a stimulus",
+          "the physical destruction of a receptor protein by an immune cell"
+        ],
+        "example": {
+          "text": "Prolonged agonist exposure can cause desensitization of the receptor, reducing its response over time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_downregulation",
+    "lang": "en",
+    "word": "downregulation",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a decrease in the number or sensitivity of receptors on a cell, often in response to prolonged stimulation",
+        "distractors": [
+          "an increase in the number of receptors expressed on a cell surface",
+          "the physical migration of a receptor to a distant part of the neuron"
+        ],
+        "example": {
+          "text": "Chronic drug exposure can cause downregulation of the receptors it targets, contributing to tolerance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_upregulation",
+    "lang": "en",
+    "word": "upregulation",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an increase in the number or sensitivity of receptors on a cell, often in response to reduced stimulation",
+        "distractors": [
+          "a decrease in the number of receptors expressed on a cell surface",
+          "the process by which a synapse is permanently eliminated"
+        ],
+        "example": {
+          "text": "Denervation of a muscle can trigger upregulation of its receptors, increasing sensitivity to the remaining neurotransmitter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_consolidation",
+    "lang": "en",
+    "word": "consolidation",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a newly formed memory becomes stable and resistant to disruption over time",
+        "distractors": [
+          "the process by which an established memory is reactivated and made temporarily unstable",
+          "the immediate encoding of sensory information into short-term memory"
+        ],
+        "example": {
+          "text": "Sleep is thought to play an important role in memory consolidation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reconsolidation",
+    "lang": "en",
+    "word": "reconsolidation",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a previously consolidated memory becomes temporarily unstable after retrieval and must be restabilized",
+        "distractors": [
+          "the initial stabilization of a memory immediately after it is first formed",
+          "the permanent erasure of a memory trace following repeated recall"
+        ],
+        "example": {
+          "text": "Interfering with reconsolidation after a memory is retrieved can weaken it on subsequent recall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_engram",
+    "lang": "en",
+    "word": "engram",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the hypothesized physical trace of a memory encoded in a specific pattern of neurons and synapses",
+        "distractors": [
+          "the electrical signal that travels down an axon during a single action potential",
+          "a diffuse chemical gradient that guides axon growth during development"
+        ],
+        "example": {
+          "text": "Researchers used genetic tools to tag and later reactivate a fear engram in the hippocampus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_confabulation",
+    "lang": "en",
+    "word": "confabulation",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the unintentional production of fabricated or distorted memories without the intent to deceive",
+        "distractors": [
+          "the deliberate fabrication of false memories for personal gain",
+          "the complete inability to form any new memories"
+        ],
+        "example": {
+          "text": "Patients with certain forms of amnesia may engage in confabulation, confidently reporting events that never occurred.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dissociation",
+    "lang": "en",
+    "word": "dissociation",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a disruption in the normally integrated functions of consciousness, memory, or identity",
+        "distractors": [
+          "the strengthening of the connection between two related cognitive processes",
+          "the process by which two brain hemispheres synchronize their activity"
+        ],
+        "example": {
+          "text": "Some researchers study dissociation by observing patients who report feeling detached from their own actions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inhibitory_control",
+    "lang": "en",
+    "word": "inhibitory control",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the cognitive ability to suppress an automatic or dominant response in favor of a more appropriate one",
+        "distractors": [
+          "the automatic tendency to repeat a previously rewarded action",
+          "the capacity to hold and manipulate several items of information at once"
+        ],
+        "example": {
+          "text": "The Stroop task is commonly used to measure inhibitory control.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cognitive_load",
+    "lang": "en",
+    "word": "cognitive load",
+    "pos": "noun",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of mental effort or working-memory resources being used at a given moment",
+        "distractors": [
+          "the total number of long-term memories a person has stored",
+          "the speed at which a person can physically respond to a stimulus"
+        ],
+        "example": {
+          "text": "Performing two demanding tasks at once increases cognitive load and can degrade performance on both.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_priming",
+    "lang": "en",
+    "word": "priming",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a change in the speed or accuracy of processing a stimulus caused by prior exposure to a related stimulus",
+        "distractors": [
+          "the deliberate rehearsal of information to move it into long-term storage",
+          "the gradual decline in attention over an extended task"
+        ],
+        "example": {
+          "text": "Seeing the word 'doctor' can prime faster recognition of the related word 'nurse.'",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_semantic_satiation",
+    "lang": "en",
+    "word": "semantic satiation",
+    "pos": "noun",
+    "freqRank": 36500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the temporary loss of a word's perceived meaning after it is repeated rapidly many times",
+        "distractors": [
+          "the permanent forgetting of a word's meaning due to disuse",
+          "the enhanced recall of a word after it is used in a meaningful sentence"
+        ],
+        "example": {
+          "text": "After repeating the word aloud thirty times, she experienced semantic satiation and it briefly sounded like meaningless noise.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metacognition",
+    "lang": "en",
+    "word": "metacognition",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "awareness and understanding of one's own thought processes, including monitoring and regulating them",
+        "distractors": [
+          "the automatic processing of sensory information without conscious awareness",
+          "the ability to recall specific autobiographical events in vivid detail"
+        ],
+        "example": {
+          "text": "Metacognition allows a student to recognize when they don't yet understand a concept well enough to be tested on it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mentalizing",
+    "lang": "en",
+    "word": "mentalizing",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the cognitive process of attributing mental states, such as beliefs and intentions, to oneself or others",
+        "distractors": [
+          "the process of memorizing information through repeated rehearsal",
+          "the automatic filtering of irrelevant sensory input"
+        ],
+        "example": {
+          "text": "Mentalizing allows us to predict that someone will look for an object where they last saw it, even if it has since been moved.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_embodied_cognition",
+    "lang": "en",
+    "word": "embodied cognition",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a theoretical framework holding that cognitive processes are shaped by the body's sensory and motor interactions with the environment",
+        "distractors": [
+          "a theory that cognition operates entirely independently of bodily sensation and movement",
+          "a model describing how memories are physically stored in specific brain locations"
+        ],
+        "example": {
+          "text": "Proponents of embodied cognition argue that abstract concepts like 'warmth' in social judgment are grounded in physical sensation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_connectionism",
+    "lang": "en",
+    "word": "connectionism",
+    "pos": "noun",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an approach to modeling cognition using networks of simple interconnected units that learn through adjusting connection strengths",
+        "distractors": [
+          "a theory that cognitive functions are strictly localized to single, dedicated brain regions",
+          "a clinical method for reconnecting severed peripheral nerves"
+        ],
+        "example": {
+          "text": "Connectionism inspired early artificial neural network models of how the brain might learn to recognize patterns.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_attentional_capture",
+    "lang": "en",
+    "word": "attentional capture",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the involuntary shift of attention toward a salient or unexpected stimulus",
+        "distractors": [
+          "the deliberate, effortful focusing of attention on a chosen target",
+          "the gradual habituation of attention to a repeated stimulus"
+        ],
+        "example": {
+          "text": "A sudden flash of light in peripheral vision can produce attentional capture even when it is irrelevant to the task.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inattentional_blindness",
+    "lang": "en",
+    "word": "inattentional blindness",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the failure to notice a fully visible but unexpected object because attention is engaged elsewhere",
+        "distractors": [
+          "the inability to perceive any visual stimuli due to damage to the visual cortex",
+          "a heightened sensitivity to unexpected stimuli in peripheral vision"
+        ],
+        "example": {
+          "text": "In the famous experiment, many viewers failed to notice a person in a gorilla suit due to inattentional blindness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_change_blindness",
+    "lang": "en",
+    "word": "change blindness",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the failure to detect a significant change between two visual scenes, especially when the change occurs during a brief disruption",
+        "distractors": [
+          "the inability to distinguish between similar colors under low lighting",
+          "an enhanced ability to notice subtle changes in a familiar scene"
+        ],
+        "example": {
+          "text": "Change blindness can be demonstrated by alternating two nearly identical photographs with a blank screen between them.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_binding_problem",
+    "lang": "en",
+    "word": "binding problem",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the theoretical question of how the brain combines separately processed features, such as color and shape, into a single unified perception",
+        "distractors": [
+          "the practical challenge of physically connecting electrodes to individual neurons",
+          "the difficulty of forming new synapses in the aging brain"
+        ],
+        "example": {
+          "text": "The binding problem asks how activity in dozens of specialized visual areas comes together to form one coherent percept of a red ball.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_qualia",
+    "lang": "en",
+    "word": "qualia",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the subjective, first-person qualities of conscious experience, such as what it feels like to see red",
+        "distractors": [
+          "the measurable electrical properties of a single neuron's membrane",
+          "the objective physical wavelength corresponding to a color"
+        ],
+        "example": {
+          "text": "Philosophers debate whether qualia can ever be fully explained by a physical description of brain activity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_connectome",
+    "lang": "en",
+    "word": "connectome",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a comprehensive map of the neural connections within a brain or nervous system",
+        "distractors": [
+          "a catalog of the genes expressed in a particular brain region",
+          "a chart of the blood supply to different cortical areas"
+        ],
+        "example": {
+          "text": "Mapping the complete connectome of a small organism like the roundworm took decades of painstaking work.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tractography",
+    "lang": "en",
+    "word": "tractography",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that uses diffusion imaging data to reconstruct and visualize white matter fiber pathways in the brain",
+        "distractors": [
+          "a method for recording the electrical activity of individual synapses",
+          "a procedure for measuring blood oxygen levels in gray matter"
+        ],
+        "example": {
+          "text": "Tractography revealed that the two brain regions were connected by a dense white matter bundle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_functional_connectivity",
+    "lang": "en",
+    "word": "functional connectivity",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the statistical correlation of activity between different brain regions over time, regardless of whether they are anatomically connected",
+        "distractors": [
+          "the physical density of synapses within a single brain region",
+          "the anatomical pathway of axons linking two brain areas"
+        ],
+        "example": {
+          "text": "Resting-state scans are commonly used to measure functional connectivity between distant brain regions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_default_mode_network",
+    "lang": "en",
+    "word": "default mode network",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of interconnected brain regions that show coordinated activity during rest and mind-wandering, and typically deactivate during focused external tasks",
+        "distractors": [
+          "the network of brain regions responsible for processing basic visual features",
+          "the collection of pathways that carry motor commands from the cortex to the spinal cord"
+        ],
+        "example": {
+          "text": "The default mode network tends to be more active when a person is daydreaming than when performing a demanding task.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_salience_network",
+    "lang": "en",
+    "word": "salience network",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a brain network that detects and prioritizes behaviorally relevant stimuli and helps switch between other large-scale networks",
+        "distractors": [
+          "the network of brain regions that store long-term autobiographical memories",
+          "the set of pathways dedicated exclusively to processing auditory pitch"
+        ],
+        "example": {
+          "text": "The salience network helps the brain shift attention from internal thought to an unexpected external event.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemodynamic_response",
+    "lang": "en",
+    "word": "hemodynamic response",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the change in local blood flow and oxygenation that follows increased neural activity in a brain region",
+        "distractors": [
+          "the electrical signal recorded directly from the scalp during an EEG session",
+          "the chemical breakdown of neurotransmitter within the synaptic cleft"
+        ],
+        "example": {
+          "text": "fMRI infers neural activity indirectly by measuring the hemodynamic response rather than electrical signals themselves.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_evoked_potential",
+    "lang": "en",
+    "word": "evoked potential",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrical response of the nervous system recorded following presentation of a specific sensory stimulus",
+        "distractors": [
+          "the resting electrical charge across a neuron's membrane in the absence of any stimulus",
+          "a spontaneous burst of neural firing unrelated to any external event"
+        ],
+        "example": {
+          "text": "Visual evoked potentials can be used to assess the integrity of the optic pathway.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_event-related_potential",
+    "lang": "en",
+    "word": "event-related potential",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrical brain response, measured by EEG, that is time-locked to a specific sensory, cognitive, or motor event",
+        "distractors": [
+          "the baseline electrical activity of the brain recorded during sleep",
+          "a magnetic resonance signal reflecting blood oxygenation changes"
+        ],
+        "example": {
+          "text": "Researchers examined the event-related potential elicited each time an unexpected sound was played.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mismatch_negativity",
+    "lang": "en",
+    "word": "mismatch negativity",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a brain response reflecting the automatic detection of a deviation from a repeated pattern of stimuli, even without conscious attention",
+        "distractors": [
+          "the peak electrical response elicited only by consciously attended novel stimuli",
+          "the total absence of any measurable response to an unexpected stimulus"
+        ],
+        "example": {
+          "text": "Mismatch negativity can be recorded even when a listener is not actively attending to the sounds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neural_oscillation",
+    "lang": "en",
+    "word": "neural oscillation",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rhythmic pattern of electrical activity generated by populations of neurons firing in a coordinated, repeating manner",
+        "distractors": [
+          "a single, isolated action potential fired by one neuron",
+          "the slow structural rewiring of synaptic connections over weeks"
+        ],
+        "example": {
+          "text": "Neural oscillations in the gamma band have been linked to processes such as attention and perceptual binding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phase-locking",
+    "lang": "en",
+    "word": "phase-locking",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tendency of neural firing to occur at a consistent point within the cycle of an ongoing oscillation",
+        "distractors": [
+          "the permanent synchronization of two separate brain regions regardless of task demands",
+          "the process by which a neuron loses its rhythmic firing pattern entirely"
+        ],
+        "example": {
+          "text": "Auditory neurons show phase-locking to the periodicity of a low-frequency tone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross-frequency_coupling",
+    "lang": "en",
+    "word": "cross-frequency coupling",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an interaction between neural oscillations of different frequencies, such as the amplitude of a fast rhythm being modulated by the phase of a slower one",
+        "distractors": [
+          "the simultaneous recording of two unrelated brain regions using separate electrodes",
+          "the process by which two different neurotransmitters bind to the same receptor"
+        ],
+        "example": {
+          "text": "Cross-frequency coupling between theta and gamma oscillations has been proposed to support working memory.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neural_entrainment",
+    "lang": "en",
+    "word": "neural entrainment",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the alignment of ongoing neural oscillations to the rhythm of an external periodic stimulus",
+        "distractors": [
+          "the permanent desynchronization of neural activity following sensory deprivation",
+          "the process by which a neuron's resting potential is reset after each action potential"
+        ],
+        "example": {
+          "text": "Neural entrainment to the rhythm of speech may help listeners predict upcoming syllables.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neural_synchrony",
+    "lang": "en",
+    "word": "neural synchrony",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the coordinated, temporally aligned firing of neurons across one or more brain regions",
+        "distractors": [
+          "the random, uncoordinated firing of neurons within a single region",
+          "the permanent structural fusion of two adjacent neurons"
+        ],
+        "example": {
+          "text": "Increased neural synchrony between visual areas has been associated with successful feature binding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neurodegeneration",
+    "lang": "en",
+    "word": "neurodegeneration",
+    "pos": "noun",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the progressive loss of structure or function of neurons, often leading to their eventual death",
+        "distractors": [
+          "the natural process by which unused synapses are pruned during development",
+          "the temporary suppression of neural activity during general anesthesia"
+        ],
+        "example": {
+          "text": "Neurodegeneration in the hippocampus is an early feature of several memory disorders.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_demyelination",
+    "lang": "en",
+    "word": "demyelination",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the loss or damage of the myelin sheath surrounding axons, which impairs signal conduction",
+        "distractors": [
+          "the initial formation of myelin around a previously bare axon",
+          "the pruning of excess synaptic connections during adolescence"
+        ],
+        "example": {
+          "text": "Demyelination of central axons is a hallmark feature of multiple sclerosis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agnosia",
+    "lang": "en",
+    "word": "agnosia",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an impairment in recognizing or interpreting sensory information despite intact sensory organs and no significant loss of intelligence",
+        "distractors": [
+          "a complete loss of sensation in a particular part of the body",
+          "an impairment in producing coordinated voluntary movements"
+        ],
+        "example": {
+          "text": "A person with visual agnosia may be able to see an object clearly yet be unable to name what it is.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_apraxia",
+    "lang": "en",
+    "word": "apraxia",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an impairment in performing purposeful, skilled movements despite intact muscle strength and comprehension of the task",
+        "distractors": [
+          "an impairment in recognizing familiar objects through vision or touch",
+          "a loss of the ability to produce or comprehend spoken language"
+        ],
+        "example": {
+          "text": "Apraxia can prevent a patient from pantomiming how to brush their teeth, even though they understand the request.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anomia",
+    "lang": "en",
+    "word": "anomia",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a difficulty retrieving the names of objects or people despite otherwise intact language ability",
+        "distractors": [
+          "a complete inability to comprehend spoken language",
+          "a difficulty coordinating the muscles used in speech production"
+        ],
+        "example": {
+          "text": "Anomia often shows up as frequent pauses and circumlocutions while a person searches for the right word.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prosopagnosia",
+    "lang": "en",
+    "word": "prosopagnosia",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an impairment in recognizing familiar faces despite otherwise normal visual perception",
+        "distractors": [
+          "an impairment in recognizing familiar voices despite normal hearing",
+          "an inability to perceive motion in the visual field"
+        ],
+        "example": {
+          "text": "A person with prosopagnosia may need to rely on a distinctive voice or hairstyle to identify a close friend.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemispatial_neglect",
+    "lang": "en",
+    "word": "hemispatial neglect",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a disorder, typically following damage to one hemisphere, in which a person fails to attend to or respond to stimuli on the opposite side of space",
+        "distractors": [
+          "a complete loss of vision in one half of the visual field due to damage in the visual pathway",
+          "a disorder marked by exaggerated attention to both sides of space simultaneously"
+        ],
+        "example": {
+          "text": "A patient with hemispatial neglect might eat food from only one side of the plate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anosognosia",
+    "lang": "en",
+    "word": "anosognosia",
+    "pos": "noun",
+    "freqRank": 35500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a condition in which a person is unaware of, or denies, their own neurological or psychiatric impairment",
+        "distractors": [
+          "a condition in which a person is excessively preoccupied with minor bodily symptoms",
+          "an impairment in recognizing familiar objects by touch"
+        ],
+        "example": {
+          "text": "Anosognosia can lead a patient with paralysis to insist that their limb is functioning normally.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dysarthria",
+    "lang": "en",
+    "word": "dysarthria",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a motor speech disorder caused by weakness or poor coordination of the muscles used in speaking",
+        "distractors": [
+          "a disorder involving difficulty understanding spoken or written language",
+          "a difficulty retrieving the names of familiar objects"
+        ],
+        "example": {
+          "text": "Dysarthria following a stroke can make a person's speech sound slurred despite normal language comprehension.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ataxia",
+    "lang": "en",
+    "word": "ataxia",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a lack of voluntary coordination of muscle movements, often resulting from cerebellar dysfunction",
+        "distractors": [
+          "a slowing of the initiation of voluntary movement",
+          "a rhythmic, involuntary shaking of a limb at rest"
+        ],
+        "example": {
+          "text": "Cerebellar damage often produces ataxia, causing an unsteady, uncoordinated gait.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dyskinesia",
+    "lang": "en",
+    "word": "dyskinesia",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormal, involuntary movement, often occurring as a side effect of prolonged dopaminergic medication",
+        "distractors": [
+          "a complete absence of voluntary movement",
+          "an impairment in planning multi-step, purposeful actions"
+        ],
+        "example": {
+          "text": "Long-term levodopa treatment for Parkinson's disease can eventually cause dyskinesia.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bradykinesia",
+    "lang": "en",
+    "word": "bradykinesia",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormal slowness of voluntary movement and a reduction in its amplitude",
+        "distractors": [
+          "an abnormal increase in the speed of voluntary movement",
+          "an involuntary rhythmic tremor occurring during movement"
+        ],
+        "example": {
+          "text": "Bradykinesia is one of the cardinal motor symptoms used to diagnose Parkinson's disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_akinesia",
+    "lang": "en",
+    "word": "akinesia",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a difficulty initiating voluntary movement, or a marked poverty of movement",
+        "distractors": [
+          "an excessive, uncontrollable increase in spontaneous movement",
+          "a selective loss of movement on one side of the body only"
+        ],
+        "example": {
+          "text": "Severe akinesia can leave a patient nearly frozen in place, unable to begin a movement despite intending to.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_epileptogenesis",
+    "lang": "en",
+    "word": "epileptogenesis",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a normal brain gradually develops the capacity to generate spontaneous seizures",
+        "distractors": [
+          "the immediate cessation of all abnormal electrical activity following a seizure",
+          "the process by which anticonvulsant medication is metabolized in the liver"
+        ],
+        "example": {
+          "text": "Researchers hope that understanding epileptogenesis after brain injury will lead to therapies that prevent epilepsy from ever developing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ictal",
+    "lang": "en",
+    "word": "ictal",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to or occurring during a seizure",
+        "distractors": [
+          "relating to the period immediately following a seizure",
+          "relating to the interval between two separate seizures"
+        ],
+        "example": {
+          "text": "Ictal EEG recordings showed a burst of rhythmic spike-wave activity during the seizure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interictal",
+    "lang": "en",
+    "word": "interictal",
+    "pos": "adjective",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the period between seizures, when no seizure is actively occurring",
+        "distractors": [
+          "relating to the moment a seizure begins",
+          "relating to the confused state that follows a seizure"
+        ],
+        "example": {
+          "text": "Interictal spikes on an EEG can help localize the brain region prone to generating seizures, even between episodes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_postictal",
+    "lang": "en",
+    "word": "postictal",
+    "pos": "adjective",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the period immediately following a seizure, often marked by confusion or fatigue",
+        "distractors": [
+          "relating to the period immediately preceding a seizure",
+          "relating to a chronic condition present between all seizures"
+        ],
+        "example": {
+          "text": "During the postictal period, the patient was drowsy and slow to respond to questions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kindling",
+    "lang": "en",
+    "word": "kindling",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phenomenon in which repeated, initially subthreshold stimulation of a brain region progressively increases its susceptibility to seizures",
+        "distractors": [
+          "a single intense stimulation that immediately produces a seizure with no prior exposure",
+          "the process by which anticonvulsant drugs reduce neuronal excitability"
+        ],
+        "example": {
+          "text": "In animal studies, kindling is used as a model for how epilepsy can develop over repeated episodes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuroinflammation",
+    "lang": "en",
+    "word": "neuroinflammation",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inflammatory response within the brain or spinal cord, typically involving activation of glial cells",
+        "distractors": [
+          "the normal metabolic activity that sustains healthy neurons",
+          "the process by which neurons form new synaptic connections after injury"
+        ],
+        "example": {
+          "text": "Chronic neuroinflammation has been implicated in the progression of several neurodegenerative diseases.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glymphatic",
+    "lang": "en",
+    "word": "glymphatic",
+    "pos": "adjective",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a brain-wide system, involving glial cells, that clears metabolic waste from neural tissue, especially during sleep",
+        "distractors": [
+          "relating to the lymphatic vessels that drain fluid from limb muscles",
+          "relating to the network of blood vessels supplying the retina"
+        ],
+        "example": {
+          "text": "The glymphatic system is thought to become more active during sleep, helping flush waste products from brain tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_perivascular",
+    "lang": "en",
+    "word": "perivascular",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "situated in the tissue immediately surrounding a blood vessel",
+        "distractors": [
+          "situated deep within the cell body of a neuron",
+          "situated at the junction between two adjacent synapses"
+        ],
+        "example": {
+          "text": "Waste products drain along perivascular spaces that surround the brain's blood vessels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anxiolytic",
+    "lang": "en",
+    "word": "anxiolytic",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "having the effect of reducing anxiety",
+        "distractors": [
+          "having the effect of inducing hallucinations",
+          "having the effect of increasing alertness and wakefulness"
+        ],
+        "example": {
+          "text": "Benzodiazepines have a well-established anxiolytic effect by enhancing GABAergic inhibition.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuroleptic",
+    "lang": "en",
+    "word": "neuroleptic",
+    "pos": "adjective",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a class of drugs used to treat psychotic symptoms, typically by blocking dopamine receptors",
+        "distractors": [
+          "relating to a class of drugs used primarily to relieve pain",
+          "relating to a class of drugs that enhance memory consolidation"
+        ],
+        "example": {
+          "text": "Neuroleptic medications can reduce hallucinations but may also produce movement side effects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_psychotomimetic",
+    "lang": "en",
+    "word": "psychotomimetic",
+    "pos": "adjective",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "producing effects that resemble the symptoms of psychosis, such as hallucinations or disordered thought",
+        "distractors": [
+          "producing effects that relieve symptoms of psychosis",
+          "producing a calming, sedative effect with no perceptual changes"
+        ],
+        "example": {
+          "text": "Certain NMDA receptor antagonists have psychotomimetic effects that researchers use to model psychosis in the lab.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anticholinergic",
+    "lang": "en",
+    "word": "anticholinergic",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "blocking the action of acetylcholine at its receptors",
+        "distractors": [
+          "enhancing the action of acetylcholine at its receptors",
+          "blocking the reuptake of serotonin at the synapse"
+        ],
+        "example": {
+          "text": "Anticholinergic side effects such as dry mouth and blurred vision are common with certain older antihistamines.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lateral_inhibition",
+    "lang": "en",
+    "word": "lateral inhibition",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a process by which an active neuron suppresses the activity of its neighbors, sharpening contrast in a sensory signal",
+        "distractors": [
+          "a process by which an active neuron excites its neighbors to amplify a weak signal",
+          "the suppression of a neuron's own activity following its own firing"
+        ],
+        "example": {
+          "text": "Lateral inhibition in the retina helps sharpen the perceived edges between light and dark regions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_feedforward_inhibition",
+    "lang": "en",
+    "word": "feedforward inhibition",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inhibitory circuit in which an input excites an interneuron that then suppresses a target neuron, acting in the same direction as the main signal pathway",
+        "distractors": [
+          "an inhibitory circuit in which a neuron's own output loops back to suppress itself",
+          "an excitatory circuit that amplifies a signal as it passes through successive synapses"
+        ],
+        "example": {
+          "text": "Feedforward inhibition helps sharpen the timing window during which a target neuron can fire.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_feedback_inhibition",
+    "lang": "en",
+    "word": "feedback inhibition",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inhibitory circuit in which a neuron's output activates an interneuron that loops back to suppress the same neuron or its inputs",
+        "distractors": [
+          "an inhibitory circuit driven entirely by input from a separate sensory pathway",
+          "an excitatory loop that continuously reinforces a neuron's own firing"
+        ],
+        "example": {
+          "text": "Feedback inhibition helps prevent runaway excitation by limiting how long a neuron can keep firing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_disinhibition",
+    "lang": "en",
+    "word": "disinhibition",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reduction in inhibitory control over a neural circuit or behavior, often resulting in increased activity or impulsivity",
+        "distractors": [
+          "an increase in inhibitory control that suppresses ongoing neural activity",
+          "the complete elimination of all synaptic transmission in a circuit"
+        ],
+        "example": {
+          "text": "Damage to frontal inhibitory circuits can produce behavioral disinhibition, such as impulsive or socially inappropriate actions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sensory_gating",
+    "lang": "en",
+    "word": "sensory gating",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the neural process of filtering out redundant or irrelevant sensory information so that attention can be directed to more salient stimuli",
+        "distractors": [
+          "the amplification of all incoming sensory signals regardless of relevance",
+          "the process by which a sensory organ physically blocks incoming stimuli"
+        ],
+        "example": {
+          "text": "Deficits in sensory gating have been studied as a possible marker of certain psychiatric conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_top-down_processing",
+    "lang": "en",
+    "word": "top-down processing",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "perceptual or cognitive processing that is guided by prior knowledge, expectations, or goals rather than by the raw sensory input alone",
+        "distractors": [
+          "perceptual processing driven purely by the physical features of the incoming stimulus",
+          "the automatic transfer of a memory from short-term to long-term storage"
+        ],
+        "example": {
+          "text": "Top-down processing lets us recognize a partially obscured word based on context and expectation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bottom-up_processing",
+    "lang": "en",
+    "word": "bottom-up processing",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "perceptual or cognitive processing that is driven directly by the physical features of the incoming sensory stimulus",
+        "distractors": [
+          "perceptual processing that is guided primarily by prior expectations and goals",
+          "the deliberate, effortful rehearsal of information for long-term storage"
+        ],
+        "example": {
+          "text": "A sudden loud noise captures attention through bottom-up processing, regardless of what a person is expecting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_receptive_field",
+    "lang": "en",
+    "word": "receptive field",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the specific region of sensory space within which a stimulus can influence the firing of a given neuron",
+        "distractors": [
+          "the entire area of cortex devoted to a single sensory modality",
+          "the physical territory over which a single glial cell exerts influence"
+        ],
+        "example": {
+          "text": "A retinal ganglion cell's receptive field is often organized as a center surrounded by an antagonistic ring.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ocular_dominance_column",
+    "lang": "en",
+    "word": "ocular dominance column",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a stripe-like region of visual cortex in which neurons respond preferentially to input from one eye over the other",
+        "distractors": [
+          "a region of the retina where photoreceptors from both eyes physically overlap",
+          "a subcortical structure that relays visual input to the thalamus"
+        ],
+        "example": {
+          "text": "Ocular dominance columns in primary visual cortex can be visualized as alternating stripes favoring the left or right eye.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_critical_period",
+    "lang": "en",
+    "word": "critical period",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a limited developmental window during which a particular neural circuit is especially sensitive to experience and shaped by it",
+        "distractors": [
+          "the entire lifespan during which any form of learning remains equally possible",
+          "the brief interval immediately following an action potential during which a neuron cannot fire again"
+        ],
+        "example": {
+          "text": "Depriving one eye of visual input during the critical period can permanently impair vision in that eye.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neural_correlate",
+    "lang": "en",
+    "word": "neural correlate",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pattern of brain activity that reliably co-occurs with a particular mental state or behavior",
+        "distractors": [
+          "a genetic mutation that directly causes a specific psychiatric disorder",
+          "a structural connection between two neurons formed during development"
+        ],
+        "example": {
+          "text": "Researchers search for the neural correlates of consciousness by comparing brain activity during aware versus unaware perception.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synaptic_scaling",
+    "lang": "en",
+    "word": "synaptic scaling",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a homeostatic process in which a neuron uniformly adjusts the strength of all its synapses to maintain stable overall activity",
+        "distractors": [
+          "the selective strengthening of a single synapse based on its own recent activity",
+          "the physical enlargement of a synapse following a single strong stimulus"
+        ],
+        "example": {
+          "text": "Synaptic scaling allows a neuron to compensate for a global increase in network activity by proportionally weakening all of its inputs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spike-timing-dependent_plasticity",
+    "lang": "en",
+    "word": "spike-timing-dependent plasticity",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a form of synaptic plasticity in which the precise relative timing of presynaptic and postsynaptic firing determines whether a synapse is strengthened or weakened",
+        "distractors": [
+          "a form of plasticity that depends only on the total number of spikes, regardless of their timing",
+          "a structural change limited to the physical elimination of unused synapses"
+        ],
+        "example": {
+          "text": "Under spike-timing-dependent plasticity, a synapse is strengthened when the presynaptic neuron fires just before the postsynaptic one.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hebbian",
+    "lang": "en",
+    "word": "Hebbian",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a form of synaptic plasticity in which connections are strengthened when the presynaptic and postsynaptic neurons are repeatedly active together",
+        "distractors": [
+          "describing plasticity that occurs independently of any correlated neural activity",
+          "describing the fixed, unchangeable wiring of a mature neural circuit"
+        ],
+        "example": {
+          "text": "The Hebbian principle is often summarized as 'neurons that fire together, wire together.'",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dendritic_integration",
+    "lang": "en",
+    "word": "dendritic integration",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a neuron combines multiple synaptic inputs arriving across its dendrites to determine its overall output",
+        "distractors": [
+          "the physical fusion of two separate dendrites into a single branch",
+          "the process by which a dendrite acquires its myelin sheath"
+        ],
+        "example": {
+          "text": "Nonlinear dendritic integration allows a single neuron to perform computations more complex than simple summation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coincidence_detection",
+    "lang": "en",
+    "word": "coincidence detection",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neural mechanism by which a cell responds preferentially when multiple inputs arrive within a narrow time window",
+        "distractors": [
+          "a mechanism by which a neuron responds equally regardless of when its inputs arrive",
+          "the process of detecting a mismatch between expected and actual sensory input"
+        ],
+        "example": {
+          "text": "Coincidence detection in auditory brainstem neurons helps the brain compute the tiny time differences used to localize sound.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thalamocortical",
+    "lang": "en",
+    "word": "thalamocortical",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to connections or pathways running between the thalamus and the cerebral cortex",
+        "distractors": [
+          "relating to connections running between the cerebellum and the spinal cord",
+          "relating to pathways confined entirely within a single cortical layer"
+        ],
+        "example": {
+          "text": "Thalamocortical loops play a central role in regulating states of arousal and sleep.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_corticospinal",
+    "lang": "en",
+    "word": "corticospinal",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the pathway running from the cerebral cortex down to the spinal cord, primarily involved in voluntary movement",
+        "distractors": [
+          "relating to the pathway running from the spinal cord up to the thalamus",
+          "relating to connections confined entirely within the brainstem"
+        ],
+        "example": {
+          "text": "Damage to the corticospinal tract can produce weakness on the opposite side of the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_corticobulbar",
+    "lang": "en",
+    "word": "corticobulbar",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the pathway running from the cerebral cortex to motor nuclei in the brainstem, controlling muscles of the head and face",
+        "distractors": [
+          "relating to the pathway running from the cortex directly to the spinal cord",
+          "relating to sensory pathways carrying touch information from the face"
+        ],
+        "example": {
+          "text": "Corticobulbar fibers control the muscles involved in facial expression and swallowing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extrapyramidal",
+    "lang": "en",
+    "word": "extrapyramidal",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to motor pathways and structures, such as the basal ganglia, outside the direct corticospinal pyramidal tract",
+        "distractors": [
+          "relating exclusively to the direct corticospinal pathway controlling voluntary movement",
+          "relating to sensory pathways that carry pain and temperature information"
+        ],
+        "example": {
+          "text": "Extrapyramidal side effects such as rigidity and tremor can occur with certain antipsychotic medications.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyramidal_neuron",
+    "lang": "en",
+    "word": "pyramidal neuron",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a type of excitatory neuron, characterized by a pyramid-shaped cell body, that is the principal projection cell of the cerebral cortex",
+        "distractors": [
+          "a small, star-shaped inhibitory neuron confined to a single cortical layer",
+          "a glial cell responsible for producing myelin in the cortex"
+        ],
+        "example": {
+          "text": "Layer five pyramidal neurons send long axons out of the cortex to distant targets such as the spinal cord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_striatal",
+    "lang": "en",
+    "word": "striatal",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the striatum, a subcortical structure involved in motor control, reward, and habit formation",
+        "distractors": [
+          "relating to the cerebellar cortex and its role in motor coordination",
+          "relating to the hippocampus and its role in memory formation"
+        ],
+        "example": {
+          "text": "Striatal dopamine levels influence how readily a habit becomes automatic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nigrostriatal",
+    "lang": "en",
+    "word": "nigrostriatal",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the dopaminergic pathway running from the substantia nigra to the striatum, central to motor control",
+        "distractors": [
+          "relating to a serotonergic pathway running from the raphe nuclei to the cortex",
+          "relating to connections between the hippocampus and the amygdala"
+        ],
+        "example": {
+          "text": "Loss of neurons along the nigrostriatal pathway is a defining feature ofParkinson's disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mesolimbic",
+    "lang": "en",
+    "word": "mesolimbic",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the dopaminergic pathway running from the ventral tegmental area to limbic structures such as the nucleus accumbens, associated with reward",
+        "distractors": [
+          "relating to the pathway carrying visual information from the retina to the thalamus",
+          "relating to motor pathways connecting the cortex directly to the spinal cord"
+        ],
+        "example": {
+          "text": "The mesolimbic pathway is strongly implicated in the brain's response to rewarding stimuli.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mesocortical",
+    "lang": "en",
+    "word": "mesocortical",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the dopaminergic pathway running from the ventral tegmental area to the prefrontal cortex",
+        "distractors": [
+          "relating to the pathway running from the substantia nigra to the striatum",
+          "relating to sensory pathways carrying somatic information to the thalamus"
+        ],
+        "example": {
+          "text": "Dysfunction in the mesocortical pathway has been linked to some cognitive symptoms observed in psychiatric conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subcortical",
+    "lang": "en",
+    "word": "subcortical",
+    "pos": "adjective",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located beneath the cerebral cortex, referring to structures such as the thalamus, basal ganglia, or brainstem",
+        "distractors": [
+          "located on the outer surface of the cerebral cortex",
+          "restricted to structures found only in the spinal cord"
+        ],
+        "example": {
+          "text": "Subcortical structures such as the amygdala play a key role in rapid emotional responses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allocortex",
+    "lang": "en",
+    "word": "allocortex",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phylogenetically older type of cortex, such as the hippocampus, that has fewer layers than the six-layered neocortex",
+        "distractors": [
+          "the six-layered cortex that covers most of the surface of the human brain",
+          "the outermost protective membrane covering the entire brain"
+        ],
+        "example": {
+          "text": "The hippocampus is classified as allocortex because it lacks the full six-layer structure of the neocortex.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_isocortex",
+    "lang": "en",
+    "word": "isocortex",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "another term for the six-layered neocortex found throughout most of the mammalian cerebral hemispheres",
+        "distractors": [
+          "the three-layered cortex found in phylogenetically older brain structures",
+          "the subcortical white matter lying beneath the cortical surface"
+        ],
+        "example": {
+          "text": "The isocortex makes up the vast majority of the human cerebral cortex's surface area.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cortical_thinning",
+    "lang": "en",
+    "word": "cortical thinning",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reduction in the thickness of the cerebral cortex, observable through neuroimaging and often associated with aging or disease",
+        "distractors": [
+          "an increase in the thickness of the cerebral cortex following intensive learning",
+          "the loss of white matter connections between two cortical regions"
+        ],
+        "example": {
+          "text": "Longitudinal imaging studies have documented cortical thinning in regions affected by certain neurodegenerative diseases.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synaptic_density",
+    "lang": "en",
+    "word": "synaptic density",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the number of synapses per unit of tissue volume in a given brain region",
+        "distractors": [
+          "the concentration of neurotransmitter molecules within a single synaptic vesicle",
+          "the total surface area of a single dendritic spine"
+        ],
+        "example": {
+          "text": "Synaptic density in the prefrontal cortex rises sharply in childhood before declining during adolescent pruning.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_potentiate",
+    "lang": "en",
+    "word": "potentiate",
+    "pos": "verb",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to increase the strength, efficacy, or likelihood of a synaptic, physiological, or pharmacological effect",
+        "distractors": [
+          "to permanently and irreversibly disable a synaptic connection",
+          "to reduce the amplitude of an electrical signal traveling down an axon"
+        ],
+        "example": {
+          "text": "Repeated high-frequency stimulation can potentiate the response of a hippocampal synapse for hours afterward.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arborize",
+    "lang": "en",
+    "word": "arborize",
+    "pos": "verb",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to branch extensively, as an axon or dendrite does when forming multiple connections with target cells",
+        "distractors": [
+          "to retract and eliminate the majority of a neuron's existing branches",
+          "to wrap a segment of axon in an insulating myelin sheath"
+        ],
+        "example": {
+          "text": "As the neuron matures, its dendrites arborize extensively, greatly increasing its capacity to receive synaptic input.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_innervate",
+    "lang": "en",
+    "word": "innervate",
+    "pos": "verb",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to supply an organ, muscle, or tissue with nerve fibers that carry signals to or from it",
+        "distractors": [
+          "to remove nerve supply from an organ or tissue entirely",
+          "to form a new blood vessel supplying a region of the brain"
+        ],
+        "example": {
+          "text": "The vagus nerve innervates a wide range of organs, including the heart and digestive tract.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decussate",
+    "lang": "en",
+    "word": "decussate",
+    "pos": "verb",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to cross from one side of the nervous system to the other, typically at the midline",
+        "distractors": [
+          "to travel along a single, uninterrupted path without crossing the midline",
+          "to branch repeatedly into progressively finer terminal fibers"
+        ],
+        "example": {
+          "text": "Most corticospinal fibers decussate in the medulla before descending to control the opposite side of the body.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_habituate",
+    "lang": "en",
+    "word": "habituate",
+    "pos": "verb",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to show a gradual decrease in response to a stimulus after repeated, harmless presentation",
+        "distractors": [
+          "to show a gradual increase in response to a stimulus after repeated presentation",
+          "to permanently lose the capacity to respond to any stimulus"
+        ],
+        "example": {
+          "text": "A startled animal will typically habituate to a repeated harmless sound after several presentations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extinguish",
+    "lang": "en",
+    "word": "extinguish",
+    "pos": "verb",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to gradually eliminate a previously learned conditioned response by repeatedly withholding the reinforcement that originally produced it",
+        "distractors": [
+          "to permanently strengthen a conditioned response through continued reinforcement",
+          "to instantly and irreversibly erase the neural trace underlying a memory"
+        ],
+        "example": {
+          "text": "Researchers extinguished the rats' fear response by repeatedly presenting the tone without the accompanying shock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recruit",
+    "lang": "en",
+    "word": "recruit",
+    "pos": "verb",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to bring additional neurons, muscle fibers, or brain regions into active participation in a process",
+        "distractors": [
+          "to permanently remove a brain region from participating in a task",
+          "to reduce the firing rate of an already active neural population"
+        ],
+        "example": {
+          "text": "As task difficulty increased, the scan showed the brain recruit additional prefrontal regions to support performance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synapse",
+    "lang": "en",
+    "word": "synapse",
+    "pos": "verb",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "neuroscience"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to form a functional junction that permits signal transmission from one neuron to another target cell",
+        "distractors": [
+          "to physically fuse two neuron cell bodies into a single unit",
+          "to permanently sever an existing connection between two neurons"
+        ],
+        "example": {
+          "text": "Retinal ganglion cell axons synapse onto neurons in the lateral geniculate nucleus of the thalamus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

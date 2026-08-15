@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_foliation",
+    "lang": "en",
+    "word": "foliation",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the planar arrangement of platy or elongate mineral grains produced by directed pressure in metamorphic rock",
+        "distractors": [
+          "the rounded layering formed when sedimentary beds are deposited underwater",
+          "the chemical banding produced when magma cools slowly inside a sill"
+        ],
+        "example": {
+          "text": "The schist displayed strong foliation aligned parallel to the fold axis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lineation",
+    "lang": "en",
+    "word": "lineation",
+    "pos": "noun",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a linear fabric in a rock defined by the parallel alignment of elongate mineral grains or structures",
+        "distractors": [
+          "the boundary separating two rock units of different age",
+          "the curved fracture pattern typical of glassy volcanic rock"
+        ],
+        "example": {
+          "text": "Mineral lineation on the fault surface recorded the direction of tectonic transport.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_schistosity",
+    "lang": "en",
+    "word": "schistosity",
+    "pos": "noun",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the coarse, wavy foliation typical of schist, defined by visible platy minerals such as mica",
+        "distractors": [
+          "the tendency of a mineral to dissolve readily in weak acid",
+          "the layering produced by successive lava flows cooling one atop another"
+        ],
+        "example": {
+          "text": "The schistosity in the outcrop was picked out by glittering flakes of muscovite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cleavage",
+    "lang": "en",
+    "word": "cleavage",
+    "pos": "noun",
+    "freqRank": 22300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tendency of a mineral to break along smooth planes related to its internal crystal structure",
+        "distractors": [
+          "the surface texture left on a rock by wind-driven sand",
+          "the process by which magma separates into layers of different density"
+        ],
+        "example": {
+          "text": "Mica's perfect cleavage lets it be peeled into thin, flexible sheets.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_joint",
+    "lang": "en",
+    "word": "joint",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fracture in rock along which no significant movement has occurred",
+        "distractors": [
+          "a vein of ore minerals deposited by hot fluids",
+          "the contact surface between two rock formations of unequal age"
+        ],
+        "example": {
+          "text": "Water seeping into vertical joints gradually widened them into a network of cracks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_boudinage",
+    "lang": "en",
+    "word": "boudinage",
+    "pos": "noun",
+    "freqRank": 38900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the structure formed when a competent rock layer is stretched and pinched into sausage-shaped segments",
+        "distractors": [
+          "the process by which minerals grow outward from a central seed crystal",
+          "a type of layering caused by repeated flash-flood deposits"
+        ],
+        "example": {
+          "text": "The quartz vein had been pulled apart into boudinage by ductile stretching of the surrounding schist.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mylonite",
+    "lang": "en",
+    "word": "mylonite",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fine-grained, foliated rock produced by intense ductile deformation within a shear zone",
+        "distractors": [
+          "a coarse rock formed by the sudden cooling of lava at the earth's surface",
+          "a porous rock built up from the shells of marine organisms"
+        ],
+        "example": {
+          "text": "The exposed mylonite marked the trace of an ancient ductile shear zone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cataclasite",
+    "lang": "en",
+    "word": "cataclasite",
+    "pos": "noun",
+    "freqRank": 41200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock formed by brittle fracturing and grinding of grains along a fault, without significant recrystallization",
+        "distractors": [
+          "a rock produced entirely by chemical precipitation from groundwater",
+          "a layered rock formed from windblown volcanic ash"
+        ],
+        "example": {
+          "text": "Angular, crushed fragments in the cataclasite showed that the fault had slipped at shallow, brittle depths.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_horst",
+    "lang": "en",
+    "word": "horst",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an elongated block of crust uplifted between two normal faults relative to the surrounding terrain",
+        "distractors": [
+          "a downdropped block of crust bounded by parallel faults",
+          "a curved fold that arches upward at its centre"
+        ],
+        "example": {
+          "text": "The mountain range formed as a horst, bounded on both sides by steep normal faults.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_graben",
+    "lang": "en",
+    "word": "graben",
+    "pos": "noun",
+    "freqRank": 26700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a block of crust that has dropped down between two parallel normal faults",
+        "distractors": [
+          "an uplifted ridge of rock bounded by reverse faults",
+          "a broad depression carved by a retreating glacier"
+        ],
+        "example": {
+          "text": "The valley floor is a graben that continues to subside as the region stretches apart.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nappe",
+    "lang": "en",
+    "word": "nappe",
+    "pos": "noun",
+    "freqRank": 34100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large sheet of rock that has been thrust or folded far from its original position, often over great horizontal distances",
+        "distractors": [
+          "a small pocket of trapped magma beneath a volcano",
+          "a thin crust of evaporite minerals left after a lake dries up"
+        ],
+        "example": {
+          "text": "Geologists mapped the nappe for dozens of kilometres to trace how far it had travelled during thrusting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_klippe",
+    "lang": "en",
+    "word": "klippe",
+    "pos": "noun",
+    "freqRank": 42300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an isolated remnant of a thrust sheet left standing above the surrounding rock after erosion removes the connecting material",
+        "distractors": [
+          "a narrow crack that develops as lava cools and contracts",
+          "a rounded pebble worn smooth by prolonged transport in a river"
+        ],
+        "example": {
+          "text": "Erosion had isolated the klippe, leaving older rock perched incongruously atop younger strata.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decollement",
+    "lang": "en",
+    "word": "décollement",
+    "pos": "noun",
+    "freqRank": 43800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low-angle detachment surface along which a mass of rock has slid or been thrust independently of the rock beneath it",
+        "distractors": [
+          "the surface where two lava flows of different composition merge together",
+          "a mineral-filled crack that cuts directly across bedding"
+        ],
+        "example": {
+          "text": "The fold belt developed above a regional décollement in weak shale.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anticline",
+    "lang": "en",
+    "word": "anticline",
+    "pos": "noun",
+    "freqRank": 23100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fold in rock layers that arches upward, with the oldest rocks at its core",
+        "distractors": [
+          "a fold in rock layers that sags downward, with the youngest rocks at its core",
+          "a vertical fracture with visible offset on either side"
+        ],
+        "example": {
+          "text": "Oil often accumulates in the crest of an anticline, trapped beneath an impermeable cap.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syncline",
+    "lang": "en",
+    "word": "syncline",
+    "pos": "noun",
+    "freqRank": 23400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fold in rock layers that sags downward, with the youngest rocks at its core",
+        "distractors": [
+          "a fold in rock layers that arches upward, with the oldest rocks at its core",
+          "a steeply dipping fault that has been folded after it formed"
+        ],
+        "example": {
+          "text": "The syncline preserved younger sediments in its trough long after the surrounding rock had eroded away.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monocline",
+    "lang": "en",
+    "word": "monocline",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a step-like fold in otherwise flat-lying rock layers, where beds dip steeply in one direction between horizontal sections",
+        "distractors": [
+          "a fold with two limbs dipping symmetrically away from a shared crest",
+          "a fracture along which rock has been displaced vertically"
+        ],
+        "example": {
+          "text": "The monocline formed a dramatic step in the plateau's otherwise horizontal sandstone beds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antiform",
+    "lang": "en",
+    "word": "antiform",
+    "pos": "noun",
+    "freqRank": 39700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an upward-arching fold whose relative age of the rock layers is unknown or not established",
+        "distractors": [
+          "a downward-sagging fold whose relative age of the layers is unknown",
+          "a fault where the two sides have moved horizontally past each other"
+        ],
+        "example": {
+          "text": "Without knowing which beds were oldest, the geologists could only describe the structure as an antiform.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synform",
+    "lang": "en",
+    "word": "synform",
+    "pos": "noun",
+    "freqRank": 40100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a downward-sagging fold whose relative age of the rock layers is unknown or not established",
+        "distractors": [
+          "an upward-arching fold whose relative age of the layers is unknown",
+          "a fold whose axis has been rotated into a vertical position"
+        ],
+        "example": {
+          "text": "In the heavily metamorphosed terrane, the structure could only be classified as a synform.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thrust_fault",
+    "lang": "en",
+    "word": "thrust fault",
+    "pos": "noun",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low-angle reverse fault along which older rock is pushed up and over younger rock",
+        "distractors": [
+          "a steep fault along which rock moves mainly sideways",
+          "a fracture that opens without any relative displacement of the two sides"
+        ],
+        "example": {
+          "text": "Along the thrust fault, Precambrian basement had been shoved on top of much younger sedimentary rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strike-slip",
+    "lang": "en",
+    "word": "strike-slip",
+    "pos": "adjective",
+    "freqRank": 24900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a fault where the two blocks move horizontally past each other, parallel to the fault line",
+        "distractors": [
+          "describing a fault where one block slides directly downward relative to the other",
+          "describing a fold whose limbs dip in opposite directions"
+        ],
+        "example": {
+          "text": "The San Andreas is a classic strike-slip fault, with the ground on either side sliding horizontally.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dip",
+    "lang": "en",
+    "word": "dip",
+    "pos": "noun",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the angle at which a rock layer or fault plane inclines downward from horizontal",
+        "distractors": [
+          "the compass direction in which a rock layer's surface trends",
+          "the vertical distance a fault block has been displaced"
+        ],
+        "example": {
+          "text": "The beds had a dip of thirty degrees toward the northeast.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strike",
+    "lang": "en",
+    "word": "strike",
+    "pos": "noun",
+    "freqRank": 20800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compass direction of the line formed by the intersection of a tilted rock layer with a horizontal plane",
+        "distractors": [
+          "the angle at which a rock layer inclines downward from horizontal",
+          "the total thickness of a sedimentary sequence measured vertically"
+        ],
+        "example": {
+          "text": "The outcrop's strike ran roughly north-south, perpendicular to the fold axis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_unconformity",
+    "lang": "en",
+    "word": "unconformity",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surface representing a gap in the rock record where deposition stopped or older rock was eroded before younger layers were laid down",
+        "distractors": [
+          "a boundary between two rock layers of identical age and composition",
+          "the plane along which a fold's two limbs meet"
+        ],
+        "example": {
+          "text": "The unconformity marked millions of years of missing time between the two rock units.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_disconformity",
+    "lang": "en",
+    "word": "disconformity",
+    "pos": "noun",
+    "freqRank": 34700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unconformity between parallel sedimentary layers, usually marked by an erosional surface, with no angular difference",
+        "distractors": [
+          "an unconformity where tilted layers are overlain by horizontal younger beds",
+          "an unconformity between sedimentary rock and older crystalline basement"
+        ],
+        "example": {
+          "text": "The disconformity was subtle, visible only as an irregular erosional surface between two flat-lying limestone units.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nonconformity",
+    "lang": "en",
+    "word": "nonconformity",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unconformity in which sedimentary rock rests directly on older igneous or metamorphic basement rock",
+        "distractors": [
+          "an unconformity between two parallel sedimentary sequences",
+          "an unconformity where the older rock layers are tilted at an angle to the younger ones"
+        ],
+        "example": {
+          "text": "The nonconformity exposed granite basement directly overlain by younger sandstone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_paraconformity",
+    "lang": "en",
+    "word": "paraconformity",
+    "pos": "noun",
+    "freqRank": 42800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unconformity in which the bedding planes above and below are parallel and the time gap is recognized only through fossil or age evidence",
+        "distractors": [
+          "an unconformity marked by a visible angular discordance between rock layers",
+          "an unconformity where basement rock is overlain by sedimentary strata"
+        ],
+        "example": {
+          "text": "Only careful fossil dating revealed the paraconformity, since the beds above and below looked continuous.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_peneplain",
+    "lang": "en",
+    "word": "peneplain",
+    "pos": "noun",
+    "freqRank": 35600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a broad, low-relief land surface produced by prolonged erosion that has worn mountains down nearly to base level",
+        "distractors": [
+          "a steep-walled valley carved by a mountain glacier",
+          "a flat plain built up from layers of volcanic ash"
+        ],
+        "example": {
+          "text": "Over tens of millions of years, erosion reduced the mountain range to a gently rolling peneplain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_isograd",
+    "lang": "en",
+    "word": "isograd",
+    "pos": "noun",
+    "freqRank": 40500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a line on a map connecting points where a particular metamorphic index mineral first appears, marking equal metamorphic grade",
+        "distractors": [
+          "a line connecting points of equal elevation above sea level",
+          "a boundary marking the outer edge of an igneous intrusion"
+        ],
+        "example": {
+          "text": "The biotite isograd traced the boundary where rocks first reached greenschist-facies conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_protolith",
+    "lang": "en",
+    "word": "protolith",
+    "pos": "noun",
+    "freqRank": 32100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the original, unmetamorphosed rock from which a metamorphic rock formed",
+        "distractors": [
+          "the final mineral assemblage produced at the peak of metamorphism",
+          "a fragment of foreign rock enclosed within an igneous body"
+        ],
+        "example": {
+          "text": "Relict bedding in the schist suggested its protolith had been a muddy sandstone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_migmatite",
+    "lang": "en",
+    "word": "migmatite",
+    "pos": "noun",
+    "freqRank": 34400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mixed rock showing both metamorphic and igneous features, formed where rock has been partially melted",
+        "distractors": [
+          "a rock formed entirely from windblown volcanic dust",
+          "a sedimentary rock composed of cemented shell fragments"
+        ],
+        "example": {
+          "text": "Swirling light and dark bands in the migmatite recorded partial melting of the gneiss.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gneiss",
+    "lang": "en",
+    "word": "gneiss",
+    "pos": "noun",
+    "freqRank": 27100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a coarse-grained metamorphic rock with distinct banding of light and dark minerals, formed under high-grade conditions",
+        "distractors": [
+          "a fine-grained volcanic rock that cools too quickly for crystals to form",
+          "a soft sedimentary rock composed of compacted clay"
+        ],
+        "example": {
+          "text": "The banded gneiss exposed in the canyon wall recorded intense high-grade metamorphism.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phyllite",
+    "lang": "en",
+    "word": "phyllite",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metamorphic rock intermediate between slate and schist, with a silky sheen from fine-grained mica",
+        "distractors": [
+          "a coarse igneous rock that crystallizes deep underground",
+          "a porous sedimentary rock formed from evaporated seawater"
+        ],
+        "example": {
+          "text": "The phyllite's silvery sheen came from tiny, aligned flakes of mica too small to see individually.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hornfels",
+    "lang": "en",
+    "word": "hornfels",
+    "pos": "noun",
+    "freqRank": 31700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fine-grained, hard metamorphic rock formed by contact metamorphism next to an igneous intrusion",
+        "distractors": [
+          "a coarse rock formed by regional metamorphism over a wide area",
+          "a layered rock deposited on a lake bed during seasonal cycles"
+        ],
+        "example": {
+          "text": "Heat from the intruding pluton baked the surrounding shale into tough, splintery hornfels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_skarn",
+    "lang": "en",
+    "word": "skarn",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a calcium-rich metamorphic rock formed where hot fluids from an igneous intrusion react with carbonate rock",
+        "distractors": [
+          "a rock formed purely by mechanical grinding along a fault plane",
+          "a fine volcanic ash deposit that has been compacted into rock"
+        ],
+        "example": {
+          "text": "The skarn contained garnet and pyroxene formed where the granite intruded limestone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_greenschist",
+    "lang": "en",
+    "word": "greenschist",
+    "pos": "noun",
+    "freqRank": 33100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low-grade metamorphic rock rich in green minerals such as chlorite and epidote",
+        "distractors": [
+          "a high-grade metamorphic rock formed at extreme pressure and temperature",
+          "a coarse igneous rock crystallized slowly deep in a magma chamber"
+        ],
+        "example": {
+          "text": "The greenschist owed its color to abundant chlorite formed under low-grade metamorphic conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amphibolite",
+    "lang": "en",
+    "word": "amphibolite",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metamorphic rock composed mainly of amphibole and plagioclase, typically formed at medium to high grade",
+        "distractors": [
+          "a sedimentary rock formed from cemented volcanic ash",
+          "a low-grade metamorphic rock dominated by chlorite and talc"
+        ],
+        "example": {
+          "text": "The dark, dense amphibolite formed from the metamorphism of a basaltic protolith.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_granulite",
+    "lang": "en",
+    "word": "granulite",
+    "pos": "noun",
+    "freqRank": 32400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a high-grade metamorphic rock formed at very high temperature, typically lacking hydrous minerals like mica",
+        "distractors": [
+          "a fine-grained rock formed by rapid cooling of lava at the surface",
+          "a soft rock formed by the compaction of plant material"
+        ],
+        "example": {
+          "text": "The granulite formed deep in the crust, where temperatures were too high for mica to remain stable.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eclogite",
+    "lang": "en",
+    "word": "eclogite",
+    "pos": "noun",
+    "freqRank": 33700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dense, high-pressure metamorphic rock composed mainly of red garnet and green sodium-rich pyroxene",
+        "distractors": [
+          "a light, porous rock formed by rapid degassing of lava",
+          "a soft rock composed of layered clay minerals"
+        ],
+        "example": {
+          "text": "The eclogite's garnet and omphacite indicated the rock had been subducted to great depth before returning to the surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_blueschist",
+    "lang": "en",
+    "word": "blueschist",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metamorphic rock formed under high pressure and relatively low temperature, colored by blue amphibole minerals",
+        "distractors": [
+          "a metamorphic rock formed under low pressure and high temperature",
+          "an igneous rock that solidifies from magma rich in iron and magnesium"
+        ],
+        "example": {
+          "text": "The blueschist's distinctive color came from glaucophane, a mineral stable only under high-pressure, low-temperature conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serpentinite",
+    "lang": "en",
+    "word": "serpentinite",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock composed largely of serpentine minerals, formed by the alteration of ultramafic rock",
+        "distractors": [
+          "a rock composed of interlocking quartz and feldspar crystals",
+          "a sedimentary rock formed from compacted volcanic ash"
+        ],
+        "example": {
+          "text": "The slick, greenish serpentinite formed where seawater altered mantle rock along the fault zone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metasomatism",
+    "lang": "en",
+    "word": "metasomatism",
+    "pos": "noun",
+    "freqRank": 35900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a rock's chemical composition is altered through the introduction or removal of material by fluids",
+        "distractors": [
+          "the process by which magma cools and crystallizes into rock",
+          "the gradual compaction of sediment into solid rock"
+        ],
+        "example": {
+          "text": "Metasomatism introduced boron-rich fluids that transformed the limestone into a tourmaline-bearing skarn.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenolith",
+    "lang": "en",
+    "word": "xenolith",
+    "pos": "noun",
+    "freqRank": 28300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fragment of foreign rock enclosed within an igneous rock, distinct from the surrounding magma",
+        "distractors": [
+          "a crystal that grew directly from the same magma that encloses it",
+          "a rounded pebble embedded within a sedimentary conglomerate"
+        ],
+        "example": {
+          "text": "The basalt contained mantle xenoliths carried up from deep in the earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenocryst",
+    "lang": "en",
+    "word": "xenocryst",
+    "pos": "noun",
+    "freqRank": 34900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a crystal enclosed in an igneous rock that did not originate from the magma that hosts it",
+        "distractors": [
+          "a crystal that grew in equilibrium with the surrounding magma",
+          "a mineral grain formed by the recrystallization of an older crystal"
+        ],
+        "example": {
+          "text": "The kimberlite carried diamond xenocrysts torn loose from deep mantle rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phenocryst",
+    "lang": "en",
+    "word": "phenocryst",
+    "pos": "noun",
+    "freqRank": 27600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large, well-formed crystal set within a finer-grained groundmass in an igneous rock",
+        "distractors": [
+          "a crystal fragment that formed entirely after the rock had solidified",
+          "a foreign rock fragment incorporated into magma from the surrounding wall rock"
+        ],
+        "example": {
+          "text": "Glassy phenocrysts of quartz stood out against the dark, fine-grained groundmass of the rhyolite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_porphyritic",
+    "lang": "en",
+    "word": "porphyritic",
+    "pos": "adjective",
+    "freqRank": 26900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an igneous rock texture with large crystals set in a finer-grained groundmass",
+        "distractors": [
+          "describing an igneous rock made of crystals all roughly the same size",
+          "describing a rock texture with no visible crystals at all"
+        ],
+        "example": {
+          "text": "The porphyritic andesite showed prominent feldspar crystals scattered through a dark, fine matrix.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vesicular",
+    "lang": "en",
+    "word": "vesicular",
+    "pos": "adjective",
+    "freqRank": 25100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a rock texture containing small cavities formed by gas bubbles trapped during solidification",
+        "distractors": [
+          "describing a rock texture made entirely of interlocking crystals with no gaps",
+          "describing a rock formed by successive thin layers of sediment"
+        ],
+        "example": {
+          "text": "The vesicular basalt was riddled with small, rounded holes left by escaping gas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amygdule",
+    "lang": "en",
+    "word": "amygdule",
+    "pos": "noun",
+    "freqRank": 39200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gas cavity in volcanic rock that has been filled with a secondary mineral such as calcite or quartz",
+        "distractors": [
+          "an empty gas cavity in volcanic rock that has never been filled",
+          "a large crystal that grew slowly within a cooling magma chamber"
+        ],
+        "example": {
+          "text": "Green amygdules of chlorite dotted the basalt where old gas bubbles had been filled in.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_miarolitic",
+    "lang": "en",
+    "word": "miarolitic",
+    "pos": "adjective",
+    "freqRank": 43100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a cavity in an igneous rock, especially granite or pegmatite, lined with well-formed crystals that grew into an open space",
+        "distractors": [
+          "describing a texture with no visible pores or cavities of any kind",
+          "describing sediment deposited in thin seasonal layers on a lake floor"
+        ],
+        "example": {
+          "text": "The pegmatite's miarolitic cavities were lined with sharp, well-formed quartz crystals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pegmatitic",
+    "lang": "en",
+    "word": "pegmatitic",
+    "pos": "adjective",
+    "freqRank": 36400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an extremely coarse-grained igneous texture, typically formed from the last, volatile-rich portion of a crystallizing magma",
+        "distractors": [
+          "describing an igneous texture so fine-grained that crystals cannot be seen without magnification",
+          "describing a rock texture produced entirely by mechanical fragmentation along a fault"
+        ],
+        "example": {
+          "text": "The pegmatitic dike contained feldspar crystals nearly a meter long.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_aphanitic",
+    "lang": "en",
+    "word": "aphanitic",
+    "pos": "adjective",
+    "freqRank": 30300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an igneous rock texture in which individual mineral grains are too small to see with the naked eye",
+        "distractors": [
+          "describing an igneous rock texture with crystals large enough to identify without magnification",
+          "describing a rock composed of rounded, water-worn fragments"
+        ],
+        "example": {
+          "text": "The aphanitic basalt looked uniformly dark and fine, its individual crystals invisible without a microscope.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phaneritic",
+    "lang": "en",
+    "word": "phaneritic",
+    "pos": "adjective",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an igneous rock texture in which individual mineral grains are large enough to be seen with the naked eye",
+        "distractors": [
+          "describing an igneous rock texture in which crystals are too small to see without magnification",
+          "describing a rock texture formed by rapid cooling at the earth's surface"
+        ],
+        "example": {
+          "text": "The phaneritic granite displayed clearly visible crystals of quartz, feldspar, and mica.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_poikilitic",
+    "lang": "en",
+    "word": "poikilitic",
+    "pos": "adjective",
+    "freqRank": 42600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a texture in which small crystals of one mineral are enclosed at random within larger crystals of another mineral",
+        "distractors": [
+          "describing a texture in which crystals are arranged in parallel bands",
+          "describing a texture formed when magma cools instantly upon contact with water"
+        ],
+        "example": {
+          "text": "In the poikilitic gabbro, small olivine grains were scattered throughout much larger pyroxene crystals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ophitic",
+    "lang": "en",
+    "word": "ophitic",
+    "pos": "adjective",
+    "freqRank": 43400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an igneous texture in which lath-shaped plagioclase crystals are partly or wholly enclosed by larger pyroxene crystals",
+        "distractors": [
+          "describing a texture composed entirely of glass with no crystal growth",
+          "describing sediment layered by alternating wet and dry seasons"
+        ],
+        "example": {
+          "text": "The diabase showed a classic ophitic texture, with plagioclase laths embedded in coarser pyroxene.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_perthite",
+    "lang": "en",
+    "word": "perthite",
+    "pos": "noun",
+    "freqRank": 37800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a feldspar intergrowth showing thin veins or patches of sodium-rich feldspar within a host of potassium-rich feldspar",
+        "distractors": [
+          "a single, uniform crystal of pure potassium feldspar",
+          "a mineral formed by the direct precipitation of silica from hot springs"
+        ],
+        "example": {
+          "text": "Under the microscope, the perthite revealed delicate, wavy streaks where the two feldspars had separated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exsolution",
+    "lang": "en",
+    "word": "exsolution",
+    "pos": "noun",
+    "freqRank": 33300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the separation of a single, originally homogeneous mineral into two distinct minerals as it cools",
+        "distractors": [
+          "the process by which a mineral dissolves completely in acidic groundwater",
+          "the growth of a crystal by the steady addition of new atomic layers"
+        ],
+        "example": {
+          "text": "Exsolution lamellae in the pyroxene recorded the mineral's slow cooling deep within the intrusion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pseudomorph",
+    "lang": "en",
+    "word": "pseudomorph",
+    "pos": "noun",
+    "freqRank": 28900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mineral that has replaced another mineral while retaining its original external crystal shape",
+        "distractors": [
+          "a crystal that has grown in an unusually irregular or distorted shape",
+          "a mineral vein that follows the trace of an older fault"
+        ],
+        "example": {
+          "text": "The pyrite pseudomorph still showed the six-sided outline of the original quartz crystal it had replaced.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_paragenesis",
+    "lang": "en",
+    "word": "paragenesis",
+    "pos": "noun",
+    "freqRank": 34600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sequence in which minerals form or crystallize within a rock or ore deposit",
+        "distractors": [
+          "the total number of distinct minerals present in a single rock sample",
+          "the process by which sediment is compacted into solid rock"
+        ],
+        "example": {
+          "text": "Careful study of the vein's paragenesis showed that quartz had crystallized before the later sulfide minerals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diagenesis",
+    "lang": "en",
+    "word": "diagenesis",
+    "pos": "noun",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the physical and chemical changes that transform loose sediment into sedimentary rock, occurring below the surface at relatively low temperature and pressure",
+        "distractors": [
+          "the process by which rock is transformed under intense heat and pressure deep in the crust",
+          "the erosion of exposed rock by wind, rain, and temperature change"
+        ],
+        "example": {
+          "text": "During diagenesis, dissolved minerals precipitated in the pore spaces and cemented the loose sand into sandstone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lithification",
+    "lang": "en",
+    "word": "lithification",
+    "pos": "noun",
+    "freqRank": 27900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which loose sediment is converted into solid rock through compaction and cementation",
+        "distractors": [
+          "the melting of solid rock into magma at depth",
+          "the chemical weathering of rock into fine clay particles"
+        ],
+        "example": {
+          "text": "Millions of years of lithification turned the soft mud into hard, fissile shale.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bioturbation",
+    "lang": "en",
+    "word": "bioturbation",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the disturbance of sediment layers by the burrowing, feeding, or movement of living organisms",
+        "distractors": [
+          "the layering of sediment produced purely by changing current speed",
+          "the chemical alteration of sediment caused by hot mineral-rich fluids"
+        ],
+        "example": {
+          "text": "Bioturbation had thoroughly churned the original layering, leaving only faint traces of the burrows.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross-bedding",
+    "lang": "en",
+    "word": "cross-bedding",
+    "pos": "noun",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary structure of inclined layers formed within a larger bed, produced by the migration of ripples, dunes, or waves",
+        "distractors": [
+          "flat, horizontal layering formed by sediment settling quietly in still water",
+          "a sedimentary structure formed by the drying and cracking of exposed mud"
+        ],
+        "example": {
+          "text": "The sandstone's cross-bedding revealed that ancient dunes had migrated steadily across the desert.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_graded_bedding",
+    "lang": "en",
+    "word": "graded bedding",
+    "pos": "noun",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary layer in which grain size decreases gradually from coarse at the base to fine at the top",
+        "distractors": [
+          "a sedimentary layer in which grain size stays uniform from base to top",
+          "a layer formed by the slow evaporation of a shallow saline lake"
+        ],
+        "example": {
+          "text": "The graded bedding, coarse sand fining upward into mud, indicated deposition from a single turbidity current.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_varve",
+    "lang": "en",
+    "word": "varve",
+    "pos": "noun",
+    "freqRank": 28100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pair of thin sedimentary layers, one light and one dark, deposited annually, typically in a glacial lake",
+        "distractors": [
+          "a single thick bed of sediment deposited by a catastrophic flood",
+          "a rounded pebble shaped by prolonged rolling in a stream"
+        ],
+        "example": {
+          "text": "Counting the varves in the lakebed core let scientists date the sediment year by year.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_turbidite",
+    "lang": "en",
+    "word": "turbidite",
+    "pos": "noun",
+    "freqRank": 29900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary deposit laid down by a fast-moving underwater sediment flow, typically showing graded bedding",
+        "distractors": [
+          "a sedimentary deposit formed slowly by wind-blown dust settling over centuries",
+          "a rock formed by the evaporation of a shallow inland sea"
+        ],
+        "example": {
+          "text": "The submarine canyon was floored with successive turbidites deposited by repeated underwater slides.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flysch",
+    "lang": "en",
+    "word": "flysch",
+    "pos": "noun",
+    "freqRank": 37200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thick sequence of marine sedimentary rock, typically alternating shale and sandstone, deposited in a foreland basin ahead of a rising mountain belt",
+        "distractors": [
+          "a coarse conglomerate deposited directly at the base of an eroding mountain range",
+          "a fine volcanic ash layer deposited after an explosive eruption"
+        ],
+        "example": {
+          "text": "The flysch sequence recorded rapid erosion and deposition as the mountain belt began to rise.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_molasse",
+    "lang": "en",
+    "word": "molasse",
+    "pos": "noun",
+    "freqRank": 38400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thick sequence of coarse, often continental sediment deposited late in mountain building, after the main phase of thrusting",
+        "distractors": [
+          "a fine marine sediment deposited in deep, quiet water far from shore",
+          "a layer of volcanic ash deposited immediately after an eruption"
+        ],
+        "example": {
+          "text": "The coarse conglomerates of the molasse recorded the final, rapid erosion of the uplifted mountains.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_evaporite",
+    "lang": "en",
+    "word": "evaporite",
+    "pos": "noun",
+    "freqRank": 25300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary rock formed by the precipitation of minerals as water evaporates from a saline body",
+        "distractors": [
+          "a sedimentary rock formed from the compacted remains of marine organisms",
+          "a rock formed by rapid cooling of lava upon contact with seawater"
+        ],
+        "example": {
+          "text": "Thick beds of rock salt and gypsum formed as an evaporite when the ancient sea dried up.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_laterite",
+    "lang": "en",
+    "word": "laterite",
+    "pos": "noun",
+    "freqRank": 26100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reddish, iron- and aluminum-rich soil or rock formed by intense chemical weathering in tropical climates",
+        "distractors": [
+          "a fine-grained rock formed by the compaction of volcanic ash",
+          "a rock formed by the freezing and thawing of water in cracks"
+        ],
+        "example": {
+          "text": "Intense tropical weathering left the hillside covered in thick, rust-red laterite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_saprolite",
+    "lang": "en",
+    "word": "saprolite",
+    "pos": "noun",
+    "freqRank": 33600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a soft, chemically weathered rock that retains the original structure of its parent rock, formed in place without significant transport",
+        "distractors": [
+          "a rock transported and rounded by a fast-flowing river",
+          "a rock formed by the rapid cooling of magma at the surface"
+        ],
+        "example": {
+          "text": "Beneath the thin soil, the saprolite still preserved faint traces of the granite's original mineral grains.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_regolith",
+    "lang": "en",
+    "word": "regolith",
+    "pos": "noun",
+    "freqRank": 28700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the layer of loose, unconsolidated rock debris, soil, and dust covering solid bedrock",
+        "distractors": [
+          "a layer of solid, unweathered bedrock lying just beneath the soil",
+          "a thin crust of evaporite minerals left after a lake dries up"
+        ],
+        "example": {
+          "text": "A thick blanket of regolith covered the underlying granite, formed by centuries of weathering.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_karst",
+    "lang": "en",
+    "word": "karst",
+    "pos": "noun",
+    "freqRank": 22600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a landscape shaped by the dissolution of soluble bedrock such as limestone, characterized by sinkholes, caves, and underground drainage",
+        "distractors": [
+          "a landscape shaped primarily by the grinding action of a glacier",
+          "a landscape built up from repeated layers of volcanic ash"
+        ],
+        "example": {
+          "text": "The region's karst topography was riddled with sinkholes and underground streams.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_speleothem",
+    "lang": "en",
+    "word": "speleothem",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mineral formation, such as a stalactite or stalagmite, deposited in a cave by dripping or flowing water",
+        "distractors": [
+          "a mineral vein deposited along a fault plane by hot magmatic fluids",
+          "a rounded boulder carried and deposited by a retreating glacier"
+        ],
+        "example": {
+          "text": "Layers within the speleothem allowed researchers to reconstruct thousands of years of climate change.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_travertine",
+    "lang": "en",
+    "word": "travertine",
+    "pos": "noun",
+    "freqRank": 24700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dense, banded limestone formed by rapid precipitation of calcium carbonate from spring water",
+        "distractors": [
+          "a fine-grained volcanic rock formed by rapid cooling at the surface",
+          "a coarse-grained igneous rock crystallized slowly deep underground"
+        ],
+        "example": {
+          "text": "Hot spring water deposited layer upon layer of travertine around the pool's rim.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tufa",
+    "lang": "en",
+    "word": "tufa",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a porous, spongy limestone deposited from calcium-rich water, typically at seeps, lakes, or springs",
+        "distractors": [
+          "a dense, fine-grained rock formed under high pressure deep in the crust",
+          "a rock formed by the cementation of windblown sand grains"
+        ],
+        "example": {
+          "text": "Towers of porous tufa rose from the lakebed where mineral-rich springs once bubbled up.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_geode",
+    "lang": "en",
+    "word": "geode",
+    "pos": "noun",
+    "freqRank": 21700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rounded rock cavity lined with crystals that grew inward from the walls",
+        "distractors": [
+          "a solid rock nodule with no internal cavity or crystal lining",
+          "a flat vein of ore minerals that cuts across surrounding rock"
+        ],
+        "example": {
+          "text": "Cracking open the geode revealed a hollow chamber lined with glittering amethyst crystals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_druse",
+    "lang": "en",
+    "word": "druse",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a crust of small crystals lining the surface of a rock cavity or vein",
+        "distractors": [
+          "a single large crystal that fills a cavity completely",
+          "a layer of fine ash deposited after a volcanic eruption"
+        ],
+        "example": {
+          "text": "A sparkling druse of tiny quartz crystals coated the inside of the vein.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vug",
+    "lang": "en",
+    "word": "vug",
+    "pos": "noun",
+    "freqRank": 39900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small, often crystal-lined cavity within a rock",
+        "distractors": [
+          "a large open cave formed by the dissolution of limestone",
+          "a smooth, rounded fracture surface polished by fault movement"
+        ],
+        "example": {
+          "text": "The core sample contained several vugs partly filled with calcite crystals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_botryoidal",
+    "lang": "en",
+    "word": "botryoidal",
+    "pos": "adjective",
+    "freqRank": 40800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral habit that forms in rounded, grape-like clusters",
+        "distractors": [
+          "describing a mineral habit that forms long, needle-like crystals",
+          "describing a mineral habit that forms flat, book-like sheets"
+        ],
+        "example": {
+          "text": "The malachite had a distinctive botryoidal habit, its surface covered in smooth, rounded lumps.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reniform",
+    "lang": "en",
+    "word": "reniform",
+    "pos": "adjective",
+    "freqRank": 37600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral habit shaped like a kidney, with a smooth, rounded surface",
+        "distractors": [
+          "describing a mineral habit that forms sharp, six-sided prisms",
+          "describing a mineral habit that grows in thin, branching, tree-like patterns"
+        ],
+        "example": {
+          "text": "The hematite specimen had a reniform surface, smooth and kidney-shaped.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_acicular",
+    "lang": "en",
+    "word": "acicular",
+    "pos": "adjective",
+    "freqRank": 32700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral habit consisting of slender, needle-like crystals",
+        "distractors": [
+          "describing a mineral habit consisting of flat, tabular plates",
+          "describing a mineral habit consisting of rounded, grape-like clusters"
+        ],
+        "example": {
+          "text": "Acicular crystals of natrolite radiated outward from a central point in the cavity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_striated",
+    "lang": "en",
+    "word": "striated",
+    "pos": "adjective",
+    "freqRank": 25700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "marked with fine parallel lines or grooves, often on a crystal face or a rock surface scoured by ice or faulting",
+        "distractors": [
+          "marked with a smooth, glassy surface completely free of texture",
+          "marked with irregular, randomly scattered pits and holes"
+        ],
+        "example": {
+          "text": "The fault surface was striated with fine parallel grooves left by the grinding motion of the rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chatoyancy",
+    "lang": "en",
+    "word": "chatoyancy",
+    "pos": "noun",
+    "freqRank": 41700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an optical effect in which a mineral displays a narrow band of shifting light, resembling a cat's eye, caused by fibrous inclusions",
+        "distractors": [
+          "the property of a mineral changing color depending on viewing angle across its whole surface",
+          "the tendency of a mineral to glow after exposure to ultraviolet light"
+        ],
+        "example": {
+          "text": "The cut cat's-eye chrysoberyl showed strong chatoyancy, a narrow band of light sliding across its surface as it turned.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_asterism",
+    "lang": "en",
+    "word": "asterism",
+    "pos": "noun",
+    "freqRank": 36800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a star-shaped pattern of light reflected or transmitted by a gem, caused by oriented needle-like inclusions",
+        "distractors": [
+          "a rainbow-like play of colors seen across the surface of a mineral",
+          "the tendency of a crystal to fracture along curved, shell-like surfaces"
+        ],
+        "example": {
+          "text": "The star sapphire's asterism produced a sharp six-rayed star of light under a single beam.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pleochroism",
+    "lang": "en",
+    "word": "pleochroism",
+    "pos": "noun",
+    "freqRank": 37100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the property of a mineral appearing to change color when viewed from different crystallographic directions",
+        "distractors": [
+          "the property of a mineral glowing a different color under ultraviolet light",
+          "the tendency of a mineral to break along smooth, flat planes"
+        ],
+        "example": {
+          "text": "Under the polarizing microscope, the tourmaline crystal showed strong pleochroism, shifting from green to nearly colorless as the stage rotated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_birefringence",
+    "lang": "en",
+    "word": "birefringence",
+    "pos": "noun",
+    "freqRank": 35200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the splitting of light into two rays traveling at different speeds as it passes through an anisotropic mineral",
+        "distractors": [
+          "the bending of light as it passes from air into any transparent mineral",
+          "the scattering of light by microscopic fractures within a mineral"
+        ],
+        "example": {
+          "text": "Calcite's strong birefringence makes text viewed through a clear crystal appear doubled.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_isotropic",
+    "lang": "en",
+    "word": "isotropic",
+    "pos": "adjective",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral whose optical properties, such as refractive index, are the same in every direction",
+        "distractors": [
+          "describing a mineral whose optical properties vary depending on the direction light travels through it",
+          "describing a mineral that forms only in cubic crystal cavities"
+        ],
+        "example": {
+          "text": "Because garnet is isotropic, it shows no double refraction under the polarizing microscope.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anisotropic",
+    "lang": "en",
+    "word": "anisotropic",
+    "pos": "adjective",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral whose optical properties vary depending on the direction light passes through the crystal",
+        "distractors": [
+          "describing a mineral whose optical properties are identical in every direction",
+          "describing a mineral that lacks any regular internal crystal structure"
+        ],
+        "example": {
+          "text": "Most minerals are anisotropic, splitting light into two rays that travel at different speeds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_uniaxial",
+    "lang": "en",
+    "word": "uniaxial",
+    "pos": "adjective",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a crystal with a single optic axis along which light travels without splitting into two rays",
+        "distractors": [
+          "describing a crystal with two distinct optic axes",
+          "describing a crystal with no optic axis at all, so light never splits"
+        ],
+        "example": {
+          "text": "Quartz is uniaxial, having just one direction along which incoming light is not doubly refracted.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biaxial",
+    "lang": "en",
+    "word": "biaxial",
+    "pos": "adjective",
+    "freqRank": 33400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a crystal with two distinct optic axes along which light travels without splitting into two rays",
+        "distractors": [
+          "describing a crystal with a single optic axis",
+          "describing a crystal with no cleavage planes whatsoever"
+        ],
+        "example": {
+          "text": "Mica is biaxial, showing two optic axes rather than the single axis seen in uniaxial minerals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_euhedral",
+    "lang": "en",
+    "word": "euhedral",
+    "pos": "adjective",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral crystal that has fully developed, well-formed crystal faces",
+        "distractors": [
+          "describing a mineral crystal with no discernible crystal faces at all",
+          "describing a mineral crystal whose faces are only partly developed"
+        ],
+        "example": {
+          "text": "The pegmatite contained euhedral beryl crystals with sharp, perfectly formed hexagonal faces.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subhedral",
+    "lang": "en",
+    "word": "subhedral",
+    "pos": "adjective",
+    "freqRank": 31300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral crystal with partially developed crystal faces, intermediate between well-formed and shapeless",
+        "distractors": [
+          "describing a mineral crystal with fully developed, sharply defined faces",
+          "describing a mineral crystal with no crystal faces, bounded only by other grains"
+        ],
+        "example": {
+          "text": "The subhedral feldspar grains showed a few recognizable faces amid otherwise irregular outlines.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anhedral",
+    "lang": "en",
+    "word": "anhedral",
+    "pos": "adjective",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a mineral crystal lacking well-formed crystal faces because its growth was constrained by neighboring grains",
+        "distractors": [
+          "describing a mineral crystal with fully developed, sharply defined faces",
+          "describing a mineral crystal that grew freely into an open cavity"
+        ],
+        "example": {
+          "text": "The quartz filled the remaining spaces between other minerals as small, anhedral grains.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cumulate",
+    "lang": "en",
+    "word": "cumulate",
+    "pos": "noun",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an igneous rock formed by the accumulation and settling of crystals from a cooling magma body",
+        "distractors": [
+          "an igneous rock formed by rapid solidification of magma erupted at the surface",
+          "a sedimentary rock formed by the accumulation of shell fragments"
+        ],
+        "example": {
+          "text": "Dense layers of olivine cumulate had settled to the base of the slowly cooling magma chamber.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_propylitic",
+    "lang": "en",
+    "word": "propylitic",
+    "pos": "adjective",
+    "freqRank": 41500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a type of hydrothermal alteration that produces chlorite, epidote, and carbonate minerals in altered igneous rock",
+        "distractors": [
+          "describing alteration that produces intense silicification and quartz veining",
+          "describing alteration that bleaches rock completely white through clay formation"
+        ],
+        "example": {
+          "text": "The outer halo of propylitic alteration surrounded the deposit's more intensely altered core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_argillic",
+    "lang": "en",
+    "word": "argillic",
+    "pos": "adjective",
+    "freqRank": 38700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a type of hydrothermal alteration in which feldspar minerals are converted to clay minerals",
+        "distractors": [
+          "describing alteration in which minerals are replaced entirely by quartz",
+          "describing alteration that produces coarse new feldspar crystals"
+        ],
+        "example": {
+          "text": "Argillic alteration had softened the once-hard granite into a crumbly, clay-rich mass.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sericitization",
+    "lang": "en",
+    "word": "sericitization",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hydrothermal alteration process in which feldspar is converted into fine-grained white mica",
+        "distractors": [
+          "the process by which magma crystallizes directly into coarse feldspar",
+          "the compaction of loose sediment into solid rock over geologic time"
+        ],
+        "example": {
+          "text": "Sericitization along the vein margins left the once-glassy feldspar dull and soft.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_silicification",
+    "lang": "en",
+    "word": "silicification",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which rock or organic material is replaced or impregnated with silica",
+        "distractors": [
+          "the process by which rock is replaced with calcium carbonate",
+          "the mechanical breakdown of rock into fine sand by weathering"
+        ],
+        "example": {
+          "text": "Silicification had preserved the wood's cellular structure in exquisite detail as petrified wood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dolomitization",
+    "lang": "en",
+    "word": "dolomitization",
+    "pos": "noun",
+    "freqRank": 34300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which limestone is chemically altered into dolomite through the replacement of calcium with magnesium",
+        "distractors": [
+          "the process by which limestone is mechanically compacted into a denser rock",
+          "the deposition of new limestone layers directly on top of older ones"
+        ],
+        "example": {
+          "text": "Dolomitization had altered much of the original limestone, leaving a rock rich in magnesium carbonate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exfoliation",
+    "lang": "en",
+    "word": "exfoliation",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which curved sheets or slabs of rock peel away from an exposed rock surface, often due to pressure release",
+        "distractors": [
+          "the process by which a rock is ground down into fine sediment by glacial ice",
+          "the chemical dissolution of limestone by slightly acidic rainwater"
+        ],
+        "example": {
+          "text": "Exfoliation had peeled thick curved slabs from the granite dome as overlying rock eroded away.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_solifluction",
+    "lang": "en",
+    "word": "solifluction",
+    "pos": "noun",
+    "freqRank": 37900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the slow downslope flow of water-saturated soil over frozen or impermeable ground, common in periglacial environments",
+        "distractors": [
+          "the rapid downslope collapse of a rock face during an earthquake",
+          "the gradual sinking of ground caused by the dissolution of underlying limestone"
+        ],
+        "example": {
+          "text": "Solifluction lobes crept slowly downslope each summer as the thawed surface soil oozed over the still-frozen ground below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_periglacial",
+    "lang": "en",
+    "word": "periglacial",
+    "pos": "adjective",
+    "freqRank": 30100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing processes and landforms associated with cold, non-glaciated environments near the margins of ice sheets, often involving frost action",
+        "distractors": [
+          "describing processes and landforms found only beneath a thick, actively moving glacier",
+          "describing processes found exclusively in tropical, ice-free climates"
+        ],
+        "example": {
+          "text": "Patterned ground and frost wedges are classic features of a periglacial landscape.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_esker",
+    "lang": "en",
+    "word": "esker",
+    "pos": "noun",
+    "freqRank": 27300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a long, winding ridge of sand and gravel deposited by a stream flowing within or beneath a melting glacier",
+        "distractors": [
+          "a rounded hill of till shaped by overriding glacial ice",
+          "a steep-walled bowl carved into a mountainside by a glacier's head"
+        ],
+        "example": {
+          "text": "The esker snaked across the plain, marking the former course of a subglacial meltwater river.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_drumlin",
+    "lang": "en",
+    "word": "drumlin",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an elongated, teardrop-shaped hill of glacial till, streamlined in the direction of ice flow",
+        "distractors": [
+          "a winding ridge of sand deposited by a meltwater stream",
+          "a flat plain built up from sediment carried by glacial outwash"
+        ],
+        "example": {
+          "text": "The field of drumlins all pointed the same direction, revealing the ice sheet's former flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kame",
+    "lang": "en",
+    "word": "kame",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small hill or mound of stratified sand and gravel deposited by meltwater at the edge of a glacier",
+        "distractors": [
+          "a streamlined ridge of till shaped beneath moving glacial ice",
+          "a broad, flat outwash plain formed beyond a glacier's front"
+        ],
+        "example": {
+          "text": "The irregular hummocks of sand and gravel were kames left behind as the ice margin melted back.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_erratic",
+    "lang": "en",
+    "word": "erratic",
+    "pos": "noun",
+    "freqRank": 22100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock transported and deposited by a glacier far from its place of origin, often differing from the local bedrock",
+        "distractors": [
+          "a rounded rock fragment shaped by prolonged tumbling in a river",
+          "a large block of rock broken loose by frost action and left in place"
+        ],
+        "example": {
+          "text": "The granite erratic sat alone atop the limestone hillside, carried there by ice from miles away.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_roche_moutonnee",
+    "lang": "en",
+    "word": "roche moutonnée",
+    "pos": "noun",
+    "freqRank": 44200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an asymmetric bedrock knob shaped by glacial erosion, smoothly abraded on its up-ice side and steep and plucked on its down-ice side",
+        "distractors": [
+          "a symmetrical rounded hill formed entirely by chemical weathering",
+          "a sharp ridge separating two glacial valleys"
+        ],
+        "example": {
+          "text": "The roche moutonnée's gentle, polished slope faced the direction the ice had come from.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nunatak",
+    "lang": "en",
+    "word": "nunatak",
+    "pos": "noun",
+    "freqRank": 36200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an isolated peak or ridge of rock projecting above the surface of a surrounding ice sheet or glacier",
+        "distractors": [
+          "a rounded hill of till left behind after a glacier melts completely",
+          "a deep crevasse cutting through the surface of a glacier"
+        ],
+        "example": {
+          "text": "Only the nunatak's jagged summit rose above the vast, unbroken ice sheet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inselberg",
+    "lang": "en",
+    "word": "inselberg",
+    "pos": "noun",
+    "freqRank": 35400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an isolated hill or small mountain rising abruptly from a flat, gently sloping surrounding plain, typically in arid regions",
+        "distractors": [
+          "a low, rounded hill of glacial debris left after ice retreat",
+          "a steep-sided valley cut into a plateau by a river"
+        ],
+        "example": {
+          "text": "The granite inselberg towered over the surrounding plain, all the softer surrounding rock long since eroded away.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_yardang",
+    "lang": "en",
+    "word": "yardang",
+    "pos": "noun",
+    "freqRank": 40300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a streamlined ridge of rock or sediment sculpted by persistent wind erosion in an arid environment",
+        "distractors": [
+          "a low mound of sand deposited by a seasonal wadi",
+          "a rounded hill of glacial till shaped by moving ice"
+        ],
+        "example": {
+          "text": "Rows of parallel yardangs stretched across the desert, carved by centuries of steady wind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ventifact",
+    "lang": "en",
+    "word": "ventifact",
+    "pos": "noun",
+    "freqRank": 36900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock whose surface has been shaped, polished, or faceted by wind-driven sand and dust",
+        "distractors": [
+          "a rock rounded smooth by prolonged tumbling in a fast-flowing stream",
+          "a rock split apart by the repeated freezing and thawing of trapped water"
+        ],
+        "example": {
+          "text": "The ventifact's flat, polished facets met at sharp edges, evidence of relentless sandblasting by desert winds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deflation",
+    "lang": "en",
+    "word": "deflation",
+    "pos": "noun",
+    "freqRank": 24100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the removal of loose, fine sediment from a land surface by wind",
+        "distractors": [
+          "the deposition of fine sediment by a slow-moving river",
+          "the collapse of a cave roof following prolonged limestone dissolution"
+        ],
+        "example": {
+          "text": "Deflation had stripped away the fine sand, leaving a stony desert pavement of coarser pebbles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_loess",
+    "lang": "en",
+    "word": "loess",
+    "pos": "noun",
+    "freqRank": 26600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fine-grained, wind-deposited sediment composed mainly of silt-sized particles",
+        "distractors": [
+          "a coarse gravel deposit laid down by a fast-flowing river",
+          "a dense limestone formed by the accumulation of shell debris"
+        ],
+        "example": {
+          "text": "Thick deposits of loess blanketed the valley, carried there by wind from glacial outwash plains.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_barchan",
+    "lang": "en",
+    "word": "barchan",
+    "pos": "noun",
+    "freqRank": 38100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a crescent-shaped sand dune with its horns pointing downwind, formed by wind blowing from a fairly constant direction",
+        "distractors": [
+          "a long, straight dune aligned parallel to the prevailing wind",
+          "a star-shaped dune with several ridges radiating from a central peak"
+        ],
+        "example": {
+          "text": "The barchan slowly migrated across the desert floor, its crescent horns trailing downwind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_aeolian",
+    "lang": "en",
+    "word": "aeolian",
+    "pos": "adjective",
+    "freqRank": 29100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to processes, deposits, or landforms shaped by the action of wind",
+        "distractors": [
+          "relating to processes shaped by the action of flowing rivers",
+          "relating to processes shaped by the slow movement of glacial ice"
+        ],
+        "example": {
+          "text": "The rippled sandstone recorded an ancient aeolian environment, its cross-beds shaped by desert winds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pediment",
+    "lang": "en",
+    "word": "pediment",
+    "pos": "noun",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gently sloping bedrock surface at the base of a mountain front, thinly veneered with sediment and shaped mainly by erosion",
+        "distractors": [
+          "a thick wedge of coarse sediment deposited directly at a river's mouth",
+          "a steep cliff face cut by wave action along a coastline"
+        ],
+        "example": {
+          "text": "A broad pediment sloped gently away from the mountain front, its bedrock only thinly covered in gravel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bajada",
+    "lang": "en",
+    "word": "bajada",
+    "pos": "noun",
+    "freqRank": 39400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a broad, gently sloping apron formed by the coalescing of several alluvial fans along a mountain front",
+        "distractors": [
+          "a narrow, steep-walled canyon cut by a single flash flood",
+          "a flat, dry lakebed found at the lowest point of a desert basin"
+        ],
+        "example": {
+          "text": "The bajada stretched for miles along the range front, built from countless overlapping alluvial fans.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_playa",
+    "lang": "en",
+    "word": "playa",
+    "pos": "noun",
+    "freqRank": 23800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a flat, dry lakebed at the lowest point of an enclosed desert basin, occasionally flooded by shallow, ephemeral water",
+        "distractors": [
+          "a broad apron of coalesced alluvial fans along a mountain front",
+          "a crescent-shaped sand dune common in arid regions"
+        ],
+        "example": {
+          "text": "After a rare rainstorm, the playa briefly filled with a shallow sheet of standing water.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_oxbow",
+    "lang": "en",
+    "word": "oxbow",
+    "pos": "noun",
+    "freqRank": 24400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a curved lake formed when a meandering river cuts off one of its loops, leaving the old channel isolated",
+        "distractors": [
+          "a straight channel cut artificially to bypass a river bend",
+          "a ridge of sediment deposited along the outer bank of a river bend"
+        ],
+        "example": {
+          "text": "The oxbow lake traced the crescent shape of the river's abandoned meander loop.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_point_bar",
+    "lang": "en",
+    "word": "point bar",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a curved deposit of sediment that accumulates on the inside of a meandering river bend",
+        "distractors": [
+          "a deposit of sediment that accumulates on the outside of a meandering river bend",
+          "a ridge of sediment built up along a river's floodplain during overbank flooding"
+        ],
+        "example": {
+          "text": "Sand and gravel built up steadily on the point bar as the river continued to migrate sideways.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gossan",
+    "lang": "en",
+    "word": "gossan",
+    "pos": "noun",
+    "freqRank": 36600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rusty, iron-oxide-rich weathered outcrop marking the oxidized upper zone of a sulfide ore deposit",
+        "distractors": [
+          "a fresh, unweathered vein of sulfide ore exposed at the surface",
+          "a deposit of pure quartz formed at the margin of an igneous intrusion"
+        ],
+        "example": {
+          "text": "Prospectors traced the rusty gossan back to a buried body of copper sulfide ore.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_supergene",
+    "lang": "en",
+    "word": "supergene",
+    "pos": "adjective",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing ore-forming processes that occur near the earth's surface through the downward movement of weathering solutions",
+        "distractors": [
+          "describing ore-forming processes that occur deep within a crystallizing magma chamber",
+          "describing ore-forming processes driven entirely by high-temperature metamorphism"
+        ],
+        "example": {
+          "text": "Supergene enrichment had concentrated copper minerals in a zone just below the weathered gossan.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gangue",
+    "lang": "en",
+    "word": "gangue",
+    "pos": "noun",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the commercially worthless mineral material that occurs together with valuable ore minerals in a deposit",
+        "distractors": [
+          "the valuable mineral fraction of an ore that is extracted and sold",
+          "the fine dust produced when ore is crushed for processing"
+        ],
+        "example": {
+          "text": "After the copper minerals were extracted, the leftover quartz gangue was piled into waste heaps.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stockwork",
+    "lang": "en",
+    "word": "stockwork",
+    "pos": "noun",
+    "freqRank": 35700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dense network of intersecting mineral-filled veinlets running through a body of rock",
+        "distractors": [
+          "a single, wide vein of ore running in one continuous direction",
+          "a flat, horizontal sheet of intrusive igneous rock"
+        ],
+        "example": {
+          "text": "The deposit consisted of a stockwork of thin quartz veinlets carrying disseminated gold.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_breccia",
+    "lang": "en",
+    "word": "breccia",
+    "pos": "noun",
+    "freqRank": 22900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock composed of coarse, angular rock fragments cemented together in a finer matrix",
+        "distractors": [
+          "a rock composed of coarse, well-rounded fragments cemented together",
+          "a fine-grained rock formed by rapid cooling of lava"
+        ],
+        "example": {
+          "text": "The fault breccia was made of sharp, angular fragments shattered in place and later cemented.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_friable",
+    "lang": "en",
+    "word": "friable",
+    "pos": "adjective",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "easily crumbled or broken into small pieces",
+        "distractors": [
+          "resistant to crumbling even under repeated blows",
+          "capable of being drawn out into thin wires without breaking"
+        ],
+        "example": {
+          "text": "The weathered sandstone was so friable that it crumbled apart in my hand.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_indurated",
+    "lang": "en",
+    "word": "indurated",
+    "pos": "adjective",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "hardened, typically through the processes of compaction, cementation, or heat",
+        "distractors": [
+          "softened through prolonged exposure to acidic groundwater",
+          "reduced to fine powder through mechanical grinding"
+        ],
+        "example": {
+          "text": "Silica cement had left the once-loose sand thoroughly indurated into hard, resistant rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_felsic",
+    "lang": "en",
+    "word": "felsic",
+    "pos": "adjective",
+    "freqRank": 23600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing igneous rock or magma rich in silica and light-colored minerals such as quartz and feldspar",
+        "distractors": [
+          "describing igneous rock or magma rich in iron and magnesium with few light-colored minerals",
+          "describing igneous rock composed almost entirely of olivine and pyroxene"
+        ],
+        "example": {
+          "text": "The felsic magma was pale, viscous, and rich in silica compared to the darker basaltic melt nearby.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mafic",
+    "lang": "en",
+    "word": "mafic",
+    "pos": "adjective",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing igneous rock or magma rich in magnesium and iron, typically dark in color",
+        "distractors": [
+          "describing igneous rock or magma rich in silica and light-colored minerals",
+          "describing igneous rock composed almost entirely of quartz"
+        ],
+        "example": {
+          "text": "The mafic lava flow cooled into dark, dense basalt rich in iron and magnesium.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ultramafic",
+    "lang": "en",
+    "word": "ultramafic",
+    "pos": "adjective",
+    "freqRank": 26300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing igneous rock composed almost entirely of iron- and magnesium-rich minerals, with very little silica",
+        "distractors": [
+          "describing igneous rock composed almost entirely of quartz and feldspar",
+          "describing sedimentary rock composed of cemented volcanic ash"
+        ],
+        "example": {
+          "text": "The ultramafic peridotite, rich in olivine, likely originated from the earth's mantle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hypabyssal",
+    "lang": "en",
+    "word": "hypabyssal",
+    "pos": "adjective",
+    "freqRank": 39100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an igneous rock that solidified at shallow depth, between surface volcanic and deep plutonic conditions",
+        "distractors": [
+          "describing an igneous rock that solidified very slowly deep within the crust",
+          "describing an igneous rock that solidified instantly upon eruption at the surface"
+        ],
+        "example": {
+          "text": "The dike's medium-grained texture was typical of a hypabyssal intrusion emplaced just below the surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_batholith",
+    "lang": "en",
+    "word": "batholith",
+    "pos": "noun",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a very large body of intrusive igneous rock, typically granite, that crystallized deep underground and covers more than 100 square kilometers",
+        "distractors": [
+          "a thin sheet of igneous rock injected parallel to existing rock layers",
+          "a small, cone-shaped volcano built from loose ash and cinders"
+        ],
+        "example": {
+          "text": "The Sierra Nevada batholith formed from numerous granite plutons emplaced deep in the crust.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_laccolith",
+    "lang": "en",
+    "word": "laccolith",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dome-shaped body of intrusive igneous rock that arches the overlying rock layers upward as it forms",
+        "distractors": [
+          "a flat sheet of igneous rock that cuts directly across existing rock layers",
+          "a funnel-shaped body of igneous rock that widens with depth"
+        ],
+        "example": {
+          "text": "The laccolith had bowed the overlying sedimentary layers into a broad, dome-shaped mountain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lopolith",
+    "lang": "en",
+    "word": "lopolith",
+    "pos": "noun",
+    "freqRank": 41900,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large, saucer-shaped body of intrusive igneous rock that sags downward in its center",
+        "distractors": [
+          "a narrow, vertical sheet of igneous rock that cuts across surrounding layers",
+          "a small pocket of magma trapped just beneath an erupting volcano"
+        ],
+        "example": {
+          "text": "The lopolith's basin-like shape reflected the sagging of the crust as the huge volume of magma was emplaced.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lahar",
+    "lang": "en",
+    "word": "lahar",
+    "pos": "noun",
+    "freqRank": 27700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fast-moving mudflow of volcanic debris and water, often triggered by an eruption or heavy rainfall on a volcano",
+        "distractors": [
+          "a slow-moving flow of molten lava down a volcano's flank",
+          "a cloud of hot ash and gas that races down a volcano's slope"
+        ],
+        "example": {
+          "text": "The lahar swept down the valley, burying the town in a thick slurry of volcanic mud and debris.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ignimbrite",
+    "lang": "en",
+    "word": "ignimbrite",
+    "pos": "noun",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rock formed from the deposits of a pyroclastic flow, often welded together by residual heat",
+        "distractors": [
+          "a rock formed from lava that cooled slowly deep underground",
+          "a sedimentary rock formed from windblown desert sand"
+        ],
+        "example": {
+          "text": "The cliffs were carved from thick ignimbrite sheets, welded together by the heat of the original pyroclastic flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lapilli",
+    "lang": "en",
+    "word": "lapilli",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "fragments of volcanic rock or lava ejected during an eruption, ranging from about two to sixty-four millimeters in size",
+        "distractors": [
+          "fine volcanic particles smaller than two millimeters across",
+          "large volcanic blocks ejected while still partly molten and shaped in flight"
+        ],
+        "example": {
+          "text": "A layer of dark lapilli blanketed the hillside, marking a moderate explosive eruption.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scoria",
+    "lang": "en",
+    "word": "scoria",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dark, vesicular volcanic rock, typically basaltic, formed from gas-rich lava that cooled quickly",
+        "distractors": [
+          "a pale, lightweight volcanic rock so full of gas bubbles that it can float on water",
+          "a smooth, glassy volcanic rock with almost no gas bubbles"
+        ],
+        "example": {
+          "text": "Chunks of reddish scoria littered the slope of the cinder cone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arkose",
+    "lang": "en",
+    "word": "arkose",
+    "pos": "noun",
+    "freqRank": 30700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a coarse sandstone containing a large proportion of feldspar grains, typically derived from rapid erosion of granitic rock",
+        "distractors": [
+          "a fine sandstone composed almost entirely of rounded quartz grains",
+          "a sandstone cemented by silica derived from hot spring water"
+        ],
+        "example": {
+          "text": "The pink arkose still contained abundant feldspar grains, evidence of its nearby granite source.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_greywacke",
+    "lang": "en",
+    "word": "greywacke",
+    "pos": "noun",
+    "freqRank": 31100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a poorly sorted sandstone containing angular grains of quartz, feldspar, and rock fragments set in a fine, muddy matrix",
+        "distractors": [
+          "a well-sorted sandstone made almost entirely of rounded, clean quartz grains",
+          "a fine limestone formed from the shells of microscopic marine organisms"
+        ],
+        "example": {
+          "text": "The dark greywacke, poorly sorted and rich in rock fragments, likely formed from a rapid underwater sediment flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_oolite",
+    "lang": "en",
+    "word": "oolite",
+    "pos": "noun",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary rock composed of small, rounded grains formed by concentric layers of mineral precipitated around a nucleus",
+        "distractors": [
+          "a sedimentary rock composed entirely of angular, unsorted rock fragments",
+          "a rock formed by the rapid cooling of basaltic lava at the surface"
+        ],
+        "example": {
+          "text": "Under the microscope, the oolite's tiny rounded grains showed clear concentric layering around sand-sized cores.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pisolite",
+    "lang": "en",
+    "word": "pisolite",
+    "pos": "noun",
+    "freqRank": 38600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sedimentary rock composed of rounded grains larger than ooids, formed by concentric mineral precipitation, often in caves or evaporating pools",
+        "distractors": [
+          "a sedimentary rock composed of extremely fine, unlayered mud particles",
+          "a rock formed by the sudden cooling of molten lava upon contact with water"
+        ],
+        "example": {
+          "text": "The cave floor was covered in loose pisolite, pea-sized grains built up in concentric layers around tiny sand cores.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stromatolite",
+    "lang": "en",
+    "word": "stromatolite",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a layered, mound-shaped sedimentary structure built up by the trapping and binding of sediment by microbial mats",
+        "distractors": [
+          "a rounded sedimentary structure formed purely by inorganic mineral precipitation",
+          "a fossilized burrow left by a large marine invertebrate"
+        ],
+        "example": {
+          "text": "The ancient stromatolites preserved fine, wavy layers built up by billions of generations of microbial mats.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_concretion",
+    "lang": "en",
+    "word": "concretion",
+    "pos": "noun",
+    "freqRank": 23700,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rounded, hard mass within a sedimentary rock formed by the localized precipitation of mineral cement around a nucleus",
+        "distractors": [
+          "a hollow, crystal-lined cavity within a rock",
+          "a thin, planar mineral vein cutting across surrounding sedimentary layers"
+        ],
+        "example": {
+          "text": "The shale weathered out numerous round iron-rich concretions, each formed around a tiny fossil fragment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ichnofossil",
+    "lang": "en",
+    "word": "ichnofossil",
+    "pos": "noun",
+    "freqRank": 40600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a trace of ancient organism activity, such as a footprint, burrow, or trail, preserved in rock rather than the organism's actual remains",
+        "distractors": [
+          "a fossilized body part, such as a bone or shell, preserved in rock",
+          "a mineral crystal that grew in the exact shape of a once-living organism"
+        ],
+        "example": {
+          "text": "The sandstone slab preserved an ichnofossil, a trail of footprints left by a creature crossing ancient tidal flats.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_facies",
+    "lang": "en",
+    "word": "facies",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the overall characteristics of a rock body, such as its composition, texture, and fossil content, that reflect the environment in which it formed",
+        "distractors": [
+          "the precise numerical age of a rock body, determined by radiometric dating",
+          "the total thickness of a single sedimentary bed measured at one location"
+        ],
+        "example": {
+          "text": "The limestone facies changed abruptly westward into a deeper-water shale facies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_devitrify",
+    "lang": "en",
+    "word": "devitrify",
+    "pos": "verb",
+    "freqRank": 36300,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to lose glassy texture as a volcanic glass slowly crystallizes into fine mineral grains over time",
+        "distractors": [
+          "to gain a glassy texture as minerals melt together under intense heat",
+          "to shrink in volume as a rock cools and contracts"
+        ],
+        "example": {
+          "text": "Over millions of years, the obsidian had begun to devitrify, turning cloudy as tiny crystals formed within the glass.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serpentinize",
+    "lang": "en",
+    "word": "serpentinize",
+    "pos": "verb",
+    "freqRank": 35100,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to alter ultramafic rock into serpentine minerals through reaction with water, typically at low to moderate temperature",
+        "distractors": [
+          "to crystallize magma slowly into coarse-grained igneous rock",
+          "to compact and cement loose sediment into solid rock"
+        ],
+        "example": {
+          "text": "Seawater circulating through the fractured mantle rock began to serpentinize the olivine into soft, greasy serpentine.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_silicify",
+    "lang": "en",
+    "word": "silicify",
+    "pos": "verb",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to replace or impregnate a material with silica, often preserving fine original detail",
+        "distractors": [
+          "to replace a material with calcium carbonate cement",
+          "to break a solid rock down mechanically into loose sand grains"
+        ],
+        "example": {
+          "text": "Groundwater rich in dissolved silica gradually silicified the buried logs into petrified wood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_brecciate",
+    "lang": "en",
+    "word": "brecciate",
+    "pos": "verb",
+    "freqRank": 37400,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to shatter rock into angular fragments, typically through faulting, impact, or explosive volcanic activity",
+        "distractors": [
+          "to round rock fragments smooth through prolonged transport in a river",
+          "to bind loose sediment together into a solid, cemented mass"
+        ],
+        "example": {
+          "text": "Repeated movement along the fault continued to brecciate the once-solid limestone into a jumble of angular blocks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_conformably",
+    "lang": "en",
+    "word": "conformably",
+    "pos": "adverb",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "geology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in a manner where sedimentary layers are deposited in continuous, parallel sequence without a gap or erosional break",
+        "distractors": [
+          "in a manner where sedimentary layers are separated by a significant gap in deposition",
+          "in a manner where rock layers are tilted at a sharp angle to those above them"
+        ],
+        "example": {
+          "text": "The sandstone lay conformably atop the underlying shale, the two units deposited without interruption.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

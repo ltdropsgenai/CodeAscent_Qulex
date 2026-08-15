@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_opsonization",
+    "lang": "en",
+    "word": "opsonization",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the coating of a pathogen or particle with molecules that mark it for easier engulfment by phagocytic cells",
+        "distractors": [
+          "the process by which antibodies are produced in bone marrow",
+          "the destruction of a cell membrane by complement proteins forming a pore"
+        ],
+        "example": {
+          "text": "Opsonization of the bacterium by complement protein C3b made it far easier for neutrophils to engulf.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chemotaxis",
+    "lang": "en",
+    "word": "chemotaxis",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the directed movement of a cell toward or away from a chemical gradient",
+        "distractors": [
+          "the random, undirected movement of a cell within a tissue",
+          "the process by which a cell divides into two daughter cells"
+        ],
+        "example": {
+          "text": "Chemotaxis drew the neutrophils toward the site of infection along a gradient of interleukin-8.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phagocytosis",
+    "lang": "en",
+    "word": "phagocytosis",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the engulfment and internalization of a particle or microbe by a cell",
+        "distractors": [
+          "the release of stored antibodies from a plasma cell",
+          "the fusion of two cells to form a single multinucleated cell"
+        ],
+        "example": {
+          "text": "Macrophages rely on phagocytosis to clear dying cells and invading bacteria from tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_commensal",
+    "lang": "en",
+    "word": "commensal",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "living in close association with a host without causing harm or benefit",
+        "distractors": [
+          "actively suppressing the host's immune system to survive",
+          "capable of causing disease only in immunocompromised hosts"
+        ],
+        "example": {
+          "text": "The gut harbors trillions of commensal bacteria that aid digestion without triggering disease.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_attenuated",
+    "lang": "en",
+    "word": "attenuated",
+    "pos": "adjective",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "weakened in virulence so that it can no longer cause significant disease but still triggers immunity",
+        "distractors": [
+          "genetically modified to express a foreign toxin",
+          "rendered completely non-infectious and unable to replicate"
+        ],
+        "example": {
+          "text": "The measles vaccine uses an attenuated strain of the virus to stimulate immunity without causing illness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antigenic",
+    "lang": "en",
+    "word": "antigenic",
+    "pos": "adjective",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of triggering an immune response by being recognized as foreign",
+        "distractors": [
+          "resistant to breakdown by digestive enzymes",
+          "able to replicate independently of host cell machinery"
+        ],
+        "example": {
+          "text": "Frequent mutations in the viral surface protein give the strain a constantly shifting antigenic profile.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_epitope",
+    "lang": "en",
+    "word": "epitope",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the specific portion of an antigen that an antibody or T-cell receptor recognizes and binds",
+        "distractors": [
+          "the enzyme that cleaves antigens into peptide fragments",
+          "a signaling protein secreted by activated lymphocytes"
+        ],
+        "example": {
+          "text": "A single protein can display several distinct epitopes, each recognized by a different antibody.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hapten",
+    "lang": "en",
+    "word": "hapten",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small molecule that becomes immunogenic only after binding to a larger carrier protein",
+        "distractors": [
+          "a large glycoprotein found on the surface of red blood cells",
+          "an antibody fragment that lacks its antigen-binding region"
+        ],
+        "example": {
+          "text": "Poison ivy resin acts as a hapten, binding skin proteins to form a complex the immune system attacks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_avidity",
+    "lang": "en",
+    "word": "avidity",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the overall binding strength of an antibody arising from multiple simultaneous antigen interactions",
+        "distractors": [
+          "the speed at which an antibody is synthesized by a plasma cell",
+          "the concentration of antibody present in a serum sample"
+        ],
+        "example": {
+          "text": "As the immune response matured, antibody avidity increased even though affinity per site changed little.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seroconversion",
+    "lang": "en",
+    "word": "seroconversion",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point at which detectable antibodies to a pathogen first appear in the blood",
+        "distractors": [
+          "the transfer of antibodies from mother to fetus across the placenta",
+          "the loss of antibody detection following recovery from infection"
+        ],
+        "example": {
+          "text": "Seroconversion typically occurs two to four weeks after initial exposure to the virus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_titer",
+    "lang": "en",
+    "word": "titer",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measured concentration of antibody or virus in a sample, usually expressed as a dilution factor",
+        "distractors": [
+          "the surface charge carried by a bacterial cell wall",
+          "the rate at which a pathogen mutates over time"
+        ],
+        "example": {
+          "text": "Her antibody titer was high enough to confirm lasting immunity from the earlier infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anergy",
+    "lang": "en",
+    "word": "anergy",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state of immune unresponsiveness in which lymphocytes fail to react to an antigen they would normally recognize",
+        "distractors": [
+          "the rapid multiplication of lymphocytes following antigen exposure",
+          "an allergic overreaction triggered by repeated antigen exposure"
+        ],
+        "example": {
+          "text": "Without proper co-stimulation, the T cell entered a state of anergy and could no longer respond to the antigen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_apoptosis",
+    "lang": "en",
+    "word": "apoptosis",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a programmed, orderly process of cell death that avoids triggering inflammation",
+        "distractors": [
+          "uncontrolled cell death caused by physical injury or toxins",
+          "the fusion of a cell with a neighboring cell"
+        ],
+        "example": {
+          "text": "Infected cells often undergo apoptosis, limiting viral spread before progeny virions can be released.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_autoimmune",
+    "lang": "en",
+    "word": "autoimmune",
+    "pos": "adjective",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a condition in which the immune system mistakenly attacks the body's own tissues",
+        "distractors": [
+          "relating to an inherited inability to mount any immune response",
+          "relating to immunity acquired through vaccination"
+        ],
+        "example": {
+          "text": "In autoimmune thyroiditis, antibodies target proteins in the patient's own thyroid gland.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bacteriophage",
+    "lang": "en",
+    "word": "bacteriophage",
+    "pos": "noun",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a virus that infects and replicates within bacteria",
+        "distractors": [
+          "a bacterium capable of engulfing other bacterial cells",
+          "an enzyme that bacteria use to digest host cell walls"
+        ],
+        "example": {
+          "text": "Researchers used a bacteriophage to selectively kill drug-resistant bacteria in the wound.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biofilm",
+    "lang": "en",
+    "word": "biofilm",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structured community of microorganisms enclosed in a self-produced matrix and adhered to a surface",
+        "distractors": [
+          "a thin protein coating that forms on antibodies in storage",
+          "a layer of dead skin cells that harbors normal flora"
+        ],
+        "example": {
+          "text": "The catheter's surface became colonized by a biofilm that resisted standard antibiotic treatment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_capsid",
+    "lang": "en",
+    "word": "capsid",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the protein shell that encloses the genetic material of a virus",
+        "distractors": [
+          "the lipid membrane that surrounds certain enveloped viruses",
+          "a bacterial structure used for attachment to host cells"
+        ],
+        "example": {
+          "text": "The icosahedral capsid protects the viral genome until it is delivered into a host cell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytolysis",
+    "lang": "en",
+    "word": "cytolysis",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rupture and destruction of a cell's membrane, releasing its contents",
+        "distractors": [
+          "the process by which a cell engulfs foreign particles",
+          "the programmed shrinkage and fragmentation of a dying cell"
+        ],
+        "example": {
+          "text": "Complement-mediated cytolysis punches pores in the bacterial membrane, causing it to burst.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytopathic",
+    "lang": "en",
+    "word": "cytopathic",
+    "pos": "adjective",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing damage or visible structural change caused to cells by a viral infection",
+        "distractors": [
+          "describing a cell's ability to migrate through tissue",
+          "describing an antibody that binds without causing harm"
+        ],
+        "example": {
+          "text": "The virus produced a clear cytopathic effect, rounding and detaching cells from the culture flask.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_degranulation",
+    "lang": "en",
+    "word": "degranulation",
+    "pos": "noun",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the release of stored granules containing enzymes and mediators from cells such as mast cells or neutrophils",
+        "distractors": [
+          "the assembly of new secretory granules within a cell",
+          "the breakdown of granulocytes into smaller cell fragments"
+        ],
+        "example": {
+          "text": "Mast cell degranulation released histamine, triggering the swelling and redness of the allergic reaction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endotoxin",
+    "lang": "en",
+    "word": "endotoxin",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a toxic component of the outer membrane of certain gram-negative bacteria, released when the cell is lysed",
+        "distractors": [
+          "a toxin actively secreted by living bacteria into surrounding tissue",
+          "an antibody that neutralizes bacterial toxins"
+        ],
+        "example": {
+          "text": "Endotoxin released from lysed gram-negative bacteria can trigger a severe systemic inflammatory response.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exotoxin",
+    "lang": "en",
+    "word": "exotoxin",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a toxic protein actively secreted by a living bacterium into its surroundings",
+        "distractors": [
+          "a structural component of the bacterial cell wall exposed only after lysis",
+          "a byproduct of viral replication released from infected cells"
+        ],
+        "example": {
+          "text": "The exotoxin secreted by the bacterium disrupted nerve signaling and caused muscle paralysis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extravasation",
+    "lang": "en",
+    "word": "extravasation",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the movement of white blood cells out of the bloodstream and into surrounding tissue",
+        "distractors": [
+          "the leakage of plasma proteins into the urine",
+          "the clumping of red blood cells within a blood vessel"
+        ],
+        "example": {
+          "text": "Adhesion molecules on the vessel wall guide leukocyte extravasation toward the site of injury.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_granuloma",
+    "lang": "en",
+    "word": "granuloma",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an organized cluster of immune cells that forms to wall off a persistent pathogen or foreign material",
+        "distractors": [
+          "a cancerous growth arising from lymphocyte proliferation",
+          "a fluid-filled sac that forms around a healing wound"
+        ],
+        "example": {
+          "text": "Macrophages surrounded the tuberculosis bacteria, forming a granuloma to contain the infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemagglutination",
+    "lang": "en",
+    "word": "hemagglutination",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the clumping together of red blood cells caused by a virus or antibody binding to their surface",
+        "distractors": [
+          "the destruction of red blood cells by complement proteins",
+          "the production of new red blood cells in bone marrow"
+        ],
+        "example": {
+          "text": "Hemagglutination assays are used to estimate the concentration of influenza virus in a sample.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hybridoma",
+    "lang": "en",
+    "word": "hybridoma",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hybrid cell line formed by fusing an antibody-producing cell with a cancer cell, used to produce monoclonal antibodies",
+        "distractors": [
+          "a bacterial cell engineered to express a viral surface protein",
+          "a stem cell capable of differentiating into any blood cell type"
+        ],
+        "example": {
+          "text": "The hybridoma continuously secreted a single, well-defined monoclonal antibody in culture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunoglobulin",
+    "lang": "en",
+    "word": "immunoglobulin",
+    "pos": "noun",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a protein produced by plasma cells that functions as an antibody",
+        "distractors": [
+          "a signaling molecule secreted by activated macrophages",
+          "a receptor found only on the surface of natural killer cells"
+        ],
+        "example": {
+          "text": "Intravenous immunoglobulin pooled from thousands of donors was given to boost the patient's antibody levels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunogenic",
+    "lang": "en",
+    "word": "immunogenic",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of provoking an immune response",
+        "distractors": [
+          "resistant to recognition by the immune system",
+          "able to suppress cytokine production in nearby cells"
+        ],
+        "example": {
+          "text": "Researchers modified the vaccine antigen to make it more immunogenic without increasing toxicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interferon",
+    "lang": "en",
+    "word": "interferon",
+    "pos": "noun",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a signaling protein released by cells in response to viral infection that helps neighboring cells resist infection",
+        "distractors": [
+          "an enzyme that degrades viral RNA within the host cell",
+          "a structural protein forming part of the viral envelope"
+        ],
+        "example": {
+          "text": "Infected cells release interferon, warning neighboring cells to raise their antiviral defenses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_leukocytosis",
+    "lang": "en",
+    "word": "leukocytosis",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormally elevated count of white blood cells in the blood",
+        "distractors": [
+          "an abnormally low count of white blood cells in the blood",
+          "the clustering of white blood cells at a wound site"
+        ],
+        "example": {
+          "text": "The patient's leukocytosis suggested an active bacterial infection was underway.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lymphokine",
+    "lang": "en",
+    "word": "lymphokine",
+    "pos": "noun",
+    "freqRank": 35500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cytokine secreted specifically by activated lymphocytes to signal other immune cells",
+        "distractors": [
+          "an enzyme released by lymph nodes to filter bacteria",
+          "a structural protein found in the wall of lymphatic vessels"
+        ],
+        "example": {
+          "text": "Activated helper T cells release lymphokines that recruit and activate macrophages.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lysogeny",
+    "lang": "en",
+    "word": "lysogeny",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bacteriophage life cycle in which viral DNA integrates into the host genome and replicates passively with it",
+        "distractors": [
+          "the rapid destruction of host bacteria by newly assembled phage particles",
+          "the process by which bacteria exchange plasmids through direct contact"
+        ],
+        "example": {
+          "text": "During lysogeny, the phage genome remains dormant within the bacterial chromosome for many generations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lysozyme",
+    "lang": "en",
+    "word": "lysozyme",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an enzyme found in secretions such as tears and saliva that breaks down bacterial cell walls",
+        "distractors": [
+          "a receptor protein that detects bacterial toxins on cell surfaces",
+          "an antibody isotype found predominantly in mucosal secretions"
+        ],
+        "example": {
+          "text": "Lysozyme in tears provides a first line of defense by digesting the peptidoglycan of invading bacteria.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mitogen",
+    "lang": "en",
+    "word": "mitogen",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that stimulates lymphocytes to undergo cell division regardless of antigen specificity",
+        "distractors": [
+          "a toxin that halts protein synthesis within infected cells",
+          "an antibody that binds and neutralizes a specific pathogen"
+        ],
+        "example": {
+          "text": "Concanavalin A is a plant mitogen commonly used to trigger T-cell proliferation in the lab.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mucosal",
+    "lang": "en",
+    "word": "mucosal",
+    "pos": "adjective",
+    "freqRank": 23800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the moist lining of body cavities and passages, such as the gut or airway",
+        "distractors": [
+          "relating to the fluid portion of blood after clotting",
+          "relating to the outer keratinized layer of skin"
+        ],
+        "example": {
+          "text": "Mucosal immunity in the gut relies heavily on secretory antibodies produced along the intestinal lining.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutralize",
+    "lang": "en",
+    "word": "neutralize",
+    "pos": "verb",
+    "freqRank": 20200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to render a pathogen or toxin harmless, typically by antibody binding that blocks its activity",
+        "distractors": [
+          "to physically destroy a cell membrane through pore formation",
+          "to mark a pathogen for engulfment by phagocytic cells"
+        ],
+        "example": {
+          "text": "Antibodies can neutralize a virus by binding its surface proteins and preventing cell entry.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutrophilia",
+    "lang": "en",
+    "word": "neutrophilia",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormally increased number of neutrophils circulating in the blood",
+        "distractors": [
+          "a deficiency of neutrophils that increases infection risk",
+          "the migration of neutrophils into infected tissue"
+        ],
+        "example": {
+          "text": "Acute bacterial infections often produce marked neutrophilia on a complete blood count.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_opportunistic",
+    "lang": "en",
+    "word": "opportunistic",
+    "pos": "adjective",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a microorganism that causes disease mainly when host defenses are weakened",
+        "distractors": [
+          "describing a pathogen that infects only through airborne transmission",
+          "describing a microbe that lives permanently within host cells"
+        ],
+        "example": {
+          "text": "Pneumocystis is an opportunistic fungus that rarely causes illness in people with healthy immune systems.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pathogenesis",
+    "lang": "en",
+    "word": "pathogenesis",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the biological process by which a disease develops and progresses",
+        "distractors": [
+          "the classification system used to name newly discovered microbes",
+          "the laboratory method for culturing a pathogen from a sample"
+        ],
+        "example": {
+          "text": "Understanding the pathogenesis of the infection helped researchers identify a new drug target.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phagosome",
+    "lang": "en",
+    "word": "phagosome",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a membrane-bound vesicle formed when a cell engulfs a particle during phagocytosis",
+        "distractors": [
+          "a vesicle that transports antibodies out of a plasma cell",
+          "the enzyme complex that digests antigens for MHC presentation"
+        ],
+        "example": {
+          "text": "The bacterium was enclosed within a phagosome that later fused with a lysosome for degradation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plasmid",
+    "lang": "en",
+    "word": "plasmid",
+    "pos": "noun",
+    "freqRank": 22200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small, circular piece of DNA in bacteria that replicates independently of the chromosome and often carries resistance genes",
+        "distractors": [
+          "a bacterial appendage used for attachment to host tissue",
+          "a viral genome that has integrated into the bacterial chromosome"
+        ],
+        "example": {
+          "text": "Antibiotic resistance genes carried on a plasmid spread rapidly between bacterial cells.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polyclonal",
+    "lang": "en",
+    "word": "polyclonal",
+    "pos": "adjective",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "derived from multiple different immune cell lineages, each producing antibodies against a different epitope",
+        "distractors": [
+          "derived from a single cell lineage producing one identical antibody",
+          "produced entirely through laboratory genetic engineering"
+        ],
+        "example": {
+          "text": "The polyclonal antiserum contained a mixture of antibodies targeting several regions of the antigen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monoclonal",
+    "lang": "en",
+    "word": "monoclonal",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "derived from a single clone of cells and therefore identical in structure and specificity",
+        "distractors": [
+          "derived from a mixture of antibody-producing cell lineages",
+          "produced naturally without any laboratory cell fusion"
+        ],
+        "example": {
+          "text": "The monoclonal antibody was engineered to bind one precise epitope on the tumor cell surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prokaryotic",
+    "lang": "en",
+    "word": "prokaryotic",
+    "pos": "adjective",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to single-celled organisms, such as bacteria, that lack a membrane-bound nucleus",
+        "distractors": [
+          "relating to organisms whose genetic material is enclosed in a nucleus",
+          "relating to viruses that require a host cell to replicate"
+        ],
+        "example": {
+          "text": "Bacterial ribosomes differ structurally from eukaryotic ones, a fact exploited by antibiotics that target prokaryotic protein synthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyrogen",
+    "lang": "en",
+    "word": "pyrogen",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance that induces fever, often by triggering the release of inflammatory cytokines",
+        "distractors": [
+          "a protein that lowers body temperature during infection",
+          "an enzyme that breaks down fever-inducing compounds"
+        ],
+        "example": {
+          "text": "Bacterial endotoxin acts as a potent pyrogen, inducing fever within hours of exposure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quorum_sensing",
+    "lang": "en",
+    "word": "quorum sensing",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bacterial communication system in which cells release and detect signaling molecules to coordinate behavior once population density reaches a threshold",
+        "distractors": [
+          "the process by which bacteria randomly mutate under stress",
+          "a method bacteria use to exchange genetic material through direct contact"
+        ],
+        "example": {
+          "text": "Through quorum sensing, the bacterial population synchronized biofilm formation once cell density reached a critical threshold.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reticuloendothelial",
+    "lang": "en",
+    "word": "reticuloendothelial",
+    "pos": "adjective",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the network of phagocytic cells, including those in the liver and spleen, that clear debris and pathogens from the blood",
+        "distractors": [
+          "relating to the network of nerves controlling immune organ function",
+          "relating to the lymphatic vessels that drain interstitial fluid"
+        ],
+        "example": {
+          "text": "The reticuloendothelial system in the spleen filters aged red blood cells and opsonized pathogens from circulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seroprevalence",
+    "lang": "en",
+    "word": "seroprevalence",
+    "pos": "noun",
+    "freqRank": 39500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the proportion of a population that tests positive for antibodies against a specific pathogen",
+        "distractors": [
+          "the rate at which a pathogen spreads between individuals",
+          "the average antibody titer measured in a single patient over time"
+        ],
+        "example": {
+          "text": "A seroprevalence survey revealed that nearly half the community had prior exposure to the virus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spirochete",
+    "lang": "en",
+    "word": "spirochete",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a slender, spiral-shaped bacterium, some species of which cause diseases such as syphilis and Lyme disease",
+        "distractors": [
+          "a rod-shaped bacterium that forms protective endospores",
+          "a virus with a helical protein capsid"
+        ],
+        "example": {
+          "text": "The spirochete responsible for Lyme disease is transmitted through the bite of an infected tick.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sporulation",
+    "lang": "en",
+    "word": "sporulation",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which certain bacteria form a dormant, resistant spore in response to unfavorable conditions",
+        "distractors": [
+          "the process by which bacteria divide into two identical daughter cells",
+          "the release of toxin from a bacterial cell during lysis"
+        ],
+        "example": {
+          "text": "Under nutrient starvation, Bacillus species undergo sporulation to survive harsh environmental conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_superantigen",
+    "lang": "en",
+    "word": "superantigen",
+    "pos": "noun",
+    "freqRank": 36500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a toxin that triggers massive, nonspecific activation of T cells by bridging the T-cell receptor and MHC molecule outside the normal antigen groove",
+        "distractors": [
+          "an antibody engineered to bind multiple unrelated antigens",
+          "an antigen so large that it requires several epitopes for recognition"
+        ],
+        "example": {
+          "text": "The superantigen produced by the bacterium activated a huge fraction of circulating T cells, causing toxic shock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syncytium",
+    "lang": "en",
+    "word": "syncytium",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large multinucleated mass of cytoplasm formed by the fusion of multiple individual cells",
+        "distractors": [
+          "a cluster of lymphocytes surrounding a foreign antigen",
+          "a virus particle that has lost its protective envelope"
+        ],
+        "example": {
+          "text": "The virus caused infected cells to fuse into a syncytium, allowing it to spread without exiting into extracellular space.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_titrate",
+    "lang": "en",
+    "word": "titrate",
+    "pos": "verb",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to determine the concentration of a substance, such as antibody or virus, through serial dilution and measurement",
+        "distractors": [
+          "to isolate a pure bacterial colony from a mixed culture",
+          "to attach a fluorescent label to an antibody for detection"
+        ],
+        "example": {
+          "text": "The lab titrated the serum sample to determine the highest dilution still capable of neutralizing the virus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tropism",
+    "lang": "en",
+    "word": "tropism",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the preferential ability of a pathogen to infect a particular cell type or tissue",
+        "distractors": [
+          "the tendency of a pathogen to mutate rapidly under immune pressure",
+          "the capacity of an antibody to bind several unrelated antigens"
+        ],
+        "example": {
+          "text": "The virus displays strong tropism for respiratory epithelial cells, explaining its characteristic symptoms.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_virulence",
+    "lang": "en",
+    "word": "virulence",
+    "pos": "noun",
+    "freqRank": 21200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the degree or severity of harm a pathogen is capable of causing its host",
+        "distractors": [
+          "the speed at which a pathogen spreads through a population",
+          "the ease with which a pathogen is transmitted between hosts"
+        ],
+        "example": {
+          "text": "Mutations in the toxin gene sharply increased the strain's virulence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_virulent",
+    "lang": "en",
+    "word": "virulent",
+    "pos": "adjective",
+    "freqRank": 21800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing severe disease",
+        "distractors": [
+          "easily eliminated by standard antibiotic treatment",
+          "unable to replicate outside a living host cell"
+        ],
+        "example": {
+          "text": "The hospital outbreak was traced to an unusually virulent strain of the bacterium.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenograft",
+    "lang": "en",
+    "word": "xenograft",
+    "pos": "noun",
+    "freqRank": 35200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tissue or organ transplant taken from a donor of a different species",
+        "distractors": [
+          "a graft of tissue taken from the same individual receiving it",
+          "an implanted device that suppresses the recipient's immune response"
+        ],
+        "example": {
+          "text": "The pig heart xenograft triggered rapid rejection due to pre-existing antibodies against animal antigens.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_zoonosis",
+    "lang": "en",
+    "word": "zoonosis",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a disease that can be transmitted from animals to humans",
+        "distractors": [
+          "a disease transmitted exclusively between humans",
+          "a condition caused by an inherited immune deficiency"
+        ],
+        "example": {
+          "text": "Rabies is a classic zoonosis, typically transmitted to humans through the bite of an infected mammal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_zoonotic",
+    "lang": "en",
+    "word": "zoonotic",
+    "pos": "adjective",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a disease that can pass from animals to humans",
+        "distractors": [
+          "relating to a disease that spreads only through contaminated water",
+          "relating to a disease caused by an autoimmune reaction"
+        ],
+        "example": {
+          "text": "Public health officials traced the zoonotic virus back to a live animal market.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anaphylatoxin",
+    "lang": "en",
+    "word": "anaphylatoxin",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a complement fragment that triggers inflammation and can promote mast cell degranulation",
+        "distractors": [
+          "an antibody that specifically prevents anaphylactic reactions",
+          "a toxin produced by mast cells during allergic reactions"
+        ],
+        "example": {
+          "text": "Complement fragments C3a and C5a act as anaphylatoxins, amplifying local inflammation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bactericidal",
+    "lang": "en",
+    "word": "bactericidal",
+    "pos": "adjective",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of killing bacteria outright",
+        "distractors": [
+          "capable of merely halting bacterial growth without killing",
+          "capable of breaking down the bacterial cell wall alone"
+        ],
+        "example": {
+          "text": "The antibiotic proved bactericidal at the tested dose, eliminating the culture entirely rather than just suppressing it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bacteriostatic",
+    "lang": "en",
+    "word": "bacteriostatic",
+    "pos": "adjective",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of inhibiting bacterial growth and reproduction without necessarily killing the bacteria",
+        "distractors": [
+          "capable of directly lysing the bacterial cell membrane",
+          "capable of accelerating bacterial replication under stress"
+        ],
+        "example": {
+          "text": "Because the drug is bacteriostatic, the host's immune system must clear the surviving bacteria.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chemokine",
+    "lang": "en",
+    "word": "chemokine",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small signaling protein that attracts and directs the migration of immune cells toward a site of infection or injury",
+        "distractors": [
+          "an enzyme that breaks down chemical toxins within phagocytes",
+          "a receptor found exclusively on the surface of red blood cells"
+        ],
+        "example": {
+          "text": "A gradient of chemokine released at the wound site guided neutrophils to the area of tissue damage.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cytotoxic",
+    "lang": "en",
+    "word": "cytotoxic",
+    "pos": "adjective",
+    "freqRank": 22400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of directly killing cells, often used to describe T cells that destroy infected or abnormal cells",
+        "distractors": [
+          "capable of stimulating rapid antibody production",
+          "incapable of interacting with infected host cells"
+        ],
+        "example": {
+          "text": "Cytotoxic T lymphocytes recognized the virus-infected cell and triggered its destruction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_desensitization",
+    "lang": "en",
+    "word": "desensitization",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gradual reduction in an immune or allergic response achieved through controlled, repeated exposure to an allergen",
+        "distractors": [
+          "the sudden loss of all immune memory following illness",
+          "the process by which an antigen becomes unrecognizable to antibodies"
+        ],
+        "example": {
+          "text": "Allergy desensitization involves administering gradually increasing doses of the allergen over months.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diapedesis",
+    "lang": "en",
+    "word": "diapedesis",
+    "pos": "noun",
+    "freqRank": 41500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the passage of blood cells, especially leukocytes, through the intact walls of capillaries into surrounding tissue",
+        "distractors": [
+          "the clumping of platelets to form a blood clot",
+          "the programmed death of a white blood cell"
+        ],
+        "example": {
+          "text": "Diapedesis allows monocytes to squeeze between endothelial cells and enter inflamed tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ectoparasite",
+    "lang": "en",
+    "word": "ectoparasite",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a parasite that lives on the external surface of its host, such as a tick or louse",
+        "distractors": [
+          "a parasite that lives exclusively within host blood cells",
+          "a bacterium that colonizes the surface of skin without harm"
+        ],
+        "example": {
+          "text": "Fleas are common ectoparasites capable of transmitting several bacterial diseases.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endocytosis",
+    "lang": "en",
+    "word": "endocytosis",
+    "pos": "noun",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a cell takes in material by engulfing it within a vesicle formed from its plasma membrane",
+        "distractors": [
+          "the expulsion of waste material from a cell into the extracellular space",
+          "the division of a cell's genetic material prior to mitosis"
+        ],
+        "example": {
+          "text": "Receptor-mediated endocytosis allowed the virus to enter the cell disguised as a normal nutrient.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endogenous",
+    "lang": "en",
+    "word": "endogenous",
+    "pos": "adjective",
+    "freqRank": 21300,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "originating from within an organism rather than from an external source",
+        "distractors": [
+          "originating from an external pathogen or toxin",
+          "transmitted from one host to another through contact"
+        ],
+        "example": {
+          "text": "Endogenous retroviral sequences make up a surprising fraction of the human genome.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eosinophilia",
+    "lang": "en",
+    "word": "eosinophilia",
+    "pos": "noun",
+    "freqRank": 34400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormally elevated count of eosinophils in the blood, often associated with parasitic infection or allergy",
+        "distractors": [
+          "a deficiency of eosinophils that impairs parasite clearance",
+          "the migration of eosinophils into the bone marrow"
+        ],
+        "example": {
+          "text": "Marked eosinophilia in the blood test pointed toward an underlying parasitic infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exocytosis",
+    "lang": "en",
+    "word": "exocytosis",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a cell expels material by fusing a vesicle with its plasma membrane",
+        "distractors": [
+          "the process by which a cell engulfs external particles",
+          "the programmed breakdown of a cell's internal organelles"
+        ],
+        "example": {
+          "text": "Cytotoxic granules are released through exocytosis when a killer cell attacks its target.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fastidious",
+    "lang": "en",
+    "word": "fastidious",
+    "pos": "adjective",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "requiring complex, specific nutrients or conditions to grow in culture, as certain bacteria do",
+        "distractors": [
+          "capable of growing rapidly on almost any culture medium",
+          "resistant to destruction by standard sterilization methods"
+        ],
+        "example": {
+          "text": "Because the organism is fastidious, clinicians had to use an enriched medium to culture it successfully.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fimbria",
+    "lang": "en",
+    "word": "fimbria",
+    "pos": "noun",
+    "freqRank": 37500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a short, hairlike appendage on a bacterial cell surface used mainly for attachment to surfaces or host cells",
+        "distractors": [
+          "a long whip-like structure used for bacterial motility",
+          "a protective spore coat formed under stress"
+        ],
+        "example": {
+          "text": "Fimbriae on the bacterium allowed it to adhere tightly to the bladder wall and resist being flushed out.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flagellum",
+    "lang": "en",
+    "word": "flagellum",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a long, whip-like appendage that certain bacteria use to propel themselves through a liquid environment",
+        "distractors": [
+          "a short bristle-like structure used for surface attachment",
+          "a protective outer capsule that resists phagocytosis"
+        ],
+        "example": {
+          "text": "Rotation of the bacterial flagellum propelled the cell toward a higher concentration of nutrients.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fomite",
+    "lang": "en",
+    "word": "fomite",
+    "pos": "noun",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inanimate object or surface that can carry and transmit infectious agents",
+        "distractors": [
+          "a chemical agent used to disinfect medical instruments",
+          "a type of antibody that persists on mucosal surfaces"
+        ],
+        "example": {
+          "text": "The doorknob served as a fomite, spreading the virus between multiple household members.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glycocalyx",
+    "lang": "en",
+    "word": "glycocalyx",
+    "pos": "noun",
+    "freqRank": 40500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a carbohydrate-rich outer layer surrounding certain bacterial or animal cells that aids adhesion and can impede phagocytosis",
+        "distractors": [
+          "the protein layer inside a bacterial cell wall",
+          "a lipid membrane unique to enveloped viruses"
+        ],
+        "example": {
+          "text": "The bacterium's thick glycocalyx helped it evade detection and engulfment by phagocytes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_granulocyte",
+    "lang": "en",
+    "word": "granulocyte",
+    "pos": "noun",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a type of white blood cell, such as a neutrophil, eosinophil, or basophil, containing visible granules in its cytoplasm",
+        "distractors": [
+          "a white blood cell lacking any cytoplasmic granules",
+          "a cell responsible solely for producing antibodies"
+        ],
+        "example": {
+          "text": "Granulocytes, especially neutrophils, are usually the first immune cells to arrive at a site of infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemolysis",
+    "lang": "en",
+    "word": "hemolysis",
+    "pos": "noun",
+    "freqRank": 24600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the destruction or breakdown of red blood cells, releasing hemoglobin into the surrounding fluid",
+        "distractors": [
+          "the clumping of red blood cells around a pathogen",
+          "the maturation of red blood cells in the bone marrow"
+        ],
+        "example": {
+          "text": "Certain bacterial toxins cause hemolysis, producing the clear zones seen around colonies on blood agar.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemolytic",
+    "lang": "en",
+    "word": "hemolytic",
+    "pos": "adjective",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of causing the destruction of red blood cells",
+        "distractors": [
+          "capable of stimulating red blood cell production",
+          "resistant to being destroyed by immune cells"
+        ],
+        "example": {
+          "text": "The hemolytic strain produced a distinct ring of lysed cells surrounding each colony on the agar plate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heterophile",
+    "lang": "en",
+    "word": "heterophile",
+    "pos": "adjective",
+    "freqRank": 39200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an antibody that reacts with antigens from an unrelated species, used diagnostically for certain infections",
+        "distractors": [
+          "describing an antibody produced entirely within a single organ",
+          "describing an antigen found only on the surface of the pathogen it originated from"
+        ],
+        "example": {
+          "text": "A positive heterophile antibody test supported the diagnosis of infectious mononucleosis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_histocompatibility",
+    "lang": "en",
+    "word": "histocompatibility",
+    "pos": "noun",
+    "freqRank": 36800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the degree to which tissues from a donor and recipient are genetically similar enough to avoid immune rejection",
+        "distractors": [
+          "the ability of a tissue to regenerate after injury",
+          "the process by which stem cells differentiate into blood cells"
+        ],
+        "example": {
+          "text": "Matching histocompatibility antigens between donor and recipient greatly reduces the risk of transplant rejection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_humoral",
+    "lang": "en",
+    "word": "humoral",
+    "pos": "adjective",
+    "freqRank": 23200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to immunity mediated by antibodies circulating in blood and other body fluids",
+        "distractors": [
+          "relating to immunity mediated directly by killer T cells attacking infected cells",
+          "relating to immune responses confined entirely to mucosal surfaces"
+        ],
+        "example": {
+          "text": "Humoral immunity, driven by B cells and antibodies, complements the cell-mediated arm of the immune system.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hypersensitivity",
+    "lang": "en",
+    "word": "hypersensitivity",
+    "pos": "noun",
+    "freqRank": 22600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an excessive or inappropriate immune response to an antigen that causes tissue damage",
+        "distractors": [
+          "an inherited inability to mount any immune response",
+          "a normal, protective immune reaction proportional to the threat"
+        ],
+        "example": {
+          "text": "The rash was a classic delayed-type hypersensitivity reaction to the allergen in the plant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_idiotype",
+    "lang": "en",
+    "word": "idiotype",
+    "pos": "noun",
+    "freqRank": 42500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the unique set of antigenic determinants located in the variable region of a particular antibody or T-cell receptor",
+        "distractors": [
+          "the constant region shared by all antibodies of the same class",
+          "a cytokine that regulates antibody class switching"
+        ],
+        "example": {
+          "text": "Antibodies can themselves be recognized as antigens because of their distinctive idiotype.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunocompromised",
+    "lang": "en",
+    "word": "immunocompromised",
+    "pos": "adjective",
+    "freqRank": 20800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "having a weakened or impaired immune system that reduces the ability to fight infection",
+        "distractors": [
+          "having an unusually strong and overactive immune response",
+          "having developed lasting immunity following vaccination"
+        ],
+        "example": {
+          "text": "Immunocompromised patients are especially vulnerable to infections that rarely trouble healthy individuals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunosenescence",
+    "lang": "en",
+    "word": "immunosenescence",
+    "pos": "noun",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual decline in immune system function that occurs with advancing age",
+        "distractors": [
+          "the sudden loss of immunity following a severe infection",
+          "the strengthening of immune memory after repeated vaccination"
+        ],
+        "example": {
+          "text": "Immunosenescence partly explains why elderly patients often respond less robustly to vaccines.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inoculum",
+    "lang": "en",
+    "word": "inoculum",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the quantity of microorganisms or infectious material introduced into a host, culture medium, or experimental system",
+        "distractors": [
+          "the antibody solution used to test for prior infection",
+          "a chemical compound used to sterilize laboratory equipment"
+        ],
+        "example": {
+          "text": "Researchers varied the size of the bacterial inoculum to see how it affected the severity of infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interleukin",
+    "lang": "en",
+    "word": "interleukin",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a type of cytokine that mediates communication between white blood cells",
+        "distractors": [
+          "an enzyme that degrades interfering nucleic acids within a cell",
+          "a structural protein embedded in the leukocyte cell membrane"
+        ],
+        "example": {
+          "text": "Interleukin-6 levels rose sharply during the acute phase of the inflammatory response.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_leukopenia",
+    "lang": "en",
+    "word": "leukopenia",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormally low count of white blood cells in the blood",
+        "distractors": [
+          "an abnormally high count of white blood cells in the blood",
+          "a deficiency specifically limited to red blood cells"
+        ],
+        "example": {
+          "text": "Chemotherapy often causes leukopenia, leaving patients more susceptible to infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lymphadenopathy",
+    "lang": "en",
+    "word": "lymphadenopathy",
+    "pos": "noun",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the enlargement of lymph nodes, often due to infection, inflammation, or malignancy",
+        "distractors": [
+          "the blockage of lymphatic vessels causing fluid buildup in tissue",
+          "the formation of new lymph nodes during fetal development"
+        ],
+        "example": {
+          "text": "Painless lymphadenopathy in the neck prompted further investigation into the underlying cause.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lymphoproliferative",
+    "lang": "en",
+    "word": "lymphoproliferative",
+    "pos": "adjective",
+    "freqRank": 38500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the abnormal or excessive proliferation of lymphocytes",
+        "distractors": [
+          "relating to the normal turnover of lymph node tissue",
+          "relating to a deficiency in lymphocyte production"
+        ],
+        "example": {
+          "text": "The lymphoproliferative disorder caused an unchecked expansion of a single lymphocyte clone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lysogenic",
+    "lang": "en",
+    "word": "lysogenic",
+    "pos": "adjective",
+    "freqRank": 37200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a bacteriophage that integrates its genome into the host bacterium rather than immediately destroying it",
+        "distractors": [
+          "relating to a bacteriophage that immediately lyses its host cell",
+          "relating to bacteria that have developed resistance to phage infection"
+        ],
+        "example": {
+          "text": "In the lysogenic cycle, the phage DNA is replicated silently along with the bacterial chromosome.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microbicidal",
+    "lang": "en",
+    "word": "microbicidal",
+    "pos": "adjective",
+    "freqRank": 35800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of killing microorganisms",
+        "distractors": [
+          "capable only of inhibiting microbial growth temporarily",
+          "resistant to breakdown by microbial enzymes"
+        ],
+        "example": {
+          "text": "Neutrophils produce microbicidal compounds that destroy engulfed bacteria within the phagosome.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mucociliary",
+    "lang": "en",
+    "word": "mucociliary",
+    "pos": "adjective",
+    "freqRank": 36200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the combined action of mucus and cilia in clearing particles and pathogens from the respiratory tract",
+        "distractors": [
+          "relating to the production of antibodies within the gut lining",
+          "relating to the formation of scar tissue after lung infection"
+        ],
+        "example": {
+          "text": "Smoking impairs mucociliary clearance, leaving the airway more vulnerable to infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mutualism",
+    "lang": "en",
+    "word": "mutualism",
+    "pos": "noun",
+    "freqRank": 27600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a relationship between two organisms in which both partners benefit",
+        "distractors": [
+          "a relationship in which one organism benefits at the other's expense",
+          "a relationship in which neither organism is affected by the other"
+        ],
+        "example": {
+          "text": "The mutualism between gut bacteria and their host provides the microbes shelter while aiding digestion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mycelium",
+    "lang": "en",
+    "word": "mycelium",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mass of branching, thread-like filaments that forms the vegetative growth of a fungus",
+        "distractors": [
+          "the reproductive spore-bearing structure of a fungus",
+          "a fungal toxin that damages host tissue"
+        ],
+        "example": {
+          "text": "Under the microscope, the mycelium spread outward in a dense, branching network.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mycotoxin",
+    "lang": "en",
+    "word": "mycotoxin",
+    "pos": "noun",
+    "freqRank": 31800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a toxic compound produced by a fungus that can cause illness in humans or animals",
+        "distractors": [
+          "an antibody produced specifically to neutralize fungal antigens",
+          "a structural protein found in the fungal cell wall"
+        ],
+        "example": {
+          "text": "Contaminated grain containing a mycotoxin caused illness in the livestock that consumed it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nosocomial",
+    "lang": "en",
+    "word": "nosocomial",
+    "pos": "adjective",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "originating or acquired within a hospital or healthcare setting",
+        "distractors": [
+          "transmitted exclusively through airborne droplets outdoors",
+          "acquired before birth through the placenta"
+        ],
+        "example": {
+          "text": "The outbreak of a nosocomial infection was traced to inadequate hand hygiene among staff.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_opsonin",
+    "lang": "en",
+    "word": "opsonin",
+    "pos": "noun",
+    "freqRank": 33600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a molecule, such as an antibody or complement fragment, that coats a pathogen and enhances its uptake by phagocytes",
+        "distractors": [
+          "an enzyme that digests pathogens once inside a phagocyte",
+          "a receptor found on the surface of a bacterial cell"
+        ],
+        "example": {
+          "text": "Complement protein C3b functions as an opsonin, marking bacteria for phagocytic destruction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_paratope",
+    "lang": "en",
+    "word": "paratope",
+    "pos": "noun",
+    "freqRank": 40200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the specific region of an antibody that binds directly to an antigen's epitope",
+        "distractors": [
+          "the constant region of an antibody responsible for effector functions",
+          "the receptor on a phagocyte that recognizes opsonized particles"
+        ],
+        "example": {
+          "text": "The paratope's precise shape determines which epitope the antibody can bind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parenteral",
+    "lang": "en",
+    "word": "parenteral",
+    "pos": "adjective",
+    "freqRank": 26600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "administered by a route other than the digestive tract, typically by injection",
+        "distractors": [
+          "administered orally and absorbed through the digestive tract",
+          "produced naturally within the body without external administration"
+        ],
+        "example": {
+          "text": "The vaccine was given parenterally as an intramuscular injection rather than taken by mouth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pathogenicity",
+    "lang": "en",
+    "word": "pathogenicity",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the inherent capacity of a microorganism to cause disease",
+        "distractors": [
+          "the speed at which a microorganism reproduces in culture",
+          "the ability of a microorganism to survive outside a host"
+        ],
+        "example": {
+          "text": "Loss of a single virulence gene dramatically reduced the bacterium's pathogenicity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pathognomonic",
+    "lang": "en",
+    "word": "pathognomonic",
+    "pos": "adjective",
+    "freqRank": 38200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "so characteristic of a particular disease that its presence confirms the diagnosis",
+        "distractors": [
+          "common to many unrelated diseases and therefore nonspecific",
+          "present only in the late, terminal stage of an illness"
+        ],
+        "example": {
+          "text": "Koplik spots inside the mouth are considered pathognomonic for measles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_peptidoglycan",
+    "lang": "en",
+    "word": "peptidoglycan",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a polymer of sugars and amino acids that forms the rigid layer of the bacterial cell wall",
+        "distractors": [
+          "a lipid molecule that forms the outer envelope of certain viruses",
+          "a protein that bacteria secrete to break down host tissue"
+        ],
+        "example": {
+          "text": "Penicillin works by interfering with the cross-linking of peptidoglycan during cell wall synthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_periplasm",
+    "lang": "en",
+    "word": "periplasm",
+    "pos": "noun",
+    "freqRank": 39800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gel-like space between the inner and outer membranes of a gram-negative bacterial cell",
+        "distractors": [
+          "the fluid-filled interior of a bacterial spore",
+          "the region of a virus between its capsid and envelope"
+        ],
+        "example": {
+          "text": "Enzymes that break down antibiotics are often secreted into the periplasm of resistant bacteria.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phagocyte",
+    "lang": "en",
+    "word": "phagocyte",
+    "pos": "noun",
+    "freqRank": 21600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cell that engulfs and digests microorganisms, cellular debris, or foreign particles",
+        "distractors": [
+          "a cell that produces antibodies against a specific antigen",
+          "a cell that secretes cytokines to recruit other immune cells"
+        ],
+        "example": {
+          "text": "Phagocytes such as macrophages and neutrophils form a critical part of innate immune defense.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pilus",
+    "lang": "en",
+    "word": "pilus",
+    "pos": "noun",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hairlike appendage on a bacterial cell used for attachment or the transfer of genetic material during conjugation",
+        "distractors": [
+          "a whip-like structure used exclusively for bacterial motility",
+          "a protective spore coat that forms under harsh conditions"
+        ],
+        "example": {
+          "text": "The donor bacterium extended a pilus to transfer a copy of its plasmid to the recipient cell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plasmablast",
+    "lang": "en",
+    "word": "plasmablast",
+    "pos": "noun",
+    "freqRank": 41200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an early, proliferating stage of an antibody-secreting cell derived from an activated B lymphocyte",
+        "distractors": [
+          "a mature, non-dividing antibody factory found in bone marrow",
+          "a precursor cell that gives rise to all types of white blood cells"
+        ],
+        "example": {
+          "text": "Plasmablasts appear in the blood within days of infection, secreting antibody while still dividing rapidly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pleomorphic",
+    "lang": "en",
+    "word": "pleomorphic",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of assuming multiple different shapes or forms",
+        "distractors": [
+          "maintaining a single, fixed shape under all conditions",
+          "existing only as a spore under adverse conditions"
+        ],
+        "example": {
+          "text": "Some bacterial species are pleomorphic, appearing as rods, spheres, or filaments depending on conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polymorphonuclear",
+    "lang": "en",
+    "word": "polymorphonuclear",
+    "pos": "adjective",
+    "freqRank": 37800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "having a nucleus divided into multiple lobes, as seen in neutrophils and related granulocytes",
+        "distractors": [
+          "having a single, rounded, undivided nucleus",
+          "lacking a nucleus entirely, as in mature red blood cells"
+        ],
+        "example": {
+          "text": "A surge of polymorphonuclear cells in the sample indicated an acute bacterial infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prophylaxis",
+    "lang": "en",
+    "word": "prophylaxis",
+    "pos": "noun",
+    "freqRank": 24400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure taken to prevent disease before it occurs",
+        "distractors": [
+          "treatment administered after symptoms have already developed",
+          "the process of diagnosing a disease through laboratory testing"
+        ],
+        "example": {
+          "text": "Travelers to the region were advised to take antimalarial prophylaxis before departure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pseudopod",
+    "lang": "en",
+    "word": "pseudopod",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a temporary, foot-like extension of a cell's cytoplasm used for movement or engulfing particles",
+        "distractors": [
+          "a permanent appendage used for bacterial attachment",
+          "a membrane-bound vesicle formed after phagocytosis"
+        ],
+        "example": {
+          "text": "The amoeba extended a pseudopod to surround and engulf the bacterium.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_saprophyte",
+    "lang": "en",
+    "word": "saprophyte",
+    "pos": "noun",
+    "freqRank": 32400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an organism that obtains nutrients by feeding on dead or decaying organic matter",
+        "distractors": [
+          "an organism that can survive only inside a living host cell",
+          "a microorganism that derives nutrients from another living organism to its detriment"
+        ],
+        "example": {
+          "text": "Most environmental fungi are saprophytes, breaking down decaying plant material in soil.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_septicemia",
+    "lang": "en",
+    "word": "septicemia",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the presence of pathogenic bacteria and their toxins in the bloodstream, often causing a severe systemic illness",
+        "distractors": [
+          "a localized bacterial infection confined to a single organ",
+          "the presence of antibodies circulating in the blood after recovery"
+        ],
+        "example": {
+          "text": "Untreated septicemia can rapidly progress to organ failure and shock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seronegative",
+    "lang": "en",
+    "word": "seronegative",
+    "pos": "adjective",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "testing negative for the presence of a specific antibody in the blood",
+        "distractors": [
+          "testing positive for the presence of a specific antibody in the blood",
+          "having no detectable white blood cells in a blood sample"
+        ],
+        "example": {
+          "text": "Despite clear symptoms, the patient remained seronegative during the early window period of infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seropositive",
+    "lang": "en",
+    "word": "seropositive",
+    "pos": "adjective",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "testing positive for the presence of a specific antibody in the blood",
+        "distractors": [
+          "testing negative for the presence of a specific antibody in the blood",
+          "showing no clinical signs of infection despite laboratory abnormalities"
+        ],
+        "example": {
+          "text": "Being seropositive for the virus indicated the patient had been exposed at some point in the past.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subclinical",
+    "lang": "en",
+    "word": "subclinical",
+    "pos": "adjective",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an infection or disease that produces no noticeable symptoms",
+        "distractors": [
+          "describing a disease so severe it requires immediate hospitalization",
+          "describing an infection confirmed only through post-mortem examination"
+        ],
+        "example": {
+          "text": "Many carriers experience a subclinical infection, spreading the pathogen without ever feeling ill.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_superinfection",
+    "lang": "en",
+    "word": "superinfection",
+    "pos": "noun",
+    "freqRank": 34600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a new infection that occurs on top of a previous one, often involving a different or resistant organism",
+        "distractors": [
+          "the first infection a host experiences with a particular pathogen",
+          "an infection that resolves without any treatment"
+        ],
+        "example": {
+          "text": "Prolonged antibiotic use left the patient vulnerable to a fungal superinfection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syncytial",
+    "lang": "en",
+    "word": "syncytial",
+    "pos": "adjective",
+    "freqRank": 28400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to or forming a mass of fused, multinucleated cells",
+        "distractors": [
+          "relating to cells that remain strictly separate and individual",
+          "relating to the destruction of infected cells by the immune system"
+        ],
+        "example": {
+          "text": "Respiratory syncytial virus causes infected airway cells to fuse together into large multinucleated masses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transduction",
+    "lang": "en",
+    "word": "transduction",
+    "pos": "noun",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the transfer of bacterial DNA from one cell to another by a bacteriophage",
+        "distractors": [
+          "the direct uptake of free DNA from the environment by a bacterium",
+          "the transfer of genetic material through direct cell-to-cell contact"
+        ],
+        "example": {
+          "text": "Transduction by a phage allowed the resistance gene to spread to a previously susceptible bacterial strain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vaccinia",
+    "lang": "en",
+    "word": "vaccinia",
+    "pos": "noun",
+    "freqRank": 33400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a virus historically used in the smallpox vaccine, related to but distinct from the smallpox-causing variola virus",
+        "distractors": [
+          "the causative agent of smallpox itself",
+          "a bacterial toxin used in early vaccine preparations"
+        ],
+        "example": {
+          "text": "Vaccinia virus was used for decades to induce protective immunity against smallpox.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_virion",
+    "lang": "en",
+    "word": "virion",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a complete, infectious virus particle existing outside a host cell",
+        "distractors": [
+          "the genetic material of a virus once it has entered a host cell",
+          "an antibody specifically produced to target viral particles"
+        ],
+        "example": {
+          "text": "Each infected cell released thousands of new virions into the surrounding tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenobiotic",
+    "lang": "en",
+    "word": "xenobiotic",
+    "pos": "adjective",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a chemical compound foreign to a living organism, such as a drug or pollutant",
+        "distractors": [
+          "relating to a compound naturally synthesized by the organism itself",
+          "relating to genetic material transferred between two different species"
+        ],
+        "example": {
+          "text": "The liver metabolizes many xenobiotic compounds before they can accumulate to toxic levels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_adjuvant",
+    "lang": "en",
+    "word": "adjuvant",
+    "pos": "noun",
+    "freqRank": 21400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance added to a vaccine to enhance the immune response it provokes",
+        "distractors": [
+          "the antigenic component of a vaccine that the immune system recognizes",
+          "a preservative added solely to extend a vaccine's shelf life"
+        ],
+        "example": {
+          "text": "Aluminum salts are commonly used as an adjuvant to boost the vaccine's effectiveness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agglutination",
+    "lang": "en",
+    "word": "agglutination",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the clumping together of particles, such as bacteria or red blood cells, typically caused by antibody cross-linking",
+        "distractors": [
+          "the complete dissolution of cells following antibody binding",
+          "the migration of clumped cells toward a chemical signal"
+        ],
+        "example": {
+          "text": "Agglutination of the bacteria in the test tube confirmed the presence of specific antibodies in the serum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anamnestic",
+    "lang": "en",
+    "word": "anamnestic",
+    "pos": "adjective",
+    "freqRank": 43500,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to an accelerated, heightened immune response upon second exposure to an antigen, due to immunological memory",
+        "distractors": [
+          "relating to the very first immune response to a novel antigen",
+          "relating to a weakened response caused by immune exhaustion"
+        ],
+        "example": {
+          "text": "The anamnestic response produced antibodies far faster and in greater quantity than the initial exposure had.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antisepsis",
+    "lang": "en",
+    "word": "antisepsis",
+    "pos": "noun",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the practice of using chemical agents to prevent or reduce microbial contamination on living tissue",
+        "distractors": [
+          "the complete destruction of all microorganisms on an inanimate surface",
+          "the process by which the body clears an established infection"
+        ],
+        "example": {
+          "text": "Antisepsis of the surgical site with an antimicrobial solution reduced the risk of postoperative infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antitoxin",
+    "lang": "en",
+    "word": "antitoxin",
+    "pos": "noun",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an antibody that specifically neutralizes a bacterial or other biological toxin",
+        "distractors": [
+          "a chemical compound used to destroy toxin-producing bacteria",
+          "a vaccine formulation containing an attenuated toxin-producing organism"
+        ],
+        "example": {
+          "text": "Antitoxin was administered promptly to neutralize the circulating diphtheria toxin.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bacteremia",
+    "lang": "en",
+    "word": "bacteremia",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the presence of viable bacteria circulating in the bloodstream",
+        "distractors": [
+          "the presence of bacterial toxins alone in the bloodstream without live organisms",
+          "a localized bacterial infection confined to the skin"
+        ],
+        "example": {
+          "text": "Blood cultures confirmed bacteremia, prompting immediate intravenous antibiotic therapy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chancre",
+    "lang": "en",
+    "word": "chancre",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a firm, typically painless ulcer that forms at the initial site of certain infections, notably syphilis",
+        "distractors": [
+          "a fluid-filled blister characteristic of viral skin infections",
+          "a raised, itchy rash caused by an allergic reaction"
+        ],
+        "example": {
+          "text": "The painless chancre on the skin was the first visible sign of the primary infection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_conjugation",
+    "lang": "en",
+    "word": "conjugation",
+    "pos": "noun",
+    "freqRank": 23600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a process by which bacteria transfer genetic material directly between cells through physical contact, often via a pilus",
+        "distractors": [
+          "the uptake of free DNA fragments from the surrounding environment",
+          "the transfer of genetic material by means of a bacteriophage"
+        ],
+        "example": {
+          "text": "Through conjugation, the resistant bacterium passed its plasmid directly to a neighboring susceptible cell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dysbiosis",
+    "lang": "en",
+    "word": "dysbiosis",
+    "pos": "noun",
+    "freqRank": 20600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an imbalance in the composition of the normal microbial community, often associated with disease",
+        "distractors": [
+          "the complete absence of microorganisms within a host system",
+          "the process by which beneficial bacteria colonize a newborn's gut"
+        ],
+        "example": {
+          "text": "Antibiotic overuse can trigger gut dysbiosis, allowing opportunistic pathogens to flourish.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endospore",
+    "lang": "en",
+    "word": "endospore",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a highly resistant, dormant structure formed by certain bacteria to survive extreme environmental conditions",
+        "distractors": [
+          "a membrane-bound organelle found in eukaryotic cells",
+          "a toxin released when a bacterial cell is destroyed"
+        ],
+        "example": {
+          "text": "The bacterium's endospore can withstand boiling, radiation, and years of desiccation before germinating.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enterotoxin",
+    "lang": "en",
+    "word": "enterotoxin",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a toxin that specifically targets the cells lining the intestine, often causing diarrhea",
+        "distractors": [
+          "a toxin that primarily damages the respiratory epithelium",
+          "an antibody produced against toxins found in the gut"
+        ],
+        "example": {
+          "text": "The enterotoxin produced by the bacterium caused the intestinal cells to secrete excess fluid, resulting in diarrhea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eukaryotic",
+    "lang": "en",
+    "word": "eukaryotic",
+    "pos": "adjective",
+    "freqRank": 20400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to organisms whose cells contain a membrane-bound nucleus and other complex organelles",
+        "distractors": [
+          "relating to organisms whose genetic material floats freely in the cytoplasm",
+          "relating to viruses that lack any cellular structure"
+        ],
+        "example": {
+          "text": "Antifungal drugs must target processes unique to eukaryotic cells without harming the human host.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exanthem",
+    "lang": "en",
+    "word": "exanthem",
+    "pos": "noun",
+    "freqRank": 36400,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a widespread skin rash that often accompanies a systemic infection, especially in children",
+        "distractors": [
+          "a localized skin infection confined to a single lesion",
+          "a chronic autoimmune skin condition unrelated to infection"
+        ],
+        "example": {
+          "text": "The characteristic exanthem appeared across the child's trunk a few days after the fever began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gnotobiotic",
+    "lang": "en",
+    "word": "gnotobiotic",
+    "pos": "adjective",
+    "freqRank": 45000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to an experimental animal raised in a controlled environment with a known and defined microbial population, including germ-free",
+        "distractors": [
+          "relating to an animal exposed to an uncontrolled, natural microbial environment",
+          "relating to an organism genetically engineered to lack an immune system"
+        ],
+        "example": {
+          "text": "Gnotobiotic mice, colonized with a single defined bacterial species, let researchers isolate that microbe's effects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunodeficiency",
+    "lang": "en",
+    "word": "immunodeficiency",
+    "pos": "noun",
+    "freqRank": 21100,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a condition in which the immune system's capacity to fight infection is reduced or absent",
+        "distractors": [
+          "a condition in which the immune system attacks the body's own tissues",
+          "an excessive immune response to a normally harmless antigen"
+        ],
+        "example": {
+          "text": "Children born with severe combined immunodeficiency are highly vulnerable to infections from birth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immunomodulatory",
+    "lang": "en",
+    "word": "immunomodulatory",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of altering or regulating the activity of the immune system",
+        "distractors": [
+          "incapable of producing any effect on immune cell activity",
+          "relating exclusively to the destruction of cancer cells"
+        ],
+        "example": {
+          "text": "The drug's immunomodulatory effects helped dampen the excessive inflammatory response.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_latency",
+    "lang": "en",
+    "word": "latency",
+    "pos": "noun",
+    "freqRank": 20900,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state in which a pathogen, especially a virus, persists within the host in an inactive form without producing symptoms",
+        "distractors": [
+          "the incubation period between exposure and the onset of symptoms",
+          "the phase of active viral replication and particle release"
+        ],
+        "example": {
+          "text": "Herpesviruses can establish latency in nerve cells, reactivating unpredictably years later.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lymphotropic",
+    "lang": "en",
+    "word": "lymphotropic",
+    "pos": "adjective",
+    "freqRank": 40800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "having a particular affinity for infecting lymphoid cells or tissue",
+        "distractors": [
+          "having a particular affinity for infecting skin cells",
+          "incapable of infecting any cells of the immune system"
+        ],
+        "example": {
+          "text": "The lymphotropic virus preferentially infected and depleted a specific subset of T cells.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mesophilic",
+    "lang": "en",
+    "word": "mesophilic",
+    "pos": "adjective",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an organism that grows best at moderate temperatures, typically those found in the human body",
+        "distractors": [
+          "describing an organism that thrives only at extremely high temperatures",
+          "describing an organism that requires an oxygen-free environment to grow"
+        ],
+        "example": {
+          "text": "Most human pathogens are mesophilic, growing optimally near normal body temperature.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microbiota",
+    "lang": "en",
+    "word": "microbiota",
+    "pos": "noun",
+    "freqRank": 20300,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the collective community of microorganisms living in or on a particular environment, such as the human gut",
+        "distractors": [
+          "a single dominant species of bacteria isolated from a host",
+          "the set of antibodies produced against a host's normal flora"
+        ],
+        "example": {
+          "text": "Disruption of the gut microbiota by antibiotics can have lasting effects on digestion and immunity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mordant",
+    "lang": "en",
+    "word": "mordant",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemical agent used in staining procedures to fix or intensify a dye's binding to a microbial specimen",
+        "distractors": [
+          "a nutrient-rich substance added to promote bacterial growth in culture",
+          "an antibody used to visually label a specific antigen"
+        ],
+        "example": {
+          "text": "In the Gram stain procedure, iodine acts as a mordant that helps trap the crystal violet dye within the cell wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mutagen",
+    "lang": "en",
+    "word": "mutagen",
+    "pos": "noun",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an agent, such as certain chemicals or radiation, that increases the rate of genetic mutation in an organism",
+        "distractors": [
+          "an agent that repairs existing mutations within a genome",
+          "an enzyme that specifically degrades foreign genetic material"
+        ],
+        "example": {
+          "text": "Ultraviolet light acts as a mutagen, damaging bacterial DNA and occasionally inducing resistance mutations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_necrotizing",
+    "lang": "en",
+    "word": "necrotizing",
+    "pos": "adjective",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "causing the death of tissue",
+        "distractors": [
+          "promoting the regeneration of damaged tissue",
+          "confined strictly to superficial skin layers without deeper damage"
+        ],
+        "example": {
+          "text": "The necrotizing infection destroyed soft tissue so rapidly that emergency surgery was required.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prion",
+    "lang": "en",
+    "word": "prion",
+    "pos": "noun",
+    "freqRank": 20700,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an infectious agent composed solely of misfolded protein, capable of inducing normal proteins to misfold as well",
+        "distractors": [
+          "a virus that lacks any protein coat surrounding its genome",
+          "a bacterial toxin that disrupts neuronal signaling"
+        ],
+        "example": {
+          "text": "Prions cause degenerative brain diseases without containing any genetic material of their own.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prophage",
+    "lang": "en",
+    "word": "prophage",
+    "pos": "noun",
+    "freqRank": 38800,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dormant form of a bacteriophage genome integrated within a bacterial chromosome",
+        "distractors": [
+          "a fully assembled virus particle ready to infect a new cell",
+          "a bacterial gene that confers resistance to phage infection"
+        ],
+        "example": {
+          "text": "Certain toxin genes are carried by a prophage integrated into the bacterium's own chromosome.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyogenic",
+    "lang": "en",
+    "word": "pyogenic",
+    "pos": "adjective",
+    "freqRank": 27900,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "producing or causing the formation of pus",
+        "distractors": [
+          "preventing the immune system from forming pus at a wound site",
+          "relating exclusively to viral rather than bacterial infections"
+        ],
+        "example": {
+          "text": "Staphylococcus aureus is a classic pyogenic organism, frequently causing abscesses filled with pus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recombinant",
+    "lang": "en",
+    "word": "recombinant",
+    "pos": "adjective",
+    "freqRank": 21700,
+    "difficulty": "hard",
+    "tags": [
+      "immunology"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "produced by combining genetic material from different sources, typically through laboratory techniques",
+        "distractors": [
+          "derived exclusively from a single natural, unmodified organism",
+          "incapable of being expressed in a host cell system"
+        ],
+        "example": {
+          "text": "The recombinant vaccine antigen was produced by inserting the viral gene into a yeast expression system.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

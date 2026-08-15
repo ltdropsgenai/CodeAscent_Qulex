@@ -1,0 +1,4146 @@
+[
+  {
+    "id": "w_redshift",
+    "lang": "en",
+    "word": "redshift",
+    "pos": "noun",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the stretching of light to longer, redder wavelengths as its source moves away from the observer or as space itself expands",
+        "distractors": [
+          "the compression of light to shorter wavelengths as a source approaches the observer",
+          "the total dimming of starlight caused by dust along the line of sight"
+        ],
+        "example": {
+          "text": "Astronomers measured the galaxy's redshift to estimate how far its light had traveled since it left the source.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_blueshift",
+    "lang": "en",
+    "word": "blueshift",
+    "pos": "noun",
+    "freqRank": 20166,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the shift of light toward shorter, bluer wavelengths when the source is moving toward the observer",
+        "distractors": [
+          "the reddening of starlight caused by scattering off interstellar dust grains",
+          "the brightening of a star as it approaches the peak of its pulsation cycle"
+        ],
+        "example": {
+          "text": "The Andromeda galaxy shows a blueshift because it is currently falling toward the Milky Way.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syzygy",
+    "lang": "en",
+    "word": "syzygy",
+    "pos": "noun",
+    "freqRank": 20332,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a near-straight-line alignment of three celestial bodies, such as the Sun, Earth, and Moon during an eclipse",
+        "distractors": [
+          "the point in an orbit where a body moves fastest due to being closest to what it orbits",
+          "a resonance in which two orbiting bodies repeatedly exert a regular gravitational pull on each other"
+        ],
+        "example": {
+          "text": "A solar eclipse can only occur during a syzygy involving the Sun, Moon, and Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_degenerate_matter",
+    "lang": "en",
+    "word": "degenerate matter",
+    "pos": "noun",
+    "freqRank": 20499,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "matter so extremely compressed that quantum exclusion pressure, rather than heat, supports it against further collapse",
+        "distractors": [
+          "matter that has cooled below the temperature needed to sustain nuclear fusion",
+          "matter stripped of its electrons and existing as a fully ionized gas"
+        ],
+        "example": {
+          "text": "The core of a white dwarf consists of degenerate matter held up by electron pressure rather than thermal pressure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_baryon",
+    "lang": "en",
+    "word": "baryon",
+    "pos": "noun",
+    "freqRank": 20665,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a particle, such as a proton or neutron, made of three quarks and bound by the strong nuclear force",
+        "distractors": [
+          "a massless particle that carries the electromagnetic force between charged particles",
+          "a light, weakly interacting particle such as a neutrino or electron"
+        ],
+        "example": {
+          "text": "Ordinary stars and planets are built almost entirely from baryon matter, mainly protons and neutrons.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lepton",
+    "lang": "en",
+    "word": "lepton",
+    "pos": "noun",
+    "freqRank": 20832,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fundamental particle, such as the electron or neutrino, that does not experience the strong nuclear force",
+        "distractors": [
+          "a composite particle built from two or three quarks",
+          "a boson responsible for mediating the strong nuclear interaction"
+        ],
+        "example": {
+          "text": "Electrons and neutrinos both belong to the lepton family of fundamental particles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hadron",
+    "lang": "en",
+    "word": "hadron",
+    "pos": "noun",
+    "freqRank": 20998,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "any particle made of quarks bound together by the strong nuclear force, including baryons and mesons",
+        "distractors": [
+          "a particle that interacts only through gravity and the weak force",
+          "a massless particle that travels at the speed of light in a vacuum"
+        ],
+        "example": {
+          "text": "Protons and neutrons are examples of hadrons because both are built from bound quarks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quark_gluon_plasma",
+    "lang": "en",
+    "word": "quark-gluon plasma",
+    "pos": "noun",
+    "freqRank": 21165,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extremely hot, dense state of matter in which quarks and gluons move freely instead of being bound inside particles",
+        "distractors": [
+          "a cool cloud of ionized hydrogen found in the outer reaches of a galaxy",
+          "the degenerate core material left behind after a supernova explosion"
+        ],
+        "example": {
+          "text": "Physicists believe a quark-gluon plasma filled the universe for a brief instant after the Big Bang.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chromosphere",
+    "lang": "en",
+    "word": "chromosphere",
+    "pos": "noun",
+    "freqRank": 21331,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the thin, reddish layer of a star's atmosphere lying just above the visible surface and below the corona",
+        "distractors": [
+          "the dense, opaque layer of a star where energy is generated by fusion",
+          "the outermost, extremely hot and tenuous halo of plasma surrounding a star"
+        ],
+        "example": {
+          "text": "During a total solar eclipse, the chromosphere briefly appears as a pinkish rim around the Moon's silhouette.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_photosphere",
+    "lang": "en",
+    "word": "photosphere",
+    "pos": "noun",
+    "freqRank": 21497,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the visible surface layer of a star from which most of its light escapes into space",
+        "distractors": [
+          "the star's dense, fusion-powered core where energy is produced",
+          "the star's outermost atmosphere, visible only during an eclipse"
+        ],
+        "example": {
+          "text": "Sunspots appear as darker, cooler patches on the Sun's photosphere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_granulation",
+    "lang": "en",
+    "word": "granulation",
+    "pos": "noun",
+    "freqRank": 21664,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mottled, grainy pattern on a star's surface produced by rising and sinking convective cells",
+        "distractors": [
+          "the gradual dimming of a star's edge relative to its center",
+          "the formation of small rocky bodies within a protoplanetary disk"
+        ],
+        "example": {
+          "text": "Granulation on the solar photosphere reveals the tops of convective cells churning just beneath the surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_limb_darkening",
+    "lang": "en",
+    "word": "limb darkening",
+    "pos": "noun",
+    "freqRank": 21830,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the apparent dimming of a star's disk toward its edge because the line of sight there samples cooler, higher layers",
+        "distractors": [
+          "the reduction of starlight caused by intervening interstellar dust",
+          "the fading of a star's brightness as it evolves off the main sequence"
+        ],
+        "example": {
+          "text": "Limb darkening makes the Sun appear noticeably dimmer near the edge of its disk than at the center.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_opacity",
+    "lang": "en",
+    "word": "opacity",
+    "pos": "noun",
+    "freqRank": 21997,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of how strongly a material blocks or absorbs radiation passing through it",
+        "distractors": [
+          "the total energy radiated by a star per second across all wavelengths",
+          "the ratio of a star's mass to its radius"
+        ],
+        "example": {
+          "text": "High opacity in a stellar envelope slows the outward flow of radiation and can drive convection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_convective_zone",
+    "lang": "en",
+    "word": "convective zone",
+    "pos": "noun",
+    "freqRank": 22163,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a region inside a star where energy is transported mainly by the physical churning motion of hot plasma",
+        "distractors": [
+          "the innermost region of a star where nuclear fusion occurs",
+          "the outer atmosphere of a star where the solar wind originates"
+        ],
+        "example": {
+          "text": "The Sun's convective zone lies just beneath the photosphere and carries heat upward through rising plasma.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radiative_zone",
+    "lang": "en",
+    "word": "radiative zone",
+    "pos": "noun",
+    "freqRank": 22330,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a region inside a star where energy moves outward mainly through the diffusion of photons rather than bulk motion",
+        "distractors": [
+          "the layer of a star where hydrogen is converted into helium by fusion",
+          "the tenuous outer layer of a star's atmosphere visible only during eclipses"
+        ],
+        "example": {
+          "text": "In the Sun's radiative zone, photons can take hundreds of thousands of years to random-walk outward.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_main_sequence",
+    "lang": "en",
+    "word": "main sequence",
+    "pos": "noun",
+    "freqRank": 22496,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the long, stable stage of a star's life during which it fuses hydrogen into helium in its core",
+        "distractors": [
+          "the brief final stage in which a star sheds its outer layers as a nebula",
+          "the phase in which a collapsing gas cloud first ignites nuclear fusion"
+        ],
+        "example": {
+          "text": "The Sun is a main sequence star that has been fusing hydrogen for roughly 4.6 billion years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_white_dwarf",
+    "lang": "en",
+    "word": "white dwarf",
+    "pos": "noun",
+    "freqRank": 22663,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the small, extremely dense remnant left behind after a low- or medium-mass star sheds its outer layers",
+        "distractors": [
+          "a massive star still actively fusing elements in concentric shells",
+          "a diffuse cloud of gas expelled by a star during its red giant phase"
+        ],
+        "example": {
+          "text": "When the Sun exhausts its fuel, it will eventually collapse into a white dwarf about the size of Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutron_star",
+    "lang": "en",
+    "word": "neutron star",
+    "pos": "noun",
+    "freqRank": 22829,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extremely dense stellar remnant composed almost entirely of neutrons, formed when a massive star's core collapses",
+        "distractors": [
+          "a star still fusing hydrogen steadily in a stable equilibrium",
+          "a loosely bound cloud of gas left over from star formation"
+        ],
+        "example": {
+          "text": "A neutron star packs more mass than the Sun into a sphere only about twenty kilometers across.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pulsar",
+    "lang": "en",
+    "word": "pulsar",
+    "pos": "noun",
+    "freqRank": 22995,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rapidly rotating neutron star that emits beams of radiation observed as regular pulses as it spins",
+        "distractors": [
+          "a variable star that brightens and dims due to internal fusion cycles",
+          "a black hole that periodically flares as it consumes surrounding gas"
+        ],
+        "example": {
+          "text": "The pulsar's radio beam swept past Earth every 1.4 milliseconds, appearing as an extremely regular pulse train.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_magnetar",
+    "lang": "en",
+    "word": "magnetar",
+    "pos": "noun",
+    "freqRank": 23162,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron star with an exceptionally powerful magnetic field capable of producing intense bursts of X-rays and gamma rays",
+        "distractors": [
+          "a binary system consisting of two orbiting white dwarfs",
+          "a young star still embedded within its natal molecular cloud"
+        ],
+        "example": {
+          "text": "A magnetar's magnetic field can be a thousand trillion times stronger than Earth's.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nova",
+    "lang": "en",
+    "word": "nova",
+    "pos": "noun",
+    "freqRank": 23328,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sudden, temporary brightening of a white dwarf caused by a thermonuclear explosion on its surface after accreting material from a companion",
+        "distractors": [
+          "the complete gravitational collapse of a massive star's core into a black hole",
+          "a permanent brightening of a star as it swells into a red giant"
+        ],
+        "example": {
+          "text": "The nova quickly faded from view within a few weeks as the surface explosion subsided.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nucleosynthesis",
+    "lang": "en",
+    "word": "nucleosynthesis",
+    "pos": "noun",
+    "freqRank": 23495,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which heavier atomic nuclei are built up from lighter ones through nuclear reactions",
+        "distractors": [
+          "the gradual loss of a star's outer layers through a steady stellar wind",
+          "the process by which a protostar contracts under its own gravity before fusion ignites"
+        ],
+        "example": {
+          "text": "Stellar nucleosynthesis inside massive stars produces most of the carbon and oxygen found in the universe.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_helium_flash",
+    "lang": "en",
+    "word": "helium flash",
+    "pos": "noun",
+    "freqRank": 23661,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sudden, explosive ignition of helium fusion in the degenerate core of a low-mass red giant",
+        "distractors": [
+          "the gradual cooling of a white dwarf over billions of years",
+          "a brief flare of X-rays produced when matter strikes a neutron star's surface"
+        ],
+        "example": {
+          "text": "The helium flash releases an enormous burst of energy internally, though little of it reaches the star's surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chandrasekhar_limit",
+    "lang": "en",
+    "word": "Chandrasekhar limit",
+    "pos": "noun",
+    "freqRank": 23828,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the maximum mass, about 1.4 times that of the Sun, above which a white dwarf cannot be supported by electron degeneracy pressure",
+        "distractors": [
+          "the minimum mass a cloud of gas needs to collapse and ignite as a star",
+          "the maximum spin rate a neutron star can sustain before flying apart"
+        ],
+        "example": {
+          "text": "A white dwarf that accretes enough material to exceed the Chandrasekhar limit can be triggered into a supernova.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eddington_limit",
+    "lang": "en",
+    "word": "Eddington limit",
+    "pos": "noun",
+    "freqRank": 23994,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the maximum luminosity a star or accreting object can sustain before outward radiation pressure overcomes gravitational infall",
+        "distractors": [
+          "the minimum temperature a gas cloud must reach before it can collapse into a star",
+          "the largest possible orbital radius for a planet within a star's habitable zone"
+        ],
+        "example": {
+          "text": "Extremely bright accreting black holes are thought to radiate near the Eddington limit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_roche_lobe",
+    "lang": "en",
+    "word": "Roche lobe",
+    "pos": "noun",
+    "freqRank": 24161,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the teardrop-shaped region around a star in a binary system within which orbiting material remains gravitationally bound to that star",
+        "distractors": [
+          "the spherical shell of gas ejected during a planetary nebula phase",
+          "the innermost stable orbit permitted around a black hole"
+        ],
+        "example": {
+          "text": "When a star expands to fill its Roche lobe, matter can spill over onto its companion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_accretion_disk",
+    "lang": "en",
+    "word": "accretion disk",
+    "pos": "noun",
+    "freqRank": 24327,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rotating disk of gas and dust that spirals inward onto a central massive object such as a star or black hole",
+        "distractors": [
+          "a spherical shell of expelled gas surrounding a dying star",
+          "a belt of small rocky bodies orbiting beyond a planetary system"
+        ],
+        "example": {
+          "text": "Friction within the accretion disk heats the infalling gas until it glows brightly in X-rays.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stellar_wind",
+    "lang": "en",
+    "word": "stellar wind",
+    "pos": "noun",
+    "freqRank": 24493,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a continuous outflow of charged particles streaming away from a star's outer atmosphere",
+        "distractors": [
+          "a burst of radiation released during a single flare event",
+          "the steady rotation of gas within a star's convective zone"
+        ],
+        "example": {
+          "text": "The star's stellar wind gradually strips gas away from any nearby planets over billions of years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_planetary_nebula",
+    "lang": "en",
+    "word": "planetary nebula",
+    "pos": "noun",
+    "freqRank": 24660,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an expanding shell of glowing gas ejected by a dying low-mass star, leaving behind a white dwarf core",
+        "distractors": [
+          "a disk of gas and dust from which planets are actively forming",
+          "a dense cluster of newly formed stars still embedded in their birth cloud"
+        ],
+        "example": {
+          "text": "Despite its name, a planetary nebula has nothing to do with planets and instead marks the death of a sun-like star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_brown_dwarf",
+    "lang": "en",
+    "word": "brown dwarf",
+    "pos": "noun",
+    "freqRank": 24826,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substellar object too low in mass to sustain steady hydrogen fusion, occupying a gap between giant planets and true stars",
+        "distractors": [
+          "a compact remnant left behind after a supernova explosion",
+          "a young star that has just begun stable hydrogen fusion"
+        ],
+        "example": {
+          "text": "A brown dwarf glows faintly from residual heat of formation rather than from ongoing hydrogen fusion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_t_tauri_star",
+    "lang": "en",
+    "word": "T Tauri star",
+    "pos": "noun",
+    "freqRank": 24993,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a young, pre-main-sequence star still contracting toward the main sequence and often surrounded by a disk of gas and dust",
+        "distractors": [
+          "an evolved giant star nearing the end of its nuclear-burning life",
+          "a compact stellar remnant supported by degeneracy pressure"
+        ],
+        "example": {
+          "text": "The T Tauri star's irregular brightness variations are caused by clumps of material falling from its surrounding disk.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wolf_rayet_star",
+    "lang": "en",
+    "word": "Wolf-Rayet star",
+    "pos": "noun",
+    "freqRank": 25159,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a highly evolved, extremely massive star shedding its outer layers rapidly through a powerful stellar wind",
+        "distractors": [
+          "a low-mass star that will end its life quietly as a white dwarf",
+          "a newly ignited protostar still embedded in its birth cloud"
+        ],
+        "example": {
+          "text": "A Wolf-Rayet star can lose an entire solar mass of material to its wind in only a few hundred thousand years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cepheid",
+    "lang": "en",
+    "word": "Cepheid",
+    "pos": "noun",
+    "freqRank": 25326,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a type of pulsating star whose brightness varies with a period tightly linked to its true luminosity, making it useful for measuring distances",
+        "distractors": [
+          "a compact stellar remnant that emits regular pulses of radio waves",
+          "a massive star that ends its life in a catastrophic supernova explosion"
+        ],
+        "example": {
+          "text": "By timing a Cepheid's pulsation period, astronomers can calculate its true luminosity and thus its distance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rr_lyrae",
+    "lang": "en",
+    "word": "RR Lyrae",
+    "pos": "noun",
+    "freqRank": 25492,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a class of older, lower-mass pulsating variable stars often used as standard candles to gauge distances within the galaxy",
+        "distractors": [
+          "a class of extremely young stars still surrounded by their formation disks",
+          "a category of black hole binaries that emit periodic X-ray flares"
+        ],
+        "example": {
+          "text": "RR Lyrae stars are commonly found in globular clusters and help astronomers measure the clusters' distances.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eclipsing_binary",
+    "lang": "en",
+    "word": "eclipsing binary",
+    "pos": "noun",
+    "freqRank": 25659,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pair of orbiting stars whose orbital plane is aligned so that each star periodically passes in front of the other as seen from Earth",
+        "distractors": [
+          "two stars so close together that they share a common outer envelope of gas",
+          "a star system in which only spectral lines, not direct dimming, reveal the orbital motion"
+        ],
+        "example": {
+          "text": "The eclipsing binary's light curve dipped sharply every few days as one star passed in front of the other.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spectroscopic_binary",
+    "lang": "en",
+    "word": "spectroscopic binary",
+    "pos": "noun",
+    "freqRank": 25825,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a binary star system detected only through the periodic Doppler shifting of its spectral lines, since the stars cannot be resolved separately",
+        "distractors": [
+          "a binary system in which the two stars can be seen as distinct points of light through a telescope",
+          "a single star whose spectrum varies due to changing surface temperature"
+        ],
+        "example": {
+          "text": "Astronomers identified the spectroscopic binary by watching its absorption lines shift back and forth over several weeks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_perihelion",
+    "lang": "en",
+    "word": "perihelion",
+    "pos": "noun",
+    "freqRank": 25991,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point in an orbit around the Sun at which an object is closest to the Sun",
+        "distractors": [
+          "the point in an orbit around the Sun at which an object is farthest from the Sun",
+          "the point in a binary star orbit at which the two stars are closest together"
+        ],
+        "example": {
+          "text": "Earth reaches perihelion in early January, when it is closest to the Sun in its yearly orbit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_aphelion",
+    "lang": "en",
+    "word": "aphelion",
+    "pos": "noun",
+    "freqRank": 26158,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point in an orbit around the Sun at which an object is farthest from the Sun",
+        "distractors": [
+          "the point in an orbit around the Sun at which an object is closest to the Sun",
+          "the point at which a moon is farthest from the planet it orbits"
+        ],
+        "example": {
+          "text": "Earth reaches aphelion in early July, several million kilometers farther from the Sun than at perihelion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_periastron",
+    "lang": "en",
+    "word": "periastron",
+    "pos": "noun",
+    "freqRank": 26324,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point in an orbit at which two mutually orbiting bodies, such as binary stars, are closest to each other",
+        "distractors": [
+          "the point in an orbit at which two mutually orbiting bodies are farthest from each other",
+          "the point in a planet's orbit at which it is closest to the Sun"
+        ],
+        "example": {
+          "text": "The two neutron stars sped up noticeably as they approached periastron in their tight orbit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_apastron",
+    "lang": "en",
+    "word": "apastron",
+    "pos": "noun",
+    "freqRank": 26491,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point in an orbit at which two mutually orbiting bodies, such as binary stars, are farthest from each other",
+        "distractors": [
+          "the point in an orbit at which two mutually orbiting bodies are closest to each other",
+          "the point in a planet's orbit at which it is farthest from the Sun"
+        ],
+        "example": {
+          "text": "At apastron, the binary stars slow down as they reach the widest separation in their elliptical orbit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_libration",
+    "lang": "en",
+    "word": "libration",
+    "pos": "noun",
+    "freqRank": 26657,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a slight, periodic wobble in a moon's or planet's orientation that lets an observer see slightly more than half of its surface over time",
+        "distractors": [
+          "the gradual slowing of a planet's rotation due to tidal friction",
+          "the wandering of a star's apparent position caused by parallax"
+        ],
+        "example": {
+          "text": "Thanks to libration, Earth-based observers can eventually glimpse about fifty-nine percent of the Moon's surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_precession",
+    "lang": "en",
+    "word": "precession",
+    "pos": "noun",
+    "freqRank": 26824,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the slow, gradual change in the orientation of a rotating body's axis or an orbit's shape over long timescales",
+        "distractors": [
+          "the sudden reversal of a planet's rotational direction",
+          "the periodic brightening and dimming of a variable star"
+        ],
+        "example": {
+          "text": "The precession of Earth's axis traces out a full circle roughly every 26,000 years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nutation",
+    "lang": "en",
+    "word": "nutation",
+    "pos": "noun",
+    "freqRank": 26990,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small, short-period wobble superimposed on the slower precession of a rotating body's axis",
+        "distractors": [
+          "the long-term drift of a star's position due to its motion through the galaxy",
+          "the periodic dimming of a star as a planet transits in front of it"
+        ],
+        "example": {
+          "text": "Nutation adds a subtle, faster oscillation on top of Earth's much slower axial precession.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_obliquity",
+    "lang": "en",
+    "word": "obliquity",
+    "pos": "noun",
+    "freqRank": 27157,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the angle between a planet's rotational axis and the plane of its orbit around its star",
+        "distractors": [
+          "the angle between a planet's orbital plane and that of another planet in the same system",
+          "the eccentricity of an elliptical orbit"
+        ],
+        "example": {
+          "text": "Earth's obliquity of about 23.4 degrees is responsible for the changing seasons.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ecliptic",
+    "lang": "en",
+    "word": "ecliptic",
+    "pos": "noun",
+    "freqRank": 27323,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the apparent path the Sun traces across the sky over a year, corresponding to the plane of Earth's orbit",
+        "distractors": [
+          "the plane defined by a planet's equator",
+          "the boundary between a planet's illuminated and dark hemispheres"
+        ],
+        "example": {
+          "text": "The Moon and most planets appear close to the ecliptic because their orbits share nearly the same plane as Earth's.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parallax",
+    "lang": "en",
+    "word": "parallax",
+    "pos": "noun",
+    "freqRank": 27489,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the apparent shift in a nearby star's position against distant background stars as Earth orbits the Sun, used to measure its distance",
+        "distractors": [
+          "the gradual dimming of a star's light due to intervening interstellar dust",
+          "the periodic shift in a star's spectral lines caused by its orbital motion"
+        ],
+        "example": {
+          "text": "Astronomers used the star's tiny parallax angle, measured six months apart, to calculate its distance from Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proper_motion",
+    "lang": "en",
+    "word": "proper motion",
+    "pos": "noun",
+    "freqRank": 27656,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the actual angular movement of a star across the sky over time, as seen from the solar system, excluding parallax effects",
+        "distractors": [
+          "the apparent back-and-forth shift of a star caused by Earth's orbital motion",
+          "the periodic dimming and brightening of a star as it pulsates"
+        ],
+        "example": {
+          "text": "Barnard's Star has the largest known proper motion of any star visible from Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radial_velocity",
+    "lang": "en",
+    "word": "radial velocity",
+    "pos": "noun",
+    "freqRank": 27822,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the speed at which an object is moving directly toward or away from an observer, measured via the Doppler shift of its spectral lines",
+        "distractors": [
+          "the speed at which an object moves across the sky perpendicular to the line of sight",
+          "the rotational speed of a star's outer atmosphere"
+        ],
+        "example": {
+          "text": "Astronomers detect many exoplanets by measuring the tiny radial velocity wobble they induce in their host star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_doppler_broadening",
+    "lang": "en",
+    "word": "Doppler broadening",
+    "pos": "noun",
+    "freqRank": 27989,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the widening of a spectral line caused by the range of thermal velocities of particles moving toward and away from the observer",
+        "distractors": [
+          "the narrowing of a spectral line caused by extremely low gas pressure",
+          "the splitting of a spectral line caused by a strong external magnetic field"
+        ],
+        "example": {
+          "text": "Doppler broadening of absorption lines lets astronomers estimate the temperature of a stellar atmosphere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_emission_line",
+    "lang": "en",
+    "word": "emission line",
+    "pos": "noun",
+    "freqRank": 28155,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bright, narrow feature in a spectrum produced when atoms release photons at specific characteristic wavelengths",
+        "distractors": [
+          "a dark gap in a spectrum where atoms have absorbed photons at specific wavelengths",
+          "the smooth, continuous glow of light emitted by any hot, dense object"
+        ],
+        "example": {
+          "text": "The nebula's spectrum showed strong emission lines from ionized hydrogen glowing under intense ultraviolet light.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_absorption_line",
+    "lang": "en",
+    "word": "absorption line",
+    "pos": "noun",
+    "freqRank": 28322,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dark, narrow gap in a spectrum where atoms in a cooler outer layer have absorbed photons at specific wavelengths",
+        "distractors": [
+          "a bright, narrow feature in a spectrum produced by excited atoms releasing photons",
+          "a smooth continuous spectrum with no distinguishing features"
+        ],
+        "example": {
+          "text": "The star's absorption lines revealed the presence of calcium and iron in its outer atmosphere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_blackbody",
+    "lang": "en",
+    "word": "blackbody",
+    "pos": "noun",
+    "freqRank": 28488,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an idealized object that absorbs all incoming radiation and re-emits energy in a smooth spectrum determined solely by its temperature",
+        "distractors": [
+          "an object that reflects all incoming radiation without absorbing any of it",
+          "a compact object so dense that no light can escape its surface"
+        ],
+        "example": {
+          "text": "The cosmic microwave background matches a nearly perfect blackbody spectrum at about 2.7 kelvin.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_luminosity",
+    "lang": "en",
+    "word": "luminosity",
+    "pos": "noun",
+    "freqRank": 28655,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the total amount of energy a star or other object radiates per unit time across all wavelengths",
+        "distractors": [
+          "the brightness of an object as it appears from Earth, depending on distance",
+          "the surface temperature of a star as inferred from its color"
+        ],
+        "example": {
+          "text": "Although the two stars appear similarly bright from Earth, the more distant one has a far greater luminosity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bolometric",
+    "lang": "en",
+    "word": "bolometric",
+    "pos": "adjective",
+    "freqRank": 28821,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the total energy output of an object measured across the entire electromagnetic spectrum",
+        "distractors": [
+          "relating only to the visible portion of an object's emitted light",
+          "relating to the polarization state of emitted radiation"
+        ],
+        "example": {
+          "text": "A star's bolometric magnitude accounts for radiation emitted at all wavelengths, not just visible light.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interstellar_extinction",
+    "lang": "en",
+    "word": "interstellar extinction",
+    "pos": "noun",
+    "freqRank": 28987,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dimming of starlight as it travels through intervening dust and gas in the space between stars",
+        "distractors": [
+          "the reddening of starlight caused by the star's own cooling surface",
+          "the complete blocking of a star's light by an eclipsing companion"
+        ],
+        "example": {
+          "text": "Interstellar extinction can make a distant star appear far fainter than its true luminosity would suggest.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_circumstellar",
+    "lang": "en",
+    "word": "circumstellar",
+    "pos": "adjective",
+    "freqRank": 29154,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located in the region of space immediately surrounding a star",
+        "distractors": [
+          "located far beyond the boundary of a single galaxy",
+          "relating to material ejected permanently from a stellar system"
+        ],
+        "example": {
+          "text": "Astronomers detected fine dust grains in the circumstellar disk encircling the young star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interstellar_medium",
+    "lang": "en",
+    "word": "interstellar medium",
+    "pos": "noun",
+    "freqRank": 29320,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the diffuse gas and dust that fills the space between stars within a galaxy",
+        "distractors": [
+          "the extremely thin plasma that fills the space between galaxies",
+          "the dense atmosphere immediately surrounding a star"
+        ],
+        "example": {
+          "text": "New stars form when dense clumps within the interstellar medium collapse under their own gravity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_molecular_cloud",
+    "lang": "en",
+    "word": "molecular cloud",
+    "pos": "noun",
+    "freqRank": 29487,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cold, dense interstellar cloud composed largely of molecular hydrogen, within which stars commonly form",
+        "distractors": [
+          "a thin, hot cloud of ionized gas surrounding an active galactic nucleus",
+          "a shell of ejected material surrounding a supernova remnant"
+        ],
+        "example": {
+          "text": "The Orion Nebula lies within a giant molecular cloud that is actively forming new stars.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ionization",
+    "lang": "en",
+    "word": "ionization",
+    "pos": "noun",
+    "freqRank": 29653,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which an atom or molecule gains or loses electrons, becoming electrically charged",
+        "distractors": [
+          "the process by which a nucleus captures a free neutron",
+          "the gradual cooling of a plasma as it expands into surrounding space"
+        ],
+        "example": {
+          "text": "Intense ultraviolet radiation from young stars drives the ionization of nearby hydrogen gas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recombination",
+    "lang": "en",
+    "word": "recombination",
+    "pos": "noun",
+    "freqRank": 29820,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process in which free electrons combine with ions to form neutral atoms, releasing photons in the process",
+        "distractors": [
+          "the merging of two smaller galaxies into a single larger galaxy",
+          "the process by which two orbiting stars gradually spiral together"
+        ],
+        "example": {
+          "text": "During the era of recombination, the early universe cooled enough for electrons and protons to form neutral hydrogen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_magnetohydrodynamics",
+    "lang": "en",
+    "word": "magnetohydrodynamics",
+    "pos": "noun",
+    "freqRank": 29986,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of how electrically conducting fluids, such as plasmas, interact with magnetic fields",
+        "distractors": [
+          "the study of how gravity shapes the large-scale structure of the universe",
+          "the study of how radiation pressure drives stellar winds outward"
+        ],
+        "example": {
+          "text": "Magnetohydrodynamics is used to model how the solar wind interacts with Earth's magnetic field.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_alfven_wave",
+    "lang": "en",
+    "word": "Alfvén wave",
+    "pos": "noun",
+    "freqRank": 30153,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an oscillation in a magnetized plasma in which ions move back and forth while guided along magnetic field lines",
+        "distractors": [
+          "a sound wave that propagates through the neutral gas of a molecular cloud",
+          "a ripple in spacetime produced by the acceleration of massive orbiting bodies"
+        ],
+        "example": {
+          "text": "Alfvén waves traveling along the Sun's magnetic field lines may help heat the corona to millions of degrees.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_larmor_radius",
+    "lang": "en",
+    "word": "Larmor radius",
+    "pos": "noun",
+    "freqRank": 30319,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the radius of the circular path a charged particle follows as it gyrates around a magnetic field line",
+        "distractors": [
+          "the distance at which a star's gravity is exactly balanced by its own radiation pressure",
+          "the maximum radius a neutron star can have before collapsing further"
+        ],
+        "example": {
+          "text": "A charged particle's Larmor radius shrinks as the surrounding magnetic field grows stronger.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synchrotron_radiation",
+    "lang": "en",
+    "word": "synchrotron radiation",
+    "pos": "noun",
+    "freqRank": 30485,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "electromagnetic radiation emitted by charged particles, especially electrons, spiraling at nearly the speed of light around magnetic field lines",
+        "distractors": [
+          "radiation emitted by an object purely because of its own thermal heat",
+          "radiation released when a free electron is briefly captured by a passing ion"
+        ],
+        "example": {
+          "text": "The relativistic jet's glow across radio wavelengths is produced mainly by synchrotron radiation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bremsstrahlung",
+    "lang": "en",
+    "word": "bremsstrahlung",
+    "pos": "noun",
+    "freqRank": 30652,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "electromagnetic radiation emitted when a charged particle is decelerated or deflected by the electric field of another charged particle",
+        "distractors": [
+          "radiation emitted by electrons spiraling around ordered magnetic field lines",
+          "radiation released during the recombination of an electron with an ion"
+        ],
+        "example": {
+          "text": "Hot, ionized gas in a galaxy cluster emits X-rays largely through bremsstrahlung as electrons scatter off ions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compton_scattering",
+    "lang": "en",
+    "word": "Compton scattering",
+    "pos": "noun",
+    "freqRank": 30818,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process by which a photon transfers some of its energy to a charged particle, typically an electron, and shifts to a longer wavelength",
+        "distractors": [
+          "the process by which a photon is absorbed and later re-emitted at exactly the same wavelength",
+          "the bending of light's path as it passes near a massive object"
+        ],
+        "example": {
+          "text": "Compton scattering off free electrons can shift X-ray photons to noticeably lower energies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thomson_scattering",
+    "lang": "en",
+    "word": "Thomson scattering",
+    "pos": "noun",
+    "freqRank": 30985,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the elastic scattering of low-energy electromagnetic radiation by a free charged particle, with no change in photon energy",
+        "distractors": [
+          "the scattering of light by dust grains that preferentially removes bluer wavelengths",
+          "the bending of starlight as it passes near the limb of the Sun"
+        ],
+        "example": {
+          "text": "Thomson scattering off free electrons in the early universe left a faint imprint of polarization on the cosmic microwave background.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cyclotron_radiation",
+    "lang": "en",
+    "word": "cyclotron radiation",
+    "pos": "noun",
+    "freqRank": 31151,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "electromagnetic radiation emitted by a charged particle moving in a circular path around magnetic field lines at non-relativistic speeds",
+        "distractors": [
+          "radiation released when two neutron stars finally merge",
+          "radiation emitted uniformly by any sufficiently hot, opaque body"
+        ],
+        "example": {
+          "text": "Strongly magnetized white dwarfs can emit cyclotron radiation as electrons spiral around their field lines.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_faraday_rotation",
+    "lang": "en",
+    "word": "Faraday rotation",
+    "pos": "noun",
+    "freqRank": 31318,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rotation of the plane of polarization of radio waves as they pass through a magnetized plasma",
+        "distractors": [
+          "the gradual precession of a pulsar's spin axis over many years",
+          "the bending of light around a massive foreground galaxy"
+        ],
+        "example": {
+          "text": "By measuring Faraday rotation across radio wavelengths, astronomers can map magnetic fields within distant galaxies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dispersion_measure",
+    "lang": "en",
+    "word": "dispersion measure",
+    "pos": "noun",
+    "freqRank": 31484,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantity describing how much a pulsar's radio pulse is delayed and spread out at lower frequencies due to free electrons along the path",
+        "distractors": [
+          "the total mass of gas dispersed into space by a single supernova explosion",
+          "the angular spread of stars observed across a globular cluster"
+        ],
+        "example": {
+          "text": "A pulsar's dispersion measure lets astronomers estimate the amount of ionized gas lying along the line of sight.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_magnetosphere",
+    "lang": "en",
+    "word": "magnetosphere",
+    "pos": "noun",
+    "freqRank": 31651,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the region around a magnetized body, such as a planet or star, where its magnetic field dominates over the surrounding plasma environment",
+        "distractors": [
+          "the outermost, tenuous layer of a star's atmosphere visible during eclipses",
+          "the disk of gas and dust that surrounds a newly forming star"
+        ],
+        "example": {
+          "text": "Earth's magnetosphere deflects most charged particles streaming outward in the solar wind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_light_cylinder",
+    "lang": "en",
+    "word": "light cylinder",
+    "pos": "noun",
+    "freqRank": 31817,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the imaginary boundary around a rotating pulsar at which corotating field lines would need to move at the speed of light",
+        "distractors": [
+          "the outer edge of a supernova remnant's expanding shell",
+          "the innermost stable orbit permitted around a black hole"
+        ],
+        "example": {
+          "text": "Beyond the light cylinder, a pulsar's magnetic field lines can no longer corotate rigidly with the star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ergosphere",
+    "lang": "en",
+    "word": "ergosphere",
+    "pos": "noun",
+    "freqRank": 31983,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the region outside a rotating black hole's event horizon where spacetime itself is dragged around the hole, forcing all matter to co-rotate",
+        "distractors": [
+          "the innermost stable region within which a black hole's tidal forces vanish entirely",
+          "the outer shell of an accretion disk where temperatures are lowest"
+        ],
+        "example": {
+          "text": "Within the ergosphere, no object can remain stationary because spacetime itself is being dragged around the rotating black hole.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_event_horizon",
+    "lang": "en",
+    "word": "event horizon",
+    "pos": "noun",
+    "freqRank": 32150,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the boundary around a black hole beyond which nothing, not even light, can escape its gravitational pull",
+        "distractors": [
+          "the point in a black hole's interior where all known physical laws break down entirely",
+          "the outer edge of an accretion disk where infalling matter first becomes visible"
+        ],
+        "example": {
+          "text": "Once light crosses the event horizon, it can no longer travel outward to reach a distant observer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_singularity",
+    "lang": "en",
+    "word": "singularity",
+    "pos": "noun",
+    "freqRank": 32316,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a point of infinite density and curvature, predicted by general relativity to exist at the center of a black hole",
+        "distractors": [
+          "the boundary beyond which a black hole's gravity becomes too weak to trap light",
+          "the outermost radius at which a photon can orbit a black hole indefinitely"
+        ],
+        "example": {
+          "text": "General relativity predicts a singularity at the very center of a black hole, where known physics ceases to apply.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_schwarzschild_radius",
+    "lang": "en",
+    "word": "Schwarzschild radius",
+    "pos": "noun",
+    "freqRank": 32483,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the radius defining the event horizon of a non-rotating black hole of a given mass",
+        "distractors": [
+          "the radius of a black hole's accretion disk at its brightest point",
+          "the maximum radius a neutron star can reach before collapsing into a black hole"
+        ],
+        "example": {
+          "text": "If Earth were compressed to within its Schwarzschild radius, it would become a black hole only centimeters across.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_photon_sphere",
+    "lang": "en",
+    "word": "photon sphere",
+    "pos": "noun",
+    "freqRank": 32649,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the spherical region around a sufficiently compact massive object, such as a black hole, where gravity is strong enough to force light into a closed orbit",
+        "distractors": [
+          "the visible surface of a neutron star from which most of its light escapes",
+          "the outer boundary of a star's convective zone"
+        ],
+        "example": {
+          "text": "Light captured in the photon sphere can circle a black hole several times before escaping or falling in.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_relativistic_jet",
+    "lang": "en",
+    "word": "relativistic jet",
+    "pos": "noun",
+    "freqRank": 32816,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a narrow, high-speed stream of ionized matter ejected from near a compact object, such as a black hole, at speeds close to that of light",
+        "distractors": [
+          "a slow, diffuse outflow of neutral gas from a red giant's outer atmosphere",
+          "a rotating ring of debris left behind after a planetary collision"
+        ],
+        "example": {
+          "text": "The relativistic jet blasting from the quasar's core stretched for thousands of light-years across the sky.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_superluminal_motion",
+    "lang": "en",
+    "word": "superluminal motion",
+    "pos": "noun",
+    "freqRank": 32982,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an apparent motion faster than the speed of light, seen when a jet moves nearly toward the observer at relativistic speed, an illusion caused by light travel-time effects",
+        "distractors": [
+          "genuine faster-than-light travel achieved by particles within a relativistic jet",
+          "the apparent slowing of time observed near the event horizon of a black hole"
+        ],
+        "example": {
+          "text": "Astronomers observed superluminal motion in the quasar's jet, though no material was truly exceeding the speed of light.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gravitational_lensing",
+    "lang": "en",
+    "word": "gravitational lensing",
+    "pos": "noun",
+    "freqRank": 33148,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the bending of light from a distant object as it passes near a massive foreground body, distorting or magnifying the background image",
+        "distractors": [
+          "the scattering of starlight by dust grains within the interstellar medium",
+          "the gradual dimming of light from an object as it recedes due to cosmic expansion"
+        ],
+        "example": {
+          "text": "Gravitational lensing by a massive galaxy cluster produced multiple distorted images of the same background galaxy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microlensing",
+    "lang": "en",
+    "word": "microlensing",
+    "pos": "noun",
+    "freqRank": 33315,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a temporary brightening of a background star's light caused by a smaller, unresolved foreground object passing precisely in front of it",
+        "distractors": [
+          "the permanent magnification of a distant galaxy by a massive foreground cluster",
+          "the periodic dimming of a star caused by an orbiting exoplanet"
+        ],
+        "example": {
+          "text": "Astronomers have discovered several free-floating planets through the brief brightening events of microlensing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_einstein_ring",
+    "lang": "en",
+    "word": "Einstein ring",
+    "pos": "noun",
+    "freqRank": 33481,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a ring-shaped image formed when light from a distant source is gravitationally lensed by a foreground mass that is nearly perfectly aligned along the line of sight",
+        "distractors": [
+          "the bright ring of hot gas immediately surrounding a black hole's event horizon",
+          "the circular halo of dust left behind after a planetary nebula disperses"
+        ],
+        "example": {
+          "text": "When the background quasar, lensing galaxy, and Earth aligned almost exactly, astronomers observed a striking Einstein ring.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmic_microwave_background",
+    "lang": "en",
+    "word": "cosmic microwave background",
+    "pos": "noun",
+    "freqRank": 33648,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the faint, nearly uniform glow of radiation left over from the early hot, dense universe, now redshifted into microwave wavelengths",
+        "distractors": [
+          "the diffuse visible-light glow produced by unresolved distant galaxies",
+          "the radiation released by the very first generation of stars to ignite"
+        ],
+        "example": {
+          "text": "Tiny temperature variations in the cosmic microwave background trace the seeds of later galaxy formation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reionization",
+    "lang": "en",
+    "word": "reionization",
+    "pos": "noun",
+    "freqRank": 33814,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the epoch during which ultraviolet radiation from the first stars and galaxies re-ionized the mostly neutral hydrogen filling the early universe",
+        "distractors": [
+          "the process by which free electrons first combined with protons to form neutral hydrogen",
+          "the gradual cooling of intergalactic gas as the universe continues to expand"
+        ],
+        "example": {
+          "text": "Observations of distant quasars help astronomers pin down when reionization swept through the early universe.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmic_inflation",
+    "lang": "en",
+    "word": "cosmic inflation",
+    "pos": "noun",
+    "freqRank": 33981,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hypothesized period of extremely rapid exponential expansion in the very early universe, thought to have smoothed out its large-scale structure",
+        "distractors": [
+          "the ongoing, gradual acceleration of the universe's expansion driven by dark energy",
+          "the slow contraction of the universe that would eventually end in a big crunch"
+        ],
+        "example": {
+          "text": "Cosmic inflation is proposed to explain why the universe appears so remarkably uniform on the largest scales.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_horizon_problem",
+    "lang": "en",
+    "word": "horizon problem",
+    "pos": "noun",
+    "freqRank": 34147,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the puzzle of why widely separated regions of the observable universe have nearly identical temperatures despite apparently never having been in causal contact",
+        "distractors": [
+          "the puzzle of why the universe's overall geometry appears so close to flat",
+          "the puzzle of why no magnetic monopoles have ever been detected"
+        ],
+        "example": {
+          "text": "Cosmic inflation was originally proposed partly to resolve the horizon problem in early-universe cosmology.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flatness_problem",
+    "lang": "en",
+    "word": "flatness problem",
+    "pos": "noun",
+    "freqRank": 34314,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the puzzle of why the early universe's density was tuned so precisely close to the critical value needed for a flat geometry",
+        "distractors": [
+          "the puzzle of why distant galaxies all appear to recede at speeds proportional to their distance",
+          "the puzzle of why the cosmic microwave background looks so remarkably uniform across the sky"
+        ],
+        "example": {
+          "text": "The flatness problem asks why the universe did not quickly curve strongly toward being open or closed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_baryogenesis",
+    "lang": "en",
+    "word": "baryogenesis",
+    "pos": "noun",
+    "freqRank": 34480,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the hypothesized process in the early universe that produced a slight excess of matter over antimatter",
+        "distractors": [
+          "the process by which the first hydrogen and helium nuclei formed minutes after the Big Bang",
+          "the gradual assembly of galaxies from smaller clumps of dark matter"
+        ],
+        "example": {
+          "text": "Without some form of baryogenesis, matter and antimatter would have annihilated completely, leaving no stars or galaxies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deuterium",
+    "lang": "en",
+    "word": "deuterium",
+    "pos": "noun",
+    "freqRank": 34646,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an isotope of hydrogen containing one proton and one neutron, produced in small amounts during the early universe's first few minutes",
+        "distractors": [
+          "an isotope of helium formed only inside the cores of massive stars",
+          "a heavy, unstable isotope of hydrogen used mainly to date the ages of meteorites"
+        ],
+        "example": {
+          "text": "The primordial abundance of deuterium provides an important test of Big Bang nucleosynthesis models.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmological_principle",
+    "lang": "en",
+    "word": "cosmological principle",
+    "pos": "noun",
+    "freqRank": 34813,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the assumption that, on sufficiently large scales, the universe looks roughly the same in every direction and from every location",
+        "distractors": [
+          "the principle that all galaxies must eventually collapse back under their own gravity",
+          "the principle that the speed of light sets an absolute upper limit on all physical motion"
+        ],
+        "example": {
+          "text": "The cosmological principle underlies most models of the universe's large-scale structure and expansion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hubble_flow",
+    "lang": "en",
+    "word": "Hubble flow",
+    "pos": "noun",
+    "freqRank": 34979,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the smooth, overall recession of distant galaxies from one another driven by the expansion of space itself",
+        "distractors": [
+          "the local, gravity-driven motion of a galaxy relative to its neighbors within a cluster",
+          "the outward flow of charged particles streaming from an active galactic nucleus"
+        ],
+        "example": {
+          "text": "Beyond the scale of galaxy clusters, most galaxies' recession velocities are dominated by the Hubble flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_peculiar_velocity",
+    "lang": "en",
+    "word": "peculiar velocity",
+    "pos": "noun",
+    "freqRank": 35146,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the motion of a galaxy relative to the smooth overall expansion of the universe, caused by local gravitational pulls",
+        "distractors": [
+          "the total observed recession velocity of a galaxy, including cosmic expansion",
+          "the rotational velocity of stars orbiting within a spiral galaxy's disk"
+        ],
+        "example": {
+          "text": "The Milky Way's peculiar velocity carries it toward the Great Attractor, on top of the general cosmic expansion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_comoving_distance",
+    "lang": "en",
+    "word": "comoving distance",
+    "pos": "noun",
+    "freqRank": 35312,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a distance measure that factors out the universe's overall expansion, remaining constant for objects moving only with the Hubble flow",
+        "distractors": [
+          "the straight-line distance light has actually traveled between emission and observation",
+          "the distance inferred purely from an object's observed brightness"
+        ],
+        "example": {
+          "text": "Because it removes the effect of expansion, comoving distance stays fixed for galaxies receding only with the Hubble flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scale_factor",
+    "lang": "en",
+    "word": "scale factor",
+    "pos": "noun",
+    "freqRank": 35479,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantity describing how the relative size of the universe changes with cosmic time, used to track its expansion",
+        "distractors": [
+          "the ratio of a galaxy's mass to its luminosity",
+          "the rate at which a star's radius shrinks as it evolves into a white dwarf"
+        ],
+        "example": {
+          "text": "As the universe expands, the scale factor grows, stretching the wavelengths of light traveling through space.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_critical_density",
+    "lang": "en",
+    "word": "critical density",
+    "pos": "noun",
+    "freqRank": 35645,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the average density of matter and energy required for the universe to have a perfectly flat geometry",
+        "distractors": [
+          "the minimum density a cloud must reach before it can collapse to form a star",
+          "the density at which a white dwarf becomes unstable against further collapse"
+        ],
+        "example": {
+          "text": "Current measurements suggest the universe's density is remarkably close to the critical density needed for flatness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quintessence",
+    "lang": "en",
+    "word": "quintessence",
+    "pos": "noun",
+    "freqRank": 35812,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hypothesized dynamic form of dark energy with a density that can vary over time, proposed as an alternative to a fixed cosmological constant",
+        "distractors": [
+          "the primordial plasma of quarks and gluons that filled the universe microseconds after the Big Bang",
+          "the residual heat left over within a neutron star long after its formation"
+        ],
+        "example": {
+          "text": "Some cosmologists have proposed quintessence as an evolving alternative to a static cosmological constant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmological_constant",
+    "lang": "en",
+    "word": "cosmological constant",
+    "pos": "noun",
+    "freqRank": 35978,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a constant energy density inherent to space itself, introduced into general relativity to account for the accelerating expansion of the universe",
+        "distractors": [
+          "the fixed rate at which distant galaxies recede per unit distance",
+          "the total mass-energy density required for a perfectly flat universe"
+        ],
+        "example": {
+          "text": "Einstein originally introduced the cosmological constant to keep his model of the universe static, later calling it a mistake.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_false_vacuum",
+    "lang": "en",
+    "word": "false vacuum",
+    "pos": "noun",
+    "freqRank": 36144,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metastable, higher-energy state of empty space that could eventually decay into a lower-energy, more stable vacuum state",
+        "distractors": [
+          "the region of space immediately surrounding a black hole's event horizon",
+          "the emptiest possible state of intergalactic space, containing no particles or fields at all"
+        ],
+        "example": {
+          "text": "Some inflationary models propose the early universe was briefly trapped in a false vacuum before decaying into ordinary space.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_symmetry_breaking",
+    "lang": "en",
+    "word": "symmetry breaking",
+    "pos": "noun",
+    "freqRank": 36311,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a process in which a system that originally had a certain symmetry settles into a state that lacks that symmetry, often releasing energy",
+        "distractors": [
+          "the process by which two colliding galaxies merge into a single symmetric elliptical galaxy",
+          "the gradual alignment of a pulsar's magnetic axis with its rotation axis"
+        ],
+        "example": {
+          "text": "Symmetry breaking in the extremely early universe is thought to have separated the fundamental forces from a single unified force.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmic_string",
+    "lang": "en",
+    "word": "cosmic string",
+    "pos": "noun",
+    "freqRank": 36477,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hypothesized extremely thin, immensely dense one-dimensional defect in spacetime, thought to have possibly formed during early-universe phase transitions",
+        "distractors": [
+          "a long, thin filament of galaxies stretching across a cosmic void",
+          "a narrow jet of plasma ejected from an active galactic nucleus"
+        ],
+        "example": {
+          "text": "If a cosmic string exists, its immense mass per unit length could gravitationally lens background galaxies into distinctive patterns.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_supercluster",
+    "lang": "en",
+    "word": "supercluster",
+    "pos": "noun",
+    "freqRank": 36644,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an enormous structure made up of many galaxy clusters and groups bound loosely together by gravity",
+        "distractors": [
+          "a single extremely massive elliptical galaxy formed by repeated mergers",
+          "a dense, spherical collection of old stars orbiting within a galaxy's halo"
+        ],
+        "example": {
+          "text": "The Milky Way belongs to the Laniakea supercluster, a vast collection of galaxy groups and clusters.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_virial_theorem",
+    "lang": "en",
+    "word": "virial theorem",
+    "pos": "noun",
+    "freqRank": 36810,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a relation stating that, for a gravitationally bound system in equilibrium, twice the average kinetic energy equals the negative of the average potential energy",
+        "distractors": [
+          "a law stating that a star's luminosity is proportional to the fourth power of its surface temperature",
+          "a rule describing how orbital period relates to a planet's average distance from its star"
+        ],
+        "example": {
+          "text": "Astronomers apply the virial theorem to estimate the total mass of a galaxy cluster from the motions of its member galaxies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dynamical_friction",
+    "lang": "en",
+    "word": "dynamical friction",
+    "pos": "noun",
+    "freqRank": 36977,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual loss of orbital energy experienced by a massive object moving through a sea of lighter surrounding bodies, caused by its own gravitational wake",
+        "distractors": [
+          "the resistance experienced by a spacecraft passing through a planet's upper atmosphere",
+          "the heating produced when two neutron stars' surfaces make direct contact during a merger"
+        ],
+        "example": {
+          "text": "Dynamical friction slowly drags massive star clusters toward the center of their host galaxy over billions of years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tidal_disruption",
+    "lang": "en",
+    "word": "tidal disruption",
+    "pos": "noun",
+    "freqRank": 37143,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the destruction of a star or smaller body when gravitational tidal forces from a much more massive object stretch and tear it apart",
+        "distractors": [
+          "the gradual erosion of a planet's atmosphere by its host star's radiation",
+          "the smooth transfer of gas from one binary star onto its companion"
+        ],
+        "example": {
+          "text": "Astronomers detected a bright flare produced by the tidal disruption of a star that wandered too close to a supermassive black hole.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_accrete",
+    "lang": "en",
+    "word": "accrete",
+    "pos": "verb",
+    "freqRank": 37310,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to gradually accumulate additional mass by drawing in surrounding gas, dust, or other material through gravitational attraction",
+        "distractors": [
+          "to gradually lose mass through a steady outward stellar wind",
+          "to slowly precess around a fixed rotational axis over long timescales"
+        ],
+        "example": {
+          "text": "The young protostar continued to accrete gas from its surrounding disk for several million years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extragalactic",
+    "lang": "en",
+    "word": "extragalactic",
+    "pos": "adjective",
+    "freqRank": 37476,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "originating or located outside the boundaries of the Milky Way galaxy",
+        "distractors": [
+          "originating from within the immediate vicinity of the Sun",
+          "relating to material confined entirely within a single star's atmosphere"
+        ],
+        "example": {
+          "text": "Quasars were among the first extragalactic objects recognized to lie far beyond the Milky Way.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_active_galactic_nucleus",
+    "lang": "en",
+    "word": "active galactic nucleus",
+    "pos": "noun",
+    "freqRank": 37642,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unusually luminous, compact region at the center of a galaxy powered by matter accreting onto a supermassive black hole",
+        "distractors": [
+          "a dense cluster of old stars found at the center of most spiral galaxies",
+          "the diffuse halo of dark matter surrounding a typical galaxy"
+        ],
+        "example": {
+          "text": "The galaxy's active galactic nucleus outshone its entire population of billions of stars combined.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quasar",
+    "lang": "en",
+    "word": "quasar",
+    "pos": "noun",
+    "freqRank": 37809,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extremely luminous active galactic nucleus, typically seen at great distances, powered by a supermassive black hole devouring surrounding gas",
+        "distractors": [
+          "a compact remnant left behind after a low-mass star exhausts its nuclear fuel",
+          "a young, rapidly rotating neutron star emitting regular pulses of radiation"
+        ],
+        "example": {
+          "text": "The distant quasar outshone its entire host galaxy despite occupying only a tiny region at its center.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_blazar",
+    "lang": "en",
+    "word": "blazar",
+    "pos": "noun",
+    "freqRank": 37975,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a type of active galactic nucleus whose relativistic jet happens to point almost directly toward Earth, producing rapid, dramatic variability",
+        "distractors": [
+          "an active galactic nucleus whose jet is oriented perpendicular to our line of sight",
+          "a supernova remnant that continues to brighten unpredictably for decades"
+        ],
+        "example": {
+          "text": "Because its jet points nearly straight at Earth, the blazar's brightness can change noticeably within just hours.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seyfert_galaxy",
+    "lang": "en",
+    "word": "Seyfert galaxy",
+    "pos": "noun",
+    "freqRank": 38142,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a spiral galaxy with a compact, highly luminous active nucleus, generally fainter overall than a quasar",
+        "distractors": [
+          "an elliptical galaxy composed almost entirely of old, low-mass stars",
+          "a dwarf galaxy lacking any detectable central black hole"
+        ],
+        "example": {
+          "text": "The Seyfert galaxy's bright, compact core outshines the combined light of its surrounding spiral arms.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gravitational_wave",
+    "lang": "en",
+    "word": "gravitational wave",
+    "pos": "noun",
+    "freqRank": 38308,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a ripple in the curvature of spacetime that propagates outward at the speed of light, generated by accelerating massive objects",
+        "distractors": [
+          "a pulse of high-energy particles ejected during a supernova explosion",
+          "a fluctuation in a star's brightness caused by internal convective motion"
+        ],
+        "example": {
+          "text": "The merger of two black holes produced a gravitational wave that was detected on Earth over a billion years later.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inspiral",
+    "lang": "en",
+    "word": "inspiral",
+    "pos": "noun",
+    "freqRank": 38475,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual tightening and speeding up of the orbit between two massive compact objects as they lose energy to gravitational waves before merging",
+        "distractors": [
+          "the slow outward drift of a planet's orbit as its star loses mass",
+          "the steady contraction of a molecular cloud as it collapses to form a star"
+        ],
+        "example": {
+          "text": "Gravitational wave detectors captured the characteristic chirp produced during the neutron stars' final inspiral.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ringdown",
+    "lang": "en",
+    "word": "ringdown",
+    "pos": "noun",
+    "freqRank": 38641,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the brief phase after two compact objects merge, during which the resulting single object settles into a stable state by radiating decaying gravitational waves",
+        "distractors": [
+          "the initial phase in which two orbiting compact objects first begin losing energy",
+          "the slow cooling phase following a nova explosion on a white dwarf's surface"
+        ],
+        "example": {
+          "text": "The ringdown signal let scientists measure the mass and spin of the newly formed black hole.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strain",
+    "lang": "en",
+    "word": "strain",
+    "pos": "noun",
+    "freqRank": 38808,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dimensionless measure of the tiny stretching and squeezing of space caused by a passing gravitational wave",
+        "distractors": [
+          "the total energy radiated by a source of gravitational waves",
+          "the angular resolution achievable by a gravitational wave detector"
+        ],
+        "example": {
+          "text": "The passing gravitational wave produced a strain smaller than one part in a billion trillion at the detector.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standard_siren",
+    "lang": "en",
+    "word": "standard siren",
+    "pos": "noun",
+    "freqRank": 38974,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gravitational wave source, such as a merging pair of neutron stars, whose signal directly yields its distance without relying on other calibration",
+        "distractors": [
+          "a pulsar whose extremely regular radio pulses serve as a precise cosmic clock",
+          "a star whose known luminosity allows its distance to be inferred from its apparent brightness"
+        ],
+        "example": {
+          "text": "Merging neutron stars can act as a standard siren, letting astronomers measure cosmic distances independently of light.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standard_candle",
+    "lang": "en",
+    "word": "standard candle",
+    "pos": "noun",
+    "freqRank": 39140,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an astronomical object with a known, predictable luminosity that allows its distance to be calculated from its apparent brightness",
+        "distractors": [
+          "an object whose gravitational wave signal directly reveals its distance",
+          "a fixed reference angle used to measure a nearby star's parallax"
+        ],
+        "example": {
+          "text": "Type Ia supernovae serve as reliable standard candles because they explode with a remarkably consistent peak luminosity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standard_ruler",
+    "lang": "en",
+    "word": "standard ruler",
+    "pos": "noun",
+    "freqRank": 39307,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an astronomical feature of known physical size that lets astronomers infer distance by comparing its known size to its apparent angular size",
+        "distractors": [
+          "an object of known luminosity used to calculate distance from apparent brightness",
+          "a precisely timed pulsar signal used to measure interstellar distances"
+        ],
+        "example": {
+          "text": "The characteristic scale of baryon acoustic oscillations serves cosmologists as a standard ruler for measuring vast distances.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_angular_diameter_distance",
+    "lang": "en",
+    "word": "angular diameter distance",
+    "pos": "noun",
+    "freqRank": 39473,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cosmological distance measure defined by comparing an object's true physical size to its observed angular size on the sky",
+        "distractors": [
+          "the distance inferred purely from an object's observed brightness compared to its known luminosity",
+          "the straight-line distance light has traveled since it was first emitted"
+        ],
+        "example": {
+          "text": "Because of cosmic expansion, angular diameter distance can actually decrease for sufficiently distant objects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_luminosity_distance",
+    "lang": "en",
+    "word": "luminosity distance",
+    "pos": "noun",
+    "freqRank": 39640,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cosmological distance measure derived by comparing an object's true luminosity to its observed brightness",
+        "distractors": [
+          "a distance measure derived by comparing an object's true size to its observed angular size",
+          "the distance an object would have if space were not expanding at all"
+        ],
+        "example": {
+          "text": "Astronomers calculated the supernova's luminosity distance by comparing its known peak brightness to how faint it appeared.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spectral_energy_distribution",
+    "lang": "en",
+    "word": "spectral energy distribution",
+    "pos": "noun",
+    "freqRank": 39806,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a plot showing how an object's brightness varies across different wavelengths or frequencies of light",
+        "distractors": [
+          "a plot showing how a star's temperature changes as it evolves over its lifetime",
+          "a map showing how mass is distributed within a galaxy's visible disk"
+        ],
+        "example": {
+          "text": "The galaxy's spectral energy distribution revealed a strong infrared excess, hinting at a hidden population of dust-shrouded stars.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_photometry",
+    "lang": "en",
+    "word": "photometry",
+    "pos": "noun",
+    "freqRank": 39973,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the technique of precisely measuring the brightness of astronomical objects across chosen wavelength bands",
+        "distractors": [
+          "the technique of measuring the precise position of stars on the sky over time",
+          "the technique of dispersing an object's light into its component wavelengths"
+        ],
+        "example": {
+          "text": "Repeated photometry of the star revealed a small, periodic dimming consistent with an orbiting exoplanet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_astrometry",
+    "lang": "en",
+    "word": "astrometry",
+    "pos": "noun",
+    "freqRank": 40139,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the precise measurement of the positions and motions of celestial objects on the sky",
+        "distractors": [
+          "the precise measurement of an object's brightness across different wavelengths",
+          "the measurement of a star's surface temperature from its spectrum"
+        ],
+        "example": {
+          "text": "The astrometry mission mapped the precise positions and motions of over a billion stars across the galaxy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_occultation",
+    "lang": "en",
+    "word": "occultation",
+    "pos": "noun",
+    "freqRank": 40306,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an event in which one celestial body passes in front of and completely hides another as seen from a given vantage point",
+        "distractors": [
+          "an event in which a smaller body partially dims a larger one without fully hiding it",
+          "the gradual fading of a star's light as interstellar dust builds up along the line of sight"
+        ],
+        "example": {
+          "text": "During the occultation, the distant star's light abruptly vanished as the asteroid passed directly in front of it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transit",
+    "lang": "en",
+    "word": "transit",
+    "pos": "noun",
+    "freqRank": 40472,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an event in which a smaller body passes across the face of a larger one, causing a slight, measurable dip in the larger body's observed brightness",
+        "distractors": [
+          "an event in which one body fully blocks all light from another as seen from Earth",
+          "the steady outward drift of a body's orbit over many years"
+        ],
+        "example": {
+          "text": "Astronomers detect many exoplanets by watching for the periodic dimming caused by a planetary transit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_habitable_zone",
+    "lang": "en",
+    "word": "habitable zone",
+    "pos": "noun",
+    "freqRank": 40638,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the range of orbital distances around a star within which a planet could plausibly maintain liquid water on its surface",
+        "distractors": [
+          "the region immediately surrounding a black hole where matter can safely orbit without being torn apart",
+          "the innermost region of a protoplanetary disk where rocky planets typically form"
+        ],
+        "example": {
+          "text": "Earth orbits comfortably within the Sun's habitable zone, allowing liquid water to persist on its surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tidal_locking",
+    "lang": "en",
+    "word": "tidal locking",
+    "pos": "noun",
+    "freqRank": 40805,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state in which an orbiting body's rotation period matches its orbital period, so it always presents the same face to the object it orbits",
+        "distractors": [
+          "a state in which two orbiting bodies gradually spiral into each other and eventually merge",
+          "a state in which a planet's axis becomes perfectly aligned with its orbital plane"
+        ],
+        "example": {
+          "text": "Tidal locking explains why the same side of the Moon always faces Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lagrange_point",
+    "lang": "en",
+    "word": "Lagrange point",
+    "pos": "noun",
+    "freqRank": 40971,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a location in a two-body orbital system where the combined gravitational and centrifugal forces allow a small object to remain in a stable relative position",
+        "distractors": [
+          "the point in an elliptical orbit where an object moves at its maximum speed",
+          "the boundary within which a moon's orbit becomes tidally unstable"
+        ],
+        "example": {
+          "text": "The space telescope was placed at a Lagrange point where it can maintain a stable position relative to the Sun and Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_roche_limit",
+    "lang": "en",
+    "word": "Roche limit",
+    "pos": "noun",
+    "freqRank": 41138,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the minimum distance at which a smaller body can orbit a larger one before the larger body's tidal forces overcome the smaller body's own gravity and pull it apart",
+        "distractors": [
+          "the maximum distance at which a planet's gravity can still hold onto an orbiting moon",
+          "the distance beyond which a star's stellar wind no longer affects its planets"
+        ],
+        "example": {
+          "text": "Many planetary rings lie within the Roche limit, where any orbiting debris would be torn apart before it could form a moon.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sidereal",
+    "lang": "en",
+    "word": "sidereal",
+    "pos": "adjective",
+    "freqRank": 41304,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "measured relative to the fixed background stars rather than to the Sun's apparent position",
+        "distractors": [
+          "measured relative to the Sun's position in the sky",
+          "measured relative to the phases of the Moon"
+        ],
+        "example": {
+          "text": "A sidereal day, measured against the distant stars, is about four minutes shorter than an ordinary solar day.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synodic",
+    "lang": "en",
+    "word": "synodic",
+    "pos": "adjective",
+    "freqRank": 41471,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the time between successive similar configurations of a celestial body relative to the Sun, such as one full cycle of lunar phases",
+        "distractors": [
+          "relating to time measured strictly against the fixed background stars",
+          "relating to the tilt of a planet's rotational axis"
+        ],
+        "example": {
+          "text": "The Moon's synodic period, the time between full moons, is about 29.5 days, slightly longer than its sidereal orbit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ephemeris",
+    "lang": "en",
+    "word": "ephemeris",
+    "pos": "noun",
+    "freqRank": 41637,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a table or dataset giving the predicted positions of celestial objects at specific times",
+        "distractors": [
+          "a catalog listing the measured brightness of stars across the entire sky",
+          "a record of a star's changing spectral classification over its lifetime"
+        ],
+        "example": {
+          "text": "Astronomers consulted the ephemeris to determine exactly when the asteroid would pass closest to Earth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_baryon_acoustic_oscillation",
+    "lang": "en",
+    "word": "baryon acoustic oscillation",
+    "pos": "noun",
+    "freqRank": 41804,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a regular pattern in the distribution of galaxies imprinted by sound waves that propagated through the hot plasma of the early universe",
+        "distractors": [
+          "a periodic pulsation observed in the brightness of certain variable stars",
+          "a regular fluctuation in a pulsar's spin rate caused by internal glitches"
+        ],
+        "example": {
+          "text": "Measuring the characteristic scale of baryon acoustic oscillation in galaxy surveys helps constrain the universe's expansion history.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_degeneracy_pressure",
+    "lang": "en",
+    "word": "degeneracy pressure",
+    "pos": "noun",
+    "freqRank": 41970,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an outward pressure arising from quantum mechanical exclusion effects among tightly packed particles, independent of temperature",
+        "distractors": [
+          "the outward pressure produced by photons diffusing out from a star's hot core",
+          "the pressure exerted by a star's stellar wind on surrounding interstellar gas"
+        ],
+        "example": {
+          "text": "Degeneracy pressure, rather than heat, is what ultimately supports a white dwarf against further gravitational collapse.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_electron_degeneracy",
+    "lang": "en",
+    "word": "electron degeneracy",
+    "pos": "noun",
+    "freqRank": 42136,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantum state in which tightly packed electrons resist further compression due to the exclusion principle, providing pressure independent of temperature",
+        "distractors": [
+          "a state in which electrons are entirely absent from an atom's outer shell",
+          "a state in which free electrons recombine rapidly with surrounding ions"
+        ],
+        "example": {
+          "text": "Electron degeneracy provides the pressure that holds a white dwarf up against its own gravity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutron_degeneracy",
+    "lang": "en",
+    "word": "neutron degeneracy",
+    "pos": "noun",
+    "freqRank": 42303,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantum state in which tightly packed neutrons resist further compression due to the exclusion principle, supporting objects like neutron stars",
+        "distractors": [
+          "a process in which free neutrons decay spontaneously into protons and electrons",
+          "a state in which neutrons are gradually converted into pairs of quarks"
+        ],
+        "example": {
+          "text": "Neutron degeneracy is what ultimately halts the catastrophic collapse of a massive star's core, forming a neutron star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pair_instability_supernova",
+    "lang": "en",
+    "word": "pair-instability supernova",
+    "pos": "noun",
+    "freqRank": 42469,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extremely energetic explosion of a very massive star, triggered when gamma rays in its core convert to particle-antiparticle pairs, removing the pressure that had supported it",
+        "distractors": [
+          "a supernova triggered when a white dwarf exceeds the maximum mass supportable by electron degeneracy pressure",
+          "a gradual, gentle explosion produced by a low-mass star shedding its outer envelope"
+        ],
+        "example": {
+          "text": "A pair-instability supernova can completely disrupt an extremely massive star, leaving no compact remnant behind at all.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kilonova",
+    "lang": "en",
+    "word": "kilonova",
+    "pos": "noun",
+    "freqRank": 42636,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bright, short-lived explosion produced by the merger of two neutron stars or a neutron star and a black hole, synthesizing heavy elements",
+        "distractors": [
+          "a faint, prolonged flare produced by a white dwarf slowly accreting matter from a companion",
+          "a sudden brightening of a young star as it first ignites hydrogen fusion"
+        ],
+        "example": {
+          "text": "The kilonova that followed the neutron star merger produced a burst of light rich in freshly synthesized heavy elements like gold.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gamma_ray_burst",
+    "lang": "en",
+    "word": "gamma-ray burst",
+    "pos": "noun",
+    "freqRank": 42802,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extremely brief, intensely energetic flash of gamma rays, typically associated with the collapse of a massive star or the merger of compact objects",
+        "distractors": [
+          "a steady, long-lived stream of gamma rays emitted continuously by an active galactic nucleus",
+          "a slow, gradual brightening of a star as it enters its red giant phase"
+        ],
+        "example": {
+          "text": "The gamma-ray burst released, in a matter of seconds, more energy than the Sun will emit over its entire lifetime.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_afterglow",
+    "lang": "en",
+    "word": "afterglow",
+    "pos": "noun",
+    "freqRank": 42969,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fading emission across other wavelengths that follows the initial burst of a gamma-ray burst, produced as its blast wave sweeps up surrounding material",
+        "distractors": [
+          "the residual glow of a neutron star's surface immediately after its formation",
+          "the faint light released continuously from a cooling white dwarf"
+        ],
+        "example": {
+          "text": "Astronomers tracked the gamma-ray burst's afterglow in X-rays and visible light for weeks after the initial flash faded.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coalesce",
+    "lang": "en",
+    "word": "coalesce",
+    "pos": "verb",
+    "freqRank": 43135,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to merge together into a single body, as when two orbiting compact objects finally combine after spiraling inward",
+        "distractors": [
+          "to gradually shed an outer layer of gas while remaining otherwise intact",
+          "to slowly drift apart after a close gravitational encounter"
+        ],
+        "example": {
+          "text": "The two black holes continued to spiral closer for eons before finally coalescing into one.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_braking_index",
+    "lang": "en",
+    "word": "braking index",
+    "pos": "noun",
+    "freqRank": 43302,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantity describing how a pulsar's rotation rate slows over time, revealing the dominant mechanism responsible for its spin-down",
+        "distractors": [
+          "the rate at which a star's luminosity declines as it ages off the main sequence",
+          "the ratio between a black hole's mass and its spin angular momentum"
+        ],
+        "example": {
+          "text": "A braking index near three is consistent with a pulsar losing rotational energy mainly through magnetic dipole radiation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rotation_measure",
+    "lang": "en",
+    "word": "rotation measure",
+    "pos": "noun",
+    "freqRank": 43468,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantity describing the amount of Faraday rotation a radio signal undergoes, used to probe magnetic fields along its path",
+        "distractors": [
+          "a measurement of how quickly a pulsar's spin rate is slowing down",
+          "the angular rate at which a galaxy's spiral arms sweep around its center"
+        ],
+        "example": {
+          "text": "By comparing rotation measure values across the sky, astronomers reconstructed the large-scale magnetic field of the galaxy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scintillation",
+    "lang": "en",
+    "word": "scintillation",
+    "pos": "noun",
+    "freqRank": 43634,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rapid twinkling or fluctuation in the apparent brightness of a distant point source, caused by turbulence in an intervening medium",
+        "distractors": [
+          "the steady, gradual dimming of starlight as it passes through interstellar dust",
+          "the sudden brightening of a star as its outer layers are ejected"
+        ],
+        "example": {
+          "text": "Stars appear to twinkle due to atmospheric scintillation, while distant planets generally do not because they present a resolvable disk.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_protostar",
+    "lang": "en",
+    "word": "protostar",
+    "pos": "noun",
+    "freqRank": 43801,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a very young stellar object still contracting under gravity, not yet hot enough at its core to sustain steady hydrogen fusion",
+        "distractors": [
+          "a compact remnant left over after a massive star's supernova explosion",
+          "a fully mature star that has just settled onto the main sequence"
+        ],
+        "example": {
+          "text": "The protostar continued to contract and heat up over hundreds of thousands of years before nuclear fusion finally ignited.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_protoplanetary_disk",
+    "lang": "en",
+    "word": "protoplanetary disk",
+    "pos": "noun",
+    "freqRank": 43967,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rotating disk of gas and dust surrounding a young star, within which planets may eventually form",
+        "distractors": [
+          "a shell of gas ejected by a star as it enters its final red giant phase",
+          "a ring of debris left in orbit after two planets collide"
+        ],
+        "example": {
+          "text": "Astronomers detected faint gaps in the protoplanetary disk that likely mark where new planets are forming.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_planetesimal",
+    "lang": "en",
+    "word": "planetesimal",
+    "pos": "noun",
+    "freqRank": 44134,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small solid body, ranging from meters to hundreds of kilometers across, formed by the accumulation of dust and rock within a protoplanetary disk",
+        "distractors": [
+          "a fragment of rock ejected from a planet's surface by a large impact",
+          "a small icy body that has drifted permanently out of its parent star's system"
+        ],
+        "example": {
+          "text": "Repeated collisions between planetesimals within the young disk gradually built up the cores of the giant planets.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrostatic_equilibrium",
+    "lang": "en",
+    "word": "hydrostatic equilibrium",
+    "pos": "noun",
+    "freqRank": 44300,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a balanced state in which the inward pull of gravity is exactly matched by outward pressure, holding a star or planet's structure stable",
+        "distractors": [
+          "a state in which a star's core temperature exactly equals its surface temperature",
+          "a state in which a binary system's two stars orbit with exactly equal periods"
+        ],
+        "example": {
+          "text": "A star spends most of its life in hydrostatic equilibrium, with gravity and internal pressure precisely balanced.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_jeans_instability",
+    "lang": "en",
+    "word": "Jeans instability",
+    "pos": "noun",
+    "freqRank": 44467,
+    "difficulty": "hard",
+    "tags": [
+      "astrophysics"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the condition under which a cloud of gas becomes unstable and collapses under its own gravity because its internal pressure can no longer support it",
+        "distractors": [
+          "the condition under which a fully formed star becomes unstable and begins to pulsate",
+          "the condition under which a planet's orbit gradually becomes more eccentric over time"
+        ],
+        "example": {
+          "text": "Once a molecular cloud fragment exceeds the threshold for Jeans instability, it begins to collapse and may eventually form a star.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

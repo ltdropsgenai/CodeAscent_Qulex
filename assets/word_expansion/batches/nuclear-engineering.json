@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_criticality",
+    "lang": "en",
+    "word": "criticality",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the state of a nuclear reactor in which the fission chain reaction is exactly self-sustaining",
+        "distractors": [
+          "the maximum temperature a reactor core can reach before the fuel melts",
+          "the process of shutting down a reactor by inserting all control rods"
+        ],
+        "example": {
+          "text": "The operators slowly withdrew the control rods until the reactor reached criticality.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subcriticality",
+    "lang": "en",
+    "word": "subcriticality",
+    "pos": "noun",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reactor condition in which the fission chain reaction is dying out because each generation produces fewer neutrons than the last",
+        "distractors": [
+          "a reactor condition in which power output doubles every second",
+          "the condition in which a reactor has no fuel loaded at all"
+        ],
+        "example": {
+          "text": "The assembly was kept in subcriticality by inserting extra control rods before fuel loading began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_supercriticality",
+    "lang": "en",
+    "word": "supercriticality",
+    "pos": "noun",
+    "freqRank": 23800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reactor condition in which the neutron population, and therefore power, grows with each successive generation",
+        "distractors": [
+          "a reactor condition in which the coolant has completely boiled away",
+          "the permanent shutdown state required before refueling"
+        ],
+        "example": {
+          "text": "A small positive reactivity insertion pushed the core briefly into supercriticality during the test.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_moderator",
+    "lang": "en",
+    "word": "moderator",
+    "pos": "noun",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material used in a reactor to slow fast neutrons down to thermal energies so they are more likely to cause fission",
+        "distractors": [
+          "a material used to absorb neutrons and stop the chain reaction entirely",
+          "a device that measures the temperature of the reactor coolant"
+        ],
+        "example": {
+          "text": "Graphite and light water are both common choices of moderator in thermal reactors.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_breeder",
+    "lang": "en",
+    "word": "breeder",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reactor designed to produce more fissile material than it consumes by converting fertile isotopes",
+        "distractors": [
+          "a reactor that only burns fuel without producing any new isotopes",
+          "a facility used to store spent fuel underground indefinitely"
+        ],
+        "example": {
+          "text": "The fast breeder generated more plutonium in its blanket than it consumed in its core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fissile",
+    "lang": "en",
+    "word": "fissile",
+    "pos": "adjective",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of sustaining a fission chain reaction when struck by neutrons of any energy, especially thermal ones",
+        "distractors": [
+          "capable of absorbing neutrons without splitting",
+          "resistant to any form of radioactive decay"
+        ],
+        "example": {
+          "text": "Uranium-235 is fissile, whereas uranium-238 generally is not.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fertile",
+    "lang": "en",
+    "word": "fertile",
+    "pos": "adjective",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of being converted into a fissile isotope through neutron capture, though not itself readily fissionable by thermal neutrons",
+        "distractors": [
+          "incapable of ever absorbing a neutron",
+          "already split into two lighter nuclei"
+        ],
+        "example": {
+          "text": "Thorium-232 is a fertile material that can be converted into fissile uranium-233.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fission",
+    "lang": "en",
+    "word": "fission",
+    "pos": "noun",
+    "freqRank": 20200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the splitting of a heavy atomic nucleus into two lighter fragments, releasing energy and additional neutrons",
+        "distractors": [
+          "the joining of two light nuclei into a single heavier nucleus",
+          "the spontaneous emission of an alpha particle from a heavy nucleus"
+        ],
+        "example": {
+          "text": "Each fission of a uranium-235 nucleus releases roughly two hundred million electron volts of energy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fusion",
+    "lang": "en",
+    "word": "fusion",
+    "pos": "noun",
+    "freqRank": 20300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the combining of two light atomic nuclei into a heavier nucleus, releasing energy in the process",
+        "distractors": [
+          "the splitting of a heavy nucleus into smaller fragments",
+          "the capture of a free neutron by an atomic nucleus"
+        ],
+        "example": {
+          "text": "Fusion of deuterium and tritium nuclei powers the sun and is the goal of tokamak research.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reactivity",
+    "lang": "en",
+    "word": "reactivity",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dimensionless measure of how far a reactor's neutron multiplication factor deviates from exactly one",
+        "distractors": [
+          "the rate at which fuel pellets swell under irradiation",
+          "the total thermal power produced by the reactor core"
+        ],
+        "example": {
+          "text": "Withdrawing the control rod added positive reactivity, and the power began to climb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scram",
+    "lang": "en",
+    "word": "scram",
+    "pos": "verb",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to rapidly shut down a nuclear reactor by fully inserting all control rods to stop the chain reaction",
+        "distractors": [
+          "to slowly ramp reactor power up to its rated level",
+          "to vent radioactive steam from the containment building"
+        ],
+        "example": {
+          "text": "The automatic protection system scrammed the reactor the instant the pressure sensor tripped.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cladding",
+    "lang": "en",
+    "word": "cladding",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the thin metal tube that encases nuclear fuel pellets to contain fission products and protect the fuel from coolant",
+        "distractors": [
+          "the thick concrete shell that surrounds the entire reactor building",
+          "the boron-laced coating applied to control rods to increase neutron absorption"
+        ],
+        "example": {
+          "text": "Zirconium alloy cladding must retain its integrity even after years of neutron bombardment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coolant",
+    "lang": "en",
+    "word": "coolant",
+    "pos": "noun",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fluid circulated through a reactor core to remove heat generated by fission",
+        "distractors": [
+          "a solid material placed in the core to slow neutrons down",
+          "a chemical added to fuel pellets to reduce their melting point"
+        ],
+        "example": {
+          "text": "Pressurized water serves as both coolant and moderator in a PWR.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enrichment",
+    "lang": "en",
+    "word": "enrichment",
+    "pos": "noun",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of increasing the proportion of a desired fissile isotope, such as uranium-235, relative to the rest of a sample",
+        "distractors": [
+          "the process of removing all radioactive material from spent fuel",
+          "the process of coating fuel pellets in a protective ceramic layer"
+        ],
+        "example": {
+          "text": "Commercial reactor fuel typically requires enrichment to three to five percent uranium-235.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_burnup",
+    "lang": "en",
+    "word": "burnup",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of the energy extracted from nuclear fuel per unit mass, indicating how much fuel has been consumed",
+        "distractors": [
+          "the rate at which coolant temperature rises during a loss-of-flow event",
+          "the fraction of neutrons that escape the reactor core without being absorbed"
+        ],
+        "example": {
+          "text": "High burnup fuel has generated more energy but also accumulated more fission product poisons.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutron_flux",
+    "lang": "en",
+    "word": "neutron flux",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the number of neutrons passing through a unit area per unit time at a given point in a reactor",
+        "distractors": [
+          "the total mass of fissile material loaded into the reactor core",
+          "the pressure exerted by coolant flowing past the fuel assemblies"
+        ],
+        "example": {
+          "text": "Detectors near the core wall measure the local neutron flux to monitor power distribution.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross_section",
+    "lang": "en",
+    "word": "cross section",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of the probability that a given nuclear reaction, such as absorption or scattering, will occur when a particle strikes a nucleus",
+        "distractors": [
+          "the physical diameter of an atomic nucleus measured in femtometers",
+          "the ratio of thermal to fast neutrons present in the core"
+        ],
+        "example": {
+          "text": "The absorption cross section of boron-10 is very large for thermal neutrons, making it an effective poison.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_barn",
+    "lang": "en",
+    "word": "barn",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a unit of area, equal to 10^-28 square meters, used to express nuclear reaction cross sections",
+        "distractors": [
+          "a unit of radioactive decay rate equal to one disintegration per second",
+          "a unit used to express the thickness of reactor shielding"
+        ],
+        "example": {
+          "text": "The fission cross section of uranium-235 for thermal neutrons is on the order of hundreds of barns.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_albedo",
+    "lang": "en",
+    "word": "albedo",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fraction of neutrons striking a boundary, such as a reflector surface, that are scattered back into the core",
+        "distractors": [
+          "the fraction of gamma rays that pass completely through a shield unattenuated",
+          "the ratio of coolant flow entering versus leaving the reactor vessel"
+        ],
+        "example": {
+          "text": "A graphite reflector with high albedo returns many escaping neutrons back into the active core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reflector",
+    "lang": "en",
+    "word": "reflector",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a layer of material surrounding the reactor core that scatters escaping neutrons back inward, improving neutron economy",
+        "distractors": [
+          "a mirrored panel used to monitor the core visually during refueling",
+          "a barrier that blocks all radiation from leaving the containment building"
+        ],
+        "example": {
+          "text": "The beryllium reflector reduced neutron leakage and allowed the core to be built smaller.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_void_coefficient",
+    "lang": "en",
+    "word": "void coefficient",
+    "pos": "noun",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of how reactivity changes as vapor bubbles, or voids, form within the coolant or moderator",
+        "distractors": [
+          "the fraction of the core volume occupied by fuel pellets",
+          "the rate at which the reactor vessel expands under thermal stress"
+        ],
+        "example": {
+          "text": "A negative void coefficient means that boiling in the coolant reduces reactivity and helps stabilize power.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_delayed_neutron",
+    "lang": "en",
+    "word": "delayed neutron",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron emitted, with a measurable time delay, by a fission product nucleus rather than directly from fission",
+        "distractors": [
+          "a neutron that is captured by a control rod before it can cause further fission",
+          "a neutron that has been slowed to thermal energy by the moderator"
+        ],
+        "example": {
+          "text": "Delayed neutrons make up only a small fraction of fission neutrons but are essential for controllable reactor kinetics.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prompt_neutron",
+    "lang": "en",
+    "word": "prompt neutron",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron released essentially instantaneously at the moment of nuclear fission",
+        "distractors": [
+          "a neutron released minutes after fission by a radioactive fission fragment",
+          "a neutron absorbed by a fertile isotope to produce new fuel"
+        ],
+        "example": {
+          "text": "Prompt neutrons appear within about ten to the minus fourteen seconds of the fission event.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thermal_neutron",
+    "lang": "en",
+    "word": "thermal neutron",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron that has been slowed by repeated collisions until its kinetic energy is in equilibrium with the surrounding medium",
+        "distractors": [
+          "a neutron traveling at nearly the speed of light immediately after fission",
+          "a neutron that has decayed into a proton and an electron"
+        ],
+        "example": {
+          "text": "Thermal neutrons are far more likely than fast neutrons to cause fission in uranium-235.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fast_neutron",
+    "lang": "en",
+    "word": "fast neutron",
+    "pos": "noun",
+    "freqRank": 26900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron with high kinetic energy, typically just released from fission and not yet slowed by collisions",
+        "distractors": [
+          "a neutron that has been fully absorbed by a burnable poison",
+          "a neutron traveling below the speed of sound within the moderator"
+        ],
+        "example": {
+          "text": "Fast neutrons must lose most of their energy through moderation before they efficiently sustain fission in a thermal reactor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_epithermal",
+    "lang": "en",
+    "word": "epithermal",
+    "pos": "adjective",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing neutrons with energies intermediate between thermal and fast, in the range where resonance absorption is significant",
+        "distractors": [
+          "describing a reactor that operates entirely without any moderator",
+          "describing fuel that has reached its maximum allowable burnup"
+        ],
+        "example": {
+          "text": "Resonance absorption in uranium-238 is strongest for neutrons in the epithermal energy range.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_resonance",
+    "lang": "en",
+    "word": "resonance",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a narrow energy range in which a nucleus has a greatly enhanced probability of absorbing a neutron",
+        "distractors": [
+          "the vibration of fuel rods caused by turbulent coolant flow",
+          "the oscillation of reactor power following a control rod movement"
+        ],
+        "example": {
+          "text": "Neutrons slowing down through the resonance region of uranium-238 are strongly absorbed, reducing reactivity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_xenon_poisoning",
+    "lang": "en",
+    "word": "xenon poisoning",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the temporary suppression of reactivity caused by the buildup of the strongly neutron-absorbing fission product xenon-135",
+        "distractors": [
+          "the corrosion of fuel cladding caused by dissolved xenon gas in the coolant",
+          "the permanent loss of core reactivity due to fuel depletion"
+        ],
+        "example": {
+          "text": "After a rapid power reduction, xenon poisoning can make it briefly impossible to restart the reactor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_samarium_poisoning",
+    "lang": "en",
+    "word": "samarium poisoning",
+    "pos": "noun",
+    "freqRank": 36500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the long-term, non-decaying reduction in reactivity caused by accumulation of the neutron-absorbing isotope samarium-149",
+        "distractors": [
+          "the short-lived reactivity dip caused by iodine-135 decay immediately after shutdown",
+          "the swelling of fuel pellets caused by trapped fission gas"
+        ],
+        "example": {
+          "text": "Unlike xenon, samarium poisoning persists indefinitely once the reactor is shut down because samarium-149 is stable.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutron_capture",
+    "lang": "en",
+    "word": "neutron capture",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the absorption of a neutron by a nucleus, which may produce a heavier isotope and release gamma radiation",
+        "distractors": [
+          "the emission of a neutron from an excited nucleus after beta decay",
+          "the collision of two neutrons that annihilate each other"
+        ],
+        "example": {
+          "text": "Neutron capture in uranium-238 is the first step in producing plutonium-239.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_elastic_scattering",
+    "lang": "en",
+    "word": "elastic scattering",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron interaction in which the neutron bounces off a nucleus, transferring kinetic energy but leaving the nucleus unexcited",
+        "distractors": [
+          "a neutron interaction in which the neutron is absorbed and a gamma ray is emitted",
+          "a neutron interaction in which the nucleus splits into two fragments"
+        ],
+        "example": {
+          "text": "Elastic scattering off light nuclei like hydrogen is an efficient way to slow neutrons down.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inelastic_scattering",
+    "lang": "en",
+    "word": "inelastic scattering",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron interaction in which the neutron transfers energy to a nucleus, leaving it in an excited state that later emits a gamma ray",
+        "distractors": [
+          "a neutron interaction in which the neutron passes through the nucleus without any energy loss",
+          "a neutron interaction that converts the neutron directly into a proton"
+        ],
+        "example": {
+          "text": "Inelastic scattering is more significant for fast neutrons striking heavy nuclei than for thermal neutrons.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_half-life",
+    "lang": "en",
+    "word": "half-life",
+    "pos": "noun",
+    "freqRank": 22200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the time required for half of the radioactive nuclei in a sample to decay",
+        "distractors": [
+          "the total operating lifetime of a nuclear power plant",
+          "the time a fuel assembly can remain in the reactor core before replacement"
+        ],
+        "example": {
+          "text": "Cobalt-60 has a half-life of about 5.27 years, making it useful for industrial radiography sources.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decay_chain",
+    "lang": "en",
+    "word": "decay chain",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sequence of successive radioactive decays that a nucleus undergoes until it reaches a stable isotope",
+        "distractors": [
+          "a series of control rods inserted in a fixed order during shutdown",
+          "the sequence of chemical steps used to reprocess spent fuel"
+        ],
+        "example": {
+          "text": "The uranium-238 decay chain passes through radium and radon before ending at stable lead-206.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_daughter_nuclide",
+    "lang": "en",
+    "word": "daughter nuclide",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the nucleus produced when a radioactive parent nucleus undergoes decay",
+        "distractors": [
+          "the original unstable nucleus before any decay has occurred",
+          "a nucleus produced by fusing two lighter nuclei together"
+        ],
+        "example": {
+          "text": "Thorium-234 is the daughter nuclide formed when uranium-238 undergoes alpha decay.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parent_nuclide",
+    "lang": "en",
+    "word": "parent nuclide",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the original unstable nucleus that undergoes radioactive decay to form a new nucleus",
+        "distractors": [
+          "the stable end product at the bottom of a decay chain",
+          "a nucleus created artificially by neutron bombardment in a reactor"
+        ],
+        "example": {
+          "text": "In the decay chain, the parent nuclide loses an alpha particle to become its daughter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radionuclide",
+    "lang": "en",
+    "word": "radionuclide",
+    "pos": "noun",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unstable atomic nucleus that emits radiation as it decays toward a more stable configuration",
+        "distractors": [
+          "any nucleus capable of undergoing induced fission",
+          "a stable isotope used as a tracer in medical imaging"
+        ],
+        "example": {
+          "text": "Iodine-131 is a radionuclide commonly used in both medical treatment and as a fission product tracer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_becquerel",
+    "lang": "en",
+    "word": "becquerel",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the SI unit of radioactivity, equal to one nuclear disintegration per second",
+        "distractors": [
+          "the SI unit of absorbed radiation dose",
+          "the traditional unit of radioactivity equal to 3.7 times ten to the tenth disintegrations per second"
+        ],
+        "example": {
+          "text": "The activity of the sealed source was measured at several megabecquerels.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_curie",
+    "lang": "en",
+    "word": "curie",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a traditional unit of radioactivity equal to 3.7 times ten to the tenth disintegrations per second",
+        "distractors": [
+          "the SI unit of absorbed dose equal to one joule per kilogram",
+          "a unit expressing the biological effectiveness of a given radiation dose"
+        ],
+        "example": {
+          "text": "One gram of radium-226 has an activity of approximately one curie.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gray",
+    "lang": "en",
+    "word": "gray",
+    "pos": "noun",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the SI unit of absorbed radiation dose, equal to one joule of energy deposited per kilogram of matter",
+        "distractors": [
+          "the SI unit of radioactivity equal to one disintegration per second",
+          "a unit used to express neutron flux density"
+        ],
+        "example": {
+          "text": "The worker received an absorbed dose of only a few milligray during the inspection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sievert",
+    "lang": "en",
+    "word": "sievert",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the SI unit of equivalent and effective dose, which weights absorbed dose by the biological harm of the radiation type",
+        "distractors": [
+          "the SI unit of absorbed dose without any biological weighting applied",
+          "a unit used to measure the energy released per fission event"
+        ],
+        "example": {
+          "text": "Regulations typically limit annual occupational exposure to a few tens of millisievert.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rem",
+    "lang": "en",
+    "word": "rem",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a traditional unit of equivalent dose, roughly equal to one hundredth of a sievert, that accounts for radiation type",
+        "distractors": [
+          "a traditional unit of absorbed dose equal to exactly one gray",
+          "a unit describing the rate of neutron multiplication in a reactor"
+        ],
+        "example": {
+          "text": "Old dosimetry records at many plants still report exposures in rem rather than sievert.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rad",
+    "lang": "en",
+    "word": "rad",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a traditional unit of absorbed radiation dose, equal to one hundredth of a gray",
+        "distractors": [
+          "a traditional unit of radioactivity equal to one disintegration per minute",
+          "a unit used exclusively to express neutron cross sections"
+        ],
+        "example": {
+          "text": "The film badge indicated a cumulative exposure of about two rad over the quarter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_absorbed_dose",
+    "lang": "en",
+    "word": "absorbed dose",
+    "pos": "noun",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of radiation energy deposited per unit mass of an irradiated material, regardless of biological effect",
+        "distractors": [
+          "the total activity of a radioactive source expressed in becquerels",
+          "the fraction of incident radiation that is scattered rather than absorbed"
+        ],
+        "example": {
+          "text": "The absorbed dose to the shielding concrete was calculated before estimating dose to personnel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dose_equivalent",
+    "lang": "en",
+    "word": "dose equivalent",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a quantity that adjusts absorbed dose by a radiation weighting factor to reflect differing biological harm of alpha, beta, gamma, and neutron radiation",
+        "distractors": [
+          "the total physical energy deposited in tissue with no weighting applied",
+          "the maximum dose a reactor operator is legally permitted to receive per year"
+        ],
+        "example": {
+          "text": "Neutron radiation has a higher weighting factor, so the same absorbed dose yields a larger dose equivalent than gamma rays.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_linear_energy_transfer",
+    "lang": "en",
+    "word": "linear energy transfer",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of energy that ionizing radiation deposits per unit length as it travels through matter",
+        "distractors": [
+          "the total energy released by a single fission event",
+          "the rate at which reactor power changes per unit time"
+        ],
+        "example": {
+          "text": "Alpha particles have high linear energy transfer, depositing their energy over a very short path in tissue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bremsstrahlung",
+    "lang": "en",
+    "word": "bremsstrahlung",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "electromagnetic radiation emitted when a charged particle, such as a beta particle, is decelerated by an atomic nucleus",
+        "distractors": [
+          "the characteristic gamma radiation emitted immediately after nuclear fission",
+          "the radiation produced when two neutrons collide inelastically"
+        ],
+        "example": {
+          "text": "Shielding beta emitters with dense metal can actually increase exposure due to bremsstrahlung production.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_annihilation",
+    "lang": "en",
+    "word": "annihilation",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mutual destruction of a particle and its antiparticle, such as a positron and an electron, producing gamma radiation",
+        "distractors": [
+          "the spontaneous splitting of a heavy nucleus without neutron bombardment",
+          "the complete absorption of a neutron beam by a thick shield"
+        ],
+        "example": {
+          "text": "Positron annihilation with an electron produces two 511 keV gamma rays traveling in opposite directions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pair_production",
+    "lang": "en",
+    "word": "pair production",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the conversion of a high-energy photon into an electron-positron pair when it interacts with the field near a nucleus",
+        "distractors": [
+          "the simultaneous emission of two neutrons from a single fission event",
+          "the process by which two fissile nuclei fuse into one nucleus"
+        ],
+        "example": {
+          "text": "Pair production only becomes significant for gamma-ray energies above about 1.02 MeV.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compton_scattering",
+    "lang": "en",
+    "word": "Compton scattering",
+    "pos": "noun",
+    "freqRank": 29900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the interaction in which a photon collides with a loosely bound electron, transferring part of its energy and changing direction",
+        "distractors": [
+          "the interaction in which a photon is completely absorbed and ejects an inner-shell electron",
+          "the interaction in which a photon converts entirely into an electron-positron pair"
+        ],
+        "example": {
+          "text": "Compton scattering is the dominant gamma-ray interaction mechanism in tissue at typical medical and industrial energies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_photoelectric_effect",
+    "lang": "en",
+    "word": "photoelectric effect",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the absorption of a photon by an atom with the complete ejection of a bound electron",
+        "distractors": [
+          "the scattering of a photon off a free electron with partial energy loss",
+          "the emission of light from a scintillator following radiation exposure"
+        ],
+        "example": {
+          "text": "The photoelectric effect dominates gamma-ray shielding calculations at low photon energies and in high atomic number materials.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_attenuation",
+    "lang": "en",
+    "word": "attenuation",
+    "pos": "noun",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reduction in intensity of radiation as it passes through a material due to absorption and scattering",
+        "distractors": [
+          "the increase in radiation intensity caused by reflection off a dense surface",
+          "the process by which radioactive material decays into a stable isotope"
+        ],
+        "example": {
+          "text": "Lead's high density gives it strong attenuation of gamma radiation per unit thickness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shielding",
+    "lang": "en",
+    "word": "shielding",
+    "pos": "noun",
+    "freqRank": 23200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "material placed between a radiation source and personnel or equipment to reduce radiation exposure",
+        "distractors": [
+          "the metal casing that contains fuel pellets within a fuel rod",
+          "the process of measuring background radiation before an experiment begins"
+        ],
+        "example": {
+          "text": "Several feet of concrete shielding surround the reactor pressure vessel to protect workers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_collimator",
+    "lang": "en",
+    "word": "collimator",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a device that narrows a beam of radiation into a specific direction by blocking rays outside a defined path",
+        "distractors": [
+          "a device that converts gamma radiation into visible light for measurement",
+          "a device that measures the total activity of a radioactive sample"
+        ],
+        "example": {
+          "text": "The gamma camera used a lead collimator to ensure only photons from directly ahead reached the detector.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scintillator",
+    "lang": "en",
+    "word": "scintillator",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material that emits a flash of light when struck by ionizing radiation, used in radiation detectors",
+        "distractors": [
+          "a material that absorbs neutrons to reduce reactivity",
+          "a coating applied to fuel cladding to resist corrosion"
+        ],
+        "example": {
+          "text": "The sodium iodide scintillator produced a light pulse proportional to the energy deposited by each gamma ray.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dosimeter",
+    "lang": "en",
+    "word": "dosimeter",
+    "pos": "noun",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a device worn or placed to measure the cumulative radiation dose received by a person or object",
+        "distractors": [
+          "a device used to measure the temperature of reactor coolant",
+          "a device used to control the position of a control rod"
+        ],
+        "example": {
+          "text": "Every worker entering the radiologically controlled area wore a personal dosimeter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ionization_chamber",
+    "lang": "en",
+    "word": "ionization chamber",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a radiation detector that measures the electrical charge produced when radiation ionizes a gas within a sealed volume",
+        "distractors": [
+          "a sealed vessel used to store liquid radioactive waste before disposal",
+          "a chamber used to enrich uranium hexafluoride gas by centrifugation"
+        ],
+        "example": {
+          "text": "The portable ionization chamber gave a direct reading of dose rate near the source.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proportional_counter",
+    "lang": "en",
+    "word": "proportional counter",
+    "pos": "noun",
+    "freqRank": 34600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gas-filled radiation detector operated at a voltage where the output signal remains proportional to the energy deposited by each particle",
+        "distractors": [
+          "a detector that can only register whether radiation is present, without measuring its energy",
+          "a solid-state detector cooled with liquid nitrogen to reduce electronic noise"
+        ],
+        "example": {
+          "text": "A proportional counter can distinguish alpha particles from beta particles by their differing pulse heights.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dead_time",
+    "lang": "en",
+    "word": "dead time",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the brief interval after a detector registers an event during which it cannot register another, leading to undercounting at high rates",
+        "distractors": [
+          "the period during a reactor outage when no maintenance work is performed",
+          "the time delay between control rod insertion and full reactor shutdown"
+        ],
+        "example": {
+          "text": "At very high count rates, dead time losses caused the detector to underestimate the true activity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contamination",
+    "lang": "en",
+    "word": "contamination",
+    "pos": "noun",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the presence of unwanted radioactive material on a surface, in the air, or within a system",
+        "distractors": [
+          "the deliberate addition of burnable poison to fresh fuel",
+          "the natural decrease in reactivity as fuel is consumed"
+        ],
+        "example": {
+          "text": "Surface contamination on the tools was detected during the routine frisking check.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decontamination",
+    "lang": "en",
+    "word": "decontamination",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of removing or reducing unwanted radioactive material from a surface, object, or area",
+        "distractors": [
+          "the process of increasing the enrichment of nuclear fuel",
+          "the process of inserting control rods to reduce reactor power"
+        ],
+        "example": {
+          "text": "Workers used chemical decontamination to remove cobalt-60 deposits from the primary loop piping.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_containment",
+    "lang": "en",
+    "word": "containment",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the robust structure surrounding a reactor designed to prevent the release of radioactive material to the environment",
+        "distractors": [
+          "the steel liner inside a fuel rod that holds the fuel pellets",
+          "the process of storing spent fuel in a deep geological repository"
+        ],
+        "example": {
+          "text": "The reinforced concrete containment is designed to withstand pressures far above normal operating conditions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pressurizer",
+    "lang": "en",
+    "word": "pressurizer",
+    "pos": "noun",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a component in a pressurized water reactor that maintains system pressure by controlling the balance of steam and water",
+        "distractors": [
+          "a pump that circulates coolant through the reactor core",
+          "a valve that vents excess neutrons from the reactor core"
+        ],
+        "example": {
+          "text": "Heaters in the pressurizer boil a small volume of water to raise system pressure when needed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_steam_generator",
+    "lang": "en",
+    "word": "steam generator",
+    "pos": "noun",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat exchanger in a pressurized water reactor that transfers heat from the primary coolant to a secondary loop, producing steam",
+        "distractors": [
+          "a device that converts thermal energy directly into electricity without a turbine",
+          "a tank used to store makeup water for the primary coolant system"
+        ],
+        "example": {
+          "text": "Tube leaks in a steam generator can allow primary coolant to mix with the secondary loop.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_feedwater",
+    "lang": "en",
+    "word": "feedwater",
+    "pos": "noun",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "water supplied to a steam generator or boiler to replace water that has been converted to steam",
+        "distractors": [
+          "the primary coolant that flows directly through the reactor core",
+          "water used exclusively to cool spent fuel storage pools"
+        ],
+        "example": {
+          "text": "The feedwater pumps maintain the proper water level in the steam generators during normal operation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_void_fraction",
+    "lang": "en",
+    "word": "void fraction",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the proportion of a coolant channel's volume that is occupied by vapor rather than liquid",
+        "distractors": [
+          "the fraction of fuel pellets in a rod that contain manufacturing defects",
+          "the proportion of neutrons in the core that are thermal rather than fast"
+        ],
+        "example": {
+          "text": "As the void fraction increases along a boiling channel, the local moderating effect of the coolant changes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_critical_heat_flux",
+    "lang": "en",
+    "word": "critical heat flux",
+    "pos": "noun",
+    "freqRank": 34900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the heat flux at which the cooling mechanism on a fuel surface transitions abruptly, causing a large rise in cladding temperature",
+        "distractors": [
+          "the minimum flux needed to sustain a self-sustaining fission chain reaction",
+          "the flux of neutrons required to trigger an automatic reactor scram"
+        ],
+        "example": {
+          "text": "Reactor safety analyses ensure that the local heat flux stays well below the critical heat flux with margin.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_meltdown",
+    "lang": "en",
+    "word": "meltdown",
+    "pos": "noun",
+    "freqRank": 21200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a severe accident in which nuclear fuel overheats and loses its solid structure, potentially breaching its cladding and containment barriers",
+        "distractors": [
+          "the routine process of removing spent fuel from the core during refueling",
+          "the gradual decline in reactor power as fuel burnup increases"
+        ],
+        "example": {
+          "text": "Loss of adequate cooling for an extended period can lead to a partial or complete meltdown of the core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_corium",
+    "lang": "en",
+    "word": "corium",
+    "pos": "noun",
+    "freqRank": 35200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the molten mixture of nuclear fuel, cladding, and structural materials that forms during a severe core-melt accident",
+        "distractors": [
+          "the ceramic pellet form in which fresh reactor fuel is manufactured",
+          "the vitrified glass matrix used to immobilize high-level waste"
+        ],
+        "example": {
+          "text": "Corium that breaches the reactor vessel can interact with the concrete floor of the containment building.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_zircaloy",
+    "lang": "en",
+    "word": "zircaloy",
+    "pos": "noun",
+    "freqRank": 30300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a zirconium-based alloy prized for its low neutron absorption and corrosion resistance, widely used for fuel cladding",
+        "distractors": [
+          "a boron-steel alloy used to manufacture control rods",
+          "a lead-based alloy used for radiation shielding around hot cells"
+        ],
+        "example": {
+          "text": "Zircaloy cladding allows most neutrons to pass through without being wastefully absorbed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_burnable_poison",
+    "lang": "en",
+    "word": "burnable poison",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a neutron-absorbing material added to fresh fuel that depletes over time, helping to offset the reactivity of new fuel and flatten the power distribution",
+        "distractors": [
+          "a chemical additive that prevents fuel pellets from swelling under irradiation",
+          "a coolant additive used to suppress corrosion of the primary loop"
+        ],
+        "example": {
+          "text": "Gadolinium is a common burnable poison mixed into fresh fuel pellets to control excess reactivity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_borated",
+    "lang": "en",
+    "word": "borated",
+    "pos": "adjective",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "containing dissolved boron, used to describe coolant or water treated to absorb neutrons and suppress reactivity",
+        "distractors": [
+          "describing fuel that has reached its licensed maximum burnup",
+          "describing cladding that has failed and released fission products"
+        ],
+        "example": {
+          "text": "Borated water was injected into the core as an additional means of shutting down the chain reaction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spent_fuel",
+    "lang": "en",
+    "word": "spent fuel",
+    "pos": "noun",
+    "freqRank": 23600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "nuclear fuel that has been irradiated in a reactor to the point where it can no longer efficiently sustain the chain reaction and is removed",
+        "distractors": [
+          "fresh fuel that has not yet been loaded into the reactor core",
+          "fuel that has been reprocessed and is ready to be reused"
+        ],
+        "example": {
+          "text": "Spent fuel is initially stored in cooling pools to allow its decay heat and radioactivity to diminish.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reprocessing",
+    "lang": "en",
+    "word": "reprocessing",
+    "pos": "noun",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the chemical treatment of spent nuclear fuel to separate reusable uranium and plutonium from waste fission products",
+        "distractors": [
+          "the mechanical crushing of spent fuel pellets prior to disposal",
+          "the process of re-enriching depleted uranium tailings"
+        ],
+        "example": {
+          "text": "Some countries pursue reprocessing to recover plutonium for use in mixed-oxide fuel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vitrification",
+    "lang": "en",
+    "word": "vitrification",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of immobilizing high-level radioactive waste by fusing it into a stable glass matrix",
+        "distractors": [
+          "the process of converting uranium ore into yellowcake concentrate",
+          "the process of enriching uranium hexafluoride using gas centrifuges"
+        ],
+        "example": {
+          "text": "Vitrification encases the liquid waste in borosilicate glass for long-term storage and disposal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transmutation",
+    "lang": "en",
+    "word": "transmutation",
+    "pos": "noun",
+    "freqRank": 29100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the conversion of one chemical element or isotope into another through nuclear reactions such as neutron capture or decay",
+        "distractors": [
+          "the physical crushing and blending of fuel pellets before fabrication",
+          "the cooling of spent fuel in a wet storage pool"
+        ],
+        "example": {
+          "text": "Advanced reactor concepts propose using neutron transmutation to reduce the long-lived radiotoxicity of nuclear waste.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_actinide",
+    "lang": "en",
+    "word": "actinide",
+    "pos": "noun",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "any element in the series from actinium through lawrencium on the periodic table, most of which are radioactive and relevant to nuclear fuel and waste",
+        "distractors": [
+          "any element used exclusively as a reactor moderator",
+          "any stable isotope produced as a direct fission product"
+        ],
+        "example": {
+          "text": "Uranium and plutonium are actinides central to the operation of the nuclear fuel cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transuranic",
+    "lang": "en",
+    "word": "transuranic",
+    "pos": "adjective",
+    "freqRank": 30100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an element with an atomic number greater than that of uranium, typically produced by neutron capture in a reactor",
+        "distractors": [
+          "describing an element lighter than hydrogen used in fusion research",
+          "describing a fission product with an extremely short half-life"
+        ],
+        "example": {
+          "text": "Transuranic waste containing plutonium and americium requires long-term isolation due to its persistent radioactivity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plutonium",
+    "lang": "en",
+    "word": "plutonium",
+    "pos": "noun",
+    "freqRank": 21800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a transuranic element produced primarily by neutron capture in uranium-238, used as reactor and weapons fuel",
+        "distractors": [
+          "a naturally occurring fissile isotope that requires no enrichment before use",
+          "a stable fission product used as a burnable poison"
+        ],
+        "example": {
+          "text": "Plutonium-239 is fissile and accumulates in reactor fuel as uranium-238 captures neutrons.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_yellowcake",
+    "lang": "en",
+    "word": "yellowcake",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a coarse uranium oxide concentrate produced from milling uranium ore, an intermediate step before enrichment",
+        "distractors": [
+          "the final vitrified glass form of high-level waste",
+          "a powdered burnable poison blended into fresh fuel pellets"
+        ],
+        "example": {
+          "text": "The mill converted raw ore into yellowcake before shipping it for conversion and enrichment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tailings",
+    "lang": "en",
+    "word": "tailings",
+    "pos": "noun",
+    "freqRank": 30700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the residual, low-grade material left over after uranium ore has been milled to extract its uranium content",
+        "distractors": [
+          "the final cooled fuel assemblies removed from the reactor core",
+          "the gaseous byproducts released during uranium enrichment"
+        ],
+        "example": {
+          "text": "The tailings pile still contained trace uranium and its decay products, requiring long-term management.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radiographically",
+    "lang": "en",
+    "word": "radiographically",
+    "pos": "adverb",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in a manner involving the use of penetrating radiation, such as X-rays or gamma rays, to image the internal structure of an object",
+        "distractors": [
+          "in a manner that relies solely on visual surface inspection",
+          "in a manner measured strictly by the resulting change in reactivity"
+        ],
+        "example": {
+          "text": "The reactor pressure vessel welds were inspected radiographically before the plant was licensed to operate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_multiplication_factor",
+    "lang": "en",
+    "word": "multiplication factor",
+    "pos": "noun",
+    "freqRank": 28900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of the number of neutrons in one generation to the number in the immediately preceding generation within a reactor",
+        "distractors": [
+          "the ratio of thermal power to electrical power produced by a plant",
+          "the number of fuel assemblies contained within a single reactor core"
+        ],
+        "example": {
+          "text": "A multiplication factor exactly equal to one corresponds to a critical reactor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_k-effective",
+    "lang": "en",
+    "word": "k-effective",
+    "pos": "noun",
+    "freqRank": 35500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the effective neutron multiplication factor of an actual, finite reactor, accounting for both neutron production and leakage",
+        "distractors": [
+          "the theoretical multiplication factor of an infinitely large reactor with no neutron leakage",
+          "the ratio of delayed to prompt neutrons produced per fission"
+        ],
+        "example": {
+          "text": "Engineers monitor k-effective closely during startup to track the approach to criticality.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prompt_critical",
+    "lang": "en",
+    "word": "prompt critical",
+    "pos": "adjective",
+    "freqRank": 36800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a reactor condition in which prompt neutrons alone are sufficient to sustain a growing chain reaction, without relying on delayed neutrons",
+        "distractors": [
+          "describing a reactor that has just been permanently shut down",
+          "describing fuel that has been fully depleted of fissile material"
+        ],
+        "example": {
+          "text": "Reactor designs include multiple safety systems specifically to prevent the core from ever going prompt critical.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_point_kinetics",
+    "lang": "en",
+    "word": "point kinetics",
+    "pos": "noun",
+    "freqRank": 37500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a simplified mathematical model that treats the entire reactor as a single point, ignoring spatial variation, to describe how power changes over time",
+        "distractors": [
+          "the branch of engineering that designs the physical layout of fuel assemblies within the core",
+          "the measurement technique used to locate hot spots on fuel cladding"
+        ],
+        "example": {
+          "text": "Point kinetics equations are widely used to simulate short-term reactor transients.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_temperature_coefficient",
+    "lang": "en",
+    "word": "temperature coefficient",
+    "pos": "noun",
+    "freqRank": 31800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of how a reactor's reactivity changes in response to a change in the temperature of its fuel, moderator, or coolant",
+        "distractors": [
+          "the rate at which cladding expands per degree of temperature increase",
+          "the efficiency with which a steam generator transfers heat to the secondary loop"
+        ],
+        "example": {
+          "text": "A negative temperature coefficient provides an inherent safety feature, since reactivity falls as the core heats up.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shutdown_margin",
+    "lang": "en",
+    "word": "shutdown margin",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of negative reactivity by which a reactor would remain subcritical if all control rods were fully inserted, excluding the single most reactive rod",
+        "distractors": [
+          "the physical distance a control rod must travel to be fully withdrawn",
+          "the time interval between reactor scram and full power reduction"
+        ],
+        "example": {
+          "text": "Technical specifications require a minimum shutdown margin to be maintained at all times during operation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_excess_reactivity",
+    "lang": "en",
+    "word": "excess reactivity",
+    "pos": "noun",
+    "freqRank": 33700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the positive reactivity built into a fresh reactor core beyond what is needed for criticality, compensated by control rods and burnable poisons",
+        "distractors": [
+          "the reactivity lost permanently once the reactor is shut down",
+          "the additional electrical output a plant can generate above its rated capacity"
+        ],
+        "example": {
+          "text": "Excess reactivity is largest at the beginning of a fuel cycle and decreases as fuel burns up.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fuel_assembly",
+    "lang": "en",
+    "word": "fuel assembly",
+    "pos": "noun",
+    "freqRank": 24600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structured bundle of fuel rods held together by spacer grids and end fittings, forming the basic building block of a reactor core",
+        "distractors": [
+          "a single ceramic pellet of enriched uranium dioxide",
+          "the steel liner separating the reactor core from the pressure vessel"
+        ],
+        "example": {
+          "text": "Each fuel assembly in the core is periodically shuffled to a new position to even out burnup.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fuel_rod",
+    "lang": "en",
+    "word": "fuel rod",
+    "pos": "noun",
+    "freqRank": 23400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a long, sealed metal tube containing stacked fuel pellets, forming one element of a fuel assembly",
+        "distractors": [
+          "a solid rod of pure metallic uranium used exclusively in early experimental reactors",
+          "the control mechanism used to insert or withdraw a burnable poison"
+        ],
+        "example": {
+          "text": "A fuel rod's cladding must remain leak-tight to keep fission products from entering the coolant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fuel_pellet",
+    "lang": "en",
+    "word": "fuel pellet",
+    "pos": "noun",
+    "freqRank": 24100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small cylindrical piece of ceramic fuel material, typically uranium dioxide, stacked inside a fuel rod",
+        "distractors": [
+          "a small sphere of boron carbide inserted into a control rod",
+          "a compressed block of graphite used to moderate neutrons"
+        ],
+        "example": {
+          "text": "Each fuel pellet is only about the size of a fingertip yet contains enough energy to power a household for months.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lattice",
+    "lang": "en",
+    "word": "lattice",
+    "pos": "noun",
+    "freqRank": 34100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the regular, repeating geometric arrangement of fuel, moderator, and coolant channels within a reactor core",
+        "distractors": [
+          "the sequence of chemical steps used in fuel reprocessing",
+          "the layered structure of a radiation shield"
+        ],
+        "example": {
+          "text": "Engineers optimize the fuel-to-moderator ratio within the lattice to maximize neutron economy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pressure_vessel",
+    "lang": "en",
+    "word": "pressure vessel",
+    "pos": "noun",
+    "freqRank": 25100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the thick-walled steel vessel that houses the reactor core and contains the primary coolant at operating pressure",
+        "distractors": [
+          "the outer concrete dome that forms the final barrier of containment",
+          "the tank used to store treated liquid radioactive waste"
+        ],
+        "example": {
+          "text": "The reactor pressure vessel is fabricated from forged steel designed to resist neutron embrittlement over decades of service.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_emergency_core_cooling_system",
+    "lang": "en",
+    "word": "emergency core cooling system",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of engineered safety systems designed to supply water to the reactor core and remove decay heat if normal cooling is lost",
+        "distractors": [
+          "the network of sensors that measures neutron flux throughout the core",
+          "the storage pool used to hold spent fuel after removal from the core"
+        ],
+        "example": {
+          "text": "The emergency core cooling system automatically injects borated water into the vessel following a loss-of-coolant accident.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decay_heat",
+    "lang": "en",
+    "word": "decay heat",
+    "pos": "noun",
+    "freqRank": 26700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the thermal energy continuously generated by the radioactive decay of fission products, even after a reactor has been shut down",
+        "distractors": [
+          "the heat produced directly by the fission chain reaction during normal power operation",
+          "the heat released when control rods are withdrawn from the core"
+        ],
+        "example": {
+          "text": "Decay heat must be removed for an extended period after shutdown, since it does not stop instantly like the chain reaction does.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radiolysis",
+    "lang": "en",
+    "word": "radiolysis",
+    "pos": "noun",
+    "freqRank": 35800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the chemical decomposition of a substance, such as water, caused by exposure to ionizing radiation",
+        "distractors": [
+          "the mechanical breakdown of fuel cladding caused by thermal cycling",
+          "the biological repair process that follows a radiation exposure"
+        ],
+        "example": {
+          "text": "Radiolysis of reactor coolant can produce hydrogen and oxygen, requiring systems to recombine these gases safely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_embrittlement",
+    "lang": "en",
+    "word": "embrittlement",
+    "pos": "noun",
+    "freqRank": 31300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the loss of ductility and toughness in a material, such as reactor vessel steel, often caused by prolonged neutron irradiation",
+        "distractors": [
+          "the gradual loss of enrichment in fuel as it is irradiated",
+          "the buildup of corrosion products on heat exchanger tubes"
+        ],
+        "example": {
+          "text": "Neutron-induced embrittlement of the pressure vessel steel is closely monitored over the plant's operating life.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fluence",
+    "lang": "en",
+    "word": "fluence",
+    "pos": "noun",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the total number of particles, such as neutrons, passing through a unit area over a specified period of time",
+        "distractors": [
+          "the instantaneous rate at which neutrons pass through a unit area",
+          "the total thermal energy released by a reactor since startup"
+        ],
+        "example": {
+          "text": "Surveillance capsules track the accumulated neutron fluence received by the pressure vessel wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_displacement_per_atom",
+    "lang": "en",
+    "word": "displacement per atom",
+    "pos": "noun",
+    "freqRank": 39500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of radiation damage in a material expressing the average number of times each atom has been knocked out of its lattice site by irradiation",
+        "distractors": [
+          "the average number of fission events occurring per fuel pellet per second",
+          "the number of atoms transmuted into a different element per unit volume"
+        ],
+        "example": {
+          "text": "Structural materials in a fusion reactor first wall may need to withstand far higher displacement per atom levels than fission reactor components.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_swelling",
+    "lang": "en",
+    "word": "swelling",
+    "pos": "noun",
+    "freqRank": 33400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the increase in volume of a material, particularly nuclear fuel or cladding, caused by the accumulation of fission gas bubbles or radiation-induced defects under irradiation",
+        "distractors": [
+          "the expansion of coolant volume as it heats from ambient to operating temperature",
+          "the growth in reactor power following withdrawal of a control rod"
+        ],
+        "example": {
+          "text": "Fission gas swelling of the fuel pellet can gradually close the gap between the pellet and its cladding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_creep",
+    "lang": "en",
+    "word": "creep",
+    "pos": "noun",
+    "freqRank": 34300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the slow, time-dependent deformation of a material under sustained stress, often accelerated by high temperature and neutron irradiation",
+        "distractors": [
+          "the sudden fracture of cladding caused by a rapid pressure spike",
+          "the gradual decline in coolant flow rate as pumps age"
+        ],
+        "example": {
+          "text": "Irradiation-enhanced creep of the cladding can cause it to slowly deform against the swelling fuel pellet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_annealing",
+    "lang": "en",
+    "word": "annealing",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment process that can restore some of the properties lost in a material due to radiation damage or that relieves internal stress",
+        "distractors": [
+          "the process of adding burnable poison to fresh nuclear fuel",
+          "the gradual decay of activity in a stored radioactive source"
+        ],
+        "example": {
+          "text": "Thermal annealing has been used experimentally to partially reverse embrittlement in reactor pressure vessel steel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tritium",
+    "lang": "en",
+    "word": "tritium",
+    "pos": "noun",
+    "freqRank": 27700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a radioactive isotope of hydrogen containing one proton and two neutrons, used as fusion fuel and produced as a byproduct in some reactors",
+        "distractors": [
+          "a stable isotope of hydrogen containing one proton and one neutron",
+          "a heavy isotope of helium used to moderate fast neutrons"
+        ],
+        "example": {
+          "text": "Deuterium-tritium fusion is the most accessible reaction being pursued in current fusion reactor designs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deuterium",
+    "lang": "en",
+    "word": "deuterium",
+    "pos": "noun",
+    "freqRank": 26100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a stable isotope of hydrogen containing one proton and one neutron, used in heavy water and as fusion fuel",
+        "distractors": [
+          "a radioactive isotope of hydrogen with a half-life of about twelve years",
+          "an isotope of helium produced by neutron capture in tritium"
+        ],
+        "example": {
+          "text": "Heavy water reactors use deuterium oxide as both moderator and coolant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heavy_water",
+    "lang": "en",
+    "word": "heavy water",
+    "pos": "noun",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "water in which the hydrogen atoms are replaced by deuterium, used as an efficient moderator and coolant in certain reactor designs",
+        "distractors": [
+          "water that has been enriched with dissolved boron for reactivity control",
+          "water that has been vitrified together with high-level waste for disposal"
+        ],
+        "example": {
+          "text": "The CANDU reactor design uses heavy water as its moderator, allowing it to run on natural, unenriched uranium.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_graphite-moderated",
+    "lang": "en",
+    "word": "graphite-moderated",
+    "pos": "adjective",
+    "freqRank": 36200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a reactor design that uses graphite as the material to slow neutrons to thermal energies",
+        "distractors": [
+          "describing a reactor design that operates entirely without any coolant",
+          "describing fuel that has been coated in a graphite-based cladding"
+        ],
+        "example": {
+          "text": "Early graphite-moderated reactors demonstrated that natural, unenriched uranium could sustain a chain reaction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pebble_bed",
+    "lang": "en",
+    "word": "pebble bed",
+    "pos": "noun",
+    "freqRank": 37200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reactor design in which fuel is contained in thousands of small, coated spherical elements that flow through the core like a fluid",
+        "distractors": [
+          "a storage arrangement in which spent fuel assemblies are laid horizontally in a cooling pool",
+          "a shielding configuration made of stacked lead bricks"
+        ],
+        "example": {
+          "text": "In a pebble bed design, fresh fuel spheres are continuously added at the top while spent ones are removed from the bottom.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tokamak",
+    "lang": "en",
+    "word": "tokamak",
+    "pos": "noun",
+    "freqRank": 29300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a doughnut-shaped device that uses powerful magnetic fields to confine hot plasma for controlled nuclear fusion",
+        "distractors": [
+          "a linear accelerator used to enrich uranium isotopes",
+          "a type of pressurized water reactor used for naval propulsion"
+        ],
+        "example": {
+          "text": "ITER is being built as the largest tokamak ever constructed, aiming to demonstrate net fusion energy gain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plasma_confinement",
+    "lang": "en",
+    "word": "plasma confinement",
+    "pos": "noun",
+    "freqRank": 34700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the containment of a hot, ionized gas within a defined region so that fusion reactions can occur without the plasma touching and damaging the reactor walls",
+        "distractors": [
+          "the process of storing spent fuel assemblies within a shielded cask",
+          "the containment of fission products within intact fuel cladding"
+        ],
+        "example": {
+          "text": "Achieving stable plasma confinement long enough for net energy gain remains a central challenge of fusion research.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_magnetic_confinement",
+    "lang": "en",
+    "word": "magnetic confinement",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an approach to fusion in which strong magnetic fields hold and shape a plasma away from the walls of the reactor vessel",
+        "distractors": [
+          "an approach to fusion in which tiny fuel pellets are compressed rapidly by high-powered lasers",
+          "an approach to fission reactor safety in which magnets hold control rods in the withdrawn position"
+        ],
+        "example": {
+          "text": "Tokamaks and stellarators are two different reactor geometries that both rely on magnetic confinement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inertial_confinement",
+    "lang": "en",
+    "word": "inertial confinement",
+    "pos": "noun",
+    "freqRank": 35100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an approach to fusion in which a small fuel pellet is rapidly compressed and heated, typically by intense lasers, so that fusion occurs before the fuel can disperse",
+        "distractors": [
+          "an approach to fusion that relies on continuous magnetic fields to hold plasma in a steady state",
+          "an approach used in fission reactors to hold fuel assemblies rigidly in place"
+        ],
+        "example": {
+          "text": "The National Ignition Facility uses inertial confinement, focusing nearly two hundred lasers onto a tiny fuel capsule.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lawson_criterion",
+    "lang": "en",
+    "word": "Lawson criterion",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a threshold combining plasma density, confinement time, and temperature that must be exceeded for a fusion reaction to produce net energy output",
+        "distractors": [
+          "a formula used to calculate the enrichment level required for a reactor to reach criticality",
+          "a safety limit on the maximum allowable neutron fluence to reactor vessel steel"
+        ],
+        "example": {
+          "text": "Researchers track progress toward fusion energy partly by how closely experiments approach the Lawson criterion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cryogenically",
+    "lang": "en",
+    "word": "cryogenically",
+    "pos": "adverb",
+    "freqRank": 38500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in a manner involving extremely low temperatures, such as those used to keep superconducting magnets or liquefied gases operational",
+        "distractors": [
+          "in a manner involving extremely high pressure applied to reactor coolant",
+          "in a manner involving gradual, slow heating of irradiated fuel"
+        ],
+        "example": {
+          "text": "The tokamak's superconducting magnet coils are cryogenically cooled to maintain zero electrical resistance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutron_economy",
+    "lang": "en",
+    "word": "neutron economy",
+    "pos": "noun",
+    "freqRank": 36400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the overall balance of neutron production, absorption, and leakage within a reactor, which determines how efficiently neutrons are used to sustain the chain reaction",
+        "distractors": [
+          "the financial cost of procuring enriched uranium for a reactor core",
+          "the schedule by which fuel assemblies are shuffled within the core"
+        ],
+        "example": {
+          "text": "Heavy water moderators improve neutron economy enough to allow reactors to run on natural uranium.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thermal_utilization_factor",
+    "lang": "en",
+    "word": "thermal utilization factor",
+    "pos": "noun",
+    "freqRank": 39200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fraction of thermal neutrons absorbed within a reactor that are absorbed specifically by the fuel, rather than by other core materials",
+        "distractors": [
+          "the fraction of reactor thermal power converted into usable electricity",
+          "the fraction of fast neutrons that are slowed to thermal energy by the moderator"
+        ],
+        "example": {
+          "text": "A higher thermal utilization factor means proportionally more thermal neutrons are causing fission in the fuel rather than being wasted.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_resonance_escape_probability",
+    "lang": "en",
+    "word": "resonance escape probability",
+    "pos": "noun",
+    "freqRank": 40200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the likelihood that a neutron slowing down through the resonance energy region will avoid being absorbed and reach thermal energies",
+        "distractors": [
+          "the likelihood that a neutron born from fission will immediately leak out of the reactor core",
+          "the likelihood that a fission product will decay before being removed from the core"
+        ],
+        "example": {
+          "text": "Closely spaced fuel and moderator regions are designed in part to maximize the resonance escape probability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fast_fission_factor",
+    "lang": "en",
+    "word": "fast fission factor",
+    "pos": "noun",
+    "freqRank": 39800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a factor representing the extra fissions caused by fast neutrons, primarily in fertile material, before those neutrons are slowed down",
+        "distractors": [
+          "the fraction of total reactor power that comes from fusion rather than fission reactions",
+          "the ratio of neutrons lost to leakage compared to those absorbed by the fuel"
+        ],
+        "example": {
+          "text": "The fast fission factor is only slightly greater than one in most thermal reactor designs, reflecting a small extra contribution from fast fissions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_buckling",
+    "lang": "en",
+    "word": "buckling",
+    "pos": "noun",
+    "freqRank": 35700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a parameter describing the curvature of the neutron flux distribution across a reactor's geometry, related to its size and neutron leakage",
+        "distractors": [
+          "the physical bending or warping of a fuel rod under mechanical stress",
+          "the sudden collapse of reactor power following an unplanned scram"
+        ],
+        "example": {
+          "text": "Geometric buckling depends only on the reactor's shape and size, while material buckling depends on the properties of the fuel and moderator.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extrapolation_length",
+    "lang": "en",
+    "word": "extrapolation length",
+    "pos": "noun",
+    "freqRank": 40500,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the small additional distance beyond a reactor's physical boundary at which the neutron flux, if extrapolated, would mathematically reach zero",
+        "distractors": [
+          "the physical distance a control rod travels between fully inserted and fully withdrawn positions",
+          "the distance neutrons travel on average before being captured by fuel"
+        ],
+        "example": {
+          "text": "Diffusion theory accounts for the extrapolation length when calculating the effective boundary of the reactor core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diffusion_length",
+    "lang": "en",
+    "word": "diffusion length",
+    "pos": "noun",
+    "freqRank": 38200,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the average straight-line distance a thermal neutron travels from where it becomes thermalized to where it is eventually absorbed",
+        "distractors": [
+          "the physical length of a single fuel rod within an assembly",
+          "the distance a fast neutron travels before it collides with a moderator nucleus for the first time"
+        ],
+        "example": {
+          "text": "A moderator with a longer diffusion length allows thermal neutrons to migrate farther before being absorbed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_migration_length",
+    "lang": "en",
+    "word": "migration length",
+    "pos": "noun",
+    "freqRank": 38700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a combined measure of how far a neutron travels, on average, from its birth as a fast neutron until its eventual absorption as a thermal neutron",
+        "distractors": [
+          "the distance between successive fuel assemblies within the reactor lattice",
+          "the distance a control rod must be withdrawn to add one dollar of reactivity"
+        ],
+        "example": {
+          "text": "The migration length combines both the slowing-down length and the diffusion length of neutrons in the core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reflector_savings",
+    "lang": "en",
+    "word": "reflector savings",
+    "pos": "noun",
+    "freqRank": 37800,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reduction in required core size made possible by surrounding the core with a neutron reflector, expressed as an effective extension of the core boundary",
+        "distractors": [
+          "the reduction in fuel cost achieved by reprocessing spent fuel",
+          "the reduction in decay heat achieved by cooling spent fuel longer before storage"
+        ],
+        "example": {
+          "text": "Adding a beryllium reflector produced significant reflector savings, letting designers use less fuel for the same critical mass.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subcritical_multiplication",
+    "lang": "en",
+    "word": "subcritical multiplication",
+    "pos": "noun",
+    "freqRank": 37300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amplification of a neutron source's output within a subcritical assembly, where each generation still produces fewer neutrons than the last but the total count is boosted above the source alone",
+        "distractors": [
+          "the growth of reactor power once the core has become supercritical",
+          "the increase in fuel enrichment achieved through repeated centrifuge stages"
+        ],
+        "example": {
+          "text": "Operators used subcritical multiplication measurements to track how close the loading core was approaching criticality.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rod_worth",
+    "lang": "en",
+    "word": "rod worth",
+    "pos": "noun",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of reactivity change produced by inserting or withdrawing a particular control rod",
+        "distractors": [
+          "the monetary value of the enriched uranium contained in a control rod",
+          "the physical mass of boron carbide contained within a control rod"
+        ],
+        "example": {
+          "text": "The most reactive control rod's worth is excluded when calculating the reactor's shutdown margin.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shim_rod",
+    "lang": "en",
+    "word": "shim rod",
+    "pos": "noun",
+    "freqRank": 36700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a control rod used primarily for coarse, long-term adjustment of reactivity, such as compensating for fuel burnup over a cycle",
+        "distractors": [
+          "a control rod used exclusively to trigger an emergency scram",
+          "a rod inserted only during refueling to physically support fuel assemblies"
+        ],
+        "example": {
+          "text": "As fuel burnup progressed, operators slowly withdrew the shim rods to maintain constant power.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_safety_rod",
+    "lang": "en",
+    "word": "safety rod",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a control rod held in reserve and designed to be rapidly inserted to shut the reactor down in an emergency",
+        "distractors": [
+          "a control rod used for fine, continuous adjustment of power during normal operation",
+          "a structural rod that supports the weight of the reactor pressure vessel"
+        ],
+        "example": {
+          "text": "All safety rods are fully withdrawn during normal power operation, ready to drop instantly if a scram signal occurs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_regulating_rod",
+    "lang": "en",
+    "word": "regulating rod",
+    "pos": "noun",
+    "freqRank": 34400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a control rod used for fine, continuous adjustment of reactor power during normal operation",
+        "distractors": [
+          "a control rod used solely to compensate for long-term fuel depletion",
+          "a control rod permanently welded in the fully inserted position"
+        ],
+        "example": {
+          "text": "Small movements of the regulating rod allow operators to hold reactor power steady at a fixed setpoint.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gadolinia",
+    "lang": "en",
+    "word": "gadolinia",
+    "pos": "noun",
+    "freqRank": 39400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "gadolinium oxide mixed into fresh fuel pellets as a burnable neutron poison to help control excess reactivity",
+        "distractors": [
+          "a boron-based coating applied to control rods to extend their working life",
+          "a corrosion-resistant alloy used for reactor coolant piping"
+        ],
+        "example": {
+          "text": "Fuel rods containing gadolinia are typically clustered near the center of a fresh fuel assembly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mixed_oxide_fuel",
+    "lang": "en",
+    "word": "mixed oxide fuel",
+    "pos": "noun",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "nuclear fuel manufactured by blending plutonium oxide with uranium oxide, allowing recovered plutonium to be reused as reactor fuel",
+        "distractors": [
+          "fuel manufactured entirely from natural, unenriched uranium metal",
+          "fuel pellets coated with a mixture of graphite and boron carbide"
+        ],
+        "example": {
+          "text": "Mixed oxide fuel allows reprocessed plutonium from spent fuel to be recycled back into reactor cores.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_breeding_ratio",
+    "lang": "en",
+    "word": "breeding ratio",
+    "pos": "noun",
+    "freqRank": 35300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of new fissile atoms produced in a reactor to the number of fissile atoms consumed",
+        "distractors": [
+          "the ratio of fast neutrons to thermal neutrons present in the core",
+          "the fraction of reactor coolant that is replaced during a single refueling outage"
+        ],
+        "example": {
+          "text": "A breeder reactor is defined by having a breeding ratio greater than one, since it produces more fuel than it uses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_conversion_ratio",
+    "lang": "en",
+    "word": "conversion ratio",
+    "pos": "noun",
+    "freqRank": 34900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of new fissile material produced to fissile material consumed in a reactor that is not classified as a breeder",
+        "distractors": [
+          "the ratio of thermal power generated to electrical power delivered to the grid",
+          "the fraction of neutrons that leak out of the reactor core entirely"
+        ],
+        "example": {
+          "text": "Most commercial light water reactors have a conversion ratio somewhat less than one.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_doubling_time",
+    "lang": "en",
+    "word": "doubling time",
+    "pos": "noun",
+    "freqRank": 36900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the time required for a breeder reactor to produce enough new fissile material to double the amount originally loaded",
+        "distractors": [
+          "the time required for reactor power to double following an uncontrolled positive reactivity insertion",
+          "the time required for a radioactive sample's activity to fall by half"
+        ],
+        "example": {
+          "text": "Early fast breeder programs aimed for a doubling time short enough to expand the fissile fuel inventory quickly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fast_breeder_reactor",
+    "lang": "en",
+    "word": "fast breeder reactor",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reactor that uses fast, unmoderated neutrons to convert fertile material into new fissile fuel faster than it consumes fuel",
+        "distractors": [
+          "a thermal reactor that uses heavy water to moderate neutrons",
+          "a reactor design used solely for medical isotope production"
+        ],
+        "example": {
+          "text": "Sodium-cooled fast breeder reactors use liquid metal coolant because it does not moderate the fast neutron spectrum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyrophoric",
+    "lang": "en",
+    "word": "pyrophoric",
+    "pos": "adjective",
+    "freqRank": 37600,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of igniting spontaneously in air, a property relevant to finely divided metals such as zirconium or sodium found in reactor systems",
+        "distractors": [
+          "capable of absorbing thermal neutrons with an extremely large cross section",
+          "capable of withstanding extremely high neutron fluence without embrittling"
+        ],
+        "example": {
+          "text": "Zirconium fines generated during fuel fabrication are pyrophoric and must be handled with strict fire precautions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_friable",
+    "lang": "en",
+    "word": "friable",
+    "pos": "adjective",
+    "freqRank": 33100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "easily crumbled into fine particles, a property of concern for radioactive waste forms that can generate airborne contamination",
+        "distractors": [
+          "resistant to any form of mechanical deformation under stress",
+          "capable of sustaining a self-propagating chain reaction"
+        ],
+        "example": {
+          "text": "Friable waste material poses a greater airborne contamination hazard than solid, intact waste forms.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_refractory",
+    "lang": "en",
+    "word": "refractory",
+    "pos": "adjective",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "able to withstand very high temperatures without melting or deforming, a property valued in reactor structural and fuel-related materials",
+        "distractors": [
+          "able to absorb neutrons strongly across nearly all energy ranges",
+          "able to dissolve readily in the primary coolant under normal conditions"
+        ],
+        "example": {
+          "text": "Tungsten and other refractory metals are considered for components exposed to the extreme heat of a fusion reactor's first wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_irradiate",
+    "lang": "en",
+    "word": "irradiate",
+    "pos": "verb",
+    "freqRank": 22700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to expose a material or organism to radiation, such as the neutron flux inside a reactor core",
+        "distractors": [
+          "to remove radioactive contamination from a surface completely",
+          "to permanently shut down a reactor by withdrawing all fuel"
+        ],
+        "example": {
+          "text": "Samples of the candidate cladding alloy were irradiated in a test reactor to study long-term performance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_moderate",
+    "lang": "en",
+    "word": "moderate",
+    "pos": "verb",
+    "freqRank": 24300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to slow fast neutrons down to thermal energies through repeated collisions with a lightweight material",
+        "distractors": [
+          "to absorb neutrons permanently and remove them from the chain reaction",
+          "to increase the pressure of the primary coolant loop"
+        ],
+        "example": {
+          "text": "Light water is used both to moderate neutrons and to remove heat from the core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_attenuate",
+    "lang": "en",
+    "word": "attenuate",
+    "pos": "verb",
+    "freqRank": 26300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to reduce the intensity of radiation as it passes through a shielding material",
+        "distractors": [
+          "to increase the energy of neutrons through repeated elastic collisions",
+          "to convert a fertile isotope into a fissile one through neutron capture"
+        ],
+        "example": {
+          "text": "Several inches of steel were enough to attenuate the gamma radiation to an acceptable level.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quench",
+    "lang": "en",
+    "word": "quench",
+    "pos": "verb",
+    "freqRank": 31400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to suddenly and rapidly cool a material or system, or to cause a superconducting magnet to abruptly lose its superconductivity and dissipate stored energy as heat",
+        "distractors": [
+          "to gradually increase reactor power to its rated level",
+          "to gradually withdraw a control rod over several hours"
+        ],
+        "example": {
+          "text": "A magnet quench in a tokamak can release enormous stored energy in a fraction of a second.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anneal",
+    "lang": "en",
+    "word": "anneal",
+    "pos": "verb",
+    "freqRank": 28700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to heat a material and then cool it in a controlled way to relieve internal stress or partially reverse radiation damage",
+        "distractors": [
+          "to inject borated water into the reactor core during an emergency",
+          "to enrich a sample of uranium hexafluoride gas"
+        ],
+        "example": {
+          "text": "Engineers proposed annealing the aging pressure vessel to help mitigate neutron embrittlement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_poison",
+    "lang": "en",
+    "word": "poison",
+    "pos": "verb",
+    "freqRank": 27100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to reduce a reactor's reactivity by introducing or allowing the buildup of neutron-absorbing material",
+        "distractors": [
+          "to permanently disable a reactor's emergency cooling system",
+          "to convert fissile material into fertile material through irradiation"
+        ],
+        "example": {
+          "text": "A rapid shutdown can effectively poison the reactor with xenon, delaying any attempt to restart.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enrich",
+    "lang": "en",
+    "word": "enrich",
+    "pos": "verb",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to increase the concentration of a desired isotope, such as uranium-235, within a sample relative to other isotopes",
+        "distractors": [
+          "to remove all traces of a radioactive isotope from a sample",
+          "to coat a fuel pellet in a protective ceramic barrier"
+        ],
+        "example": {
+          "text": "Centrifuges are used to enrich natural uranium to the levels required for commercial reactor fuel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_breed",
+    "lang": "en",
+    "word": "breed",
+    "pos": "verb",
+    "freqRank": 28100,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to produce new fissile material within a reactor by neutron capture in fertile isotopes",
+        "distractors": [
+          "to remove spent fuel from the reactor core during a refueling outage",
+          "to reduce the enrichment of a fuel batch before disposal"
+        ],
+        "example": {
+          "text": "Fast reactors can be designed to breed more plutonium in their surrounding blanket than they consume in the core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transmute",
+    "lang": "en",
+    "word": "transmute",
+    "pos": "verb",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to convert one isotope or element into another through a nuclear reaction such as neutron capture or radioactive decay",
+        "distractors": [
+          "to physically relocate fuel assemblies within the reactor core",
+          "to cool spent fuel sufficiently for dry cask storage"
+        ],
+        "example": {
+          "text": "Long-lived waste isotopes could potentially be transmuted into shorter-lived or stable products in specialized reactors.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vitrify",
+    "lang": "en",
+    "word": "vitrify",
+    "pos": "verb",
+    "freqRank": 32700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to convert liquid or particulate radioactive waste into a stable glass form for long-term storage or disposal",
+        "distractors": [
+          "to compress spent fuel pellets into a smaller storage volume",
+          "to dissolve spent fuel cladding using a strong acid"
+        ],
+        "example": {
+          "text": "The reprocessing plant plans to vitrify the remaining liquid high-level waste before its final disposal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decontaminate",
+    "lang": "en",
+    "word": "decontaminate",
+    "pos": "verb",
+    "freqRank": 24700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to remove or reduce unwanted radioactive material from a surface, tool, or area",
+        "distractors": [
+          "to add burnable poison to a batch of fresh fuel",
+          "to reduce the enrichment of a batch of uranium hexafluoride"
+        ],
+        "example": {
+          "text": "Technicians used specialized solvents to decontaminate the valve before it was sent out for repair.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_activate",
+    "lang": "en",
+    "word": "activate",
+    "pos": "verb",
+    "freqRank": 25700,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to make a previously stable material radioactive by exposing it to neutron irradiation",
+        "distractors": [
+          "to permanently deactivate a reactor's control rod drive mechanism",
+          "to remove fission product poisons from irradiated fuel"
+        ],
+        "example": {
+          "text": "Neutron irradiation can activate trace cobalt impurities in reactor structural steel, producing cobalt-60.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_collimate",
+    "lang": "en",
+    "word": "collimate",
+    "pos": "verb",
+    "freqRank": 33300,
+    "difficulty": "hard",
+    "tags": [
+      "nuclear-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to narrow and align a beam of radiation into a specific direction using a shielded aperture",
+        "distractors": [
+          "to disperse a radiation beam evenly across a wide detector array",
+          "to slow a beam of fast neutrons down to thermal energies"
+        ],
+        "example": {
+          "text": "The source was collimated so that only a narrow beam reached the test specimen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_osseointegration",
+    "lang": "en",
+    "word": "osseointegration",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the direct structural and functional connection between living bone and the surface of a load-bearing implant, allowing a prosthesis to attach directly to the skeleton",
+        "distractors": [
+          "the process of fitting a prosthetic socket around soft tissue without surgery",
+          "the gradual breakdown of bone tissue around an implant due to wear particles"
+        ],
+        "example": {
+          "text": "After osseointegration was confirmed on imaging, the patient progressed to loading the titanium implant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_osseointegrated",
+    "lang": "en",
+    "word": "osseointegrated",
+    "pos": "adjective",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an implant or prosthesis that is anchored directly into bone rather than suspended over the skin",
+        "distractors": [
+          "made from a bone-like ceramic composite material",
+          "fitted using a traditional socket and liner system"
+        ],
+        "example": {
+          "text": "The osseointegrated fixture allowed the abutment to be attached directly to the femur.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_myoelectric",
+    "lang": "en",
+    "word": "myoelectric",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to a prosthetic control system that uses electrical signals detected from residual muscles to drive movement",
+        "distractors": [
+          "relating to a prosthesis powered by compressed air",
+          "relating to a socket shaped to match muscle contours"
+        ],
+        "example": {
+          "text": "The myoelectric hand opened and closed in response to signals from her forearm muscles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_residuum",
+    "lang": "en",
+    "word": "residuum",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the portion of a limb remaining after amputation, onto which a prosthesis is fitted",
+        "distractors": [
+          "the socket component that encases the remaining limb",
+          "the scar tissue formed at a surgical incision site"
+        ],
+        "example": {
+          "text": "The prosthetist measured the residuum's circumference at several levels to design the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prosthetist",
+    "lang": "en",
+    "word": "prosthetist",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a clinician trained to design, fabricate, and fit artificial limbs for patients",
+        "distractors": [
+          "a surgeon who specializes in amputation procedures",
+          "a technician who repairs mobility equipment such as wheelchairs"
+        ],
+        "example": {
+          "text": "The prosthetist adjusted the socket alignment during the patient's follow-up visit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_orthotist",
+    "lang": "en",
+    "word": "orthotist",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a clinician trained to design, fabricate, and fit braces and supports that correct or assist limb and spine function",
+        "distractors": [
+          "a specialist who fits artificial limbs after amputation",
+          "a physical therapist who supervises gait retraining"
+        ],
+        "example": {
+          "text": "The orthotist cast the child's leg to fabricate a custom ankle-foot brace.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transtibial",
+    "lang": "en",
+    "word": "transtibial",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation or prosthesis level that occurs through the shin bone, below the knee",
+        "distractors": [
+          "occurring through the thigh bone, above the knee",
+          "occurring at the ankle joint without bone transection"
+        ],
+        "example": {
+          "text": "Her transtibial amputation left enough residual limb length for a stable socket fit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transfemoral",
+    "lang": "en",
+    "word": "transfemoral",
+    "pos": "adjective",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation or prosthesis level that occurs through the thigh bone, above the knee",
+        "distractors": [
+          "occurring through the shin bone, below the knee",
+          "occurring through the wrist joint"
+        ],
+        "example": {
+          "text": "A transfemoral prosthesis requires an artificial knee joint in addition to a socket and foot.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transhumeral",
+    "lang": "en",
+    "word": "transhumeral",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation or prosthesis level that occurs through the upper arm bone, above the elbow",
+        "distractors": [
+          "occurring through the forearm bones, below the elbow",
+          "occurring through the shoulder joint capsule"
+        ],
+        "example": {
+          "text": "The transhumeral socket needed a mechanical elbow to restore arm function.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transradial",
+    "lang": "en",
+    "word": "transradial",
+    "pos": "adjective",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation or prosthesis level that occurs through the forearm bones, below the elbow",
+        "distractors": [
+          "occurring through the upper arm bone, above the elbow",
+          "occurring through the fingers only"
+        ],
+        "example": {
+          "text": "A transradial residual limb often retains enough forearm rotation to aid prosthetic control.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_disarticulation",
+    "lang": "en",
+    "word": "disarticulation",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "amputation performed through a joint rather than through a bone shaft",
+        "distractors": [
+          "amputation performed by cutting cleanly across the middle of a long bone",
+          "surgical removal of scar tissue from a healed limb"
+        ],
+        "example": {
+          "text": "A knee disarticulation preserves the femoral condyles, giving the socket a broader bearing surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pylon",
+    "lang": "en",
+    "word": "pylon",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rigid tube or rod that connects a prosthetic socket to the foot or terminal component, forming the limb's structural shaft",
+        "distractors": [
+          "a flexible sleeve that seals the socket against the skin",
+          "the cushioned pad inside a liner"
+        ],
+        "example": {
+          "text": "The technician swapped the aluminum pylon for a carbon one to reduce the limb's overall weight.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cosmesis",
+    "lang": "en",
+    "word": "cosmesis",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the outer covering or shaping of a prosthesis designed to resemble natural skin and limb contours",
+        "distractors": [
+          "the internal frame that provides a prosthesis's structural strength",
+          "the electronic circuitry that controls a myoelectric hand"
+        ],
+        "example": {
+          "text": "The cosmesis was airbrushed to match her skin tone before the final fitting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thermoplastic",
+    "lang": "en",
+    "word": "thermoplastic",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a polymer that softens when heated and can be reshaped, then hardens again on cooling",
+        "distractors": [
+          "describing a material that hardens permanently once cured and cannot be reshaped",
+          "describing a metal alloy resistant to corrosion"
+        ],
+        "example": {
+          "text": "The technician heated the thermoplastic sheet in an oven before draping it over the positive model.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interface_liner",
+    "lang": "en",
+    "word": "interface liner",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a soft, form-fitting sleeve worn over the residuum that cushions and protects the skin against the rigid socket wall",
+        "distractors": [
+          "the rigid outer shell that gives a socket its shape",
+          "a metal fitting that locks the prosthesis to the pylon"
+        ],
+        "example": {
+          "text": "He rolled the gel interface liner onto his residual limb before donning the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pin-lock",
+    "lang": "en",
+    "word": "pin-lock",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a suspension mechanism in which a pin attached to the distal end of a liner locks into a ratcheting mechanism in the socket base",
+        "distractors": [
+          "a suction valve that removes air from the socket to hold it in place",
+          "a strap-and-buckle harness worn over the shoulder"
+        ],
+        "example": {
+          "text": "She pushed the liner's pin into the pin-lock until it clicked securely into the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shuttle_lock",
+    "lang": "en",
+    "word": "shuttle lock",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a suspension component that combines a locking pin with a manual release button to secure and release a prosthetic liner from the socket",
+        "distractors": [
+          "a hydraulic valve that controls knee swing speed",
+          "a fabric loop used to pull a socket onto the limb"
+        ],
+        "example": {
+          "text": "Pressing the shuttle lock's release button allowed him to doff the prosthesis quickly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sleeve_suspension",
+    "lang": "en",
+    "word": "sleeve suspension",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a method of holding a prosthesis onto the residual limb using a stretchable tube of fabric or rubber rolled over the socket and onto the skin above it",
+        "distractors": [
+          "a suspension method relying entirely on negative air pressure inside the socket",
+          "a rigid strap fastened around the waist"
+        ],
+        "example": {
+          "text": "The neoprene sleeve suspension gripped his thigh well above the socket's brim.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proprioception",
+    "lang": "en",
+    "word": "proprioception",
+    "pos": "noun",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sense of the position and movement of one's own body parts, including a prosthesis, without relying on vision",
+        "distractors": [
+          "the sense of touch localized to the fingertips",
+          "the ability to distinguish hot from cold surfaces"
+        ],
+        "example": {
+          "text": "Targeted reinnervation surgery aimed to restore a degree of proprioception for the myoelectric arm.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phantom_limb",
+    "lang": "en",
+    "word": "phantom limb",
+    "pos": "noun",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the perceived continued presence, and sometimes sensation or pain, of a limb after it has been amputated",
+        "distractors": [
+          "a decorative prosthetic cover shaped to mimic a missing limb",
+          "residual scar tissue left after socket revision surgery"
+        ],
+        "example": {
+          "text": "He described an itching sensation in his phantom limb months after the amputation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuroma",
+    "lang": "en",
+    "word": "neuroma",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mass of disorganized nerve fibers that can form at the cut end of a nerve after amputation and cause localized pain",
+        "distractors": [
+          "a benign cyst that forms within the socket liner",
+          "an area of thickened skin caused by repeated friction"
+        ],
+        "example": {
+          "text": "Imaging confirmed a neuroma at the site where the sciatic nerve had been transected.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reinnervation",
+    "lang": "en",
+    "word": "reinnervation",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the surgical or natural process of redirecting nerves to new muscle targets so they can generate detectable control signals",
+        "distractors": [
+          "the regrowth of skin over a healed amputation site",
+          "the process of fitting a socket to accommodate limb volume change"
+        ],
+        "example": {
+          "text": "Following reinnervation, the transferred nerves grew into the chest muscle and produced usable signals.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_osseoperception",
+    "lang": "en",
+    "word": "osseoperception",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ability to sense vibration, pressure, and movement transmitted through a bone-anchored implant, similar to natural bone sensation",
+        "distractors": [
+          "the surgical fusion of bone to a titanium implant",
+          "the visual perception of limb position in a mirror"
+        ],
+        "example": {
+          "text": "Patients with bone-anchored prostheses often report a form of osseoperception when walking on uneven ground.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_electromyography",
+    "lang": "en",
+    "word": "electromyography",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that records the electrical activity produced by contracting muscles, often used to control myoelectric prostheses",
+        "distractors": [
+          "an imaging technique that maps bone density around an implant",
+          "a method for measuring the pressure inside a prosthetic socket"
+        ],
+        "example": {
+          "text": "Surface electromyography detected the faint signal from his residual biceps.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stance_phase",
+    "lang": "en",
+    "word": "stance phase",
+    "pos": "noun",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the portion of the gait cycle during which a foot remains in contact with the ground bearing weight",
+        "distractors": [
+          "the portion of the gait cycle when the leg swings forward through the air",
+          "the moment a walker changes direction"
+        ],
+        "example": {
+          "text": "The microprocessor knee provided extra stability throughout the stance phase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_swing_phase",
+    "lang": "en",
+    "word": "swing phase",
+    "pos": "noun",
+    "freqRank": 23800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the portion of the gait cycle during which a foot is off the ground and moving forward",
+        "distractors": [
+          "the portion of the gait cycle when the foot bears full body weight",
+          "the interval between two consecutive footsteps on the same side"
+        ],
+        "example": {
+          "text": "A lightweight foot reduces the effort needed to advance the limb during swing phase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dorsiflexion",
+    "lang": "en",
+    "word": "dorsiflexion",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "upward movement of the foot at the ankle, bringing the toes toward the shin",
+        "distractors": [
+          "downward movement of the foot at the ankle, pointing the toes away from the shin",
+          "inward rotation of the foot toward the body's midline"
+        ],
+        "example": {
+          "text": "The dynamic ankle unit permitted a few degrees of dorsiflexion when climbing stairs.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plantarflexion",
+    "lang": "en",
+    "word": "plantarflexion",
+    "pos": "noun",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "downward movement of the foot at the ankle, pointing the toes away from the shin",
+        "distractors": [
+          "upward movement of the foot at the ankle, toward the shin",
+          "sideways tilting of the foot at the ankle"
+        ],
+        "example": {
+          "text": "The prosthetic foot's keel stored energy during plantarflexion and released it at push-off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_keel",
+    "lang": "en",
+    "word": "keel",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the internal structural spine of a prosthetic foot that determines its stiffness and flexibility during gait",
+        "distractors": [
+          "the outer cosmetic shell that covers a prosthetic foot",
+          "the strap that secures a shoe to a prosthetic foot"
+        ],
+        "example": {
+          "text": "A stiffer carbon keel gave the runner more energy return at push-off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microprocessor_knee",
+    "lang": "en",
+    "word": "microprocessor knee",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prosthetic knee joint that uses onboard sensors and a computer to continuously adjust resistance during walking",
+        "distractors": [
+          "a knee joint that locks rigidly in extension for stability",
+          "a knee joint powered entirely by the user's remaining thigh muscles"
+        ],
+        "example": {
+          "text": "The microprocessor knee sensed the change in terrain and adjusted its swing resistance automatically.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pneumatic",
+    "lang": "en",
+    "word": "pneumatic",
+    "pos": "adjective",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "operated or controlled by compressed air",
+        "distractors": [
+          "operated by hydraulic fluid under pressure",
+          "operated by an electric motor and gearbox"
+        ],
+        "example": {
+          "text": "A pneumatic cylinder cushioned the knee's extension at the end of swing phase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cadence",
+    "lang": "en",
+    "word": "cadence",
+    "pos": "noun",
+    "freqRank": 21200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rate at which a person takes steps while walking, typically measured in steps per minute",
+        "distractors": [
+          "the total distance covered during a single stride",
+          "the angle at which the foot strikes the ground"
+        ],
+        "example": {
+          "text": "The clinician tracked his cadence to evaluate how naturally he was walking on the new prosthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_orthosis",
+    "lang": "en",
+    "word": "orthosis",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an external device that supports, aligns, or corrects the function of a limb or the spine without replacing it",
+        "distractors": [
+          "a device that fully replaces a missing limb",
+          "a surgical implant placed inside a joint"
+        ],
+        "example": {
+          "text": "The ankle orthosis prevented her foot from dropping during the swing phase of gait.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contracture",
+    "lang": "en",
+    "word": "contracture",
+    "pos": "noun",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a permanent shortening and tightening of muscle or connective tissue that limits joint range of motion",
+        "distractors": [
+          "a temporary muscle spasm that resolves within minutes",
+          "a surgical technique for lengthening tendons"
+        ],
+        "example": {
+          "text": "A hip flexion contracture made it difficult to fit and align the transfemoral socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tenodesis",
+    "lang": "en",
+    "word": "tenodesis",
+    "pos": "noun",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical procedure that anchors a tendon to bone, sometimes used during amputation to preserve functional muscle tension",
+        "distractors": [
+          "a surgical procedure that removes a damaged nerve ending",
+          "a technique for stretching tight skin over a residual limb"
+        ],
+        "example": {
+          "text": "Tenodesis of the hamstring tendons helped stabilize the residual femur during weight bearing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_myodesis",
+    "lang": "en",
+    "word": "myodesis",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical technique that secures a muscle directly to bone at the end of an amputated limb to improve control and reduce muscle retraction",
+        "distractors": [
+          "a technique that attaches skin flaps together over the wound",
+          "a nonsurgical exercise program for strengthening residual muscles"
+        ],
+        "example": {
+          "text": "Myodesis of the quadriceps to the distal femur gave him better voluntary control of the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_myoplasty",
+    "lang": "en",
+    "word": "myoplasty",
+    "pos": "noun",
+    "freqRank": 36500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical technique that sutures opposing muscle groups to each other over the end of the bone during amputation, without anchoring to bone",
+        "distractors": [
+          "a procedure that grafts skin from another part of the body onto the residual limb",
+          "a technique for lengthening a shortened tendon"
+        ],
+        "example": {
+          "text": "The surgeon chose myoplasty rather than myodesis to preserve blood supply to the muscle flap.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transcutaneous",
+    "lang": "en",
+    "word": "transcutaneous",
+    "pos": "adjective",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "passing through or occurring across the skin",
+        "distractors": [
+          "occurring entirely beneath the skin's surface",
+          "occurring outside the body, away from any tissue contact"
+        ],
+        "example": {
+          "text": "Transcutaneous electrical stimulation was used to help manage his residual limb pain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_percutaneous",
+    "lang": "en",
+    "word": "percutaneous",
+    "pos": "adjective",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "performed or occurring through a puncture or opening in the skin, rather than through an open incision",
+        "distractors": [
+          "performed entirely outside the body without skin contact",
+          "performed by removing a large section of skin"
+        ],
+        "example": {
+          "text": "The osseointegrated abutment protrudes through a percutaneous opening at the end of the residuum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abutment",
+    "lang": "en",
+    "word": "abutment",
+    "pos": "noun",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the connecting component that protrudes from a bone-anchored implant and links it to the external prosthesis",
+        "distractors": [
+          "the cushioned pad lining the inside of a socket",
+          "the hinge mechanism inside a prosthetic elbow"
+        ],
+        "example": {
+          "text": "The prosthetist attached the pylon directly to the titanium abutment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_actuator",
+    "lang": "en",
+    "word": "actuator",
+    "pos": "noun",
+    "freqRank": 22200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a motor or mechanical component that converts a control signal into physical movement in a powered prosthesis",
+        "distractors": [
+          "a sensor that detects muscle contraction",
+          "a passive spring that stores energy during walking"
+        ],
+        "example": {
+          "text": "The actuator in the powered ankle drove plantarflexion during push-off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biocompatibility",
+    "lang": "en",
+    "word": "biocompatibility",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the quality of a material causing no harmful reaction when in contact with living tissue",
+        "distractors": [
+          "the ability of a material to conduct electrical signals",
+          "the resistance of a material to bending under load"
+        ],
+        "example": {
+          "text": "Titanium was selected for the implant because of its excellent biocompatibility.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_osteolysis",
+    "lang": "en",
+    "word": "osteolysis",
+    "pos": "noun",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual resorption or breakdown of bone tissue, often triggered by wear debris around an implant",
+        "distractors": [
+          "the formation of new bone around a healing fracture",
+          "the hardening of bone tissue with age"
+        ],
+        "example": {
+          "text": "Follow-up imaging revealed early osteolysis around the femoral stem.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_periprosthetic",
+    "lang": "en",
+    "word": "periprosthetic",
+    "pos": "adjective",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located in the tissue or bone immediately surrounding an implanted prosthesis",
+        "distractors": [
+          "located far from any implanted device",
+          "referring to the external cosmetic cover of a limb prosthesis"
+        ],
+        "example": {
+          "text": "A periprosthetic fracture near the implant required revision surgery.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arthroplasty",
+    "lang": "en",
+    "word": "arthroplasty",
+    "pos": "noun",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical procedure that reconstructs or replaces a joint, often with an artificial implant",
+        "distractors": [
+          "a surgical procedure that amputates a limb at the joint line",
+          "a nonsurgical technique for realigning a prosthetic socket"
+        ],
+        "example": {
+          "text": "She underwent hip arthroplasty to replace the worn joint surfaces.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_femoral_stem",
+    "lang": "en",
+    "word": "femoral stem",
+    "pos": "noun",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the elongated component of a hip implant that inserts into the shaft of the thigh bone",
+        "distractors": [
+          "the cup-shaped component that lines the hip socket",
+          "the flexible liner worn inside a leg prosthesis"
+        ],
+        "example": {
+          "text": "The surgeon selected a cementless femoral stem for better long-term bone integration.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_acetabular_cup",
+    "lang": "en",
+    "word": "acetabular cup",
+    "pos": "noun",
+    "freqRank": 27600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the hemispherical component of a hip implant that replaces the socket portion of the hip joint",
+        "distractors": [
+          "the rod-shaped component inserted into the femur",
+          "the outer shell of a below-knee prosthetic socket"
+        ],
+        "example": {
+          "text": "The acetabular cup was press-fit into the reamed pelvic bone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_articulation",
+    "lang": "en",
+    "word": "articulation",
+    "pos": "noun",
+    "freqRank": 20800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point or mechanism where two rigid prosthetic or anatomical components meet and allow relative movement",
+        "distractors": [
+          "the outer cosmetic finish applied to a prosthetic limb",
+          "the electrical connection between a liner and a socket"
+        ],
+        "example": {
+          "text": "Wear at the knee's articulation eventually required replacing the bushing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kinematics",
+    "lang": "en",
+    "word": "kinematics",
+    "pos": "noun",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of motion, including joint angles and limb positions, without regard to the forces that cause it",
+        "distractors": [
+          "the study of the forces that cause movement",
+          "the study of muscle electrical activity during contraction"
+        ],
+        "example": {
+          "text": "Motion capture recorded the kinematics of his gait before and after the socket adjustment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kinetics",
+    "lang": "en",
+    "word": "kinetics",
+    "pos": "noun",
+    "freqRank": 25700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of the forces, such as ground reaction and joint moments, that produce or result from movement",
+        "distractors": [
+          "the study of joint angles and limb trajectories without reference to force",
+          "the study of nerve signal transmission speed"
+        ],
+        "example": {
+          "text": "The kinetics of his gait showed excessive loading on the sound limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ground_reaction_force",
+    "lang": "en",
+    "word": "ground reaction force",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the force exerted by the ground on a body in contact with it, measured to analyze how a person loads a prosthesis during walking",
+        "distractors": [
+          "the resistance a knee unit provides during swing phase",
+          "the friction between a liner and the skin"
+        ],
+        "example": {
+          "text": "A force plate measured the ground reaction force as he stepped onto the prosthetic foot.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_biofeedback",
+    "lang": "en",
+    "word": "biofeedback",
+    "pos": "noun",
+    "freqRank": 23200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that provides a user with real-time information about a physiological process, such as muscle activity, to help them learn to control it",
+        "distractors": [
+          "a surgical technique for reconnecting severed nerves",
+          "a passive suspension method using elastic material"
+        ],
+        "example": {
+          "text": "Biofeedback training helped him learn to generate a cleaner myoelectric signal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cineplasty",
+    "lang": "en",
+    "word": "cineplasty",
+    "pos": "noun",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a historical surgical technique that creates a skin-lined muscle tunnel to mechanically operate a prosthesis directly from muscle contraction",
+        "distractors": [
+          "a modern technique for anchoring a prosthesis directly to bone",
+          "a method for grafting skin over an amputation site"
+        ],
+        "example": {
+          "text": "Cineplasty, once used to power early prosthetic hands, has largely been replaced by myoelectric control.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_body-powered",
+    "lang": "en",
+    "word": "body-powered",
+    "pos": "adjective",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a prosthesis that is operated by the user's own body movements, transmitted through a cable and harness, rather than by an external power source",
+        "distractors": [
+          "describing a prosthesis powered by a rechargeable battery and motor",
+          "describing a prosthesis anchored directly to bone"
+        ],
+        "example": {
+          "text": "He preferred his body-powered hook for heavy outdoor work because of its durability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_terminal_device",
+    "lang": "en",
+    "word": "terminal device",
+    "pos": "noun",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the functional end component of an upper-limb prosthesis, such as a hand or hook, that performs grasping tasks",
+        "distractors": [
+          "the socket that encloses the residual limb",
+          "the battery pack that powers a myoelectric arm"
+        ],
+        "example": {
+          "text": "She swapped the cosmetic hand for a split-hook terminal device before working in the garden.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_split_hook",
+    "lang": "en",
+    "word": "split hook",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a body-powered terminal device with two curved prongs that open and close to grasp objects",
+        "distractors": [
+          "a myoelectric hand with five independently moving fingers",
+          "a suction valve mounted at the base of a leg socket"
+        ],
+        "example": {
+          "text": "The split hook's narrow tips let him pick up small tools with precision.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_don",
+    "lang": "en",
+    "word": "don",
+    "pos": "verb",
+    "freqRank": 20200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to put on a prosthesis, liner, or orthotic device",
+        "distractors": [
+          "to remove a prosthesis or orthotic device",
+          "to recharge the battery of a powered prosthesis"
+        ],
+        "example": {
+          "text": "He learned to don the liner smoothly before rolling it onto his residual limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_doff",
+    "lang": "en",
+    "word": "doff",
+    "pos": "verb",
+    "freqRank": 21800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to remove a prosthesis, liner, or orthotic device",
+        "distractors": [
+          "to put on a prosthesis or orthotic device",
+          "to adjust the alignment of a socket"
+        ],
+        "example": {
+          "text": "She doffed the prosthesis each night to let her skin breathe.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shrinker",
+    "lang": "en",
+    "word": "shrinker",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an elastic compression garment worn over a residual limb to control swelling and shape it for prosthetic fitting",
+        "distractors": [
+          "a rigid plaster cast applied immediately after amputation surgery",
+          "a cushioned liner worn inside the socket during walking"
+        ],
+        "example": {
+          "text": "The nurse showed him how to apply the shrinker between prosthesis wearing sessions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_desensitization",
+    "lang": "en",
+    "word": "desensitization",
+    "pos": "noun",
+    "freqRank": 26600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a graduated therapy technique that reduces excessive skin sensitivity on a residual limb by repeated controlled stimulation",
+        "distractors": [
+          "a surgical procedure that removes damaged nerve endings",
+          "a fitting technique that increases socket suction"
+        ],
+        "example": {
+          "text": "Massage and tapping were part of his desensitization program before prosthetic fitting began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_varus",
+    "lang": "en",
+    "word": "varus",
+    "pos": "noun",
+    "freqRank": 24600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an alignment deformity in which a limb segment angles inward toward the body's midline relative to the joint below it",
+        "distractors": [
+          "an alignment deformity in which a limb segment angles outward, away from the midline",
+          "an excessive forward bending of a joint"
+        ],
+        "example": {
+          "text": "Uncorrected varus at the knee altered the loading pattern through the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_valgus",
+    "lang": "en",
+    "word": "valgus",
+    "pos": "noun",
+    "freqRank": 24700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an alignment deformity in which a limb segment angles outward, away from the body's midline, relative to the joint below it",
+        "distractors": [
+          "an alignment deformity in which a limb segment angles inward, toward the midline",
+          "an abnormal backward bending of a joint"
+        ],
+        "example": {
+          "text": "The orthotist added a wedge to the brace to correct the child's knee valgus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bench_alignment",
+    "lang": "en",
+    "word": "bench alignment",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the initial setup of a prosthesis's components performed on a workbench using reference lines, before the patient stands or walks",
+        "distractors": [
+          "the final fine-tuning of a prosthesis performed while the patient walks",
+          "a measurement of residual limb volume taken before casting"
+        ],
+        "example": {
+          "text": "Bench alignment positioned the socket, knee, and foot along a standard reference line.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dynamic_alignment",
+    "lang": "en",
+    "word": "dynamic alignment",
+    "pos": "noun",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fine-tuning of a prosthesis's component angles and positions performed while the patient is standing and walking",
+        "distractors": [
+          "the initial setup of components on a workbench before fitting",
+          "a measurement of muscle signal strength during casting"
+        ],
+        "example": {
+          "text": "During dynamic alignment, the prosthetist adjusted the socket angle until his gait looked symmetrical.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flexion_contracture",
+    "lang": "en",
+    "word": "flexion contracture",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fixed bending deformity of a joint that prevents it from fully straightening",
+        "distractors": [
+          "a fixed deformity that prevents a joint from bending at all",
+          "a temporary tightness that resolves with a few minutes of stretching"
+        ],
+        "example": {
+          "text": "A hip flexion contracture complicated the alignment of his transfemoral prosthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pistoning",
+    "lang": "en",
+    "word": "pistoning",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "excessive up-and-down movement of the residual limb inside the socket during walking, usually indicating poor suspension",
+        "distractors": [
+          "a rocking side-to-side motion of the socket during standing",
+          "the sound made by a hydraulic knee during swing phase"
+        ],
+        "example": {
+          "text": "Visible pistoning at the socket brim suggested the liner needed a size adjustment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_total_surface_bearing",
+    "lang": "en",
+    "word": "total surface bearing",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a socket design philosophy in which weight-bearing pressure is distributed evenly across the entire surface of the residual limb",
+        "distractors": [
+          "a socket design that concentrates pressure only at the distal end of the limb",
+          "a suspension method relying solely on a waist belt"
+        ],
+        "example": {
+          "text": "The total surface bearing socket spread load evenly rather than concentrating it at pressure-tolerant areas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_patellar_tendon_bearing",
+    "lang": "en",
+    "word": "patellar tendon bearing",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a below-knee socket design that concentrates a portion of weight-bearing load on the patellar tendon area",
+        "distractors": [
+          "a socket design that bears load entirely on the sole of the residual foot",
+          "a suspension system that anchors the prosthesis to the pelvis"
+        ],
+        "example": {
+          "text": "The patellar tendon bearing socket relieved pressure from the sensitive shin crest.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ischial_containment",
+    "lang": "en",
+    "word": "ischial containment",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a transfemoral socket design that encloses the ischial tuberosity within the socket walls for improved stability and control",
+        "distractors": [
+          "a socket design that leaves the ischial tuberosity resting on a narrow posterior shelf",
+          "a below-knee socket shaped to bear load on the patellar tendon"
+        ],
+        "example": {
+          "text": "The ischial containment socket gave her better mediolateral control during stance phase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quadrilateral_socket",
+    "lang": "en",
+    "word": "quadrilateral socket",
+    "pos": "noun",
+    "freqRank": 35200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an older transfemoral socket design with a rectangular cross-section featuring a posterior shelf that supports the ischial tuberosity",
+        "distractors": [
+          "a modern socket design that fully encloses the ischial tuberosity",
+          "a below-knee socket shaped around the tibial condyles"
+        ],
+        "example": {
+          "text": "The quadrilateral socket has largely been replaced by ischial containment designs for most patients.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_supracondylar",
+    "lang": "en",
+    "word": "supracondylar",
+    "pos": "adjective",
+    "freqRank": 31800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "located just above the rounded condyles at the end of a long bone, often referring to a suspension or socket feature that grips above the knee",
+        "distractors": [
+          "located just below the ankle joint",
+          "located within the shaft of a long bone"
+        ],
+        "example": {
+          "text": "The supracondylar cuff wrapped snugly above the femoral condyles to help suspend the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vaulting",
+    "lang": "en",
+    "word": "vaulting",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gait deviation in which a person rises onto the toes of the sound limb to give the prosthetic limb extra clearance during swing",
+        "distractors": [
+          "a smooth, symmetrical swing of the prosthetic leg through the air",
+          "an exaggerated backward lean of the trunk during stance"
+        ],
+        "example": {
+          "text": "Vaulting on the sound side often indicates the prosthetic knee isn't flexing enough during swing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_circumduction",
+    "lang": "en",
+    "word": "circumduction",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gait deviation in which the prosthetic leg swings outward in a wide arc to clear the ground, instead of moving straight forward",
+        "distractors": [
+          "a straight forward swing of the leg with no lateral movement",
+          "an excessive bending of the knee during stance phase"
+        ],
+        "example": {
+          "text": "Circumduction of the prosthetic leg suggested the socket was too long for adequate toe clearance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_drop-off",
+    "lang": "en",
+    "word": "drop-off",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gait characteristic in which the prosthetic foot rolls abruptly forward at the end of stance, producing a sudden dip in the pelvis",
+        "distractors": [
+          "a smooth, gradual rolling motion of the foot throughout stance",
+          "the moment the heel first touches the ground"
+        ],
+        "example": {
+          "text": "A stiffer keel reduced the drop-off she felt as her weight rolled past midstance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rollover_shape",
+    "lang": "en",
+    "word": "rollover shape",
+    "pos": "noun",
+    "freqRank": 36800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the curved path traced by the ankle-knee-hip alignment over the foot during stance phase, used to evaluate a prosthetic foot's walking dynamics",
+        "distractors": [
+          "the outer cosmetic contour of a prosthetic foot",
+          "the angle at which a foot is bolted to the pylon"
+        ],
+        "example": {
+          "text": "Engineers compared the rollover shape of several feet to find the smoothest walking motion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cocontraction",
+    "lang": "en",
+    "word": "cocontraction",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the simultaneous activation of opposing muscle groups, sometimes used deliberately as a myoelectric control signal to switch between prosthetic functions",
+        "distractors": [
+          "the alternating activation of muscles in a walking rhythm",
+          "the complete relaxation of all residual muscles"
+        ],
+        "example": {
+          "text": "A quick cocontraction of his flexor and extensor muscles switched the hand into wrist rotation mode.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_crosstalk",
+    "lang": "en",
+    "word": "crosstalk",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "unwanted electrical signal detected from a nearby muscle that interferes with the intended myoelectric control signal",
+        "distractors": [
+          "the mechanical friction between a liner and socket wall",
+          "the delay between muscle contraction and prosthetic movement"
+        ],
+        "example": {
+          "text": "Repositioning the electrode reduced crosstalk from the adjacent muscle group.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_trimline",
+    "lang": "en",
+    "word": "trimline",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the cut edge of a prosthetic or orthotic socket that defines its height and coverage over the limb",
+        "distractors": [
+          "the seam where two pieces of liner material are bonded together",
+          "the line marking where a cast is cut to remove it from the limb"
+        ],
+        "example": {
+          "text": "Lowering the anterior trimline improved his knee flexion while sitting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exoskeletal",
+    "lang": "en",
+    "word": "exoskeletal",
+    "pos": "adjective",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a prosthesis whose rigid outer shell provides the structural strength, rather than an internal frame",
+        "distractors": [
+          "describing a prosthesis built around a slender internal pylon with a soft cosmetic cover",
+          "describing a prosthesis anchored directly to bone"
+        ],
+        "example": {
+          "text": "Older exoskeletal limbs were carved and laminated to be strong enough to bear weight on their own shell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endoskeletal",
+    "lang": "en",
+    "word": "endoskeletal",
+    "pos": "adjective",
+    "freqRank": 29450,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a prosthesis whose structural strength comes from an internal pylon or frame, covered by a separate soft cosmetic shell",
+        "distractors": [
+          "describing a prosthesis whose outer shell itself provides structural strength",
+          "describing a prosthesis powered by an internal motor"
+        ],
+        "example": {
+          "text": "The endoskeletal design allowed the prosthetist to swap components without rebuilding the whole limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_four-bar_linkage",
+    "lang": "en",
+    "word": "four-bar linkage",
+    "pos": "noun",
+    "freqRank": 33400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a polycentric mechanical joint design using four connected links that gives a prosthetic knee a changing center of rotation for improved stability and swing clearance",
+        "distractors": [
+          "a single-hinge knee joint with one fixed axis of rotation",
+          "a hydraulic cylinder that dampens knee swing speed"
+        ],
+        "example": {
+          "text": "The four-bar linkage knee shifted its center of rotation to add stability during early stance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polycentric",
+    "lang": "en",
+    "word": "polycentric",
+    "pos": "adjective",
+    "freqRank": 27900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a joint mechanism, such as a prosthetic knee, whose axis of rotation shifts location during movement rather than staying fixed",
+        "distractors": [
+          "describing a joint mechanism with a single fixed axis of rotation",
+          "describing a joint that locks rigidly and cannot bend"
+        ],
+        "example": {
+          "text": "The polycentric knee's shifting axis reduced the risk of buckling on uneven ground.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_torsion_adapter",
+    "lang": "en",
+    "word": "torsion adapter",
+    "pos": "noun",
+    "freqRank": 34400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prosthetic component that absorbs rotational forces along the limb's long axis, reducing shear stress on the residual limb during activities like pivoting",
+        "distractors": [
+          "a component that locks the socket to prevent any rotation",
+          "a valve that regulates suction inside the socket"
+        ],
+        "example": {
+          "text": "A torsion adapter let the golfer rotate his hips without twisting the skin against the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_multi-axial_foot",
+    "lang": "en",
+    "word": "multi-axial foot",
+    "pos": "noun",
+    "freqRank": 33600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prosthetic foot design that permits movement in several planes, such as inversion, eversion, and rotation, to accommodate uneven terrain",
+        "distractors": [
+          "a prosthetic foot that only bends up and down at the ankle",
+          "a rigid foot with no moving components"
+        ],
+        "example": {
+          "text": "The multi-axial foot let him walk more comfortably on the sloped, rocky trail.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_elevated_vacuum",
+    "lang": "en",
+    "word": "elevated vacuum",
+    "pos": "noun",
+    "freqRank": 31400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a suspension system that uses a mechanical or electronic pump to maintain negative air pressure between the liner and socket, holding the limb securely and reducing pistoning",
+        "distractors": [
+          "a suspension system relying solely on a strap around the waist",
+          "a fixed pin-and-lock mechanism with no air seal"
+        ],
+        "example": {
+          "text": "The elevated vacuum system kept his volume more stable throughout the day than the pin-lock had.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sub-atmospheric",
+    "lang": "en",
+    "word": "sub-atmospheric",
+    "pos": "adjective",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing pressure inside a prosthetic socket that is lower than the surrounding air pressure, used to help hold the limb in place",
+        "distractors": [
+          "describing pressure inside a socket that is higher than surrounding air pressure",
+          "describing a socket with no measurable internal pressure difference"
+        ],
+        "example": {
+          "text": "Maintaining a sub-atmospheric environment inside the socket helped limit residual limb volume loss.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lanyard_suspension",
+    "lang": "en",
+    "word": "lanyard suspension",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a suspension method in which a strap attached to the liner threads through the socket and secures with a buckle or loop",
+        "distractors": [
+          "a suspension method using only negative air pressure",
+          "a rigid metal frame bolted around the residual limb"
+        ],
+        "example": {
+          "text": "He tightened the lanyard suspension strap until the liner seated fully in the socket.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bone-anchored",
+    "lang": "en",
+    "word": "bone-anchored",
+    "pos": "adjective",
+    "freqRank": 28400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a prosthesis attached directly to the skeleton through a surgically implanted fixture, rather than suspended by a socket",
+        "distractors": [
+          "describing a prosthesis held on by suction alone",
+          "describing a prosthesis covered entirely in cosmetic silicone"
+        ],
+        "example": {
+          "text": "The bone-anchored prosthesis eliminated the socket discomfort he had struggled with for years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stoma",
+    "lang": "en",
+    "word": "stoma",
+    "pos": "noun",
+    "freqRank": 24300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the small opening in the skin through which a percutaneous abutment passes in a bone-anchored prosthesis",
+        "distractors": [
+          "the socket wall's contact point with the skin",
+          "a surgical scar left after limb amputation"
+        ],
+        "example": {
+          "text": "Daily cleaning of the stoma was essential to prevent infection around the abutment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fenestration",
+    "lang": "en",
+    "word": "fenestration",
+    "pos": "noun",
+    "freqRank": 26900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an opening cut into a rigid socket wall to relieve pressure over a sensitive or bony area of the residual limb",
+        "distractors": [
+          "a padded lining glued to the inside of a socket",
+          "a valve used to release trapped air from a socket"
+        ],
+        "example": {
+          "text": "The prosthetist cut a small fenestration over the fibular head to relieve local pressure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rectification",
+    "lang": "en",
+    "word": "rectification",
+    "pos": "noun",
+    "freqRank": 27100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of modifying a plaster or digital model of the residual limb, removing or adding material over specific areas, to distribute pressure appropriately in the finished socket",
+        "distractors": [
+          "the process of hardening a plastic sheet by heating it",
+          "the process of aligning a prosthesis while the patient walks"
+        ],
+        "example": {
+          "text": "Careful rectification of the positive model relieved pressure over the shin crest.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_positive_model",
+    "lang": "en",
+    "word": "positive model",
+    "pos": "noun",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a solid replica of the residual limb, built up from a negative cast, used as the mold over which a socket is formed",
+        "distractors": [
+          "the hollow mold taken directly from the patient's limb",
+          "the finished socket ready for patient fitting"
+        ],
+        "example": {
+          "text": "The technician poured plaster into the negative cast to create the positive model.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_negative_cast",
+    "lang": "en",
+    "word": "negative cast",
+    "pos": "noun",
+    "freqRank": 26100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hollow mold taken directly from a residual limb, usually with plaster bandages, used to reproduce its shape",
+        "distractors": [
+          "a solid replica built up inside a mold of the limb",
+          "a digital scan converted directly into a finished socket"
+        ],
+        "example": {
+          "text": "The prosthetist wrapped the limb in plaster bandages to capture the negative cast.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_preparatory_prosthesis",
+    "lang": "en",
+    "word": "preparatory prosthesis",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an early, temporary prosthesis fitted soon after amputation to begin gait training while the residual limb shape is still changing",
+        "distractors": [
+          "the final, permanent prosthesis fitted once limb volume has stabilized",
+          "a rigid dressing applied in the operating room"
+        ],
+        "example": {
+          "text": "He used a preparatory prosthesis for several months before being fitted with his definitive limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_definitive_prosthesis",
+    "lang": "en",
+    "word": "definitive prosthesis",
+    "pos": "noun",
+    "freqRank": 30100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the final, more durable prosthesis fitted once the residual limb's size and shape have stabilized",
+        "distractors": [
+          "an early temporary prosthesis used during initial gait training",
+          "a plaster dressing applied immediately after surgery"
+        ],
+        "example": {
+          "text": "Once his limb volume plateaued, he was measured for his definitive prosthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rigid_dressing",
+    "lang": "en",
+    "word": "rigid dressing",
+    "pos": "noun",
+    "freqRank": 28100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a firm plaster or fiberglass covering applied over the residual limb immediately after amputation surgery to control swelling and protect the wound",
+        "distractors": [
+          "a soft compression garment worn between prosthesis wearing sessions",
+          "a flexible liner used inside the definitive socket"
+        ],
+        "example": {
+          "text": "The surgical team applied a rigid dressing in the operating room to reduce postoperative swelling.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_skew_flap",
+    "lang": "en",
+    "word": "skew flap",
+    "pos": "noun",
+    "freqRank": 37500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical technique for amputation in which skin flaps are cut at an angle to improve blood supply and create a more tapered residual limb",
+        "distractors": [
+          "a technique for anchoring muscle directly to bone",
+          "a method for attaching a percutaneous abutment"
+        ],
+        "example": {
+          "text": "The surgeon used a skew flap technique to shape a well-vascularized residual limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemipelvectomy",
+    "lang": "en",
+    "word": "hemipelvectomy",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a radical amputation that removes an entire lower limb along with part or all of the pelvis on that side",
+        "distractors": [
+          "an amputation performed through the hip joint that preserves the pelvis",
+          "a below-knee amputation that spares the knee joint"
+        ],
+        "example": {
+          "text": "Hemipelvectomy is reserved for cases where a tumor extends into the pelvic bone itself.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hip_disarticulation",
+    "lang": "en",
+    "word": "hip disarticulation",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an amputation performed through the hip joint, removing the entire lower limb while preserving the pelvis",
+        "distractors": [
+          "an amputation that removes part of the pelvis along with the limb",
+          "an amputation performed through the femur shaft"
+        ],
+        "example": {
+          "text": "Hip disarticulation prostheses use a socket that wraps around the pelvis for support.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_knee_disarticulation",
+    "lang": "en",
+    "word": "knee disarticulation",
+    "pos": "noun",
+    "freqRank": 31700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an amputation performed through the knee joint, preserving the full length of the femur and its condyles",
+        "distractors": [
+          "an amputation performed through the shaft of the femur",
+          "an amputation performed through the ankle joint"
+        ],
+        "example": {
+          "text": "Knee disarticulation gives a longer lever arm and a broader end-bearing surface than a standard transfemoral amputation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wrist_disarticulation",
+    "lang": "en",
+    "word": "wrist disarticulation",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an amputation performed through the wrist joint, preserving the full length of the forearm",
+        "distractors": [
+          "an amputation performed through the mid-forearm bones",
+          "an amputation performed through the elbow joint"
+        ],
+        "example": {
+          "text": "Wrist disarticulation preserves forearm rotation, which helps with prosthetic control.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transcarpal",
+    "lang": "en",
+    "word": "transcarpal",
+    "pos": "adjective",
+    "freqRank": 32100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation or prosthesis level that occurs through the small bones of the wrist",
+        "distractors": [
+          "occurring through the forearm bones above the wrist",
+          "occurring through the finger joints only"
+        ],
+        "example": {
+          "text": "A transcarpal amputation preserved enough hand structure for a partial prosthesis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_passive_prosthesis",
+    "lang": "en",
+    "word": "passive prosthesis",
+    "pos": "noun",
+    "freqRank": 27300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prosthesis, typically for the hand, designed to restore appearance and light functional support without active moving parts",
+        "distractors": [
+          "a prosthesis with a battery-powered gripping mechanism",
+          "a prosthesis controlled entirely by residual muscle signals"
+        ],
+        "example": {
+          "text": "He chose a passive prosthesis for its lifelike appearance during formal occasions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_limb_length_discrepancy",
+    "lang": "en",
+    "word": "limb length discrepancy",
+    "pos": "noun",
+    "freqRank": 29900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a difference in length between two limbs, or between a residual limb and its prosthesis, that can affect gait symmetry",
+        "distractors": [
+          "a difference in circumference between a residual limb and its socket",
+          "an imbalance in muscle strength between two limbs"
+        ],
+        "example": {
+          "text": "A small limb length discrepancy was corrected by adjusting the pylon's height.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_equinus",
+    "lang": "en",
+    "word": "equinus",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a foot deformity or prosthetic foot position in which the ankle is held in excessive plantarflexion, with the heel unable to reach the ground",
+        "distractors": [
+          "a foot deformity in which the ankle is held in excessive dorsiflexion",
+          "an inward rolling of the ankle during stance"
+        ],
+        "example": {
+          "text": "The fixed equinus position of the prosthetic foot required a matching heel height in his shoes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_calcaneal",
+    "lang": "en",
+    "word": "calcaneal",
+    "pos": "adjective",
+    "freqRank": 23400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to the heel bone",
+        "distractors": [
+          "relating to the bones of the forearm",
+          "relating to the kneecap"
+        ],
+        "example": {
+          "text": "The surgeon preserved a calcaneal weight-bearing pad during the partial foot amputation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transmetatarsal",
+    "lang": "en",
+    "word": "transmetatarsal",
+    "pos": "adjective",
+    "freqRank": 32300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an amputation level that occurs through the long bones of the midfoot, preserving the heel and part of the arch",
+        "distractors": [
+          "describing an amputation level that occurs through the ankle joint",
+          "describing an amputation level that occurs through the toe joints only"
+        ],
+        "example": {
+          "text": "A transmetatarsal amputation left him with a shortened but functional foot for partial foot prosthetics.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ray_amputation",
+    "lang": "en",
+    "word": "ray amputation",
+    "pos": "noun",
+    "freqRank": 30300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the surgical removal of a toe or finger together with all or part of its corresponding long bone in the foot or hand",
+        "distractors": [
+          "the removal of an entire limb through a joint",
+          "the removal of skin and soft tissue only, preserving all bones"
+        ],
+        "example": {
+          "text": "A ray amputation of the fifth toe preserved more of the foot's weight-bearing surface than a full transmetatarsal cut.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_toe_filler",
+    "lang": "en",
+    "word": "toe filler",
+    "pos": "noun",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prosthetic component that replaces missing toes and fills the front of a shoe to maintain balance and appearance after a partial foot amputation",
+        "distractors": [
+          "a rigid brace worn to correct hammer toe deformities",
+          "a cushioned pad placed inside a below-knee socket"
+        ],
+        "example": {
+          "text": "The toe filler restored a natural shoe fit after his partial foot amputation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ankle-foot_orthosis",
+    "lang": "en",
+    "word": "ankle-foot orthosis",
+    "pos": "noun",
+    "freqRank": 26300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a brace that spans the ankle and foot to support, align, or assist their movement, typically worn inside a shoe",
+        "distractors": [
+          "a prosthesis that fully replaces a missing foot and ankle",
+          "a brace that spans the knee and ankle only"
+        ],
+        "example": {
+          "text": "The ankle-foot orthosis prevented foot drop during the swing phase of her gait.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_knee-ankle-foot_orthosis",
+    "lang": "en",
+    "word": "knee-ankle-foot orthosis",
+    "pos": "noun",
+    "freqRank": 27700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a brace that spans the knee, ankle, and foot to support or control movement across all three joints",
+        "distractors": [
+          "a brace limited to the ankle and foot joints",
+          "a prosthesis that replaces the entire lower limb"
+        ],
+        "example": {
+          "text": "He was fitted with a knee-ankle-foot orthosis to stabilize his leg after the nerve injury.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_functional_electrical_stimulation",
+    "lang": "en",
+    "word": "functional electrical stimulation",
+    "pos": "noun",
+    "freqRank": 28900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that applies controlled electrical pulses to paralyzed or weakened muscles to produce functional movement, such as during walking",
+        "distractors": [
+          "a technique that records muscle signals to control a myoelectric prosthesis",
+          "a surgical method for redirecting nerves to new muscle targets"
+        ],
+        "example": {
+          "text": "Functional electrical stimulation triggered his ankle muscles to lift the foot during each step.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neuroprosthesis",
+    "lang": "en",
+    "word": "neuroprosthesis",
+    "pos": "noun",
+    "freqRank": 29100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a device that interfaces with the nervous system to restore or replace a lost sensory or motor function",
+        "distractors": [
+          "a prosthesis that replaces a missing limb using only mechanical linkages",
+          "a socket lined with pressure-sensing pads"
+        ],
+        "example": {
+          "text": "The neuroprosthesis relayed sensory information directly to nerves in his residual limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_retinal_prosthesis",
+    "lang": "en",
+    "word": "retinal prosthesis",
+    "pos": "noun",
+    "freqRank": 30700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an implanted device that electrically stimulates remaining retinal cells to restore a limited degree of vision",
+        "distractors": [
+          "an external device that magnifies images for people with low vision",
+          "a hearing device implanted in the inner ear"
+        ],
+        "example": {
+          "text": "The retinal prosthesis allowed him to perceive patterns of light and dark after years of blindness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_peripheral_nerve_interface",
+    "lang": "en",
+    "word": "peripheral nerve interface",
+    "pos": "noun",
+    "freqRank": 34600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a device implanted on or within a peripheral nerve to record signals from, or deliver stimulation to, that nerve for prosthetic control or sensory feedback",
+        "distractors": [
+          "a socket component that grips the residual limb's outer surface",
+          "a surface electrode taped onto the skin over a muscle"
+        ],
+        "example": {
+          "text": "The peripheral nerve interface let him feel simulated touch through his prosthetic fingertips.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vibrotactile",
+    "lang": "en",
+    "word": "vibrotactile",
+    "pos": "adjective",
+    "freqRank": 33100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to feedback delivered through vibration sensed by the skin",
+        "distractors": [
+          "relating to feedback delivered through electrical current felt as tingling",
+          "relating to feedback delivered through changes in socket pressure alone"
+        ],
+        "example": {
+          "text": "A vibrotactile motor on his forearm buzzed harder as his prosthetic hand gripped more tightly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_allodynia",
+    "lang": "en",
+    "word": "allodynia",
+    "pos": "noun",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "pain caused by a stimulus that would not normally provoke pain, such as light touch",
+        "distractors": [
+          "an increased pain response to a stimulus that is normally painful",
+          "complete loss of sensation in an area of skin"
+        ],
+        "example": {
+          "text": "Allodynia around his incision made even the liner's light contact feel painful at first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dysesthesia",
+    "lang": "en",
+    "word": "dysesthesia",
+    "pos": "noun",
+    "freqRank": 31100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unpleasant, abnormal sensation such as burning or tingling, often occurring spontaneously in a residual limb",
+        "distractors": [
+          "the complete absence of sensation in a limb",
+          "a normal sensation of pressure from a well-fitted socket"
+        ],
+        "example": {
+          "text": "He described a burning dysesthesia along the incision line that worsened at night.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_causalgia",
+    "lang": "en",
+    "word": "causalgia",
+    "pos": "noun",
+    "freqRank": 34100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an older term for a severe, persistent burning pain following nerve injury, now generally classified under complex regional pain syndrome",
+        "distractors": [
+          "a mild, temporary soreness following a new socket fitting",
+          "numbness resulting from prolonged pressure on a nerve"
+        ],
+        "example": {
+          "text": "Historical case reports of causalgia after limb injury described burning pain out of proportion to the wound.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_verrucous_hyperplasia",
+    "lang": "en",
+    "word": "verrucous hyperplasia",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thickened, wart-like overgrowth of skin that can develop on a residual limb from chronic irritation or poor socket fit",
+        "distractors": [
+          "a smooth, painless swelling caused by fluid buildup under the liner",
+          "a thinning of the skin from prolonged pressure"
+        ],
+        "example": {
+          "text": "Verrucous hyperplasia developed at the distal end of his limb where the socket fit poorly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shear_stress",
+    "lang": "en",
+    "word": "shear stress",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a force that acts parallel to a surface, such as skin against a socket wall, rather than perpendicular to it, and is a major cause of skin breakdown",
+        "distractors": [
+          "a force that pushes straight into a surface, compressing the tissue beneath it",
+          "the total weight transmitted through a prosthesis during standing"
+        ],
+        "example": {
+          "text": "Excessive shear stress at the socket brim led to a friction blister within days.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_durometer",
+    "lang": "en",
+    "word": "durometer",
+    "pos": "noun",
+    "freqRank": 35400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instrument used to measure the hardness of a material, such as a prosthetic liner or foot cushion",
+        "distractors": [
+          "an instrument used to measure the electrical resistance of a myoelectric signal",
+          "an instrument used to measure limb circumference"
+        ],
+        "example": {
+          "text": "The manufacturer used a durometer to confirm the liner's gel met the specified softness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_viscoelastic",
+    "lang": "en",
+    "word": "viscoelastic",
+    "pos": "adjective",
+    "freqRank": 28700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material that exhibits both viscous and elastic behavior, deforming under load and gradually returning to shape over time",
+        "distractors": [
+          "describing a material that is perfectly rigid and does not deform under load",
+          "describing a material that shatters rather than bends under stress"
+        ],
+        "example": {
+          "text": "The viscoelastic gel liner slowly conformed to the shape of his residual limb throughout the day.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thermoformable",
+    "lang": "en",
+    "word": "thermoformable",
+    "pos": "adjective",
+    "freqRank": 31300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material capable of being softened by heat and molded into a new shape",
+        "distractors": [
+          "describing a material that cannot be reshaped once manufactured",
+          "describing a material that conducts electrical signals"
+        ],
+        "example": {
+          "text": "The clinic kept a supply of thermoformable sheets for fabricating quick check sockets.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_terminal_stance",
+    "lang": "en",
+    "word": "terminal stance",
+    "pos": "noun",
+    "freqRank": 32400,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the late portion of the stance phase of gait, occurring as the body's weight moves ahead of the supporting foot before push-off",
+        "distractors": [
+          "the moment the heel first contacts the ground",
+          "the portion of the gait cycle when the foot is airborne"
+        ],
+        "example": {
+          "text": "The prosthetic foot's keel released stored energy during terminal stance to assist forward propulsion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_initial_contact",
+    "lang": "en",
+    "word": "initial contact",
+    "pos": "noun",
+    "freqRank": 20900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the instant in the gait cycle when the foot first touches the ground, beginning the stance phase",
+        "distractors": [
+          "the instant the foot leaves the ground to begin swing phase",
+          "the midpoint of stance when the body passes directly over the foot"
+        ],
+        "example": {
+          "text": "A softer heel wedge softened the impact felt at initial contact.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pre-swing",
+    "lang": "en",
+    "word": "pre-swing",
+    "pos": "noun",
+    "freqRank": 33300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the final portion of stance phase, immediately before the foot lifts off the ground to begin swing phase",
+        "distractors": [
+          "the initial portion of stance phase, right after the foot touches down",
+          "the midpoint of swing phase when the leg is directly beneath the hip"
+        ],
+        "example": {
+          "text": "During pre-swing, the prosthetic knee began to unlock in preparation for the swing phase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_loading_response",
+    "lang": "en",
+    "word": "loading response",
+    "pos": "noun",
+    "freqRank": 29300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the early portion of stance phase in which the body's weight is transferred fully onto the newly planted foot",
+        "distractors": [
+          "the final portion of stance phase before toe-off",
+          "the portion of swing phase when the leg accelerates forward"
+        ],
+        "example": {
+          "text": "The microprocessor knee added extra resistance during loading response to prevent buckling.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_midstance",
+    "lang": "en",
+    "word": "midstance",
+    "pos": "noun",
+    "freqRank": 30150,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the phase of gait in which the body's weight passes directly over the supporting foot",
+        "distractors": [
+          "the phase of gait immediately following heel contact",
+          "the phase of gait when the foot is swinging through the air"
+        ],
+        "example": {
+          "text": "He felt the most stable during midstance, when his weight was centered over the prosthetic foot.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_toe-off",
+    "lang": "en",
+    "word": "toe-off",
+    "pos": "noun",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point in the gait cycle at which the toes leave the ground, ending stance phase and beginning swing phase",
+        "distractors": [
+          "the point at which the heel first touches the ground",
+          "the point at which body weight is centered over the foot"
+        ],
+        "example": {
+          "text": "A responsive keel gave him a noticeable push at toe-off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_socket",
+    "lang": "en",
+    "word": "socket",
+    "pos": "noun",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the custom-molded portion of a prosthesis that encloses and interfaces directly with the residual limb",
+        "distractors": [
+          "the mechanical joint that allows a prosthetic knee to bend",
+          "the outer cosmetic cover that gives a limb a lifelike appearance"
+        ],
+        "example": {
+          "text": "The prosthetist reshaped the socket after the patient's residual limb changed volume.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proportional_control",
+    "lang": "en",
+    "word": "proportional control",
+    "pos": "noun",
+    "freqRank": 30350,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a myoelectric control strategy in which the speed or force of a prosthetic movement varies with the strength of the muscle signal",
+        "distractors": [
+          "a control strategy in which movement speed is fixed regardless of signal strength",
+          "a control strategy based solely on mechanical cable tension"
+        ],
+        "example": {
+          "text": "With proportional control, a stronger muscle contraction closed the hand more quickly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_laminate",
+    "lang": "en",
+    "word": "laminate",
+    "pos": "verb",
+    "freqRank": 22600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to build up layers of resin-impregnated fabric over a mold to form a rigid prosthetic socket or component",
+        "distractors": [
+          "to remove excess plaster from a cast before it fully hardens",
+          "to record electrical activity from a residual muscle"
+        ],
+        "example": {
+          "text": "The technician began to laminate the socket, layering carbon fiber sleeves over the positive model.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_check_socket",
+    "lang": "en",
+    "word": "check socket",
+    "pos": "noun",
+    "freqRank": 28300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a clear, temporary test socket used to evaluate fit and alignment before fabricating the final socket",
+        "distractors": [
+          "a padded liner worn permanently inside the definitive socket",
+          "a rigid dressing applied in the operating room after surgery"
+        ],
+        "example": {
+          "text": "The clear check socket let the prosthetist see pressure areas on the skin as the patient stood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_distal_end_pad",
+    "lang": "en",
+    "word": "distal end pad",
+    "pos": "noun",
+    "freqRank": 33700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cushioned component placed at the bottom of a prosthetic socket to protect the sensitive end of the residual limb",
+        "distractors": [
+          "a strap that wraps around the top of the socket for suspension",
+          "a rigid plate that anchors the pylon to the socket"
+        ],
+        "example": {
+          "text": "A softer distal end pad relieved the pressure he felt at the tip of his residual limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_goniometer",
+    "lang": "en",
+    "word": "goniometer",
+    "pos": "noun",
+    "freqRank": 26700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instrument used to measure the angle of a joint, such as during a range-of-motion assessment",
+        "distractors": [
+          "an instrument used to measure the hardness of a liner material",
+          "an instrument used to record muscle electrical activity"
+        ],
+        "example": {
+          "text": "The clinician used a goniometer to measure the residual knee's flexion contracture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dynamometer",
+    "lang": "en",
+    "word": "dynamometer",
+    "pos": "noun",
+    "freqRank": 27050,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instrument used to measure force or strength, such as grip force produced through a prosthetic hand",
+        "distractors": [
+          "an instrument used to measure the angle of a joint",
+          "an instrument used to detect electrical crosstalk between muscles"
+        ],
+        "example": {
+          "text": "A dynamometer confirmed the myoelectric hand could generate enough grip force to hold a cup.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_load_cell",
+    "lang": "en",
+    "word": "load cell",
+    "pos": "noun",
+    "freqRank": 25300,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sensor that converts mechanical force into an electrical signal, used to measure the load passing through a prosthetic limb",
+        "distractors": [
+          "a sensor that measures the electrical activity of a muscle",
+          "a battery module that powers a myoelectric prosthesis"
+        ],
+        "example": {
+          "text": "Researchers embedded a load cell in the pylon to record forces during each step.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strain_gauge",
+    "lang": "en",
+    "word": "strain gauge",
+    "pos": "noun",
+    "freqRank": 26050,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sensor that measures the amount a material deforms under load, often used to monitor stress on prosthetic components",
+        "distractors": [
+          "a sensor that measures skin temperature inside a socket",
+          "a sensor that detects the angle of a prosthetic knee"
+        ],
+        "example": {
+          "text": "A strain gauge bonded to the pylon revealed unexpectedly high bending forces during stair descent.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_targeted_sensory_reinnervation",
+    "lang": "en",
+    "word": "targeted sensory reinnervation",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surgical technique that redirects sensory nerves from an amputated limb to skin on another body area, allowing touch there to be perceived as coming from the missing limb",
+        "distractors": [
+          "a surgical technique that anchors muscle directly to the end of a bone",
+          "a technique that fits electrodes onto the skin without surgery"
+        ],
+        "example": {
+          "text": "After targeted sensory reinnervation, touching his chest produced sensations he felt as coming from his missing hand.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_implantable_electrode_array",
+    "lang": "en",
+    "word": "implantable electrode array",
+    "pos": "noun",
+    "freqRank": 35600,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of multiple electrical contacts surgically placed within or on nerve or muscle tissue to record signals or deliver stimulation",
+        "distractors": [
+          "a single surface sensor taped onto the skin over a muscle",
+          "a battery pack implanted to power a prosthetic limb"
+        ],
+        "example": {
+          "text": "The implantable electrode array recorded signals from several muscle groups simultaneously.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cuff_electrode",
+    "lang": "en",
+    "word": "cuff electrode",
+    "pos": "noun",
+    "freqRank": 35800,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrode that wraps around a peripheral nerve to record its signals or deliver stimulation without penetrating the nerve fibers",
+        "distractors": [
+          "an electrode that penetrates directly through nerve fibers",
+          "a surface electrode adhered to intact skin"
+        ],
+        "example": {
+          "text": "The cuff electrode encircled the median nerve to relay sensory feedback to the prosthetic hand.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sieve_electrode",
+    "lang": "en",
+    "word": "sieve electrode",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a regenerative electrode with small perforations through which severed nerve fibers regrow, allowing a highly selective interface for recording or stimulation",
+        "distractors": [
+          "an electrode taped onto the skin above a target muscle",
+          "an electrode that wraps around a nerve without penetrating it"
+        ],
+        "example": {
+          "text": "Nerve fibers regenerated through the sieve electrode's tiny openings over several months.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vacuum_forming",
+    "lang": "en",
+    "word": "vacuum forming",
+    "pos": "noun",
+    "freqRank": 25100,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fabrication process in which a heated thermoplastic sheet is drawn tightly around a mold using suction to create a socket or orthotic shell",
+        "distractors": [
+          "a process that bonds resin-soaked fabric layers over a mold under pressure",
+          "a process that mills a socket shape from a solid block of plastic"
+        ],
+        "example": {
+          "text": "Vacuum forming pulled the softened plastic sheet snugly against every contour of the positive model.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lamination_resin",
+    "lang": "en",
+    "word": "lamination resin",
+    "pos": "noun",
+    "freqRank": 32700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a liquid polymer that hardens to bind layers of fabric together, forming the rigid shell of a laminated prosthetic socket",
+        "distractors": [
+          "a soft gel used to line the inside of a socket",
+          "a lubricant applied to ease donning a liner"
+        ],
+        "example": {
+          "text": "He poured the lamination resin over the fabric layers and let it cure overnight.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_carbon-fiber_lay-up",
+    "lang": "en",
+    "word": "carbon-fiber lay-up",
+    "pos": "noun",
+    "freqRank": 34700,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of arranging layers of carbon-fiber fabric in specific orientations before resin infusion, to control the strength and flexibility of a finished component",
+        "distractors": [
+          "the process of trimming a finished socket to its final edge",
+          "the process of grinding a plastic sheet to a smooth finish"
+        ],
+        "example": {
+          "text": "The engineer adjusted the carbon-fiber lay-up to give the running blade more spring in one direction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ground_clearance",
+    "lang": "en",
+    "word": "ground clearance",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the vertical distance between a prosthetic foot and the ground during the swing phase of gait, needed to avoid tripping",
+        "distractors": [
+          "the total distance a limb travels during one full stride",
+          "the amount of cushioning built into a prosthetic heel"
+        ],
+        "example": {
+          "text": "Insufficient knee flexion during swing left him with too little ground clearance, causing frequent stumbles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_maceration",
+    "lang": "en",
+    "word": "maceration",
+    "pos": "noun",
+    "freqRank": 24900,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "softening and breakdown of skin caused by prolonged exposure to moisture, such as trapped sweat inside a socket",
+        "distractors": [
+          "thickening and hardening of skin from repeated friction",
+          "loss of sensation in skin due to nerve damage"
+        ],
+        "example": {
+          "text": "Sweat trapped inside the liner led to maceration on the underside of his residual limb.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hyperkeratosis",
+    "lang": "en",
+    "word": "hyperkeratosis",
+    "pos": "noun",
+    "freqRank": 33150,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an abnormal thickening of the outer layer of skin, often developing over areas of chronic pressure inside a prosthetic socket",
+        "distractors": [
+          "an abnormal thinning of the skin over a bony prominence",
+          "a buildup of fluid beneath the skin surface"
+        ],
+        "example": {
+          "text": "Hyperkeratosis had formed over the area where the socket wall pressed most firmly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_choke_syndrome",
+    "lang": "en",
+    "word": "choke syndrome",
+    "pos": "noun",
+    "freqRank": 38500,
+    "difficulty": "hard",
+    "tags": [
+      "biomedical"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a complication of vacuum or suction suspension in which soft tissue swells at the socket's proximal brim while blood flow is restricted distally, causing painful swelling and skin changes at the limb's end",
+        "distractors": [
+          "a suspension failure in which the socket repeatedly slips off the limb",
+          "an infection that develops around a percutaneous abutment"
+        ],
+        "example": {
+          "text": "Choke syndrome developed after the socket brim was left too tight for his changing limb volume.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

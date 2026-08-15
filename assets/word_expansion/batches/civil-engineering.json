@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_cantilever",
+    "lang": "en",
+    "word": "Cantilever",
+    "pos": "noun",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a beam or structural member fixed at only one end and projecting outward with the other end unsupported",
+        "distractors": [
+          "a support that carries load equally from both of its ends",
+          "a curved arch that transfers its load into two abutments"
+        ],
+        "example": {
+          "text": "The architect designed a dramatic cantilever that extends over the cliff edge without any visible support.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shear_wall",
+    "lang": "en",
+    "word": "Shear Wall",
+    "pos": "noun",
+    "freqRank": 22200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a vertical wall designed to resist lateral forces such as wind or seismic loads through in-plane shear",
+        "distractors": [
+          "a wall built purely to divide interior floor space with no load-bearing function",
+          "a wall designed to resist only vertical gravity loads from the roof"
+        ],
+        "example": {
+          "text": "Engineers added reinforced concrete shear walls around the stairwells to help the tower resist earthquake forces.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_moment_connection",
+    "lang": "en",
+    "word": "Moment Connection",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rigid structural joint designed to transfer bending moment along with shear and axial force between connected members",
+        "distractors": [
+          "a joint that allows connected members to rotate freely relative to one another",
+          "a temporary connection used only during construction and removed afterward"
+        ],
+        "example": {
+          "text": "The steel frame relied on moment connections at every beam-to-column joint instead of diagonal bracing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_liquefaction",
+    "lang": "en",
+    "word": "Liquefaction",
+    "pos": "noun",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the loss of soil strength and stiffness during strong shaking, causing saturated granular soil to behave temporarily like a liquid",
+        "distractors": [
+          "the gradual chemical dissolution of soil minerals over geologic time",
+          "the compaction of soil caused by heavy machinery rolling over it"
+        ],
+        "example": {
+          "text": "During the earthquake, liquefaction of the sandy fill caused several buildings along the waterfront to sink and tilt.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_camber",
+    "lang": "en",
+    "word": "Camber",
+    "pos": "noun",
+    "freqRank": 27300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a slight built-in curvature given to a structural member so it straightens out once it carries its intended load",
+        "distractors": [
+          "a permanent downward sag that develops in a beam over time due to overloading",
+          "the angle at which a road surface is tilted to drain rainwater"
+        ],
+        "example": {
+          "text": "The fabricator built two inches of upward camber into the steel girder to offset the deflection expected once the deck was poured.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spalling",
+    "lang": "en",
+    "word": "Spalling",
+    "pos": "noun",
+    "freqRank": 28100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the flaking or chipping away of the surface layer of concrete or masonry, often caused by corroding reinforcement or freeze-thaw cycles",
+        "distractors": [
+          "the deliberate texturing of a concrete surface for slip resistance",
+          "the process of pouring concrete in successive horizontal layers"
+        ],
+        "example": {
+          "text": "Rust stains and spalling along the underside of the parking deck revealed that the rebar inside was corroding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prestressing",
+    "lang": "en",
+    "word": "Prestressing",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the technique of introducing internal stresses into a concrete member before it carries service loads, typically to counteract tension",
+        "distractors": [
+          "the process of testing a member's strength by loading it to failure before installation",
+          "the practice of curing concrete under elevated temperature and pressure"
+        ],
+        "example": {
+          "text": "Prestressing the concrete girders allowed the bridge to span farther without intermediate piers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_post-tensioning",
+    "lang": "en",
+    "word": "Post-Tensioning",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a prestressing method in which tendons are tensioned after the concrete has hardened and then anchored against the member",
+        "distractors": [
+          "a technique of stressing tendons before the concrete is cast around them",
+          "the process of adding extra rebar to a slab after cracks appear"
+        ],
+        "example": {
+          "text": "The parking structure's flat slabs used post-tensioning to control deflection and reduce cracking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_torsion",
+    "lang": "en",
+    "word": "Torsion",
+    "pos": "noun",
+    "freqRank": 23400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a twisting action about a member's longitudinal axis that induces shear stresses within it",
+        "distractors": [
+          "a bending action that causes compression on one face and tension on the opposite face",
+          "a pulling force that stretches a member along its length"
+        ],
+        "example": {
+          "text": "The eccentric loading on the spandrel beam subjected it to significant torsion in addition to bending.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_buckling",
+    "lang": "en",
+    "word": "Buckling",
+    "pos": "noun",
+    "freqRank": 24700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sudden sideways or lateral instability of a slender structural member under compressive load",
+        "distractors": [
+          "the gradual shortening of a member caused by long-term sustained load",
+          "the cracking of concrete due to shrinkage during curing"
+        ],
+        "example": {
+          "text": "Without adequate bracing, the slender steel column was at risk of buckling well before reaching its material yield strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_corbel",
+    "lang": "en",
+    "word": "Corbel",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bracket-like projection of masonry or concrete extending from a wall or column to support a load above it",
+        "distractors": [
+          "a decorative molding applied purely for aesthetic effect with no load path",
+          "a hollow void left in a wall to run electrical conduit"
+        ],
+        "example": {
+          "text": "The precast corbel projecting from the column face was designed to carry the end reaction of the crane girder.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cofferdam",
+    "lang": "en",
+    "word": "Cofferdam",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a temporary watertight enclosure built to allow construction work below the water line in a dry environment",
+        "distractors": [
+          "a permanent concrete dam built to store irrigation water",
+          "a floating platform used to support cranes during marine construction"
+        ],
+        "example": {
+          "text": "Crews pumped out the cofferdam so the bridge pier footing could be poured on dry ground below the river.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_caisson",
+    "lang": "en",
+    "word": "Caisson",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large sealed structural box or cylinder sunk into ground or water to serve as a foundation or enable excavation below grade",
+        "distractors": [
+          "a lightweight scaffold used to access the underside of a bridge deck",
+          "a temporary steel frame used to brace an open trench"
+        ],
+        "example": {
+          "text": "The bridge towers were founded on massive concrete caissons sunk sixty feet below the riverbed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_underpinning",
+    "lang": "en",
+    "word": "Underpinning",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of strengthening or extending an existing foundation to carry additional load or stabilize settling ground",
+        "distractors": [
+          "the practice of waterproofing a foundation wall from the exterior",
+          "the installation of a new roof structure over an existing building"
+        ],
+        "example": {
+          "text": "The adjacent basement excavation required underpinning of the neighboring building's shallow footings.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shoring",
+    "lang": "en",
+    "word": "Shoring",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a system of temporary supports used to hold up an excavation, structure, or formwork until it can support itself",
+        "distractors": [
+          "the permanent bracing system installed inside a completed high-rise",
+          "the process of compacting soil layers with a vibratory roller"
+        ],
+        "example": {
+          "text": "Timber shoring braced the trench walls while the crew installed the new sewer line.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_formwork",
+    "lang": "en",
+    "word": "Formwork",
+    "pos": "noun",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the temporary or permanent mold into which concrete is poured and held until it gains enough strength to be self-supporting",
+        "distractors": [
+          "the steel reinforcement cage placed inside a concrete member",
+          "the finishing layer applied to the surface of hardened concrete"
+        ],
+        "example": {
+          "text": "Carpenters stripped the plywood formwork from the columns once the concrete had cured for a week.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ductility",
+    "lang": "en",
+    "word": "Ductility",
+    "pos": "noun",
+    "freqRank": 28400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material's capacity to undergo large plastic deformation and absorb energy before it fractures",
+        "distractors": [
+          "a material's resistance to scratching or surface abrasion",
+          "a material's ability to fully return to its original shape once unloaded"
+        ],
+        "example": {
+          "text": "Structural steel's ductility allows a frame to sway and deform significantly during an earthquake without collapsing suddenly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hysteresis",
+    "lang": "en",
+    "word": "Hysteresis",
+    "pos": "noun",
+    "freqRank": 36700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the energy-dissipating lag between loading and unloading a structural element, seen as a loop when force is plotted against displacement",
+        "distractors": [
+          "the instantaneous elastic rebound of a member the moment a load is removed",
+          "the resonant amplification of a structure's response at its natural frequency"
+        ],
+        "example": {
+          "text": "The steel damper's wide hysteresis loops showed it was dissipating a large amount of seismic energy each cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_base_isolation",
+    "lang": "en",
+    "word": "Base Isolation",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a seismic design strategy that decouples a building from ground motion using flexible bearings placed beneath the structure",
+        "distractors": [
+          "a foundation technique that anchors a building rigidly to bedrock to prevent any movement",
+          "a method of grouting soil beneath a footing to increase its bearing capacity"
+        ],
+        "example": {
+          "text": "The hospital was retrofitted with base isolation bearings so it could remain operational immediately after a major earthquake.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diaphragm",
+    "lang": "en",
+    "word": "Diaphragm",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a horizontal structural element, such as a floor or roof deck, that transfers lateral loads to a building's vertical resisting elements",
+        "distractors": [
+          "a vertical wall built solely to resist gravity loads from the floors above",
+          "a flexible seal used to waterproof a construction joint"
+        ],
+        "example": {
+          "text": "The metal roof deck was designed to act as a rigid diaphragm, carrying wind loads to the shear walls below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deflection",
+    "lang": "en",
+    "word": "Deflection",
+    "pos": "noun",
+    "freqRank": 22900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the displacement of a structural member from its unloaded position when it is subjected to load",
+        "distractors": [
+          "the permanent rotation of a joint that occurs after a connection fails",
+          "the lateral drift of an entire building relative to its base"
+        ],
+        "example": {
+          "text": "The engineer checked that the floor beam's deflection under full load stayed within the code's serviceability limit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_differential_settlement",
+    "lang": "en",
+    "word": "Differential Settlement",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "uneven sinking of different parts of a foundation that can distort or crack the structure above it",
+        "distractors": [
+          "a uniform lowering of an entire building that leaves it level but slightly lower",
+          "the swelling of soil beneath a foundation caused by moisture absorption"
+        ],
+        "example": {
+          "text": "Differential settlement between the old wing and the new addition opened a visible crack along their shared wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bearing_capacity",
+    "lang": "en",
+    "word": "Bearing Capacity",
+    "pos": "noun",
+    "freqRank": 28700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the maximum pressure that soil or rock can support beneath a foundation without excessive settlement or shear failure",
+        "distractors": [
+          "the total weight a crane can lift without tipping over",
+          "the maximum tension a steel cable can carry before snapping"
+        ],
+        "example": {
+          "text": "A geotechnical investigation confirmed the clay layer had enough bearing capacity to support the tower's mat foundation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_consolidation",
+    "lang": "en",
+    "word": "Consolidation",
+    "pos": "noun",
+    "freqRank": 29900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual reduction in soil volume over time as water is squeezed out of its pores under sustained load",
+        "distractors": [
+          "the mechanical compaction of soil using rollers immediately after placement",
+          "the chemical hardening of soil treated with cement additives"
+        ],
+        "example": {
+          "text": "The engineers expected several years of consolidation settlement in the soft clay beneath the embankment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compaction",
+    "lang": "en",
+    "word": "Compaction",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mechanical densification of soil or granular fill achieved by expelling air voids, typically with rollers or tampers",
+        "distractors": [
+          "the slow settling of soil under its own weight over decades",
+          "the chemical bonding of soil particles using lime or cement"
+        ],
+        "example": {
+          "text": "The contractor compacted each lift of fill to ninety-five percent of its maximum dry density before placing the next layer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subgrade",
+    "lang": "en",
+    "word": "Subgrade",
+    "pos": "noun",
+    "freqRank": 27600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the natural or prepared soil surface beneath a pavement or foundation that supports the layers above it",
+        "distractors": [
+          "the topmost wearing surface of a paved road",
+          "a layer of crushed aggregate placed directly beneath the pavement surface"
+        ],
+        "example": {
+          "text": "Soft spots in the subgrade were excavated and replaced with compacted granular fill before paving began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subbase",
+    "lang": "en",
+    "word": "Subbase",
+    "pos": "noun",
+    "freqRank": 28900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a layer of granular material placed between the subgrade and the base course of a pavement to distribute loads and aid drainage",
+        "distractors": [
+          "the final asphalt wearing course of a road",
+          "the reinforced concrete layer poured beneath a building's footings"
+        ],
+        "example": {
+          "text": "A well-drained subbase kept water from pumping up through the pavement joints during freeze-thaw cycles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slump_test",
+    "lang": "en",
+    "word": "Slump Test",
+    "pos": "noun",
+    "freqRank": 29300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a field test that measures the consistency and workability of fresh concrete by observing how much a sample settles after a cone mold is removed",
+        "distractors": [
+          "a laboratory test that measures the compressive strength of hardened concrete cylinders",
+          "a test that determines the air content trapped in a concrete mix"
+        ],
+        "example": {
+          "text": "The ready-mix truck was rejected on site after the slump test showed the concrete was far too dry to place.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_curing",
+    "lang": "en",
+    "word": "Curing",
+    "pos": "noun",
+    "freqRank": 23700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of maintaining adequate moisture and temperature in freshly placed concrete so it can gain strength properly",
+        "distractors": [
+          "the process of adding admixtures to speed up concrete's initial set",
+          "the removal of formwork once concrete has hardened"
+        ],
+        "example": {
+          "text": "The crew kept the new slab covered with wet burlap for a week as part of the curing process.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydration",
+    "lang": "en",
+    "word": "Hydration",
+    "pos": "noun",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the chemical reaction between cement and water that causes concrete to harden and gain strength over time",
+        "distractors": [
+          "the absorption of surface water into dry aggregate before batching",
+          "the evaporation of excess mixing water from a concrete surface"
+        ],
+        "example": {
+          "text": "Heat generated by cement hydration in the massive footing had to be controlled to avoid thermal cracking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_carbonation",
+    "lang": "en",
+    "word": "Carbonation",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemical process in which atmospheric carbon dioxide reacts with concrete over time, lowering its alkalinity and eventually allowing reinforcement to corrode",
+        "distractors": [
+          "the formation of white mineral deposits on a concrete surface caused by evaporating water",
+          "the freezing and thawing of trapped moisture that cracks a concrete surface"
+        ],
+        "example": {
+          "text": "Carbonation had advanced deep enough into the old bridge deck that the passivating layer around the rebar was compromised.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_efflorescence",
+    "lang": "en",
+    "word": "Efflorescence",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a white powdery deposit of salts left on the surface of concrete or masonry as water carrying dissolved minerals evaporates",
+        "distractors": [
+          "a dark staining caused by algae growth on a damp wall",
+          "a network of fine cracks caused by concrete shrinkage"
+        ],
+        "example": {
+          "text": "Efflorescence streaked down the basement wall wherever groundwater had been wicking through the block.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spandrel",
+    "lang": "en",
+    "word": "Spandrel",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the panel or beam spanning between the tops of adjacent window openings on a facade, often concealing the floor structure",
+        "distractors": [
+          "a vertical support column embedded within an exterior wall",
+          "a decorative cap placed atop a masonry parapet"
+        ],
+        "example": {
+          "text": "Glass spandrel panels hid the edge of each floor slab, giving the tower a continuous curtain wall appearance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fenestration",
+    "lang": "en",
+    "word": "Fenestration",
+    "pos": "noun",
+    "freqRank": 33100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the arrangement, proportion, and design of windows and other openings in a building's facade",
+        "distractors": [
+          "the structural framing that supports a building's roof",
+          "the waterproof membrane applied beneath a building's cladding"
+        ],
+        "example": {
+          "text": "The architect studied the building's fenestration pattern to balance daylighting with solar heat gain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cladding",
+    "lang": "en",
+    "word": "Cladding",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the outer protective or decorative layer attached to a building's structural frame or walls, not intended to carry structural load",
+        "distractors": [
+          "the load-bearing masonry that forms a building's primary structure",
+          "the internal insulation layer sealed within a wall cavity"
+        ],
+        "example": {
+          "text": "Aluminum composite cladding panels were hung on the steel frame to give the facade its metallic finish.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_curtain_wall",
+    "lang": "en",
+    "word": "Curtain Wall",
+    "pos": "noun",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a non-load-bearing exterior wall system, typically glass and metal, hung off a building's structural frame floor to floor",
+        "distractors": [
+          "a thick masonry wall designed to carry the full weight of the roof and floors",
+          "a temporary barrier erected to protect pedestrians during construction"
+        ],
+        "example": {
+          "text": "The glazed curtain wall wrapped the tower's frame without carrying any of the building's gravity loads.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parapet",
+    "lang": "en",
+    "word": "Parapet",
+    "pos": "noun",
+    "freqRank": 22600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low protective wall extending above a roof, balcony, or bridge deck along its edge",
+        "distractors": [
+          "a sloped surface designed to shed water away from a building",
+          "a horizontal beam that spans between two columns at roof level"
+        ],
+        "example": {
+          "text": "Flashing was installed where the roof membrane turned up against the base of the parapet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_soffit",
+    "lang": "en",
+    "word": "Soffit",
+    "pos": "noun",
+    "freqRank": 30100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the underside surface of an architectural element such as an arch, beam, staircase, or roof overhang",
+        "distractors": [
+          "the vertical face of a beam that resists shear",
+          "the topmost exposed surface of a concrete slab"
+        ],
+        "example": {
+          "text": "Water had been dripping from the exposed soffit of the balcony for months before the spalling was noticed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lintel",
+    "lang": "en",
+    "word": "Lintel",
+    "pos": "noun",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a horizontal structural member placed over a door, window, or other opening to carry the load of the wall above",
+        "distractors": [
+          "a vertical post that transfers roof loads down to a footing",
+          "a curved masonry element that spans an opening entirely in compression"
+        ],
+        "example": {
+          "text": "A precast concrete lintel spanned the garage door opening to carry the brick veneer above it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voussoir",
+    "lang": "en",
+    "word": "Voussoir",
+    "pos": "noun",
+    "freqRank": 38900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "one of the wedge-shaped blocks that together form an arch",
+        "distractors": [
+          "the horizontal beam that ties the two ends of an arch together",
+          "a decorative keystone placed only at the crown of an arch"
+        ],
+        "example": {
+          "text": "Each voussoir in the stone bridge was cut to a precise taper so the arch ring would lock together under compression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abutment",
+    "lang": "en",
+    "word": "Abutment",
+    "pos": "noun",
+    "freqRank": 25100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the substructure at the end of a bridge or arch that supports the superstructure and resists the horizontal thrust transferred to it",
+        "distractors": [
+          "the central support of a bridge located in the middle of a river span",
+          "a temporary support used only during the launching of a bridge deck"
+        ],
+        "example": {
+          "text": "The bridge deck bore on reinforced concrete abutments at each riverbank, which also retained the approach embankment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_falsework",
+    "lang": "en",
+    "word": "Falsework",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a temporary structure used to support a permanent structure, such as an arch, beam, or slab, until it becomes self-supporting",
+        "distractors": [
+          "the permanent steel bracing left inside a completed bridge span",
+          "a mobile crane platform used to lift precast segments into place"
+        ],
+        "example": {
+          "text": "The concrete arch could not be stripped of its falsework until it had cured enough to carry its own weight.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_geotextile",
+    "lang": "en",
+    "word": "Geotextile",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a permeable synthetic fabric used in soil to separate, filter, reinforce, protect, or drain",
+        "distractors": [
+          "a rigid plastic grid embedded in soil purely to resist tension",
+          "an impermeable plastic sheet used to contain landfill leachate"
+        ],
+        "example": {
+          "text": "A layer of geotextile was placed beneath the riprap to keep the underlying soil from washing through the voids.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_riprap",
+    "lang": "en",
+    "word": "Riprap",
+    "pos": "noun",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "loose stone placed along shorelines, embankments, or channels to protect the surface from erosion caused by moving water",
+        "distractors": [
+          "a woven fabric mat laid beneath pavement to reinforce the subgrade",
+          "a precast concrete panel used to line the inside of a tunnel"
+        ],
+        "example": {
+          "text": "Crews placed large riprap along the toe of the levee to keep the river current from undercutting it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gabion",
+    "lang": "en",
+    "word": "Gabion",
+    "pos": "noun",
+    "freqRank": 35400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a wire mesh cage filled with stone, used to build retaining walls, erosion barriers, or slope protection",
+        "distractors": [
+          "a precast concrete block interlocked without mortar to form a retaining wall",
+          "a geotextile-wrapped soil embankment reinforced with steel straps"
+        ],
+        "example": {
+          "text": "Stacked gabion baskets formed a flexible retaining wall along the eroding riverbank.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_revetment",
+    "lang": "en",
+    "word": "Revetment",
+    "pos": "noun",
+    "freqRank": 34700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sloped facing of stone, concrete, or other material built to protect an embankment or shoreline from erosion",
+        "distractors": [
+          "a vertical concrete wall built to hold back floodwater during a storm surge",
+          "an underground drainage pipe that channels runoff away from a slope"
+        ],
+        "example": {
+          "text": "A concrete revetment was cast along the canal bank to keep wave action from eroding the earthen levee.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_weir",
+    "lang": "en",
+    "word": "Weir",
+    "pos": "noun",
+    "freqRank": 30300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low barrier built across a channel or river to raise the upstream water level, regulate flow, or measure discharge",
+        "distractors": [
+          "an underground tunnel that diverts a river around a construction site",
+          "a floating barrier used to contain surface oil spills"
+        ],
+        "example": {
+          "text": "Water spilled evenly over the concrete weir, letting engineers estimate the stream's flow rate from its depth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spillway",
+    "lang": "en",
+    "word": "Spillway",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structure designed to safely convey excess water around or over a dam without damaging it",
+        "distractors": [
+          "the intake structure that channels water into a hydroelectric turbine",
+          "a vertical shaft used to inspect the interior of a dam"
+        ],
+        "example": {
+          "text": "The reservoir's spillway opened automatically once the water level rose above the design flood elevation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_freeboard",
+    "lang": "en",
+    "word": "Freeboard",
+    "pos": "noun",
+    "freqRank": 31700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the vertical distance between the design water level and the top of a dam, levee, or channel bank, provided as a safety margin",
+        "distractors": [
+          "the horizontal distance a levee extends beyond the edge of the floodplain",
+          "the depth of water flowing over a spillway during peak discharge"
+        ],
+        "example": {
+          "text": "The levee was raised two feet to restore adequate freeboard above the revised flood elevation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_piezometer",
+    "lang": "en",
+    "word": "Piezometer",
+    "pos": "noun",
+    "freqRank": 37600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instrument installed in soil or rock to measure groundwater pressure at a specific depth",
+        "distractors": [
+          "a device used to measure the settlement of a foundation over time",
+          "a sensor that records the lateral displacement of a retaining wall"
+        ],
+        "example": {
+          "text": "Readings from the piezometers behind the dam confirmed that pore water pressure was staying within safe limits.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_borehole",
+    "lang": "en",
+    "word": "Borehole",
+    "pos": "noun",
+    "freqRank": 28300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a narrow shaft drilled into the ground to investigate subsurface soil and rock conditions or to install instrumentation",
+        "distractors": [
+          "a shallow test pit excavated by hand to inspect surface soil",
+          "a vertical shaft cast in concrete to house an elevator"
+        ],
+        "example": {
+          "text": "Samples recovered from each borehole let the geotechnical engineer map the depth to bedrock across the site.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standard_penetration_test",
+    "lang": "en",
+    "word": "Standard Penetration Test",
+    "pos": "noun",
+    "freqRank": 35800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a field test that measures the resistance of soil to a driven sampler, used to estimate soil density and strength",
+        "distractors": [
+          "a laboratory test that measures the moisture content of a soil sample",
+          "a test that determines the permeability of soil by pumping water into a borehole"
+        ],
+        "example": {
+          "text": "The standard penetration test results showed the sand became noticeably denser below fifteen feet.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_friction_pile",
+    "lang": "en",
+    "word": "Friction Pile",
+    "pos": "noun",
+    "freqRank": 32300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a deep foundation element that transfers load to the surrounding soil mainly through skin friction along its shaft rather than end bearing",
+        "distractors": [
+          "a pile that transfers nearly all of its load through its tip resting on bedrock",
+          "a temporary pile used only to support excavation formwork"
+        ],
+        "example": {
+          "text": "Because bedrock lay far below the site, the tower was founded on long friction piles driven through the soft clay.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pile_cap",
+    "lang": "en",
+    "word": "Pile Cap",
+    "pos": "noun",
+    "freqRank": 29100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thick concrete slab that connects the tops of a group of piles and distributes the column load among them",
+        "distractors": [
+          "a steel plate welded to the bottom of a pile to protect it while driving",
+          "a temporary cover placed over a pile to keep debris out before construction"
+        ],
+        "example": {
+          "text": "A reinforced concrete pile cap tied together the six piles beneath each bridge pier.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_raft_foundation",
+    "lang": "en",
+    "word": "Raft Foundation",
+    "pos": "noun",
+    "freqRank": 30700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a single continuous concrete slab that supports an entire structure, spreading its load over the whole building footprint",
+        "distractors": [
+          "a series of individual footings, each supporting one column independently",
+          "a foundation formed entirely of driven timber piles with no connecting slab"
+        ],
+        "example": {
+          "text": "Given the weak soil, the engineer specified a thick raft foundation to spread the tower's weight evenly across the site.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strip_footing",
+    "lang": "en",
+    "word": "Strip Footing",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a continuous foundation that runs beneath a load-bearing wall, spreading its load along a narrow strip of soil",
+        "distractors": [
+          "an isolated square footing that supports a single column",
+          "a deep foundation driven to bedrock to support heavy point loads"
+        ],
+        "example": {
+          "text": "The masonry perimeter walls bore on a continuous strip footing poured around the building's edge.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_grillage",
+    "lang": "en",
+    "word": "Grillage",
+    "pos": "noun",
+    "freqRank": 36100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a foundation system of interlocking steel or timber beams laid in crossing layers to spread a heavy point load over a wide area of soil",
+        "distractors": [
+          "a single large concrete pad poured beneath an entire building",
+          "a network of drainage pipes buried beneath a foundation"
+        ],
+        "example": {
+          "text": "The old mill's heavy machine base rested on a steel grillage that spread the load across the weak fill below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stirrup",
+    "lang": "en",
+    "word": "Stirrup",
+    "pos": "noun",
+    "freqRank": 27100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a closed or U-shaped loop of reinforcing steel placed transversely in a beam to resist shear and hold longitudinal bars in place",
+        "distractors": [
+          "a large-diameter bar running the full length of a beam to resist bending",
+          "a steel bracket used to hang a beam from an overhead structure"
+        ],
+        "example": {
+          "text": "Closely spaced stirrups near the beam's supports were designed to carry the high shear forces there.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gusset_plate",
+    "lang": "en",
+    "word": "Gusset Plate",
+    "pos": "noun",
+    "freqRank": 31300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a flat steel plate used to connect intersecting structural members, such as at truss joints, transferring forces between them",
+        "distractors": [
+          "a curved steel plate used to stiffen the web of a plate girder",
+          "a base plate that transfers column load into a concrete footing"
+        ],
+        "example": {
+          "text": "Inspectors found section loss on one gusset plate where the truss diagonals converged over the pier.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_expansion_joint",
+    "lang": "en",
+    "word": "Expansion Joint",
+    "pos": "noun",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a gap deliberately built into a structure to allow for thermal movement, shrinkage, or settlement without inducing damaging stresses",
+        "distractors": [
+          "a permanent rigid connection designed to prevent any relative movement between two sections",
+          "a groove cut into fresh concrete to control where it will crack"
+        ],
+        "example": {
+          "text": "The bridge deck included an expansion joint at each pier to accommodate seasonal thermal movement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cold_joint",
+    "lang": "en",
+    "word": "Cold Joint",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unplanned discontinuity in concrete formed when a new batch is placed against a previous batch that has already begun to set",
+        "distractors": [
+          "a deliberately formed joint left to allow future expansion of a slab",
+          "a joint sealed with an elastomeric material to keep out water"
+        ],
+        "example": {
+          "text": "A visible cold joint appeared partway up the wall pour where the crew had to stop for over an hour.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subsidence",
+    "lang": "en",
+    "word": "Subsidence",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual sinking or settling of the ground surface, often due to groundwater withdrawal, mining, or soil consolidation",
+        "distractors": [
+          "the sudden collapse of a slope during heavy rainfall",
+          "the rise of groundwater to the surface after a flood"
+        ],
+        "example": {
+          "text": "Decades of groundwater pumping caused regional subsidence that left the old canal banks well above the surrounding streets.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_frost_heave",
+    "lang": "en",
+    "word": "Frost Heave",
+    "pos": "noun",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the upward movement of soil caused by the formation and growth of ice lenses as water freezes within the ground",
+        "distractors": [
+          "the downward settlement of soil that occurs when permafrost thaws",
+          "the erosion of a slope caused by repeated freezing rain"
+        ],
+        "example": {
+          "text": "Frost heave beneath the shallow footing lifted one corner of the porch each winter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scour",
+    "lang": "en",
+    "word": "Scour",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the erosion of streambed or bank material around a structure, such as a bridge pier, caused by fast-moving water",
+        "distractors": [
+          "the gradual weathering of concrete surfaces exposed to sunlight",
+          "the buildup of sediment that raises a riverbed over time"
+        ],
+        "example": {
+          "text": "Divers found a deep scour hole had formed around the bridge pier during the last flood.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anchorage",
+    "lang": "en",
+    "word": "Anchorage",
+    "pos": "noun",
+    "freqRank": 26700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the means by which a tendon, bolt, or reinforcing bar transfers its force into the surrounding concrete or structure",
+        "distractors": [
+          "the temporary bracing used to hold formwork in place during a pour",
+          "the flexible bearing that allows a bridge deck to expand and contract"
+        ],
+        "example": {
+          "text": "The post-tensioning tendon's anchorage at the beam end had to be checked for signs of corrosion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tendon",
+    "lang": "en",
+    "word": "Tendon",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a high-strength steel strand, wire, or bar used in prestressed concrete to introduce compressive stress into the member",
+        "distractors": [
+          "a mild steel bar used for ordinary passive reinforcement in concrete",
+          "a steel cable used exclusively to support a suspension bridge deck"
+        ],
+        "example": {
+          "text": "Grout was pumped into the ducts to bond the post-tensioning tendons permanently to the surrounding concrete.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strand",
+    "lang": "en",
+    "word": "Strand",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a group of steel wires twisted together to form the basic tensioning element used in prestressed concrete construction",
+        "distractors": [
+          "a single reinforcing bar bent to follow the curve of a beam",
+          "a welded wire fabric used to reinforce a thin concrete slab"
+        ],
+        "example": {
+          "text": "Each precast girder contained dozens of seven-wire strands stressed to a precise tension before casting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plasticity_index",
+    "lang": "en",
+    "word": "Plasticity Index",
+    "pos": "noun",
+    "freqRank": 35100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a soil property equal to the range of moisture content over which a fine-grained soil remains plastic, used to classify its behavior",
+        "distractors": [
+          "the ratio of a soil's dry weight to its saturated weight",
+          "the depth at which a soil sample was recovered from a borehole"
+        ],
+        "example": {
+          "text": "The clay's high plasticity index warned the engineers that the soil would shrink and swell significantly with moisture changes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_overburden",
+    "lang": "en",
+    "word": "Overburden",
+    "pos": "noun",
+    "freqRank": 26900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the layer of soil or rock lying above a specified stratum, such as bedrock, that must be considered or removed",
+        "distractors": [
+          "the surcharge load temporarily placed on soil to speed up consolidation",
+          "the compacted fill placed above a buried pipeline for protection"
+        ],
+        "example": {
+          "text": "Nearly forty feet of overburden had to be excavated before the tunnel crew reached solid rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cohesion",
+    "lang": "en",
+    "word": "Cohesion",
+    "pos": "noun",
+    "freqRank": 25300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the shear strength component of a soil that comes from the attraction between fine particles, independent of applied confining pressure",
+        "distractors": [
+          "the frictional resistance between soil grains that increases with confining pressure",
+          "the permeability of soil to water flowing through its pores"
+        ],
+        "example": {
+          "text": "The clay's cohesion allowed the trench wall to stand briefly without support, unlike the loose sand nearby.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_angle_of_repose",
+    "lang": "en",
+    "word": "Angle of Repose",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the steepest angle at which a granular material can be piled without slumping under its own weight",
+        "distractors": [
+          "the angle between a retaining wall and the vertical, measured for stability design",
+          "the slope of a roadway needed to drain rainwater effectively"
+        ],
+        "example": {
+          "text": "The stockpiled gravel naturally settled into a cone with sides at its angle of repose.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slope_stability",
+    "lang": "en",
+    "word": "Slope Stability",
+    "pos": "noun",
+    "freqRank": 32100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the resistance of an inclined soil or rock surface to sliding, sloughing, or collapse under gravity and other forces",
+        "distractors": [
+          "the ability of a retaining wall to resist overturning from wind load",
+          "the settlement behavior of soil beneath a spread footing"
+        ],
+        "example": {
+          "text": "A slope stability analysis showed the cut behind the school needed a retaining structure to prevent a slide.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sheet_piling",
+    "lang": "en",
+    "word": "Sheet Piling",
+    "pos": "noun",
+    "freqRank": 31800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "interlocking sections of steel, vinyl, or timber driven into the ground to form a continuous wall that retains soil or excludes water",
+        "distractors": [
+          "a series of individual driven piles spaced widely apart to support a foundation",
+          "a temporary timber platform used to access an excavation"
+        ],
+        "example": {
+          "text": "Steel sheet piling was driven around the excavation to keep both soil and groundwater out of the work area.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diaphragm_wall",
+    "lang": "en",
+    "word": "Diaphragm Wall",
+    "pos": "noun",
+    "freqRank": 34400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a reinforced concrete wall constructed in a slurry-supported trench, often used for deep excavations or as a permanent basement wall",
+        "distractors": [
+          "a temporary sheet-pile wall removed once construction is complete",
+          "an interior partition wall that also braces a floor diaphragm"
+        ],
+        "example": {
+          "text": "The station's deep basement was excavated inside a diaphragm wall built before any digging began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slurry_wall",
+    "lang": "en",
+    "word": "Slurry Wall",
+    "pos": "noun",
+    "freqRank": 34900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a wall constructed by excavating a trench filled with bentonite slurry to keep it open, then replacing the slurry with concrete or another wall material",
+        "distractors": [
+          "a wall built entirely from bags of dry cement stacked and later hydrated in place",
+          "a lightweight partition wall filled with sound-dampening slurry"
+        ],
+        "example": {
+          "text": "A slurry wall around the site perimeter kept the adjacent subway tunnel from being undermined during excavation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_grouting",
+    "lang": "en",
+    "word": "Grouting",
+    "pos": "noun",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the injection of a fluid cement, chemical, or resin mixture into soil, rock, or masonry to fill voids, strengthen material, or reduce permeability",
+        "distractors": [
+          "the process of pouring concrete directly from a chute into formwork",
+          "the mechanical vibration of fresh concrete to remove trapped air"
+        ],
+        "example": {
+          "text": "Grouting the fractured rock beneath the dam significantly reduced the amount of water seeping through it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shotcrete",
+    "lang": "en",
+    "word": "Shotcrete",
+    "pos": "noun",
+    "freqRank": 32700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "concrete or mortar pneumatically sprayed at high velocity onto a surface, commonly used for tunnel linings and slope stabilization",
+        "distractors": [
+          "concrete poured through a tremie pipe underwater to avoid segregation",
+          "a dry cement powder dusted onto fresh concrete to speed its set"
+        ],
+        "example": {
+          "text": "Crews applied a layer of shotcrete to stabilize the newly excavated tunnel face before installing permanent lining.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_composite_action",
+    "lang": "en",
+    "word": "Composite Action",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the combined structural behavior of two different materials, such as steel and concrete, working together as a single unit through a shear connection",
+        "distractors": [
+          "the independent behavior of two adjacent members that share no connection",
+          "the redistribution of load that occurs after a structural member yields"
+        ],
+        "example": {
+          "text": "Shear studs welded to the steel beam ensured composite action with the concrete deck above it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bond_stress",
+    "lang": "en",
+    "word": "Bond Stress",
+    "pos": "noun",
+    "freqRank": 33300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the shear stress developed along the interface between reinforcing steel and surrounding concrete that transfers force between the two materials",
+        "distractors": [
+          "the tensile stress carried directly by the reinforcing bar itself",
+          "the compressive stress in concrete adjacent to a loaded steel plate"
+        ],
+        "example": {
+          "text": "Adequate bond stress along the bar's embedded length kept the reinforcement from slipping out of the concrete.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_development_length",
+    "lang": "en",
+    "word": "Development Length",
+    "pos": "noun",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the minimum length of embedment a reinforcing bar needs within concrete to develop its full design strength through bond",
+        "distractors": [
+          "the total unsupported span of a reinforced concrete beam",
+          "the distance a crack propagates before a beam fails in shear"
+        ],
+        "example": {
+          "text": "The detail called for the bars to extend well beyond the support to satisfy the required development length.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neutral_axis",
+    "lang": "en",
+    "word": "Neutral Axis",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the line within a bent structural member's cross-section along which bending stress is zero, separating tension from compression",
+        "distractors": [
+          "the geometric center of a cross-section regardless of loading",
+          "the outer fiber of a beam where bending stress is greatest"
+        ],
+        "example": {
+          "text": "As the reinforced concrete beam cracked, its neutral axis shifted upward toward the compression zone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_section_modulus",
+    "lang": "en",
+    "word": "Section Modulus",
+    "pos": "noun",
+    "freqRank": 33600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a geometric property of a cross-section that relates bending moment capacity to the maximum bending stress it produces",
+        "distractors": [
+          "a material property describing how much a member elongates under axial tension",
+          "the total cross-sectional area available to resist shear"
+        ],
+        "example": {
+          "text": "Choosing a beam with a larger section modulus reduced the peak bending stress for the same applied moment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_radius_of_gyration",
+    "lang": "en",
+    "word": "Radius of Gyration",
+    "pos": "noun",
+    "freqRank": 36400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a geometric measure of how a cross-section's area is distributed about an axis, used to assess a column's resistance to buckling",
+        "distractors": [
+          "the physical radius of a circular column's outer surface",
+          "the distance from a column's base to its point of maximum deflection"
+        ],
+        "example": {
+          "text": "A column with a small radius of gyration about its weak axis is more prone to buckling in that direction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slenderness_ratio",
+    "lang": "en",
+    "word": "Slenderness Ratio",
+    "pos": "noun",
+    "freqRank": 35700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of a column's effective length to its radius of gyration, used to predict its susceptibility to buckling",
+        "distractors": [
+          "the ratio of a beam's depth to its width",
+          "the ratio of dead load to live load carried by a structure"
+        ],
+        "example": {
+          "text": "Because of its high slenderness ratio, the bracing strut was designed to buckle elastically rather than yield.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plastic_hinge",
+    "lang": "en",
+    "word": "Plastic Hinge",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized zone in a structural member where the material yields fully and rotates like a hinge while continuing to carry moment",
+        "distractors": [
+          "a mechanical pin connection that allows free rotation with no moment transfer",
+          "a crack that fully separates a beam into two independent pieces"
+        ],
+        "example": {
+          "text": "In the design earthquake, plastic hinges were expected to form at the beam ends rather than in the columns.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_yield_line",
+    "lang": "en",
+    "word": "Yield Line",
+    "pos": "noun",
+    "freqRank": 35300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a line across a reinforced concrete slab along which the reinforcement yields and rotation concentrates as the slab approaches its ultimate capacity",
+        "distractors": [
+          "a control joint cut into a slab to guide where shrinkage cracks form",
+          "the boundary of a slab beyond which no reinforcement is required"
+        ],
+        "example": {
+          "text": "Yield line analysis predicted the pattern of cracking the flat slab would develop just before collapse.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_progressive_collapse",
+    "lang": "en",
+    "word": "Progressive Collapse",
+    "pos": "noun",
+    "freqRank": 31400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chain-reaction failure in which the loss of one structural element triggers the failure of adjacent elements, leading to disproportionate overall damage",
+        "distractors": [
+          "the gradual weakening of a structure caused solely by long-term material fatigue",
+          "the planned sequential demolition of a building using controlled charges"
+        ],
+        "example": {
+          "text": "Tie beams were added between columns specifically to prevent progressive collapse if a single column were removed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ultimate_limit_state",
+    "lang": "en",
+    "word": "Ultimate Limit State",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a design condition concerned with a structure's safety against collapse, failure, or loss of stability under factored loads",
+        "distractors": [
+          "a design condition concerned with occupant comfort under everyday service loads",
+          "a code requirement limiting a building's total energy consumption"
+        ],
+        "example": {
+          "text": "The column was sized so its factored capacity comfortably exceeded the demand at the ultimate limit state.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serviceability_limit_state",
+    "lang": "en",
+    "word": "Serviceability Limit State",
+    "pos": "noun",
+    "freqRank": 35600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a design condition addressing a structure's performance in everyday use, such as deflection, vibration, or cracking, rather than collapse",
+        "distractors": [
+          "a design condition that governs only fire resistance requirements",
+          "a design condition used exclusively for foundation bearing capacity checks"
+        ],
+        "example": {
+          "text": "Even though the beam had ample strength, its deflection failed the serviceability limit state check for the glazed facade above it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_load_factor",
+    "lang": "en",
+    "word": "Load Factor",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a multiplier applied to a specified load to account for uncertainty and variability when checking a structure's ultimate capacity",
+        "distractors": [
+          "the ratio of a structure's actual weight to its designed capacity",
+          "a coefficient describing how quickly a material fatigues under repeated load"
+        ],
+        "example": {
+          "text": "Dead loads are multiplied by a smaller load factor than live loads because they can be predicted more reliably.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_creep",
+    "lang": "en",
+    "word": "Creep",
+    "pos": "noun",
+    "freqRank": 24300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual, time-dependent increase in strain a material experiences under sustained constant stress",
+        "distractors": [
+          "the instantaneous elastic deformation that occurs the moment a load is applied",
+          "the loss of prestress caused by anchorage slip at transfer"
+        ],
+        "example": {
+          "text": "Over several years, creep in the concrete columns caused the building to shorten slightly under its own sustained weight.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_autogenous_shrinkage",
+    "lang": "en",
+    "word": "Autogenous Shrinkage",
+    "pos": "noun",
+    "freqRank": 37200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the volume reduction a concrete mix undergoes internally as cement hydrates and consumes water, occurring even without moisture loss to the environment",
+        "distractors": [
+          "the shrinkage caused by evaporation of surface water from freshly placed concrete",
+          "the expansion of concrete caused by an alkali-silica reaction with aggregate"
+        ],
+        "example": {
+          "text": "High-performance concrete with a very low water-cement ratio can suffer significant autogenous shrinkage even when kept sealed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ultimate_tensile_strength",
+    "lang": "en",
+    "word": "Ultimate Tensile Strength",
+    "pos": "noun",
+    "freqRank": 29900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the maximum stress a material can withstand while being stretched before it begins to neck down and fail",
+        "distractors": [
+          "the stress at which a material first begins to deform permanently",
+          "the stress a material can sustain indefinitely under repeated cyclic loading"
+        ],
+        "example": {
+          "text": "The rebar's ultimate tensile strength was well above its yield strength, giving it a good margin before fracture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flexural_strength",
+    "lang": "en",
+    "word": "Flexural Strength",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material's resistance to bending failure, often expressed as the stress at which a beam specimen fractures under a bending test",
+        "distractors": [
+          "a material's resistance to direct axial compression",
+          "a material's resistance to abrasive wear on its surface"
+        ],
+        "example": {
+          "text": "Pavement concrete is specified by its flexural strength because slabs primarily fail in bending under traffic loads.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_punching_shear",
+    "lang": "en",
+    "word": "Punching Shear",
+    "pos": "noun",
+    "freqRank": 31100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized shear failure mode in which a column or heavy point load pushes through a flat slab, forming a cone-shaped failure surface",
+        "distractors": [
+          "a shear failure that occurs along the full length of a beam's span",
+          "the shear stress generated in a bolt group resisting a lateral force"
+        ],
+        "example": {
+          "text": "Extra shear reinforcement was added around the column to prevent punching shear failure of the thin flat slab.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diagonal_tension",
+    "lang": "en",
+    "word": "Diagonal Tension",
+    "pos": "noun",
+    "freqRank": 34100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tensile stress that develops at an angle within a beam's web due to the combination of shear and bending, often governing shear crack orientation",
+        "distractors": [
+          "the tensile stress that runs parallel to a beam's longitudinal axis",
+          "the compressive stress that develops along the top fiber of a bent beam"
+        ],
+        "example": {
+          "text": "Diagonal tension cracks near the beam's support indicated the stirrups were being called on to resist the shear.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_web_crippling",
+    "lang": "en",
+    "word": "Web Crippling",
+    "pos": "noun",
+    "freqRank": 36900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized failure of a thin beam web caused by concentrated bearing forces crushing or buckling the material near a support or load point",
+        "distractors": [
+          "the overall lateral buckling of an entire unbraced beam",
+          "the fatigue cracking of a beam's flange after repeated cyclic loading"
+        ],
+        "example": {
+          "text": "Without a stiffener at the reaction point, the thin steel web was vulnerable to web crippling under the concentrated load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lateral_torsional_buckling",
+    "lang": "en",
+    "word": "Lateral Torsional Buckling",
+    "pos": "noun",
+    "freqRank": 37500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instability mode in which an unbraced beam simultaneously twists and displaces sideways under bending load",
+        "distractors": [
+          "the local buckling of a beam's compression flange alone, without any twisting",
+          "the vertical sagging of a beam caused purely by excessive deflection"
+        ],
+        "example": {
+          "text": "The long unbraced steel beam had to be checked for lateral torsional buckling before it reached its full bending capacity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_local_buckling",
+    "lang": "en",
+    "word": "Local Buckling",
+    "pos": "noun",
+    "freqRank": 34600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the buckling of a thin individual plate element, such as a flange or web, within a larger structural member, occurring before the whole member buckles",
+        "distractors": [
+          "the buckling of an entire column between its two lateral supports",
+          "the buckling of a bracing system connecting multiple structural frames"
+        ],
+        "example": {
+          "text": "The thin-walled steel section was classified as slender because local buckling of its flanges could occur before it reached yield.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_composite_beam",
+    "lang": "en",
+    "word": "Composite Beam",
+    "pos": "noun",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a beam made of two different materials, typically steel and concrete, connected to act together as a single structural unit",
+        "distractors": [
+          "a beam built up entirely from steel plates welded into a single section",
+          "a beam that spans continuously over more than two supports"
+        ],
+        "example": {
+          "text": "The composite beam combined a rolled steel section with a concrete slab connected by shear studs to increase its stiffness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shear_stud",
+    "lang": "en",
+    "word": "Shear Stud",
+    "pos": "noun",
+    "freqRank": 32400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a headed steel fastener welded to a beam's top flange to transfer horizontal shear between the beam and a concrete slab, enabling composite action",
+        "distractors": [
+          "a bolt used to connect two steel beams end to end",
+          "a reinforcing bar bent to anchor a slab into a supporting wall"
+        ],
+        "example": {
+          "text": "Rows of shear studs were welded along the beam flange before the concrete deck was poured over it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bearing_plate",
+    "lang": "en",
+    "word": "Bearing Plate",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a steel plate placed beneath a beam, column, or truss to spread a concentrated load over a wider area of the supporting material",
+        "distractors": [
+          "a plate welded across a beam's web purely to stiffen it against buckling",
+          "a decorative cover plate hiding an exposed steel connection"
+        ],
+        "example": {
+          "text": "A thick steel bearing plate distributed the truss reaction evenly across the top of the masonry pier.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_moment_frame",
+    "lang": "en",
+    "word": "Moment Frame",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structural system that resists lateral loads through the bending stiffness of rigidly connected beams and columns, without diagonal bracing",
+        "distractors": [
+          "a structural system that resists lateral loads entirely through diagonal braces",
+          "a foundation system designed specifically to resist overturning moments"
+        ],
+        "example": {
+          "text": "The open floor plan was made possible by a steel moment frame instead of bracing that would have obstructed the space.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_braced_frame",
+    "lang": "en",
+    "word": "Braced Frame",
+    "pos": "noun",
+    "freqRank": 29300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structural system that resists lateral loads primarily through diagonal members working in axial tension or compression",
+        "distractors": [
+          "a structural system that resists lateral loads through the bending stiffness of its beam-column joints",
+          "a foundation system reinforced with diagonal steel piles"
+        ],
+        "example": {
+          "text": "A concentric braced frame in the building's core provided most of the lateral stiffness against wind loads.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diagrid",
+    "lang": "en",
+    "word": "Diagrid",
+    "pos": "noun",
+    "freqRank": 37800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structural system consisting of a triangulated grid of diagonal members on a building's exterior that carries both gravity and lateral loads",
+        "distractors": [
+          "a flat grid of horizontal beams used only to support a roof deck",
+          "a foundation grid of intersecting grade beams beneath a slab"
+        ],
+        "example": {
+          "text": "The tower's exposed steel diagrid eliminated the need for interior corner columns while resisting wind loads.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_outrigger",
+    "lang": "en",
+    "word": "Outrigger",
+    "pos": "noun",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a stiff horizontal structural element connecting a building's core to its perimeter columns to reduce lateral sway in tall buildings",
+        "distractors": [
+          "a cantilevered platform used temporarily to support a tower crane",
+          "a diagonal brace placed only within the building's central core"
+        ],
+        "example": {
+          "text": "Two outrigger levels tied the concrete core to the perimeter mega-columns, cutting the skyscraper's wind sway significantly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_belt_truss",
+    "lang": "en",
+    "word": "Belt Truss",
+    "pos": "noun",
+    "freqRank": 36300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a horizontal truss wrapping around a tall building's perimeter at one or more levels, used to engage the exterior columns and reduce sway",
+        "distractors": [
+          "a vertical truss placed inside an elevator shaft for stiffness",
+          "a temporary truss used to support formwork during a slab pour"
+        ],
+        "example": {
+          "text": "The mechanical floor doubled as a belt truss, linking the outrigger arms to the building's perimeter columns.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tuned_mass_damper",
+    "lang": "en",
+    "word": "Tuned Mass Damper",
+    "pos": "noun",
+    "freqRank": 37100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a large auxiliary mass mounted within a structure and tuned to oscillate out of phase with the building's motion, reducing wind- or earthquake-induced vibration",
+        "distractors": [
+          "a rigid steel block added to a foundation purely to increase its total weight",
+          "a hydraulic jack used to level a settling structure after construction"
+        ],
+        "example": {
+          "text": "A 660-ton tuned mass damper near the top of the skyscraper counteracts sway caused by strong winds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_viscous_damper",
+    "lang": "en",
+    "word": "Viscous Damper",
+    "pos": "noun",
+    "freqRank": 35900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a device that dissipates structural energy by forcing fluid through an orifice as a piston moves, reducing vibration amplitude",
+        "distractors": [
+          "a rigid steel brace that resists lateral load purely through axial stiffness",
+          "a rubber bearing that isolates a structure from ground motion"
+        ],
+        "example": {
+          "text": "Fluid viscous dampers were installed diagonally across several stories to reduce the tower's response to wind gusts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_elastomeric_bearing",
+    "lang": "en",
+    "word": "Elastomeric Bearing",
+    "pos": "noun",
+    "freqRank": 33400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rubber-and-steel-laminated support placed under a bridge girder or building that allows controlled movement while transmitting vertical load",
+        "distractors": [
+          "a rigid steel pin connection that permits no relative movement",
+          "a hydraulic bearing that actively adjusts a structure's elevation"
+        ],
+        "example": {
+          "text": "The bridge girders rested on elastomeric bearings that allowed the deck to expand and contract with temperature changes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pot_bearing",
+    "lang": "en",
+    "word": "Pot Bearing",
+    "pos": "noun",
+    "freqRank": 36800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bridge bearing consisting of a confined rubber disc enclosed within a steel cylinder, allowing rotation while resisting large vertical loads",
+        "distractors": [
+          "a bearing made of a single solid steel roller that allows both rotation and translation",
+          "a bearing formed from stacked timber blocks used only on temporary structures"
+        ],
+        "example": {
+          "text": "Pot bearings supported the long-span steel girders where the vertical reactions were too large for standard elastomeric pads.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rocker_bearing",
+    "lang": "en",
+    "word": "Rocker Bearing",
+    "pos": "noun",
+    "freqRank": 36500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bridge bearing that allows rotation and longitudinal movement by rocking on a curved steel surface",
+        "distractors": [
+          "a fixed bearing that prevents any rotation or translation of the girder",
+          "a bearing consisting of layered rubber sheets bonded to steel plates"
+        ],
+        "example": {
+          "text": "The old truss bridge's rocker bearings had corroded in place, no longer allowing the deck to expand freely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stay_cable",
+    "lang": "en",
+    "word": "Stay Cable",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a high-strength cable running directly from a bridge tower to the deck, supporting the span in a cable-stayed bridge",
+        "distractors": [
+          "a cable draped between two towers that supports a suspension bridge deck through vertical hangers",
+          "a temporary cable used only to hold a segment in place during erection"
+        ],
+        "example": {
+          "text": "Dozens of stay cables fanned out from each tower to support the cable-stayed bridge's deck directly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_catenary",
+    "lang": "en",
+    "word": "Catenary",
+    "pos": "noun",
+    "freqRank": 34300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the curve naturally formed by a flexible cable or chain hanging freely under its own weight between two supports",
+        "distractors": [
+          "the straight-line path a taut cable follows between two fixed points",
+          "the parabolic curve a projectile follows under gravity alone"
+        ],
+        "example": {
+          "text": "The main cables of the suspension bridge hung in a graceful catenary before the deck and hangers were added.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thrust_line",
+    "lang": "en",
+    "word": "Thrust Line",
+    "pos": "noun",
+    "freqRank": 35200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the imaginary path along which the resultant of internal compressive forces travels through an arch or masonry structure",
+        "distractors": [
+          "the centerline used to lay out an arch's geometry before construction",
+          "the line along which reinforcing steel is placed in a concrete arch"
+        ],
+        "example": {
+          "text": "As long as the thrust line stayed within the middle third of the arch ring, the masonry bridge remained stable in pure compression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_haunch",
+    "lang": "en",
+    "word": "Haunch",
+    "pos": "noun",
+    "freqRank": 33700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a local thickening or deepening of a beam or slab near a support, added to increase its capacity to resist bending and shear",
+        "distractors": [
+          "a decorative curved molding applied to the underside of a beam",
+          "a temporary wedge used to adjust formwork alignment before a pour"
+        ],
+        "example": {
+          "text": "The continuous bridge girder had a deep haunch over each pier where the bending moments were greatest.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chamfer",
+    "lang": "en",
+    "word": "Chamfer",
+    "pos": "noun",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a beveled edge cut or formed on a structural member's corner, often to prevent chipping or ease formwork stripping",
+        "distractors": [
+          "a rounded fillet cast into the inside corner of a beam-column joint",
+          "a groove cut into a slab to control the location of shrinkage cracks"
+        ],
+        "example": {
+          "text": "A small chamfer along each column edge kept the sharp concrete corners from chipping during construction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_batter",
+    "lang": "en",
+    "word": "Batter",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the intentional inclination of a wall, pile, or slope from the vertical or horizontal, often expressed as a ratio of horizontal to vertical run",
+        "distractors": [
+          "the vertical settlement a pile experiences after being driven",
+          "the horizontal displacement of a retaining wall measured after construction"
+        ],
+        "example": {
+          "text": "The sheet pile wall was driven with a slight batter to help it resist the lateral earth pressure behind it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hogging",
+    "lang": "en",
+    "word": "Hogging",
+    "pos": "noun",
+    "freqRank": 34800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bending condition in which a structural member curves so its top fiber is in tension, typically over an interior support",
+        "distractors": [
+          "a bending condition in which a member sags downward at midspan, producing tension in the bottom fiber",
+          "the twisting of a member about its longitudinal axis under torsion"
+        ],
+        "example": {
+          "text": "Over the interior support of the continuous beam, hogging moments put the top reinforcement into tension.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sagging",
+    "lang": "en",
+    "word": "Sagging",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bending condition in which a structural member curves downward at midspan, producing tension in the bottom fiber",
+        "distractors": [
+          "a bending condition that produces tension in the top fiber over a support",
+          "the lateral buckling of a beam under axial compression"
+        ],
+        "example": {
+          "text": "At midspan, the simply supported beam experienced sagging moments that put the bottom reinforcement into tension.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_point_of_contraflexure",
+    "lang": "en",
+    "word": "Point of Contraflexure",
+    "pos": "noun",
+    "freqRank": 37900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the location along a bent structural member where the bending moment changes sign from positive to negative, or vice versa",
+        "distractors": [
+          "the point along a beam where shear force reaches its maximum value",
+          "the location where a column's axial load is applied eccentrically"
+        ],
+        "example": {
+          "text": "Detailing the reinforcement required locating the point of contraflexure where the beam's moment diagram crossed zero.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cracking_moment",
+    "lang": "en",
+    "word": "Cracking Moment",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the bending moment at which the tensile stress in a concrete section first exceeds its modulus of rupture, initiating cracking",
+        "distractors": [
+          "the bending moment at which reinforcing steel first reaches its yield strength",
+          "the bending moment that causes complete flexural failure of a member"
+        ],
+        "example": {
+          "text": "Once the applied moment exceeded the section's cracking moment, the beam's stiffness dropped noticeably.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_geogrid",
+    "lang": "en",
+    "word": "Geogrid",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rigid, grid-like synthetic material embedded in soil to reinforce it by interlocking with surrounding fill particles",
+        "distractors": [
+          "a woven fabric placed in soil purely to filter fine particles from water",
+          "an impermeable synthetic liner used to contain contaminated groundwater"
+        ],
+        "example": {
+          "text": "Layers of geogrid were placed within the compacted fill to reinforce the steep mechanically stabilized earth wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_geomembrane",
+    "lang": "en",
+    "word": "Geomembrane",
+    "pos": "noun",
+    "freqRank": 33900,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a flexible, low-permeability synthetic sheet used as a barrier to contain liquids or gases in earthworks such as landfills or ponds",
+        "distractors": [
+          "a permeable fabric used to separate soil layers while allowing water to pass",
+          "a rigid plastic grid used to reinforce weak soil under a road"
+        ],
+        "example": {
+          "text": "A thick geomembrane lined the base of the landfill cell to prevent leachate from reaching the groundwater below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dampproofing",
+    "lang": "en",
+    "word": "Dampproofing",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a treatment applied to a foundation wall to resist moisture penetration from damp soil, without necessarily resisting hydrostatic water pressure",
+        "distractors": [
+          "a treatment that fully waterproofs a wall against standing groundwater pressure",
+          "an admixture added to concrete to reduce its water-cement ratio"
+        ],
+        "example": {
+          "text": "A bituminous dampproofing coating was applied to the exterior of the basement wall below grade.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flashing",
+    "lang": "en",
+    "word": "Flashing",
+    "pos": "noun",
+    "freqRank": 23200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thin, impervious material installed at joints and transitions in a building envelope to direct water away and prevent leaks",
+        "distractors": [
+          "a rigid metal frame used to support a window opening structurally",
+          "a sealant bead applied along the top edge of a curtain wall panel"
+        ],
+        "example": {
+          "text": "Corroded flashing around the chimney base had let water seep into the roof framing for years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_weep_hole",
+    "lang": "en",
+    "word": "Weep Hole",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small opening left in a wall or retaining structure to allow trapped water to drain out and relieve pressure",
+        "distractors": [
+          "a vent installed at the top of a wall to release trapped air during a concrete pour",
+          "an opening left in a foundation purely to route electrical conduit"
+        ],
+        "example": {
+          "text": "Weep holes spaced along the base of the brick veneer let moisture that collected behind it drain safely away.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_perched_water_table",
+    "lang": "en",
+    "word": "Perched Water Table",
+    "pos": "noun",
+    "freqRank": 36600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized zone of saturated soil sitting above the main water table, held up by a lens of low-permeability material",
+        "distractors": [
+          "the seasonal high point reached by the regional groundwater table each spring",
+          "a zone of dry soil found directly beneath an otherwise saturated layer"
+        ],
+        "example": {
+          "text": "The unexpected seepage in the basement excavation turned out to come from a perched water table sitting on a clay lens.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_artesian_pressure",
+    "lang": "en",
+    "word": "Artesian Pressure",
+    "pos": "noun",
+    "freqRank": 37300,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "groundwater pressure in a confined aquifer sufficient to cause water to rise above the top of that aquifer, sometimes to the ground surface",
+        "distractors": [
+          "the pressure exerted by soil directly on the sides of a buried pipe",
+          "the pressure generated by a pump used to dewater an excavation"
+        ],
+        "example": {
+          "text": "Artesian pressure in the sand layer below the tunnel had to be relieved before excavation could safely proceed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrostatic_uplift",
+    "lang": "en",
+    "word": "Hydrostatic Uplift",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the upward pressure exerted by groundwater beneath a structure, which can lift or float a basement or foundation slab if not resisted",
+        "distractors": [
+          "the downward pressure exerted by floodwater on a structure's roof",
+          "the lateral pressure exerted by saturated soil against a basement wall"
+        ],
+        "example": {
+          "text": "Without adequate dead weight or anchoring, hydrostatic uplift could have floated the empty underground tank.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wellpoint",
+    "lang": "en",
+    "word": "Wellpoint",
+    "pos": "noun",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small-diameter well connected to a header pipe and vacuum pump, used in groups to lower the groundwater table around an excavation",
+        "distractors": [
+          "a permanent drainage pipe installed beneath a completed foundation",
+          "an instrument used to measure groundwater pressure at depth"
+        ],
+        "example": {
+          "text": "A ring of wellpoints around the excavation lowered the water table enough to keep the trench dry during construction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_trench_box",
+    "lang": "en",
+    "word": "Trench Box",
+    "pos": "noun",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a portable, rigid steel structure placed inside an excavation to protect workers from a cave-in as the trench is dug and backfilled around it",
+        "distractors": [
+          "a wooden frame used to form the sides of a concrete footing",
+          "a sealed enclosure used to keep water out of a deep excavation"
+        ],
+        "example": {
+          "text": "The crew lowered a trench box into the pipeline excavation before anyone entered to make the connection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_whaler",
+    "lang": "en",
+    "word": "Whaler",
+    "pos": "noun",
+    "freqRank": 38200,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a horizontal beam placed against the face of shoring or formwork to distribute load evenly to the vertical supports or struts behind it",
+        "distractors": [
+          "a diagonal brace installed to resist lateral wind loads on a building",
+          "a vertical steel pile driven to retain the face of an excavation"
+        ],
+        "example": {
+          "text": "Steel whalers ran horizontally across the sheet piling, transferring earth pressure back to the cross-lot struts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strut",
+    "lang": "en",
+    "word": "Strut",
+    "pos": "noun",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a structural member that resists compressive force, often used to brace an excavation, truss, or frame between two points",
+        "distractors": [
+          "a structural member that resists only tensile force between two points",
+          "a flexible cable used to hang a suspended floor from a roof truss"
+        ],
+        "example": {
+          "text": "Steel struts braced across the excavation kept the opposing sheet pile walls from moving inward.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_raker",
+    "lang": "en",
+    "word": "Raker",
+    "pos": "noun",
+    "freqRank": 37700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an inclined strut used to brace a retaining wall or excavation face, typically bearing against a foundation or pile at its lower end",
+        "distractors": [
+          "a horizontal beam used to tie together the tops of two opposing walls",
+          "a vertical pile driven purely to support a crane's outrigger"
+        ],
+        "example": {
+          "text": "Diagonal rakers braced the basement wall from the street level down to a temporary foundation at the excavation floor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_negative_skin_friction",
+    "lang": "en",
+    "word": "Negative Skin Friction",
+    "pos": "noun",
+    "freqRank": 38400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a downward drag force exerted on a pile by surrounding soil that settles more than the pile, adding load rather than providing support",
+        "distractors": [
+          "the upward frictional resistance a pile develops along its shaft under normal loading",
+          "the resistance a pile's tip provides when bearing directly on rock"
+        ],
+        "example": {
+          "text": "Because the soft clay around the piles was still consolidating, the engineer had to account for negative skin friction reducing their usable capacity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_downdrag",
+    "lang": "en",
+    "word": "Downdrag",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the additional axial load imposed on a pile when settling soil around it drags downward along the shaft, effectively adding to the structural load",
+        "distractors": [
+          "the uplift force exerted on a pile by expansive soil",
+          "the lateral force imposed on a pile by an adjacent excavation"
+        ],
+        "example": {
+          "text": "Downdrag from the settling fill above added several tons of load to each pile that the original design hadn't anticipated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ground_anchor",
+    "lang": "en",
+    "word": "Ground Anchor",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tensioned steel tendon grouted into soil or rock and anchored back from a retaining wall or slope to resist lateral or uplift forces",
+        "distractors": [
+          "a vertical pile driven purely to carry gravity load down to bedrock",
+          "a horizontal beam cast into a wall to distribute vertical load"
+        ],
+        "example": {
+          "text": "Rows of ground anchors were installed and stressed to hold back the tall permanent retaining wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_soil_nail",
+    "lang": "en",
+    "word": "Soil Nail",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a passive reinforcing element grouted into a drilled hole in a slope or excavation face to stabilize it by mobilizing tension as the ground moves slightly",
+        "distractors": [
+          "an actively tensioned tendon stressed immediately after installation to resist load",
+          "a driven steel pile used to support a building's foundation"
+        ],
+        "example": {
+          "text": "The steep cut behind the parking garage was stabilized with a grid of soil nails and a shotcrete facing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rock_bolt",
+    "lang": "en",
+    "word": "Rock Bolt",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a steel bar grouted or mechanically anchored into a borehole in rock to reinforce and stabilize the surrounding rock mass",
+        "distractors": [
+          "a steel dowel used to connect two precast concrete panels",
+          "a bolt used to anchor equipment to a finished concrete floor"
+        ],
+        "example": {
+          "text": "Rock bolts installed radially around the tunnel bore helped prevent loose blocks from falling from the roof.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tunnel_lining",
+    "lang": "en",
+    "word": "Tunnel Lining",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the structural layer, often precast concrete segments or shotcrete, installed to support a tunnel's excavated surface and resist ground and water pressure",
+        "distractors": [
+          "the temporary steel frame used to support a tunnel boring machine",
+          "the ventilation duct system installed along a tunnel's length"
+        ],
+        "example": {
+          "text": "Precast concrete segments were erected ring by ring to form the tunnel lining behind the boring machine.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_invert",
+    "lang": "en",
+    "word": "Invert",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the lowest interior point of a tunnel, pipe, or culvert's cross-section, often forming the floor of the structure",
+        "distractors": [
+          "the highest interior point of a tunnel's cross-section, forming its roof",
+          "the vertical shaft used to access a tunnel from the surface"
+        ],
+        "example": {
+          "text": "Water collecting at the tunnel's invert was channeled to a sump and pumped out during construction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_overbreak",
+    "lang": "en",
+    "word": "Overbreak",
+    "pos": "noun",
+    "freqRank": 38700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the volume of rock excavated beyond the planned tunnel or excavation boundary, often due to blasting or unstable ground",
+        "distractors": [
+          "the volume of rock left unexcavated inside the planned tunnel boundary",
+          "the settlement of ground above a tunnel after excavation passes"
+        ],
+        "example": {
+          "text": "Excessive overbreak along the tunnel crown meant far more shotcrete was needed to fill the void than originally estimated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standup_time",
+    "lang": "en",
+    "word": "Standup Time",
+    "pos": "noun",
+    "freqRank": 39100,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the length of time an excavated rock or soil face can remain unsupported before it collapses or requires support",
+        "distractors": [
+          "the total duration required for concrete to reach its design strength",
+          "the time a crane can safely remain in a fixed position without inspection"
+        ],
+        "example": {
+          "text": "The engineer scheduled support installation based on the short standup time expected in the fractured rock zone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_underpin",
+    "lang": "en",
+    "word": "Underpin",
+    "pos": "verb",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to strengthen or extend an existing foundation, typically to support additional load or arrest settlement",
+        "distractors": [
+          "to demolish an unsafe foundation before rebuilding it entirely",
+          "to waterproof the exterior of a foundation wall"
+        ],
+        "example": {
+          "text": "The contractor had to underpin the old church's foundation before the adjacent basement could be excavated safely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shore",
+    "lang": "en",
+    "word": "Shore",
+    "pos": "verb",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to support a structure, excavation, or piece of formwork temporarily with props or braces",
+        "distractors": [
+          "to permanently anchor a structure directly into bedrock",
+          "to compact loose soil using a vibratory plate"
+        ],
+        "example": {
+          "text": "Workers shored the collapsing trench wall with timber braces before continuing the excavation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spall",
+    "lang": "en",
+    "word": "Spall",
+    "pos": "verb",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "for concrete or masonry to flake, chip, or break away from its surface, typically due to corrosion or freeze-thaw action",
+        "distractors": [
+          "for a structural member to twist under torsional load",
+          "for a foundation to settle unevenly under a building's weight"
+        ],
+        "example": {
+          "text": "The garage's concrete columns had begun to spall wherever the reinforcing steel underneath was rusting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dewater",
+    "lang": "en",
+    "word": "Dewater",
+    "pos": "verb",
+    "freqRank": 30700,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to remove groundwater from an excavation or site, typically by pumping, to allow construction in dry conditions",
+        "distractors": [
+          "to add water to a dry soil sample before compaction testing",
+          "to flush contaminated water out of a completed drainage pipe"
+        ],
+        "example": {
+          "text": "The crew had to dewater the pit continuously before pouring the foundation below the water table.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ductile",
+    "lang": "en",
+    "word": "Ductile",
+    "pos": "adjective",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material capable of undergoing significant plastic deformation before it fractures",
+        "distractors": [
+          "describing a material that fails suddenly with little or no warning deformation",
+          "describing a material that fully recovers its original shape once unloaded"
+        ],
+        "example": {
+          "text": "Codes favor ductile steel connections over brittle ones because they give warning before failure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monolithic",
+    "lang": "en",
+    "word": "Monolithic",
+    "pos": "adjective",
+    "freqRank": 26600,
+    "difficulty": "hard",
+    "tags": [
+      "civil-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a structure or element cast or formed as a single continuous mass without joints or interruptions",
+        "distractors": [
+          "describing a structure assembled from many separately bolted precast pieces",
+          "describing a wall built with alternating layers of two different materials"
+        ],
+        "example": {
+          "text": "The basement walls and slab were poured monolithic in a single continuous operation to eliminate cold joints.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

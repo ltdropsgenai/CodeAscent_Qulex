@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_idempotent",
+    "lang": "en",
+    "word": "idempotent",
+    "pos": "adjective",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes an operation that produces the same result no matter how many times it is applied",
+        "distractors": [
+          "describes code that runs faster with each repeated execution",
+          "describes a function that cannot be called more than once safely"
+        ],
+        "example": {
+          "text": "The API's delete endpoint was made idempotent so retrying a failed request would not cause an error.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_backpressure",
+    "lang": "en",
+    "word": "backpressure",
+    "pos": "noun",
+    "freqRank": 20168,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mechanism by which a slow consumer signals an upstream producer to reduce the rate of data it sends",
+        "distractors": [
+          "the extra memory a program consumes as its cache grows",
+          "the delay introduced by network routers during peak traffic"
+        ],
+        "example": {
+          "text": "Without backpressure, the fast producer overwhelmed the queue and crashed the consumer service.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monotonic",
+    "lang": "en",
+    "word": "monotonic",
+    "pos": "adjective",
+    "freqRank": 20336,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "consistently moving in one direction only, either always increasing or always decreasing, never both",
+        "distractors": [
+          "repeating the same value at fixed time intervals",
+          "capable of running on a single thread only"
+        ],
+        "example": {
+          "text": "The system clock was switched to a monotonic clock so elapsed-time measurements would never go backward.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_denormalize",
+    "lang": "en",
+    "word": "denormalize",
+    "pos": "verb",
+    "freqRank": 20503,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to intentionally duplicate data across database tables to reduce joins and speed up reads",
+        "distractors": [
+          "to strip a database schema down to its smallest possible set of tables",
+          "to convert a relational database into a plain text file"
+        ],
+        "example": {
+          "text": "The team denormalized the orders table by copying the customer name into it to avoid a costly join.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_memoize",
+    "lang": "en",
+    "word": "memoize",
+    "pos": "verb",
+    "freqRank": 20671,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to cache the results of a function so that repeated calls with the same inputs return instantly",
+        "distractors": [
+          "to rewrite a function so it uses less stack space",
+          "to compile a function into native machine code ahead of time"
+        ],
+        "example": {
+          "text": "By memoizing the Fibonacci function, the program avoided recomputing the same values thousands of times.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reentrant",
+    "lang": "en",
+    "word": "reentrant",
+    "pos": "adjective",
+    "freqRank": 20839,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes code that can be safely interrupted partway through and called again before the earlier call finishes",
+        "distractors": [
+          "describes a function that automatically retries after failing",
+          "describes a program that can only be executed once per session"
+        ],
+        "example": {
+          "text": "The signal handler had to be reentrant because it could be invoked again while already running.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thread_safe",
+    "lang": "en",
+    "word": "thread-safe",
+    "pos": "adjective",
+    "freqRank": 21007,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes code that behaves correctly when accessed by multiple threads at the same time",
+        "distractors": [
+          "describes code that runs exclusively on a single dedicated thread",
+          "describes a program that automatically creates new threads as needed"
+        ],
+        "example": {
+          "text": "The counter class was made thread-safe by wrapping every increment in a lock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mutex",
+    "lang": "en",
+    "word": "mutex",
+    "pos": "noun",
+    "freqRank": 21174,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a locking mechanism that ensures only one thread can access a shared resource at a time",
+        "distractors": [
+          "a queue that stores messages between two processes",
+          "a data structure that tracks the order in which threads were created"
+        ],
+        "example": {
+          "text": "Each thread had to acquire the mutex before modifying the shared list.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_semaphore",
+    "lang": "en",
+    "word": "semaphore",
+    "pos": "noun",
+    "freqRank": 21342,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a synchronization variable that controls access to a resource by a limited number of concurrent threads using a counter",
+        "distractors": [
+          "a fixed-size buffer that stores incoming network packets",
+          "a log file that records every thread's execution history"
+        ],
+        "example": {
+          "text": "A semaphore initialized to three allowed exactly three worker threads to hit the database pool at once.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deadlock",
+    "lang": "en",
+    "word": "deadlock",
+    "pos": "noun",
+    "freqRank": 21510,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state in which two or more processes are each waiting for a resource held by the other, so none can proceed",
+        "distractors": [
+          "a crash caused by a program running out of memory",
+          "a delay caused by a slow disk read blocking the main thread"
+        ],
+        "example": {
+          "text": "The two transactions each locked a row the other needed, resulting in a deadlock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_livelock",
+    "lang": "en",
+    "word": "livelock",
+    "pos": "noun",
+    "freqRank": 21678,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a situation where processes keep changing state in response to each other without making any real progress",
+        "distractors": [
+          "a permanent freeze where all threads stop executing entirely",
+          "a security flaw that lets an attacker bypass a login screen"
+        ],
+        "example": {
+          "text": "The two nodes kept yielding to each other so politely that the system fell into a livelock and never finished.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_race_condition",
+    "lang": "en",
+    "word": "race condition",
+    "pos": "noun",
+    "freqRank": 21846,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bug that occurs when the outcome of a program depends on the unpredictable timing of concurrent operations",
+        "distractors": [
+          "a performance issue caused by too many network round trips",
+          "an error that only happens when a program is compiled with optimizations disabled"
+        ],
+        "example": {
+          "text": "A race condition let two requests both read the old balance before either one wrote the update.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thrashing",
+    "lang": "en",
+    "word": "thrashing",
+    "pos": "noun",
+    "freqRank": 22013,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state where a system spends most of its time swapping data in and out of memory instead of doing useful work",
+        "distractors": [
+          "the process of rapidly restarting a crashed service",
+          "the overhead of encrypting data before writing it to disk"
+        ],
+        "example": {
+          "text": "With too many browser tabs open, the laptop started thrashing as it constantly paged memory to disk.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_checksum",
+    "lang": "en",
+    "word": "checksum",
+    "pos": "noun",
+    "freqRank": 22181,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small value computed from a block of data used to detect accidental changes or corruption",
+        "distractors": [
+          "a unique identifier assigned to a database row when it is created",
+          "the total memory footprint of a running process"
+        ],
+        "example": {
+          "text": "The download manager compared the file's checksum against the published value to confirm it wasn't corrupted.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sharding",
+    "lang": "en",
+    "word": "sharding",
+    "pos": "noun",
+    "freqRank": 22349,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "splitting a large database into smaller, independent pieces distributed across multiple servers",
+        "distractors": [
+          "compressing a database to reduce its storage footprint",
+          "duplicating an entire database onto a backup server"
+        ],
+        "example": {
+          "text": "As the user base grew, the team sharded the database by customer region.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quorum",
+    "lang": "en",
+    "word": "quorum",
+    "pos": "noun",
+    "freqRank": 22517,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the minimum number of nodes in a distributed system that must agree before an operation is considered successful",
+        "distractors": [
+          "the maximum number of requests a server can handle per second",
+          "a backup copy of data kept in a separate data center"
+        ],
+        "example": {
+          "text": "The write was only acknowledged once a quorum of three out of five replicas confirmed it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eventual_consistency",
+    "lang": "en",
+    "word": "eventual consistency",
+    "pos": "noun",
+    "freqRank": 22685,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a guarantee that replicas of data will converge to the same value over time, though they may briefly disagree",
+        "distractors": [
+          "a guarantee that every read always returns the most recently written value",
+          "a database design where every table has exactly one copy of each row"
+        ],
+        "example": {
+          "text": "The shopping cart service used eventual consistency, so a newly added item might not appear on another device for a few seconds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vector_clock",
+    "lang": "en",
+    "word": "vector clock",
+    "pos": "noun",
+    "freqRank": 22852,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a data structure used to track the relative ordering of events across multiple processes in a distributed system",
+        "distractors": [
+          "a hardware timer that synchronizes all servers to the same absolute time",
+          "a graph showing how CPU usage changes over the course of a day"
+        ],
+        "example": {
+          "text": "The system used vector clocks to detect which of two conflicting updates happened first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gossip_protocol",
+    "lang": "en",
+    "word": "gossip protocol",
+    "pos": "noun",
+    "freqRank": 23020,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a method of spreading information between nodes in a distributed system by having each node periodically share what it knows with a few random peers",
+        "distractors": [
+          "a strict protocol where a single leader broadcasts updates to every node at once",
+          "a technique for encrypting messages before they leave a node"
+        ],
+        "example": {
+          "text": "Cluster membership changes propagated through the gossip protocol within a few seconds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_failover",
+    "lang": "en",
+    "word": "failover",
+    "pos": "noun",
+    "freqRank": 23188,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the automatic switch to a standby system or component when the primary one fails",
+        "distractors": [
+          "the process of gradually rolling out a new software version",
+          "the practice of manually restarting a server after a crash"
+        ],
+        "example": {
+          "text": "When the primary database went down, failover to the replica happened within seconds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_jitter",
+    "lang": "en",
+    "word": "jitter",
+    "pos": "noun",
+    "freqRank": 23356,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the variation in delay between packets or events that should otherwise arrive at regular intervals",
+        "distractors": [
+          "the total amount of data lost during a network outage",
+          "the difference between a server's clock and true universal time"
+        ],
+        "example": {
+          "text": "High jitter on the video call caused the audio to sound choppy even though average latency was low.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tail_recursion",
+    "lang": "en",
+    "word": "tail recursion",
+    "pos": "noun",
+    "freqRank": 23523,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a form of recursion where the recursive call is the last action in a function, allowing it to be optimized into a loop",
+        "distractors": [
+          "a recursive function that calls itself twice within the same branch",
+          "a bug where a function calls itself infinitely without a base case"
+        ],
+        "example": {
+          "text": "Because the function used tail recursion, the compiler converted it into an efficient loop with no extra stack frames.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_currying",
+    "lang": "en",
+    "word": "currying",
+    "pos": "noun",
+    "freqRank": 23691,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the technique of transforming a function that takes multiple arguments into a sequence of functions that each take a single argument",
+        "distractors": [
+          "the process of removing unused parameters from a function's signature",
+          "a method for converting a function into an asynchronous version of itself"
+        ],
+        "example": {
+          "text": "After currying the add function, she could partially apply it to create an increment-by-five function.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monad",
+    "lang": "en",
+    "word": "monad",
+    "pos": "noun",
+    "freqRank": 23859,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a design pattern in functional programming that wraps a value and defines how to chain operations on it while handling side effects like errors or state",
+        "distractors": [
+          "a data structure that stores key-value pairs sorted by insertion order",
+          "a compiler technique for eliminating dead code paths"
+        ],
+        "example": {
+          "text": "The Maybe monad let the pipeline chain operations without checking for null after every step.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_functor",
+    "lang": "en",
+    "word": "functor",
+    "pos": "noun",
+    "freqRank": 24027,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in functional programming, a type that implements a mapping operation letting a function be applied to values wrapped inside it",
+        "distractors": [
+          "a variable whose value cannot change once it is assigned",
+          "a mechanism that automatically retries a failed network call"
+        ],
+        "example": {
+          "text": "Because the list type is a functor, mapping a function over it transforms every element in place.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_covariant",
+    "lang": "en",
+    "word": "covariant",
+    "pos": "adjective",
+    "freqRank": 24195,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes a type relationship where a subtype's generic parameter can be substituted with a subtype in the same direction as the original substitution",
+        "distractors": [
+          "describes a variable that changes its type at runtime",
+          "describes two threads that always execute in lockstep"
+        ],
+        "example": {
+          "text": "Making the array type covariant allowed a list of dogs to be used wherever a list of animals was expected.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contravariant",
+    "lang": "en",
+    "word": "contravariant",
+    "pos": "adjective",
+    "freqRank": 24362,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes a type relationship where a subtype's parameter must accept a supertype, reversing the usual substitution direction",
+        "distractors": [
+          "describes a value that can be read but never written",
+          "describes a function that returns different types depending on its input"
+        ],
+        "example": {
+          "text": "Function parameter types are typically contravariant, so a handler accepting Animal can stand in for one expecting Dog.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_atomicity",
+    "lang": "en",
+    "word": "atomicity",
+    "pos": "noun",
+    "freqRank": 24530,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the property of an operation completing entirely or not at all, with no partial effects visible to other processes",
+        "distractors": [
+          "the ability of a system to scale by adding more servers",
+          "the speed at which a single instruction executes on the CPU"
+        ],
+        "example": {
+          "text": "Wrapping the transfer in a transaction guaranteed atomicity, so a failure couldn't leave money debited from one account but never credited to another.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serializability",
+    "lang": "en",
+    "word": "serializability",
+    "pos": "noun",
+    "freqRank": 24698,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a correctness guarantee that the outcome of running transactions concurrently matches some sequential order of those transactions",
+        "distractors": [
+          "the ability to convert an object into a byte stream for storage",
+          "the property of a system that never loses data during a crash"
+        ],
+        "example": {
+          "text": "The database enforced serializability so concurrent transactions always behaved as if run one after another.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_linearizability",
+    "lang": "en",
+    "word": "linearizability",
+    "pos": "noun",
+    "freqRank": 24866,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strong consistency guarantee ensuring each operation appears to take effect instantaneously at some point between its start and end",
+        "distractors": [
+          "the property of a data structure that uses a fixed, unchanging amount of memory",
+          "the ability to process requests in the exact order they were sent over the network"
+        ],
+        "example": {
+          "text": "The distributed counter was linearizable, so once an increment completed, every subsequent read reflected it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_backtracking",
+    "lang": "en",
+    "word": "backtracking",
+    "pos": "noun",
+    "freqRank": 25034,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an algorithmic technique that incrementally builds a solution and abandons a path as soon as it determines the path cannot lead to success",
+        "distractors": [
+          "a method for compressing data by removing repeated patterns",
+          "a technique for scheduling tasks based on their priority level"
+        ],
+        "example": {
+          "text": "The Sudoku solver used backtracking, undoing a guess and trying the next option whenever it hit a contradiction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amortized",
+    "lang": "en",
+    "word": "amortized",
+    "pos": "adjective",
+    "freqRank": 25201,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes an average cost per operation calculated over a whole sequence of operations, even though individual operations may vary in cost",
+        "distractors": [
+          "describes an algorithm that always runs in constant time regardless of input",
+          "describes a cost that is paid entirely upfront before any operations run"
+        ],
+        "example": {
+          "text": "Appending to a dynamic array has amortized constant time, even though occasional resizes are expensive.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_asymptotic",
+    "lang": "en",
+    "word": "asymptotic",
+    "pos": "adjective",
+    "freqRank": 25369,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing how a function's growth behaves as its input size approaches infinity, ignoring constant factors",
+        "distractors": [
+          "describing the exact running time of an algorithm on a specific input",
+          "describing a value that oscillates between two fixed bounds forever"
+        ],
+        "example": {
+          "text": "Even though the constant factors were large, the algorithm's asymptotic complexity was still linear.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_intractable",
+    "lang": "en",
+    "word": "intractable",
+    "pos": "adjective",
+    "freqRank": 25537,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes a computational problem for which no algorithm is known that can solve every instance in a practical amount of time",
+        "distractors": [
+          "describes a program that crashes whenever it receives invalid input",
+          "describes a bug that only appears under a debugger"
+        ],
+        "example": {
+          "text": "The traveling salesman problem is considered intractable for large numbers of cities.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_combinatorial_explosion",
+    "lang": "en",
+    "word": "combinatorial explosion",
+    "pos": "noun",
+    "freqRank": 25705,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the extremely rapid growth in the number of possible combinations as a problem's size increases, quickly making brute-force search infeasible",
+        "distractors": [
+          "a crash caused by a stack overflow during recursive parsing",
+          "the gradual slowdown of a database as more rows are added"
+        ],
+        "example": {
+          "text": "Checking every possible move led to a combinatorial explosion that made brute-force search impossible.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_branch_prediction",
+    "lang": "en",
+    "word": "branch prediction",
+    "pos": "noun",
+    "freqRank": 25872,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a CPU technique that guesses the outcome of a conditional jump ahead of time so it can keep executing instructions without waiting",
+        "distractors": [
+          "a compiler optimization that removes unreachable code branches",
+          "a debugging technique that traces which function called another"
+        ],
+        "example": {
+          "text": "Poor branch prediction on the unpredictable loop caused frequent pipeline stalls.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pipelining",
+    "lang": "en",
+    "word": "pipelining",
+    "pos": "noun",
+    "freqRank": 26040,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a CPU or system design technique where multiple instructions or stages of work overlap in execution to increase throughput",
+        "distractors": [
+          "the process of copying a program's binary to multiple servers at once",
+          "a method of encrypting data as it moves between two systems"
+        ],
+        "example": {
+          "text": "Pipelining let the processor start decoding the next instruction before the current one finished executing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_superscalar",
+    "lang": "en",
+    "word": "superscalar",
+    "pos": "adjective",
+    "freqRank": 26208,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describes a CPU architecture capable of issuing and executing more than one instruction per clock cycle",
+        "distractors": [
+          "describes a processor that can only run one program at a time",
+          "describes memory that is shared identically across every core"
+        ],
+        "example": {
+          "text": "The superscalar processor could dispatch two arithmetic instructions in the same cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_speculative_execution",
+    "lang": "en",
+    "word": "speculative execution",
+    "pos": "noun",
+    "freqRank": 26376,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a performance technique where a CPU executes instructions before knowing for certain they are needed, discarding the results if a prediction was wrong",
+        "distractors": [
+          "a scheduling policy that always runs the lowest-priority task first",
+          "a compiler pass that removes speculative code comments"
+        ],
+        "example": {
+          "text": "Speculative execution let the CPU compute both branches of the condition and discard the wrong one later.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cache_coherence",
+    "lang": "en",
+    "word": "cache coherence",
+    "pos": "noun",
+    "freqRank": 26544,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a guarantee that all processor cores see a consistent view of shared memory even though each has its own local cache",
+        "distractors": [
+          "the practice of storing frequently used files closer to the user",
+          "a technique for compressing cached data to save memory"
+        ],
+        "example": {
+          "text": "The cache coherence protocol invalidated the other cores' copies as soon as one core wrote to the shared variable.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cache_invalidation",
+    "lang": "en",
+    "word": "cache invalidation",
+    "pos": "noun",
+    "freqRank": 26711,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of marking cached data as no longer valid so it will be refreshed from the source instead of being reused",
+        "distractors": [
+          "the process of increasing the size of a cache to hold more entries",
+          "a method of encrypting cached data at rest"
+        ],
+        "example": {
+          "text": "Cache invalidation was triggered whenever the underlying record was updated, forcing a fresh read on the next request.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_paging",
+    "lang": "en",
+    "word": "paging",
+    "pos": "noun",
+    "freqRank": 26879,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a memory management scheme that divides memory into fixed-size blocks so a process's address space can be mapped to noncontiguous physical memory",
+        "distractors": [
+          "the act of sending an alert to an on-call engineer when a service fails",
+          "a technique for splitting a large file into smaller chunks for upload"
+        ],
+        "example": {
+          "text": "Paging let the operating system run programs larger than the amount of physical RAM installed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_segmentation_fault",
+    "lang": "en",
+    "word": "segmentation fault",
+    "pos": "noun",
+    "freqRank": 27047,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a runtime error that occurs when a program tries to access a memory location it is not permitted to access",
+        "distractors": [
+          "a compiler error that occurs when a variable is declared but never used",
+          "a network error caused by a packet arriving out of order"
+        ],
+        "example": {
+          "text": "Dereferencing the uninitialized pointer caused a segmentation fault and crashed the program.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_context_switch",
+    "lang": "en",
+    "word": "context switch",
+    "pos": "noun",
+    "freqRank": 27215,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the act of a CPU saving the state of one process or thread and loading the state of another so execution can resume later",
+        "distractors": [
+          "the moment a program transfers control from one function to another via a normal call",
+          "the process of migrating an application from one server to another"
+        ],
+        "example": {
+          "text": "Running too many threads increased the number of context switches, hurting overall performance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_preemption",
+    "lang": "en",
+    "word": "preemption",
+    "pos": "noun",
+    "freqRank": 27383,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the act of an operating system forcibly suspending a running process so another process can use the CPU",
+        "distractors": [
+          "the practice of allocating extra memory to a process before it needs it",
+          "a technique for predicting which process will request the CPU next"
+        ],
+        "example": {
+          "text": "Under preemption, a low-priority task could be interrupted at any moment so a higher-priority one could run.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_instrumentation",
+    "lang": "en",
+    "word": "instrumentation",
+    "pos": "noun",
+    "freqRank": 27550,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the practice of adding code to a system to collect metrics, logs, or traces about its internal behavior",
+        "distractors": [
+          "the process of writing automated tests before implementing a feature",
+          "the act of installing a program's dependencies before deployment"
+        ],
+        "example": {
+          "text": "The team added instrumentation to every API endpoint so they could track response times in production.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_observability",
+    "lang": "en",
+    "word": "observability",
+    "pos": "noun",
+    "freqRank": 27718,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the extent to which a system's internal state can be understood from the outputs it produces, such as logs, metrics, and traces",
+        "distractors": [
+          "the ability of a program to detect and recover from its own bugs automatically",
+          "the practice of hiding implementation details behind a public interface"
+        ],
+        "example": {
+          "text": "Investing in observability let engineers pinpoint the failing service within minutes instead of hours.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_telemetry",
+    "lang": "en",
+    "word": "telemetry",
+    "pos": "noun",
+    "freqRank": 27886,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "data automatically collected from a remote system and transmitted for monitoring or analysis",
+        "distractors": [
+          "a formal document describing a system's architecture",
+          "the process of encrypting data before it is stored on disk"
+        ],
+        "example": {
+          "text": "Telemetry from thousands of devices streamed into a dashboard the operations team monitored around the clock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_multitenancy",
+    "lang": "en",
+    "word": "multitenancy",
+    "pos": "noun",
+    "freqRank": 28054,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an architecture where a single instance of software serves multiple separate customers while keeping their data isolated",
+        "distractors": [
+          "a deployment strategy that runs a separate server for every single customer",
+          "the practice of splitting a monolithic application into many small services"
+        ],
+        "example": {
+          "text": "The SaaS platform relied on multitenancy so all customers shared the same infrastructure without seeing each other's data.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sandboxing",
+    "lang": "en",
+    "word": "sandboxing",
+    "pos": "noun",
+    "freqRank": 28221,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "running untrusted code in a restricted environment that limits what resources it can access",
+        "distractors": [
+          "compressing an application's dependencies into a single deployable file",
+          "the process of testing software with real production traffic before release"
+        ],
+        "example": {
+          "text": "The browser ran each extension in a sandbox so a malicious one couldn't touch the rest of the system.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_containerization",
+    "lang": "en",
+    "word": "containerization",
+    "pos": "noun",
+    "freqRank": 28389,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "packaging an application together with its dependencies into an isolated, portable unit that runs consistently across environments",
+        "distractors": [
+          "the process of splitting a database into smaller partitions",
+          "a method of compressing video files for streaming"
+        ],
+        "example": {
+          "text": "Containerization let the team run the exact same environment on their laptops and in production.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_orchestration",
+    "lang": "en",
+    "word": "orchestration",
+    "pos": "noun",
+    "freqRank": 28557,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the automated coordination and management of multiple containers or services, including scheduling, scaling, and recovery",
+        "distractors": [
+          "the process of writing detailed documentation for an API",
+          "a technique for merging conflicting changes in version control"
+        ],
+        "example": {
+          "text": "The orchestration platform automatically restarted containers that failed their health checks.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_provisioning",
+    "lang": "en",
+    "word": "provisioning",
+    "pos": "noun",
+    "freqRank": 28725,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of setting up and configuring the infrastructure or resources a system needs before it can run",
+        "distractors": [
+          "the act of reviewing code changes before they are merged",
+          "the process of removing unused resources to cut costs"
+        ],
+        "example": {
+          "text": "Provisioning a new database cluster used to take days before the team automated it with scripts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bytecode",
+    "lang": "en",
+    "word": "bytecode",
+    "pos": "noun",
+    "freqRank": 28893,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a low-level, platform-independent representation of a program that a virtual machine interprets or compiles further",
+        "distractors": [
+          "the raw binary machine code produced for a specific CPU architecture",
+          "a compressed archive containing a program's source files"
+        ],
+        "example": {
+          "text": "The Java compiler translated the source file into bytecode that the JVM could execute on any platform.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transpile",
+    "lang": "en",
+    "word": "transpile",
+    "pos": "verb",
+    "freqRank": 29060,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to translate source code written in one language or language version into another at a similar level of abstraction",
+        "distractors": [
+          "to compile source code directly into a native executable",
+          "to minify a file by removing whitespace and comments"
+        ],
+        "example": {
+          "text": "The build step transpiled the modern JavaScript into a version older browsers could run.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lexer",
+    "lang": "en",
+    "word": "lexer",
+    "pos": "noun",
+    "freqRank": 29228,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a component that scans raw source code and breaks it into a sequence of meaningful tokens",
+        "distractors": [
+          "a tool that formats source code according to a style guide",
+          "a component that checks a program for type errors"
+        ],
+        "example": {
+          "text": "The lexer turned the raw string of code into a stream of tokens like keywords, identifiers, and symbols.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tokenizer",
+    "lang": "en",
+    "word": "tokenizer",
+    "pos": "noun",
+    "freqRank": 29396,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tool that splits a stream of text into discrete units, such as words, symbols, or subword pieces, for further processing",
+        "distractors": [
+          "a tool that verifies a user's authentication credentials",
+          "a component that assigns memory addresses to variables"
+        ],
+        "example": {
+          "text": "The tokenizer split the input sentence into individual word pieces before they were fed into the model.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abstract_syntax_tree",
+    "lang": "en",
+    "word": "abstract syntax tree",
+    "pos": "noun",
+    "freqRank": 29564,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tree representation of a program's structure produced by a parser, with each node representing a construct in the source code",
+        "distractors": [
+          "a diagram showing how classes inherit from one another",
+          "a table mapping variable names to their memory addresses"
+        ],
+        "example": {
+          "text": "The compiler walked the abstract syntax tree to generate the corresponding machine instructions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_garbage_collector",
+    "lang": "en",
+    "word": "garbage collector",
+    "pos": "noun",
+    "freqRank": 29732,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a runtime component that automatically reclaims memory occupied by objects no longer reachable by the program",
+        "distractors": [
+          "a tool that deletes unused files from a developer's hard drive",
+          "a process that removes old log entries from a server"
+        ],
+        "example": {
+          "text": "The garbage collector paused the application briefly while it reclaimed memory from unreferenced objects.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reference_counting",
+    "lang": "en",
+    "word": "reference counting",
+    "pos": "noun",
+    "freqRank": 29899,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a memory management technique that tracks how many references point to an object and frees it once that count reaches zero",
+        "distractors": [
+          "a technique for numbering the lines of a source file for debugging",
+          "a method of assigning unique IDs to database rows"
+        ],
+        "example": {
+          "text": "Reference counting freed the object immediately once the last variable pointing to it went out of scope.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dangling_pointer",
+    "lang": "en",
+    "word": "dangling pointer",
+    "pos": "noun",
+    "freqRank": 30067,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pointer that still refers to a memory location after the memory there has been freed or reallocated",
+        "distractors": [
+          "a variable declared but never assigned a value",
+          "a pointer that has not yet been initialized"
+        ],
+        "example": {
+          "text": "Accessing the dangling pointer after the buffer was freed corrupted unrelated data in the heap.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_memory_leak",
+    "lang": "en",
+    "word": "memory leak",
+    "pos": "noun",
+    "freqRank": 30235,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bug where a program fails to release memory it no longer needs, causing its memory usage to grow over time",
+        "distractors": [
+          "a security flaw that exposes sensitive data over the network",
+          "a crash caused by writing past the end of an array"
+        ],
+        "example": {
+          "text": "The service's memory usage crept upward every hour, a clear sign of a memory leak.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_buffer_overflow",
+    "lang": "en",
+    "word": "buffer overflow",
+    "pos": "noun",
+    "freqRank": 30403,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bug where a program writes more data into a fixed-size block of memory than it can hold, overwriting adjacent memory",
+        "distractors": [
+          "an error caused by reading a file that does not exist",
+          "a crash caused by dividing a number by zero"
+        ],
+        "example": {
+          "text": "The attacker exploited a buffer overflow in the input parser to run arbitrary code.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stack_overflow",
+    "lang": "en",
+    "word": "stack overflow",
+    "pos": "noun",
+    "freqRank": 30570,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an error that occurs when a program's call stack exceeds its allocated size, often from runaway or excessively deep recursion",
+        "distractors": [
+          "an error caused by allocating too much memory on the heap",
+          "a crash caused by two threads trying to write to the same variable"
+        ],
+        "example": {
+          "text": "The recursive function had no base case, so it quickly triggered a stack overflow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heap_corruption",
+    "lang": "en",
+    "word": "heap corruption",
+    "pos": "noun",
+    "freqRank": 30738,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "damage to the metadata or contents of dynamically allocated memory, often caused by writing outside the bounds of an allocated block",
+        "distractors": [
+          "a slowdown caused by too many objects being allocated on the heap",
+          "a bug where memory is allocated but never freed"
+        ],
+        "example": {
+          "text": "The buggy free call caused heap corruption that only crashed the program much later, in an unrelated part of the code.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dereference",
+    "lang": "en",
+    "word": "dereference",
+    "pos": "verb",
+    "freqRank": 30906,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to access the value stored at the memory address a pointer refers to",
+        "distractors": [
+          "to remove a variable's value and reset it to its default",
+          "to convert a pointer into an integer for storage"
+        ],
+        "example": {
+          "text": "Dereferencing a null pointer crashed the program immediately.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pointer_arithmetic",
+    "lang": "en",
+    "word": "pointer arithmetic",
+    "pos": "noun",
+    "freqRank": 31074,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "performing addition or subtraction on a pointer to move it to a different location in memory, typically within an array",
+        "distractors": [
+          "calculating the memory address a variable will occupy at compile time",
+          "a technique for comparing two pointers to see if they refer to the same object"
+        ],
+        "example": {
+          "text": "Using pointer arithmetic, the loop advanced through the array one element at a time without indexing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_type_coercion",
+    "lang": "en",
+    "word": "type coercion",
+    "pos": "noun",
+    "freqRank": 31242,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the automatic or implicit conversion of a value from one data type to another by a language's runtime or compiler",
+        "distractors": [
+          "a compiler error thrown when two incompatible types are compared",
+          "the process of declaring a variable's type explicitly in code"
+        ],
+        "example": {
+          "text": "Type coercion silently converted the string to a number, which caused an unexpected result in the comparison.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_duck_typing",
+    "lang": "en",
+    "word": "duck typing",
+    "pos": "noun",
+    "freqRank": 31409,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a style of typing where an object's suitability is determined by the methods and properties it has, rather than its declared type",
+        "distractors": [
+          "a system that infers types automatically at compile time",
+          "a strict typing discipline that forbids implicit conversions"
+        ],
+        "example": {
+          "text": "Thanks to duck typing, any object with a read method could be passed to the function, regardless of its class.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_type_inference",
+    "lang": "en",
+    "word": "type inference",
+    "pos": "noun",
+    "freqRank": 31577,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler's ability to automatically deduce the type of an expression without an explicit type annotation",
+        "distractors": [
+          "a runtime check that verifies a variable's type before every use",
+          "the process of converting a value from one type to another at runtime"
+        ],
+        "example": {
+          "text": "Type inference let the developer omit the variable's type, since the compiler could deduce it from the assigned value.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metaprogramming",
+    "lang": "en",
+    "word": "metaprogramming",
+    "pos": "noun",
+    "freqRank": 31745,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "writing code that generates, inspects, or modifies other code, including its own, at compile time or runtime",
+        "distractors": [
+          "the practice of writing detailed comments to document a program's design",
+          "a testing technique that generates random inputs for a function"
+        ],
+        "example": {
+          "text": "The library used metaprogramming to automatically generate getter and setter methods for each field.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reflection",
+    "lang": "en",
+    "word": "reflection",
+    "pos": "noun",
+    "freqRank": 31913,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a program's ability to examine and modify its own structure, such as classes and methods, at runtime",
+        "distractors": [
+          "the practice of reviewing a colleague's code before merging it",
+          "a debugging technique that replays a program's execution step by step"
+        ],
+        "example": {
+          "text": "Using reflection, the framework could discover a class's methods and call them without knowing their names in advance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_introspection",
+    "lang": "en",
+    "word": "introspection",
+    "pos": "noun",
+    "freqRank": 32081,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ability of a program to examine the type or properties of an object at runtime",
+        "distractors": [
+          "the practice of logging every function call for later analysis",
+          "a compiler optimization that inlines small functions"
+        ],
+        "example": {
+          "text": "The debugger used introspection to list every attribute defined on the object.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serialization",
+    "lang": "en",
+    "word": "serialization",
+    "pos": "noun",
+    "freqRank": 32248,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of converting an in-memory data structure into a format, such as bytes or text, that can be stored or transmitted",
+        "distractors": [
+          "the process of running tasks one after another instead of in parallel",
+          "the act of compressing a file to reduce its size"
+        ],
+        "example": {
+          "text": "Serialization turned the object into a JSON string before it was sent over the network.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deserialization",
+    "lang": "en",
+    "word": "deserialization",
+    "pos": "noun",
+    "freqRank": 32416,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of reconstructing an in-memory data structure from a stored or transmitted format",
+        "distractors": [
+          "the process of splitting a large file into smaller pieces for transfer",
+          "a technique for encrypting data before it is sent over a network"
+        ],
+        "example": {
+          "text": "Deserialization failed because the incoming JSON was missing a required field.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_marshalling",
+    "lang": "en",
+    "word": "marshalling",
+    "pos": "noun",
+    "freqRank": 32584,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of transforming data into a format suitable for transmission between different systems or programming environments",
+        "distractors": [
+          "the process of scheduling tasks in the order they were submitted",
+          "a technique for detecting duplicate entries in a dataset"
+        ],
+        "example": {
+          "text": "The remote procedure call framework handled marshalling the arguments before sending them across the network.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endianness",
+    "lang": "en",
+    "word": "endianness",
+    "pos": "noun",
+    "freqRank": 32752,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the order in which bytes of a multi-byte value are stored in memory, either most significant byte first or least significant byte first",
+        "distractors": [
+          "the maximum number of bits a processor can handle in a single instruction",
+          "the alignment of data structures within a compiled binary"
+        ],
+        "example": {
+          "text": "The network protocol required converting values to big-endian byte order regardless of the host machine's endianness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hash_collision",
+    "lang": "en",
+    "word": "hash collision",
+    "pos": "noun",
+    "freqRank": 32919,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "when two distinct inputs to a hash function produce the same output value",
+        "distractors": [
+          "an error that occurs when a hash table runs out of memory",
+          "a security vulnerability caused by using an outdated encryption algorithm"
+        ],
+        "example": {
+          "text": "The hash table used chaining to handle a hash collision without losing either entry.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rainbow_table",
+    "lang": "en",
+    "word": "rainbow table",
+    "pos": "noun",
+    "freqRank": 33087,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a precomputed table of hash values and their corresponding plaintext inputs, used to speed up reversing weak password hashes",
+        "distractors": [
+          "a table that tracks which users are currently logged into a system",
+          "a data structure that stores color values for a graphical interface"
+        ],
+        "example": {
+          "text": "Salting passwords before hashing them makes a precomputed rainbow table useless against the database.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_salting",
+    "lang": "en",
+    "word": "salting",
+    "pos": "noun",
+    "freqRank": 33255,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "adding random data to an input, such as a password, before hashing it to prevent precomputed attacks and make identical inputs hash differently",
+        "distractors": [
+          "encrypting a password with a key that only the server knows",
+          "the process of requiring a user to change their password periodically"
+        ],
+        "example": {
+          "text": "Salting each password before hashing ensured that two users with the same password had different stored hashes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nonce",
+    "lang": "en",
+    "word": "nonce",
+    "pos": "noun",
+    "freqRank": 33423,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a number used only once within a cryptographic protocol to prevent replay attacks and ensure each message or transaction is unique",
+        "distractors": [
+          "a secret key shared between two parties to encrypt their communication",
+          "a checksum used to verify a file has not been altered"
+        ],
+        "example": {
+          "text": "Each request included a fresh nonce so an attacker couldn't resend a captured request later.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ciphertext",
+    "lang": "en",
+    "word": "ciphertext",
+    "pos": "noun",
+    "freqRank": 33591,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "data that has been transformed by an encryption algorithm so it is unreadable without the correct key",
+        "distractors": [
+          "the original, unencrypted form of a message before it is transformed",
+          "a hash value computed from a message to verify its integrity"
+        ],
+        "example": {
+          "text": "Even if an attacker intercepted the ciphertext, they couldn't read it without the decryption key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plaintext",
+    "lang": "en",
+    "word": "plaintext",
+    "pos": "noun",
+    "freqRank": 33758,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the original, readable content of a message before it has been encrypted",
+        "distractors": [
+          "text formatted without any styling or markup",
+          "the encrypted form of a message that requires a key to read"
+        ],
+        "example": {
+          "text": "The server never stored the plaintext password, only its salted hash.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_asymmetric_cryptography",
+    "lang": "en",
+    "word": "asymmetric cryptography",
+    "pos": "noun",
+    "freqRank": 33926,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an encryption approach that uses a mathematically linked pair of keys, one public and one private, instead of a single shared secret",
+        "distractors": [
+          "an encryption approach where the same key is used to both encrypt and decrypt",
+          "a technique for compressing encrypted data to save bandwidth"
+        ],
+        "example": {
+          "text": "Asymmetric cryptography let the sender encrypt a message with the recipient's public key, which only the matching private key could decrypt.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_certificate_pinning",
+    "lang": "en",
+    "word": "certificate pinning",
+    "pos": "noun",
+    "freqRank": 34094,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a security technique where an application hardcodes which certificate or public key it will trust for a given server, rejecting any others",
+        "distractors": [
+          "the process of renewing an expired security certificate automatically",
+          "a method for storing certificates in a shared, centralized repository"
+        ],
+        "example": {
+          "text": "Certificate pinning stopped the app from trusting a fraudulent certificate even though it was signed by a recognized authority.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_side_channel_attack",
+    "lang": "en",
+    "word": "side-channel attack",
+    "pos": "noun",
+    "freqRank": 34262,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an attack that extracts secret information by observing indirect physical signals, such as timing, power consumption, or electromagnetic emissions, rather than exploiting the algorithm's logic directly",
+        "distractors": [
+          "an attack that floods a server with traffic until it becomes unavailable",
+          "an attack that tricks a user into revealing their password through a fake login page"
+        ],
+        "example": {
+          "text": "By measuring how long the comparison took, the researcher mounted a side-channel attack to recover the secret key one byte at a time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_privilege_escalation",
+    "lang": "en",
+    "word": "privilege escalation",
+    "pos": "noun",
+    "freqRank": 34430,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an attack in which a user or process gains access rights beyond what it was originally granted",
+        "distractors": [
+          "the process by which an administrator legitimately grants a new employee access",
+          "an attack that steals a user's session cookie to impersonate them"
+        ],
+        "example": {
+          "text": "The vulnerability allowed a standard user to exploit a flaw in the service and achieve privilege escalation to administrator.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_code_injection",
+    "lang": "en",
+    "word": "code injection",
+    "pos": "noun",
+    "freqRank": 34597,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an attack where malicious input is crafted to be executed as code by a vulnerable application",
+        "distractors": [
+          "the process of automatically inserting debugging statements into source code",
+          "a technique for merging two branches of code during a release"
+        ],
+        "example": {
+          "text": "Failing to sanitize the input left the form vulnerable to code injection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_denial_of_service",
+    "lang": "en",
+    "word": "denial-of-service",
+    "pos": "noun",
+    "freqRank": 34765,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an attack that aims to make a system or service unavailable to legitimate users by overwhelming it with traffic or requests",
+        "distractors": [
+          "an attack that steals sensitive data without the victim noticing",
+          "a vulnerability that allows an attacker to read arbitrary files on a server"
+        ],
+        "example": {
+          "text": "The site went offline after being hit by a denial-of-service attack that flooded it with requests.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_throttling",
+    "lang": "en",
+    "word": "throttling",
+    "pos": "noun",
+    "freqRank": 34933,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "deliberately slowing or limiting the rate at which requests or operations are processed to prevent overload",
+        "distractors": [
+          "permanently blocking a client after it exceeds a usage limit",
+          "compressing responses before sending them to reduce bandwidth"
+        ],
+        "example": {
+          "text": "The API began throttling requests from clients that exceeded their allotted rate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rate_limiting",
+    "lang": "en",
+    "word": "rate limiting",
+    "pos": "noun",
+    "freqRank": 35101,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a policy that caps the number of requests a client can make within a given time window, rejecting or delaying the excess",
+        "distractors": [
+          "a technique for prioritizing certain requests over others based on their content",
+          "a method of automatically scaling a service up when traffic increases"
+        ],
+        "example": {
+          "text": "Rate limiting returned a 429 error once a client exceeded one hundred requests per minute.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exponential_backoff",
+    "lang": "en",
+    "word": "exponential backoff",
+    "pos": "noun",
+    "freqRank": 35268,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a retry strategy where the wait time between successive attempts doubles or otherwise grows exponentially after each failure",
+        "distractors": [
+          "a strategy where every retry happens at a fixed, unchanging interval",
+          "a technique that immediately retries a failed request as many times as possible"
+        ],
+        "example": {
+          "text": "The client used exponential backoff, waiting longer and longer between each retry after the server returned errors.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_circuit_breaker",
+    "lang": "en",
+    "word": "circuit breaker",
+    "pos": "noun",
+    "freqRank": 35436,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a resilience pattern that stops sending requests to a failing dependency for a period of time, allowing it to recover instead of being overwhelmed",
+        "distractors": [
+          "a hardware component that physically disconnects a server from the network during an outage",
+          "a testing tool that simulates network failures to validate error handling"
+        ],
+        "example": {
+          "text": "The circuit breaker tripped after five consecutive failures and stopped calling the downstream service for thirty seconds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bulkhead_pattern",
+    "lang": "en",
+    "word": "bulkhead pattern",
+    "pos": "noun",
+    "freqRank": 35604,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a design pattern that isolates resources, such as thread pools or connections, for different parts of a system so a failure in one does not exhaust resources needed by another",
+        "distractors": [
+          "a pattern for splitting a monolithic database into smaller shards",
+          "a technique for encrypting data separately for each tenant in a multitenant system"
+        ],
+        "example": {
+          "text": "Applying the bulkhead pattern, the team gave each downstream call its own connection pool so one slow dependency couldn't starve the others.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_poison_pill",
+    "lang": "en",
+    "word": "poison pill",
+    "pos": "noun",
+    "freqRank": 35772,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a special message inserted into a queue or stream to signal consumers to stop processing, or a malformed message that repeatedly crashes a consumer",
+        "distractors": [
+          "a message that is automatically duplicated across every subscriber",
+          "a technique for encrypting messages so only the intended consumer can read them"
+        ],
+        "example": {
+          "text": "Publishing a poison pill message to the queue told every worker thread to shut down gracefully.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dead_letter_queue",
+    "lang": "en",
+    "word": "dead letter queue",
+    "pos": "noun",
+    "freqRank": 35940,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a holding queue where messages that repeatedly fail to be processed are routed instead of being retried indefinitely or discarded",
+        "distractors": [
+          "a queue that stores messages waiting to be encrypted before delivery",
+          "a backup queue that mirrors every message sent through the main queue"
+        ],
+        "example": {
+          "text": "After failing three times, the malformed order was moved to the dead letter queue for manual inspection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_publish_subscribe",
+    "lang": "en",
+    "word": "publish-subscribe",
+    "pos": "noun",
+    "freqRank": 36107,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a messaging pattern in which senders publish messages to a channel without knowing who, if anyone, will receive them, and subscribers receive messages from channels they are interested in",
+        "distractors": [
+          "a pattern where a client directly calls a specific method on a known server",
+          "a pattern where every message is stored permanently in a single database table"
+        ],
+        "example": {
+          "text": "The notification system used publish-subscribe so new services could listen for events without the publisher knowing they existed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fan_out",
+    "lang": "en",
+    "word": "fan-out",
+    "pos": "noun",
+    "freqRank": 36275,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the distribution of a single input, such as a request or message, to multiple downstream consumers or destinations",
+        "distractors": [
+          "the process of merging multiple data streams into a single output",
+          "the gradual reduction of traffic sent to a failing service"
+        ],
+        "example": {
+          "text": "The event triggered a fan-out to a dozen downstream services that each needed to react to it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fan_in",
+    "lang": "en",
+    "word": "fan-in",
+    "pos": "noun",
+    "freqRank": 36443,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the consolidation of multiple inputs, streams, or signals into a single output or destination",
+        "distractors": [
+          "the process of splitting one large task into many smaller parallel tasks",
+          "a technique for reducing the number of open network connections"
+        ],
+        "example": {
+          "text": "The aggregator performed a fan-in, combining results from all the parallel workers into a single response.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_batching",
+    "lang": "en",
+    "word": "batching",
+    "pos": "noun",
+    "freqRank": 36611,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "grouping multiple individual operations or requests together so they can be processed as a single unit for efficiency",
+        "distractors": [
+          "splitting one large request into several smaller ones for parallel processing",
+          "the process of retrying failed operations one at a time"
+        ],
+        "example": {
+          "text": "Batching the database writes into groups of a hundred cut the total insert time dramatically.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_debouncing",
+    "lang": "en",
+    "word": "debouncing",
+    "pos": "noun",
+    "freqRank": 36779,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that delays acting on an event until a burst of similar events has stopped occurring, preventing redundant work",
+        "distractors": [
+          "a technique that immediately triggers an action on every single event",
+          "a method for detecting and removing duplicate records from a dataset"
+        ],
+        "example": {
+          "text": "Debouncing the search input meant the app waited until the user paused typing before firing the query.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_long_polling",
+    "lang": "en",
+    "word": "long polling",
+    "pos": "noun",
+    "freqRank": 36946,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique where a client repeatedly requests updates from a server, and the server holds the connection open until new data is available before responding",
+        "distractors": [
+          "a technique where a server pushes updates to clients without them ever requesting anything",
+          "a method for compressing repeated HTTP requests into a single connection"
+        ],
+        "example": {
+          "text": "Before WebSockets were common, chat applications often relied on long polling to receive near-real-time messages.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_webhook",
+    "lang": "en",
+    "word": "webhook",
+    "pos": "noun",
+    "freqRank": 37114,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an HTTP callback that a service automatically sends to a configured URL when a specific event occurs",
+        "distractors": [
+          "a browser extension that blocks unwanted network requests",
+          "a scheduled job that runs a script at fixed intervals"
+        ],
+        "example": {
+          "text": "The payment provider sent a webhook to the store's server as soon as a transaction was completed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_referential_integrity",
+    "lang": "en",
+    "word": "referential integrity",
+    "pos": "noun",
+    "freqRank": 37282,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a database constraint ensuring that a reference from one table to another always points to an existing, valid row",
+        "distractors": [
+          "a guarantee that a database will never lose data during a power failure",
+          "a rule requiring every column in a table to have a unique value"
+        ],
+        "example": {
+          "text": "Referential integrity prevented the order from being deleted while it still referenced a customer record.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_write_ahead_log",
+    "lang": "en",
+    "word": "write-ahead log",
+    "pos": "noun",
+    "freqRank": 37450,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a durability technique where changes are recorded in a sequential log before being applied to the actual data, so the system can recover after a crash",
+        "distractors": [
+          "a log that records every read operation for auditing purposes",
+          "a cache that stores the most recently written rows for fast access"
+        ],
+        "example": {
+          "text": "After the crash, the database replayed the write-ahead log to restore any changes that hadn't been fully applied.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_log_compaction",
+    "lang": "en",
+    "word": "log compaction",
+    "pos": "noun",
+    "freqRank": 37617,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of removing obsolete or superseded entries from a log, keeping only the latest relevant record for each key",
+        "distractors": [
+          "the process of encrypting a log file before archiving it",
+          "a technique for splitting a single log into multiple smaller logs"
+        ],
+        "example": {
+          "text": "Log compaction kept only the most recent update for each key, shrinking the log without losing important history.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_checkpointing",
+    "lang": "en",
+    "word": "checkpointing",
+    "pos": "noun",
+    "freqRank": 37785,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "periodically saving a program's or system's current state so it can resume from that point instead of starting over after a failure",
+        "distractors": [
+          "the process of validating a program's output against expected results",
+          "a technique for splitting a long-running job into independent parallel tasks"
+        ],
+        "example": {
+          "text": "The training job checkpointed its progress every hour so it could resume after a crash without losing days of work.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_snapshotting",
+    "lang": "en",
+    "word": "snapshotting",
+    "pos": "noun",
+    "freqRank": 37953,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capturing the complete state of a system, dataset, or volume at a specific point in time",
+        "distractors": [
+          "gradually migrating data from one storage system to another",
+          "compressing historical data to save storage space"
+        ],
+        "example": {
+          "text": "The team took a snapshot of the volume before applying the risky migration, so they could roll back if needed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_two_phase_commit",
+    "lang": "en",
+    "word": "two-phase commit",
+    "pos": "noun",
+    "freqRank": 38121,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a protocol that coordinates a transaction across multiple systems by first asking all participants to prepare, then telling them all to commit only if every participant agreed",
+        "distractors": [
+          "a protocol where each system commits its part of the transaction independently, without coordination",
+          "a technique for splitting a transaction into two smaller, unrelated transactions"
+        ],
+        "example": {
+          "text": "Two-phase commit ensured that either both databases recorded the transfer or neither did.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_saga_pattern",
+    "lang": "en",
+    "word": "saga pattern",
+    "pos": "noun",
+    "freqRank": 38289,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a way of managing a long-running transaction across multiple services as a sequence of local transactions, each with a corresponding action to undo it if a later step fails",
+        "distractors": [
+          "a pattern where a single service holds a lock across an entire multi-step transaction",
+          "a caching strategy that stores intermediate results of a workflow"
+        ],
+        "example": {
+          "text": "Instead of a distributed transaction, the order process used a saga pattern, undoing the payment step if inventory reservation failed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compensating_transaction",
+    "lang": "en",
+    "word": "compensating transaction",
+    "pos": "noun",
+    "freqRank": 38456,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an operation that reverses the effect of a previously completed step in a multi-step process when a later step fails",
+        "distractors": [
+          "a transaction that is automatically retried until it succeeds",
+          "a transaction that combines several smaller operations into a single atomic unit"
+        ],
+        "example": {
+          "text": "When the shipping step failed, a compensating transaction refunded the customer's payment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_optimistic_concurrency",
+    "lang": "en",
+    "word": "optimistic concurrency",
+    "pos": "noun",
+    "freqRank": 38624,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strategy that allows multiple transactions to proceed without locking, checking for conflicts only when a transaction attempts to commit",
+        "distractors": [
+          "a strategy that locks a resource before any transaction is allowed to read it",
+          "a strategy that always processes transactions in the order they arrive"
+        ],
+        "example": {
+          "text": "Under optimistic concurrency, the update was rejected because another transaction had changed the row first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pessimistic_locking",
+    "lang": "en",
+    "word": "pessimistic locking",
+    "pos": "noun",
+    "freqRank": 38792,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strategy that locks a resource before a transaction reads or modifies it, preventing any other transaction from touching it until the lock is released",
+        "distractors": [
+          "a strategy that allows conflicts to happen and resolves them after the fact",
+          "a strategy that never locks resources and instead relies on retries"
+        ],
+        "example": {
+          "text": "Pessimistic locking held a lock on the inventory row for the entire duration of the checkout process.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lock_contention",
+    "lang": "en",
+    "word": "lock contention",
+    "pos": "noun",
+    "freqRank": 38960,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the performance-degrading situation where multiple threads frequently compete for the same lock, forcing many of them to wait",
+        "distractors": [
+          "a bug where a lock is never released after it is acquired",
+          "a design flaw where a system has no locking mechanism at all"
+        ],
+        "example": {
+          "text": "High lock contention on the shared counter became the main bottleneck as more threads were added.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_starvation",
+    "lang": "en",
+    "word": "starvation",
+    "pos": "noun",
+    "freqRank": 39128,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a situation where a process or thread is perpetually denied the resources it needs to proceed, even though the resources become available",
+        "distractors": [
+          "a situation where a process runs out of memory and crashes",
+          "a state where two processes are permanently blocked waiting on each other"
+        ],
+        "example": {
+          "text": "Low-priority requests suffered from starvation because higher-priority ones always jumped the queue first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_priority_inversion",
+    "lang": "en",
+    "word": "priority inversion",
+    "pos": "noun",
+    "freqRank": 39295,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a scenario where a lower-priority task holds a resource needed by a higher-priority task, effectively causing the higher-priority task to wait behind the lower-priority one",
+        "distractors": [
+          "a scheduling bug where tasks are executed in exactly reverse priority order",
+          "a situation where a process's priority is randomly reassigned at runtime"
+        ],
+        "example": {
+          "text": "Priority inversion delayed the critical task because it was stuck waiting on a lock held by a low-priority background job.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spinlock",
+    "lang": "en",
+    "word": "spinlock",
+    "pos": "noun",
+    "freqRank": 39463,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a lock where a thread repeatedly checks in a tight loop whether the lock is available, rather than yielding the CPU while it waits",
+        "distractors": [
+          "a lock that automatically releases itself after a fixed timeout",
+          "a lock that can be held by multiple threads simultaneously"
+        ],
+        "example": {
+          "text": "Because the critical section was so short, using a spinlock avoided the overhead of putting the thread to sleep.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_busy_waiting",
+    "lang": "en",
+    "word": "busy-waiting",
+    "pos": "noun",
+    "freqRank": 39631,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "repeatedly checking a condition in a loop while consuming CPU cycles, instead of blocking until the condition is met",
+        "distractors": [
+          "pausing a thread indefinitely until another thread wakes it up",
+          "gradually reducing the frequency of a background task over time"
+        ],
+        "example": {
+          "text": "The old code used busy-waiting to poll for a flag, wasting an entire CPU core doing nothing useful.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lazy_evaluation",
+    "lang": "en",
+    "word": "lazy evaluation",
+    "pos": "noun",
+    "freqRank": 39799,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an evaluation strategy that delays computing an expression's value until it is actually needed",
+        "distractors": [
+          "an evaluation strategy that computes every expression as soon as it is defined",
+          "a strategy that caches results permanently regardless of whether they change"
+        ],
+        "example": {
+          "text": "Thanks to lazy evaluation, the infinite sequence was never fully computed, only as much of it as the program actually used.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eager_evaluation",
+    "lang": "en",
+    "word": "eager evaluation",
+    "pos": "noun",
+    "freqRank": 39966,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an evaluation strategy that computes an expression's value as soon as it is bound, regardless of whether it is later used",
+        "distractors": [
+          "an evaluation strategy that defers computation until the result is requested",
+          "a strategy that only evaluates expressions inside loops"
+        ],
+        "example": {
+          "text": "Under eager evaluation, both arguments were computed immediately, even the one the function ended up ignoring.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_higher_order_function",
+    "lang": "en",
+    "word": "higher-order function",
+    "pos": "noun",
+    "freqRank": 40134,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a function that takes another function as an argument, returns a function as its result, or both",
+        "distractors": [
+          "a function that can only be called from within the same module",
+          "a function whose return type changes depending on its arguments"
+        ],
+        "example": {
+          "text": "Map is a higher-order function because it takes another function and applies it to every element of a list.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pure_function",
+    "lang": "en",
+    "word": "pure function",
+    "pos": "noun",
+    "freqRank": 40302,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a function whose output depends only on its inputs and that produces no observable side effects",
+        "distractors": [
+          "a function that has been optimized to run as fast as possible",
+          "a function that always returns the same data type regardless of input"
+        ],
+        "example": {
+          "text": "Because the function was pure, it could be safely memoized without worrying about changing external state.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_side_effect",
+    "lang": "en",
+    "word": "side effect",
+    "pos": "noun",
+    "freqRank": 40470,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "any observable change a function makes beyond returning a value, such as modifying a variable outside its scope or performing I/O",
+        "distractors": [
+          "an unintended bug that occurs only in production environments",
+          "the extra memory a function consumes while it is running"
+        ],
+        "example": {
+          "text": "Logging inside the function introduced a side effect that made it harder to reason about in isolation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_referential_transparency",
+    "lang": "en",
+    "word": "referential transparency",
+    "pos": "noun",
+    "freqRank": 40638,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the property of an expression that it can be replaced with its computed value without changing the program's behavior",
+        "distractors": [
+          "the ability of a program to inspect its own source code at runtime",
+          "a guarantee that all variable names in a program are unique"
+        ],
+        "example": {
+          "text": "Referential transparency let the compiler safely cache the result of the expression and reuse it elsewhere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_immutability",
+    "lang": "en",
+    "word": "immutability",
+    "pos": "noun",
+    "freqRank": 40805,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the property of a value or object that cannot be changed after it is created",
+        "distractors": [
+          "the property of a variable that can be assigned only within a single function",
+          "the guarantee that a data structure will never grow beyond a fixed size"
+        ],
+        "example": {
+          "text": "Immutability meant that sharing the object between threads was safe, since neither could modify it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_persistent_data_structure",
+    "lang": "en",
+    "word": "persistent data structure",
+    "pos": "noun",
+    "freqRank": 40973,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a data structure that preserves previous versions of itself when modified, instead of being changed in place",
+        "distractors": [
+          "a data structure that is stored permanently on disk rather than in memory",
+          "a data structure whose size never changes once it is created"
+        ],
+        "example": {
+          "text": "The persistent data structure let the editor keep every past version of the document accessible for undo.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_topological_sort",
+    "lang": "en",
+    "word": "topological sort",
+    "pos": "noun",
+    "freqRank": 41141,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an ordering of the nodes in a directed acyclic graph such that every node appears before all the nodes it points to",
+        "distractors": [
+          "an ordering of graph nodes by their total number of connections",
+          "a method for finding the shortest path between two nodes in a graph"
+        ],
+        "example": {
+          "text": "The build system used a topological sort of the dependency graph to determine which modules to compile first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dynamic_dispatch",
+    "lang": "en",
+    "word": "dynamic dispatch",
+    "pos": "noun",
+    "freqRank": 41309,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mechanism by which a program determines, at runtime, which specific implementation of a method to invoke based on the actual type of an object",
+        "distractors": [
+          "a mechanism that resolves a function call to a fixed address at compile time",
+          "a technique for distributing incoming requests across multiple servers"
+        ],
+        "example": {
+          "text": "Dynamic dispatch let the same method call invoke different behavior depending on which subclass the object actually was.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_late_binding",
+    "lang": "en",
+    "word": "late binding",
+    "pos": "noun",
+    "freqRank": 41477,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the resolution of which method or variable a name refers to at runtime rather than at compile time",
+        "distractors": [
+          "the resolution of a variable's memory address at compile time",
+          "a technique for linking a program's external libraries after it has already started running"
+        ],
+        "example": {
+          "text": "Late binding allowed the interpreter to look up the correct method only when the call was actually executed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_early_binding",
+    "lang": "en",
+    "word": "early binding",
+    "pos": "noun",
+    "freqRank": 41644,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the resolution of which method or function a call refers to at compile time, before the program runs",
+        "distractors": [
+          "the practice of declaring all variables at the top of a function",
+          "a linking strategy that resolves external libraries only when the program starts"
+        ],
+        "example": {
+          "text": "Because the compiler used early binding, it could catch the mismatched method call before the program ever ran.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_name_mangling",
+    "lang": "en",
+    "word": "name mangling",
+    "pos": "noun",
+    "freqRank": 41812,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler technique of encoding extra information, such as parameter types, into a function's internal name to support features like overloading",
+        "distractors": [
+          "the practice of obfuscating variable names to make source code harder to read",
+          "a technique for renaming variables automatically across an entire codebase"
+        ],
+        "example": {
+          "text": "Name mangling let the linker distinguish between two overloaded functions that shared the same name in the source code.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shadowing",
+    "lang": "en",
+    "word": "shadowing",
+    "pos": "noun",
+    "freqRank": 41980,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "when a variable declared in an inner scope has the same name as one in an outer scope, temporarily hiding the outer variable",
+        "distractors": [
+          "when a function silently swallows an exception instead of reporting it",
+          "a technique for creating a duplicate copy of an object for backup purposes"
+        ],
+        "example": {
+          "text": "The inner loop variable was shadowing the outer one, which caused a confusing bug when the wrong value was used.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hoisting",
+    "lang": "en",
+    "word": "hoisting",
+    "pos": "noun",
+    "freqRank": 42148,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a behavior in some languages where variable and function declarations are conceptually moved to the top of their scope before the code executes",
+        "distractors": [
+          "a technique for moving frequently used code into a separate reusable module",
+          "a process that lifts loop-invariant computations out of a loop to improve performance"
+        ],
+        "example": {
+          "text": "Because of hoisting, the function could be called before its declaration appeared later in the file.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tree_shaking",
+    "lang": "en",
+    "word": "tree shaking",
+    "pos": "noun",
+    "freqRank": 42315,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a build-time optimization that removes code which is never actually used, or imported but not referenced, from the final bundle",
+        "distractors": [
+          "a technique for rebalancing a binary search tree after many insertions",
+          "a debugging technique that visualizes a program's call stack as a tree"
+        ],
+        "example": {
+          "text": "Tree shaking cut the bundle size significantly by stripping out the parts of the library the app never imported.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dead_code_elimination",
+    "lang": "en",
+    "word": "dead code elimination",
+    "pos": "noun",
+    "freqRank": 42483,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler optimization that removes code whose result is never used or that can never be reached during execution",
+        "distractors": [
+          "a runtime process that deletes objects no longer referenced by the program",
+          "a technique for detecting infinite loops before a program runs"
+        ],
+        "example": {
+          "text": "Dead code elimination removed the entire branch, since the compiler could prove the condition was always false.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_constant_folding",
+    "lang": "en",
+    "word": "constant folding",
+    "pos": "noun",
+    "freqRank": 42651,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler optimization that evaluates expressions made up entirely of constants at compile time instead of at runtime",
+        "distractors": [
+          "a technique for replacing variables with their most recently assigned value",
+          "an optimization that merges duplicate string literals into a single copy"
+        ],
+        "example": {
+          "text": "Constant folding turned the expression two times three into the literal six before the program even ran.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_loop_unrolling",
+    "lang": "en",
+    "word": "loop unrolling",
+    "pos": "noun",
+    "freqRank": 42819,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler optimization that duplicates the body of a loop multiple times to reduce the overhead of loop control and enable further optimization",
+        "distractors": [
+          "a technique for splitting a single loop into two smaller, independent loops",
+          "a debugging technique that runs a loop backward to find where a bug started"
+        ],
+        "example": {
+          "text": "Loop unrolling reduced the number of branch checks by processing four array elements per iteration instead of one.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inlining",
+    "lang": "en",
+    "word": "inlining",
+    "pos": "noun",
+    "freqRank": 42987,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler optimization that replaces a function call with the body of the called function to avoid call overhead",
+        "distractors": [
+          "a technique for storing small values directly in a CPU register instead of memory",
+          "the process of embedding an image directly into a web page's HTML"
+        ],
+        "example": {
+          "text": "Inlining the small getter function eliminated the overhead of a separate function call at each use.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_register_allocation",
+    "lang": "en",
+    "word": "register allocation",
+    "pos": "noun",
+    "freqRank": 43154,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compiler process of assigning a program's variables to a limited set of CPU registers to minimize slower memory access",
+        "distractors": [
+          "the process of reserving memory addresses for global variables at compile time",
+          "a technique for balancing load across multiple CPU cores"
+        ],
+        "example": {
+          "text": "Good register allocation kept the loop's frequently used variables in registers instead of spilling them to memory.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_register_spilling",
+    "lang": "en",
+    "word": "register spilling",
+    "pos": "noun",
+    "freqRank": 43322,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "when a compiler runs out of available CPU registers and must temporarily store some values in memory instead",
+        "distractors": [
+          "a bug where a register's value is overwritten before it is read",
+          "a technique for copying a register's value to every core simultaneously"
+        ],
+        "example": {
+          "text": "With so many live variables, register spilling forced the compiler to write several values back to the stack.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_instruction_scheduling",
+    "lang": "en",
+    "word": "instruction scheduling",
+    "pos": "noun",
+    "freqRank": 43490,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compiler optimization that reorders a program's instructions to better exploit the CPU's pipeline and avoid stalls, without changing the program's meaning",
+        "distractors": [
+          "the operating system's process of deciding which thread runs next on the CPU",
+          "a technique for splitting a large instruction into several smaller ones"
+        ],
+        "example": {
+          "text": "Instruction scheduling reordered the independent operations so the CPU didn't have to stall waiting on a slow memory load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_just_in_time_compilation",
+    "lang": "en",
+    "word": "just-in-time compilation",
+    "pos": "noun",
+    "freqRank": 43658,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that compiles code into native machine instructions during execution, rather than entirely before the program runs",
+        "distractors": [
+          "a technique that compiles an entire program in advance and ships only the resulting binary",
+          "a method for interpreting source code line by line without ever producing machine code"
+        ],
+        "example": {
+          "text": "The virtual machine used just-in-time compilation to turn frequently executed bytecode into fast native code while the program was running.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ahead_of_time_compilation",
+    "lang": "en",
+    "word": "ahead-of-time compilation",
+    "pos": "noun",
+    "freqRank": 43826,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "compiling a program entirely into native machine code before it runs, rather than compiling it during execution",
+        "distractors": [
+          "a technique that recompiles only the parts of a program that change most often",
+          "a method of compiling a program directly inside a running virtual machine"
+        ],
+        "example": {
+          "text": "Ahead-of-time compilation let the app start up instantly since there was no compilation step left to do at runtime.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coroutine",
+    "lang": "en",
+    "word": "coroutine",
+    "pos": "noun",
+    "freqRank": 43993,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a function that can suspend its execution and later resume from the same point, allowing cooperative multitasking without a full context switch",
+        "distractors": [
+          "a function that always runs on its own dedicated operating system thread",
+          "a function that is guaranteed to finish before any other code can run"
+        ],
+        "example": {
+          "text": "The coroutine paused at the await statement and let another task run before resuming exactly where it left off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_continuation",
+    "lang": "en",
+    "word": "continuation",
+    "pos": "noun",
+    "freqRank": 44161,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a representation of the rest of a computation at a given point, capturing what should happen next",
+        "distractors": [
+          "a function that repeats its execution until a condition is met",
+          "a variable that holds the return value of the most recently called function"
+        ],
+        "example": {
+          "text": "The interpreter captured a continuation at that point in the program, allowing execution to be resumed there later.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_green_thread",
+    "lang": "en",
+    "word": "green thread",
+    "pos": "noun",
+    "freqRank": 44329,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a lightweight thread scheduled by a language runtime or library rather than by the operating system",
+        "distractors": [
+          "a thread that is guaranteed exclusive access to a CPU core",
+          "a thread created specifically to handle environmental or sensor data"
+        ],
+        "example": {
+          "text": "The runtime could spawn thousands of green threads without the overhead that real operating system threads would require.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cooperative_multitasking",
+    "lang": "en",
+    "word": "cooperative multitasking",
+    "pos": "noun",
+    "freqRank": 44497,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a scheduling approach where each running task must voluntarily yield control back to the scheduler for another task to run",
+        "distractors": [
+          "a scheduling approach where the operating system forcibly interrupts tasks at fixed intervals",
+          "a technique where multiple CPUs share a single task queue"
+        ],
+        "example": {
+          "text": "Under cooperative multitasking, a task that never yielded could block every other task from ever running.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_actor_model",
+    "lang": "en",
+    "word": "actor model",
+    "pos": "noun",
+    "freqRank": 44664,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a concurrency model where independent units called actors communicate exclusively by sending asynchronous messages, each processing one message at a time",
+        "distractors": [
+          "a model where all threads share memory directly and coordinate using locks",
+          "a design pattern for structuring a user interface around discrete visual components"
+        ],
+        "example": {
+          "text": "In the actor model, each actor had its own private state and could only be affected by messages sent to it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_byzantine_fault_tolerance",
+    "lang": "en",
+    "word": "Byzantine fault tolerance",
+    "pos": "noun",
+    "freqRank": 44832,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ability of a distributed system to reach correct agreement even when some of its participants behave arbitrarily or maliciously, not just by crashing",
+        "distractors": [
+          "the ability of a system to recover automatically after a single node crashes",
+          "a guarantee that a system will never lose data even during a total power failure"
+        ],
+        "example": {
+          "text": "The blockchain protocol was designed with Byzantine fault tolerance so it could reach consensus even if some nodes sent conflicting or malicious messages.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bloom_filter",
+    "lang": "en",
+    "word": "bloom filter",
+    "pos": "noun",
+    "freqRank": 45000,
+    "difficulty": "hard",
+    "tags": [
+      "computer-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a space-efficient probabilistic data structure that quickly tests whether an element is possibly in a set, with no false negatives but a small chance of false positives",
+        "distractors": [
+          "a data structure that stores exact counts of how many times each element was inserted",
+          "a filter that removes duplicate entries from a stream permanently"
+        ],
+        "example": {
+          "text": "The database used a bloom filter to quickly rule out keys that definitely weren't present before doing an expensive disk lookup.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_polyphony",
+    "lang": "en",
+    "word": "polyphony",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a musical texture consisting of two or more independent melodic lines sounding together",
+        "distractors": [
+          "a single melodic line performed without any accompaniment",
+          "the use of only chords built in stacked thirds"
+        ],
+        "example": {
+          "text": "The motet's polyphony wove four independent vocal lines into a single texture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_homophony",
+    "lang": "en",
+    "word": "homophony",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a texture in which one main melody is supported by subordinate chordal accompaniment",
+        "distractors": [
+          "a texture built from several equally important independent melodies",
+          "music performed entirely in unison by all voices"
+        ],
+        "example": {
+          "text": "Chorale settings are typically homophony, with the melody carried by the top voice over block chords.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heterophony",
+    "lang": "en",
+    "word": "heterophony",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a texture in which multiple performers simultaneously vary the same basic melody",
+        "distractors": [
+          "a texture of two unrelated melodies played in different keys",
+          "a single melodic line doubled exactly at the octave"
+        ],
+        "example": {
+          "text": "In the folk ensemble, heterophony emerged as each fiddler ornamented the shared tune slightly differently.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_counterpoint",
+    "lang": "en",
+    "word": "counterpoint",
+    "pos": "noun",
+    "freqRank": 21500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the technique of combining two or more independent melodic lines according to rules governing their relationship",
+        "distractors": [
+          "the practice of harmonizing a melody with a single chord per bar",
+          "the study of instrumental tone color"
+        ],
+        "example": {
+          "text": "Bach's counterpoint interlaces four voices so each retains its own melodic logic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contrapuntal",
+    "lang": "en",
+    "word": "contrapuntal",
+    "pos": "adjective",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "relating to or written in the style of counterpoint, with independent interweaving melodic lines",
+        "distractors": [
+          "relating to music built entirely from block chords",
+          "relating to strictly improvised, unnotated music"
+        ],
+        "example": {
+          "text": "The fugue's contrapuntal texture demands that each entering voice remain melodically independent.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dissonance",
+    "lang": "en",
+    "word": "dissonance",
+    "pos": "noun",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a combination of tones that sounds tense or unstable and seeks resolution",
+        "distractors": [
+          "a chord built exclusively from stacked thirds",
+          "the steady pulse underlying a piece of music"
+        ],
+        "example": {
+          "text": "The dissonance of the suspended fourth resolved smoothly down to the third.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_consonance",
+    "lang": "en",
+    "word": "consonance",
+    "pos": "noun",
+    "freqRank": 20800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a combination of tones that sounds stable and does not require resolution",
+        "distractors": [
+          "a rapid alternation between two adjacent pitches",
+          "the deliberate blurring of the beat through off-accents"
+        ],
+        "example": {
+          "text": "The phrase ended on a consonance, giving the listener a clear sense of arrival.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cadence",
+    "lang": "en",
+    "word": "cadence",
+    "pos": "noun",
+    "freqRank": 20200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a harmonic or melodic formula that marks the end of a phrase, section, or piece",
+        "distractors": [
+          "a repeating rhythmic pattern maintained under a changing melody",
+          "the overall range of pitches a voice or instrument can produce"
+        ],
+        "example": {
+          "text": "The final cadence resolved firmly onto the tonic chord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_modulation",
+    "lang": "en",
+    "word": "modulation",
+    "pos": "noun",
+    "freqRank": 20300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of moving from one key to another within a piece of music",
+        "distractors": [
+          "the gradual increase in loudness over a phrase",
+          "the doubling of a melodic line at the octave"
+        ],
+        "example": {
+          "text": "The bridge achieves a modulation from C major to the relative minor.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_modulate",
+    "lang": "en",
+    "word": "modulate",
+    "pos": "verb",
+    "freqRank": 20400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to shift a passage of music from one key to another",
+        "distractors": [
+          "to double a melodic line in parallel octaves",
+          "to slow the tempo gradually toward the end of a phrase"
+        ],
+        "example": {
+          "text": "The composer modulates to the dominant just before the second theme.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syncopation",
+    "lang": "en",
+    "word": "syncopation",
+    "pos": "noun",
+    "freqRank": 20600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rhythmic effect created by accenting beats or parts of beats that are normally weak",
+        "distractors": [
+          "the simultaneous sounding of two different keys",
+          "the exact repetition of a melodic phrase a step higher"
+        ],
+        "example": {
+          "text": "The syncopation in the bass line pushes accents onto the off-beats.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syncopate",
+    "lang": "en",
+    "word": "syncopate",
+    "pos": "verb",
+    "freqRank": 20700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to shift rhythmic accents onto normally unaccented beats or offbeats",
+        "distractors": [
+          "to combine two independent melodic lines contrapuntally",
+          "to raise a passage by a fixed interval into a new key"
+        ],
+        "example": {
+          "text": "The arranger syncopated the melody to give it a jazzier feel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tessitura",
+    "lang": "en",
+    "word": "tessitura",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the range of pitches in which a particular voice or instrumental part lies most comfortably and is used most often",
+        "distractors": [
+          "the total possible pitch range of an instrument from lowest to highest note",
+          "a short cadenza-like passage inserted before a final cadence"
+        ],
+        "example": {
+          "text": "The aria's high tessitura suits a lyric soprano rather than a mezzo.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_timbre",
+    "lang": "en",
+    "word": "timbre",
+    "pos": "noun",
+    "freqRank": 20100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the distinctive tone color or quality of a sound that distinguishes one instrument or voice from another",
+        "distractors": [
+          "the loudness of a sound measured over time",
+          "the precise duration of a single note"
+        ],
+        "example": {
+          "text": "The oboe's reedy timbre cuts through the orchestral texture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ostinato",
+    "lang": "en",
+    "word": "ostinato",
+    "pos": "noun",
+    "freqRank": 23500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a short musical pattern that is repeated persistently, usually in the same voice or register",
+        "distractors": [
+          "a sudden unexpected change of key",
+          "a passage played freely without strict tempo"
+        ],
+        "example": {
+          "text": "A driving bass ostinato underpins the entire movement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_leitmotif",
+    "lang": "en",
+    "word": "leitmotif",
+    "pos": "noun",
+    "freqRank": 22500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a recurring musical theme associated with a particular character, idea, or situation, especially in opera or film",
+        "distractors": [
+          "a short cadential formula used to end a phrase",
+          "a scale built from alternating whole and half steps"
+        ],
+        "example": {
+          "text": "Wagner assigns a distinct leitmotif to each major character in the cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polyrhythm",
+    "lang": "en",
+    "word": "polyrhythm",
+    "pos": "noun",
+    "freqRank": 25500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the simultaneous use of two or more conflicting rhythmic patterns or meters",
+        "distractors": [
+          "a single rhythm that gradually slows down and speeds up",
+          "the practice of doubling a rhythm exactly an octave apart"
+        ],
+        "example": {
+          "text": "The drummer layered a polyrhythm of three against two across the ensemble.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hemiola",
+    "lang": "en",
+    "word": "hemiola",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rhythmic device in which two bars of triple meter are reinterpreted as three bars of duple meter, or the reverse",
+        "distractors": [
+          "a scale that alternates major and minor thirds",
+          "a cadence that avoids resolving to the expected tonic"
+        ],
+        "example": {
+          "text": "Brahms uses a hemiola near the cadence to blur the sense of triple meter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_augmentation",
+    "lang": "en",
+    "word": "augmentation",
+    "pos": "noun",
+    "freqRank": 24500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compositional technique of restating a melodic idea in longer note values than its original form",
+        "distractors": [
+          "the technique of restating a melodic idea backward from end to beginning",
+          "the process of adding extra voices to a previously solo texture"
+        ],
+        "example": {
+          "text": "The fugue's final entry presents the subject in augmentation, doubling every note's duration.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diminution",
+    "lang": "en",
+    "word": "diminution",
+    "pos": "noun",
+    "freqRank": 24600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compositional technique of restating a melodic idea in shorter note values than its original form",
+        "distractors": [
+          "the technique of inverting a melody so it moves in the opposite direction",
+          "the gradual reduction of the number of instruments playing"
+        ],
+        "example": {
+          "text": "The composer answers the theme with a diminution, compressing it into half the original time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inversion",
+    "lang": "en",
+    "word": "inversion",
+    "pos": "noun",
+    "freqRank": 21200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rearrangement of a chord, interval, or melody, such as reordering chord tones or flipping a melodic line's direction",
+        "distractors": [
+          "the exact repetition of a phrase at a different pitch level",
+          "the simultaneous combination of two keys"
+        ],
+        "example": {
+          "text": "The subject returns in inversion, with every ascending interval now descending.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_invert",
+    "lang": "en",
+    "word": "invert",
+    "pos": "verb",
+    "freqRank": 21300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to rearrange a musical element, such as flipping a melody's direction or reordering a chord's notes",
+        "distractors": [
+          "to slow a rhythmic pattern to twice its original duration",
+          "to combine two unrelated themes into a single passage"
+        ],
+        "example": {
+          "text": "The composer inverts the opening motif so its rising line now falls.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_retrograde",
+    "lang": "en",
+    "word": "retrograde",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a version of a melody or theme played with its original note order reversed, from last note to first",
+        "distractors": [
+          "a melody played with its rhythm doubled in speed",
+          "a chord progression that avoids returning to the tonic"
+        ],
+        "example": {
+          "text": "The final variation presents the theme in retrograde, unfolding backward from its last note.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sequence",
+    "lang": "en",
+    "word": "sequence",
+    "pos": "noun",
+    "freqRank": 21600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the immediate repetition of a melodic or harmonic pattern at a new pitch level",
+        "distractors": [
+          "a chord built by stacking notes a fourth apart instead of a third",
+          "the point where a piece changes from one meter to another"
+        ],
+        "example": {
+          "text": "The violin line rises through a sequence, repeating the same figure a step higher each time.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pedal_point",
+    "lang": "en",
+    "word": "pedal point",
+    "pos": "noun",
+    "freqRank": 26500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sustained or repeated note, usually in the bass, held while the harmonies above it change",
+        "distractors": [
+          "a brief silent gap inserted between two phrases",
+          "a note approached and left by step that is not part of the underlying chord"
+        ],
+        "example": {
+          "text": "The organ sustains a pedal point on the dominant beneath the shifting upper harmonies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_suspension",
+    "lang": "en",
+    "word": "suspension",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a note held over from one chord into the next, creating a dissonance that then resolves downward by step",
+        "distractors": [
+          "a chord that omits its third to sound ambiguous",
+          "a sudden unprepared change of dynamic level"
+        ],
+        "example": {
+          "text": "The 4-3 suspension delays the resolution to the tonic chord by one beat.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_retardation",
+    "lang": "en",
+    "word": "retardation",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a suspension-like dissonance that is held over and then resolves upward by step instead of downward",
+        "distractors": [
+          "a general slowing of tempo across an entire movement",
+          "a chord progression that repeats itself exactly a fourth higher"
+        ],
+        "example": {
+          "text": "The soprano's retardation resolves upward into the final tonic chord, unlike a typical suspension.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_appoggiatura",
+    "lang": "en",
+    "word": "appoggiatura",
+    "pos": "noun",
+    "freqRank": 27500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an ornamental note approached by a leap that falls on a strong beat and resolves by step into the following chord tone",
+        "distractors": [
+          "a note that connects two chord tones by moving stepwise on a weak beat",
+          "a chord formed entirely of intervals of a fourth"
+        ],
+        "example": {
+          "text": "The soprano's appoggiatura leans dissonantly into the downbeat before settling onto the chord tone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anticipation",
+    "lang": "en",
+    "word": "anticipation",
+    "pos": "noun",
+    "freqRank": 26800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a note that sounds before its chord arrives, briefly anticipating a tone of the coming harmony",
+        "distractors": [
+          "a note held over from the previous chord that resolves downward by step",
+          "a rest inserted to delay the arrival of a cadence"
+        ],
+        "example": {
+          "text": "The melody's anticipation sounds the new tonic note just before the harmony actually changes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_passing_tone",
+    "lang": "en",
+    "word": "passing tone",
+    "pos": "noun",
+    "freqRank": 24800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a non-chord tone that fills the stepwise space between two chord tones",
+        "distractors": [
+          "a note approached by leap that resolves by step on a strong beat",
+          "a tone sustained across several changing harmonies"
+        ],
+        "example": {
+          "text": "A passing tone connects the third and fifth of the chord by stepwise motion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neighbor_tone",
+    "lang": "en",
+    "word": "neighbor tone",
+    "pos": "noun",
+    "freqRank": 24900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a non-chord tone that steps away from a chord tone and then returns to the same chord tone",
+        "distractors": [
+          "a note that is repeated identically in every voice of a chord",
+          "a tone that leaps away from a chord tone and resolves to a different chord tone"
+        ],
+        "example": {
+          "text": "The upper neighbor tone decorates the melody before returning to the original pitch.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_escape_tone",
+    "lang": "en",
+    "word": "escape tone",
+    "pos": "noun",
+    "freqRank": 30500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a non-chord tone that is left by step and resolves by leap in the opposite direction",
+        "distractors": [
+          "a non-chord tone approached by leap and left by step",
+          "a chord tone that is deliberately omitted from the texture"
+        ],
+        "example": {
+          "text": "The escape tone steps away from the chord tone, then leaps back down to the next harmony.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cambiata",
+    "lang": "en",
+    "word": "cambiata",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a melodic figure in which a note is left by a skip to a non-chord tone that then resolves stepwise into the harmony",
+        "distractors": [
+          "a chord that substitutes a raised fourth for the fifth",
+          "a rhythmic pattern created by tying notes across the barline"
+        ],
+        "example": {
+          "text": "The cambiata in the alto line briefly steps outside the harmony before resolving.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tonic",
+    "lang": "en",
+    "word": "tonic",
+    "pos": "noun",
+    "freqRank": 20150,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the first scale degree of a key, serving as its central tone of rest and resolution",
+        "distractors": [
+          "the fifth scale degree, which typically precedes a cadence",
+          "the note a half step below the tonic that pulls toward it"
+        ],
+        "example": {
+          "text": "The piece firmly establishes C as its tonic in the opening bars.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dominant",
+    "lang": "en",
+    "word": "dominant",
+    "pos": "noun",
+    "freqRank": 20250,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fifth scale degree of a key, whose chord characteristically drives toward resolution on the tonic",
+        "distractors": [
+          "the first scale degree, functioning as the tonal center of a key",
+          "the sixth scale degree, which often substitutes for the tonic in a deceptive cadence"
+        ],
+        "example": {
+          "text": "The dominant chord builds tension that resolves onto the tonic at the cadence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_subdominant",
+    "lang": "en",
+    "word": "subdominant",
+    "pos": "noun",
+    "freqRank": 22800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fourth scale degree of a key, whose chord often precedes the dominant in a progression",
+        "distractors": [
+          "the second scale degree, typically used to introduce the dominant",
+          "the seventh scale degree, which leads strongly upward to the tonic"
+        ],
+        "example": {
+          "text": "The plagal cadence moves from the subdominant directly to the tonic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mediant",
+    "lang": "en",
+    "word": "mediant",
+    "pos": "noun",
+    "freqRank": 24100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the third scale degree of a key, situated midway between the tonic and dominant",
+        "distractors": [
+          "the sixth scale degree, lying midway between the subdominant and tonic an octave above",
+          "the note a half step below the tonic"
+        ],
+        "example": {
+          "text": "The chord built on the mediant often substitutes for the tonic in a deceptive progression.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_submediant",
+    "lang": "en",
+    "word": "submediant",
+    "pos": "noun",
+    "freqRank": 24200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sixth scale degree of a key, whose chord commonly receives the deceptive cadence",
+        "distractors": [
+          "the third scale degree, lying between the tonic and dominant",
+          "the leading tone, a half step below the tonic"
+        ],
+        "example": {
+          "text": "In the deceptive cadence, the dominant resolves to the submediant instead of the tonic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_leading_tone",
+    "lang": "en",
+    "word": "leading tone",
+    "pos": "noun",
+    "freqRank": 23800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the seventh scale degree of a major or harmonic minor key, a half step below the tonic, with a strong pull toward it",
+        "distractors": [
+          "the fifth scale degree, which forms the dominant chord",
+          "a non-chord tone that connects two chord tones stepwise"
+        ],
+        "example": {
+          "text": "The leading tone resolves upward by half step into the tonic at the cadence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chromaticism",
+    "lang": "en",
+    "word": "chromaticism",
+    "pos": "noun",
+    "freqRank": 25200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the use of notes outside a key's diatonic scale, typically moving by half step",
+        "distractors": [
+          "the exclusive use of a key's own scale tones without alteration",
+          "the practice of doubling a melody at the interval of an octave"
+        ],
+        "example": {
+          "text": "The late Romantic harmony is saturated with chromaticism that obscures the underlying key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enharmonic",
+    "lang": "en",
+    "word": "enharmonic",
+    "pos": "adjective",
+    "freqRank": 24300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing two different note names that represent the same pitch, such as F sharp and G flat",
+        "distractors": [
+          "describing a chord built from stacked fourths rather than thirds",
+          "describing a melody that is played simultaneously in two different keys"
+        ],
+        "example": {
+          "text": "The composer respells the chord enharmonically to prepare an unexpected modulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diatonic",
+    "lang": "en",
+    "word": "diatonic",
+    "pos": "adjective",
+    "freqRank": 23200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "using only the notes belonging to a given major or minor scale, without chromatic alteration",
+        "distractors": [
+          "using notes from outside the prevailing key, typically moving by half step",
+          "built from intervals of a fourth stacked on top of one another"
+        ],
+        "example": {
+          "text": "The opening theme stays strictly diatonic within the key of G major.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_atonal",
+    "lang": "en",
+    "word": "atonal",
+    "pos": "adjective",
+    "freqRank": 22900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "lacking a central key or tonal center, so no single pitch functions as a point of resolution",
+        "distractors": [
+          "written using only the seven notes of a major scale",
+          "centered firmly on a single tonic throughout"
+        ],
+        "example": {
+          "text": "Schoenberg's early free atonal pieces abandon traditional key relationships entirely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polytonality",
+    "lang": "en",
+    "word": "polytonality",
+    "pos": "noun",
+    "freqRank": 28500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the simultaneous use of two or more different keys in different musical layers",
+        "distractors": [
+          "the rapid alternation between two different meters",
+          "the practice of writing a melody using only a twelve-tone row"
+        ],
+        "example": {
+          "text": "Stravinsky layers polytonality by combining a C major and F-sharp major triad simultaneously.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_modality",
+    "lang": "en",
+    "word": "modality",
+    "pos": "noun",
+    "freqRank": 25800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the quality of a piece derived from its use of a mode, such as Dorian or Mixolydian, rather than major or minor tonality",
+        "distractors": [
+          "the specific tempo marking assigned at the start of a piece",
+          "the total number of independent voices in a texture"
+        ],
+        "example": {
+          "text": "The folk tune's modality gives it a distinctly Dorian flavor rather than a minor-key sound.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plagal_cadence",
+    "lang": "en",
+    "word": "plagal cadence",
+    "pos": "noun",
+    "freqRank": 27200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cadence that moves from the subdominant chord to the tonic chord, often called the amen cadence",
+        "distractors": [
+          "a cadence that moves from the dominant chord to the tonic chord",
+          "a cadence that ends on a chord other than the tonic"
+        ],
+        "example": {
+          "text": "The hymn closes with a plagal cadence beneath the final amen.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_authentic_cadence",
+    "lang": "en",
+    "word": "authentic cadence",
+    "pos": "noun",
+    "freqRank": 26200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cadence that moves from the dominant chord to the tonic chord, providing a strong sense of closure",
+        "distractors": [
+          "a cadence that moves from the subdominant chord to the tonic chord",
+          "a cadence that ends on the dominant chord, leaving the phrase open"
+        ],
+        "example": {
+          "text": "The movement concludes with a perfect authentic cadence in the home key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deceptive_cadence",
+    "lang": "en",
+    "word": "deceptive cadence",
+    "pos": "noun",
+    "freqRank": 27800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cadence in which the dominant chord resolves to a chord other than the tonic, usually the submediant, frustrating the expected resolution",
+        "distractors": [
+          "a cadence that ends squarely and predictably on the tonic chord",
+          "a cadence formed entirely of parallel perfect fifths"
+        ],
+        "example": {
+          "text": "Just before the final cadence, the composer inserts a deceptive cadence to prolong the phrase.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_half_cadence",
+    "lang": "en",
+    "word": "half cadence",
+    "pos": "noun",
+    "freqRank": 26400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cadence that ends on the dominant chord, creating a sense of pause rather than final closure",
+        "distractors": [
+          "a cadence that ends firmly on the tonic chord",
+          "a cadence in which the dominant resolves to the submediant"
+        ],
+        "example": {
+          "text": "The first phrase ends with a half cadence, leaving the harmony unresolved.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_phrygian_cadence",
+    "lang": "en",
+    "word": "Phrygian cadence",
+    "pos": "noun",
+    "freqRank": 31500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cadence in minor keys where the subdominant in first inversion moves to the dominant, characteristic of Baroque slow movements",
+        "distractors": [
+          "a cadence that ends on the tonic chord in root position",
+          "a cadence built entirely from a whole-tone scale"
+        ],
+        "example": {
+          "text": "The slow movement closes with a Phrygian cadence leading into the following Allegro.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_picardy_third",
+    "lang": "en",
+    "word": "Picardy third",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the raising of the third of a final tonic chord in a minor-key piece so that it ends on a major chord",
+        "distractors": [
+          "a chord that substitutes a lowered second scale degree for the tonic",
+          "an ornament that decorates a cadence with a rapid alternation of two pitches"
+        ],
+        "example": {
+          "text": "The minor-key fugue ends unexpectedly with a Picardy third, brightening the final chord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tritone",
+    "lang": "en",
+    "word": "tritone",
+    "pos": "noun",
+    "freqRank": 23600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the interval spanning three whole tones, such as an augmented fourth or diminished fifth, historically considered unstable",
+        "distractors": [
+          "the interval of a perfect fifth between two chord tones",
+          "a chord built from four stacked minor thirds"
+        ],
+        "example": {
+          "text": "The dominant seventh chord's tritone drives its strong pull toward resolution.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voice_leading",
+    "lang": "en",
+    "word": "voice leading",
+    "pos": "noun",
+    "freqRank": 25100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the manner in which individual musical lines move from chord to chord, typically by the smallest practical intervals",
+        "distractors": [
+          "the assignment of instruments to specific melodic lines in an orchestral score",
+          "the process of transposing an entire piece into a new key"
+        ],
+        "example": {
+          "text": "Smooth voice leading keeps each inner part moving by step wherever possible.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_figured_bass",
+    "lang": "en",
+    "word": "figured bass",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a system of numerals placed below a bass line indicating the chords and intervals to be played above it",
+        "distractors": [
+          "a bass line doubled an octave lower by a second instrument",
+          "a melodic ornament consisting of a rapid alternation between two notes"
+        ],
+        "example": {
+          "text": "The keyboardist realizes the figured bass, improvising chords from the numerals beneath the bass notes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_basso_continuo",
+    "lang": "en",
+    "word": "basso continuo",
+    "pos": "noun",
+    "freqRank": 27600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a continuous bass line, typically realized by keyboard and a bass instrument, that underpins Baroque ensemble music",
+        "distractors": [
+          "a solo cadenza performed without accompaniment near a movement's end",
+          "a melodic line doubled in parallel thirds throughout a piece"
+        ],
+        "example": {
+          "text": "The harpsichord and cello together provide the basso continuo beneath the singers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cantus_firmus",
+    "lang": "en",
+    "word": "cantus firmus",
+    "pos": "noun",
+    "freqRank": 26700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a preexisting melody, often drawn from chant, used as the structural foundation for a new polyphonic composition",
+        "distractors": [
+          "a melody composed entirely of chromatic passing tones",
+          "the highest voice in a four-part vocal texture"
+        ],
+        "example": {
+          "text": "The Renaissance mass sets a chant cantus firmus in long notes in the tenor voice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fugue",
+    "lang": "en",
+    "word": "fugue",
+    "pos": "noun",
+    "freqRank": 21100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a contrapuntal composition in which a subject is introduced by one voice and then imitated in turn by the others",
+        "distractors": [
+          "a piece built from a single repeated ostinato bass with no imitation",
+          "a composition consisting of a theme followed by successive variations"
+        ],
+        "example": {
+          "text": "The fugue's subject enters first in the alto, then is answered in the soprano a fifth higher.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stretto",
+    "lang": "en",
+    "word": "stretto",
+    "pos": "noun",
+    "freqRank": 27300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a passage, especially in a fugue, where successive entries of the subject overlap closely before the previous entry finishes",
+        "distractors": [
+          "a slow, freely improvised passage inserted before a final cadence",
+          "a section where all voices pause simultaneously"
+        ],
+        "example": {
+          "text": "The fugue builds intensity through a stretto in which the subject enters in quick succession.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_countersubject",
+    "lang": "en",
+    "word": "countersubject",
+    "pos": "noun",
+    "freqRank": 27900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a secondary melodic idea in a fugue that regularly accompanies the subject in counterpoint",
+        "distractors": [
+          "the opening statement of the main theme in a fugue's first voice",
+          "a chord progression that returns the music to the home key"
+        ],
+        "example": {
+          "text": "The countersubject weaves against the subject each time it reappears in a new voice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_canon",
+    "lang": "en",
+    "word": "canon",
+    "pos": "noun",
+    "freqRank": 21700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a contrapuntal composition in which one voice strictly imitates another at a fixed time interval",
+        "distractors": [
+          "a piece consisting of a single melody with no imitation at all",
+          "a set of variations on a repeated bass pattern"
+        ],
+        "example": {
+          "text": "The round is a simple canon in which each voice enters singing the identical melody in turn.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rondo",
+    "lang": "en",
+    "word": "rondo",
+    "pos": "noun",
+    "freqRank": 22600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a musical form in which a recurring main theme alternates with contrasting episodes",
+        "distractors": [
+          "a form consisting of a single theme repeated with continuous rhythmic variation only",
+          "a form built from an exposition, development, and recapitulation of two contrasting themes"
+        ],
+        "example": {
+          "text": "The finale is a lively rondo whose refrain returns after each contrasting episode.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recapitulation",
+    "lang": "en",
+    "word": "recapitulation",
+    "pos": "noun",
+    "freqRank": 25900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the section of sonata form that restates the exposition's themes, typically all in the home key",
+        "distractors": [
+          "the opening section of sonata form that first presents the primary and secondary themes",
+          "the central section of sonata form where thematic material is fragmented and explored"
+        ],
+        "example": {
+          "text": "The recapitulation brings back the second theme, now transposed into the tonic key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coda",
+    "lang": "en",
+    "word": "coda",
+    "pos": "noun",
+    "freqRank": 21400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a concluding passage appended to a movement or piece, extending the final cadential material",
+        "distractors": [
+          "the opening thematic statement of a sonata-form movement",
+          "a passage in which two independent themes are combined simultaneously"
+        ],
+        "example": {
+          "text": "The symphony ends with an extended coda that reaffirms the tonic key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scherzo",
+    "lang": "en",
+    "word": "scherzo",
+    "pos": "noun",
+    "freqRank": 23300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a lively, often rhythmically playful movement in triple meter, frequently used in place of a minuet",
+        "distractors": [
+          "a slow, lyrical movement typically placed second in a multi-movement work",
+          "a movement built entirely on variations of a single ground bass"
+        ],
+        "example": {
+          "text": "Beethoven's scherzo replaces the courtly minuet with a fast, energetic triple-meter movement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_through-composed",
+    "lang": "en",
+    "word": "through-composed",
+    "pos": "adjective",
+    "freqRank": 28700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a vocal work in which new music is written for each stanza of text rather than repeating the same music",
+        "distractors": [
+          "describing a piece built from a single repeated strophe of music for every stanza",
+          "describing a piece composed collaboratively by more than one composer"
+        ],
+        "example": {
+          "text": "Schubert's setting is through-composed, with fresh music tracking the poem's shifting imagery.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strophic",
+    "lang": "en",
+    "word": "strophic",
+    "pos": "adjective",
+    "freqRank": 27100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a vocal work in which the same music is repeated for each stanza of text",
+        "distractors": [
+          "describing a vocal work in which entirely new music accompanies each stanza of text",
+          "describing a piece with no fixed meter or steady pulse"
+        ],
+        "example": {
+          "text": "The folk song is strophic, using identical music for all five verses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_isorhythm",
+    "lang": "en",
+    "word": "isorhythm",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a medieval and early Renaissance compositional technique that repeats a fixed rhythmic pattern independently of the accompanying melodic pattern",
+        "distractors": [
+          "a technique in which a melody is repeated at a progressively faster tempo",
+          "the simultaneous performance of two entirely different meters"
+        ],
+        "example": {
+          "text": "The motet's tenor voice organizes its isorhythm around a repeating rhythmic pattern beneath varying pitches.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_talea",
+    "lang": "en",
+    "word": "talea",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the repeating rhythmic pattern used in an isorhythmic composition, independent of its melodic pattern",
+        "distractors": [
+          "the repeating pitch pattern used in an isorhythmic composition, independent of its rhythm",
+          "a short cadenza inserted between two structural sections"
+        ],
+        "example": {
+          "text": "The tenor's talea repeats every twelve measures while the melodic pattern spans a longer cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_serialism",
+    "lang": "en",
+    "word": "serialism",
+    "pos": "noun",
+    "freqRank": 26900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compositional method that organizes musical elements, especially pitch, according to a fixed ordered series",
+        "distractors": [
+          "a style of composition centered on tonal harmony and functional chord progressions",
+          "the practice of improvising freely without any predetermined structure"
+        ],
+        "example": {
+          "text": "Webern's serialism applies a strict twelve-tone ordering to every pitch in the piece.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dodecaphony",
+    "lang": "en",
+    "word": "dodecaphony",
+    "pos": "noun",
+    "freqRank": 30800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a twelve-tone compositional method in which all twelve chromatic pitches are treated as equally important, organized through a fixed row",
+        "distractors": [
+          "a scale system using only eight alternating whole and half steps",
+          "a texture built from twelve simultaneous independent melodic lines"
+        ],
+        "example": {
+          "text": "Schoenberg pioneered dodecaphony as a systematic alternative to traditional tonal harmony.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tone_row",
+    "lang": "en",
+    "word": "tone row",
+    "pos": "noun",
+    "freqRank": 27400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fixed ordering of the twelve chromatic pitches used as the basis for a twelve-tone composition",
+        "distractors": [
+          "a scale consisting of only whole-tone intervals",
+          "a chord built by stacking all twelve pitches simultaneously"
+        ],
+        "example": {
+          "text": "The composer derives the entire piece's melodic and harmonic material from a single tone row.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_aleatoric",
+    "lang": "en",
+    "word": "aleatoric",
+    "pos": "adjective",
+    "freqRank": 26300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "involving an element of chance or indeterminacy left to the performer's choice in a composition",
+        "distractors": [
+          "strictly notated so that every performance sounds identical",
+          "based entirely on a preexisting twelve-tone row"
+        ],
+        "example": {
+          "text": "In the aleatoric passage, performers choose the order of the notated fragments themselves.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spectralism",
+    "lang": "en",
+    "word": "spectralism",
+    "pos": "noun",
+    "freqRank": 33500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compositional approach that derives musical material from the analysis of a sound's acoustic overtone spectrum",
+        "distractors": [
+          "a compositional approach based strictly on a fixed twelve-tone row",
+          "a style built entirely on repeating diatonic patterns with gradual phase shifts"
+        ],
+        "example": {
+          "text": "Grisey's spectralism shapes the orchestration around the overtone series of a single low note.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_microtonality",
+    "lang": "en",
+    "word": "microtonality",
+    "pos": "noun",
+    "freqRank": 28300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the use of intervals smaller than the conventional semitone of Western equal temperament",
+        "distractors": [
+          "the use of only the twelve equal semitones of standard tuning",
+          "the practice of doubling every interval at the octave"
+        ],
+        "example": {
+          "text": "The composer's microtonality divides the octave into quarter tones rather than semitones.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_just_intonation",
+    "lang": "en",
+    "word": "just intonation",
+    "pos": "noun",
+    "freqRank": 30200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tuning system based on pure whole-number frequency ratios between pitches, rather than equal divisions of the octave",
+        "distractors": [
+          "a tuning system that divides the octave into twelve equal semitones",
+          "a system in which every interval is deliberately tuned slightly out of tune for effect"
+        ],
+        "example": {
+          "text": "The vocal ensemble tunes its chords in just intonation to achieve especially pure harmonies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_equal_temperament",
+    "lang": "en",
+    "word": "equal temperament",
+    "pos": "noun",
+    "freqRank": 25700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tuning system that divides the octave into twelve equal semitones, allowing music to modulate freely between keys",
+        "distractors": [
+          "a tuning system based on pure whole-number frequency ratios between pitches",
+          "a system in which only diatonic intervals are permitted"
+        ],
+        "example": {
+          "text": "Modern pianos are tuned in equal temperament so every key sounds equally in tune.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transposition",
+    "lang": "en",
+    "word": "transposition",
+    "pos": "noun",
+    "freqRank": 22200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the shifting of a piece or passage of music from one pitch level or key to another while preserving its intervallic relationships",
+        "distractors": [
+          "the reordering of a melody's notes from last to first",
+          "the doubling of a melodic line at the interval of a fourth"
+        ],
+        "example": {
+          "text": "The clarinet part requires transposition down a whole step from the written pitch.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transpose",
+    "lang": "en",
+    "word": "transpose",
+    "pos": "verb",
+    "freqRank": 22300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to rewrite or perform a piece of music at a different pitch level while keeping its intervals intact",
+        "distractors": [
+          "to reverse the order of a melody's notes",
+          "to combine two separate melodies into a single contrapuntal texture"
+        ],
+        "example": {
+          "text": "The accompanist transposes the song down a third to suit the singer's range.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voicing",
+    "lang": "en",
+    "word": "voicing",
+    "pos": "noun",
+    "freqRank": 24700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the specific arrangement and spacing of the notes of a chord among the available voices or instruments",
+        "distractors": [
+          "the total number of independent melodic lines active at a given moment",
+          "the process of assigning a solo passage to a particular instrument"
+        ],
+        "example": {
+          "text": "The pianist chooses a close voicing that keeps all four chord tones within a single octave.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_doubling",
+    "lang": "en",
+    "word": "doubling",
+    "pos": "noun",
+    "freqRank": 23100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the practice of having two or more voices or instruments play the same pitch or its octave simultaneously",
+        "distractors": [
+          "the technique of restating a theme in twice its original note values",
+          "the process of modulating twice in quick succession"
+        ],
+        "example": {
+          "text": "The cellos provide doubling of the bass line an octave above the double basses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arpeggiation",
+    "lang": "en",
+    "word": "arpeggiation",
+    "pos": "noun",
+    "freqRank": 25400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the playing or sounding of a chord's notes in succession rather than simultaneously",
+        "distractors": [
+          "the playing of two different chords at once in different keys",
+          "the gradual slowing of tempo leading into a cadence"
+        ],
+        "example": {
+          "text": "The harpist's arpeggiation spreads each chord upward across the strings.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_melisma",
+    "lang": "en",
+    "word": "melisma",
+    "pos": "noun",
+    "freqRank": 25600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the singing of multiple pitches on a single syllable of text",
+        "distractors": [
+          "the singing of a single pitch across multiple syllables of text",
+          "a passage where the singer pauses entirely while the accompaniment continues"
+        ],
+        "example": {
+          "text": "The soprano's melisma stretches the word amen across a dozen flowing notes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_syllabic",
+    "lang": "en",
+    "word": "syllabic",
+    "pos": "adjective",
+    "freqRank": 25300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing vocal music in which each syllable of text is set to a single note",
+        "distractors": [
+          "describing vocal music in which a single syllable is stretched across many notes",
+          "describing instrumental music with no text at all"
+        ],
+        "example": {
+          "text": "The hymn's syllabic setting makes the words easy for the congregation to follow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_word_painting",
+    "lang": "en",
+    "word": "word painting",
+    "pos": "noun",
+    "freqRank": 28900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compositional technique in which the music vividly reflects the literal meaning of the text being set",
+        "distractors": [
+          "the technique of setting an entire text to a single repeated pitch",
+          "the practice of translating a text into a foreign language before setting it to music"
+        ],
+        "example": {
+          "text": "On the word ascend, the melody uses word painting by leaping dramatically upward.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_species_counterpoint",
+    "lang": "en",
+    "word": "species counterpoint",
+    "pos": "noun",
+    "freqRank": 29500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pedagogical system for learning counterpoint through progressively complex categories, from note-against-note to florid combinations",
+        "distractors": [
+          "a style of counterpoint restricted entirely to parallel motion",
+          "a system of counterpoint used exclusively in twelve-tone composition"
+        ],
+        "example": {
+          "text": "Students practice species counterpoint by adding a note-against-note line above a given cantus firmus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rubato",
+    "lang": "en",
+    "word": "rubato",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a flexible, expressive stretching or compressing of tempo within a phrase, without altering the overall pulse",
+        "distractors": [
+          "a strict, unwavering tempo maintained throughout an entire piece",
+          "a sudden and permanent change to a new, faster tempo"
+        ],
+        "example": {
+          "text": "The pianist's rubato lingers slightly on the melody's high point before moving on.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_agogic_accent",
+    "lang": "en",
+    "word": "agogic accent",
+    "pos": "noun",
+    "freqRank": 32500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an emphasis given to a note by lengthening its duration rather than by increasing its volume",
+        "distractors": [
+          "an emphasis given to a note purely through increased dynamic loudness",
+          "an accent created by doubling a note at the octave"
+        ],
+        "example": {
+          "text": "The performer creates an agogic accent by holding the downbeat slightly longer than notated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metric_modulation",
+    "lang": "en",
+    "word": "metric modulation",
+    "pos": "noun",
+    "freqRank": 31200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that shifts the music's underlying pulse by reinterpreting a subdivision of the old tempo as the new beat",
+        "distractors": [
+          "a technique that shifts the music into a new key using a shared pivot chord",
+          "a technique that alternates between two simultaneous meters without changing tempo"
+        ],
+        "example": {
+          "text": "Elliott Carter's metric modulation reinterprets the eighth-note triplet as the new quarter note.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polymeter",
+    "lang": "en",
+    "word": "polymeter",
+    "pos": "noun",
+    "freqRank": 29800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the simultaneous use of two or more different time signatures across different parts of an ensemble",
+        "distractors": [
+          "the practice of gradually accelerating tempo across a movement",
+          "a single meter that alternates its number of beats every other measure"
+        ],
+        "example": {
+          "text": "The ensemble's polymeter has the winds playing in three-four while the strings sustain four-four.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hypermeter",
+    "lang": "en",
+    "word": "hypermeter",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a larger-scale metrical organization in which groups of measures function like beats within a bigger recurring pattern",
+        "distractors": [
+          "the smallest rhythmic subdivision notated within a single beat",
+          "a meter that changes its time signature every measure"
+        ],
+        "example": {
+          "text": "The phrase's hypermeter groups four measures together as a single hypermetric unit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anacrusis",
+    "lang": "en",
+    "word": "anacrusis",
+    "pos": "noun",
+    "freqRank": 29200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "one or more unstressed notes that precede the first strong downbeat of a phrase",
+        "distractors": [
+          "the final cadential note that concludes a phrase",
+          "a sustained note held beneath changing harmonies"
+        ],
+        "example": {
+          "text": "The melody begins with a short anacrusis leading into the downbeat of the first full measure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_backbeat",
+    "lang": "en",
+    "word": "backbeat",
+    "pos": "noun",
+    "freqRank": 22700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rhythmic emphasis placed on the normally weaker second and fourth beats of a measure in common time",
+        "distractors": [
+          "an emphasis placed on the first beat of every measure",
+          "a rhythm created by playing three notes evenly across two beats"
+        ],
+        "example": {
+          "text": "The drummer's snare hits mark a steady backbeat on beats two and four.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voice_exchange",
+    "lang": "en",
+    "word": "voice exchange",
+    "pos": "noun",
+    "freqRank": 33200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a contrapuntal technique in which two voices trade pitches, each moving to the note previously held by the other",
+        "distractors": [
+          "a technique in which one voice drops out while a new voice enters with identical material",
+          "the transposition of an entire passage between two different instruments"
+        ],
+        "example": {
+          "text": "In the voice exchange, the soprano's note moves to the alto while the alto's note rises to the soprano.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parallel_fifths",
+    "lang": "en",
+    "word": "parallel fifths",
+    "pos": "noun",
+    "freqRank": 26100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "consecutive perfect fifths occurring between the same two voices, generally avoided in traditional voice leading",
+        "distractors": [
+          "consecutive thirds occurring between the same two voices, favored in traditional voice leading",
+          "a chord progression that alternates between tonic and dominant harmonies"
+        ],
+        "example": {
+          "text": "The exercise was marked incorrect for containing forbidden parallel fifths between the outer voices.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hidden_fifths",
+    "lang": "en",
+    "word": "hidden fifths",
+    "pos": "noun",
+    "freqRank": 30300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a perfect fifth approached by similar motion in the outer voices, considered a weaker voice-leading fault than consecutive fifths",
+        "distractors": [
+          "two perfect fifths sounding simultaneously in different octaves",
+          "a fifth interval that resolves by contrary motion into an octave"
+        ],
+        "example": {
+          "text": "The hidden fifths between the soprano and bass are softened because the top voice moves by step.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_neapolitan_sixth",
+    "lang": "en",
+    "word": "Neapolitan sixth",
+    "pos": "noun",
+    "freqRank": 30600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a major chord built on the lowered second scale degree, typically used in first inversion before the dominant",
+        "distractors": [
+          "a chord built on the raised fourth scale degree used to approach the tonic",
+          "a diminished chord built entirely of stacked minor thirds"
+        ],
+        "example": {
+          "text": "The Neapolitan sixth intensifies the harmony just before the cadence's dominant chord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_italian_sixth",
+    "lang": "en",
+    "word": "Italian sixth",
+    "pos": "noun",
+    "freqRank": 31800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an augmented sixth chord containing the lowered sixth scale degree, the tonic, and the raised fourth scale degree, without a fourth chord tone",
+        "distractors": [
+          "an augmented sixth chord that adds both a fourth and a sixth chord tone above the bass",
+          "a chord built by stacking three consecutive perfect fourths"
+        ],
+        "example": {
+          "text": "The Italian sixth resolves outward by half step to the dominant in both outer voices.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_german_sixth",
+    "lang": "en",
+    "word": "German sixth",
+    "pos": "noun",
+    "freqRank": 31900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an augmented sixth chord that adds the lowered third scale degree to the notes of the Italian sixth, creating a four-note sonority",
+        "distractors": [
+          "an augmented sixth chord built with only three distinct pitch classes",
+          "a chord formed by stacking perfect fifths rather than thirds"
+        ],
+        "example": {
+          "text": "The German sixth is often respelled enharmonically as a dominant seventh chord to ease the modulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_french_sixth",
+    "lang": "en",
+    "word": "French sixth",
+    "pos": "noun",
+    "freqRank": 32200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an augmented sixth chord that adds the second scale degree to the notes of the Italian sixth, producing a symmetrical, whole-tone-like sonority",
+        "distractors": [
+          "an augmented sixth chord that adds the lowered third scale degree to the Italian sixth",
+          "a triad built from a stack of two major thirds"
+        ],
+        "example": {
+          "text": "The French sixth's symmetrical spacing gives it a distinctly whole-tone color.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_borrowed_chord",
+    "lang": "en",
+    "word": "borrowed chord",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chord taken from the parallel major or minor key and used within a passage in the opposite mode",
+        "distractors": [
+          "a chord built using only the pitches of the prevailing diatonic scale",
+          "a chord whose root is temporarily treated as a secondary tonic"
+        ],
+        "example": {
+          "text": "The minor iv chord is a borrowed chord imported from the parallel minor key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_secondary_dominant",
+    "lang": "en",
+    "word": "secondary dominant",
+    "pos": "noun",
+    "freqRank": 26600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chord that functions as the dominant of a scale degree other than the tonic, temporarily tonicizing that degree",
+        "distractors": [
+          "a chord built on the actual dominant scale degree of the home key",
+          "a chord that substitutes for the tonic at a deceptive cadence"
+        ],
+        "example": {
+          "text": "The V of V is a secondary dominant that briefly tonicizes the supertonic before returning home.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tonicization",
+    "lang": "en",
+    "word": "tonicization",
+    "pos": "noun",
+    "freqRank": 31300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the brief treatment of a scale degree other than the tonic as if it were a temporary key center",
+        "distractors": [
+          "the permanent modulation of a piece into an entirely new key",
+          "the process of raising the leading tone in a minor key"
+        ],
+        "example": {
+          "text": "The passage's tonicization of the dominant lasts only two measures before the music returns home.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tonicize",
+    "lang": "en",
+    "word": "tonicize",
+    "pos": "verb",
+    "freqRank": 31400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to treat a scale degree other than the main tonic as a temporary local key center",
+        "distractors": [
+          "to permanently establish a new key for the remainder of the piece",
+          "to double a melodic line at the interval of a third"
+        ],
+        "example": {
+          "text": "The composer tonicizes the submediant briefly before the recapitulation restores the home key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pivot_chord",
+    "lang": "en",
+    "word": "pivot chord",
+    "pos": "noun",
+    "freqRank": 28200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chord shared by two keys that is used to smoothly transition from one key to the other during a modulation",
+        "distractors": [
+          "a chord used only at the very final cadence of a piece",
+          "a chord built exclusively from notes outside both the old and new key"
+        ],
+        "example": {
+          "text": "The ii chord in the old key functions as a pivot chord, becoming the vi chord in the new key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_common-tone_modulation",
+    "lang": "en",
+    "word": "common-tone modulation",
+    "pos": "noun",
+    "freqRank": 33800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a modulation that connects two otherwise unrelated keys by holding a single pitch shared between their tonic chords",
+        "distractors": [
+          "a modulation achieved by using a chord that is diatonic to both keys",
+          "a modulation that respells a chord enharmonically to reach the new key"
+        ],
+        "example": {
+          "text": "The composer sustains a single note through the common-tone modulation into the distant new key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enharmonic_modulation",
+    "lang": "en",
+    "word": "enharmonic modulation",
+    "pos": "noun",
+    "freqRank": 32800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a modulation achieved by reinterpreting a chord's spelling enharmonically so it functions differently in the new key",
+        "distractors": [
+          "a modulation that shares a diatonic chord between the old and new keys",
+          "a modulation reached by a chain of secondary dominants"
+        ],
+        "example": {
+          "text": "The German sixth's enharmonic modulation reinterprets it as a dominant seventh in a distant key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chromatic_mediant",
+    "lang": "en",
+    "word": "chromatic mediant",
+    "pos": "noun",
+    "freqRank": 32900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chord whose root lies a third away from the preceding chord but that shares little diatonic relationship with it, typically involving chromatic alteration",
+        "distractors": [
+          "a chord built on the diatonic third scale degree of the prevailing key",
+          "a chord that functions as the dominant of the mediant scale degree"
+        ],
+        "example": {
+          "text": "The abrupt shift to a chromatic mediant gives the progression a striking, colorful surprise.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_modal_mixture",
+    "lang": "en",
+    "word": "modal mixture",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the borrowing of chords or scale degrees from the parallel major or minor mode within a passage",
+        "distractors": [
+          "the simultaneous combination of two entirely different modes in separate voices",
+          "the substitution of a whole-tone scale for a diatonic scale"
+        ],
+        "example": {
+          "text": "The lowered sixth scale degree in the major-key passage results from modal mixture.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hexachord",
+    "lang": "en",
+    "word": "hexachord",
+    "pos": "noun",
+    "freqRank": 28600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a six-note segment of a scale or row, historically the basis of medieval solmization and later used in twelve-tone technique",
+        "distractors": [
+          "a seven-note diatonic scale used in Renaissance polyphony",
+          "a chord built from six stacked perfect fifths"
+        ],
+        "example": {
+          "text": "The composer divides the tone row into two complementary hexachords.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_octatonic_scale",
+    "lang": "en",
+    "word": "octatonic scale",
+    "pos": "noun",
+    "freqRank": 29300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an eight-note scale that alternates whole steps and half steps throughout the octave",
+        "distractors": [
+          "a six-note scale built entirely from whole steps",
+          "a scale identical to the major scale but missing its seventh degree"
+        ],
+        "example": {
+          "text": "Stravinsky's harmony frequently draws on the octatonic scale for its symmetrical color.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_whole-tone_scale",
+    "lang": "en",
+    "word": "whole-tone scale",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a six-note scale in which every adjacent pitch is separated by a whole step, producing an ambiguous, floating quality",
+        "distractors": [
+          "an eight-note scale alternating whole and half steps",
+          "a scale identical to the natural minor scale but raising the seventh degree"
+        ],
+        "example": {
+          "text": "Debussy's whole-tone scale passage dissolves any clear sense of key.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_acoustic_scale",
+    "lang": "en",
+    "word": "acoustic scale",
+    "pos": "noun",
+    "freqRank": 34500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a seven-note scale resembling a major scale with a raised fourth and lowered seventh degree, related to the overtone series",
+        "distractors": [
+          "a scale consisting only of the first five degrees of the major scale",
+          "a scale built by alternating minor thirds and half steps"
+        ],
+        "example": {
+          "text": "The composer's use of the acoustic scale gives the passage a bright, lydian-dominant color.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pitch-class_set",
+    "lang": "en",
+    "word": "pitch-class set",
+    "pos": "noun",
+    "freqRank": 33300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an unordered collection of pitch classes used in post-tonal analysis to describe the intervallic content of a musical passage",
+        "distractors": [
+          "an ordered sequence of all twelve chromatic pitches used as a tone row",
+          "a diatonic scale containing exactly seven distinct pitches"
+        ],
+        "example": {
+          "text": "The analyst labels the opening sonority as a particular pitch-class set to compare it with later passages.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interval_class",
+    "lang": "en",
+    "word": "interval class",
+    "pos": "noun",
+    "freqRank": 33600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a category grouping intervals and their inversions together, used in post-tonal theory to measure pitch relationships regardless of octave or direction",
+        "distractors": [
+          "the specific named quality and number of a single interval, such as a major third",
+          "a chord built from stacking a single recurring interval"
+        ],
+        "example": {
+          "text": "Two intervals that are inversions of each other, like a major third and minor sixth, belong to the same interval class.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prime_form",
+    "lang": "en",
+    "word": "prime form",
+    "pos": "noun",
+    "freqRank": 34200,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the most compact, standardized representation of a pitch-class set used to identify and compare sets in post-tonal analysis",
+        "distractors": [
+          "the original, un-transposed version of a twelve-tone row before any transformation",
+          "the initial statement of a fugue subject before any answer or countersubject"
+        ],
+        "example": {
+          "text": "Reducing the chord to its prime form reveals that it shares the same underlying structure as an earlier sonority.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_melodic_contour",
+    "lang": "en",
+    "word": "melodic contour",
+    "pos": "noun",
+    "freqRank": 24400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the overall shape traced by a melody's rises and falls in pitch over time",
+        "distractors": [
+          "the specific rhythmic pattern used to articulate a melody's notes",
+          "the total range in semitones between a melody's lowest and highest note"
+        ],
+        "example": {
+          "text": "The theme's melodic contour arches upward before descending gently to its final note.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diminished_seventh_chord",
+    "lang": "en",
+    "word": "diminished seventh chord",
+    "pos": "noun",
+    "freqRank": 26450,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a symmetrical four-note chord built from three stacked minor thirds, often used for its tense, ambiguous quality",
+        "distractors": [
+          "a four-note chord built from three stacked major thirds",
+          "a chord formed by adding a major seventh above a major triad"
+        ],
+        "example": {
+          "text": "The diminished seventh chord's ambiguity lets the composer resolve it to several different keys.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_half-diminished_seventh_chord",
+    "lang": "en",
+    "word": "half-diminished seventh chord",
+    "pos": "noun",
+    "freqRank": 29700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a four-note chord consisting of a diminished triad with a minor seventh added above the root",
+        "distractors": [
+          "a four-note chord consisting of a diminished triad with a diminished seventh added above the root",
+          "a four-note chord consisting of a major triad with a minor seventh added above the root"
+        ],
+        "example": {
+          "text": "The half-diminished seventh chord on the leading tone often precedes the dominant in minor keys.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_added_sixth_chord",
+    "lang": "en",
+    "word": "added sixth chord",
+    "pos": "noun",
+    "freqRank": 28100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a triad with an additional sixth scale degree above the root added as a color tone, common in jazz and popular harmony",
+        "distractors": [
+          "a triad with an additional seventh above the root that functions as a dissonance requiring resolution",
+          "a chord built by omitting the third from a standard triad"
+        ],
+        "example": {
+          "text": "The tune ends on a major triad with an added sixth chord for a warm, unresolved color.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quartal_harmony",
+    "lang": "en",
+    "word": "quartal harmony",
+    "pos": "noun",
+    "freqRank": 30100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "harmony built primarily from chords stacked in fourths rather than the traditional thirds",
+        "distractors": [
+          "harmony built primarily from chords stacked in fifths rather than thirds",
+          "harmony that avoids any vertical stacking, relying only on melodic lines"
+        ],
+        "example": {
+          "text": "The pianist voices the chorus using quartal harmony for an open, ambiguous sound.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quintal_harmony",
+    "lang": "en",
+    "word": "quintal harmony",
+    "pos": "noun",
+    "freqRank": 30400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "harmony built primarily from chords stacked in fifths rather than the traditional thirds",
+        "distractors": [
+          "harmony built primarily from chords stacked in fourths rather than thirds",
+          "harmony consisting exclusively of major and minor triads"
+        ],
+        "example": {
+          "text": "The composer experiments with quintal harmony, layering perfect fifths on top of one another.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tone_cluster",
+    "lang": "en",
+    "word": "tone cluster",
+    "pos": "noun",
+    "freqRank": 27700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chord formed by sounding several adjacent pitches, often a group of seconds, simultaneously",
+        "distractors": [
+          "a chord formed by sounding pitches spaced a fourth apart",
+          "a rapid ornamental alternation between two adjacent notes"
+        ],
+        "example": {
+          "text": "The pianist strikes a tone cluster with a forearm across the keys.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_planing",
+    "lang": "en",
+    "word": "planing",
+    "pos": "noun",
+    "freqRank": 32100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the technique of moving a chord of fixed shape in parallel motion through a passage, regardless of the underlying key",
+        "distractors": [
+          "the technique of resolving every dissonant chord by contrary motion",
+          "the process of gradually thinning an orchestral texture toward a single instrument"
+        ],
+        "example": {
+          "text": "Debussy's planing slides a stack of parallel ninth chords chromatically down the keyboard.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_functional_harmony",
+    "lang": "en",
+    "word": "functional harmony",
+    "pos": "noun",
+    "freqRank": 25850,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a system of harmony in which chords are understood in terms of their role, such as tonic, subdominant, and dominant, within a key",
+        "distractors": [
+          "a system of harmony that treats all chords as equally weighted, without hierarchical roles",
+          "a system of harmony based entirely on stacked fourths rather than thirds"
+        ],
+        "example": {
+          "text": "The analysis labels each chord according to its role within functional harmony.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_voice_crossing",
+    "lang": "en",
+    "word": "voice crossing",
+    "pos": "noun",
+    "freqRank": 29100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a situation in part-writing where a lower voice temporarily sounds higher in pitch than a voice normally above it",
+        "distractors": [
+          "a situation where two voices sound the exact same pitch simultaneously",
+          "a situation where a voice leaps by an interval larger than an octave"
+        ],
+        "example": {
+          "text": "The alto momentarily rises above the soprano, producing a brief voice crossing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_contrary_motion",
+    "lang": "en",
+    "word": "contrary motion",
+    "pos": "noun",
+    "freqRank": 23700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the simultaneous movement of two musical lines in opposite directions",
+        "distractors": [
+          "the simultaneous movement of two musical lines in the same direction by the same interval",
+          "the movement of one line while a second line remains stationary"
+        ],
+        "example": {
+          "text": "The outer voices move in contrary motion, the soprano rising as the bass descends.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_oblique_motion",
+    "lang": "en",
+    "word": "oblique motion",
+    "pos": "noun",
+    "freqRank": 28800,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the movement of one musical line while another remains on a single stationary pitch",
+        "distractors": [
+          "the simultaneous movement of two lines in opposite directions",
+          "the movement of two lines in the same direction but by different intervals"
+        ],
+        "example": {
+          "text": "Oblique motion occurs as the melody moves while the pedal tone in the bass holds still.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_similar_motion",
+    "lang": "en",
+    "word": "similar motion",
+    "pos": "noun",
+    "freqRank": 28850,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the movement of two musical lines in the same direction, though not necessarily by the same interval",
+        "distractors": [
+          "the movement of two lines in opposite directions by the same interval",
+          "the movement of one line while the other remains fixed on a single pitch"
+        ],
+        "example": {
+          "text": "The two outer voices rise together in similar motion toward the cadence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antiphony",
+    "lang": "en",
+    "word": "antiphony",
+    "pos": "noun",
+    "freqRank": 26150,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a musical technique in which two or more groups of performers alternate or respond to each other, often from separated positions",
+        "distractors": [
+          "a technique in which a single melody is doubled exactly at the octave",
+          "a compositional method organizing pitches through a fixed ordered row"
+        ],
+        "example": {
+          "text": "The Venetian polychoral works exploit antiphony between choirs placed in separate galleries.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bourdon",
+    "lang": "en",
+    "word": "bourdon",
+    "pos": "noun",
+    "freqRank": 33100,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sustained low drone tone, often found in early music and certain folk and organ traditions",
+        "distractors": [
+          "a rapid ornamental trill performed on a keyboard instrument",
+          "a short cadential formula that closes a phrase"
+        ],
+        "example": {
+          "text": "The bagpipe's bourdon sustains beneath the melody's constantly shifting notes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mordent",
+    "lang": "en",
+    "word": "mordent",
+    "pos": "noun",
+    "freqRank": 27050,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a brief ornament consisting of a rapid alternation between a main note and an adjacent note, either above or below",
+        "distractors": [
+          "a sustained ornamental trill lasting the full duration of a note",
+          "an ornamental descending scale connecting two structural notes"
+        ],
+        "example": {
+          "text": "The keyboardist adds a quick mordent to decorate the melody's opening note.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glissando",
+    "lang": "en",
+    "word": "glissando",
+    "pos": "noun",
+    "freqRank": 22400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a continuous sliding movement from one pitch to another, passing audibly through the pitches in between",
+        "distractors": [
+          "a rapid alternation between two adjacent notes performed with a single finger",
+          "a technique of plucking rather than bowing a string instrument"
+        ],
+        "example": {
+          "text": "The harpist's glissando sweeps rapidly across the strings from low to high.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_portamento",
+    "lang": "en",
+    "word": "portamento",
+    "pos": "noun",
+    "freqRank": 24950,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a smooth, continuous slide between two pitches, especially characteristic of the voice or bowed strings",
+        "distractors": [
+          "an abrupt, unornamented jump between two distant pitches",
+          "a technique of striking a string with the wood of the bow"
+        ],
+        "example": {
+          "text": "The singer uses a subtle portamento to glide expressively between the two notes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_col_legno",
+    "lang": "en",
+    "word": "col legno",
+    "pos": "noun",
+    "freqRank": 32300,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a string-playing technique in which the wood of the bow, rather than the hair, strikes or drags across the strings",
+        "distractors": [
+          "a technique in which the string is plucked rather than bowed",
+          "a technique in which the bow is played extremely close to the bridge"
+        ],
+        "example": {
+          "text": "The eerie clattering timbre comes from the strings playing col legno.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sul_ponticello",
+    "lang": "en",
+    "word": "sul ponticello",
+    "pos": "noun",
+    "freqRank": 32600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a string-playing technique in which the bow is drawn very close to the bridge, producing a glassy, harsh timbre",
+        "distractors": [
+          "a string-playing technique in which the bow is drawn over the fingerboard for a soft, flute-like tone",
+          "a technique in which the wood of the bow strikes the strings"
+        ],
+        "example": {
+          "text": "The violins' sul ponticello passage produces an eerie, metallic shimmer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sul_tasto",
+    "lang": "en",
+    "word": "sul tasto",
+    "pos": "noun",
+    "freqRank": 32700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a string-playing technique in which the bow is drawn over the fingerboard, producing a soft, hollow, flute-like tone",
+        "distractors": [
+          "a string-playing technique in which the bow is drawn close to the bridge for a glassy tone",
+          "a technique in which the strings are struck with the wood of the bow"
+        ],
+        "example": {
+          "text": "The cellos switch to sul tasto for the hushed opening of the movement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_divisi",
+    "lang": "en",
+    "word": "divisi",
+    "pos": "noun",
+    "freqRank": 25050,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an instruction in orchestral writing indicating that a section should split into separate parts to play different notes simultaneously",
+        "distractors": [
+          "an instruction indicating that an entire section should play in unison on a single pitch",
+          "an instruction indicating that a section should stop playing entirely"
+        ],
+        "example": {
+          "text": "The violas split into divisi to sustain a four-note chord.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tacet",
+    "lang": "en",
+    "word": "tacet",
+    "pos": "noun",
+    "freqRank": 26050,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a direction in a musical part indicating that the performer is silent for an extended passage or movement",
+        "distractors": [
+          "a direction indicating that a passage should be played as loudly as possible",
+          "a direction indicating that a performer should improvise freely"
+        ],
+        "example": {
+          "text": "The trumpet part is marked tacet for the entire second movement.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_multiphonics",
+    "lang": "en",
+    "word": "multiphonics",
+    "pos": "noun",
+    "freqRank": 31600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extended technique on a wind or string instrument that produces more than one pitch simultaneously from a single instrument",
+        "distractors": [
+          "a technique in which several instruments double the same single pitch",
+          "a technique of rapidly alternating between two written pitches"
+        ],
+        "example": {
+          "text": "The saxophonist produces eerie multiphonics by altering the embouchure and fingering simultaneously.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prepared_piano",
+    "lang": "en",
+    "word": "prepared piano",
+    "pos": "noun",
+    "freqRank": 29600,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a piano whose sound is altered by placing objects such as screws, bolts, or rubber between or on its strings",
+        "distractors": [
+          "a piano tuned to a nonstandard microtonal system before performance",
+          "a piano equipped with an extended keyboard range beyond the standard octaves"
+        ],
+        "example": {
+          "text": "John Cage's prepared piano transforms the instrument's familiar timbre into something percussive and metallic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_klangfarbenmelodie",
+    "lang": "en",
+    "word": "Klangfarbenmelodie",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compositional technique in which a single melodic line is distributed across changing instrumental timbres rather than kept in one instrument",
+        "distractors": [
+          "a technique in which a melody is repeated at increasingly faster tempos",
+          "a technique in which the same pitch is sustained across an entire movement"
+        ],
+        "example": {
+          "text": "Webern's orchestration exemplifies Klangfarbenmelodie, passing single notes of a melody between different instruments.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sprechstimme",
+    "lang": "en",
+    "word": "Sprechstimme",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a vocal technique halfway between speech and song, in which pitches are approximated rather than sustained precisely",
+        "distractors": [
+          "a vocal technique requiring exact, sustained pitch with no rhythmic flexibility",
+          "a vocal technique in which multiple singers speak the same text simultaneously"
+        ],
+        "example": {
+          "text": "Schoenberg's Pierrot Lunaire calls for Sprechstimme, notating approximate pitches for a speech-like delivery.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_urlinie",
+    "lang": "en",
+    "word": "Urlinie",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in Schenkerian analysis, the fundamental descending melodic line believed to underlie a tonal composition's structure",
+        "distractors": [
+          "in Schenkerian analysis, the surface-level ornamented melody as literally notated in the score",
+          "a term for the opening theme of a sonata-form exposition"
+        ],
+        "example": {
+          "text": "The analyst reduces the melody to its Urlinie, a simple stepwise descent to the tonic.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ursatz",
+    "lang": "en",
+    "word": "Ursatz",
+    "pos": "noun",
+    "freqRank": 42500,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in Schenkerian analysis, the fundamental structure combining the basic melodic descent and bass arpeggiation that underlies a tonal work",
+        "distractors": [
+          "in Schenkerian analysis, the fully ornamented foreground version of a piece as performed",
+          "a term describing the closing cadence of a Baroque suite"
+        ],
+        "example": {
+          "text": "Schenker argued that nearly all tonal masterworks can be reduced to a single underlying Ursatz.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_schenkerian_analysis",
+    "lang": "en",
+    "word": "Schenkerian analysis",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an analytical method that reduces a tonal composition to hierarchical layers, revealing an underlying fundamental structure",
+        "distractors": [
+          "an analytical method that classifies chords solely by their surface-level roman numerals",
+          "an analytical method used exclusively to study twelve-tone rows"
+        ],
+        "example": {
+          "text": "Schenkerian analysis reveals how the piece's elaborate surface decorates a simple underlying melodic descent.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_musica_ficta",
+    "lang": "en",
+    "word": "musica ficta",
+    "pos": "noun",
+    "freqRank": 30900,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "chromatic alterations applied by performers to notes in early music that were not always explicitly notated in the original source",
+        "distractors": [
+          "a genre of purely instrumental Renaissance dance music",
+          "a term for improvised ornamentation added only in the final cadence"
+        ],
+        "example": {
+          "text": "Editors mark suggested musica ficta above the staff to indicate accidentals the singers likely added.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_organum",
+    "lang": "en",
+    "word": "organum",
+    "pos": "noun",
+    "freqRank": 27650,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an early medieval form of polyphony in which one or more voices are added to a plainchant melody",
+        "distractors": [
+          "a solo unaccompanied chant sung without any added voices",
+          "a Renaissance instrumental dance form in triple meter"
+        ],
+        "example": {
+          "text": "Early organum simply doubled the chant a fourth or fifth below the original melody.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hocket",
+    "lang": "en",
+    "word": "hocket",
+    "pos": "noun",
+    "freqRank": 31700,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a medieval compositional technique in which a melody is broken up between two or more voices, each resting while the other sounds",
+        "distractors": [
+          "a technique in which two voices sing the identical melody simultaneously in unison",
+          "a technique of sustaining a single drone beneath a moving melody"
+        ],
+        "example": {
+          "text": "The motet's hocket rapidly tosses fragments of the melody back and forth between voices.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ground_bass",
+    "lang": "en",
+    "word": "ground bass",
+    "pos": "noun",
+    "freqRank": 28400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a short bass line repeated continuously throughout a piece while the upper voices vary above it",
+        "distractors": [
+          "a bass line that is played only once at the very opening of a piece",
+          "a technique in which the bass line inverts the melody of the upper voice"
+        ],
+        "example": {
+          "text": "Purcell's aria unfolds over a haunting, repeating ground bass in the lowest voice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chaconne",
+    "lang": "en",
+    "word": "chaconne",
+    "pos": "noun",
+    "freqRank": 29400,
+    "difficulty": "hard",
+    "tags": [
+      "music-theory"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a Baroque compositional form built from continuous variations over a short repeating harmonic or bass pattern, typically in triple meter",
+        "distractors": [
+          "a fast, contrapuntal form built from successive imitative entries of a single subject",
+          "a strophic vocal form in which the same music repeats unchanged for every verse"
+        ],
+        "example": {
+          "text": "Bach's chaconne for solo violin spins dozens of variations from a single repeating harmonic pattern.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

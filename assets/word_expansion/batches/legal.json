@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_certiorari",
+    "lang": "en",
+    "word": "certiorari",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a discretionary order by a higher court agreeing to review a lower court's decision",
+        "distractors": [
+          "a formal written accusation that initiates a criminal prosecution",
+          "a court order compelling a public official to perform a mandatory duty"
+        ],
+        "example": {
+          "text": "The Supreme Court granted certiorari to resolve a circuit split on the issue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_estoppel",
+    "lang": "en",
+    "word": "estoppel",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal principle barring a party from asserting a claim or fact contrary to what they previously stated or implied when someone else relied on it",
+        "distractors": [
+          "the automatic expiration of a legal claim after a fixed statutory period",
+          "a court's inherent power to punish disobedience of its orders"
+        ],
+        "example": {
+          "text": "Because the landlord had repeatedly accepted late rent without objection, estoppel prevented him from suddenly enforcing the strict due date.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mootness",
+    "lang": "en",
+    "word": "mootness",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that a court will not decide a case in which the underlying controversy has ceased to exist",
+        "distractors": [
+          "the requirement that a plaintiff show a concrete injury before suing",
+          "a rule limiting how long a party has to file an appeal"
+        ],
+        "example": {
+          "text": "The case was dismissed for mootness after the challenged ordinance was repealed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ripeness",
+    "lang": "en",
+    "word": "ripeness",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine requiring that a dispute have matured into a concrete controversy before a court will hear it",
+        "distractors": [
+          "the rule that a claim becomes unenforceable once too much time has passed",
+          "the principle that only Congress may resolve certain constitutional disputes"
+        ],
+        "example": {
+          "text": "The challenge to the proposed regulation was dismissed for lack of ripeness because the agency had not yet enforced it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_standing",
+    "lang": "en",
+    "word": "standing",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a party's legally sufficient stake in a controversy, requiring injury, causation, and redressability, that entitles it to bring suit",
+        "distractors": [
+          "the formal rank a judge holds within a court system",
+          "the presumption that a criminal defendant is innocent until proven guilty"
+        ],
+        "example": {
+          "text": "The environmental group lacked standing because it could not show its members had suffered a concrete injury.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_habeas_corpus",
+    "lang": "en",
+    "word": "habeas corpus",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a writ requiring that a detained person be brought before a court to determine whether the detention is lawful",
+        "distractors": [
+          "a court order seizing a defendant's property pending trial",
+          "a formal charge accusing someone of treason"
+        ],
+        "example": {
+          "text": "She filed a petition for a writ of habeas corpus challenging the legality of her continued detention.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_res_judicata",
+    "lang": "en",
+    "word": "res judicata",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine barring relitigation of a claim that has already been finally decided between the same parties",
+        "distractors": [
+          "the rule that evidence obtained illegally cannot be used at trial",
+          "the principle that a statute must be interpreted according to its plain text"
+        ],
+        "example": {
+          "text": "Because the contract dispute had already been litigated to final judgment, res judicata barred the second lawsuit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_collateral_estoppel",
+    "lang": "en",
+    "word": "collateral estoppel",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine preventing a party from relitigating a specific issue that was already actually decided in a prior case",
+        "distractors": [
+          "the rule requiring a defendant to post bail before release",
+          "the principle that ambiguous statutes are construed against the drafter"
+        ],
+        "example": {
+          "text": "Collateral estoppel barred the defendant from disputing a fact the jury had already resolved against him in the earlier trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_severability",
+    "lang": "en",
+    "word": "severability",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the capacity of a statute's valid provisions to remain in force even after another provision is struck down as unconstitutional",
+        "distractors": [
+          "the process of splitting a single lawsuit into multiple separate trials",
+          "a court's authority to transfer a case to a different jurisdiction"
+        ],
+        "example": {
+          "text": "Thanks to the severability clause, the rest of the statute survived even after one section was invalidated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_preemption",
+    "lang": "en",
+    "word": "preemption",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional doctrine under which federal law displaces conflicting or occupying state law",
+        "distractors": [
+          "a court's decision to hear a case before it would normally be ready for trial",
+          "the process by which a treaty is ratified by the Senate"
+        ],
+        "example": {
+          "text": "The court held that federal aviation safety rules preempted the conflicting state regulation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_incorporation",
+    "lang": "en",
+    "word": "incorporation",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional process by which provisions of the Bill of Rights are applied to the states through the Fourteenth Amendment",
+        "distractors": [
+          "the formation of a private corporation under state law",
+          "the process of certifying a class action lawsuit"
+        ],
+        "example": {
+          "text": "Through incorporation, the Second Amendment now restrains state and local governments as well as Congress.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_penumbra",
+    "lang": "en",
+    "word": "penumbra",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an implied zone of protection surrounding an express constitutional guarantee, inferred from its purpose",
+        "distractors": [
+          "the formal record of a case's procedural history",
+          "a preliminary hearing held before an indictment"
+        ],
+        "example": {
+          "text": "The Court found a right to privacy in the penumbra of several amendments' guarantees.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strict_scrutiny",
+    "lang": "en",
+    "word": "strict scrutiny",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the most exacting standard of judicial review, requiring a law to be narrowly tailored to serve a compelling government interest",
+        "distractors": [
+          "the lowest level of review, upholding a law if any conceivable rational basis supports it",
+          "the standard applied only to disputes between two private parties"
+        ],
+        "example": {
+          "text": "Because the law classified by race, the court applied strict scrutiny and struck it down.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rational_basis",
+    "lang": "en",
+    "word": "rational basis",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the most deferential standard of judicial review, upholding a law if it is rationally related to any legitimate government interest",
+        "distractors": [
+          "the standard requiring proof beyond a reasonable doubt",
+          "the requirement that a statute be passed by a supermajority"
+        ],
+        "example": {
+          "text": "The zoning ordinance easily survived rational basis review.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_intermediate_scrutiny",
+    "lang": "en",
+    "word": "intermediate scrutiny",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a standard of review, used chiefly for classifications like sex, requiring a law to be substantially related to an important government interest",
+        "distractors": [
+          "the standard applied exclusively in criminal sentencing appeals",
+          "the review given automatically to any law challenged in federal court"
+        ],
+        "example": {
+          "text": "The gender-based classification was evaluated under intermediate scrutiny.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_facial_challenge",
+    "lang": "en",
+    "word": "facial challenge",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal attack claiming that a statute is unconstitutional in all its applications, not just as applied to the challenger",
+        "distractors": [
+          "an appeal based solely on newly discovered evidence",
+          "a motion asking a judge to recuse from a case"
+        ],
+        "example": {
+          "text": "The plaintiffs brought a facial challenge arguing the statute could never be constitutionally applied.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_as-applied_challenge",
+    "lang": "en",
+    "word": "as-applied challenge",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal attack claiming that a statute is unconstitutional only as it applies to the particular facts of the challenger's case",
+        "distractors": [
+          "a challenge to the qualifications of a sitting judge",
+          "an objection raised for the first time on appeal"
+        ],
+        "example": {
+          "text": "Rather than attacking the whole statute, she brought an as-applied challenge limited to her own circumstances.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_overbreadth",
+    "lang": "en",
+    "word": "overbreadth",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a First Amendment doctrine allowing a law to be struck down because it sweeps in substantially more protected speech than necessary",
+        "distractors": [
+          "the rule that a jury verdict must be unanimous",
+          "the doctrine limiting how long a patent may be enforced"
+        ],
+        "example": {
+          "text": "The statute was invalidated for overbreadth because it also criminalized a wide range of protected speech.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vagueness",
+    "lang": "en",
+    "word": "vagueness",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a constitutional doctrine invalidating laws that fail to give people fair notice of what conduct is prohibited",
+        "distractors": [
+          "the requirement that contracts be interpreted according to the parties' subjective intent",
+          "the principle allowing courts to ignore procedural defects"
+        ],
+        "example": {
+          "text": "The ordinance was struck down for vagueness because ordinary people could not tell what it forbade.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prior_restraint",
+    "lang": "en",
+    "word": "prior restraint",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a government restriction that suppresses speech or publication before it occurs, rather than punishing it afterward",
+        "distractors": [
+          "a sentence imposed before a defendant's trial has concluded",
+          "an injunction issued after a trial to prevent future harm"
+        ],
+        "example": {
+          "text": "The court refused to issue the injunction, calling it an impermissible prior restraint on the newspaper's speech.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_viewpoint_discrimination",
+    "lang": "en",
+    "word": "viewpoint discrimination",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "government regulation of speech that favors or disfavors particular opinions on a subject, rather than the subject itself",
+        "distractors": [
+          "a court's practice of favoring the party who filed first",
+          "an employer's policy against hiring based on prior convictions"
+        ],
+        "example": {
+          "text": "Denying the permit only to groups critical of the policy amounted to unconstitutional viewpoint discrimination.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dictum",
+    "lang": "en",
+    "word": "dictum",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a judicial observation or comment in an opinion that is not essential to the court's holding and therefore not binding precedent",
+        "distractors": [
+          "the formal order closing a case",
+          "a written summary of a case prepared by a law clerk"
+        ],
+        "example": {
+          "text": "Lawyers debated whether the footnote was binding law or merely dictum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amicus_curiae",
+    "lang": "en",
+    "word": "amicus curiae",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a person or organization, not a party to a case, that offers the court information or argument relevant to the dispute",
+        "distractors": [
+          "a court-appointed guardian for a minor involved in litigation",
+          "an expert witness paid to testify for one side"
+        ],
+        "example": {
+          "text": "Several civil rights organizations filed briefs as amicus curiae in the landmark appeal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_en_banc",
+    "lang": "en",
+    "word": "en banc",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a hearing or rehearing of a case by all the judges of a court, rather than a smaller panel",
+        "distractors": [
+          "conducted secretly, without public access to the proceedings",
+          "decided by a single judge without a jury"
+        ],
+        "example": {
+          "text": "After losing before a three-judge panel, the state asked the full court to rehear the case en banc.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plurality",
+    "lang": "en",
+    "word": "plurality",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an opinion joined by the largest bloc of judges on a multi-member court, but short of a majority",
+        "distractors": [
+          "a unanimous ruling joined by every judge on the court",
+          "the losing side's written explanation of its disagreement"
+        ],
+        "example": {
+          "text": "No opinion commanded a majority, so the plurality's reasoning did not bind lower courts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_concurrence",
+    "lang": "en",
+    "word": "concurrence",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a separate opinion agreeing with a court's outcome but relying on different reasoning",
+        "distractors": [
+          "the official transcript of oral argument",
+          "a motion asking the court to reconsider its ruling"
+        ],
+        "example": {
+          "text": "She joined the majority's judgment but wrote a concurrence explaining her narrower rationale.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_originalism",
+    "lang": "en",
+    "word": "originalism",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an interpretive theory holding that a constitutional provision should be understood according to its meaning at the time of its adoption",
+        "distractors": [
+          "the view that courts should defer entirely to legislative judgments",
+          "the practice of amending a constitution through judicial opinion"
+        ],
+        "example": {
+          "text": "The judge's originalism led her to examine eighteenth-century dictionaries when construing the clause.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_textualism",
+    "lang": "en",
+    "word": "textualism",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an interpretive approach that derives a law's meaning primarily from its ordinary written language rather than legislative intent",
+        "distractors": [
+          "the doctrine that unwritten customs can override written statutes",
+          "the practice of interpreting a law according to its likely future consequences"
+        ],
+        "example": {
+          "text": "Under textualism, the justice refused to consult the bill's legislative history.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_judicial_restraint",
+    "lang": "en",
+    "word": "judicial restraint",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a philosophy favoring deference to the decisions of elected branches and reluctance to overturn laws or precedent",
+        "distractors": [
+          "a rule requiring judges to recuse from politically sensitive cases",
+          "the practice of issuing rulings without written opinions"
+        ],
+        "example": {
+          "text": "Citing judicial restraint, the court declined to reach the broader constitutional question.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_judicial_activism",
+    "lang": "en",
+    "word": "judicial activism",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a critical label for judicial decision-making seen as substituting a judge's own policy views for the law as enacted",
+        "distractors": [
+          "the formal process for removing a judge from office",
+          "a court's routine practice of scheduling oral argument"
+        ],
+        "example": {
+          "text": "Critics accused the ruling of judicial activism for reaching well beyond the question presented.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nondelegation",
+    "lang": "en",
+    "word": "nondelegation",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine limiting Congress's ability to transfer its legislative power to executive agencies without intelligible guiding standards",
+        "distractors": [
+          "the rule that treaties automatically become domestic law",
+          "the requirement that bills originate in the House of Representatives"
+        ],
+        "example": {
+          "text": "The agency's sweeping rulemaking authority was challenged under the nondelegation doctrine.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bicameralism",
+    "lang": "en",
+    "word": "bicameralism",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional requirement that legislation pass both chambers of a two-house legislature before becoming law",
+        "distractors": [
+          "the practice of holding two separate trials for a single crime",
+          "the rule that a president may only serve two terms"
+        ],
+        "example": {
+          "text": "The Court invalidated the one-house veto because it violated bicameralism and presentment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_presentment",
+    "lang": "en",
+    "word": "presentment",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional requirement that a bill passed by Congress be sent to the president for signature or veto before becoming law",
+        "distractors": [
+          "the act of formally reading criminal charges to a defendant",
+          "a court's initial screening of a complaint for legal sufficiency"
+        ],
+        "example": {
+          "text": "The statute failed the presentment requirement because it never reached the president's desk.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_impoundment",
+    "lang": "en",
+    "word": "impoundment",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an executive branch refusal to spend funds that Congress has appropriated",
+        "distractors": [
+          "the seizure of private property for unpaid taxes",
+          "the temporary detention of a witness who refuses to testify"
+        ],
+        "example": {
+          "text": "The administration's impoundment of the appropriated funds triggered a constitutional dispute with Congress.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pocket_veto",
+    "lang": "en",
+    "word": "pocket veto",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a president's indirect rejection of a bill by declining to sign it while Congress is adjourned and unable to override",
+        "distractors": [
+          "a veto that only applies to spending provisions within a larger bill",
+          "a formal veto message read aloud on the floor of Congress"
+        ],
+        "example": {
+          "text": "Because Congress had adjourned, the bill died by pocket veto rather than a formal rejection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recess_appointment",
+    "lang": "en",
+    "word": "recess appointment",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a presidential appointment made while the Senate is in recess, allowing the appointee to serve temporarily without immediate confirmation",
+        "distractors": [
+          "an appointment automatically renewed each fiscal year",
+          "a judicial appointment requiring unanimous Senate approval"
+        ],
+        "example": {
+          "text": "The nominee served under a recess appointment until the Senate returned and voted on confirmation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_executive_privilege",
+    "lang": "en",
+    "word": "executive privilege",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the president's claimed authority to withhold certain communications from disclosure to the courts or Congress",
+        "distractors": [
+          "the constitutional power to grant pardons for federal crimes",
+          "the authority to appoint judges without Senate confirmation"
+        ],
+        "example": {
+          "text": "The White House invoked executive privilege to resist the subpoena for internal memos.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_qualified_immunity",
+    "lang": "en",
+    "word": "qualified immunity",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a doctrine shielding government officials from civil liability unless they violated clearly established constitutional rights",
+        "distractors": [
+          "a temporary suspension of a criminal statute during wartime",
+          "a blanket protection barring any lawsuit against a government agency"
+        ],
+        "example": {
+          "text": "The officer was granted qualified immunity because no prior case had clearly established the right at issue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sovereign_immunity",
+    "lang": "en",
+    "word": "sovereign immunity",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that a government cannot be sued without its consent",
+        "distractors": [
+          "the rule that ambassadors cannot be prosecuted for civil offenses abroad",
+          "the protection given to jurors from being questioned about their verdict"
+        ],
+        "example": {
+          "text": "The lawsuit against the state was dismissed on sovereign immunity grounds.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_commandeering",
+    "lang": "en",
+    "word": "commandeering",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the unconstitutional practice of the federal government compelling state officials to administer or enforce a federal regulatory program",
+        "distractors": [
+          "the lawful process of drafting citizens into military service",
+          "a court's power to consolidate related lawsuits"
+        ],
+        "example": {
+          "text": "The Court struck down the mandate as impermissible commandeering of state legislatures.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_police_power",
+    "lang": "en",
+    "word": "police power",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the inherent authority of states to regulate for the health, safety, welfare, and morals of their citizens",
+        "distractors": [
+          "the exclusive federal authority to regulate interstate commerce",
+          "a court's authority to compel testimony from a reluctant witness"
+        ],
+        "example": {
+          "text": "The state defended the licensing requirement as a valid exercise of its police power.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eminent_domain",
+    "lang": "en",
+    "word": "eminent domain",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the government's power to take private property for public use in exchange for just compensation",
+        "distractors": [
+          "the authority of a court to seize assets from a losing litigant",
+          "the right of a landlord to evict a tenant without notice"
+        ],
+        "example": {
+          "text": "The city used eminent domain to acquire the land for the new highway.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inverse_condemnation",
+    "lang": "en",
+    "word": "inverse condemnation",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal action brought by a property owner claiming that government action effectively took their property without formal condemnation proceedings",
+        "distractors": [
+          "a lawsuit seeking to overturn a criminal conviction on appeal",
+          "a claim that a contract was formed under duress"
+        ],
+        "example": {
+          "text": "The homeowners filed an inverse condemnation claim after flooding caused by the new dam damaged their land.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_regulatory_taking",
+    "lang": "en",
+    "word": "regulatory taking",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a government regulation so restrictive of a property's use that it is treated as a taking requiring compensation",
+        "distractors": [
+          "a tax assessment later found to be unconstitutional",
+          "the forfeiture of property used in committing a crime"
+        ],
+        "example": {
+          "text": "The developer argued the zoning change amounted to a regulatory taking of his land's value.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_substantive_due_process",
+    "lang": "en",
+    "word": "substantive due process",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that certain fundamental rights are protected from government interference regardless of the procedures used",
+        "distractors": [
+          "the requirement that a defendant receive notice and a hearing before punishment",
+          "the rule that evidence must be authenticated before admission at trial"
+        ],
+        "example": {
+          "text": "The Court relied on substantive due process to recognize an unenumerated fundamental right.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_procedural_due_process",
+    "lang": "en",
+    "word": "procedural due process",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional requirement that the government provide fair procedures, such as notice and a hearing, before depriving someone of life, liberty, or property",
+        "distractors": [
+          "the doctrine protecting certain rights from government interference regardless of procedure",
+          "the rule barring double jeopardy for the same offense"
+        ],
+        "example": {
+          "text": "The student sued, claiming she was expelled without the notice and hearing procedural due process requires.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_equal_protection",
+    "lang": "en",
+    "word": "equal protection",
+    "pos": "noun",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional guarantee that government must treat similarly situated people alike absent sufficient justification",
+        "distractors": [
+          "the requirement that all criminal defendants receive identical sentences",
+          "the rule guaranteeing free legal counsel to every civil litigant"
+        ],
+        "example": {
+          "text": "The statute's racial classification was challenged under the equal protection clause.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_suspect_classification",
+    "lang": "en",
+    "word": "suspect classification",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a category, such as race or national origin, that triggers strict scrutiny when used as a basis for government action",
+        "distractors": [
+          "a criminal charge that carries a mandatory minimum sentence",
+          "a class of witnesses whose testimony is presumed unreliable"
+        ],
+        "example": {
+          "text": "Because the law classified applicants by race, a suspect classification, the court applied strict scrutiny.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_disparate_impact",
+    "lang": "en",
+    "word": "disparate impact",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal theory holding that a facially neutral policy is unlawful if it disproportionately harms a protected group without adequate justification",
+        "distractors": [
+          "an employer's explicit refusal to hire members of a protected group",
+          "the different sentences imposed on codefendants in the same case"
+        ],
+        "example": {
+          "text": "The plaintiffs showed the hiring test had a disparate impact on female applicants.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_disparate_treatment",
+    "lang": "en",
+    "word": "disparate treatment",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "intentional discrimination in which a person is treated less favorably specifically because of a protected characteristic",
+        "distractors": [
+          "a neutral policy that happens to affect groups unequally",
+          "the practice of assigning different judges to similar cases"
+        ],
+        "example": {
+          "text": "The plaintiff alleged disparate treatment after being passed over for promotion because of her religion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bill_of_attainder",
+    "lang": "en",
+    "word": "bill of attainder",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legislative act that inflicts punishment on specific named individuals or an identifiable group without a judicial trial",
+        "distractors": [
+          "a formal proclamation declaring a state of emergency",
+          "a list of criminal charges filed by a grand jury"
+        ],
+        "example": {
+          "text": "The statute singling out the company for punishment was struck down as a bill of attainder.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_writ_of_prohibition",
+    "lang": "en",
+    "word": "writ of prohibition",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a court order directing a lower tribunal to stop exceeding its jurisdiction or acting beyond its lawful authority",
+        "distractors": [
+          "an order compelling a public official to perform a mandatory duty",
+          "an order releasing a prisoner from unlawful custody"
+        ],
+        "example": {
+          "text": "The appellate court issued a writ of prohibition barring the trial judge from proceeding further.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_writ_of_quo_warranto",
+    "lang": "en",
+    "word": "writ of quo warranto",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal proceeding used to challenge a person's right to hold a public office or exercise a franchise",
+        "distractors": [
+          "a writ ordering the immediate release of a wrongfully detained person",
+          "a court order freezing a defendant's assets before trial"
+        ],
+        "example": {
+          "text": "The state attorney general brought a writ of quo warranto to challenge the official's authority to hold the seat.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_writ_of_mandamus",
+    "lang": "en",
+    "word": "writ of mandamus",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a court order compelling a government official or lower court to perform a clear, nondiscretionary legal duty",
+        "distractors": [
+          "an order permanently barring someone from bringing future lawsuits",
+          "a writ authorizing a search of private property"
+        ],
+        "example": {
+          "text": "The petitioners sought a writ of mandamus to force the agency to process their long-delayed application.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_collateral_attack",
+    "lang": "en",
+    "word": "collateral attack",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an attempt to undermine or invalidate a court judgment in a proceeding other than a direct appeal",
+        "distractors": [
+          "a lawsuit filed by a codefendant against another codefendant",
+          "the cross-examination of an opposing expert witness"
+        ],
+        "example": {
+          "text": "The habeas petition amounted to a collateral attack on the validity of his conviction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plenary_power",
+    "lang": "en",
+    "word": "plenary power",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "complete and absolute authority over a particular subject, unchecked by the usual constitutional limitations",
+        "distractors": [
+          "the limited authority a court has over parties who have not been served",
+          "a temporary grant of authority pending judicial review"
+        ],
+        "example": {
+          "text": "Congress's plenary power over immigration has historically limited judicial scrutiny of such laws.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_advisory_opinion",
+    "lang": "en",
+    "word": "advisory opinion",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a judicial statement on a legal question that does not resolve an actual case or controversy and therefore has no binding effect",
+        "distractors": [
+          "a binding ruling issued before trial has begun",
+          "a formal letter from an agency interpreting its own regulations"
+        ],
+        "example": {
+          "text": "Federal courts are barred from issuing advisory opinions because Article III requires a live case or controversy.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_political_question_doctrine",
+    "lang": "en",
+    "word": "political question doctrine",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the principle that courts will decline to decide certain issues committed by the Constitution to the political branches",
+        "distractors": [
+          "the rule prohibiting judges from ever discussing politics publicly",
+          "the requirement that election disputes be resolved by popular vote"
+        ],
+        "example": {
+          "text": "The court dismissed the challenge under the political question doctrine, finding it committed to Congress.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chilling_effect",
+    "lang": "en",
+    "word": "chilling effect",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a deterrent effect on the exercise of a legal right, such as speech, caused by fear of legal consequences",
+        "distractors": [
+          "the automatic suspension of a statute pending appeal",
+          "the gradual loss of evidentiary value as memories fade over time"
+        ],
+        "example": {
+          "text": "Critics warned the broad law would have a chilling effect on protected journalism.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compelling_interest",
+    "lang": "en",
+    "word": "compelling interest",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a government objective important enough to justify a law that survives strict scrutiny",
+        "distractors": [
+          "any interest asserted by a party in litigation, regardless of importance",
+          "the financial stake a lawyer has in the outcome of a case"
+        ],
+        "example": {
+          "text": "The state argued that public safety was a compelling interest justifying the restriction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_least_restrictive_means",
+    "lang": "en",
+    "word": "least restrictive means",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the requirement, under strict scrutiny, that a law achieve its purpose using the narrowest option available that burdens rights the least",
+        "distractors": [
+          "the simplest possible reading of a statute's text",
+          "the shortest sentence permissible for a given offense"
+        ],
+        "example": {
+          "text": "The court found the ban failed strict scrutiny because it was not the least restrictive means available.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_undue_burden",
+    "lang": "en",
+    "word": "undue burden",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a standard asking whether a regulation places a substantial obstacle in the path of exercising a constitutional right",
+        "distractors": [
+          "the requirement that a plaintiff prove damages with mathematical precision",
+          "the extra evidentiary showing required in a criminal appeal"
+        ],
+        "example": {
+          "text": "The court assessed whether the waiting period imposed an undue burden on the right at issue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dormant_commerce_clause",
+    "lang": "en",
+    "word": "dormant commerce clause",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the implied constitutional principle that state laws unduly burdening or discriminating against interstate commerce are invalid, even without conflicting federal legislation",
+        "distractors": [
+          "the express clause requiring Congress to regulate all commerce equally",
+          "the provision allowing states to tax goods passing through their territory freely"
+        ],
+        "example": {
+          "text": "The state law favoring in-state businesses was struck down under the dormant commerce clause.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_full_faith_and_credit",
+    "lang": "en",
+    "word": "full faith and credit",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional requirement that states honor the judicial judgments and public acts of other states",
+        "distractors": [
+          "the obligation of states to extend voting rights equally to nonresidents",
+          "the rule requiring uniform criminal sentencing across all states"
+        ],
+        "example": {
+          "text": "Under full faith and credit, the second state was required to enforce the custody judgment issued elsewhere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_privileges_and_immunities",
+    "lang": "en",
+    "word": "privileges and immunities",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional guarantee protecting certain fundamental rights of citizens of one state from discriminatory treatment by another state",
+        "distractors": [
+          "the exemptions granted to diplomats from local criminal law",
+          "the protections afforded exclusively to corporations doing interstate business"
+        ],
+        "example": {
+          "text": "The out-of-state professionals argued the licensing fee violated the privileges and immunities clause.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_canons_of_construction",
+    "lang": "en",
+    "word": "canons of construction",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "established interpretive rules courts use to determine the meaning of statutory or constitutional text",
+        "distractors": [
+          "the formal list of rules governing courtroom decorum",
+          "the procedures used to select members of a grand jury"
+        ],
+        "example": {
+          "text": "Applying traditional canons of construction, the court read the exception narrowly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sunset_clause",
+    "lang": "en",
+    "word": "sunset clause",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a provision that automatically causes a law or regulation to expire on a specified date unless it is affirmatively renewed",
+        "distractors": [
+          "a clause requiring a statute to be published before taking effect",
+          "a rule barring retroactive application of a criminal law"
+        ],
+        "example": {
+          "text": "The surveillance authority included a sunset clause requiring Congress to reauthorize it every five years.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inherent_powers",
+    "lang": "en",
+    "word": "inherent powers",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "authority a branch of government possesses by virtue of its constitutional role, even without explicit textual grant",
+        "distractors": [
+          "powers delegated temporarily by one branch to another",
+          "authority granted exclusively by international treaty"
+        ],
+        "example": {
+          "text": "The president claimed inherent powers to act during the emergency without specific statutory authorization.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_suspension_clause",
+    "lang": "en",
+    "word": "suspension clause",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the constitutional provision limiting when the government may suspend the availability of habeas corpus",
+        "distractors": [
+          "the clause allowing Congress to suspend a state's representation",
+          "the provision permitting temporary suspension of jury trials during wartime"
+        ],
+        "example": {
+          "text": "The detainees argued the statute violated the suspension clause by eliminating habeas review entirely.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rescission",
+    "lang": "en",
+    "word": "rescission",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the cancellation or revocation of a legislative or executive action, such as a budgetary appropriation",
+        "distractors": [
+          "the formal ratification of an international treaty",
+          "the process of certifying election results"
+        ],
+        "example": {
+          "text": "The president's rescission request asked Congress to cancel the previously approved funding.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_veto_override",
+    "lang": "en",
+    "word": "veto override",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legislature's action of enacting a bill into law despite the executive's veto, typically requiring a supermajority vote",
+        "distractors": [
+          "a court's power to nullify an unconstitutional executive order",
+          "the automatic expiration of a veto after a set number of days"
+        ],
+        "example": {
+          "text": "Congress mustered the two-thirds majority needed for a veto override.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_unitary_executive",
+    "lang": "en",
+    "word": "unitary executive",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a constitutional theory holding that the president possesses complete control over the execution of federal law and all executive branch officials",
+        "distractors": [
+          "the principle that executive power must be shared equally among cabinet members",
+          "the doctrine limiting the president to a single term in extraordinary circumstances"
+        ],
+        "example": {
+          "text": "Proponents of the unitary executive theory argue independent agencies unconstitutionally limit presidential control.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dual_sovereignty",
+    "lang": "en",
+    "word": "dual sovereignty",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that state and federal governments are separate sovereigns, allowing both to prosecute a person for the same conduct without violating double jeopardy",
+        "distractors": [
+          "the requirement that a treaty be ratified by both houses of Congress",
+          "the principle that a single crime can only be tried in one court system"
+        ],
+        "example": {
+          "text": "Under the dual sovereignty doctrine, the state prosecution did not bar a later federal charge for the same acts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_federal_question_jurisdiction",
+    "lang": "en",
+    "word": "federal question jurisdiction",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a federal court's authority to hear a case because it arises under the Constitution, federal law, or federal treaties",
+        "distractors": [
+          "jurisdiction based solely on the amount of money in dispute",
+          "jurisdiction limited to disputes between citizens of different states"
+        ],
+        "example": {
+          "text": "The suit invoking constitutional claims properly fell within the court's federal question jurisdiction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diversity_jurisdiction",
+    "lang": "en",
+    "word": "diversity jurisdiction",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a federal court's authority to hear a civil case because the parties are citizens of different states and the amount in controversy exceeds a statutory threshold",
+        "distractors": [
+          "jurisdiction arising because the case involves a federal statute",
+          "jurisdiction that applies only to disputes involving foreign governments"
+        ],
+        "example": {
+          "text": "Because the parties were citizens of different states and the claim exceeded the threshold, the court had diversity jurisdiction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_forum_non_conveniens",
+    "lang": "en",
+    "word": "forum non conveniens",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a doctrine allowing a court to dismiss a case, even though it has jurisdiction, because another available forum would be significantly more appropriate",
+        "distractors": [
+          "the rule requiring cases to be filed where the defendant's property is located",
+          "a doctrine barring a plaintiff from suing in more than one court simultaneously"
+        ],
+        "example": {
+          "text": "The court dismissed the suit under forum non conveniens because the events and witnesses were all located abroad.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_comity",
+    "lang": "en",
+    "word": "comity",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the deference one court, state, or nation extends to the laws and judicial decisions of another out of mutual respect, not obligation",
+        "distractors": [
+          "the formal process of extraditing a fugitive to another country",
+          "a treaty provision requiring reciprocal trade concessions"
+        ],
+        "example": {
+          "text": "Out of comity, the American court declined to disturb the foreign court's custody ruling.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abstention",
+    "lang": "en",
+    "word": "abstention",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a federal court's discretionary decision to decline jurisdiction over a matter better suited to resolution by a state court",
+        "distractors": [
+          "a juror's refusal to participate in deliberations",
+          "the automatic postponement of a trial when a key witness is unavailable"
+        ],
+        "example": {
+          "text": "The federal court invoked abstention and allowed the pending state proceeding to resolve the issue first.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_entrenchment",
+    "lang": "en",
+    "word": "entrenchment",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legal mechanism, such as a supermajority requirement, designed to make a rule or provision especially difficult for future legislatures to change",
+        "distractors": [
+          "the process of appealing a decision to a higher court",
+          "a rule barring amendments to a bill once introduced"
+        ],
+        "example": {
+          "text": "Scholars debate whether a legislature may validly entrench its own future lawmaking power through a supermajority rule.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cloture",
+    "lang": "en",
+    "word": "cloture",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a legislative procedure used to end debate and force a vote, typically requiring a supermajority",
+        "distractors": [
+          "the formal closing statement made by an attorney at trial",
+          "a rule barring a bill from being reintroduced in the same session"
+        ],
+        "example": {
+          "text": "The Senate invoked cloture to end the filibuster and proceed to a final vote.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_single-subject_rule",
+    "lang": "en",
+    "word": "single-subject rule",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a state constitutional requirement that legislation address only one subject, intended to prevent unrelated provisions from being bundled together",
+        "distractors": [
+          "the rule limiting a court to deciding only the single claim presented",
+          "a requirement that a jury verdict address only one charge at a time"
+        ],
+        "example": {
+          "text": "The omnibus bill was challenged as violating the state's single-subject rule.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_major_questions_doctrine",
+    "lang": "en",
+    "word": "major questions doctrine",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an interpretive principle requiring clear congressional authorization before an agency may decide an issue of vast economic or political significance",
+        "distractors": [
+          "the rule that only the Supreme Court may resolve conflicts between circuit courts",
+          "the requirement that treaties be approved by a two-thirds Senate vote"
+        ],
+        "example": {
+          "text": "The court invoked the major questions doctrine to reject the agency's sweeping new interpretation of its authority.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chevron_deference",
+    "lang": "en",
+    "word": "Chevron deference",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a doctrine under which courts defer to a federal agency's reasonable interpretation of an ambiguous statute it administers",
+        "distractors": [
+          "the presumption that agency regulations are unconstitutional until proven otherwise",
+          "a rule requiring courts to defer entirely to a president's foreign policy decisions"
+        ],
+        "example": {
+          "text": "Under Chevron deference, the court upheld the agency's reasonable reading of the ambiguous provision.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arbitrary_and_capricious",
+    "lang": "en",
+    "word": "arbitrary and capricious",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing agency action so unreasoned or unsupported by the evidence that a reviewing court must set it aside",
+        "distractors": [
+          "describing a criminal act committed with premeditation and deliberate intent",
+          "describing a contract term that is unconscionably one-sided"
+        ],
+        "example": {
+          "text": "The court vacated the rule as arbitrary and capricious because the agency ignored contrary evidence in the record.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_substantial_evidence",
+    "lang": "en",
+    "word": "substantial evidence",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the standard of review asking whether the evidentiary record contains enough relevant proof for a reasonable mind to accept an agency's or jury's conclusion",
+        "distractors": [
+          "the highest possible burden of proof, requiring near-certainty",
+          "the rule barring hearsay from being admitted at trial"
+        ],
+        "example": {
+          "text": "The appellate court affirmed because substantial evidence in the record supported the agency's factual findings.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exhaustion",
+    "lang": "en",
+    "word": "exhaustion",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the requirement that a party pursue all available administrative or internal remedies before seeking judicial relief",
+        "distractors": [
+          "the loss of a legal claim due to the passage of the statute of limitations",
+          "the depletion of a litigant's funds during prolonged litigation"
+        ],
+        "example": {
+          "text": "The court dismissed the suit because the plaintiff had not satisfied the exhaustion requirement before filing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bivens_action",
+    "lang": "en",
+    "word": "Bivens action",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a judicially created cause of action allowing individuals to sue federal officials for damages resulting from constitutional rights violations",
+        "distractors": [
+          "a criminal charge brought exclusively under state law",
+          "an administrative complaint filed with a federal inspector general"
+        ],
+        "example": {
+          "text": "She brought a Bivens action against the federal agents for the unconstitutional search of her home.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_issue_preclusion",
+    "lang": "en",
+    "word": "issue preclusion",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine barring relitigation of a specific factual or legal issue that was actually litigated and decided in a prior proceeding",
+        "distractors": [
+          "the rule preventing a defendant from being tried twice for the same crime",
+          "the requirement that all related claims be brought in a single lawsuit"
+        ],
+        "example": {
+          "text": "Issue preclusion barred the company from relitigating the causation finding from the earlier case.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_claim_preclusion",
+    "lang": "en",
+    "word": "claim preclusion",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine barring a party from bringing a new lawsuit on a claim that was or could have been raised in a prior action between the same parties",
+        "distractors": [
+          "the rule barring evidence not disclosed before trial",
+          "the requirement that a complaint state its claims with specificity"
+        ],
+        "example": {
+          "text": "Claim preclusion barred the second lawsuit because it arose from the same transaction already litigated to judgment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_law_of_the_case",
+    "lang": "en",
+    "word": "law of the case",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that a legal ruling made earlier in litigation generally governs later stages of the same case",
+        "distractors": [
+          "the principle that the law in effect at the time of the crime controls the sentence",
+          "the requirement that jurors apply only the law read to them by the judge"
+        ],
+        "example": {
+          "text": "Because the appellate court had already decided the issue, it became the law of the case for the retrial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_persuasive_authority",
+    "lang": "en",
+    "word": "persuasive authority",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "legal precedent or commentary that a court may consider but is not obligated to follow",
+        "distractors": [
+          "a ruling that automatically binds every court in the country",
+          "testimony from an expert witness that a jury must accept"
+        ],
+        "example": {
+          "text": "The court cited a sister state's ruling as persuasive authority, though it was not bound to follow it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_certification",
+    "lang": "en",
+    "word": "certification",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a procedure by which a court refers an unresolved question of law to a higher or different court for authoritative resolution",
+        "distractors": [
+          "the process of confirming a witness's identity before testimony",
+          "the formal act of publishing a statute after passage"
+        ],
+        "example": {
+          "text": "The federal appellate court used certification to ask the state supreme court to resolve the unsettled question of state law.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_final_judgment_rule",
+    "lang": "en",
+    "word": "final judgment rule",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the principle that, with limited exceptions, only a district court's final decision resolving all claims may be appealed",
+        "distractors": [
+          "the requirement that all judgments be reduced to writing within thirty days",
+          "the rule that appellate courts must defer entirely to a trial judge's factual findings"
+        ],
+        "example": {
+          "text": "The interlocutory order was not immediately appealable under the final judgment rule.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_harmless_error",
+    "lang": "en",
+    "word": "harmless error",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mistake in legal proceedings that, despite being an error, did not affect the outcome and therefore does not justify reversal",
+        "distractors": [
+          "a procedural mistake so severe that it automatically requires a new trial",
+          "an error a party fails to object to at the time it occurs"
+        ],
+        "example": {
+          "text": "The appellate court found the improperly admitted testimony was harmless error given the overwhelming other evidence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plain_error",
+    "lang": "en",
+    "word": "plain error",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an obvious mistake affecting substantial rights that an appellate court may correct even though it was not objected to at trial",
+        "distractors": [
+          "any factual finding a jury reaches without sufficient evidence",
+          "an error that automatically voids a criminal statute"
+        ],
+        "example": {
+          "text": "Because defense counsel failed to object, the appellate court reviewed only for plain error.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abuse_of_discretion",
+    "lang": "en",
+    "word": "abuse of discretion",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a deferential standard of appellate review asking whether a trial court's decision was arbitrary, unreasonable, or based on an error of law",
+        "distractors": [
+          "the standard requiring an appellate court to re-decide every issue from scratch",
+          "a finding that a judge acted with corrupt or criminal intent"
+        ],
+        "example": {
+          "text": "The appellate court reviewed the sentencing decision only for abuse of discretion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_clearly_erroneous",
+    "lang": "en",
+    "word": "clearly erroneous",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a trial court's factual finding that an appellate court, though deferential, is left with a definite conviction was mistaken",
+        "distractors": [
+          "describing a statute whose meaning is so plain that no interpretation is needed",
+          "describing testimony that a witness later recants"
+        ],
+        "example": {
+          "text": "The appellate panel refused to disturb the finding, concluding it was not clearly erroneous.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_preponderance_of_the_evidence",
+    "lang": "en",
+    "word": "preponderance of the evidence",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the standard of proof in most civil cases, requiring that a claim be more likely true than not",
+        "distractors": [
+          "the standard requiring proof beyond any possible doubt",
+          "the standard applied only to constitutional claims"
+        ],
+        "example": {
+          "text": "The plaintiff needed only to prove her case by a preponderance of the evidence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_clear_and_convincing_evidence",
+    "lang": "en",
+    "word": "clear and convincing evidence",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an intermediate standard of proof, higher than a preponderance but below beyond a reasonable doubt, requiring a high probability of truth",
+        "distractors": [
+          "the lowest possible evidentiary standard, requiring only some credible evidence",
+          "the standard used exclusively in appellate factual review"
+        ],
+        "example": {
+          "text": "Terminating parental rights required the state to prove its case by clear and convincing evidence.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_burden_of_production",
+    "lang": "en",
+    "word": "burden of production",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the obligation to come forward with enough evidence on an issue to avoid an adverse ruling as a matter of law",
+        "distractors": [
+          "the ultimate obligation to convince the factfinder that a claim is true",
+          "the duty to disclose all evidence to the opposing party before trial"
+        ],
+        "example": {
+          "text": "Once the defendant met the burden of production on the affirmative defense, the plaintiff had to rebut it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prima_facie",
+    "lang": "en",
+    "word": "prima facie",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing evidence sufficient, if unrebutted, to establish a fact or claim",
+        "distractors": [
+          "describing evidence that has been conclusively proven beyond dispute",
+          "describing testimony given anonymously to protect a witness"
+        ],
+        "example": {
+          "text": "The plaintiff established a prima facie case of discrimination, shifting the burden to the employer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_respondeat_superior",
+    "lang": "en",
+    "word": "respondeat superior",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine holding an employer vicariously liable for the wrongful acts of an employee committed within the scope of employment",
+        "distractors": [
+          "the rule that a principal is never liable for an agent's independent torts",
+          "the doctrine requiring criminal intent to be proven for every offense"
+        ],
+        "example": {
+          "text": "The company was held liable under respondeat superior for its driver's negligence during a delivery.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_mens_rea",
+    "lang": "en",
+    "word": "mens rea",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mental state of intent or knowledge required to establish criminal liability for an offense",
+        "distractors": [
+          "the physical conduct that constitutes the criminal act itself",
+          "a defendant's legal competence to stand trial"
+        ],
+        "example": {
+          "text": "The prosecution had to prove the defendant's mens rea in addition to his conduct.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_actus_reus",
+    "lang": "en",
+    "word": "actus reus",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the physical act or conduct component of a crime, as distinguished from the mental state accompanying it",
+        "distractors": [
+          "the psychological intent required to commit a crime",
+          "the sentence imposed following a criminal conviction"
+        ],
+        "example": {
+          "text": "Merely thinking about a crime is not punishable without a corresponding actus reus.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_malum_in_se",
+    "lang": "en",
+    "word": "malum in se",
+    "pos": "adjective",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing conduct that is inherently wrong or immoral, independent of any statute prohibiting it",
+        "distractors": [
+          "describing conduct that is wrong only because a statute happens to forbid it",
+          "describing an act that is legal in some jurisdictions but not others"
+        ],
+        "example": {
+          "text": "Murder is considered malum in se, wrong by its very nature rather than merely by law.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_malum_prohibitum",
+    "lang": "en",
+    "word": "malum prohibitum",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an act that is criminal only because a statute prohibits it, not because it is inherently immoral",
+        "distractors": [
+          "an act that is inherently evil regardless of legislation",
+          "a crime punishable only by a fine, never imprisonment"
+        ],
+        "example": {
+          "text": "Failing to obtain the required permit is malum prohibitum rather than inherently wrongful conduct.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parens_patriae",
+    "lang": "en",
+    "word": "parens patriae",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine under which the state acts as guardian for individuals who cannot protect their own interests, such as children",
+        "distractors": [
+          "the rule that parents are strictly liable for their children's torts",
+          "a court's authority to appoint an executor for an estate"
+        ],
+        "example": {
+          "text": "The state sued the manufacturer in its parens patriae capacity to protect the interests of its residents.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_in_loco_parentis",
+    "lang": "en",
+    "word": "in loco parentis",
+    "pos": "adjective",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "acting in the role and with the legal authority of a parent, typically applied to schools or guardians",
+        "distractors": [
+          "acting entirely without legal authority over a minor",
+          "describing a custody arrangement ordered temporarily by a court"
+        ],
+        "example": {
+          "text": "As the school stood in loco parentis during the field trip, it owed the students a duty of care.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cy_pres",
+    "lang": "en",
+    "word": "cy pres",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an equitable doctrine allowing a court to redirect funds or a charitable gift toward a purpose as close as possible to the original intent when that intent becomes impossible or impractical",
+        "distractors": [
+          "the doctrine allowing a will to be entirely rewritten by the court",
+          "a rule requiring settlements to be split equally among class members"
+        ],
+        "example": {
+          "text": "The court applied the cy pres doctrine to distribute the unclaimed settlement funds to a related charity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_laches",
+    "lang": "en",
+    "word": "laches",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an equitable defense barring a claim because the plaintiff unreasonably delayed in asserting it, causing prejudice to the other party",
+        "distractors": [
+          "the statutory deadline by which any lawsuit must be filed",
+          "a rule limiting how much a jury may award in damages"
+        ],
+        "example": {
+          "text": "The court barred the claim under laches because the plaintiff waited decades to assert his rights while evidence was lost.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_unclean_hands",
+    "lang": "en",
+    "word": "unclean hands",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an equitable defense barring relief for a plaintiff who has acted unethically or in bad faith regarding the matter in dispute",
+        "distractors": [
+          "a rule disqualifying a juror who has a criminal record",
+          "the requirement that all parties be represented by counsel"
+        ],
+        "example": {
+          "text": "The court refused to grant the injunction because the plaintiff came to it with unclean hands.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tolling",
+    "lang": "en",
+    "word": "tolling",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the suspension or pausing of the running of a statute of limitations during a specified period",
+        "distractors": [
+          "the permanent forfeiture of a claim once the limitations period expires",
+          "a court's authority to shorten a limitations period at its discretion"
+        ],
+        "example": {
+          "text": "The limitations period was tolled while the defendant was out of the state and could not be served.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stare_decisis",
+    "lang": "en",
+    "word": "stare decisis",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the doctrine that courts should generally follow established precedent when deciding similar cases",
+        "distractors": [
+          "the principle that a legislature may retroactively overturn any judicial decision",
+          "the rule requiring unanimous agreement among appellate judges"
+        ],
+        "example": {
+          "text": "Even justices skeptical of the earlier ruling hesitated to overturn it, citing stare decisis.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_redressability",
+    "lang": "en",
+    "word": "redressability",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the standing requirement that a favorable court decision must be likely to remedy the plaintiff's injury",
+        "distractors": [
+          "the requirement that damages be calculated with mathematical precision",
+          "the rule that only monetary relief may be awarded in federal court"
+        ],
+        "example": {
+          "text": "The suit failed on redressability because a ruling for the plaintiff would not have stopped the harm.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_self-executing",
+    "lang": "en",
+    "word": "self-executing",
+    "pos": "adjective",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a treaty or constitutional provision that takes effect as domestic law without the need for further implementing legislation",
+        "distractors": [
+          "describing a law that automatically expires after five years",
+          "describing a court order that a party may ignore without penalty"
+        ],
+        "example": {
+          "text": "The court held the treaty provision was self-executing and therefore enforceable without an implementing statute.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_void_ab_initio",
+    "lang": "en",
+    "word": "void ab initio",
+    "pos": "adjective",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "invalid from the very outset, as though it never had any legal effect",
+        "distractors": [
+          "valid until formally challenged in court",
+          "enforceable only after a court's later ratification"
+        ],
+        "example": {
+          "text": "The court declared the fraudulently obtained contract void ab initio.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nunc_pro_tunc",
+    "lang": "en",
+    "word": "nunc pro tunc",
+    "pos": "adverb",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "having retroactive legal effect, as if an order or filing had occurred at an earlier date",
+        "distractors": [
+          "applicable only to future proceedings, never retroactively",
+          "issued without any written record"
+        ],
+        "example": {
+          "text": "The judge entered the corrected order nunc pro tunc to the original filing date.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_de_novo",
+    "lang": "en",
+    "word": "de novo",
+    "pos": "adverb",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "anew, as if for the first time, without deference to a prior decision-maker's conclusions",
+        "distractors": [
+          "with substantial deference to the original decision-maker",
+          "only with respect to factual, not legal, determinations"
+        ],
+        "example": {
+          "text": "The appellate court reviewed the purely legal question de novo.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_de_facto",
+    "lang": "en",
+    "word": "de facto",
+    "pos": "adjective",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "existing in practice or fact, regardless of official legal recognition",
+        "distractors": [
+          "existing only by explicit statutory authorization",
+          "recognized formally but never actually implemented"
+        ],
+        "example": {
+          "text": "Despite lacking formal authority, he had become the de facto head of the agency.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_de_jure",
+    "lang": "en",
+    "word": "de jure",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "existing by operation of law or formal legal recognition, as opposed to mere practice",
+        "distractors": [
+          "existing informally, without any legal basis",
+          "recognized only by international custom, never domestic law"
+        ],
+        "example": {
+          "text": "The court distinguished de jure segregation, mandated by law, from mere de facto patterns of separation.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_in_personam",
+    "lang": "en",
+    "word": "in personam",
+    "pos": "adjective",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a court's jurisdiction over the person of a specific defendant, rather than over property",
+        "distractors": [
+          "describing jurisdiction over property located within the court's territory",
+          "describing a judgment that binds the whole world"
+        ],
+        "example": {
+          "text": "The court lacked in personam jurisdiction because the defendant had no meaningful contacts with the state.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_in_rem",
+    "lang": "en",
+    "word": "in rem",
+    "pos": "adjective",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a court's jurisdiction over a specific piece of property, rather than over a particular person",
+        "distractors": [
+          "describing jurisdiction based solely on the defendant's citizenship",
+          "describing a criminal proceeding brought against a corporation"
+        ],
+        "example": {
+          "text": "The forfeiture proceeding was an in rem action against the seized vessel itself.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quasi-judicial",
+    "lang": "en",
+    "word": "quasi-judicial",
+    "pos": "adjective",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an executive or administrative function that resembles a court's role of adjudicating disputes and applying rules to facts",
+        "distractors": [
+          "describing a purely legislative function involving no factfinding",
+          "describing an action taken exclusively by a jury"
+        ],
+        "example": {
+          "text": "The zoning board exercised a quasi-judicial function when it held hearings and ruled on the variance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quasi-legislative",
+    "lang": "en",
+    "word": "quasi-legislative",
+    "pos": "adjective",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an administrative agency's function of creating generally applicable rules, resembling the lawmaking role of a legislature",
+        "distractors": [
+          "describing a court's power to interpret a statute's plain meaning",
+          "describing the exclusively enforcement-related duties of an agency"
+        ],
+        "example": {
+          "text": "The agency's quasi-legislative rulemaking established binding standards for the entire industry.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sua_sponte",
+    "lang": "en",
+    "word": "sua sponte",
+    "pos": "adverb",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "on its own initiative, without a request or motion from either party",
+        "distractors": [
+          "only after a formal motion filed by one of the parties",
+          "exclusively at the direction of an appellate court"
+        ],
+        "example": {
+          "text": "The judge raised the jurisdictional defect sua sponte, without either party mentioning it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_in_camera",
+    "lang": "en",
+    "word": "in camera",
+    "pos": "adverb",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in private, in a judge's chambers or otherwise outside public view",
+        "distractors": [
+          "in open court, before the assembled public",
+          "by written submission only, without any hearing"
+        ],
+        "example": {
+          "text": "The judge reviewed the disputed documents in camera before ruling on the privilege claim.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_per_curiam",
+    "lang": "en",
+    "word": "per curiam",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a court opinion issued in the name of the court as a whole rather than attributed to a single authoring judge",
+        "distractors": [
+          "describing an opinion that carries no binding legal effect",
+          "describing a ruling issued exclusively by a single trial judge"
+        ],
+        "example": {
+          "text": "The unsigned per curiam opinion resolved the case without identifying its author.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ultra_vires",
+    "lang": "en",
+    "word": "ultra vires",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing an act performed beyond the scope of legal authority or power granted to the actor",
+        "distractors": [
+          "describing an act performed within the clear scope of one's authority",
+          "describing conduct that is criminal but not civilly actionable"
+        ],
+        "example": {
+          "text": "The board's contract was voided as ultra vires because it exceeded the corporation's chartered powers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ex_post_facto",
+    "lang": "en",
+    "word": "ex post facto",
+    "pos": "adjective",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a law that retroactively criminalizes conduct or increases punishment for an act already committed",
+        "distractors": [
+          "describing a law that applies only prospectively to future conduct",
+          "describing a law passed unanimously by the legislature"
+        ],
+        "example": {
+          "text": "The statute increasing penalties for past conduct was struck down as an unconstitutional ex post facto law.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_justiciable",
+    "lang": "en",
+    "word": "justiciable",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of being resolved by a court because it presents a genuine, concrete legal dispute appropriate for judicial decision",
+        "distractors": [
+          "resolvable only through legislative action, never by courts",
+          "requiring unanimous consent of all parties before a court may hear it"
+        ],
+        "example": {
+          "text": "The court found the dispute justiciable and proceeded to decide the merits.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dispositive",
+    "lang": "en",
+    "word": "dispositive",
+    "pos": "adjective",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "sufficient by itself to determine the outcome of an issue or an entire case",
+        "distractors": [
+          "merely persuasive but never determinative of a case's outcome",
+          "applicable only to procedural, not substantive, matters"
+        ],
+        "example": {
+          "text": "The signed waiver proved dispositive, ending the case without a trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_moot",
+    "lang": "en",
+    "word": "moot",
+    "pos": "adjective",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "no longer presenting a live controversy, such that a court's decision would have no practical effect",
+        "distractors": [
+          "presenting a controversy so urgent that it demands immediate review",
+          "involving facts that are still genuinely disputed by the parties"
+        ],
+        "example": {
+          "text": "The appeal became moot once the challenged policy was voluntarily withdrawn.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_probative",
+    "lang": "en",
+    "word": "probative",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "tending to prove or disprove a fact at issue, and therefore relevant to a case",
+        "distractors": [
+          "certain to persuade a jury regardless of other evidence",
+          "inadmissible because it was obtained through improper means"
+        ],
+        "example": {
+          "text": "The judge admitted the photograph because it was highly probative of the defendant's location.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exculpatory",
+    "lang": "en",
+    "word": "exculpatory",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "tending to clear a defendant of guilt or fault",
+        "distractors": [
+          "tending to establish a defendant's guilt beyond doubt",
+          "relevant only to sentencing, not to guilt"
+        ],
+        "example": {
+          "text": "The prosecution was required to disclose the exculpatory evidence to the defense before trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inculpatory",
+    "lang": "en",
+    "word": "inculpatory",
+    "pos": "adjective",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "tending to indicate or establish a person's guilt or involvement in wrongdoing",
+        "distractors": [
+          "tending to excuse a defendant from criminal responsibility",
+          "relevant only to civil, not criminal, proceedings"
+        ],
+        "example": {
+          "text": "The inculpatory text messages were introduced to link the defendant to the scheme.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prejudicial",
+    "lang": "en",
+    "word": "prejudicial",
+    "pos": "adjective",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing evidence whose potential to unfairly bias the factfinder outweighs its legitimate value",
+        "distractors": [
+          "describing evidence that is always excluded regardless of context",
+          "describing testimony given under oath by an expert witness"
+        ],
+        "example": {
+          "text": "The court excluded the graphic photographs as unfairly prejudicial and only marginally relevant.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interlocutory",
+    "lang": "en",
+    "word": "interlocutory",
+    "pos": "adjective",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a court order or ruling issued during litigation that does not finally resolve the entire case",
+        "distractors": [
+          "describing the single order that concludes a case on the merits",
+          "describing a ruling that can never be appealed under any circumstances"
+        ],
+        "example": {
+          "text": "The interlocutory order denying summary judgment was not immediately appealable.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_severable",
+    "lang": "en",
+    "word": "severable",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "capable of being separated from the rest of an agreement or statute so that the remainder can survive independently",
+        "distractors": [
+          "incapable of being enforced under any circumstances",
+          "binding only on the parties who negotiated the original terms"
+        ],
+        "example": {
+          "text": "The illegal clause was severable, leaving the rest of the contract enforceable.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_content-neutral",
+    "lang": "en",
+    "word": "content-neutral",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a speech regulation that applies regardless of the topic or message being expressed",
+        "distractors": [
+          "describing a law that singles out particular viewpoints for restriction",
+          "describing a regulation that applies only to government speech"
+        ],
+        "example": {
+          "text": "The noise ordinance was content-neutral because it restricted volume regardless of the message conveyed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_germane",
+    "lang": "en",
+    "word": "germane",
+    "pos": "adjective",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "closely related or relevant to the matter at hand, as required for an amendment to be permissible under legislative procedure",
+        "distractors": [
+          "entirely unrelated to the subject under discussion",
+          "binding only after formal adoption by a committee"
+        ],
+        "example": {
+          "text": "The Senate rule required that any floor amendment be germane to the underlying bill.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_codify",
+    "lang": "en",
+    "word": "codify",
+    "pos": "verb",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to arrange and compile scattered laws or rules into an organized, systematic legal code",
+        "distractors": [
+          "to formally repeal an existing statute",
+          "to submit a legal dispute to binding arbitration"
+        ],
+        "example": {
+          "text": "Congress voted to codify the agency's longstanding practice into permanent statutory law.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_promulgate",
+    "lang": "en",
+    "word": "promulgate",
+    "pos": "verb",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to formally issue or put into effect a law, rule, or regulation",
+        "distractors": [
+          "to permanently strike down a law as unconstitutional",
+          "to privately negotiate a settlement between disputing parties"
+        ],
+        "example": {
+          "text": "The agency promulgated the new safety regulations after a lengthy notice-and-comment period.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_abrogate",
+    "lang": "en",
+    "word": "abrogate",
+    "pos": "verb",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to formally abolish or repeal a law, right, or agreement",
+        "distractors": [
+          "to temporarily suspend a rule pending further review",
+          "to expand the scope of an existing right"
+        ],
+        "example": {
+          "text": "The treaty was abrogated when the government formally withdrew from it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_adjudicate",
+    "lang": "en",
+    "word": "adjudicate",
+    "pos": "verb",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to hear and formally resolve a legal dispute through the judicial process",
+        "distractors": [
+          "to informally mediate a dispute outside of court",
+          "to draft legislation on behalf of a client"
+        ],
+        "example": {
+          "text": "The tribunal was created to adjudicate claims arising from the disputed territory.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_arraign",
+    "lang": "en",
+    "word": "arraign",
+    "pos": "verb",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to bring a criminal defendant before a court to hear the formal charges and enter a plea",
+        "distractors": [
+          "to formally sentence a defendant after conviction",
+          "to summon a witness to testify before a grand jury"
+        ],
+        "example": {
+          "text": "The defendant was arraigned the morning after his arrest and pleaded not guilty.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_impeach",
+    "lang": "en",
+    "word": "impeach",
+    "pos": "verb",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to formally charge a public official with misconduct as the first step toward removal from office, or to challenge a witness's credibility",
+        "distractors": [
+          "to permanently remove an official from office without any further proceeding",
+          "to pardon an official for prior misconduct"
+        ],
+        "example": {
+          "text": "The House voted to impeach the official, sending the matter to the Senate for trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_enjoin",
+    "lang": "en",
+    "word": "enjoin",
+    "pos": "verb",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to legally prohibit or compel a party to act through a court's injunctive order",
+        "distractors": [
+          "to voluntarily agree to a settlement without court involvement",
+          "to formally join two lawsuits into a single proceeding"
+        ],
+        "example": {
+          "text": "The court enjoined the company from continuing the deceptive advertising practice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vacate",
+    "lang": "en",
+    "word": "vacate",
+    "pos": "verb",
+    "freqRank": 20000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to set aside or annul a judgment, order, or decision, rendering it legally void",
+        "distractors": [
+          "to uphold a lower court's ruling in full",
+          "to postpone a scheduled trial to a later date"
+        ],
+        "example": {
+          "text": "The appellate court vacated the conviction and remanded the case for a new trial.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_remand",
+    "lang": "en",
+    "word": "remand",
+    "pos": "verb",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to send a case back to a lower court or agency for further proceedings consistent with the reviewing court's decision",
+        "distractors": [
+          "to permanently dismiss a case with prejudice",
+          "to consolidate multiple related cases into one"
+        ],
+        "example": {
+          "text": "The Supreme Court remanded the case to the circuit court to apply the newly announced standard.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_distinguish",
+    "lang": "en",
+    "word": "distinguish",
+    "pos": "verb",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "legal"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to argue that a precedent does not control the current case because of relevant factual or legal differences",
+        "distractors": [
+          "to formally overturn a prior precedent",
+          "to certify a case for review by a higher court"
+        ],
+        "example": {
+          "text": "Defense counsel sought to distinguish the unfavorable precedent based on the different statutory language at issue.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

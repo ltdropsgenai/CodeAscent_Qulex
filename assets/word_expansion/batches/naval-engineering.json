@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_futtock",
+    "lang": "en",
+    "word": "Futtock",
+    "pos": "noun",
+    "freqRank": 31476,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "one of the curved timbers that form part of a ship's rib, joined end to end to build up the frame from keel to deck",
+        "distractors": [
+          "a horizontal beam supporting the main deck planking",
+          "the lowest strake of hull plating next to the keel"
+        ],
+        "example": {
+          "text": "Shipwrights scarfed each futtock to the next to complete the curved frame.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sheer_strake",
+    "lang": "en",
+    "word": "Sheer Strake",
+    "pos": "noun",
+    "freqRank": 30824,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the topmost continuous line of hull plating running along the upper edge of a ship's side",
+        "distractors": [
+          "the plate that forms the rounded turn between the bottom and the side of the hull",
+          "a reinforcing bar fitted inside a hatch opening"
+        ],
+        "example": {
+          "text": "Extra thickness was specified for the sheer strake to resist deck edge stresses.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bilge_keel",
+    "lang": "en",
+    "word": "Bilge Keel",
+    "pos": "noun",
+    "freqRank": 29409,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a long fin fitted along the turn of the bilge on each side of a hull to reduce rolling",
+        "distractors": [
+          "a heavy weight bolted to the keel to lower the center of gravity",
+          "the drainage channel that carries water to the bilge pumps"
+        ],
+        "example": {
+          "text": "The bilge keels cut the vessel's rolling motion noticeably in the beam sea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_garboard_strake",
+    "lang": "en",
+    "word": "Garboard Strake",
+    "pos": "noun",
+    "freqRank": 33506,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the first range of hull plating fitted immediately next to the keel on either side",
+        "distractors": [
+          "the topmost plate row running under the deck edge",
+          "a small triangular plate closing a gap at the stem"
+        ],
+        "example": {
+          "text": "Corrosion was found along the garboard strake where it meets the keel plate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chine",
+    "lang": "en",
+    "word": "Chine",
+    "pos": "noun",
+    "freqRank": 25012,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the line where the bottom and side of a hull meet at a distinct angle rather than a smooth curve",
+        "distractors": [
+          "the vertical centerline seam running along the keel",
+          "the curved overhang of the hull above the bow"
+        ],
+        "example": {
+          "text": "The planing hull had a hard chine that helped it lift onto the water at speed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tumblehome",
+    "lang": "en",
+    "word": "Tumblehome",
+    "pos": "noun",
+    "freqRank": 24657,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the inward slope of a ship's sides above the waterline as they rise toward the deck",
+        "distractors": [
+          "the outward flare of the bow above the waterline",
+          "the downward slope of the keel toward the stern"
+        ],
+        "example": {
+          "text": "Older warships often had pronounced tumblehome to keep upper weight and beam in check.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_camber",
+    "lang": "en",
+    "word": "Camber",
+    "pos": "noun",
+    "freqRank": 23286,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the slight upward curve given to a deck from side to side so that water drains off",
+        "distractors": [
+          "the fore-and-aft curvature of the keel line",
+          "the angle at which a propeller blade is set"
+        ],
+        "example": {
+          "text": "Rainwater ran quickly off the deck thanks to its camber.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scantlings",
+    "lang": "en",
+    "word": "Scantlings",
+    "pos": "noun",
+    "freqRank": 22679,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the standardized dimensions of a ship's structural members, such as plate thickness and frame spacing",
+        "distractors": [
+          "the set of navigation charts carried for a voyage",
+          "the crew's watch schedule during a passage"
+        ],
+        "example": {
+          "text": "The classification society reviewed the scantlings before approving the hull design.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sternpost",
+    "lang": "en",
+    "word": "Sternpost",
+    "pos": "noun",
+    "freqRank": 29935,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the strong vertical structural member at the aft end of the keel that supports the rudder and stern framing",
+        "distractors": [
+          "the horizontal beam that caps the transom",
+          "a mooring post fitted on the stern deck"
+        ],
+        "example": {
+          "text": "The rudder pintles were bolted directly to the sternpost.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deadrise",
+    "lang": "en",
+    "word": "Deadrise",
+    "pos": "noun",
+    "freqRank": 22424,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the upward angle of a hull's bottom from the keel to the turn of the bilge, measured at a given section",
+        "distractors": [
+          "the vertical distance between the waterline and the keel",
+          "the angle at which a ship lists when flooded"
+        ],
+        "example": {
+          "text": "A steep deadrise lets the hull cut through chop rather than pound against it.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coaming",
+    "lang": "en",
+    "word": "Coaming",
+    "pos": "noun",
+    "freqRank": 30674,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a raised rim around a hatch or opening in a deck that keeps water from running below",
+        "distractors": [
+          "the seam where two hull plates are welded together",
+          "a hinge fitting used on a watertight door"
+        ],
+        "example": {
+          "text": "Green water broke over the coaming but the hatch stayed dry below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rabbet",
+    "lang": "en",
+    "word": "Rabbet",
+    "pos": "noun",
+    "freqRank": 27912,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a groove cut along the keel or stem into which the edges of hull planking are fitted",
+        "distractors": [
+          "a fitting that locks a hatch cover in place",
+          "the socket into which the rudder stock is stepped"
+        ],
+        "example": {
+          "text": "The shipwright chiseled the rabbet along the keel to seat the garboard plank.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strake",
+    "lang": "en",
+    "word": "Strake",
+    "pos": "noun",
+    "freqRank": 21520,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a continuous line of planking or plating running the length of a hull from bow to stern",
+        "distractors": [
+          "a single frame rib spanning from keel to deck",
+          "the bracket that supports a propeller shaft"
+        ],
+        "example": {
+          "text": "Each strake overlapped the one below it in the clinker-built hull.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_limber_hole",
+    "lang": "en",
+    "word": "Limber Hole",
+    "pos": "noun",
+    "freqRank": 29488,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small opening cut through frames near the keel to let bilge water drain toward the pumps",
+        "distractors": [
+          "a vent that releases pressure from a ballast tank",
+          "an inspection port used to check weld quality"
+        ],
+        "example": {
+          "text": "Debris had blocked the limber holes, letting water pool between the frames.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hogging",
+    "lang": "en",
+    "word": "Hogging",
+    "pos": "noun",
+    "freqRank": 22535,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the structural condition in which a hull bends so that the middle rises relative to the ends, often from wave crests amidships",
+        "distractors": [
+          "the buildup of marine growth on a hull's underside",
+          "the gradual loss of engine power due to fouled intakes"
+        ],
+        "example": {
+          "text": "Riding a long wave crest amidships put the hull under severe hogging stress.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sagging",
+    "lang": "en",
+    "word": "Sagging",
+    "pos": "noun",
+    "freqRank": 24582,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the structural condition in which a hull bends so that the middle drops relative to the ends, often from wave troughs amidships",
+        "distractors": [
+          "the slow settling of a vessel onto the seabed after grounding",
+          "the loosening of standing rigging over time"
+        ],
+        "example": {
+          "text": "With wave troughs supporting the bow and stern, the hull experienced sagging.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_racking",
+    "lang": "en",
+    "word": "Racking",
+    "pos": "noun",
+    "freqRank": 24811,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the distortion of a ship's transverse frame into a parallelogram shape under rolling or side loads",
+        "distractors": [
+          "the wearing away of propeller blade edges by cavitation",
+          "the systematic inspection of cargo stowage before departure"
+        ],
+        "example": {
+          "text": "Heavy rolling in the beam sea caused visible racking of the deckhouse frames.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_panting",
+    "lang": "en",
+    "word": "Panting",
+    "pos": "noun",
+    "freqRank": 29279,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the in-and-out flexing of bow or stern plating caused by the pressure of waves striking the hull",
+        "distractors": [
+          "the vibration of a propeller shaft caused by imbalance",
+          "the release of air from a ballast tank during filling"
+        ],
+        "example": {
+          "text": "Extra stringers were added forward to resist panting in heavy head seas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_corrosion_allowance",
+    "lang": "en",
+    "word": "Corrosion Allowance",
+    "pos": "noun",
+    "freqRank": 29434,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "extra plate thickness added beyond the strength requirement to compensate for expected metal loss over the ship's life",
+        "distractors": [
+          "the maximum permitted rust coverage before a hull fails survey",
+          "a reduction in cargo capacity granted for older vessels"
+        ],
+        "example": {
+          "text": "The designer added a corrosion allowance to the tank top plating for the ore carrier.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_doubler_plate",
+    "lang": "en",
+    "word": "Doubler Plate",
+    "pos": "noun",
+    "freqRank": 32257,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an extra plate welded over an existing one to reinforce a worn or highly stressed area",
+        "distractors": [
+          "a plate fitted to seal a temporary hull breach",
+          "the plate forming the outer skin of a double bottom"
+        ],
+        "example": {
+          "text": "A doubler plate was welded over the cracked deck plating near the hatch corner.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gusset_plate",
+    "lang": "en",
+    "word": "Gusset Plate",
+    "pos": "noun",
+    "freqRank": 37928,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a triangular or shaped plate used to reinforce and stiffen the connection between two structural members",
+        "distractors": [
+          "a removable plate covering an inspection manhole",
+          "the plate that forms the leading edge of a rudder"
+        ],
+        "example": {
+          "text": "Gusset plates were fitted at the bracket connections to spread the load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_faying_surface",
+    "lang": "en",
+    "word": "Faying Surface",
+    "pos": "noun",
+    "freqRank": 35873,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the mating surface of two plates or members that are joined together, as by welding or bolting",
+        "distractors": [
+          "the outer surface of the hull exposed to seawater",
+          "the inner lining of a fuel tank"
+        ],
+        "example": {
+          "text": "Paint was removed from the faying surface before the plates were welded.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fairing",
+    "lang": "en",
+    "word": "Fairing",
+    "pos": "noun",
+    "freqRank": 24611,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of adjusting a hull's lines or structure so that its surfaces form smooth, continuous curves",
+        "distractors": [
+          "the application of antifouling paint to the hull",
+          "the alignment of a propeller shaft with the engine"
+        ],
+        "example": {
+          "text": "The lofted frames were checked for fairing before plate cutting began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lofting",
+    "lang": "en",
+    "word": "Lofting",
+    "pos": "noun",
+    "freqRank": 28359,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of drawing a ship's lines full size on a floor to produce patterns for cutting structural parts",
+        "distractors": [
+          "the calculation of a vessel's stability curves",
+          "the process of loading cargo evenly across a hold"
+        ],
+        "example": {
+          "text": "The loftsman transferred the lines plan to the mold loft floor at full scale.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lines_plan",
+    "lang": "en",
+    "word": "Lines Plan",
+    "pos": "noun",
+    "freqRank": 33557,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of drawings showing a hull's shape through sheer, half-breadth, and body plan views",
+        "distractors": [
+          "a schedule listing a ship's mooring lines and their breaking strengths",
+          "a diagram of a vessel's electrical wiring runs"
+        ],
+        "example": {
+          "text": "The lines plan defined the hull's curves before any steel was cut.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deadweight",
+    "lang": "en",
+    "word": "Deadweight",
+    "pos": "noun",
+    "freqRank": 21106,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the total weight a ship can carry, including cargo, fuel, stores, and crew, measured as the difference between loaded and light displacement",
+        "distractors": [
+          "the weight of the hull structure alone before fitting out",
+          "the maximum weight a crane aboard a ship can lift"
+        ],
+        "example": {
+          "text": "The bulk carrier's deadweight of 80,000 tonnes set its cargo-carrying limit.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lightship",
+    "lang": "en",
+    "word": "Lightship",
+    "pos": "noun",
+    "freqRank": 23615,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the weight of a ship complete and ready for service but without cargo, fuel, stores, or crew",
+        "distractors": [
+          "a vessel used to mark a hazard when no lighthouse is available",
+          "the minimum crew required to operate a ship safely"
+        ],
+        "example": {
+          "text": "Surveyors verified the lightship weight during the vessel's inclining test.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metacenter",
+    "lang": "en",
+    "word": "Metacenter",
+    "pos": "noun",
+    "freqRank": 27924,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the point where a line through the center of buoyancy of a slightly heeled ship intersects the original vertical centerline",
+        "distractors": [
+          "the geometric center of a ship's waterplane area",
+          "the point at which cargo is loaded to balance trim"
+        ],
+        "example": {
+          "text": "As the ship heeled, the position of the metacenter determined its initial stability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metacentric_height",
+    "lang": "en",
+    "word": "Metacentric Height",
+    "pos": "noun",
+    "freqRank": 34574,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the vertical distance between a ship's center of gravity and its metacenter, used as a basic measure of initial stability",
+        "distractors": [
+          "the height of a ship's freeboard measured at the bow",
+          "the distance a hull rises when unloaded of ballast"
+        ],
+        "example": {
+          "text": "A negative metacentric height left the vessel dangerously unstable at the dock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_righting_arm",
+    "lang": "en",
+    "word": "Righting Arm",
+    "pos": "noun",
+    "freqRank": 33552,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the horizontal distance between the center of gravity and center of buoyancy that creates a moment restoring a heeled ship to upright",
+        "distractors": [
+          "the length of a crane arm used to right a capsized lifeboat",
+          "the mechanical linkage connecting the rudder to the steering gear"
+        ],
+        "example": {
+          "text": "The stability curve plotted righting arm against angle of heel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_righting_moment",
+    "lang": "en",
+    "word": "Righting Moment",
+    "pos": "noun",
+    "freqRank": 31547,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the moment produced by the righting arm and displacement that tends to return a heeled ship to the upright position",
+        "distractors": [
+          "the torque delivered by the main engine at full power",
+          "the force needed to turn the rudder at maximum speed"
+        ],
+        "example": {
+          "text": "As heel increased, the righting moment grew until it reached its maximum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_center_of_buoyancy",
+    "lang": "en",
+    "word": "Center of Buoyancy",
+    "pos": "noun",
+    "freqRank": 38763,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the geometric center of the underwater volume of a ship's hull, through which the total buoyant force acts",
+        "distractors": [
+          "the point where a ship's weight is concentrated",
+          "the deepest point of the hull below the waterline"
+        ],
+        "example": {
+          "text": "As the ship heeled, its center of buoyancy shifted toward the low side.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_center_of_flotation",
+    "lang": "en",
+    "word": "Center of Flotation",
+    "pos": "noun",
+    "freqRank": 44841,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the centroid of a ship's waterplane area, about which the ship trims when weight is added or removed",
+        "distractors": [
+          "the point marking the middle of a ship's overall length",
+          "the location where ballast water is normally taken on"
+        ],
+        "example": {
+          "text": "Adding weight forward of the center of flotation caused the bow to trim down.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_waterplane_coefficient",
+    "lang": "en",
+    "word": "Waterplane Coefficient",
+    "pos": "noun",
+    "freqRank": 34514,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of a ship's waterplane area to the area of a rectangle having the same length and beam",
+        "distractors": [
+          "the ratio of a ship's draft to its overall depth",
+          "the percentage of a hull's surface covered by antifouling paint"
+        ],
+        "example": {
+          "text": "A higher waterplane coefficient generally improves a ship's initial stability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_block_coefficient",
+    "lang": "en",
+    "word": "Block Coefficient",
+    "pos": "noun",
+    "freqRank": 30674,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of a ship's underwater volume to the volume of a rectangular block having the same length, beam, and draft",
+        "distractors": [
+          "the ratio of engine power to displacement",
+          "the proportion of cargo space to total hull volume"
+        ],
+        "example": {
+          "text": "Tankers typically have a higher block coefficient than fine-lined container ships.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_prismatic_coefficient",
+    "lang": "en",
+    "word": "Prismatic Coefficient",
+    "pos": "noun",
+    "freqRank": 30519,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of a hull's underwater volume to the volume of a prism formed by the midship section extended over the ship's length",
+        "distractors": [
+          "the ratio of a hull's beam to its draft",
+          "the fraction of a ship's length occupied by machinery spaces"
+        ],
+        "example": {
+          "text": "Naval architects adjusted the prismatic coefficient to balance resistance and capacity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_midship_coefficient",
+    "lang": "en",
+    "word": "Midship Coefficient",
+    "pos": "noun",
+    "freqRank": 35224,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of the immersed area of a ship's midship section to the area of a rectangle formed by its beam and draft",
+        "distractors": [
+          "the ratio of hull weight to total displacement at midships",
+          "the fraction of freeboard remaining at the midship section"
+        ],
+        "example": {
+          "text": "A full midship coefficient gave the barge nearly rectangular underwater sections.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wetted_surface",
+    "lang": "en",
+    "word": "Wetted Surface",
+    "pos": "noun",
+    "freqRank": 30584,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the total area of a ship's hull that is in contact with water and subject to frictional resistance",
+        "distractors": [
+          "the area of deck exposed to spray in heavy weather",
+          "the portion of a hull coated with antifouling paint"
+        ],
+        "example": {
+          "text": "Reducing wetted surface was a priority in designing the low-drag hull form.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parallel_middle_body",
+    "lang": "en",
+    "word": "Parallel Middle Body",
+    "pos": "noun",
+    "freqRank": 39940,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the section amidships where a ship's cross-sectional shape remains constant along its length",
+        "distractors": [
+          "the central compartment used for machinery on most cargo ships",
+          "the strengthened region of deck used for heavy lift operations"
+        ],
+        "example": {
+          "text": "The tanker's long parallel middle body simplified construction and maximized cargo volume.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bulbous_bow",
+    "lang": "en",
+    "word": "Bulbous Bow",
+    "pos": "noun",
+    "freqRank": 34635,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rounded, bulb-shaped protrusion below the waterline at the bow that reduces wave-making resistance",
+        "distractors": [
+          "a reinforced bow section designed for icebreaking",
+          "the forward compartment used to trim a ship by the head"
+        ],
+        "example": {
+          "text": "The bulbous bow noticeably cut fuel consumption at the vessel's service speed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_transom_stern",
+    "lang": "en",
+    "word": "Transom Stern",
+    "pos": "noun",
+    "freqRank": 33333,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a stern design featuring a flat, near-vertical surface across the after end of the hull",
+        "distractors": [
+          "a stern shaped to a fine point for reduced drag",
+          "a stern fitted with twin skegs for propeller protection"
+        ],
+        "example": {
+          "text": "The transom stern simplified construction and increased usable deck area aft.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cruiser_stern",
+    "lang": "en",
+    "word": "Cruiser Stern",
+    "pos": "noun",
+    "freqRank": 29711,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rounded, gracefully curved stern that extends the hull's underwater lines smoothly to the sternpost",
+        "distractors": [
+          "a stern reinforced for towing heavy loads",
+          "a stern design incorporating a built-in swim platform"
+        ],
+        "example": {
+          "text": "The yacht's cruiser stern gave it a classic profile compared to the flat-transomed racer.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_propeller_pitch",
+    "lang": "en",
+    "word": "Propeller Pitch",
+    "pos": "noun",
+    "freqRank": 36527,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the theoretical distance a propeller would advance through the water in one revolution if there were no slip",
+        "distractors": [
+          "the angle at which a propeller shaft is inclined relative to the keel",
+          "the number of blades fitted to a propeller"
+        ],
+        "example": {
+          "text": "Increasing propeller pitch raised the ship's speed at the same shaft rpm.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_propeller_skew",
+    "lang": "en",
+    "word": "Propeller Skew",
+    "pos": "noun",
+    "freqRank": 37785,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the curved, backward sweep of a propeller blade's outline relative to the shaft's radial line, used to reduce vibration and cavitation",
+        "distractors": [
+          "the misalignment between a propeller and its shaft centerline",
+          "the angle formed between two adjacent propeller blades"
+        ],
+        "example": {
+          "text": "Highly skewed blades were chosen to cut propeller-induced hull vibration.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slip_ratio",
+    "lang": "en",
+    "word": "Slip Ratio",
+    "pos": "noun",
+    "freqRank": 31045,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fractional difference between a propeller's theoretical advance and its actual advance through the water",
+        "distractors": [
+          "the ratio of propeller diameter to shaft length",
+          "the percentage of engine power lost to gearbox friction"
+        ],
+        "example": {
+          "text": "A high slip ratio at low speed indicated the propeller was working inefficiently.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wake_fraction",
+    "lang": "en",
+    "word": "Wake Fraction",
+    "pos": "noun",
+    "freqRank": 35201,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the fractional reduction in the water's velocity at the propeller compared to the ship's speed, caused by the hull's boundary layer",
+        "distractors": [
+          "the proportion of a ship's wash that returns as spray on deck",
+          "the percentage of propulsive power lost to appendage drag"
+        ],
+        "example": {
+          "text": "A high wake fraction behind the full hull let the propeller work in slower water.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thrust_deduction",
+    "lang": "en",
+    "word": "Thrust Deduction",
+    "pos": "noun",
+    "freqRank": 30291,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reduction in a hull's effective resistance-overcoming thrust because the propeller accelerates flow past the stern, increasing resistance",
+        "distractors": [
+          "the loss of thrust caused by cavitation on the propeller blades",
+          "the fraction of thrust absorbed by the rudder when steering"
+        ],
+        "example": {
+          "text": "Thrust deduction meant the propeller had to generate more force than the bare hull resistance alone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shaft_horsepower",
+    "lang": "en",
+    "word": "Shaft Horsepower",
+    "pos": "noun",
+    "freqRank": 33803,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the power delivered to a ship's propeller shaft, measured just aft of the reduction gear or engine coupling",
+        "distractors": [
+          "the total installed power of all a ship's generators",
+          "the power required to turn the steering gear"
+        ],
+        "example": {
+          "text": "The trial showed the engine delivering its rated shaft horsepower at full load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_controllable_pitch_propeller",
+    "lang": "en",
+    "word": "Controllable Pitch Propeller",
+    "pos": "noun",
+    "freqRank": 43794,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a propeller whose blades can be rotated on their hubs while turning, allowing thrust and direction to be changed without reversing the engine",
+        "distractors": [
+          "a propeller with blades that fold flat when not in use",
+          "a propeller designed to change its number of blades in service"
+        ],
+        "example": {
+          "text": "The ferry used a controllable pitch propeller to reverse thrust quickly for docking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kort_nozzle",
+    "lang": "en",
+    "word": "Kort Nozzle",
+    "pos": "noun",
+    "freqRank": 34925,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fixed duct surrounding a propeller that increases thrust at low speeds by accelerating flow through the propeller disc",
+        "distractors": [
+          "a device that filters debris from a propeller's intake",
+          "a housing that reduces propeller noise for naval vessels"
+        ],
+        "example": {
+          "text": "The tug's Kort nozzle boosted its bollard pull for towing operations.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bow_thruster",
+    "lang": "en",
+    "word": "Bow Thruster",
+    "pos": "noun",
+    "freqRank": 32150,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a transverse propulsion unit mounted in a tunnel through the bow that pushes water sideways to aid maneuvering at low speed",
+        "distractors": [
+          "a small auxiliary propeller used to steady a ship in heavy weather",
+          "a device that reduces bow slamming in head seas"
+        ],
+        "example": {
+          "text": "The pilot used the bow thruster to swing the ship's head alongside the berth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_rudder_stock",
+    "lang": "en",
+    "word": "Rudder Stock",
+    "pos": "noun",
+    "freqRank": 30139,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the vertical shaft that connects the steering gear to the rudder blade and transmits the turning torque",
+        "distractors": [
+          "the horizontal beam supporting the rudder from below",
+          "the housing that seals the rudder shaft against leakage"
+        ],
+        "example": {
+          "text": "The rudder stock sheared under the strain of the emergency full-turn maneuver.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pintle",
+    "lang": "en",
+    "word": "Pintle",
+    "pos": "noun",
+    "freqRank": 21750,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pin fixed to a rudder that fits into a gudgeon on the sternpost, forming the hinge on which the rudder turns",
+        "distractors": [
+          "a bolt that secures propeller blades to the hub",
+          "a fitting used to lock a hatch cover watertight"
+        ],
+        "example": {
+          "text": "Divers inspected the lower pintle after the rudder began to vibrate.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gudgeon",
+    "lang": "en",
+    "word": "Gudgeon",
+    "pos": "noun",
+    "freqRank": 31834,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fitting bolted to a ship's sternpost that receives a rudder's pintle to form a hinge",
+        "distractors": [
+          "the socket in which a mast is stepped",
+          "a bearing that supports a propeller shaft inside the stern tube"
+        ],
+        "example": {
+          "text": "Wear in the gudgeon allowed the rudder to develop excessive play.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spade_rudder",
+    "lang": "en",
+    "word": "Spade Rudder",
+    "pos": "noun",
+    "freqRank": 32733,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a rudder supported only at its stock, with no skeg or heel bearing beneath it, cantilevered into the flow",
+        "distractors": [
+          "a rudder shaped like a flat paddle used on rowing craft",
+          "a rudder fitted with a secondary emergency blade"
+        ],
+        "example": {
+          "text": "The high-speed craft used a spade rudder to minimize appendage drag.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_skeg",
+    "lang": "en",
+    "word": "Skeg",
+    "pos": "noun",
+    "freqRank": 25741,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fin-like extension of the keel near the stern that supports the rudder and improves directional stability",
+        "distractors": [
+          "a fixed fin fitted to reduce a ship's rolling motion amidships",
+          "a bracket supporting the propeller shaft outboard of the hull"
+        ],
+        "example": {
+          "text": "The skeg protected the rudder and propeller when the boat took the ground.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cycloidal_propeller",
+    "lang": "en",
+    "word": "Cycloidal Propeller",
+    "pos": "noun",
+    "freqRank": 30307,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a propulsion device with vertical blades rotating about a horizontal disc, whose pitch varies through each revolution to produce thrust in any direction",
+        "distractors": [
+          "a propeller with blades that fold for storage in shallow water",
+          "a fixed-pitch propeller optimized for a single cruising speed"
+        ],
+        "example": {
+          "text": "The tug's cycloidal propeller let it change thrust direction almost instantly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_azimuth_thruster",
+    "lang": "en",
+    "word": "Azimuth Thruster",
+    "pos": "noun",
+    "freqRank": 32814,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a propulsion unit mounted in a pod that can rotate through 360 degrees to direct thrust in any horizontal direction",
+        "distractors": [
+          "a bow thruster used only for berthing maneuvers",
+          "a fixed propeller fitted with a steerable nozzle only"
+        ],
+        "example": {
+          "text": "The offshore vessel used azimuth thrusters to hold station without anchoring.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shaft_bossing",
+    "lang": "en",
+    "word": "Shaft Bossing",
+    "pos": "noun",
+    "freqRank": 30654,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a streamlined enlargement of the hull that supports and encloses the propeller shaft where it emerges from the stern",
+        "distractors": [
+          "the flange connecting sections of a propeller shaft",
+          "the bearing surface inside a stern tube"
+        ],
+        "example": {
+          "text": "Twin-screw ships often carry their shafts out through shaft bossings rather than exposed struts.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stern_tube",
+    "lang": "en",
+    "word": "Stern Tube",
+    "pos": "noun",
+    "freqRank": 35227,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the tube through the hull's stern that houses and supports the propeller shaft as it passes from the engine room to the propeller",
+        "distractors": [
+          "the exhaust pipe that vents engine gases at the stern",
+          "the pipe used to fill an aft ballast tank"
+        ],
+        "example": {
+          "text": "Seawater lubricated the bearing inside the stern tube.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stuffing_box",
+    "lang": "en",
+    "word": "Stuffing Box",
+    "pos": "noun",
+    "freqRank": 33554,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sealing device around a shaft, such as a propeller or rudder shaft, that uses packing to prevent water from entering the hull",
+        "distractors": [
+          "a compartment used to store spare shaft bearings",
+          "a fitting that vents pressure from a sealed tank"
+        ],
+        "example": {
+          "text": "The engineer tightened the stuffing box gland to reduce the shaft leak.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thrust_bearing",
+    "lang": "en",
+    "word": "Thrust Bearing",
+    "pos": "noun",
+    "freqRank": 36428,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a bearing designed to absorb the axial force from the propeller and transmit it to the hull structure",
+        "distractors": [
+          "a bearing that supports the rudder stock's weight",
+          "a bearing used only in the reduction gearbox to reduce noise"
+        ],
+        "example": {
+          "text": "The thrust bearing transferred the propeller's forward push to the ship's structure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tip_vortex",
+    "lang": "en",
+    "word": "Tip Vortex",
+    "pos": "noun",
+    "freqRank": 34977,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a swirling flow of water that forms at the tip of a propeller blade due to the pressure difference between its faces",
+        "distractors": [
+          "the wake trail left behind a ship's rudder",
+          "the turbulence created where the bow wave meets the hull"
+        ],
+        "example": {
+          "text": "Cavitation often begins first in the low-pressure core of the tip vortex.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hull_roughness",
+    "lang": "en",
+    "word": "Hull Roughness",
+    "pos": "noun",
+    "freqRank": 31664,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the microscopic and macroscopic irregularity of a hull's wetted surface, which increases frictional resistance as it grows",
+        "distractors": [
+          "the visible corrosion damage found during a dry-dock survey",
+          "the unevenness of a hull's plating caused by welding distortion"
+        ],
+        "example": {
+          "text": "Marine growth increased hull roughness and pushed up fuel consumption.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wave-making_resistance",
+    "lang": "en",
+    "word": "Wave-making Resistance",
+    "pos": "noun",
+    "freqRank": 35065,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the component of a ship's total resistance caused by the energy lost in generating waves as the hull moves through water",
+        "distractors": [
+          "the drag caused by waves striking the hull from abeam in a seaway",
+          "the resistance created by a bow wave breaking over the deck"
+        ],
+        "example": {
+          "text": "Wave-making resistance rises sharply as a hull approaches its critical speed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_frictional_resistance",
+    "lang": "en",
+    "word": "Frictional Resistance",
+    "pos": "noun",
+    "freqRank": 34820,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the component of a ship's total resistance caused by the viscous drag of water flowing along the wetted hull surface",
+        "distractors": [
+          "the resistance caused by waves generated at the bow and stern",
+          "the drag produced by appendages such as bilge keels"
+        ],
+        "example": {
+          "text": "Smooth, well-maintained paintwork kept frictional resistance to a minimum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_appendage_drag",
+    "lang": "en",
+    "word": "Appendage Drag",
+    "pos": "noun",
+    "freqRank": 32432,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the additional resistance contributed by hull fittings such as bilge keels, shaft brackets, and rudders",
+        "distractors": [
+          "the drag caused by cargo lashings left exposed on deck",
+          "the resistance created when a hull is fouled with marine growth"
+        ],
+        "example": {
+          "text": "Removing the unused sonar dome fairing cut the ship's appendage drag.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ship_squat",
+    "lang": "en",
+    "word": "Ship Squat",
+    "pos": "noun",
+    "freqRank": 33374,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the increase in a ship's draft and the change in trim that occur when it moves through shallow or restricted water",
+        "distractors": [
+          "the settling of a vessel's stern when accelerating from rest",
+          "the reduction in freeboard caused by taking on ballast"
+        ],
+        "example": {
+          "text": "Ship squat in the narrow channel reduced the under-keel clearance more than expected.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pooping",
+    "lang": "en",
+    "word": "Pooping",
+    "pos": "noun",
+    "freqRank": 31617,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the dangerous condition in which a following sea overtakes a ship and breaks over its stern",
+        "distractors": [
+          "the loss of steering control when running before heavy following seas",
+          "the flooding of an aft compartment through a damaged shell plate"
+        ],
+        "example": {
+          "text": "The helmsman fought to keep the stern square to the swell and avoid pooping.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_synchronous_rolling",
+    "lang": "en",
+    "word": "Synchronous Rolling",
+    "pos": "noun",
+    "freqRank": 30169,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "large, dangerous rolling that develops when the period of encounter with waves matches a ship's natural rolling period",
+        "distractors": [
+          "rolling caused by an uneven distribution of cargo across the beam",
+          "rolling that occurs only while a ship is at anchor"
+        ],
+        "example": {
+          "text": "The master changed course to break the synchronous rolling building up in the beam sea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_parametric_rolling",
+    "lang": "en",
+    "word": "Parametric Rolling",
+    "pos": "noun",
+    "freqRank": 31803,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "severe, rapidly amplifying rolling caused by periodic changes in a ship's stability as its waterplane shape varies while passing through waves",
+        "distractors": [
+          "rolling caused by an imbalance between port and starboard ballast tanks",
+          "gentle rolling that occurs in a following sea at low speed"
+        ],
+        "example": {
+          "text": "Container ships have suffered cargo losses to parametric rolling in head seas.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slamming",
+    "lang": "en",
+    "word": "Slamming",
+    "pos": "noun",
+    "freqRank": 29751,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sudden, violent impact of a hull's bottom or bow flare against the water surface after emerging from a wave",
+        "distractors": [
+          "the repeated striking of loose cargo against a hold's bulkhead",
+          "the noise produced by cavitation at the propeller"
+        ],
+        "example": {
+          "text": "Slamming in the head sea forced the master to reduce speed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_whipping",
+    "lang": "en",
+    "word": "Whipping",
+    "pos": "noun",
+    "freqRank": 25010,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the transient, high-frequency vibration of a ship's hull girder excited by a slamming impact",
+        "distractors": [
+          "the steady low-frequency flexing of a hull caused by wave passage",
+          "the vibration transmitted through the hull from an unbalanced propeller"
+        ],
+        "example": {
+          "text": "Strain gauges recorded sharp whipping response after each slam.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_springing",
+    "lang": "en",
+    "word": "Springing",
+    "pos": "noun",
+    "freqRank": 23677,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "continuous, resonant vibration of a ship's hull girder excited by the regular passage of waves",
+        "distractors": [
+          "the sudden release of stored energy when a mooring line parts",
+          "the rebound of a hull after striking a submerged object"
+        ],
+        "example": {
+          "text": "Springing vibration in the long, flexible hull added to overall fatigue loading.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_free_surface_effect",
+    "lang": "en",
+    "word": "Free Surface Effect",
+    "pos": "noun",
+    "freqRank": 40786,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reduction in a ship's effective stability caused by liquid shifting within a partially filled tank as the ship heels",
+        "distractors": [
+          "the increase in resistance caused by waves breaking over the deck",
+          "the loss of buoyancy when a compartment floods completely"
+        ],
+        "example": {
+          "text": "Slack tanks created a free surface effect that noticeably reduced the vessel's stability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_angle_of_loll",
+    "lang": "en",
+    "word": "Angle of Loll",
+    "pos": "noun",
+    "freqRank": 40108,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the angle to which an unstable ship with negative initial stability heels and rests, other than upright",
+        "distractors": [
+          "the maximum angle a ship can safely heel while turning",
+          "the angle at which downflooding first occurs through an opening"
+        ],
+        "example": {
+          "text": "The vessel settled at an angle of loll to port after the ballast tank was mistakenly emptied.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_down-flooding_angle",
+    "lang": "en",
+    "word": "Down-flooding Angle",
+    "pos": "noun",
+    "freqRank": 33422,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the angle of heel at which water begins to enter a ship through openings that are not weathertight",
+        "distractors": [
+          "the angle at which a ship capsizes completely",
+          "the angle of heel produced by a full rudder turn at speed"
+        ],
+        "example": {
+          "text": "The stability booklet listed the down-flooding angle for each loading condition.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reserve_buoyancy",
+    "lang": "en",
+    "word": "Reserve Buoyancy",
+    "pos": "noun",
+    "freqRank": 32598,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the watertight volume of a ship's hull above the waterline that provides additional buoyancy if the vessel is damaged or loaded further",
+        "distractors": [
+          "the buoyancy provided by empty fuel tanks alone",
+          "the extra lift generated by a bulbous bow at speed"
+        ],
+        "example": {
+          "text": "Deck cargo reduced the ship's reserve buoyancy and its margin of safety.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_compartment_permeability",
+    "lang": "en",
+    "word": "Compartment Permeability",
+    "pos": "noun",
+    "freqRank": 34313,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the proportion of a compartment's volume that can actually be occupied by floodwater, after accounting for cargo, machinery, or structure",
+        "distractors": [
+          "the number of watertight doors fitted within a compartment",
+          "the rate at which water can flow between adjacent compartments"
+        ],
+        "example": {
+          "text": "Engine rooms have lower compartment permeability than empty cargo holds because machinery displaces water.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_margin_line",
+    "lang": "en",
+    "word": "Margin Line",
+    "pos": "noun",
+    "freqRank": 29916,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an imaginary line drawn a specified distance below the bulkhead deck, used as a limit that must not be submerged after assumed damage",
+        "distractors": [
+          "the line marking the maximum draft a ship may be loaded to",
+          "the boundary separating cargo spaces from machinery spaces"
+        ],
+        "example": {
+          "text": "Damage stability calculations confirmed the margin line stayed above the waterline in the flooded case.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bonjean_curves",
+    "lang": "en",
+    "word": "Bonjean Curves",
+    "pos": "noun",
+    "freqRank": 32752,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of curves showing the immersed cross-sectional area of a hull at each station plotted against draft, used to calculate displacement and trim",
+        "distractors": [
+          "curves showing a ship's speed against engine power",
+          "curves plotting a hull's resistance against wave height"
+        ],
+        "example": {
+          "text": "The naval architect used Bonjean curves to compute the vessel's displacement at an assumed trim.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrostatic_curves",
+    "lang": "en",
+    "word": "Hydrostatic Curves",
+    "pos": "noun",
+    "freqRank": 29525,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of curves showing how a ship's displacement, center of buoyancy, and other hydrostatic properties vary with draft",
+        "distractors": [
+          "curves showing how a propeller's thrust varies with rpm",
+          "curves recording a ship's fuel consumption over a voyage"
+        ],
+        "example": {
+          "text": "The mate consulted the hydrostatic curves to find the tonnes-per-centimeter immersion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross_curves_of_stability",
+    "lang": "en",
+    "word": "Cross Curves of Stability",
+    "pos": "noun",
+    "freqRank": 43594,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a set of curves showing a ship's righting arm at various angles of heel for a range of displacements, used to build stability curves for a specific loading condition",
+        "distractors": [
+          "curves showing how hull resistance changes with heel angle",
+          "curves plotting the maximum safe speed of a ship in a seaway"
+        ],
+        "example": {
+          "text": "The stability officer read values from the cross curves of stability to plot the vessel's GZ curve.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inclining_experiment",
+    "lang": "en",
+    "word": "Inclining Experiment",
+    "pos": "noun",
+    "freqRank": 34168,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a test in which known weights are shifted across a ship to measure the resulting angle of heel and determine its center of gravity",
+        "distractors": [
+          "a sea trial used to measure a ship's maximum speed",
+          "a test that checks a hull's resistance to buckling under load"
+        ],
+        "example": {
+          "text": "The inclining experiment was carried out with the ship light and near completion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deadweight_scale",
+    "lang": "en",
+    "word": "Deadweight Scale",
+    "pos": "noun",
+    "freqRank": 35572,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a diagram or table showing how a ship's draft, displacement, and deadweight relate to one another at various loading conditions",
+        "distractors": [
+          "a table listing the maximum cargo weight permitted in each hold",
+          "a scale used to weigh cargo as it is loaded aboard"
+        ],
+        "example": {
+          "text": "The mate used the deadweight scale to check the draft for the planned load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_load_line",
+    "lang": "en",
+    "word": "Load Line",
+    "pos": "noun",
+    "freqRank": 33386,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a mark on a ship's side indicating the maximum depth to which it may be legally loaded in various waters and seasons",
+        "distractors": [
+          "the line along which cargo is stowed to maintain trim",
+          "the boundary marking the limit of a ship's territorial voyage"
+        ],
+        "example": {
+          "text": "The surveyor confirmed the load line was not submerged before clearing the ship to sail.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ullage",
+    "lang": "en",
+    "word": "Ullage",
+    "pos": "noun",
+    "freqRank": 22084,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the empty space remaining at the top of a tank above the surface of the liquid it contains",
+        "distractors": [
+          "the total volume of liquid cargo loaded in a tank",
+          "the depth of liquid measured from the tank bottom"
+        ],
+        "example": {
+          "text": "The chief officer calculated ullage in each cargo tank before topping off.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tank_sounding",
+    "lang": "en",
+    "word": "Tank Sounding",
+    "pos": "noun",
+    "freqRank": 32456,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measurement of the depth of liquid in a tank, taken from the tank bottom, used to calculate the quantity contained",
+        "distractors": [
+          "a measurement of the empty space above liquid in a tank",
+          "a test used to detect leaks in a double bottom tank"
+        ],
+        "example": {
+          "text": "Daily tank soundings confirmed the fuel consumption matched the engine log.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shipwright",
+    "lang": "en",
+    "word": "Shipwright",
+    "pos": "noun",
+    "freqRank": 30292,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a skilled tradesperson who builds, repairs, or maintains the structure of wooden or steel ships",
+        "distractors": [
+          "an officer responsible for a ship's cargo stowage plan",
+          "a surveyor who certifies a vessel's seaworthiness"
+        ],
+        "example": {
+          "text": "The shipwright fitted new frames to replace the rotted timbers.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_caulking",
+    "lang": "en",
+    "word": "Caulking",
+    "pos": "noun",
+    "freqRank": 26155,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "material such as oakum or compound driven into the seams between planks or plates to make them watertight",
+        "distractors": [
+          "a coating applied to a hull's underwater surface to prevent fouling",
+          "the process of welding two steel plates together"
+        ],
+        "example": {
+          "text": "Fresh caulking was driven into the deck seams before the planks were payed with pitch.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_welding_distortion",
+    "lang": "en",
+    "word": "Welding Distortion",
+    "pos": "noun",
+    "freqRank": 32483,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the unwanted deformation of steel plates and structure caused by the uneven heating and cooling of the welding process",
+        "distractors": [
+          "cracking that develops in a weld under repeated stress",
+          "the loss of strength in a weld exposed to seawater corrosion"
+        ],
+        "example": {
+          "text": "Sequential welding techniques were used to limit distortion in the thin deck plating.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stress_concentration",
+    "lang": "en",
+    "word": "Stress Concentration",
+    "pos": "noun",
+    "freqRank": 37179,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized increase in stress that occurs around a structural discontinuity such as a corner, hole, or notch",
+        "distractors": [
+          "the overall increase in stress on a hull carrying maximum cargo",
+          "the buildup of corrosion at a ship's waterline"
+        ],
+        "example": {
+          "text": "The rounded hatch corner reduced stress concentration compared to a sharp corner.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fatigue_cracking",
+    "lang": "en",
+    "word": "Fatigue Cracking",
+    "pos": "noun",
+    "freqRank": 35482,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "cracking that develops in a structure after repeated cycles of stress, even when the stress remains below the material's static strength",
+        "distractors": [
+          "cracking caused by a single overload beyond a material's yield strength",
+          "cracking produced by corrosion alone without applied stress"
+        ],
+        "example": {
+          "text": "Inspectors found fatigue cracking radiating from a weld toe near the hatch corner.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cathodic_protection",
+    "lang": "en",
+    "word": "Cathodic Protection",
+    "pos": "noun",
+    "freqRank": 36517,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that prevents corrosion of a ship's steel hull by making it the cathode of an electrochemical cell, often using sacrificial anodes or impressed current",
+        "distractors": [
+          "a coating applied to a hull to reflect heat and reduce fouling",
+          "a structural reinforcement added to resist buckling underwater"
+        ],
+        "example": {
+          "text": "Cathodic protection combined with anodes slowed corrosion of the ballast tank steel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sacrificial_anode",
+    "lang": "en",
+    "word": "Sacrificial Anode",
+    "pos": "noun",
+    "freqRank": 31340,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a block of reactive metal attached to a hull that corrodes preferentially, protecting the surrounding steel from corrosion",
+        "distractors": [
+          "a plate added to reinforce a corroded section of hull",
+          "a device that neutralizes stray electrical currents in a ship's wiring"
+        ],
+        "example": {
+          "text": "Divers replaced the worn sacrificial anodes during the underwater hull inspection.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_antifouling",
+    "lang": "en",
+    "word": "Antifouling",
+    "pos": "noun",
+    "freqRank": 25339,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a coating applied to a ship's underwater hull to deter the growth of marine organisms such as barnacles and algae",
+        "distractors": [
+          "a coating that prevents rust from forming on exposed deck steel",
+          "a treatment applied to ballast water to kill invasive species"
+        ],
+        "example": {
+          "text": "Fresh antifouling was applied before the ship was refloated from dry dock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_graving_dock",
+    "lang": "en",
+    "word": "Graving Dock",
+    "pos": "noun",
+    "freqRank": 31287,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a dry dock excavated into the ground and fitted with a gate, used to allow a ship's hull to be inspected or repaired out of the water",
+        "distractors": [
+          "a floating structure that can be partially submerged to lift a ship clear of the water",
+          "a sheltered berth used for loading heavy cargo"
+        ],
+        "example": {
+          "text": "The tanker was flooded into the graving dock and its gate sealed shut.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_keel_blocks",
+    "lang": "en",
+    "word": "Keel Blocks",
+    "pos": "noun",
+    "freqRank": 33040,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the supports arranged along the bottom of a dry dock or building berth on which a ship's keel rests",
+        "distractors": [
+          "the ballast weights fitted inside a sailing yacht's keel",
+          "the fittings used to secure a keel during transport by barge"
+        ],
+        "example": {
+          "text": "Shipwrights positioned the keel blocks precisely before the hull was floated in.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_launching_ways",
+    "lang": "en",
+    "word": "Launching Ways",
+    "pos": "noun",
+    "freqRank": 37830,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the inclined timber or steel tracks along which a newly built ship slides into the water",
+        "distractors": [
+          "the temporary supports that hold a hull upright during construction",
+          "the channel dredged to allow a ship to reach open water"
+        ],
+        "example": {
+          "text": "Grease was applied to the launching ways before the christening ceremony.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_reduction_gear",
+    "lang": "en",
+    "word": "Reduction Gear",
+    "pos": "noun",
+    "freqRank": 33304,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "gearing installed between a fast-turning engine or turbine and a slower-turning propeller shaft to match their optimal speeds",
+        "distractors": [
+          "a mechanism that reverses the direction of propeller rotation",
+          "a gear system used to raise and lower an anchor"
+        ],
+        "example": {
+          "text": "The turbine's high shaft speed was brought down by the reduction gear to suit the propeller.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sea_chest",
+    "lang": "en",
+    "word": "Sea Chest",
+    "pos": "noun",
+    "freqRank": 36019,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a recessed fitting in a ship's hull, covered by a grating, through which seawater is drawn in for cooling or ballast systems",
+        "distractors": [
+          "a watertight locker used to stow emergency equipment",
+          "a compartment that stores spare anchor chain"
+        ],
+        "example": {
+          "text": "Marine growth had partly blocked the sea chest grating, reducing cooling water flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scavenging",
+    "lang": "en",
+    "word": "Scavenging",
+    "pos": "noun",
+    "freqRank": 30560,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of expelling exhaust gases from a diesel engine's cylinder and replacing them with fresh air before the next power stroke",
+        "distractors": [
+          "the removal of sludge and sediment from a fuel tank",
+          "the process of clearing bilge water from an engine room"
+        ],
+        "example": {
+          "text": "Poor scavenging left residual exhaust gas that reduced the engine's efficiency.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_leeway",
+    "lang": "en",
+    "word": "Leeway",
+    "pos": "noun",
+    "freqRank": 27543,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the sideways drift of a vessel off its intended course caused by wind or current",
+        "distractors": [
+          "the distance a ship travels while stopping its engines",
+          "the margin of extra fuel carried for an ocean passage"
+        ],
+        "example": {
+          "text": "The navigator corrected the course to allow for leeway in the strong crosswind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_windage",
+    "lang": "en",
+    "word": "Windage",
+    "pos": "noun",
+    "freqRank": 26930,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the resistance and sideways force exerted by wind against a ship's above-water structure",
+        "distractors": [
+          "the drag created by waves striking the hull's freeboard",
+          "the noise generated by wind passing over the deck machinery"
+        ],
+        "example": {
+          "text": "The container ship's high windage made it difficult to hold a course in the gale.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_athwartships",
+    "lang": "en",
+    "word": "Athwartships",
+    "pos": "adverb",
+    "freqRank": 24593,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "in a direction running from one side of a ship to the other, at right angles to the fore-and-aft line",
+        "distractors": [
+          "in a direction running parallel to the keel from bow to stern",
+          "in a direction leading directly downward through the hull"
+        ],
+        "example": {
+          "text": "The cargo was lashed athwartships to prevent it shifting in a beam sea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amidships",
+    "lang": "en",
+    "word": "Amidships",
+    "pos": "adverb",
+    "freqRank": 23266,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "at or toward the middle of a ship, midway between bow and stern",
+        "distractors": [
+          "at the highest point of a ship's superstructure",
+          "along the outer edge of a ship's deck"
+        ],
+        "example": {
+          "text": "The helmsman was told to put the wheel amidships once the turn was complete.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tender",
+    "lang": "en",
+    "word": "Tender",
+    "pos": "adjective",
+    "freqRank": 29348,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a ship that has a small metacentric height and therefore rolls slowly and heels easily",
+        "distractors": [
+          "describing a ship that is newly built and not yet fully tested",
+          "describing a hull that has been recently repainted"
+        ],
+        "example": {
+          "text": "With the upper tanks slack, the ship became noticeably tender in the swell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_crank",
+    "lang": "en",
+    "word": "Crank",
+    "pos": "adjective",
+    "freqRank": 29085,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a ship that is unstable and prone to heeling excessively, tending to capsize easily",
+        "distractors": [
+          "describing a ship that responds slowly to rudder commands",
+          "describing a hull shape optimized for high speed"
+        ],
+        "example": {
+          "text": "Loaded with heavy deck cargo, the small trawler grew dangerously crank.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_weatherly",
+    "lang": "en",
+    "word": "Weatherly",
+    "pos": "adjective",
+    "freqRank": 22489,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a sailing vessel's ability to make good progress to windward with little leeway",
+        "distractors": [
+          "describing a ship built to withstand extreme storm conditions",
+          "describing a vessel that handles well in calm water only"
+        ],
+        "example": {
+          "text": "The cutter proved remarkably weatherly, holding a tight course hard on the wind.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_seakindly",
+    "lang": "en",
+    "word": "Seakindly",
+    "pos": "adjective",
+    "freqRank": 21771,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a hull form that moves through waves with gentle, comfortable motions rather than violent ones",
+        "distractors": [
+          "describing a vessel that can operate safely in any sea state without limit",
+          "describing a hull designed purely for maximum speed in calm water"
+        ],
+        "example": {
+          "text": "The round-bilged design made for a seakindly motion in the ocean swell.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_careen",
+    "lang": "en",
+    "word": "Careen",
+    "pos": "verb",
+    "freqRank": 22796,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to heel a vessel over, often deliberately on a beach or alongside, to expose part of the hull for cleaning or repair",
+        "distractors": [
+          "to load cargo unevenly across a vessel's beam",
+          "to steer a sharp turn at high speed"
+        ],
+        "example": {
+          "text": "The crew careened the schooner at low tide to scrape weed from her bottom.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_kedge",
+    "lang": "en",
+    "word": "Kedge",
+    "pos": "verb",
+    "freqRank": 23504,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to move a vessel by carrying out an anchor in a boat, dropping it, and hauling the ship up to it",
+        "distractors": [
+          "to lower a ship's speed gradually before entering a channel",
+          "to secure a vessel alongside using spring lines"
+        ],
+        "example": {
+          "text": "Grounded on the falling tide, the crew kedged the boat off into deeper water.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_warp",
+    "lang": "en",
+    "word": "Warp",
+    "pos": "verb",
+    "freqRank": 31280,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to move a vessel by hauling on lines made fast to fixed points such as bollards, buoys, or anchors",
+        "distractors": [
+          "to twist a hull's plating out of shape during heavy weather",
+          "to adjust a ship's trim by shifting ballast"
+        ],
+        "example": {
+          "text": "The tug warped the barge along the quay using lines run to shoreside bollards.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_founder",
+    "lang": "en",
+    "word": "Founder",
+    "pos": "verb",
+    "freqRank": 23621,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to sink as a result of flooding or structural failure, typically after taking on water",
+        "distractors": [
+          "to run hard aground on a falling tide",
+          "to lose steering control in a following sea"
+        ],
+        "example": {
+          "text": "The overloaded coaster foundered in heavy weather before help could arrive.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_broach",
+    "lang": "en",
+    "word": "Broach",
+    "pos": "verb",
+    "freqRank": 27916,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "for a vessel running before wind and sea to swing broadside to the waves, risking capsize",
+        "distractors": [
+          "for a vessel to lose way suddenly after striking floating debris",
+          "for a hull to develop a leak along a weld seam"
+        ],
+        "example": {
+          "text": "The yacht nearly broached when a large following sea caught her quarter.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_yaw",
+    "lang": "en",
+    "word": "Yaw",
+    "pos": "verb",
+    "freqRank": 30771,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to swing or oscillate about the vertical axis, deviating from a straight heading",
+        "distractors": [
+          "to roll rhythmically from side to side in a beam sea",
+          "to pitch up and down as waves pass under the hull"
+        ],
+        "example": {
+          "text": "The following sea made the ship yaw several degrees off course before the helmsman corrected.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heel",
+    "lang": "en",
+    "word": "Heel",
+    "pos": "verb",
+    "freqRank": 22040,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to lean or tilt to one side, typically under the force of wind, a turn, or shifting weight",
+        "distractors": [
+          "to settle deeper in the water as cargo is loaded",
+          "to swing about the vertical axis under a strong crosscurrent"
+        ],
+        "example": {
+          "text": "The sailboat heeled sharply as the gust filled her sails.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_trim",
+    "lang": "en",
+    "word": "Trim",
+    "pos": "verb",
+    "freqRank": 27304,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to adjust the fore-and-aft or transverse balance of a vessel by shifting weight, water, or fuel",
+        "distractors": [
+          "to reduce a ship's speed before entering a harbor",
+          "to apply antifouling coating to the underwater hull"
+        ],
+        "example": {
+          "text": "The chief officer trimmed the ship by the stern to improve propeller immersion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_list",
+    "lang": "en",
+    "word": "List",
+    "pos": "verb",
+    "freqRank": 27252,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to lean persistently to one side, usually because of uneven loading, flooding, or shifted cargo",
+        "distractors": [
+          "to swing rhythmically about the vertical axis in a crosswind",
+          "to rise and fall as waves pass beneath the hull"
+        ],
+        "example": {
+          "text": "The ferry began to list to port after water entered the damaged compartment.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fair",
+    "lang": "en",
+    "word": "Fair",
+    "pos": "verb",
+    "freqRank": 30763,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to smooth and adjust a hull's structural lines so that plating and frames form continuous, even curves",
+        "distractors": [
+          "to seal the seams between hull plates against leakage",
+          "to test a hull's strength under simulated wave loading"
+        ],
+        "example": {
+          "text": "Workers faired the shell plating before final welding to remove any hard spots.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_loft",
+    "lang": "en",
+    "word": "Loft",
+    "pos": "verb",
+    "freqRank": 28668,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to lay out a ship's lines at full size on a floor in order to produce templates for cutting structural components",
+        "distractors": [
+          "to calculate a vessel's stability for a given loading condition",
+          "to hoist heavy machinery into an engine room during construction"
+        ],
+        "example": {
+          "text": "Draftsmen lofted the frame shapes before templates were sent to the plate shop.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scarf_joint",
+    "lang": "en",
+    "word": "Scarf Joint",
+    "pos": "noun",
+    "freqRank": 37669,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a joint formed by tapering and overlapping the ends of two timbers or plates so they can be joined into one continuous piece",
+        "distractors": [
+          "a butt joint reinforced with a doubler plate on one side only",
+          "a joint sealed with caulking rather than fasteners or welding"
+        ],
+        "example": {
+          "text": "The keel timbers were joined with a long scarf joint to preserve strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flare",
+    "lang": "en",
+    "word": "Flare",
+    "pos": "noun",
+    "freqRank": 25119,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the outward curve of a hull's sides above the waterline, most pronounced near the bow, that helps deflect spray and waves",
+        "distractors": [
+          "the inward slope of a hull's sides above the waterline near the deck",
+          "a sudden burst of speed made by a vessel under power"
+        ],
+        "example": {
+          "text": "The bow's flare threw spray clear of the foredeck in a head sea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hull_knuckle",
+    "lang": "en",
+    "word": "Hull Knuckle",
+    "pos": "noun",
+    "freqRank": 29188,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a sharp change in the curvature of a hull's shell plating, where two surfaces meet at a distinct angle rather than blending smoothly",
+        "distractors": [
+          "the rounded turn where the bottom of a hull meets its side",
+          "a reinforced point where a bilge keel is welded to the hull"
+        ],
+        "example": {
+          "text": "Stress tended to concentrate at the hull knuckle where the transom met the topsides.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deadlight",
+    "lang": "en",
+    "word": "Deadlight",
+    "pos": "noun",
+    "freqRank": 22876,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hinged metal cover fitted over a porthole or scuttle to protect it and block light or water in heavy weather",
+        "distractors": [
+          "a fixed window set into a ship's hull below the waterline",
+          "a navigation light shown when a vessel is not under command"
+        ],
+        "example": {
+          "text": "The crew closed the deadlights before the storm reached its full force.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hawsepipe",
+    "lang": "en",
+    "word": "Hawsepipe",
+    "pos": "noun",
+    "freqRank": 29797,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tube through a ship's bow through which the anchor chain runs from the deck to the anchor",
+        "distractors": [
+          "a pipe used to drain water from the forecastle deck",
+          "a duct that carries ventilation air into the forepeak tank"
+        ],
+        "example": {
+          "text": "The anchor was housed snugly in the hawsepipe once weighed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fairlead",
+    "lang": "en",
+    "word": "Fairlead",
+    "pos": "noun",
+    "freqRank": 25371,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fitting that guides a line or chain in a desired direction, reducing chafe and wear as it runs",
+        "distractors": [
+          "a fitting used to lock a hatch cover watertight",
+          "a device that measures the tension in a mooring line"
+        ],
+        "example": {
+          "text": "The mooring line ran smoothly through the fairlead to the winch drum.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_chock",
+    "lang": "en",
+    "word": "Chock",
+    "pos": "noun",
+    "freqRank": 31501,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heavy fitting with curved arms, mounted at a ship's rail, through which mooring lines are led to the dock",
+        "distractors": [
+          "a wedge-shaped block used to secure cargo from shifting",
+          "a fitting that seals a watertight door against its frame"
+        ],
+        "example": {
+          "text": "The stevedores passed the headline through the bow chock before making it fast.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_samson_post",
+    "lang": "en",
+    "word": "Samson Post",
+    "pos": "noun",
+    "freqRank": 34573,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strong vertical post fitted on a ship's deck, used for securing lines, supporting a derrick, or towing",
+        "distractors": [
+          "the mast on which a ship's radar antenna is mounted",
+          "a post marking the boundary of a loading berth"
+        ],
+        "example": {
+          "text": "The towline was made fast around the tug's samson post.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bitts",
+    "lang": "en",
+    "word": "Bitts",
+    "pos": "noun",
+    "freqRank": 22827,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a pair of sturdy vertical posts fixed to a ship's deck, used for securing mooring or towing lines",
+        "distractors": [
+          "the fittings that hold a rudder's pintles in place",
+          "small covered openings used to drain water from the deck"
+        ],
+        "example": {
+          "text": "Deckhands took a turn of the hawser around the bitts before easing it out.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_windlass",
+    "lang": "en",
+    "word": "Windlass",
+    "pos": "noun",
+    "freqRank": 25808,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a machine used to haul in or veer out a ship's anchor chain, usually mounted on the forecastle",
+        "distractors": [
+          "a machine used to hoist cargo from a hold to the deck",
+          "a device that adjusts the tension of standing rigging"
+        ],
+        "example": {
+          "text": "The windlass strained as it hove the anchor up through the last few fathoms.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_capstan",
+    "lang": "en",
+    "word": "Capstan",
+    "pos": "noun",
+    "freqRank": 28123,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a vertical rotating drum used to wind in mooring or anchor lines by applying force around its barrel",
+        "distractors": [
+          "a horizontal drum mounted low on deck for hauling cargo nets",
+          "a geared mechanism that raises and lowers a gangway"
+        ],
+        "example": {
+          "text": "Sailors walked the capstan bars around to heave in the heavy hawser.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_davit",
+    "lang": "en",
+    "word": "Davit",
+    "pos": "noun",
+    "freqRank": 23591,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a small crane, usually mounted in pairs, used to raise, lower, and swing out a ship's lifeboat",
+        "distractors": [
+          "a fitting used to secure an anchor when not in use",
+          "a mast used to support a ship's radar and antennas"
+        ],
+        "example": {
+          "text": "The lifeboat was swung out on its davits before the drill began.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_gunwale",
+    "lang": "en",
+    "word": "Gunwale",
+    "pos": "noun",
+    "freqRank": 28433,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the upper edge of a ship's side, where the topmost strake meets the deck or rail",
+        "distractors": [
+          "the lowest point of a hull's bottom near the keel",
+          "the fitting through which an anchor chain passes at the bow"
+        ],
+        "example": {
+          "text": "Waves lapped just below the gunwale as the small boat rode low with cargo.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_taffrail",
+    "lang": "en",
+    "word": "Taffrail",
+    "pos": "noun",
+    "freqRank": 21053,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rail around a ship's stern, historically often ornately carved",
+        "distractors": [
+          "the rail running along a ship's bow above the anchor",
+          "a rail fitted around an open hatch to prevent falls"
+        ],
+        "example": {
+          "text": "The log line trailed astern from a reel mounted on the taffrail.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_scupper",
+    "lang": "en",
+    "word": "Scupper",
+    "pos": "noun",
+    "freqRank": 25315,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an opening in a ship's bulwark or deck edge that allows water on deck to drain overboard",
+        "distractors": [
+          "a small hatch used to access the bilge for cleaning",
+          "a fitting that vents excess pressure from a ballast tank"
+        ],
+        "example": {
+          "text": "Rough seas kept the scuppers running as water swept across the deck.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_freeing_port",
+    "lang": "en",
+    "word": "Freeing Port",
+    "pos": "noun",
+    "freqRank": 37201,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an opening in a ship's bulwark that allows water shipped on deck to clear quickly back into the sea",
+        "distractors": [
+          "a hatch used to load cargo directly into a lower hold",
+          "a fitting that allows air to escape from a filling ballast tank"
+        ],
+        "example": {
+          "text": "Freeing ports along the bulwark let the deck clear fast after each boarding sea.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cofferdam",
+    "lang": "en",
+    "word": "Cofferdam",
+    "pos": "noun",
+    "freqRank": 23927,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a narrow, empty void space separating two compartments, such as a fuel tank and a cargo hold, to prevent leakage between them",
+        "distractors": [
+          "a temporary watertight structure built around a hull for repairs below the waterline",
+          "a reinforced compartment used to store hazardous cargo"
+        ],
+        "example": {
+          "text": "The cofferdam between the fuel tank and cargo hold was checked for vapor before entry.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wing_tank",
+    "lang": "en",
+    "word": "Wing Tank",
+    "pos": "noun",
+    "freqRank": 37317,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tank located along the outer side of a ship's hull, often used for ballast or fuel, running alongside cargo or machinery spaces",
+        "distractors": [
+          "a tank fitted at the extreme bow to trim a ship by the head",
+          "a small tank used to supply fuel directly to an auxiliary engine"
+        ],
+        "example": {
+          "text": "Seawater ballast was pumped into the wing tanks to increase the ship's draft for the passage.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_double_bottom",
+    "lang": "en",
+    "word": "Double Bottom",
+    "pos": "noun",
+    "freqRank": 30743,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a watertight space between the ship's outer bottom shell and an inner bottom plating, used for ballast, fuel, or as protection against grounding damage",
+        "distractors": [
+          "a hull built with two separate keels for extra strength",
+          "a reinforced deck fitted below the main deck for heavy cargo"
+        ],
+        "example": {
+          "text": "The grounding tore open the outer shell but the double bottom kept the hold dry.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_duct_keel",
+    "lang": "en",
+    "word": "Duct Keel",
+    "pos": "noun",
+    "freqRank": 33889,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hollow, box-shaped keel structure running along a ship's centerline that carries piping between the engine room and the double bottom tanks",
+        "distractors": [
+          "a keel reinforced with extra steel for icebreaking duty",
+          "a retractable keel that can be raised in shallow water"
+        ],
+        "example": {
+          "text": "Ballast piping ran the length of the hull inside the duct keel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pipe_tunnel",
+    "lang": "en",
+    "word": "Pipe Tunnel",
+    "pos": "noun",
+    "freqRank": 37317,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an enclosed passage within a ship's double bottom that houses piping and allows access for inspection and maintenance",
+        "distractors": [
+          "a tunnel cut through a pier to allow cargo pipelines to pass beneath a roadway",
+          "a ventilation duct that supplies air to the engine room"
+        ],
+        "example": {
+          "text": "The engineer crawled through the pipe tunnel to reach the ballast valve.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_void_space",
+    "lang": "en",
+    "word": "Void Space",
+    "pos": "noun",
+    "freqRank": 32258,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an enclosed compartment aboard a ship that is kept empty and unused, often as a buffer between other spaces or for damage protection",
+        "distractors": [
+          "a compartment used to store empty cargo containers",
+          "a space left unpainted during construction for later inspection"
+        ],
+        "example": {
+          "text": "The void space between the tanks was inspected annually for signs of leakage.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_forepeak",
+    "lang": "en",
+    "word": "Forepeak",
+    "pos": "noun",
+    "freqRank": 23504,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compartment at the extreme forward end of a ship's hull, typically used as a ballast tank or void space",
+        "distractors": [
+          "the uppermost deck at the bow used for anchor handling",
+          "the space directly beneath the bridge used for chart storage"
+        ],
+        "example": {
+          "text": "The forepeak tank was pumped down to lighten the bow before drydocking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_afterpeak",
+    "lang": "en",
+    "word": "Afterpeak",
+    "pos": "noun",
+    "freqRank": 27126,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the compartment at the extreme after end of a ship's hull, typically used as a ballast tank around the stern frame and rudder trunk",
+        "distractors": [
+          "the uppermost deck at the stern used for mooring operations",
+          "the compartment housing the main steering gear machinery"
+        ],
+        "example": {
+          "text": "Flooding the afterpeak trimmed the ship down by the stern for better propeller immersion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heeling_tank",
+    "lang": "en",
+    "word": "Heeling Tank",
+    "pos": "noun",
+    "freqRank": 31646,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tank, often paired on each side of a ship, used to correct or induce a list by shifting water ballast from side to side",
+        "distractors": [
+          "a tank used to store fuel reserves for emergency use",
+          "a tank that automatically drains if a ship exceeds a set angle of heel"
+        ],
+        "example": {
+          "text": "The heeling tanks were used to keep the crane vessel level while lifting an off-center load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_deep_tank",
+    "lang": "en",
+    "word": "Deep Tank",
+    "pos": "noun",
+    "freqRank": 37837,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tank extending from a ship's double bottom up to a deck, used to carry water ballast, fuel, or liquid cargo",
+        "distractors": [
+          "a tank fitted only below the waterline for permanent ballast",
+          "a small tank used exclusively for lubricating oil storage"
+        ],
+        "example": {
+          "text": "The deep tank amidships could be switched between ballast and cargo oil as needed.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tween_deck",
+    "lang": "en",
+    "word": "Tween Deck",
+    "pos": "noun",
+    "freqRank": 37689,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an intermediate deck fitted between a ship's main deck and the bottom of the hold, used to subdivide cargo space",
+        "distractors": [
+          "the deck directly above the engine room casing",
+          "a temporary deck erected only for heavy-lift cargo operations"
+        ],
+        "example": {
+          "text": "General cargo was stowed in the tween deck to keep it separate from bulk cargo below.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bridge_wing",
+    "lang": "en",
+    "word": "Bridge Wing",
+    "pos": "noun",
+    "freqRank": 29009,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an open or enclosed extension of the navigating bridge projecting to the ship's side, giving a clear view along the hull for docking",
+        "distractors": [
+          "the upper platform used to mount a ship's radar mast",
+          "a walkway connecting the bridge to the lifeboat davits"
+        ],
+        "example": {
+          "text": "The pilot conned the ship from the bridge wing while approaching the berth.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monkey_island",
+    "lang": "en",
+    "word": "Monkey Island",
+    "pos": "noun",
+    "freqRank": 34310,
+    "difficulty": "hard",
+    "tags": [
+      "naval-engineering"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an open deck situated above the wheelhouse, typically housing compasses, signal lamps, and antennas",
+        "distractors": [
+          "a small platform used to access the top of a ship's funnel",
+          "an isolated deck area used to quarantine ill crew members"
+        ],
+        "example": {
+          "text": "The magnetic compass was mounted on the monkey island, clear of electrical interference.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]

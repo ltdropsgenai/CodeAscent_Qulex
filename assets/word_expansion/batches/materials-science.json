@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "w_dislocation",
+    "lang": "en",
+    "word": "dislocation",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a line defect in a crystal lattice where atomic planes are misaligned, allowing metals to deform plastically at lower stress than a perfect crystal would require",
+        "distractors": [
+          "a complete break in a material that separates it into two pieces",
+          "a point where a single atom is missing from its normal lattice site"
+        ],
+        "example": {
+          "text": "The dense tangle of dislocations near the grain boundary explains why the cold-worked wire resists further bending.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vacancy",
+    "lang": "en",
+    "word": "vacancy",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a point defect where an atom is missing from its expected position in a crystal lattice",
+        "distractors": [
+          "an extra atom squeezed into a gap between regular lattice sites",
+          "a planar defect where the stacking sequence of atomic layers is interrupted"
+        ],
+        "example": {
+          "text": "Raising the temperature increases the equilibrium concentration of vacancies in the metal lattice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interstitial",
+    "lang": "en",
+    "word": "interstitial",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an atom occupying a small gap between the regular lattice sites of a crystal structure",
+        "distractors": [
+          "an atom that replaces a host atom at a normal lattice position",
+          "a defect formed where two differently oriented grains meet"
+        ],
+        "example": {
+          "text": "Carbon atoms sit as interstitials within the iron lattice, distorting it and raising the steel's strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_substitutional",
+    "lang": "en",
+    "word": "substitutional",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a solid-solution atom that occupies a regular lattice site in place of a host atom, rather than squeezing into a gap between sites",
+        "distractors": [
+          "describing an atom small enough to fit between lattice sites without displacing anything",
+          "describing a defect that forms only along a grain boundary"
+        ],
+        "example": {
+          "text": "Nickel dissolves in copper as a substitutional element because the two atoms are similar in size.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_grain_boundary",
+    "lang": "en",
+    "word": "grain boundary",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the interface separating two crystallites of differing orientation within a polycrystalline material",
+        "distractors": [
+          "the outer surface where a metal part meets the surrounding atmosphere",
+          "a plane along which a crystal splits cleanly during cleavage fracture"
+        ],
+        "example": {
+          "text": "Impurity atoms tend to segregate to grain boundaries, which can weaken the material if the segregation is severe.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_twin_boundary",
+    "lang": "en",
+    "word": "twin boundary",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a planar interface across which the crystal lattice is a mirror image of itself, formed by twinning deformation or growth",
+        "distractors": [
+          "the boundary between a metal and its oxide scale",
+          "the interface between a solid precipitate and the surrounding matrix"
+        ],
+        "example": {
+          "text": "Under rapid loading, magnesium accommodates strain by forming twin boundaries rather than through dislocation slip alone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stacking_fault",
+    "lang": "en",
+    "word": "stacking fault",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a planar defect where the normal stacking sequence of atomic layers in a crystal is interrupted",
+        "distractors": [
+          "a line defect running through the crystal along which atoms are displaced by one lattice spacing",
+          "a cluster of vacancies that has collapsed into a small cavity"
+        ],
+        "example": {
+          "text": "Low stacking-fault energy in some austenitic stainless steels promotes twinning as an additional deformation mechanism.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_burgers_vector",
+    "lang": "en",
+    "word": "Burgers vector",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the vector that quantifies the magnitude and direction of lattice distortion caused by a dislocation",
+        "distractors": [
+          "the vector describing the direction of heat flow during solidification",
+          "the resultant force vector acting on a specimen during a tensile test"
+        ],
+        "example": {
+          "text": "The Burgers vector of an edge dislocation lies perpendicular to the dislocation line.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slip_system",
+    "lang": "en",
+    "word": "slip system",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a combination of a crystallographic plane and direction along which dislocations move most easily during plastic deformation",
+        "distractors": [
+          "the arrangement of grain boundaries that controls a metal's corrosion resistance",
+          "the sequence of heat-treatment steps used to harden a tool steel"
+        ],
+        "example": {
+          "text": "Face-centered cubic metals have many active slip systems, which is one reason they are generally so ductile.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dendrite",
+    "lang": "en",
+    "word": "dendrite",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a tree-like branching crystal structure that forms as a metal solidifies from the melt",
+        "distractors": [
+          "a rounded precipitate that forms during aging heat treatment",
+          "a network of interconnected pores left behind after sintering"
+        ],
+        "example": {
+          "text": "Etching the polished casting revealed a coarse dendrite pattern radiating out from the mold wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_epitaxy",
+    "lang": "en",
+    "word": "epitaxy",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the growth of a crystalline layer whose lattice orientation is dictated by that of the underlying crystalline substrate",
+        "distractors": [
+          "the random nucleation of many small grains during rapid cooling",
+          "the diffusion of carbon into the surface of a steel part"
+        ],
+        "example": {
+          "text": "Thin semiconducting films are often deposited by epitaxy so their crystal structure matches the substrate exactly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_martensite",
+    "lang": "en",
+    "word": "martensite",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a hard, supersaturated, diffusionless phase formed in steel by rapid cooling of austenite",
+        "distractors": [
+          "a soft, ductile phase of iron stable at room temperature in low-carbon steel",
+          "a lamellar mixture of ferrite and cementite formed by slow cooling"
+        ],
+        "example": {
+          "text": "Quenching the austenitized blade in oil transformed its surface into brittle martensite, which the smith then tempered.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_austenite",
+    "lang": "en",
+    "word": "austenite",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the face-centered-cubic phase of iron, stable at elevated temperature, capable of dissolving significant carbon",
+        "distractors": [
+          "the body-centered-cubic phase of iron stable at room temperature",
+          "a hard carbide compound formed between iron and carbon"
+        ],
+        "example": {
+          "text": "The steel must be heated above its critical temperature to fully transform into austenite before quenching.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ferrite",
+    "lang": "en",
+    "word": "ferrite",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the relatively soft, body-centered-cubic phase of iron with low carbon solubility, stable near room temperature",
+        "distractors": [
+          "the hard, supersaturated phase produced by rapid quenching",
+          "a glassy, non-crystalline byproduct skimmed from molten metal"
+        ],
+        "example": {
+          "text": "Slow air cooling of the low-carbon steel left a microstructure dominated by soft ferrite grains.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cementite",
+    "lang": "en",
+    "word": "cementite",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the hard, brittle iron carbide compound, Fe3C, found in steels and cast irons",
+        "distractors": [
+          "a soft solid solution of carbon dissolved in iron",
+          "a lubricating film that forms between sliding metal surfaces"
+        ],
+        "example": {
+          "text": "Alternating plates of ferrite and cementite give pearlite its distinctive layered appearance under the microscope.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pearlite",
+    "lang": "en",
+    "word": "pearlite",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a lamellar microstructure of alternating ferrite and cementite layers formed during the eutectoid transformation of steel",
+        "distractors": [
+          "a single-phase solid solution of carbon in iron",
+          "a needle-shaped microstructure formed by rapid quenching"
+        ],
+        "example": {
+          "text": "Fine pearlite, formed by faster cooling, is noticeably stronger than the coarse pearlite produced by slow cooling.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_bainite",
+    "lang": "en",
+    "word": "bainite",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fine, needle-like microstructure of ferrite and cementite formed at cooling rates and temperatures intermediate between those producing pearlite and martensite",
+        "distractors": [
+          "the coarse, layered microstructure formed during very slow furnace cooling",
+          "the supersaturated phase formed instantly upon rapid quenching"
+        ],
+        "example": {
+          "text": "Austempering the steel produced a tough bainite microstructure without the brittleness typical of martensite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spinodal_decomposition",
+    "lang": "en",
+    "word": "spinodal decomposition",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the spontaneous separation of a single-phase solid solution into two compositionally distinct phases without a nucleation barrier",
+        "distractors": [
+          "the gradual dissolution of precipitates back into the surrounding matrix on heating",
+          "the formation of a new grain structure by recrystallization after cold working"
+        ],
+        "example": {
+          "text": "Spinodal decomposition of the alloy produced a fine, interconnected two-phase structure that raised its magnetic coercivity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_precipitation_hardening",
+    "lang": "en",
+    "word": "precipitation hardening",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strengthening process in which fine second-phase particles are dispersed through a metal matrix by solution treatment followed by controlled aging",
+        "distractors": [
+          "a strengthening process achieved purely by mechanical deformation at room temperature",
+          "a softening process that removes internal stresses from a cast part"
+        ],
+        "example": {
+          "text": "Aluminum aircraft alloys rely on precipitation hardening to reach strengths far beyond those of the pure metal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eutectic",
+    "lang": "en",
+    "word": "eutectic",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an alloy composition that solidifies at a single, minimum temperature directly from liquid into a two-phase solid mixture",
+        "distractors": [
+          "an alloy composition that solidifies over the widest possible temperature range",
+          "a single solid phase that forms across the entire composition range of a system"
+        ],
+        "example": {
+          "text": "The eutectic composition of the lead-tin system melts and solidifies at a lower temperature than either pure metal.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_eutectoid",
+    "lang": "en",
+    "word": "eutectoid",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an invariant reaction in which one solid phase transforms into two other solid phases upon cooling at a fixed temperature",
+        "distractors": [
+          "a reaction in which a liquid and a solid react to form a new solid phase",
+          "a reaction in which two liquids of different composition coexist"
+        ],
+        "example": {
+          "text": "At the eutectoid point, austenite of eutectoid composition decomposes entirely into pearlite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_peritectic",
+    "lang": "en",
+    "word": "peritectic",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an invariant reaction in which a liquid reacts with one solid phase on cooling to form a different, single solid phase",
+        "distractors": [
+          "a reaction in which a single solid decomposes into two solids of different composition",
+          "the temperature at which a pure metal begins to melt"
+        ],
+        "example": {
+          "text": "In the iron-carbon system, the peritectic reaction occurs at high temperature between delta ferrite and liquid.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_liquidus",
+    "lang": "en",
+    "word": "liquidus",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the temperature or line on a phase diagram above which an alloy is entirely liquid",
+        "distractors": [
+          "the temperature below which an alloy is entirely solid",
+          "the composition at which an alloy has the lowest possible melting point"
+        ],
+        "example": {
+          "text": "Above the liquidus, no solid phase can exist in equilibrium with the melt.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_solidus",
+    "lang": "en",
+    "word": "solidus",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the temperature or line on a phase diagram below which an alloy is entirely solid",
+        "distractors": [
+          "the temperature above which an alloy is entirely liquid",
+          "the line marking the boundary between two solid phases at room temperature"
+        ],
+        "example": {
+          "text": "Between the solidus and the liquidus, the alloy exists as a mixture of solid and liquid.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_coring",
+    "lang": "en",
+    "word": "coring",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a compositional gradient within individual dendrite arms or grains caused by nonequilibrium solidification",
+        "distractors": [
+          "the deliberate removal of a cylindrical sample from a cast ingot for testing",
+          "the formation of a central shrinkage cavity in a solidifying casting"
+        ],
+        "example": {
+          "text": "Homogenization annealing was used to eliminate the coring left behind by the alloy's rapid dendritic solidification.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_segregation",
+    "lang": "en",
+    "word": "segregation",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the uneven distribution of alloying elements or impurities across a casting or grain structure",
+        "distractors": [
+          "the uniform dissolution of an alloying element throughout a melt",
+          "the formation of a protective oxide film on a metal surface"
+        ],
+        "example": {
+          "text": "Sulfur segregation at the grain boundaries made the steel prone to cracking during hot rolling.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ductility",
+    "lang": "en",
+    "word": "ductility",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the capacity of a material to undergo substantial plastic deformation, typically in tension, before it fractures",
+        "distractors": [
+          "the capacity of a material to return to its original shape after a load is removed",
+          "the resistance of a material's surface to being scratched or indented"
+        ],
+        "example": {
+          "text": "The alloy's high ductility allowed it to be drawn into fine wire without cracking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_malleability",
+    "lang": "en",
+    "word": "malleability",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the capacity of a material to deform plastically under compressive forces, such as hammering or rolling, without fracturing",
+        "distractors": [
+          "the capacity of a material to absorb energy elastically before yielding",
+          "the tendency of a material to corrode when exposed to moist air"
+        ],
+        "example": {
+          "text": "Gold's exceptional malleability lets artisans hammer it into sheets only a few atoms thick.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_brittle",
+    "lang": "en",
+    "word": "brittle",
+    "pos": "adjective",
+    "freqRank": 20500,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material that fractures with little or no plastic deformation when stressed",
+        "distractors": [
+          "describing a material that stretches considerably before breaking",
+          "describing a material whose strength increases the longer it is loaded"
+        ],
+        "example": {
+          "text": "Cast iron is comparatively brittle and can shatter under an impact load that ductile steel would merely dent.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fracture_toughness",
+    "lang": "en",
+    "word": "fracture toughness",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material property measuring resistance to crack propagation, expressed as the critical stress-intensity factor at failure",
+        "distractors": [
+          "the maximum stress a material can withstand before any permanent deformation occurs",
+          "the total energy a material can store elastically before it begins to yield"
+        ],
+        "example": {
+          "text": "Engineers specify a minimum fracture toughness for pressure-vessel steel to guard against sudden brittle failure from small flaws.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hardenability",
+    "lang": "en",
+    "word": "hardenability",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a measure of how deeply and thoroughly a steel can be hardened by quenching, independent of its maximum attainable hardness",
+        "distractors": [
+          "the maximum surface hardness a steel can reach regardless of section size",
+          "the ease with which a steel can be machined on a lathe"
+        ],
+        "example": {
+          "text": "Adding manganese and chromium improves the steel's hardenability, letting it harden through thick sections.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_strain_hardening",
+    "lang": "en",
+    "word": "strain hardening",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the increase in a metal's strength and hardness that results from plastic deformation at temperatures below its recrystallization point",
+        "distractors": [
+          "the softening of a metal caused by heating it above its recrystallization temperature",
+          "the loss of strength that occurs when a metal is held at elevated temperature for a long time"
+        ],
+        "example": {
+          "text": "Repeated cold rolling strain hardens the copper strip, so it must be annealed between passes.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cold_working",
+    "lang": "en",
+    "word": "cold working",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "plastic deformation of a metal performed below its recrystallization temperature, which increases strength while reducing ductility",
+        "distractors": [
+          "plastic deformation performed above the metal's recrystallization temperature",
+          "a heat treatment used to relieve internal stresses without changing hardness"
+        ],
+        "example": {
+          "text": "Cold working the wire through successive dies raised its tensile strength considerably.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hot_working",
+    "lang": "en",
+    "word": "hot working",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "plastic deformation of a metal performed above its recrystallization temperature, allowing shape change without a lasting increase in strength",
+        "distractors": [
+          "plastic deformation performed below the metal's recrystallization temperature",
+          "the process of hardening a metal surface by diffusing carbon into it"
+        ],
+        "example": {
+          "text": "Hot working the ingot into a billet let the metal recrystallize continuously, avoiding the buildup of internal stress.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_annealing",
+    "lang": "en",
+    "word": "annealing",
+    "pos": "noun",
+    "freqRank": 21000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment involving heating a material and then cooling it slowly to soften it, relieve stresses, and refine its microstructure",
+        "distractors": [
+          "a heat treatment involving rapid cooling to maximize hardness",
+          "a mechanical process of repeatedly bending a part to test its fatigue life"
+        ],
+        "example": {
+          "text": "After cold rolling, the sheet was given a full annealing to restore its ductility.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_quenching",
+    "lang": "en",
+    "word": "quenching",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the rapid cooling of a heated material, typically in water, oil, or air, to achieve a desired hardened microstructure",
+        "distractors": [
+          "the slow, controlled cooling of a material inside a furnace",
+          "the gradual reheating of a hardened part to relieve internal stress"
+        ],
+        "example": {
+          "text": "Quenching the red-hot blade in oil locked in a hard martensitic structure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tempering",
+    "lang": "en",
+    "word": "tempering",
+    "pos": "noun",
+    "freqRank": 23000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment applied after hardening that reduces brittleness by reheating the material to a temperature below its critical point",
+        "distractors": [
+          "the initial heating of a material into its austenitic range before quenching",
+          "the process of adding alloying elements to molten metal before casting"
+        ],
+        "example": {
+          "text": "Tempering the quenched steel at 400 degrees relieved its brittleness while retaining most of its hardness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_normalizing",
+    "lang": "en",
+    "word": "normalizing",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment in which steel is heated above its critical temperature and then cooled in still air to produce a uniform, refined grain structure",
+        "distractors": [
+          "a heat treatment in which steel is cooled as slowly as possible inside the furnace",
+          "a surface treatment that diffuses nitrogen into the outer layer of a steel part"
+        ],
+        "example": {
+          "text": "Normalizing the forged shaft refined its grain structure and relieved stresses left by hot working.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_recrystallization",
+    "lang": "en",
+    "word": "recrystallization",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the formation of new, strain-free grains within a cold-worked metal during annealing, replacing the deformed grain structure",
+        "distractors": [
+          "the growth of a single grain at the expense of its neighbors during prolonged high-temperature exposure",
+          "the transformation of austenite into martensite upon rapid cooling"
+        ],
+        "example": {
+          "text": "Annealing above the recrystallization temperature replaced the elongated, strained grains with new equiaxed ones.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_grain_refinement",
+    "lang": "en",
+    "word": "grain refinement",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a treatment or process that reduces the average grain size of a metal, typically to improve strength and toughness",
+        "distractors": [
+          "a treatment that selectively enlarges a metal's grains to improve high-temperature creep resistance",
+          "the removal of nonmetallic inclusions from a molten metal bath"
+        ],
+        "example": {
+          "text": "Adding a small amount of titanium boride to the melt achieved effective grain refinement in the aluminum casting.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nanoindentation",
+    "lang": "en",
+    "word": "nanoindentation",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a testing technique that measures a material's hardness and elastic modulus by pressing a tiny, precisely calibrated indenter into its surface",
+        "distractors": [
+          "a bulk tensile test performed on a full-sized specimen",
+          "a nondestructive method for detecting subsurface cracks using ultrasound"
+        ],
+        "example": {
+          "text": "Nanoindentation of the coating's cross-section revealed a hardness gradient just a few microns below the surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_resilience",
+    "lang": "en",
+    "word": "resilience",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the amount of elastic strain energy a material can absorb per unit volume up to its yield point and release upon unloading",
+        "distractors": [
+          "the total energy a material absorbs before fracturing, including plastic deformation",
+          "the resistance of a material's surface to abrasive wear"
+        ],
+        "example": {
+          "text": "Spring steel is chosen for its high resilience, letting it store and release elastic energy without permanent set.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_youngs_modulus",
+    "lang": "en",
+    "word": "Young's modulus",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ratio of tensile or compressive stress to the corresponding strain within a material's elastic range, quantifying its stiffness",
+        "distractors": [
+          "the ratio of lateral strain to axial strain when a material is stretched",
+          "the maximum stress a material can sustain before it fractures"
+        ],
+        "example": {
+          "text": "Steel has a Young's modulus roughly three times that of aluminum, so it deflects far less under the same load.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_poissons_ratio",
+    "lang": "en",
+    "word": "Poisson's ratio",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the negative ratio of transverse strain to axial strain when a material is stretched or compressed elastically",
+        "distractors": [
+          "the ratio of a material's yield strength to its ultimate tensile strength",
+          "the fraction of a material's cross-section occupied by microscopic pores"
+        ],
+        "example": {
+          "text": "Most metals have a Poisson's ratio near 0.3, meaning they narrow slightly as they are stretched.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_necking",
+    "lang": "en",
+    "word": "necking",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the localized reduction in cross-sectional area that develops in a ductile specimen shortly before it fractures under tension",
+        "distractors": [
+          "the widening of a specimen's cross-section that occurs under compressive loading",
+          "a crack that forms perpendicular to the loading direction at the specimen's surface"
+        ],
+        "example": {
+          "text": "The tensile curve turned downward once necking began, concentrating further deformation in a narrow region.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_striation",
+    "lang": "en",
+    "word": "striation",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a fine, ridge-like marking on a fatigue fracture surface, each one typically corresponding to a single loading cycle",
+        "distractors": [
+          "a coarse dimple pattern left on a ductile overload fracture surface",
+          "a crystalline pattern revealed by etching a polished metal surface"
+        ],
+        "example": {
+          "text": "Under the electron microscope, closely spaced striations across the fracture surface confirmed that fatigue caused the failure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spalling",
+    "lang": "en",
+    "word": "spalling",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the flaking or chipping away of surface material, often caused by rolling contact fatigue, thermal cycling, or subsurface cracking",
+        "distractors": [
+          "the gradual thinning of a material by chemical dissolution",
+          "the formation of a hard case on the surface of a carburized part"
+        ],
+        "example": {
+          "text": "Repeated rolling contact eventually caused spalling on the bearing raceway's surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_exfoliation_corrosion",
+    "lang": "en",
+    "word": "exfoliation corrosion",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a form of intergranular corrosion in which layers of metal are lifted and separated by the buildup of corrosion products along grain boundaries",
+        "distractors": [
+          "corrosion that produces a series of localized, deep pits scattered across a surface",
+          "corrosion driven by contact between two dissimilar metals in an electrolyte"
+        ],
+        "example": {
+          "text": "The aircraft skin panel showed exfoliation corrosion, its surface layers peeling apart like the pages of a book.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_delamination",
+    "lang": "en",
+    "word": "delamination",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the separation of bonded layers in a laminated or composite material, typically along their interface",
+        "distractors": [
+          "the propagation of a single crack straight through a solid, homogeneous material",
+          "the loss of adhesion between a coating and its substrate caused only by thermal expansion mismatch"
+        ],
+        "example": {
+          "text": "An impact on the composite panel caused internal delamination that was invisible from the surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cavitation",
+    "lang": "en",
+    "word": "cavitation",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the formation and violent collapse of vapor bubbles in a liquid near a solid surface, which can erode the adjacent material",
+        "distractors": [
+          "the gradual buildup of a protective oxide film on a submerged metal surface",
+          "the diffusion of dissolved gas out of a molten metal during solidification"
+        ],
+        "example": {
+          "text": "Cavitation pitting on the pump impeller developed where local pressure repeatedly dropped below the liquid's vapor pressure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fretting",
+    "lang": "en",
+    "word": "fretting",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "surface damage caused by small oscillatory relative motion between two contacting surfaces under load",
+        "distractors": [
+          "large-scale sliding wear between two surfaces moving continuously in the same direction",
+          "corrosion caused by exposure to a highly acidic environment"
+        ],
+        "example": {
+          "text": "Fretting at the bolted joint produced fine reddish debris where the clamped surfaces vibrated against each other.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrogen_embrittlement",
+    "lang": "en",
+    "word": "hydrogen embrittlement",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a loss of ductility and susceptibility to sudden fracture in a metal caused by absorbed atomic hydrogen",
+        "distractors": [
+          "a loss of strength caused by prolonged exposure to elevated temperature",
+          "brittleness introduced by rapid quenching from the austenitizing temperature"
+        ],
+        "example": {
+          "text": "The electroplated fasteners failed unexpectedly due to hydrogen embrittlement introduced during the plating process.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_temper_embrittlement",
+    "lang": "en",
+    "word": "temper embrittlement",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a loss of toughness in certain alloy steels caused by holding or slowly cooling them through a specific intermediate temperature range after tempering",
+        "distractors": [
+          "brittleness that develops immediately upon quenching, before any tempering occurs",
+          "a loss of ductility caused solely by absorbed hydrogen during pickling"
+        ],
+        "example": {
+          "text": "Temper embrittlement was traced to impurity segregation at grain boundaries after the forging cooled slowly through the critical range.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_creep",
+    "lang": "en",
+    "word": "creep",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the slow, time-dependent plastic deformation of a material under a constant stress, typically significant at elevated temperature",
+        "distractors": [
+          "the instantaneous elastic deformation a material undergoes the moment a load is applied",
+          "the sudden, brittle fracture of a material under a single rapid overload"
+        ],
+        "example": {
+          "text": "Turbine blades are designed to resist creep so they don't gradually elongate under stress at operating temperature.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stress_relaxation",
+    "lang": "en",
+    "word": "stress relaxation",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the gradual decrease in stress within a material held at a constant strain over time",
+        "distractors": [
+          "the gradual increase in strain within a material held under a constant stress",
+          "the sudden release of stored elastic energy when a crack propagates"
+        ],
+        "example": {
+          "text": "Stress relaxation in the gasket material meant the bolted joint had to be periodically retightened.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_austenitize",
+    "lang": "en",
+    "word": "austenitize",
+    "pos": "verb",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "to heat a ferrous alloy into its austenite phase field in preparation for quenching or hot working",
+        "distractors": [
+          "to cool a ferrous alloy slowly enough to form pearlite",
+          "to diffuse carbon into the surface layer of a steel part"
+        ],
+        "example": {
+          "text": "The part was austenitized at 870 degrees before being quenched to form martensite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_carburizing",
+    "lang": "en",
+    "word": "carburizing",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surface-hardening process that increases the carbon content of a steel's outer layer by diffusion at elevated temperature",
+        "distractors": [
+          "a process that diffuses nitrogen into a steel surface to harden it without further quenching",
+          "a process that removes carbon from a steel's surface to improve weldability"
+        ],
+        "example": {
+          "text": "Carburizing the gear teeth produced a hard, wear-resistant case over a tough, low-carbon core.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_nitriding",
+    "lang": "en",
+    "word": "nitriding",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a surface-hardening process that diffuses nitrogen into a metal's surface at moderate temperature to form hard nitride compounds",
+        "distractors": [
+          "a process that diffuses carbon into a metal's surface at high temperature followed by quenching",
+          "a process that removes surface oxide by immersion in an acid bath"
+        ],
+        "example": {
+          "text": "Because nitriding is carried out below the transformation temperature, the treated part suffers little distortion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_case_hardening",
+    "lang": "en",
+    "word": "case hardening",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "any process that hardens only the surface layer of a part while leaving its interior comparatively soft and tough",
+        "distractors": [
+          "a heat treatment that hardens a part uniformly throughout its entire cross-section",
+          "a process that anneals only the surface of a part to improve formability"
+        ],
+        "example": {
+          "text": "Case hardening gave the shaft a wear-resistant outer layer while its core remained tough enough to absorb shock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_induction_hardening",
+    "lang": "en",
+    "word": "induction hardening",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a case-hardening process that uses electromagnetically induced heating to rapidly austenitize a part's surface before quenching",
+        "distractors": [
+          "a hardening process that relies on diffusing carbon into the surface over many hours in a furnace",
+          "a hardening process performed by hammering the surface at room temperature"
+        ],
+        "example": {
+          "text": "Induction hardening the crankshaft journals took only seconds, leaving the rest of the shaft unaffected by the heat.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_austempering",
+    "lang": "en",
+    "word": "austempering",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment in which steel is quenched into a bath held above the martensite start temperature and held there to transform isothermally into bainite",
+        "distractors": [
+          "a heat treatment in which steel is quenched directly to room temperature to form martensite",
+          "a heat treatment in which steel is reheated after hardening to reduce brittleness"
+        ],
+        "example": {
+          "text": "Austempering the springs produced a tough bainitic structure with less distortion than a conventional quench-and-temper cycle.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_martempering",
+    "lang": "en",
+    "word": "martempering",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment in which steel is quenched into a bath held just above the martensite start temperature, equalized in temperature, and then air cooled to form martensite with reduced distortion",
+        "distractors": [
+          "a heat treatment that transforms austenite isothermally into bainite",
+          "a treatment used to dissolve carbide precipitates back into solid solution"
+        ],
+        "example": {
+          "text": "Martempering the die reduced the risk of quench cracking compared with a direct oil quench.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_solution_treatment",
+    "lang": "en",
+    "word": "solution treatment",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment that dissolves soluble phases into a homogeneous solid solution by holding an alloy at elevated temperature, usually followed by rapid cooling",
+        "distractors": [
+          "a heat treatment that precipitates second-phase particles out of solid solution",
+          "a chemical treatment that removes surface oxide from a metal by dissolving it in acid"
+        ],
+        "example": {
+          "text": "After solution treatment and quenching, the aluminum alloy was aged to precipitate strengthening particles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_overaging",
+    "lang": "en",
+    "word": "overaging",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "continued aging of a precipitation-hardened alloy past its peak strength, during which the strengthening particles coarsen and the material softens",
+        "distractors": [
+          "the initial stage of aging before any strengthening particles have formed",
+          "the loss of strength caused by dissolving precipitates back into solid solution"
+        ],
+        "example": {
+          "text": "Overaging the rivets slightly reduced their peak strength but improved their resistance to stress corrosion cracking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_homogenization",
+    "lang": "en",
+    "word": "homogenization",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a high-temperature heat treatment that reduces compositional gradients within a cast alloy by allowing diffusion to even out segregation",
+        "distractors": [
+          "a heat treatment that deliberately introduces compositional gradients into a cast alloy",
+          "a mechanical process that breaks up a coarse dendritic structure by rolling"
+        ],
+        "example": {
+          "text": "Homogenization of the ingot before hot rolling reduced the coring inherited from solidification.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stress_relieving",
+    "lang": "en",
+    "word": "stress relieving",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a heat treatment that reduces internal residual stresses in a part by heating it below the transformation temperature and cooling slowly",
+        "distractors": [
+          "a heat treatment that introduces additional residual stress to increase surface hardness",
+          "a mechanical process that removes stress by shot peening the surface"
+        ],
+        "example": {
+          "text": "The welded frame was stress relieved overnight to reduce the risk of distortion during machining.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_solvus",
+    "lang": "en",
+    "word": "solvus",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the phase-diagram boundary separating a single-phase solid solution region from a two-phase solid region",
+        "distractors": [
+          "the phase-diagram boundary separating liquid from a mixture of liquid and solid",
+          "the composition at which an alloy solidifies at a single, minimum temperature"
+        ],
+        "example": {
+          "text": "Below the solvus line, a second phase begins to precipitate out of the supersaturated solid solution.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_invariant_reaction",
+    "lang": "en",
+    "word": "invariant reaction",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a phase transformation that occurs at a fixed temperature and composition, involving a fixed number of phases in equilibrium, such as a eutectic or eutectoid reaction",
+        "distractors": [
+          "a phase transformation that can occur over a range of temperatures depending on cooling rate",
+          "a reaction in which composition changes continuously as temperature is lowered"
+        ],
+        "example": {
+          "text": "The eutectic point marks an invariant reaction where liquid transforms directly into two solid phases at one fixed temperature.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tie_line",
+    "lang": "en",
+    "word": "tie line",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a horizontal line drawn across a two-phase region of a phase diagram connecting the compositions of the two phases in equilibrium",
+        "distractors": [
+          "a line marking the boundary between the liquid and solid regions of a phase diagram",
+          "a diagonal line used to interpolate a material's hardness from its composition"
+        ],
+        "example": {
+          "text": "Drawing a tie line at the given temperature revealed the compositions of the coexisting solid and liquid phases.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lever_rule",
+    "lang": "en",
+    "word": "lever rule",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a calculation method used with a tie line to determine the relative amounts of two coexisting phases from their compositions",
+        "distractors": [
+          "a rule for predicting the melting point of an alloy from its composition alone",
+          "a formula relating a material's hardness to its yield strength"
+        ],
+        "example": {
+          "text": "Applying the lever rule to the tie line showed the casting was roughly sixty percent solid at that temperature.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metastable",
+    "lang": "en",
+    "word": "metastable",
+    "pos": "adjective",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a state that persists for a practical length of time despite not being the true thermodynamic equilibrium",
+        "distractors": [
+          "describing a state that is the lowest-energy, fully stable equilibrium configuration",
+          "describing a material whose properties vary continuously with the direction measured"
+        ],
+        "example": {
+          "text": "Quenched martensite is a metastable phase that will slowly transform toward equilibrium if reheated.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_passivation",
+    "lang": "en",
+    "word": "passivation",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the formation of a thin, protective oxide film on a metal's surface that inhibits further corrosion",
+        "distractors": [
+          "the deliberate removal of a metal's natural oxide layer to expose bare metal",
+          "the electroplating of a sacrificial metal coating onto a base metal"
+        ],
+        "example": {
+          "text": "Stainless steel owes its corrosion resistance to a passivation layer of chromium oxide that reforms if scratched.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pitting_corrosion",
+    "lang": "en",
+    "word": "pitting corrosion",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a localized form of corrosion that produces small, deep cavities on an otherwise largely intact metal surface",
+        "distractors": [
+          "corrosion that uniformly removes material across an entire exposed surface",
+          "corrosion driven by the flow of current between two dissimilar metals in contact"
+        ],
+        "example": {
+          "text": "Chloride ions in the seawater initiated pitting corrosion at a few weak spots in the passive film.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_crevice_corrosion",
+    "lang": "en",
+    "word": "crevice corrosion",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "localized corrosion occurring within a narrow, shielded gap between two surfaces where stagnant electrolyte becomes depleted of oxygen",
+        "distractors": [
+          "corrosion that occurs uniformly over a broadly exposed, well-aerated surface",
+          "corrosion caused entirely by mechanical abrasion rather than electrochemical attack"
+        ],
+        "example": {
+          "text": "Crevice corrosion developed beneath the gasket, where trapped moisture couldn't replenish its oxygen supply.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_galvanic_corrosion",
+    "lang": "en",
+    "word": "galvanic corrosion",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "accelerated corrosion of a less noble metal that occurs when it is electrically connected to a more noble metal in the presence of an electrolyte",
+        "distractors": [
+          "corrosion that occurs uniformly regardless of contact with any other metal",
+          "corrosion driven by cyclic thermal expansion and contraction of a single metal"
+        ],
+        "example": {
+          "text": "The steel bolt corroded rapidly where it touched the copper fitting, a textbook case of galvanic corrosion.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_intergranular_corrosion",
+    "lang": "en",
+    "word": "intergranular corrosion",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "corrosion that proceeds preferentially along grain boundaries, often leaving the grain interiors largely unaffected",
+        "distractors": [
+          "corrosion that attacks only the interior of individual grains, sparing the boundaries",
+          "corrosion that produces isolated pits scattered randomly across the surface"
+        ],
+        "example": {
+          "text": "Sensitized stainless steel is vulnerable to intergranular corrosion because chromium-depleted zones form along its grain boundaries.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_stress_corrosion_cracking",
+    "lang": "en",
+    "word": "stress corrosion cracking",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the growth of cracks in a susceptible material under the combined action of tensile stress and a specific corrosive environment",
+        "distractors": [
+          "cracking caused purely by mechanical fatigue with no chemical contribution",
+          "the uniform thinning of a stressed component due to general corrosion"
+        ],
+        "example": {
+          "text": "The brass fitting failed by stress corrosion cracking after residual stresses combined with a trace of ammonia in the air.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sacrificial_anode",
+    "lang": "en",
+    "word": "sacrificial anode",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a piece of a more reactive metal deliberately connected to a structure so it corrodes preferentially and protects the structure",
+        "distractors": [
+          "a coating that physically blocks moisture from reaching a metal surface",
+          "an electrode used to measure a metal's corrosion potential without protecting it"
+        ],
+        "example": {
+          "text": "Zinc sacrificial anodes bolted to the ship's hull corrode away over time so the steel plating does not.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cathodic_protection",
+    "lang": "en",
+    "word": "cathodic protection",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a technique that suppresses corrosion of a metal structure by making it the cathode of an electrochemical cell, typically using an impressed current or sacrificial anode",
+        "distractors": [
+          "a technique that suppresses corrosion by making the structure the anode of an electrochemical cell",
+          "a technique that removes corrosion products mechanically by grit blasting"
+        ],
+        "example": {
+          "text": "Cathodic protection of the buried pipeline was maintained using an impressed direct current from a nearby rectifier.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dezincification",
+    "lang": "en",
+    "word": "dezincification",
+    "pos": "noun",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a selective corrosion process in brass in which zinc is preferentially leached out, leaving a porous, weakened copper-rich structure behind",
+        "distractors": [
+          "a corrosion process in which copper is preferentially removed from brass, leaving zinc behind",
+          "a heat treatment used to remove zinc segregation from a brass casting"
+        ],
+        "example": {
+          "text": "The old brass valve failed under light pressure once dezincification had hollowed out much of its structural strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_smelting",
+    "lang": "en",
+    "word": "smelting",
+    "pos": "noun",
+    "freqRank": 25000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of extracting a metal from its ore by heating it with a reducing agent, usually in a furnace",
+        "distractors": [
+          "the process of purifying an already-extracted metal using an electric current",
+          "the process of joining two pieces of metal by melting a filler alloy between them"
+        ],
+        "example": {
+          "text": "Smelting the iron ore with coke and limestone in the blast furnace produced molten pig iron.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_sintering",
+    "lang": "en",
+    "word": "sintering",
+    "pos": "noun",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the process of bonding powder particles into a coherent solid mass by heating below the melting point, driven by atomic diffusion",
+        "distractors": [
+          "the process of melting metal powder completely before casting it into a mold",
+          "the process of coating a metal surface with a thin protective oxide layer"
+        ],
+        "example": {
+          "text": "The pressed metal powder compact was sintered in a furnace to fuse the particles into a solid part.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_forging",
+    "lang": "en",
+    "word": "forging",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metalworking process that shapes a workpiece using localized compressive forces, typically while the metal is heated",
+        "distractors": [
+          "a metalworking process that shapes a workpiece by pulling it through a shaped die",
+          "a metalworking process that removes material using a rotating cutting tool"
+        ],
+        "example": {
+          "text": "Forging the crankshaft aligned its internal grain flow along the part's contours, improving its fatigue strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_extrusion",
+    "lang": "en",
+    "word": "extrusion",
+    "pos": "noun",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metalworking process in which a billet is forced through a shaped die to produce a continuous cross-section",
+        "distractors": [
+          "a metalworking process in which sheet metal is stretched over a form",
+          "a metalworking process in which molten metal is poured directly into a mold"
+        ],
+        "example": {
+          "text": "The aluminum window frame was produced by extrusion, pushing the heated billet through a precisely shaped die.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_wire_drawing",
+    "lang": "en",
+    "word": "wire drawing",
+    "pos": "noun",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a metalworking process in which a rod or wire is pulled through a series of dies to progressively reduce its diameter",
+        "distractors": [
+          "a process in which wire is produced by pouring molten metal into a narrow mold",
+          "a process in which wire is hardened by heating and rapid quenching alone"
+        ],
+        "example": {
+          "text": "Successive passes of wire drawing reduced the rod's diameter while work hardening the copper considerably.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_brazing",
+    "lang": "en",
+    "word": "brazing",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a joining process that bonds two metal parts using a filler metal with a melting point above 450 degrees Celsius but below that of the base metals",
+        "distractors": [
+          "a joining process that melts and fuses the base metals themselves together",
+          "a joining process that uses a filler metal melting below 450 degrees Celsius"
+        ],
+        "example": {
+          "text": "The copper tubing joints were brazed using a silver-bearing filler alloy drawn into the joint by capillary action.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_powder_metallurgy",
+    "lang": "en",
+    "word": "powder metallurgy",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a manufacturing route that produces metal parts by compacting and sintering metal powders rather than melting and casting",
+        "distractors": [
+          "a manufacturing route that produces parts entirely by machining a solid billet",
+          "a manufacturing route that shapes parts by forcing molten metal through a die"
+        ],
+        "example": {
+          "text": "Powder metallurgy allowed the manufacturer to produce complex gear shapes with minimal material waste.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hot_isostatic_pressing",
+    "lang": "en",
+    "word": "hot isostatic pressing",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a process that applies elevated temperature and uniform gas pressure from all directions to eliminate internal porosity in a material",
+        "distractors": [
+          "a process that applies pressure from only one direction while the part is at room temperature",
+          "a process that removes surface porosity using chemical etching"
+        ],
+        "example": {
+          "text": "Hot isostatic pressing closed the residual porosity left in the cast turbine blade, improving its fatigue life.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cladding",
+    "lang": "en",
+    "word": "cladding",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a layer of one metal metallurgically bonded to the surface of another to provide corrosion resistance or another desired property",
+        "distractors": [
+          "a thin oxide film that forms naturally on a metal surface without any bonding process",
+          "a coating applied purely by electroplating rather than metallurgical bonding"
+        ],
+        "example": {
+          "text": "The reactor vessel used a stainless steel cladding bonded over a carbon steel shell to combine strength with corrosion resistance.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_calcination",
+    "lang": "en",
+    "word": "calcination",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the heating of a solid, usually an ore or mineral, to drive off volatile constituents such as water or carbon dioxide before further processing",
+        "distractors": [
+          "the heating of an ore in the presence of oxygen to convert sulfides into oxides",
+          "the electrolytic reduction of a molten ore into its constituent metal"
+        ],
+        "example": {
+          "text": "Calcination of the limestone in the kiln drove off carbon dioxide, leaving behind quicklime for use as flux.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_slag",
+    "lang": "en",
+    "word": "slag",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the non-metallic byproduct of smelting or refining that separates from the molten metal and carries away impurities",
+        "distractors": [
+          "the metallic scum that forms on the surface of a molten metal bath through oxidation",
+          "the powdered residue collected from grinding a metal part's surface"
+        ],
+        "example": {
+          "text": "Molten slag was skimmed from the top of the furnace, carrying with it much of the ore's silica and other impurities.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_flux",
+    "lang": "en",
+    "word": "flux",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a substance added during smelting, refining, or joining to promote fusion, dissolve impurities, or prevent oxidation",
+        "distractors": [
+          "a substance added to a molten alloy specifically to increase its hardness",
+          "the rate at which heat is conducted through a solidifying casting"
+        ],
+        "example": {
+          "text": "A borax flux was sprinkled over the joint before brazing to dissolve surface oxides and help the filler flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dross",
+    "lang": "en",
+    "word": "dross",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a layer of oxidized metal and impurities that forms on the surface of a molten metal bath",
+        "distractors": [
+          "a byproduct of smelting that is primarily non-metallic in composition",
+          "a hardened layer intentionally formed on the surface of a quenched part"
+        ],
+        "example": {
+          "text": "Dross was skimmed from the surface of the molten aluminum before it was poured into the mold.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ingot",
+    "lang": "en",
+    "word": "ingot",
+    "pos": "noun",
+    "freqRank": 22000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cast block of metal, typically simple in shape, produced as an intermediate form for further processing",
+        "distractors": [
+          "a finished part produced entirely by machining from bar stock",
+          "a cast metal shape produced only by continuous casting into wire"
+        ],
+        "example": {
+          "text": "The steel ingot was reheated and rolled into slabs at the mill.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_billet",
+    "lang": "en",
+    "word": "billet",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a semi-finished length of metal with a square or round cross-section, produced by casting or rolling, intended for further forging or extrusion",
+        "distractors": [
+          "a finished rolled sheet ready for stamping into parts",
+          "a molten metal sample taken for chemical analysis"
+        ],
+        "example": {
+          "text": "The continuously cast billet was cut to length before being reheated and extruded into aluminum profiles.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_metallography",
+    "lang": "en",
+    "word": "metallography",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the study of a metal's microstructure, typically by preparing and examining polished and etched samples under a microscope",
+        "distractors": [
+          "the study of a metal's fracture surfaces to determine the cause of failure",
+          "the chemical analysis of a metal's bulk composition using spectroscopy"
+        ],
+        "example": {
+          "text": "Metallography of the failed shaft revealed a coarse grain structure consistent with overheating during forging.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_fractography",
+    "lang": "en",
+    "word": "fractography",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the examination and interpretation of fracture surfaces to determine the mode and cause of a material's failure",
+        "distractors": [
+          "the study of a metal's grain structure using a polished and etched cross-section",
+          "the nondestructive measurement of a component's residual stress"
+        ],
+        "example": {
+          "text": "Fractography of the crankshaft's fracture surface showed classic beach marks indicating a fatigue failure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_etchant",
+    "lang": "en",
+    "word": "etchant",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a chemical reagent applied to a polished metal surface to selectively reveal its microstructural features under a microscope",
+        "distractors": [
+          "a chemical used to strip an existing coating completely off a metal surface",
+          "a lubricant applied to a die surface during forging to reduce friction"
+        ],
+        "example": {
+          "text": "A dilute nital etchant revealed the grain boundaries and phase structure of the polished steel sample.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_whisker",
+    "lang": "en",
+    "word": "whisker",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a thin, single-crystal fiber, often exceptionally strong and used as reinforcement in composite materials",
+        "distractors": [
+          "a randomly oriented, short chopped fiber used as filler in a polymer",
+          "a thin surface coating applied by vapor deposition"
+        ],
+        "example": {
+          "text": "Silicon carbide whiskers reinforced the ceramic matrix, dramatically improving its fracture toughness.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_interphase",
+    "lang": "en",
+    "word": "interphase",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the transitional region between a reinforcing fiber and the surrounding matrix in a composite material, distinct in properties from either constituent",
+        "distractors": [
+          "the boundary between two grains of identical composition within a single-phase metal",
+          "the region of a phase diagram where liquid and solid coexist in equilibrium"
+        ],
+        "example": {
+          "text": "A weak interphase between the fiber and matrix allowed the composite to absorb energy through fiber pull-out rather than fracturing catastrophically.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_vitrification",
+    "lang": "en",
+    "word": "vitrification",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the transformation of a material into a glassy, non-crystalline solid, often occurring during the firing of ceramics",
+        "distractors": [
+          "the transformation of a material into a fully crystalline solid upon cooling",
+          "the process of dissolving a crystalline solid completely into a liquid"
+        ],
+        "example": {
+          "text": "Vitrification during firing bonded the ceramic's particles together through a glassy phase, reducing its porosity.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_crosslinking",
+    "lang": "en",
+    "word": "crosslinking",
+    "pos": "noun",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the formation of covalent bonds between adjacent polymer chains, restricting their movement relative to one another",
+        "distractors": [
+          "the process of aligning polymer chains parallel to one another without forming new bonds",
+          "the breakdown of long polymer chains into shorter fragments"
+        ],
+        "example": {
+          "text": "VulcanVulcanization introduces sulfur crosslinking between rubber molecules, giving the material its elasticity and durability.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_plasticizer",
+    "lang": "en",
+    "word": "plasticizer",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an additive incorporated into a polymer to increase its flexibility and workability by reducing intermolecular forces between chains",
+        "distractors": [
+          "an additive that increases a polymer's rigidity by promoting crosslinking",
+          "a filler added to a polymer purely to reduce its cost without changing its flexibility"
+        ],
+        "example": {
+          "text": "Adding a plasticizer to the rigid PVC compound produced a soft, flexible vinyl suitable for tubing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_viscoelasticity",
+    "lang": "en",
+    "word": "viscoelasticity",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the property of a material that exhibits both viscous and elastic characteristics when undergoing deformation",
+        "distractors": [
+          "the property of a material that deforms purely elastically with no time dependence",
+          "the property of a material that flows permanently under any applied load, like a true liquid"
+        ],
+        "example": {
+          "text": "The polymer's viscoelasticity meant its stress response depended on how quickly the load was applied.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_glass_transition",
+    "lang": "en",
+    "word": "glass transition",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the reversible transition in an amorphous material between a hard, glassy state and a softer, rubbery state over a characteristic temperature range",
+        "distractors": [
+          "the transition at which a crystalline material melts into a liquid",
+          "the transition at which a metal changes from one crystal structure to another"
+        ],
+        "example": {
+          "text": "Below its glass transition, the polymer behaved as a rigid, brittle solid rather than a flexible material.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_crystallinity",
+    "lang": "en",
+    "word": "crystallinity",
+    "pos": "noun",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the degree to which the molecular structure of a material, such as a polymer, is arranged in an ordered, repeating pattern",
+        "distractors": [
+          "the degree to which a material's composition varies from point to point",
+          "the total number of grain boundaries present per unit volume"
+        ],
+        "example": {
+          "text": "Slow cooling increased the polymer's crystallinity, making the molded part stiffer and more opaque.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tacticity",
+    "lang": "en",
+    "word": "tacticity",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the relative arrangement of substituent groups along a polymer's backbone, classified as isotactic, syndiotactic, or atactic",
+        "distractors": [
+          "the degree of crosslinking present between adjacent polymer chains",
+          "the average molecular weight of the chains making up a polymer"
+        ],
+        "example": {
+          "text": "Isotactic tacticity allows the polymer chains to pack closely, producing a more crystalline and rigid material.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_refractory",
+    "lang": "en",
+    "word": "refractory",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material capable of withstanding very high temperatures without melting, softening, or structurally degrading",
+        "distractors": [
+          "describing a material that conducts heat exceptionally well",
+          "describing a material that expands significantly upon heating"
+        ],
+        "example": {
+          "text": "The furnace lining was built from refractory brick able to withstand temperatures well above 1500 degrees Celsius.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyrophoric",
+    "lang": "en",
+    "word": "pyrophoric",
+    "pos": "adjective",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material that ignites spontaneously upon exposure to air",
+        "distractors": [
+          "describing a material that resists ignition even under direct flame",
+          "describing a material that becomes magnetic when heated"
+        ],
+        "example": {
+          "text": "Finely divided titanium powder is pyrophoric and must be handled under an inert atmosphere.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_thixotropic",
+    "lang": "en",
+    "word": "thixotropic",
+    "pos": "adjective",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a fluid whose viscosity decreases under sustained shear and gradually recovers once the shear stops",
+        "distractors": [
+          "describing a fluid whose viscosity increases the longer it is sheared",
+          "describing a solid that becomes brittle only at low temperature"
+        ],
+        "example": {
+          "text": "The thixotropic coating flowed easily under the brush but thickened back up once left undisturbed on the wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anisotropic",
+    "lang": "en",
+    "word": "anisotropic",
+    "pos": "adjective",
+    "freqRank": 29000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a material whose physical properties vary depending on the direction in which they are measured",
+        "distractors": [
+          "describing a material whose physical properties are identical in every direction",
+          "describing a material composed of a single, defect-free crystal"
+        ],
+        "example": {
+          "text": "Rolled sheet metal is often anisotropic, with different strength and ductility along and across the rolling direction.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_austenitic",
+    "lang": "en",
+    "word": "austenitic",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a steel or alloy whose microstructure consists primarily of the face-centered-cubic austenite phase at room temperature",
+        "distractors": [
+          "describing a steel whose microstructure consists primarily of body-centered-cubic ferrite",
+          "describing a steel that has been hardened by rapid quenching into martensite"
+        ],
+        "example": {
+          "text": "Austenitic stainless steels retain their face-centered-cubic structure at room temperature thanks to nickel additions.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_martensitic",
+    "lang": "en",
+    "word": "martensitic",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a steel, alloy, or microstructure characterized by the hard, diffusionless martensite phase",
+        "distractors": [
+          "describing a steel whose microstructure is a lamellar mixture of ferrite and cementite",
+          "describing an alloy that cannot be hardened by heat treatment at all"
+        ],
+        "example": {
+          "text": "Martensitic stainless steels can be hardened by heat treatment, unlike the austenitic grades.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_ferritic",
+    "lang": "en",
+    "word": "ferritic",
+    "pos": "adjective",
+    "freqRank": 28000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a steel or alloy whose microstructure is predominantly the body-centered-cubic ferrite phase",
+        "distractors": [
+          "describing a steel whose microstructure is predominantly face-centered-cubic austenite",
+          "describing a steel hardened entirely by cold working rather than phase transformation"
+        ],
+        "example": {
+          "text": "Ferritic stainless steels are magnetic and generally less expensive than the austenitic grades because they contain little or no nickel.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hypoeutectoid",
+    "lang": "en",
+    "word": "hypoeutectoid",
+    "pos": "adjective",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a steel whose carbon content is below the eutectoid composition, so it contains proeutectoid ferrite along with pearlite",
+        "distractors": [
+          "describing a steel whose carbon content is above the eutectoid composition",
+          "describing a steel whose carbon content exactly matches the eutectoid composition"
+        ],
+        "example": {
+          "text": "The hypoeutectoid steel's microstructure showed light patches of proeutectoid ferrite surrounding the darker pearlite colonies.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hypereutectoid",
+    "lang": "en",
+    "word": "hypereutectoid",
+    "pos": "adjective",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a steel whose carbon content is above the eutectoid composition, so it contains proeutectoid cementite along with pearlite",
+        "distractors": [
+          "describing a steel whose carbon content is below the eutectoid composition",
+          "describing a steel that contains no carbon at all"
+        ],
+        "example": {
+          "text": "Hypereutectoid steel develops a network of proeutectoid cementite along the prior austenite grain boundaries if cooled slowly.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_amorphous",
+    "lang": "en",
+    "word": "amorphous",
+    "pos": "adjective",
+    "freqRank": 26000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a solid that lacks the long-range, periodic atomic order characteristic of a crystal",
+        "distractors": [
+          "describing a solid with a perfectly repeating, long-range atomic arrangement",
+          "describing a solid composed of many distinct crystalline grains"
+        ],
+        "example": {
+          "text": "Rapid cooling of the molten alloy was fast enough to produce an amorphous, glassy metal rather than a crystalline one.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_polycrystalline",
+    "lang": "en",
+    "word": "polycrystalline",
+    "pos": "adjective",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a solid composed of many individual crystallites, or grains, of varying orientation",
+        "distractors": [
+          "describing a solid composed of a single, continuous crystal lattice",
+          "describing a solid with no crystalline structure whatsoever"
+        ],
+        "example": {
+          "text": "Most engineering metals are polycrystalline, with mechanical properties strongly influenced by their grain size.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_monocrystalline",
+    "lang": "en",
+    "word": "monocrystalline",
+    "pos": "adjective",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a solid formed of a single, continuous crystal lattice with no internal grain boundaries",
+        "distractors": [
+          "describing a solid composed of many small crystallites with distinct boundaries",
+          "describing a solid that has no long-range atomic order"
+        ],
+        "example": {
+          "text": "Monocrystalline silicon wafers are grown as a single crystal to avoid the electrical losses caused by grain boundaries.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dendritic",
+    "lang": "en",
+    "word": "dendritic",
+    "pos": "adjective",
+    "freqRank": 32000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a branching, tree-like crystal morphology that develops during solidification",
+        "distractors": [
+          "describing a uniformly layered microstructure formed by slow, controlled cooling",
+          "describing a microstructure composed entirely of equally sized, rounded grains"
+        ],
+        "example": {
+          "text": "The as-cast surface showed a clearly dendritic pattern where the alloy had solidified rapidly against the cold mold wall.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_columnar",
+    "lang": "en",
+    "word": "columnar",
+    "pos": "adjective",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing elongated grains that grow parallel to the direction of heat extraction during solidification",
+        "distractors": [
+          "describing grains with roughly equal dimensions in every direction",
+          "describing grains that form only through solid-state recrystallization"
+        ],
+        "example": {
+          "text": "Near the mold wall, columnar grains grew inward, aligned with the direction of the steepest heat flow.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_equiaxed",
+    "lang": "en",
+    "word": "equiaxed",
+    "pos": "adjective",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing grains that have approximately equal dimensions in all directions, rather than being elongated",
+        "distractors": [
+          "describing grains that are markedly elongated in the direction of heat flow",
+          "describing grains that grow only along specific crystallographic slip planes"
+        ],
+        "example": {
+          "text": "The center of the casting cooled slowly enough to form fine equiaxed grains rather than columnar ones.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_lamellar",
+    "lang": "en",
+    "word": "lamellar",
+    "pos": "adjective",
+    "freqRank": 34000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a microstructure composed of thin, alternating layers of two distinct phases",
+        "distractors": [
+          "describing a microstructure composed of isolated, rounded particles dispersed in a matrix",
+          "describing a microstructure consisting of a single, uniform phase"
+        ],
+        "example": {
+          "text": "Pearlite's lamellar structure of alternating ferrite and cementite gives it a characteristic layered appearance under the microscope.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_acicular",
+    "lang": "en",
+    "word": "acicular",
+    "pos": "adjective",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a needle-like or plate-like microstructural morphology, often seen in rapidly transformed phases",
+        "distractors": [
+          "describing a microstructure of rounded, spherical particles",
+          "describing a microstructure with a smooth, featureless appearance under the microscope"
+        ],
+        "example": {
+          "text": "The quenched steel's acicular martensite plates were clearly visible crisscrossing the polished, etched surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_spheroidized",
+    "lang": "en",
+    "word": "spheroidized",
+    "pos": "adjective",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing carbide particles that have been transformed by heat treatment from a lamellar or plate-like shape into rounded spheres",
+        "distractors": [
+          "describing carbides that have been dissolved completely back into the surrounding matrix",
+          "describing a surface that has been hardened by carbon diffusion"
+        ],
+        "example": {
+          "text": "The spheroidized carbides in the annealed tool steel made it noticeably easier to machine than in its as-forged condition.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_pyrometallurgy",
+    "lang": "en",
+    "word": "pyrometallurgy",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the branch of extractive metallurgy that uses high temperatures to extract and refine metals from their ores",
+        "distractors": [
+          "the branch of extractive metallurgy that uses aqueous chemical solutions to extract metals",
+          "the branch of metallurgy concerned with studying a metal's microstructure"
+        ],
+        "example": {
+          "text": "Copper is traditionally produced through pyrometallurgy, smelting and converting sulfide concentrates in a series of furnaces.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_hydrometallurgy",
+    "lang": "en",
+    "word": "hydrometallurgy",
+    "pos": "noun",
+    "freqRank": 37000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the branch of extractive metallurgy that uses aqueous solutions to leach, purify, and recover metals from their ores",
+        "distractors": [
+          "the branch of extractive metallurgy that relies on high-temperature smelting furnaces",
+          "the branch of metallurgy that studies the mechanical testing of metals"
+        ],
+        "example": {
+          "text": "Hydrometallurgy is often preferred for low-grade copper ores, using dilute acid to leach the metal directly from crushed rock.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_electrorefining",
+    "lang": "en",
+    "word": "electrorefining",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrolytic process that purifies an impure metal anode by dissolving it and redepositing pure metal onto a cathode",
+        "distractors": [
+          "an electrolytic process that extracts metal directly from a molten ore without a prior smelting step",
+          "a mechanical process that refines a metal's grain size through repeated rolling"
+        ],
+        "example": {
+          "text": "Electrorefining the blister copper anodes produced cathodes of 99.99 percent pure copper.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_electrowinning",
+    "lang": "en",
+    "word": "electrowinning",
+    "pos": "noun",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrolytic process that recovers metal directly from a solution, such as a leach liquor, by depositing it onto a cathode",
+        "distractors": [
+          "an electrolytic process that purifies an already-solid impure metal anode",
+          "a smelting process that recovers metal from molten slag"
+        ],
+        "example": {
+          "text": "After hydrometallurgical leaching, electrowinning deposited pure copper directly onto stainless steel cathode sheets.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_anodizing",
+    "lang": "en",
+    "word": "anodizing",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "an electrochemical process that thickens the natural oxide layer on a metal, especially aluminum, to improve corrosion resistance and enable coloring",
+        "distractors": [
+          "an electroplating process that deposits a separate metal coating rather than growing an oxide layer",
+          "a heat treatment that hardens the surface of a metal by diffusing oxygen inward"
+        ],
+        "example": {
+          "text": "The aluminum housing was anodized and then dyed to produce its distinctive dark finish.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_tribology",
+    "lang": "en",
+    "word": "tribology",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the scientific study of friction, wear, and lubrication between interacting surfaces in relative motion",
+        "distractors": [
+          "the study of a material's response to elevated-temperature creep loading",
+          "the study of phase transformations occurring during solidification"
+        ],
+        "example": {
+          "text": "The tribology team selected a coating specifically to reduce friction and wear between the sliding cam and follower.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_galling",
+    "lang": "en",
+    "word": "galling",
+    "pos": "noun",
+    "freqRank": 38000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "severe adhesive wear in which material transfers between two sliding metal surfaces, roughening and sometimes seizing them",
+        "distractors": [
+          "the gradual, uniform loss of material caused by abrasive particles trapped between two surfaces",
+          "corrosion that develops in a narrow gap between two mating surfaces"
+        ],
+        "example": {
+          "text": "The stainless steel bolt and nut galled badly during tightening, seizing before reaching the specified torque.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_endurance_limit",
+    "lang": "en",
+    "word": "endurance limit",
+    "pos": "noun",
+    "freqRank": 36000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the stress amplitude below which a material can theoretically withstand an infinite number of load cycles without fatigue failure",
+        "distractors": [
+          "the maximum stress a material can withstand in a single application before fracturing",
+          "the total number of cycles a material survives before fatigue failure at a given stress"
+        ],
+        "example": {
+          "text": "Because the operating stress stayed below the shaft's endurance limit, it was expected to survive indefinitely without fatigue cracking.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_superplasticity",
+    "lang": "en",
+    "word": "superplasticity",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the ability of certain fine-grained materials to undergo extremely large tensile elongation, often several hundred percent, under specific temperature and strain-rate conditions",
+        "distractors": [
+          "the ability of a material to return instantly to its original shape after being deformed",
+          "the increase in hardness a material gains from rapid, repeated cold working"
+        ],
+        "example": {
+          "text": "The fine-grained titanium alloy exhibited superplasticity, stretching to several times its original length without necking or fracturing.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dislocation_climb",
+    "lang": "en",
+    "word": "dislocation climb",
+    "pos": "noun",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the motion of an edge dislocation out of its slip plane, achieved through the diffusion of vacancies to or from the dislocation line",
+        "distractors": [
+          "the motion of a dislocation within its own slip plane under an applied shear stress",
+          "the multiplication of dislocations that occurs during cold working"
+        ],
+        "example": {
+          "text": "At high temperature, dislocation climb allows obstacles to be bypassed, which is why creep accelerates so sharply as temperature rises.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_cross_slip",
+    "lang": "en",
+    "word": "cross-slip",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the transfer of a screw dislocation from one crystallographic slip plane to another that shares the same slip direction",
+        "distractors": [
+          "the diffusion-assisted movement of an edge dislocation out of its original slip plane",
+          "the pinning of a dislocation by a solute atom cluster"
+        ],
+        "example": {
+          "text": "Cross-slip let the screw dislocation bypass a local obstacle by switching onto an intersecting slip plane.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_solid_solution_strengthening",
+    "lang": "en",
+    "word": "solid solution strengthening",
+    "pos": "noun",
+    "freqRank": 39000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strengthening mechanism in which dissolved solute atoms distort the surrounding lattice, impeding dislocation motion",
+        "distractors": [
+          "a strengthening mechanism achieved by dispersing fine second-phase particles through the matrix",
+          "a strengthening mechanism achieved purely by refining the material's grain size"
+        ],
+        "example": {
+          "text": "Adding zinc to copper strengthens the alloy through solid solution strengthening, as the larger zinc atoms distort the copper lattice.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_dispersion_strengthening",
+    "lang": "en",
+    "word": "dispersion strengthening",
+    "pos": "noun",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a strengthening mechanism in which fine, thermally stable, insoluble particles are distributed through a matrix to impede dislocation motion",
+        "distractors": [
+          "a strengthening mechanism relying entirely on solute atoms dissolved within the matrix",
+          "a strengthening mechanism achieved by reducing porosity through hot isostatic pressing"
+        ],
+        "example": {
+          "text": "Dispersion strengthening with stable oxide particles let the alloy retain its strength even at temperatures where precipitates would normally dissolve.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_grain_boundary_sliding",
+    "lang": "en",
+    "word": "grain boundary sliding",
+    "pos": "noun",
+    "freqRank": 42000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a creep deformation mechanism in which adjacent grains slide relative to one another along their shared boundary",
+        "distractors": [
+          "a deformation mechanism in which dislocations glide through the interior of a single grain",
+          "the formation of new, strain-free grains during recrystallization"
+        ],
+        "example": {
+          "text": "At elevated temperature, grain boundary sliding contributed significantly to the alloy's overall creep strain.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_diffusion_bonding",
+    "lang": "en",
+    "word": "diffusion bonding",
+    "pos": "noun",
+    "freqRank": 40000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a solid-state joining process in which two surfaces are bonded by holding them in close contact under pressure and heat, allowing atoms to diffuse across the interface",
+        "distractors": [
+          "a joining process that melts a filler metal to fill the gap between two parts",
+          "a joining process performed entirely at room temperature without any applied pressure"
+        ],
+        "example": {
+          "text": "Diffusion bonding joined the titanium sheets without melting either surface, preserving the fine-grained microstructure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_debinding",
+    "lang": "en",
+    "word": "debinding",
+    "pos": "noun",
+    "freqRank": 43000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a processing step that removes the organic binder from a molded or printed powder compact before final sintering",
+        "distractors": [
+          "a step that adds a temporary binder to hold loose powder particles together",
+          "the final high-temperature step that fuses powder particles into a dense solid"
+        ],
+        "example": {
+          "text": "Debinding the printed part in a solvent bath removed most of the polymer binder before it went into the sintering furnace.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_residual_stress",
+    "lang": "en",
+    "word": "residual stress",
+    "pos": "noun",
+    "freqRank": 30000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "stress that remains locked within a material after the external load or thermal gradient that caused it has been removed",
+        "distractors": [
+          "stress that exists only while an external load is actively applied to the part",
+          "the theoretical stress a material could withstand if it were completely defect-free"
+        ],
+        "example": {
+          "text": "Uneven cooling after welding left significant residual stress in the plate, which later contributed to distortion during machining.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_shot_peening",
+    "lang": "en",
+    "word": "shot peening",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a cold-working process that bombards a metal surface with small spherical media to induce beneficial compressive residual stress and improve fatigue resistance",
+        "distractors": [
+          "a heat treatment that hardens a surface by diffusing carbon into it",
+          "a polishing process that removes surface material to reduce roughness"
+        ],
+        "example": {
+          "text": "Shot peening the leaf spring's surface introduced compressive stress that substantially extended its fatigue life.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_decarburization",
+    "lang": "en",
+    "word": "decarburization",
+    "pos": "noun",
+    "freqRank": 35000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the loss of carbon from the surface layer of a steel, typically occurring during heating in an oxidizing or reactive atmosphere",
+        "distractors": [
+          "the diffusion of additional carbon into the surface layer of a steel",
+          "the loss of chromium from a stainless steel's surface during sensitization"
+        ],
+        "example": {
+          "text": "Forging the billet in an open furnace caused noticeable decarburization, softening the part's outer surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_weldability",
+    "lang": "en",
+    "word": "weldability",
+    "pos": "noun",
+    "freqRank": 33000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a material's relative ease of being welded into a sound, serviceable joint without excessive cracking or defects",
+        "distractors": [
+          "a material's resistance to corrosion when exposed to a marine environment",
+          "a material's capacity to be bent repeatedly without fracturing"
+        ],
+        "example": {
+          "text": "High-carbon steels generally have poorer weldability because they are prone to cracking in the heat-affected zone.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_heat_affected_zone",
+    "lang": "en",
+    "word": "heat-affected zone",
+    "pos": "noun",
+    "freqRank": 31000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the region of base metal adjacent to a weld whose microstructure and properties have been altered by the heat of welding without melting",
+        "distractors": [
+          "the region of a weld that has fully melted and resolidified",
+          "the region of a casting farthest from the heat source, where cooling is slowest"
+        ],
+        "example": {
+          "text": "Cracking initiated in the heat-affected zone, where rapid cooling had produced a brittle, untempered microstructure.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_porosity",
+    "lang": "en",
+    "word": "porosity",
+    "pos": "noun",
+    "freqRank": 24000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "the presence of small voids or gas pockets within a solid material, typically formed during casting, welding, or sintering",
+        "distractors": [
+          "the presence of nonmetallic particles trapped within a solid material",
+          "a network of fine surface cracks caused by thermal cycling"
+        ],
+        "example": {
+          "text": "Excessive porosity in the casting reduced its effective load-bearing cross-section and lowered its fatigue strength.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_inclusion",
+    "lang": "en",
+    "word": "inclusion",
+    "pos": "noun",
+    "freqRank": 27000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "a nonmetallic particle, such as an oxide or sulfide, trapped within a metal's microstructure",
+        "distractors": [
+          "a small void or gas pocket trapped within a solidifying casting",
+          "a deliberately added alloying element dissolved uniformly in the metal"
+        ],
+        "example": {
+          "text": "The fatigue crack initiated at a hard oxide inclusion just beneath the shaft's surface.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_widmanstatten",
+    "lang": "en",
+    "word": "Widmanstätten",
+    "pos": "adjective",
+    "freqRank": 44000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing a distinctive microstructure of parallel plates or needles of one phase growing along specific crystallographic planes of another",
+        "distractors": [
+          "describing a microstructure of uniformly sized, rounded grains formed by slow equilibrium cooling",
+          "describing a microstructure produced only by mechanical cold working"
+        ],
+        "example": {
+          "text": "The overheated forging showed a coarse Widmanstätten pattern of ferrite plates radiating from the prior austenite grain boundaries.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  },
+  {
+    "id": "w_proeutectoid",
+    "lang": "en",
+    "word": "proeutectoid",
+    "pos": "adjective",
+    "freqRank": 41000,
+    "difficulty": "hard",
+    "tags": [
+      "materials-science"
+    ],
+    "audio": {
+      "en": null
+    },
+    "gloss": {
+      "en": {
+        "correct": "describing the phase that forms from austenite before the eutectoid reaction begins, as a steel cools through the two-phase region",
+        "distractors": [
+          "describing the phase that forms only after the eutectoid reaction is complete",
+          "describing an alloy composition that solidifies at a single, fixed temperature"
+        ],
+        "example": {
+          "text": "In the hypoeutectoid steel, proeutectoid ferrite formed at the austenite grain boundaries before the remaining austenite transformed to pearlite.",
+          "source": "generated",
+          "attribution": null
+        }
+      }
+    }
+  }
+]
