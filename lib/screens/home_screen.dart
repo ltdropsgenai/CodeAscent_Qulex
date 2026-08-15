@@ -350,30 +350,33 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
           Text(Strings.t(locale, 'quickPlay').toUpperCase(),
               style: QType.mono(size: 11, color: QColors.muted, spacing: 2.5)),
-          const SizedBox(height: 12),
-          for (var i = 0; i < kTracks.length; i++)
-            _TrackTile(
-              track: kTracks[i],
-              locale: locale,
-              selected: i == _selected,
-              onTap: () => setState(() => _selected = i),
-            ),
-          const SizedBox(height: 6),
+          const SizedBox(height: 10),
+          _RuledList(children: [
+            for (var i = 0; i < kTracks.length; i++)
+              _TrackTile(
+                track: kTracks[i],
+                locale: locale,
+                selected: i == _selected,
+                onTap: () => setState(() => _selected = i),
+              ),
+          ]),
+          const SizedBox(height: 20),
           _ModeChips(
             selected: _gameType,
             locale: locale,
             isPro: appState.isPro,
             onSelect: _selectMode,
           ),
-          const SizedBox(height: 12),
-          _ReviewButton(
-            due: due,
-            locale: locale,
-            onTap: () => _openGame(words, GameMode.review),
-          ),
-          const SizedBox(height: 9),
-          _MySetsButton(locale: locale, onTap: () => _openSets(words)),
-          const SizedBox(height: 18),
+          const SizedBox(height: 20),
+          _RuledList(children: [
+            _ReviewButton(
+              due: due,
+              locale: locale,
+              onTap: () => _openGame(words, GameMode.review),
+            ),
+            _MySetsButton(locale: locale, onTap: () => _openSets(words)),
+          ]),
+          const SizedBox(height: 22),
           _CoralButton(
             label: Strings.t(locale, 'startQuickPlay'),
             onPressed: words.isEmpty ? null : () => _startSelected(words),
@@ -454,6 +457,35 @@ class _StatStrip extends StatelessWidget {
       );
 }
 
+/// A flat, undecorated list: one hairline rule above and below the whole
+/// group, with a 1px divider between rows — never a box per row. Mirrors
+/// the treatment _StatStrip already used for the rank/streak/known strip,
+/// so every "list" on the home screen reads the same way instead of each
+/// row getting its own outlined card.
+class _RuledList extends StatelessWidget {
+  final List<Widget> children;
+  const _RuledList({required this.children});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        border: Border(
+          top: BorderSide(color: QColors.rule),
+          bottom: BorderSide(color: QColors.rule),
+        ),
+      ),
+      child: Column(children: [
+        for (var i = 0; i < children.length; i++) ...[
+          children[i],
+          if (i < children.length - 1)
+            Container(height: 1, color: QColors.rule),
+        ],
+      ]),
+    );
+  }
+}
+
 class _DailyBanner extends StatelessWidget {
   final String locale;
   final bool done;
@@ -463,14 +495,12 @@ class _DailyBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.fromLTRB(16, 15, 15, 15),
         decoration: BoxDecoration(
-          color: QColors.coral.withOpacity(0.06),
-          border: Border.all(color: QColors.coral),
-          borderRadius: BorderRadius.circular(kQRadius),
+          color: QColors.coral.withOpacity(0.07),
+          border: const Border(left: BorderSide(color: QColors.coral, width: 3)),
         ),
         child: Row(children: [
           Icon(done ? Icons.check_circle : Icons.calendar_today_outlined,
@@ -517,32 +547,29 @@ class _TrackTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 9),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(kQRadius),
-        onTap: onTap,
-        child: Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: QColors.panel,
-            border: Border.all(color: selected ? QColors.coral : QColors.rule),
-            borderRadius: BorderRadius.circular(kQRadius),
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 2),
+        color: selected ? QColors.coral.withOpacity(0.05) : Colors.transparent,
+        child: Row(children: [
+          Container(
+              width: 3,
+              height: 32,
+              color: selected ? QColors.coral : Colors.transparent),
+          const SizedBox(width: 13),
+          Icon(_icon, color: selected ? QColors.coral : QColors.muted, size: 19),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(_title, style: QType.serif(size: 16.5, color: QColors.cream)),
+              const SizedBox(height: 3),
+              Text(_sub.toUpperCase(),
+                  style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
+            ]),
           ),
-          child: Row(children: [
-            Icon(_icon, color: QColors.coral, size: 20),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(_title, style: QType.serif(size: 16.5, color: QColors.cream)),
-                const SizedBox(height: 3),
-                Text(_sub.toUpperCase(),
-                    style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
-              ]),
-            ),
-            _Radio(selected: selected),
-          ]),
-        ),
+          _Radio(selected: selected),
+        ]),
       ),
     );
   }
@@ -581,19 +608,14 @@ class _ReviewButton extends StatelessWidget {
         ? Strings.t(locale, 'reviewDue').replaceFirst('{n}', '$due')
         : Strings.t(locale, 'learnNew');
     final sub = due > 0 ? Strings.t(locale, 'reviewSub') : Strings.t(locale, 'learnSub');
+    final active = due > 0;
     return InkWell(
-      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          color: QColors.panel,
-          border: Border.all(color: due > 0 ? QColors.coral : QColors.rule),
-          borderRadius: BorderRadius.circular(kQRadius),
-        ),
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 2),
         child: Row(children: [
-          Icon(Icons.school_outlined, color: due > 0 ? QColors.coral : QColors.muted, size: 20),
-          const SizedBox(width: 13),
+          Icon(Icons.school_outlined, color: active ? QColors.coral : QColors.muted, size: 19),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(label, style: QType.serif(size: 16, color: QColors.cream)),
@@ -601,7 +623,7 @@ class _ReviewButton extends StatelessWidget {
               Text(sub, style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
             ]),
           ),
-          const Icon(Icons.chevron_right, color: QColors.dim),
+          Icon(Icons.chevron_right, color: active ? QColors.coral : QColors.dim, size: 20),
         ]),
       ),
     );
@@ -616,19 +638,13 @@ class _MySetsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          color: QColors.panel,
-          border: Border.all(color: QColors.rule),
-          borderRadius: BorderRadius.circular(kQRadius),
-        ),
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 2),
         child: Row(children: [
           const Icon(Icons.collections_bookmark_outlined,
-              color: QColors.coral, size: 20),
-          const SizedBox(width: 13),
+              color: QColors.coral, size: 19),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(Strings.t(locale, 'mySets'),
@@ -638,7 +654,7 @@ class _MySetsButton extends StatelessWidget {
                   style: QType.mono(size: 11.5, color: QColors.muted, spacing: 0.5)),
             ]),
           ),
-          const Icon(Icons.chevron_right, color: QColors.dim),
+          const Icon(Icons.chevron_right, color: QColors.dim, size: 20),
         ]),
       ),
     );
@@ -677,14 +693,12 @@ class _PlacementCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(kQRadius),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.fromLTRB(16, 15, 15, 15),
         decoration: BoxDecoration(
-          color: QColors.amber.withOpacity(0.07),
-          border: Border.all(color: QColors.amber),
-          borderRadius: BorderRadius.circular(kQRadius),
+          color: QColors.amber.withOpacity(0.08),
+          border: const Border(left: BorderSide(color: QColors.amber, width: 3)),
         ),
         child: Row(children: [
           const Icon(Icons.explore_outlined, color: QColors.amber, size: 20),
@@ -725,53 +739,59 @@ class _ModeChips extends StatelessWidget {
       (GameMode.reverse, Icons.swap_horiz, 'modeReverse'),
       (GameMode.listen, Icons.headphones_outlined, 'modeListen'),
     ];
-    return Row(children: [
-      for (var k = 0; k < items.length; k++) ...[
-        Expanded(
-          child: GestureDetector(
-            onTap: () => onSelect(items[k].$1),
-            child: () {
-              final mode = items[k].$1;
-              final isSel = selected == mode;
-              final locked =
-                  !isPro && (mode == GameMode.reverse || mode == GameMode.listen);
-              return Container(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                decoration: BoxDecoration(
-                  color: isSel ? QColors.coral.withOpacity(0.12) : QColors.panel,
-                  border: Border.all(color: isSel ? QColors.coral : QColors.rule),
-                  borderRadius: BorderRadius.circular(kQRadius),
-                ),
-                child: Column(children: [
-                  Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      Icon(items[k].$2,
-                          size: 18,
-                          color: isSel ? QColors.coral : QColors.muted),
-                      if (locked)
-                        Positioned(
-                          right: -9,
-                          top: -6,
-                          child: const Icon(Icons.lock,
-                              size: 10, color: QColors.coral),
-                        ),
-                    ],
+    // One segmented control (matches _LangToggle), not three separate boxes.
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: QColors.rule),
+        borderRadius: BorderRadius.circular(kQRadius),
+      ),
+      child: Row(children: [
+        for (var k = 0; k < items.length; k++)
+          Expanded(
+            child: GestureDetector(
+              onTap: () => onSelect(items[k].$1),
+              child: () {
+                final mode = items[k].$1;
+                final isSel = selected == mode;
+                final locked = !isPro &&
+                    (mode == GameMode.reverse || mode == GameMode.listen);
+                return Container(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  decoration: BoxDecoration(
+                    color: isSel ? QColors.coral.withOpacity(0.12) : Colors.transparent,
+                    border: k == 0
+                        ? null
+                        : const Border(left: BorderSide(color: QColors.rule)),
                   ),
-                  const SizedBox(height: 4),
-                  Text(Strings.t(locale, items[k].$3).toUpperCase(),
-                      style: QType.mono(
-                          size: 10.5,
-                          color: isSel ? QColors.coral : QColors.muted,
-                          spacing: 1)),
-                ]),
-              );
-            }(),
+                  child: Column(children: [
+                    Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        Icon(items[k].$2,
+                            size: 18,
+                            color: isSel ? QColors.coral : QColors.muted),
+                        if (locked)
+                          const Positioned(
+                            right: -9,
+                            top: -6,
+                            child: Icon(Icons.lock,
+                                size: 10, color: QColors.coral),
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    Text(Strings.t(locale, items[k].$3).toUpperCase(),
+                        style: QType.mono(
+                            size: 10.5,
+                            color: isSel ? QColors.coral : QColors.muted,
+                            spacing: 1)),
+                  ]),
+                );
+              }(),
+            ),
           ),
-        ),
-        if (k < items.length - 1) const SizedBox(width: 8),
-      ],
-    ]);
+      ]),
+    );
   }
 }
 
