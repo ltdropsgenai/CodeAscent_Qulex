@@ -55,10 +55,56 @@ class Voice {
 
   Future<Directory> _ensureCacheDir() async {
     if (_cacheDir != null) return _cacheDir!;
-    final base = await getTemporaryDirectory();
+    // Application-support, not temporary: the OS can wipe the temp dir at
+    // any time under storage pressure (and often does between app updates),
+    // which defeats the point of an offline cache. Support dir persists
+    // across app runs/updates and isn't user-visible.
+    final base = await getApplicationSupportDirectory();
     final dir = Directory('${base.path}/qulex_tts_cache');
     if (!await dir.exists()) await dir.create(recursive: true);
     return _cacheDir = dir;
+  }
+
+  // Durable cache is capped so it can't grow unbounded across a large
+  // library (15k+ headwords x up to 5 languages, plus example sentences).
+  // 150MB comfortably holds several thousand short clips.
+  static const _maxCacheBytes = 150 * 1024 * 1024;
+
+  /// Bumps a cached clip's mtime on every play so eviction (below) removes
+  /// the clips least recently *used*, not just the ones written longest ago.
+  Future<void> _touchCacheEntry(String path) async {
+    try {
+      await File(path).setLastModified(DateTime.now());
+    } catch (_) {}
+  }
+
+  /// Best-effort LRU sweep, run after every cache write. Deliberately not
+  /// awaited by callers — it must never add latency to playback, and all
+  /// its own errors are swallowed so a failed sweep is a no-op, not a crash.
+  Future<void> _enforceCacheLimit() async {
+    try {
+      final dir = await _ensureCacheDir();
+      final files = await dir.list().where((e) => e is File).cast<File>().toList();
+      if (files.isEmpty) return;
+      var total = 0;
+      final withStat = <MapEntry<File, FileStat>>[];
+      for (final f in files) {
+        final stat = await f.stat();
+        total += stat.size;
+        withStat.add(MapEntry(f, stat));
+      }
+      if (total <= _maxCacheBytes) return;
+      withStat.sort((a, b) => a.value.modified.compareTo(b.value.modified));
+      for (final entry in withStat) {
+        if (total <= _maxCacheBytes) break;
+        try {
+          await entry.key.delete();
+          total -= entry.value.size;
+        } catch (_) {}
+      }
+    } catch (_) {
+      // Housekeeping only — a failed sweep just means we check again next write.
+    }
   }
 
   // djb2 — fast, deterministic, plenty for a local filename (not security-sensitive).
@@ -139,6 +185,7 @@ class Voice {
       final bytes = await _download(url);
       if (bytes == null) return;
       await File(localPath).writeAsBytes(bytes, flush: true);
+      _enforceCacheLimit();
     } catch (_) {
       // Best-effort only — speak() will fetch (and fall back) on demand
       // if this didn't manage to warm the cache in time.
@@ -151,6 +198,7 @@ class Voice {
       final localPath = await _localCachePath(text, langCode);
       final localFile = File(localPath);
       if (await localFile.exists()) {
+        _touchCacheEntry(localPath);
         if (gen != _generation || gen == _fallbackGeneration) return false;
         await _player.play(DeviceFileSource(localPath));
         return true;
@@ -167,6 +215,7 @@ class Voice {
       final bytes = await _download(url);
       if (bytes == null) return false;
       await localFile.writeAsBytes(bytes, flush: true);
+      _enforceCacheLimit();
 
       // This request may have taken long enough that speak() already timed
       // out and fell back to the on-device voice (or a newer speak() call
