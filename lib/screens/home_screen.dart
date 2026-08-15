@@ -209,9 +209,9 @@ class _HomeScreenState extends State<HomeScreen> {
     if (mounted) setState(() {});
   }
 
-  /// Reverse and Listen are Pro-gated; Classic Quick Play stays free.
+  /// Reverse, Listen and Spelling are Pro-gated; Classic Quick Play stays free.
   static bool _isProMode(GameMode m) =>
-      m == GameMode.reverse || m == GameMode.listen;
+      m == GameMode.reverse || m == GameMode.listen || m == GameMode.spelling;
 
   Future<void> _openPaywall() async {
     await Navigator.of(context).push(PageRouteBuilder(
@@ -698,6 +698,7 @@ class _ModeChips extends StatelessWidget {
       (GameMode.quickPlay, 'modeClassic'),
       (GameMode.reverse, 'modeReverse'),
       (GameMode.listen, 'modeListen'),
+      (GameMode.spelling, 'modeSpelling'),
     ];
     // Plain text options, no container — size/weight/color signal selection.
     return Row(children: [
@@ -709,7 +710,9 @@ class _ModeChips extends StatelessWidget {
               final mode = items[k].$1;
               final isSel = selected == mode;
               final locked = !isPro &&
-                  (mode == GameMode.reverse || mode == GameMode.listen);
+                  (mode == GameMode.reverse ||
+                      mode == GameMode.listen ||
+                      mode == GameMode.spelling);
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Stack(

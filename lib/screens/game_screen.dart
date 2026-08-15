@@ -158,13 +158,37 @@ class _GameScreenState extends State<GameScreen> {
   }
 }
 
-class _GameView extends StatelessWidget {
+class _GameView extends StatefulWidget {
   final GameController c;
   final VoidCallback onExit;
   const _GameView({required this.c, required this.onExit});
 
   @override
+  State<_GameView> createState() => _GameViewState();
+}
+
+class _GameViewState extends State<_GameView> {
+  // Owned here (not in GameController) so it's purely a UI concern, and kept
+  // alive across the ~60x/sec rebuilds the countdown timer drives — a fresh
+  // TextEditingController every rebuild would reset the cursor/typed text.
+  final _spellCtrl = TextEditingController();
+  int? _shownForIndex;
+
+  @override
+  void dispose() {
+    _spellCtrl.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final c = widget.c;
+    final onExit = widget.onExit;
+    // New question dealt (including the very first) -> clear any leftover text.
+    if (_shownForIndex != c.index) {
+      _shownForIndex = c.index;
+      _spellCtrl.clear();
+    }
     final locale = c.locale;
     final w = c.current;
     final g = w.glossFor(locale);
@@ -239,7 +263,7 @@ class _GameView extends StatelessWidget {
             _DiffTag(difficulty: w.difficulty),
             const SizedBox(width: 12),
             Text(w.pos.toUpperCase(), style: QType.mono(size: 11, color: QColors.muted, spacing: 2)),
-            if (locale != 'en') ...[
+            if (locale != 'en' && !c.isSpelling) ...[
               const SizedBox(width: 12),
               _LangFlow(locale: locale, reverse: c.isReverse),
             ],
@@ -250,13 +274,24 @@ class _GameView extends StatelessWidget {
           const SizedBox(height: 8),
           _prompt(c, w, g, locale, revealed),
           const SizedBox(height: 22),
-          for (final opt in c.currentOptions)
-            _Option(
-              label: opt,
-              index: c.currentOptions.indexOf(opt),
-              state: _stateFor(opt, c.correctAnswer, revealed, c.chosen),
-              onTap: revealed ? null : () => c.choose(opt),
-            ),
+          if (c.isSpelling)
+            _SpellInput(
+              controller: _spellCtrl,
+              enabled: !revealed,
+              locale: locale,
+              onSubmit: (text) {
+                if (text.trim().isEmpty) return;
+                c.choose(text);
+              },
+            )
+          else
+            for (final opt in c.currentOptions)
+              _Option(
+                label: opt,
+                index: c.currentOptions.indexOf(opt),
+                state: _stateFor(opt, c.correctAnswer, revealed, c.chosen),
+                onTap: revealed ? null : () => c.choose(opt),
+              ),
           if (revealed) ...[
             const SizedBox(height: 8),
             TweenAnimationBuilder<double>(
@@ -313,6 +348,7 @@ class _GameView extends StatelessWidget {
   String _askKey(GameController c) {
     if (c.isReverse) return 'whichWord';
     if (c.isListen) return 'listenPrompt';
+    if (c.isSpelling) return 'spellPrompt';
     return 'ask';
   }
 
@@ -322,9 +358,9 @@ class _GameView extends StatelessWidget {
       return Text(g.correct,
           style: QType.serif(size: 30, color: QColors.cream, height: 1.15));
     }
-    // Listen (before reveal): hide the word behind a tap-to-hear speaker —
-    // but only when voice is on, or the round would be unplayable.
-    if (c.isListen && !revealed && appState.voiceOn) {
+    // Listen / Spelling (before reveal): hide the word behind a tap-to-hear
+    // speaker — but only when voice is on, or the round would be unplayable.
+    if ((c.isListen || c.isSpelling) && !revealed && appState.voiceOn) {
       return GestureDetector(
         onTap: () => Voice.instance.speak(w.word, langCode: w.lang, headword: w.word, headwordPos: w.pos),
         child: Row(children: [
@@ -474,6 +510,72 @@ class _Option extends StatelessWidget {
   }
 }
 
+/// Free-text answer field for Spelling mode — the one non-multiple-choice
+/// interaction in the game, so it gets its own input instead of [_Option].
+class _SpellInput extends StatelessWidget {
+  final TextEditingController controller;
+  final bool enabled;
+  final String locale;
+  final ValueChanged<String> onSubmit;
+  const _SpellInput({
+    required this.controller,
+    required this.enabled,
+    required this.locale,
+    required this.onSubmit,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      TextField(
+        controller: controller,
+        enabled: enabled,
+        autocorrect: false,
+        enableSuggestions: false,
+        textInputAction: TextInputAction.done,
+        style: QType.sans(size: 18, color: QColors.cream),
+        cursorColor: QColors.coral,
+        onSubmitted: onSubmit,
+        decoration: InputDecoration(
+          hintText: Strings.t(locale, 'typeTheWord'),
+          hintStyle: QType.sans(size: 16, color: QColors.dim),
+          filled: true,
+          fillColor: QColors.panel,
+          contentPadding: const EdgeInsets.all(15),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(kQRadius),
+            borderSide: const BorderSide(color: QColors.rule),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(kQRadius),
+            borderSide: const BorderSide(color: QColors.coral),
+          ),
+          disabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(kQRadius),
+            borderSide: const BorderSide(color: QColors.rule),
+          ),
+        ),
+      ),
+      if (enabled) ...[
+        const SizedBox(height: 10),
+        SizedBox(
+          width: double.infinity,
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              side: const BorderSide(color: QColors.rule),
+              padding: const EdgeInsets.symmetric(vertical: 13),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(kQRadius)),
+            ),
+            onPressed: () => onSubmit(controller.text),
+            child: Text(Strings.t(locale, 'check').toUpperCase(),
+                style: QType.mono(size: 12, color: QColors.ink, spacing: 2)),
+          ),
+        ),
+      ],
+    ]);
+  }
+}
+
 class _Reveal extends StatelessWidget {
   final GameController c;
   final Gloss g;
@@ -493,6 +595,11 @@ class _Reveal extends StatelessWidget {
             style: QType.mono(size: 11, color: ok ? QColors.coral : QColors.amber, spacing: 2)),
         const SizedBox(height: 6),
         Text('${c.current.word} — ${g.correct}', style: QType.serif(size: 17, color: QColors.cream)),
+        if (c.isSpelling && !ok && (c.chosen ?? '').trim().isNotEmpty) ...[
+          const SizedBox(height: 4),
+          Text('${Strings.t(locale, 'youTyped')}: “${c.chosen}”',
+              style: QType.sans(size: 13, color: QColors.amber)),
+        ],
         const SizedBox(height: 7),
         if (g.example.isNotEmpty)
           Text('“${g.example}”', style: QType.sans(size: 13.5, color: QColors.muted, height: 1.5).copyWith(fontStyle: FontStyle.italic)),

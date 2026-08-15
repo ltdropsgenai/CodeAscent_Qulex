@@ -15,6 +15,7 @@ enum GameMode {
   daily, // timed, deterministic 10-word set for today
   reverse, // timed; definition shown -> pick the WORD
   listen, // timed; word spoken (hidden) -> pick the meaning
+  spelling, // timed; word spoken (hidden) -> type the WORD (dictation)
 }
 
 /// Holds all state for one match and records results into the ProgressStore.
@@ -39,10 +40,16 @@ class GameController extends ChangeNotifier {
 
   bool get isReverse => mode == GameMode.reverse;
   bool get isListen => mode == GameMode.listen;
+  bool get isSpelling => mode == GameMode.spelling;
 
-  /// The answer that counts as correct this round (a word in reverse mode,
-  /// a meaning otherwise).
-  String get correctAnswer => isReverse ? current.word : _g.correct;
+  /// The answer that counts as correct this round (the word itself in
+  /// reverse/spelling modes, a meaning otherwise).
+  String get correctAnswer =>
+      (isReverse || isSpelling) ? current.word : _g.correct;
+
+  /// Case/whitespace-insensitive match — spelling mode shouldn't fail someone
+  /// over a stray capital letter or trailing space from the keyboard.
+  String _normalize(String s) => s.trim().toLowerCase();
 
   /// Reverse mode: three WORDS to choose from (correct + 2 same-difficulty).
   List<String> _reverseOptions() {
@@ -246,7 +253,8 @@ class GameController extends ChangeNotifier {
     chosen = null;
     wasCorrect = false;
     timedOut = false;
-    currentOptions = isReverse ? _reverseOptions() : _g.shuffledOptions();
+    currentOptions =
+        isReverse ? _reverseOptions() : (isSpelling ? const [] : _g.shuffledOptions());
     remainingMs = totalMs.toDouble();
     if (!isReverse) {
       Voice.instance.speak(current.word,
@@ -270,7 +278,9 @@ class GameController extends ChangeNotifier {
     if (phase != Phase.question) return;
     _timer?.cancel();
     chosen = option;
-    wasCorrect = option == correctAnswer;
+    wasCorrect = isSpelling
+        ? _normalize(option) == _normalize(correctAnswer)
+        : option == correctAnswer;
     if (wasCorrect) {
       correctCount++;
       streak++;
@@ -291,8 +301,8 @@ class GameController extends ChangeNotifier {
   }
 
   void _speakReveal() {
-    // Reverse + Listen reinforce the target word; classic reads the meaning.
-    if (isReverse || isListen) {
+    // Reverse + Listen + Spelling reinforce the target word; classic reads the meaning.
+    if (isReverse || isListen || isSpelling) {
       Voice.instance.speak(current.word,
           langCode: current.lang, headword: current.word, headwordPos: current.pos);
     } else {
