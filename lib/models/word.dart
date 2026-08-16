@@ -1,14 +1,21 @@
 /// A per-language meaning of a word: the correct definition, two distractors,
-/// and an example sentence — all in one language.
+/// and one or two example sentences — all in one language.
 class Gloss {
   final String correct;
   final List<String> distractors;
   final String example;
 
+  /// A second, distinct example sentence giving another context/usage —
+  /// content-richness pass, not yet backfilled for every word, so this is
+  /// null wherever it hasn't been generated yet. UI should treat it as
+  /// optional bonus context, not something every word is guaranteed to have.
+  final String? example2;
+
   const Gloss({
     required this.correct,
     required this.distractors,
     required this.example,
+    this.example2,
   });
 
   factory Gloss.fromJson(Map<String, dynamic> j) => Gloss(
@@ -16,6 +23,7 @@ class Gloss {
         distractors:
             (j['distractors'] as List).map((e) => e as String).toList(),
         example: ((j['example'] as Map<String, dynamic>)['text']) as String,
+        example2: (j['example2'] as Map<String, dynamic>?)?['text'] as String?,
       );
 
   /// Correct answer + distractors, shuffled for display.

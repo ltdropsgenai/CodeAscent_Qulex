@@ -603,6 +603,10 @@ class _Reveal extends StatelessWidget {
         const SizedBox(height: 7),
         if (g.example.isNotEmpty)
           Text('“${g.example}”', style: QType.sans(size: 13.5, color: QColors.muted, height: 1.5).copyWith(fontStyle: FontStyle.italic)),
+        if ((g.example2 ?? '').isNotEmpty) ...[
+          const SizedBox(height: 5),
+          Text('“${g.example2}”', style: QType.sans(size: 13.5, color: QColors.muted, height: 1.5).copyWith(fontStyle: FontStyle.italic)),
+        ],
         const SizedBox(height: 6),
         Row(children: [
           if (c.currentFlagged)
