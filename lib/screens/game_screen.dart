@@ -5,6 +5,7 @@ import '../game/game_controller.dart';
 import '../game/track.dart';
 import '../l10n/strings.dart';
 import '../models/word.dart';
+import '../services/tutor.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
@@ -651,7 +652,99 @@ class _Reveal extends StatelessWidget {
                 style: QType.mono(size: 11, color: QColors.coral, spacing: 1)),
           ),
         ]),
+        _ExplainButton(word: c.current, g: g, locale: locale),
       ]),
+    );
+  }
+}
+
+/// Bounded "explain this word" AI helper — a single tap fetches one short
+/// explanation + a fresh example via [Tutor], shown inline. Not a chat: no
+/// follow-up input, no conversation state, so the cost stays capped per
+/// word rather than growing with how much a user types.
+class _ExplainButton extends StatefulWidget {
+  final Word word;
+  final Gloss g;
+  final String locale;
+  const _ExplainButton({required this.word, required this.g, required this.locale});
+
+  @override
+  State<_ExplainButton> createState() => _ExplainButtonState();
+}
+
+class _ExplainButtonState extends State<_ExplainButton> {
+  WordExplanation? _result;
+  bool _loading = false;
+  bool _failed = false;
+
+  Future<void> _fetch() async {
+    setState(() {
+      _loading = true;
+      _failed = false;
+    });
+    final r = await Tutor.instance.explain(
+      wordId: widget.word.id,
+      word: widget.word.word,
+      definition: widget.g.correct,
+      lang: widget.locale,
+    );
+    if (!mounted) return;
+    setState(() {
+      _loading = false;
+      _result = r;
+      _failed = r == null;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final locale = widget.locale;
+    if (_result != null) {
+      return Container(
+        margin: const EdgeInsets.only(top: 8),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: QColors.panel,
+          border: Border.all(color: QColors.rule),
+          borderRadius: BorderRadius.circular(kQRadius),
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Row(children: [
+            const Icon(Icons.auto_awesome, size: 13, color: QColors.coral),
+            const SizedBox(width: 6),
+            Text(Strings.t(locale, 'explainThis').toUpperCase(),
+                style: QType.mono(size: 10, color: QColors.coral, spacing: 1.2)),
+          ]),
+          const SizedBox(height: 6),
+          Text(_result!.explanation,
+              style: QType.sans(size: 13, color: QColors.ink, height: 1.4)),
+          const SizedBox(height: 6),
+          Text('“${_result!.example}”',
+              style: QType.sans(size: 12.5, color: QColors.muted, height: 1.4)
+                  .copyWith(fontStyle: FontStyle.italic)),
+        ]),
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.only(top: 4),
+      child: TextButton.icon(
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.zero,
+          minimumSize: const Size(0, 28),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        onPressed: _loading ? null : _fetch,
+        icon: _loading
+            ? const SizedBox(
+                width: 13,
+                height: 13,
+                child: CircularProgressIndicator(strokeWidth: 2, color: QColors.coral))
+            : Icon(_failed ? Icons.refresh : Icons.auto_awesome, size: 14, color: QColors.coral),
+        label: Text(
+            Strings.t(locale, _loading ? 'explainLoading' : (_failed ? 'explainRetry' : 'explainThis'))
+                .toUpperCase(),
+            style: QType.mono(size: 11, color: QColors.coral, spacing: 1)),
+      ),
     );
   }
 }
