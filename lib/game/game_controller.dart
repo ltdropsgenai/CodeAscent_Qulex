@@ -189,9 +189,15 @@ class GameController extends ChangeNotifier {
         final batch = words.skip(i).take(batchSize);
         await Future.wait(batch.map((w) async {
           await Voice.instance.prefetch(w.word,
-              langCode: w.lang, headword: w.word, headwordPos: w.pos);
+              langCode: w.lang,
+              headword: w.word,
+              headwordPos: w.pos,
+              sayAs: w.say);
           await Voice.instance.prefetch(w.glossFor(locale).correct,
-              langCode: locale, headword: w.word, headwordPos: w.pos);
+              langCode: locale,
+              headword: w.word,
+              headwordPos: w.pos,
+              sayAs: w.say);
         }));
       }
     }();
@@ -258,7 +264,10 @@ class GameController extends ChangeNotifier {
     remainingMs = totalMs.toDouble();
     if (!isReverse) {
       Voice.instance.speak(current.word,
-          langCode: current.lang, headword: current.word, headwordPos: current.pos);
+          langCode: current.lang,
+          headword: current.word,
+          headwordPos: current.pos,
+          sayAs: current.say);
     }
     _timer?.cancel();
     if (timed) {
@@ -304,10 +313,16 @@ class GameController extends ChangeNotifier {
     // Reverse + Listen + Spelling reinforce the target word; classic reads the meaning.
     if (isReverse || isListen || isSpelling) {
       Voice.instance.speak(current.word,
-          langCode: current.lang, headword: current.word, headwordPos: current.pos);
+          langCode: current.lang,
+          headword: current.word,
+          headwordPos: current.pos,
+          sayAs: current.say);
     } else {
       Voice.instance.speak(_g.correct,
-          langCode: locale, headword: current.word, headwordPos: current.pos);
+          langCode: locale,
+          headword: current.word,
+          headwordPos: current.pos,
+          sayAs: current.say);
     }
   }
 

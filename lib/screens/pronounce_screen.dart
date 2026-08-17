@@ -35,7 +35,8 @@ class _PronounceScreenState extends State<PronounceScreen> {
       Voice.instance.speak(widget.word.word,
           langCode: widget.word.lang,
           headword: widget.word.word,
-          headwordPos: widget.word.pos);
+          headwordPos: widget.word.pos,
+          sayAs: widget.word.say);
     }
     _init();
   }
@@ -165,7 +166,10 @@ class _PronounceScreenState extends State<PronounceScreen> {
                 GestureDetector(
                   onTap: () =>
                       Voice.instance.speak(w.word,
-                          langCode: w.lang, headword: w.word, headwordPos: w.pos),
+                          langCode: w.lang,
+                          headword: w.word,
+                          headwordPos: w.pos,
+                          sayAs: w.say),
                   child: const Icon(Icons.volume_up, color: QColors.coral, size: 26),
                 ),
               ]),

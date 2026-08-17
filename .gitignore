@@ -64,3 +64,6 @@ _to_delete/
 
 # Secrets
 *.env
+
+# TTS A/B probe output (regenerate with seed_heteronym_audio.ps1)
+vo_heteronyms/

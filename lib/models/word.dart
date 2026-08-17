@@ -41,6 +41,21 @@ class Word {
   final String lang;
   final String word;
   final String pos;
+
+  /// Optional TTS-only respelling for THIS entry's specific sense.
+  ///
+  /// A catalogue row is one meaning, so it can state its own pronunciation
+  /// directly instead of us inferring it from spelling + POS at runtime.
+  /// That inference is unsound for heteronyms whose readings share a part of
+  /// speech (the metal "lead" and a sales "lead" are both nouns), so this
+  /// field is the authoritative answer where it's set. Null for the vast
+  /// majority of words, which need no help.
+  ///
+  /// Audio only — never shown on screen. Today it holds a trick-spelling
+  /// ("leed", "wined"); when a model with per-request phoneme control lands
+  /// it can hold IPA instead, without touching call sites.
+  final String? say;
+
   final int freqRank;
   final String difficulty; // easy | medium | hard
   final List<String> tags;
@@ -51,6 +66,7 @@ class Word {
     required this.lang,
     required this.word,
     required this.pos,
+    this.say,
     required this.freqRank,
     required this.difficulty,
     required this.tags,
@@ -66,6 +82,7 @@ class Word {
       lang: (j['lang'] as String?) ?? 'en',
       word: j['word'] as String,
       pos: j['pos'] as String,
+      say: j['say'] as String?,
       freqRank: (j['freqRank'] as num).toInt(),
       difficulty: j['difficulty'] as String,
       tags: (j['tags'] as List).map((e) => e as String).toList(),

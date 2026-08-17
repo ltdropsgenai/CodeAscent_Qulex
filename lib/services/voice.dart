@@ -134,13 +134,15 @@ class Voice {
     String langCode = 'en',
     String? headword,
     String? headwordPos,
+    String? sayAs,
   }) async {
     if (!appState.voiceOn) return;
     final gen = ++_generation;
     await _player.stop();
     await _fallbackTts.stop();
 
-    final spoken = ttsRespell(text, headword: headword, headwordPos: headwordPos);
+    final spoken = ttsRespell(text,
+        headword: headword, headwordPos: headwordPos, headwordSay: sayAs);
 
     bool played = false;
     try {
@@ -166,11 +168,13 @@ class Voice {
     String langCode = 'en',
     String? headword,
     String? headwordPos,
+    String? sayAs,
   }) async {
     if (!appState.voiceOn) return;
     if (!SupabaseConfig.isConfigured) return;
     try {
-      final spoken = ttsRespell(text, headword: headword, headwordPos: headwordPos);
+      final spoken = ttsRespell(text,
+          headword: headword, headwordPos: headwordPos, headwordSay: sayAs);
       final localPath = await _localCachePath(spoken, langCode);
       if (await File(localPath).exists()) return;
 

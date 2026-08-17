@@ -363,7 +363,8 @@ class _GameViewState extends State<_GameView> {
     // speaker — but only when voice is on, or the round would be unplayable.
     if ((c.isListen || c.isSpelling) && !revealed && appState.voiceOn) {
       return GestureDetector(
-        onTap: () => Voice.instance.speak(w.word, langCode: w.lang, headword: w.word, headwordPos: w.pos),
+        onTap: () => Voice.instance.speak(w.word,
+            langCode: w.lang, headword: w.word, headwordPos: w.pos, sayAs: w.say),
         child: Row(children: [
           Container(
             width: 64,
@@ -436,7 +437,11 @@ class _SayButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Voice.instance.speak(word.word, langCode: word.lang, headword: word.word, headwordPos: word.pos),
+      onTap: () => Voice.instance.speak(word.word,
+          langCode: word.lang,
+          headword: word.word,
+          headwordPos: word.pos,
+          sayAs: word.say),
       child: Container(
         width: 38,
         height: 38,

@@ -71,7 +71,11 @@ class _PlacementScreenState extends State<PlacementScreen> {
     _selected = null;
     _answered = false;
     if (appState.voiceOn) {
-      Voice.instance.speak(best.word, langCode: best.lang);
+      Voice.instance.speak(best.word,
+          langCode: best.lang,
+          headword: best.word,
+          headwordPos: best.pos,
+          sayAs: best.say);
     }
   }
 
