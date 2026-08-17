@@ -258,71 +258,95 @@ class _GameViewState extends State<_GameView> {
               Text(Strings.t(locale, 'review'),
                   style: QType.mono(size: 11, color: QColors.coral, spacing: 1.5)),
             ]),
-          const Spacer(),
-          // meta
-          Row(children: [
-            _DiffTag(difficulty: w.difficulty),
-            const SizedBox(width: 12),
-            Text(w.pos.toUpperCase(), style: QType.mono(size: 11, color: QColors.muted, spacing: 2)),
-            if (locale != 'en' && !c.isSpelling) ...[
-              const SizedBox(width: 12),
-              _LangFlow(locale: locale, reverse: c.isReverse),
-            ],
-          ]),
-          const SizedBox(height: 8),
-          Text(Strings.t(locale, _askKey(c)).toUpperCase(),
-              style: QType.mono(size: 11.5, color: QColors.muted, spacing: 3)),
-          const SizedBox(height: 8),
-          _prompt(c, w, g, locale, revealed),
-          const SizedBox(height: 22),
-          if (c.isSpelling)
-            _SpellInput(
-              controller: _spellCtrl,
-              enabled: !revealed,
-              locale: locale,
-              onSubmit: (text) {
-                if (text.trim().isEmpty) return;
-                c.choose(text);
-              },
-            )
-          else
-            for (final opt in c.currentOptions)
-              _Option(
-                label: opt,
-                index: c.currentOptions.indexOf(opt),
-                state: _stateFor(opt, c.correctAnswer, revealed, c.chosen),
-                onTap: revealed ? null : () => c.choose(opt),
+          // Everything between the timer and the Next button scrolls now.
+          // The "Explain this word" panel expands inline on tap; inside a plain
+          // Column the two Spacers just collapsed and then the Next button was
+          // pushed off the bottom of the screen with no way to reach it, which
+          // left the round unfinishable. IntrinsicHeight plus a min-height of
+          // the viewport keeps the original spread-out layout while the content
+          // fits, and starts scrolling only once it doesn't.
+          Expanded(
+            child: LayoutBuilder(
+              builder: (context, constraints) => SingleChildScrollView(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                  child: IntrinsicHeight(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                      const Spacer(),
+                      // meta
+                      Row(children: [
+                        _DiffTag(difficulty: w.difficulty),
+                        const SizedBox(width: 12),
+                        Text(w.pos.toUpperCase(), style: QType.mono(size: 11, color: QColors.muted, spacing: 2)),
+                        if (locale != 'en' && !c.isSpelling) ...[
+                          const SizedBox(width: 12),
+                          _LangFlow(locale: locale, reverse: c.isReverse),
+                        ],
+                      ]),
+                      const SizedBox(height: 8),
+                      Text(Strings.t(locale, _askKey(c)).toUpperCase(),
+                          style: QType.mono(size: 11.5, color: QColors.muted, spacing: 3)),
+                      const SizedBox(height: 8),
+                      _prompt(c, w, g, locale, revealed),
+                      const SizedBox(height: 22),
+                      if (c.isSpelling)
+                        _SpellInput(
+                          controller: _spellCtrl,
+                          enabled: !revealed,
+                          locale: locale,
+                          onSubmit: (text) {
+                            if (text.trim().isEmpty) return;
+                            c.choose(text);
+                          },
+                        )
+                      else
+                        for (final opt in c.currentOptions)
+                          _Option(
+                            label: opt,
+                            index: c.currentOptions.indexOf(opt),
+                            state: _stateFor(opt, c.correctAnswer, revealed, c.chosen),
+                            onTap: revealed ? null : () => c.choose(opt),
+                          ),
+                      if (revealed) ...[
+                        const SizedBox(height: 8),
+                        TweenAnimationBuilder<double>(
+                          key: ValueKey(c.index),
+                          tween: Tween(begin: 0.0, end: 1.0),
+                          duration: const Duration(milliseconds: 260),
+                          curve: Curves.easeOut,
+                          builder: (_, t, child) => Opacity(
+                            opacity: t.clamp(0.0, 1.0),
+                            child: Transform.translate(offset: Offset(0, (1 - t) * 8), child: child),
+                          ),
+                          child: _Reveal(c: c, g: g, locale: locale),
+                        ),
+                      ],
+                      if (revealed && !c.currentKnown) ...[
+                        const SizedBox(height: 8),
+                        Center(
+                          child: TextButton.icon(
+                            onPressed: () {
+                              c.markCurrentKnown();
+                              c.next();
+                            },
+                            icon: const Icon(Icons.check_circle_outline,
+                                size: 15, color: QColors.dim),
+                            label: Text(Strings.t(locale, 'knowIt').toUpperCase(),
+                                style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
+                          ),
+                        ),
+                      ],
+                      const Spacer(flex: 2),
+                      ],
+                    ),
+                  ),
+                ),
               ),
-          if (revealed) ...[
-            const SizedBox(height: 8),
-            TweenAnimationBuilder<double>(
-              key: ValueKey(c.index),
-              tween: Tween(begin: 0.0, end: 1.0),
-              duration: const Duration(milliseconds: 260),
-              curve: Curves.easeOut,
-              builder: (_, t, child) => Opacity(
-                opacity: t.clamp(0.0, 1.0),
-                child: Transform.translate(offset: Offset(0, (1 - t) * 8), child: child),
-              ),
-              child: _Reveal(c: c, g: g, locale: locale),
             ),
-          ],
-          if (revealed && !c.currentKnown) ...[
-            const SizedBox(height: 8),
-            Center(
-              child: TextButton.icon(
-                onPressed: () {
-                  c.markCurrentKnown();
-                  c.next();
-                },
-                icon: const Icon(Icons.check_circle_outline,
-                    size: 15, color: QColors.dim),
-                label: Text(Strings.t(locale, 'knowIt').toUpperCase(),
-                    style: QType.mono(size: 11, color: QColors.muted, spacing: 1)),
-              ),
-            ),
-          ],
-          const Spacer(flex: 2),
+          ),
+          const SizedBox(height: 12),
           _CoralBtn(
             label: c.isLast ? Strings.t(locale, 'seeResults') : Strings.t(locale, 'next'),
             enabled: revealed,
