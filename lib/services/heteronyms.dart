@@ -56,6 +56,15 @@ final Map<String, _Heteronym> _heteronyms = {
 
 final RegExp _wordBoundary = RegExp(r'\b[A-Za-z]+\b');
 
+/// True when [word] has more than one accepted reading in English.
+///
+/// Used by the pronunciation practice screen to be honest with the learner:
+/// speech recognition returns orthography, so both readings of "wind" come
+/// back as the same transcript. We can confirm the word was recognized, but
+/// we cannot confirm which reading was spoken — and a teaching app should say
+/// so rather than award full marks it hasn't earned.
+bool isHeteronym(String word) => _heteronyms.containsKey(word.toLowerCase());
+
 /// Rewrites [text] for the TTS engine only, substituting any known heteronym
 /// with a trick-spelling.
 ///

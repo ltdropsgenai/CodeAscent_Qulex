@@ -3,14 +3,32 @@ import 'package:speech_to_text/speech_to_text.dart';
 
 import '../l10n/strings.dart';
 import '../models/word.dart';
+import '../services/heteronyms.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/wordmark.dart';
 
-/// Pronunciation practice: hear the word, say it, get scored by on-device
-/// speech recognition. Degrades gracefully where speech isn't available
-/// (e.g. some web/desktop targets) by showing a friendly notice.
+/// Pronunciation practice: hear the target, say it back, get scored by
+/// on-device speech recognition. Degrades gracefully where speech isn't
+/// available (some web/desktop targets) by showing a friendly notice.
+///
+/// Two modes:
+///  - SENTENCE (default where possible) — the learner says the word inside its
+///    example sentence. Recognizers are markedly more reliable given several
+///    words of context than on a single token, and saying a word in a sentence
+///    is closer to the thing we actually want to teach. The carrier is always
+///    the ENGLISH example, because headwords are always English; the localized
+///    examples are translations and don't contain the target word.
+///  - WORD ONLY — the fallback, and the only option for the ~6% of entries
+///    whose example uses an inflected form ("held" for "hold") rather than the
+///    headword itself.
+///
+/// Honesty about heteronyms: speech recognition hands back spelling, not
+/// sound, so both readings of "wind" arrive as the same transcript. For those
+/// words we can confirm the learner was understood but NOT that they chose the
+/// right reading — so we say that plainly instead of awarding a score the
+/// check cannot support.
 class PronounceScreen extends StatefulWidget {
   final Word word;
   const PronounceScreen({super.key, required this.word});
@@ -24,21 +42,44 @@ class _PronounceScreenState extends State<PronounceScreen> {
   bool _ready = false;
   bool _unsupported = false;
   bool _listening = false;
+  bool _sentenceMode = false;
   String _heard = '';
   int _score = -1; // -1 none, 0 miss, 1 close, 2 great
+
+  /// The English example sentence, used only when it contains the headword as
+  /// a whole word — otherwise there is nothing meaningful to check against.
+  String get _carrier {
+    final ex = widget.word.glossFor('en').example.trim();
+    if (ex.isEmpty) return '';
+    final re = RegExp(r'\b' + RegExp.escape(widget.word.word) + r'\b',
+        caseSensitive: false);
+    return re.hasMatch(ex) ? ex : '';
+  }
+
+  bool get _canUseSentence => _carrier.isNotEmpty;
+
+  /// True where a score would overclaim: the transcript cannot distinguish the
+  /// readings, so "Nailed it" would be a lie.
+  bool get _unverifiable =>
+      isHeteronym(widget.word.word) || (widget.word.say?.isNotEmpty ?? false);
+
+  String get _prompt => _sentenceMode ? _carrier : widget.word.word;
 
   @override
   void initState() {
     super.initState();
-    // Speak the target once so the learner has a model to imitate.
-    if (appState.voiceOn) {
-      Voice.instance.speak(widget.word.word,
-          langCode: widget.word.lang,
-          headword: widget.word.word,
-          headwordPos: widget.word.pos,
-          sayAs: widget.word.say);
-    }
+    _sentenceMode = _canUseSentence;
+    _speakPrompt();
     _init();
+  }
+
+  void _speakPrompt() {
+    if (!appState.voiceOn) return;
+    Voice.instance.speak(_prompt,
+        langCode: widget.word.lang,
+        headword: widget.word.word,
+        headwordPos: widget.word.pos,
+        sayAs: widget.word.say);
   }
 
   Future<void> _init() async {
@@ -90,27 +131,58 @@ class _PronounceScreenState extends State<PronounceScreen> {
         setState(() {
           _heard = r.recognizedWords;
           if (r.finalResult) {
-            _score = _grade(_heard, widget.word.word);
+            _score = _sentenceMode
+                ? _gradeSentence(_heard, _carrier, widget.word.word)
+                : _grade(_heard, widget.word.word);
             _listening = false;
           }
         });
       },
-      localeId: Strings.ttsLang[widget.word.lang] ?? 'en-US',
-      listenFor: const Duration(seconds: 5),
+      // Headwords are always English, and so is the carrier sentence.
+      localeId: 'en-US',
+      listenFor: Duration(seconds: _sentenceMode ? 9 : 5),
       pauseFor: const Duration(seconds: 3),
     );
   }
 
+  static String _norm(String s) => s.toLowerCase().replaceAll(RegExp('[^a-z ]'), '');
+
+  static List<String> _tokens(String s) =>
+      _norm(s).split(' ').where((t) => t.isNotEmpty).toList();
+
   int _grade(String heard, String target) {
-    String norm(String s) =>
-        s.toLowerCase().replaceAll(RegExp('[^a-z]'), '');
-    final h = norm(heard);
-    final t = norm(target);
+    final h = _norm(heard).replaceAll(' ', '');
+    final t = _norm(target).replaceAll(' ', '');
     if (h.isEmpty || t.isEmpty) return 0;
     if (h == t || h.contains(t)) return 2;
-    final d = _lev(h, t);
-    if (d <= 2) return 1;
-    return 0;
+    return _lev(h, t) <= 2 ? 1 : 0;
+  }
+
+  /// Sentence grading has two parts: did the target word survive, and how much
+  /// of the sentence came through. A learner who says only the target word gets
+  /// credit for it but not full marks; one who says the sentence without the
+  /// target word gets none, because the target is the point.
+  int _gradeSentence(String heard, String carrier, String target) {
+    final heardTokens = _tokens(heard);
+    if (heardTokens.isEmpty) return 0;
+    final want = _tokens(carrier);
+    final t = _norm(target).trim();
+
+    final hitTarget = heardTokens.any((tok) => tok == t || _lev(tok, t) <= 1);
+    if (!hitTarget) return 0;
+
+    final pool = List<String>.from(heardTokens);
+    var matched = 0;
+    for (final w in want) {
+      final i = pool.indexWhere((tok) => tok == w || _lev(tok, w) <= 1);
+      if (i >= 0) {
+        matched++;
+        pool.removeAt(i);
+      }
+    }
+    final coverage = want.isEmpty ? 0.0 : matched / want.length;
+    if (coverage >= 0.6) return 2;
+    return 1;
   }
 
   int _lev(String a, String b) {
@@ -140,66 +212,136 @@ class _PronounceScreenState extends State<PronounceScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(24, 18, 24, 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(children: [
-                const Wordmark(size: 22),
-                const SizedBox(width: 9),
-                Expanded(
-                  child: Text(Strings.t(locale, 'practiceSay').toUpperCase(),
-                      style:
-                          QType.mono(size: 14, color: QColors.coral, spacing: 3)),
-                ),
-                IconButton(
-                  onPressed: () => Navigator.of(context).maybePop(),
-                  icon: const Icon(Icons.close, color: QColors.muted),
-                ),
-              ]),
-              const Spacer(flex: 2),
-              Row(children: [
-                Flexible(
-                  child: Text(w.word,
-                      style: QType.serif(size: 44, color: QColors.cream)),
-                ),
-                const SizedBox(width: 14),
-                GestureDetector(
-                  onTap: () =>
-                      Voice.instance.speak(w.word,
-                          langCode: w.lang,
-                          headword: w.word,
-                          headwordPos: w.pos,
-                          sayAs: w.say),
-                  child: const Icon(Icons.volume_up, color: QColors.coral, size: 26),
-                ),
-              ]),
-              const SizedBox(height: 10),
-              Text(w.glossFor(locale).correct,
-                  style: QType.sans(size: 14, color: QColors.muted, height: 1.4)),
-              const Spacer(flex: 2),
-              if (_unsupported)
-                Text(Strings.t(locale, 'pronounceUnsupported'),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(children: [
+                  const Wordmark(size: 22),
+                  const SizedBox(width: 9),
+                  Expanded(
+                    child: Text(
+                        Strings.t(locale,
+                                _sentenceMode ? 'practiceSentence' : 'practiceSay')
+                            .toUpperCase(),
+                        style: QType.mono(
+                            size: 14, color: QColors.coral, spacing: 3)),
+                  ),
+                  IconButton(
+                    onPressed: () => Navigator.of(context).maybePop(),
+                    icon: const Icon(Icons.close, color: QColors.muted),
+                  ),
+                ]),
+                const SizedBox(height: 30),
+                Row(children: [
+                  Flexible(
+                    child: Text(w.word,
+                        style: QType.serif(size: 44, color: QColors.cream)),
+                  ),
+                  const SizedBox(width: 14),
+                  GestureDetector(
+                    onTap: _speakPrompt,
+                    child: const Icon(Icons.volume_up,
+                        color: QColors.coral, size: 26),
+                  ),
+                ]),
+                const SizedBox(height: 10),
+                Text(w.glossFor(locale).correct,
                     style:
-                        QType.sans(size: 13.5, color: QColors.dim, height: 1.5))
-              else ...[
-                Center(child: _verdict(locale)),
-                const SizedBox(height: 20),
-                Center(child: _micButton(locale)),
-                const SizedBox(height: 14),
-                Center(
-                  child: Text(
-                      _listening
-                          ? Strings.t(locale, 'listening')
-                          : Strings.t(locale, 'tapToSpeak'),
+                        QType.sans(size: 14, color: QColors.muted, height: 1.4)),
+                if (_sentenceMode) ...[
+                  const SizedBox(height: 22),
+                  _carrierLine(),
+                ],
+                const SizedBox(height: 26),
+                if (_unsupported)
+                  Text(Strings.t(locale, 'pronounceUnsupported'),
                       style:
-                          QType.mono(size: 11, color: QColors.dim, spacing: 2)),
-                ),
+                          QType.sans(size: 13.5, color: QColors.dim, height: 1.5))
+                else ...[
+                  Center(child: _verdict(locale)),
+                  const SizedBox(height: 20),
+                  Center(child: _micButton()),
+                  const SizedBox(height: 14),
+                  Center(
+                    child: Text(
+                        _listening
+                            ? Strings.t(locale, 'listening')
+                            : Strings.t(locale, 'tapToSpeak'),
+                        style:
+                            QType.mono(size: 11, color: QColors.dim, spacing: 2)),
+                  ),
+                  if (_canUseSentence) ...[
+                    const SizedBox(height: 18),
+                    Center(child: _modeToggle(locale)),
+                  ],
+                  if (_unverifiable && _score >= 0) ...[
+                    const SizedBox(height: 22),
+                    _caveat(locale),
+                  ],
+                ],
+                const SizedBox(height: 20),
               ],
-              const Spacer(flex: 3),
-            ],
+            ),
           ),
         ),
       ),
+    );
+  }
+
+  /// The carrier sentence with the target word picked out, so the learner can
+  /// see what they're aiming at inside the phrase.
+  Widget _carrierLine() {
+    final re = RegExp(r'\b' + RegExp.escape(widget.word.word) + r'\b',
+        caseSensitive: false);
+    final spans = <TextSpan>[];
+    var last = 0;
+    for (final m in re.allMatches(_carrier)) {
+      if (m.start > last) {
+        spans.add(TextSpan(text: _carrier.substring(last, m.start)));
+      }
+      spans.add(TextSpan(
+        text: _carrier.substring(m.start, m.end),
+        style: QType.serif(size: 19, color: QColors.coral),
+      ));
+      last = m.end;
+    }
+    if (last < _carrier.length) {
+      spans.add(TextSpan(text: _carrier.substring(last)));
+    }
+    return RichText(
+      text: TextSpan(
+        style: QType.serif(size: 19, color: QColors.cream),
+        children: spans,
+      ),
+    );
+  }
+
+  Widget _modeToggle(String locale) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _sentenceMode = !_sentenceMode;
+          _heard = '';
+          _score = -1;
+        });
+        _speakPrompt();
+      },
+      child: Text(
+        Strings.t(locale, _sentenceMode ? 'practiceWordOnly' : 'practiceSentence'),
+        style: QType.mono(size: 11, color: QColors.coral, spacing: 2),
+      ),
+    );
+  }
+
+  Widget _caveat(String locale) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        border: Border.all(color: QColors.amber.withOpacity(0.45)),
+      ),
+      child: Text(Strings.t(locale, 'heteronymCaveat'),
+          style: QType.sans(size: 12.5, color: QColors.muted, height: 1.5)),
     );
   }
 
@@ -208,11 +350,25 @@ class _PronounceScreenState extends State<PronounceScreen> {
       return Text(_heard.isEmpty ? '' : '“$_heard”',
           style: QType.sans(size: 15, color: QColors.muted));
     }
-    final key = _score == 2 ? 'sayGreat' : (_score == 1 ? 'sayClose' : 'sayMiss');
-    final color = _score == 2 ? QColors.coral : (_score == 1 ? QColors.amber : QColors.muted);
+    // A correct-sounding score is withheld where the transcript cannot prove
+    // the reading; the learner is told they were understood, and nothing more.
+    final String key;
+    final Color color;
+    if (_score == 2 && _unverifiable) {
+      key = 'sayRecognized';
+      color = QColors.amber;
+    } else if (_score == 2) {
+      key = 'sayGreat';
+      color = QColors.coral;
+    } else if (_score == 1) {
+      key = 'sayClose';
+      color = QColors.amber;
+    } else {
+      key = 'sayMiss';
+      color = QColors.muted;
+    }
     return Column(children: [
-      Text(Strings.t(locale, key),
-          style: QType.serif(size: 24, color: color)),
+      Text(Strings.t(locale, key), style: QType.serif(size: 24, color: color)),
       if (_heard.isNotEmpty) ...[
         const SizedBox(height: 6),
         Text('${Strings.t(locale, 'heard')}: “$_heard”',
@@ -221,7 +377,7 @@ class _PronounceScreenState extends State<PronounceScreen> {
     ]);
   }
 
-  Widget _micButton(String locale) {
+  Widget _micButton() {
     return GestureDetector(
       onTap: _toggle,
       child: Container(
@@ -229,9 +385,7 @@ class _PronounceScreenState extends State<PronounceScreen> {
         height: 84,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: _listening
-              ? QColors.coral
-              : QColors.coral.withOpacity(0.12),
+          color: _listening ? QColors.coral : QColors.coral.withOpacity(0.12),
           border: Border.all(color: QColors.coral, width: 2),
         ),
         child: Icon(_listening ? Icons.stop : Icons.mic,
