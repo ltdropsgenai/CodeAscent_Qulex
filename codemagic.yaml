@@ -26,8 +26,14 @@ workflows:
         script: flutter pub get
       - name: Generate app icons
         script: dart run flutter_launcher_icons
-      - name: Static analysis (non-blocking)
-        script: flutter analyze || true
+      # Was `flutter analyze || true`, which swallowed every failure. CI stayed
+      # green for months over a test file that could not compile. Infos are
+      # still non-fatal (there is a backlog of deprecation notices), but
+      # warnings and errors now stop the build.
+      - name: Static analysis
+        script: flutter analyze --no-fatal-infos
+      - name: Unit tests
+        script: flutter test
       - name: Write Android key.properties from Codemagic keystore
         script: |
           cat > "$CM_BUILD_DIR/android/key.properties" <<KEYS
