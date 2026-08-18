@@ -27,7 +27,30 @@ class Voice {
   final FlutterTts _fallbackTts = FlutterTts();
   final AudioPlayer _player = AudioPlayer();
   bool _fallbackInit = false;
+  bool _playerInit = false;
   Directory? _cacheDir;
+
+  /// Last few speak() outcomes, newest first. Surfaced on the About screen so
+  /// a tester can report what actually happened instead of "it didn't work".
+  final List<String> _log = [];
+  List<String> get diagnostics => List.unmodifiable(_log);
+  void _note(String s) {
+    _log.insert(0, s);
+    if (_log.length > 12) _log.removeLast();
+  }
+
+  /// AudioPlayer defaults to ReleaseMode.release, which frees the underlying
+  /// player once a clip finishes. Calling stop() on a released player throws
+  /// on Android — and since every caller invokes speak() fire-and-forget, that
+  /// exception disappeared into an unhandled async error and the app simply
+  /// went quiet. ReleaseMode.stop keeps the player alive between clips.
+  Future<void> _ensurePlayer() async {
+    if (_playerInit) return;
+    _playerInit = true;
+    try {
+      await _player.setReleaseMode(ReleaseMode.stop);
+    } catch (_) {}
+  }
 
   // Bumped on every speak() call. Lets a slow ElevenLabs response that
   // arrives after we've already timed-out-and-fallen-back (or after a newer
@@ -176,23 +199,46 @@ class Voice {
   }) async {
     if (!appState.voiceOn) return;
     final gen = ++_generation;
-    await _player.stop();
-    await _fallbackTts.stop();
+    await _ensurePlayer();
+
+    // These MUST NOT be able to throw out of speak(). Every caller fires this
+    // and forgets it — _beginQuestion() does not await, and the speaker icons
+    // are onTap: () => speak(...) — so anything thrown here became an
+    // unhandled async error and the word was never spoken, with nothing to
+    // show for it. This was the bug behind "no audio most of the time".
+    try {
+      await _player.stop();
+    } catch (_) {}
+    try {
+      await _fallbackTts.stop();
+    } catch (_) {}
 
     final spoken = ttsRespell(text,
         headword: headword, headwordPos: headwordPos, headwordSay: sayAs);
+    final label = spoken.length > 22 ? '${spoken.substring(0, 22)}…' : spoken;
+    final started = DateTime.now();
 
     bool played = false;
+    Object? failure;
     try {
       played = await _speakViaElevenLabs(spoken, langCode, gen)
           .timeout(_elevenLabsTimeout);
-    } catch (_) {
-      played = false; // timeout, network error, or any other failure
+    } catch (e) {
+      failure = e; // timeout, network error, or any other failure
+      played = false;
     }
-    if (played) return;
+    final ms = DateTime.now().difference(started).inMilliseconds;
+    if (played) {
+      _note('ok   ${ms}ms  cloud  $label');
+      return;
+    }
 
-    if (gen != _generation) return; // a newer speak() call superseded this one
+    if (gen != _generation) {
+      _note('skip ${ms}ms  superseded  $label');
+      return; // a newer speak() call superseded this one
+    }
     _fallbackGeneration = gen;
+    _note('fall ${ms}ms  ${failure == null ? "no-audio" : failure.runtimeType}  $label');
     await _speakViaFallback(spoken, langCode);
   }
 
@@ -304,9 +350,19 @@ class Voice {
     }
   }
 
+  /// Bump to invalidate every cached clip.
+  ///
+  /// The cache lives in application-support so it survives app updates, which
+  /// is right for an offline cache and wrong when the cache itself is holding
+  /// damaged audio: a clip truncated by the write race was replayed from disk
+  /// forever, so shipping the fix changed nothing for anyone who had already
+  /// heard the word. Changing this string changes every key, so the next play
+  /// re-fetches. Old files age out through the existing LRU sweep.
+  static const _cacheVersion = 'v2';
+
   Future<String> _localCachePath(String text, String langCode) async {
     final dir = await _ensureCacheDir();
-    final key = _hash('$langCode|$text');
+    final key = _hash('$_cacheVersion|$langCode|$text');
     return '${dir.path}/$key.mp3';
   }
 
