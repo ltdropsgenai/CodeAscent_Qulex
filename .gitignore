@@ -67,3 +67,6 @@ _to_delete/
 
 # TTS A/B probe output (regenerate with seed_heteronym_audio.ps1)
 vo_heteronyms/
+
+# Pronunciation pipeline working files (regenerate with tools/build_pronunciation_dict.py)
+tools/pronunciation/
