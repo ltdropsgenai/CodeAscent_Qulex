@@ -166,6 +166,18 @@ MIN_BYTES = 2048
 # this; length alone could not catch the wrong-word case. Both bounds are load
 # bearing, for different failures.
 MAX_RATIO = 1.5
+# Hand-written entries get a looser floor, because the baseline they are
+# measured against is the very reading they exist to replace. "adze" is one
+# syllable; ElevenLabs was saying "Odd Zai", which is two - so the CORRECT
+# pronunciation comes out 0.72 of the wrong one, and the standard floor of
+# 0.75 rejected it for being right. Same for "LUT" at 0.68 against a model
+# that was reading it "Alee at".
+#
+# The floor is loosened, not removed. MIN_BYTES still catches true silence,
+# and 0.5 is still far above the 0.34 that the original broken dictionary
+# produced for "fund", so the failure this whole file exists to prevent is
+# still caught.
+MANUAL_PASS_RATIO = 0.5
 # Advisory only. Correct entries land near 1.0; "Q Q Q Q" came back at 1.33
 # because nonsense takes longer to read out than the word does. Stage 3 is what
 # actually rejects it - this threshold only flags the entry for a human read.
@@ -600,7 +612,9 @@ def judge(session, key, word, ph):
     # Stage 2 - silence and truncation, rejected without spending an STT call.
     if len(got) < MIN_BYTES:
         return {**rec, "ok": False, "reason": f"no audio ({len(got)}B)"}
-    if ratio < PASS_RATIO:
+    hand = load_manual().get(word, load_manual().get(word.lower())) == ph
+    floor = MANUAL_PASS_RATIO if hand else PASS_RATIO
+    if ratio < floor:
         return {**rec, "ok": False, "reason": f"short ({ratio:.2f} of baseline)"}
     if ratio > MAX_RATIO:
         return {**rec, "ok": False, "reason": f"long ({ratio:.2f} of baseline) - "
@@ -1001,14 +1015,25 @@ def cmd_recheck(args):
         was = bool(v.get("ok"))
         ratio = v.get("ratio", 1.0)
 
+        man = load_manual()
+        hand = man.get(w, man.get(w.lower())) == ph
+        floor = MANUAL_PASS_RATIO if hand else PASS_RATIO
+
         if ratio > MAX_RATIO:
             now, how = False, f"long ({ratio:.2f} of baseline) - extra speech around the word"
-        elif ratio < PASS_RATIO or v.get("got", MIN_BYTES) < MIN_BYTES:
-            now, how = False, v.get("reason", "short")
+        elif ratio < floor or v.get("got", MIN_BYTES) < MIN_BYTES:
+            now, how = False, f"short ({ratio:.2f} of baseline)"
         else:
             heard = v.get("heard")
             if heard is None:
-                continue
+                # The length gate rejected before recognition ran. For a
+                # hand-written entry that cleared the loosened floor,
+                # authorship is the attestation - the same standing CMUdict
+                # has. For anything else, leave it for `validate`.
+                if hand:
+                    now, how = True, "hand-written"
+                else:
+                    continue
             now, how = heard_matches(w, heard)
             if not now and cmudict_attested(w, ph):
                 now, how = True, "cmudict-attested"
