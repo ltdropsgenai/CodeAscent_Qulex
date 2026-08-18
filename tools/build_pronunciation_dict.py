@@ -63,6 +63,29 @@ WHY BYTE SIZE IS THE MEASURE (stage 2)
 ElevenLabs returns constant-bitrate MP3, so bytes are proportional to duration
 within a model. No audio decoding, no ffmpeg, no extra dependencies.
 
+WHAT IS AND IS NOT IN THE DICTIONARY
+------------------------------------
+Only headwords CMUdict can vouch for. The rank-12,000 sample proved that where
+CMUdict runs out, g2p-en's neural fallback does not degrade gracefully - it
+fabricates:
+
+    chelation      CH EH1 L AH0 T AH0 N        heard back as "gelatin"
+    livershot      L IH1 V ER0 S T UW2         heard back as "liver stew"
+    barycenter     B EH1 R IY0 S T EH0 N ER0   heard back as "Barry Stenner"
+    corticospinal  ... S IH1 P AH0 N AH0 L     heard back as "Corticocipanol"
+
+Every one of those had a healthy duration and would have shipped under a
+length-only gate. That is the same stretch of vocabulary the original espeak-IPA
+entries came from, and the same failure wearing a different mask.
+
+So ~5,664 headwords are DEFERRED, listed in deferred_no_reference.csv with their
+untrusted phonemes. They are not in the dictionary and they are not proved. They
+fall back to ElevenLabs' own reading, which every baseline measurement in this
+file shows is fine. Covering them properly needs a real reference (Wiktionary
+IPA, or hand-curation for the ones learners actually meet) - that is open work,
+not a closed question. Run `validate --scope uncovered` when a better source
+exists.
+
 PHASES
 ------
   generate   headwords -> ARPAbet candidates      (no API calls, free)
@@ -108,6 +131,7 @@ CANDIDATES = OUT / "candidates.json"
 STATE = OUT / "validation_state.json"
 REJECTED = OUT / "rejected.csv"
 PLS = OUT / "qulex_pronunciation.pls"
+DEFERRED = OUT / "deferred_no_reference.csv"
 
 VOICE_ID = "XoUkt2bf6DlvSzRmvA8X"
 MODEL = "eleven_flash_v2"  # the only model in play that honours the dictionary
@@ -364,6 +388,27 @@ def phone_sets(text: str, allow_g2p: bool):
     return set(variants), covered
 
 
+def has_reference(word: str) -> bool:
+    """True when CMUdict lists every token of the headword.
+
+    This is the line between an entry the gate can prove and one it can only
+    watch render. It is also, empirically, the line between g2p-en reporting
+    CMUdict and g2p-en inventing. Measured on the rank-12,000 sample:
+
+        chelation      CH EH1 L AH0 T AH0 N   should be K IY0 L EY1 SH AH0 N
+        livershot      L IH1 V ER0 S T UW2    heard as "liver stew"
+        barycenter     B EH1 R IY0 S T EH0 N ER0   heard as "Barry Stenner"
+        excipient      IH0 K S AY1 P AH0 N T  lost the whole "-ee-ent"
+
+    Those are not near misses, and Scribe was transcribing them correctly.
+    Words with no CMUdict entry are deferred rather than shipped: ElevenLabs'
+    own unaided reading of them is better than this, which is what every
+    baseline measurement in this file has been showing all along.
+    """
+    cmu = get_cmu()
+    return all(cmu.get(t) for t in norm_text(word).split())
+
+
 def heard_matches(word: str, heard: str):
     """Does the transcript name the headword? Returns (bool, how).
 
@@ -469,7 +514,24 @@ def cmd_validate(args):
     # nothing about the tail, where CMUdict runs out and g2p-en's neural
     # fallback is inventing phonemes - which is precisely where the previous
     # dictionary went wrong. Use --offset to sample there before committing.
-    pending = [w for w in cands if state.get(w, {}).get("v") != ORACLE_VERSION]
+    # Scope. Default is the words the gate can actually prove; the rest are
+    # written to a work-list and deferred, NOT silently dropped.
+    get_cmu()
+    covered = {w for w in cands if has_reference(w)}
+    deferred = [w for w in cands if w not in covered]
+    DEFERRED.write_text(
+        "word,untrusted_phonemes\n" +
+        "\n".join(f'"{w}","{cands[w]}"' for w in sorted(deferred)),
+        encoding="utf-8")
+
+    if args.scope == "covered":
+        pool = [w for w in cands if w in covered]
+    elif args.scope == "uncovered":
+        pool = [w for w in cands if w not in covered]
+    else:
+        pool = list(cands)
+
+    pending = [w for w in pool if state.get(w, {}).get("v") != ORACLE_VERSION]
     if args.offset:
         pending = pending[args.offset:]
     todo = pending[: args.limit] if args.limit else pending
@@ -478,20 +540,16 @@ def cmd_validate(args):
         print("Nothing left to validate.")
         return
 
-    # What the gate can actually prove differs by word, and the difference is
-    # not evenly spread. Say so before spending anything.
-    cmu = get_cmu()
-    ref = [w for w in todo if all(cmu.get(t) for t in norm_text(w).split())]
-    noref = len(todo) - len(ref)
-    print(f"\nwith an independent reference : {len(ref):,}  CMUdict lists this word, so a")
-    print( "                                       differently-spelled transcript can still")
-    print( "                                       be matched phonetically")
-    print(f"spelling check only           : {noref:,}  CMUdict has never seen it. Nothing")
-    print( "                                       independent to compare against, so the")
-    print( "                                       transcript must match the spelling or")
-    print( "                                       the entry is rejected for review")
-    print( "                                       (this is also where g2p-en's neural")
-    print( "                                       fallback invented the phonemes)\n")
+    if args.scope == "covered":
+        print(f"scope       : CMUdict-backed words only")
+        print(f"deferred    : {len(deferred):,} words with no independent reference")
+        print(f"              -> {DEFERRED}")
+        print( "              g2p-en fabricates phonemes for these. They are NOT")
+        print( "              in the dictionary and NOT proved - they fall back to")
+        print( "              ElevenLabs' own reading until sourced properly.")
+    else:
+        print(f"scope       : {args.scope}  (includes words the gate cannot prove)")
+    print()
 
     tts_chars = sum(len(w) * 2 + 60 for w in todo)
     print(f"to validate : {len(todo)} words")
@@ -561,7 +619,10 @@ def cmd_export(args):
     lines.append("</lexicon>")
     PLS.write_text("\n".join(lines), encoding="utf-8")
 
+    deferred_n = sum(1 for w in cands if not has_reference(w))
     print(f"proved entries : {len(good)}")
+    print(f"deferred       : {deferred_n:,} words with no independent reference "
+          f"(see {DEFERRED.name})")
     if weak:
         print(f"excluded       : {weak} passed only the old length-only gate - "
               f"re-run `validate` to prove them")
@@ -680,6 +741,9 @@ if __name__ == "__main__":
     v.add_argument("--limit", type=int, default=0, help="validate at most N more words")
     v.add_argument("--offset", type=int, default=0,
                    help="skip N pending words first - use it to sample the rare tail")
+    v.add_argument("--scope", choices=("covered", "uncovered", "all"), default="covered",
+                   help="covered (default) = only words CMUdict can vouch for; "
+                        "uncovered = the deferred tail; all = everything")
     v.add_argument("--yes", action="store_true", help="skip the cost confirmation")
     sub.add_parser("export")
     sub.add_parser("selftest")
