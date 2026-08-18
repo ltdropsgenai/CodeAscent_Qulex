@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/progress_store.dart';
+import '../game/level.dart';
 import '../l10n/strings.dart';
 import '../models/word.dart';
 import '../services/notification_service.dart';
@@ -121,6 +122,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                   ),
                   _intensity(locale),
+                  _difficulty(locale),
                   QRow(
                     title: Strings.t(locale, 'resurface'),
                     sub: Strings.t(locale, 'resurfaceSub').replaceFirst('{n}', '$n'),
@@ -237,6 +239,39 @@ class _SettingsScreenState extends State<SettingsScreen> {
             appState.setReviewIntensity(i);
             widget.store.intervalScale = appState.intensityScale;
           },
+        ),
+        const SizedBox(height: 15),
+        const QRule(),
+      ],
+    );
+  }
+
+  /// Difficulty band. Sits with the other learning dials rather than on the
+  /// home screen, because "Auto" should be right for nearly everyone — the
+  /// placement quiz already answers this question. It is here for the learner
+  /// who disagrees with the placement, or who wants to be stretched.
+  Widget _difficulty(String locale) {
+    final labels = [
+      Strings.t(locale, 'diffAuto'),
+      Strings.t(locale, 'diffEasy'),
+      Strings.t(locale, 'diffMedium'),
+      Strings.t(locale, 'diffHard'),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 15),
+        Text(Strings.t(locale, 'difficultyTitle'),
+            style: QType.serif(size: 16.5, color: QColors.cream)),
+        const SizedBox(height: 3),
+        Text(Strings.t(locale, 'difficultySub'),
+            style: QType.mono(size: 11.5, color: QColors.dim, spacing: 0.3)),
+        const SizedBox(height: 12),
+        QSegment(
+          labels: labels,
+          index: appState.difficultyPref.index,
+          onChanged: (i) => appState.setDifficultyPref(
+              DifficultyPref.values[i.clamp(0, DifficultyPref.values.length - 1)]),
         ),
         const SizedBox(height: 15),
         const QRule(),

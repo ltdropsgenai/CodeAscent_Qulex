@@ -212,6 +212,16 @@ class _HomeScreenState extends State<HomeScreen> {
   static bool _isProMode(GameMode m) =>
       m == GameMode.reverse || m == GameMode.listen || m == GameMode.spelling;
 
+  /// Listen and Spelling hide the written word and ask the learner to decode
+  /// or reproduce it, which is a much harder ask than picking from three
+  /// meanings. Without a placement we cannot match difficulty, so these would
+  /// deal words of unknown difficulty to a learner of unknown level — which is
+  /// how a beginner ends up spelling a word they have never seen. Gating them
+  /// on placement also gives the quiz a reward for finishing rather than only
+  /// a prompt to start.
+  static bool _needsLevel(GameMode m) =>
+      m == GameMode.listen || m == GameMode.spelling;
+
   Future<void> _openPaywall() async {
     await Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
@@ -236,9 +246,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Called when a mode chip is tapped. Selecting a Pro mode while not Pro opens
   /// the paywall instead of arming a mode the user can't start.
-  void _selectMode(GameMode m) {
+  void _selectMode(GameMode m, List<Word> words) {
     if (_isProMode(m) && !appState.isPro) {
       _openPaywall();
+    } else if (_needsLevel(m) && !_store.placed) {
+      _openPlacement(words);
     } else {
       setState(() => _gameType = m);
     }
@@ -364,7 +376,8 @@ class _HomeScreenState extends State<HomeScreen> {
             selected: _gameType,
             locale: locale,
             isPro: appState.isPro,
-            onSelect: _selectMode,
+            placed: _store.placed,
+            onSelect: (m) => _selectMode(m, words),
           ),
           const SizedBox(height: 20),
           _RuledList(children: [
@@ -670,6 +683,12 @@ class _PlacementCard extends StatelessWidget {
               const SizedBox(height: 3),
               Text(Strings.t(locale, 'findLevelSub'),
                   style: QType.sans(size: 13, color: QColors.muted)),
+              const SizedBox(height: 5),
+              // Say what skipping costs. The card used to be a bare invitation,
+              // which made it easy to dismiss as optional polish — it isn't:
+              // without a rank we cannot match difficulty at all.
+              Text(Strings.t(locale, 'findLevelWhy'),
+                  style: QType.mono(size: 11, color: QColors.dim, spacing: 0.2)),
             ]),
           ),
         ]),
@@ -683,11 +702,13 @@ class _ModeChips extends StatelessWidget {
   final GameMode selected;
   final String locale;
   final bool isPro;
+  final bool placed;
   final ValueChanged<GameMode> onSelect;
   const _ModeChips({
     required this.selected,
     required this.locale,
     required this.isPro,
+    required this.placed,
     required this.onSelect,
   });
 
@@ -708,10 +729,15 @@ class _ModeChips extends StatelessWidget {
             child: () {
               final mode = items[k].$1;
               final isSel = selected == mode;
-              final locked = !isPro &&
+              final proLocked = !isPro &&
                   (mode == GameMode.reverse ||
                       mode == GameMode.listen ||
                       mode == GameMode.spelling);
+              // Listen/Spelling additionally wait on the placement quiz — see
+              // _HomeScreenState._needsLevel.
+              final levelLocked = !placed &&
+                  (mode == GameMode.listen || mode == GameMode.spelling);
+              final locked = proLocked || levelLocked;
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Stack(

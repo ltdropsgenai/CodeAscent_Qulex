@@ -5,6 +5,8 @@ import '../data/progress_store.dart';
 import '../models/word.dart';
 import '../services/voice.dart';
 import 'daily.dart';
+import 'level.dart';
+import 'spelling_match.dart';
 import 'track.dart';
 
 enum Phase { question, revealed, finished }
@@ -26,6 +28,7 @@ class GameController extends ChangeNotifier {
     required this.locale,
     this.mode = GameMode.quickPlay,
     this.recordProgress = true,
+    this.difficultyPref = DifficultyPref.auto,
   });
 
   final List<Word> _all;
@@ -35,6 +38,23 @@ class GameController extends ChangeNotifier {
 
   /// When false (custom sets), answers don't feed the SRS / streak / stats.
   final bool recordProgress;
+
+  /// Learner's difficulty setting; [DifficultyPref.auto] derives it from the
+  /// placement rank.
+  final DifficultyPref difficultyPref;
+
+  List<Word>? _levelPoolCache;
+
+  /// [_all] narrowed to the learner's level. Everything that deals words draws
+  /// from here rather than the raw catalogue, so the level applies to reviews,
+  /// the daily set, the track pools and the reverse-mode distractors alike.
+  ///
+  /// Custom sets opt out: the learner chose those words deliberately, and it
+  /// would be rude to hide half of them.
+  List<Word> get _levelPool => _levelPoolCache ??= recordProgress
+      ? matchLevel(_all,
+          pref: difficultyPref, placementRank: store.placementRank)
+      : _all;
 
   Gloss get _g => current.glossFor(locale);
 
@@ -49,11 +69,12 @@ class GameController extends ChangeNotifier {
 
   /// Case/whitespace-insensitive match — spelling mode shouldn't fail someone
   /// over a stray capital letter or trailing space from the keyboard.
-  String _normalize(String s) => s.trim().toLowerCase();
+  // Spelling answers fold away diacritics — see normalizeSpelling().
+  String _normalize(String s) => normalizeSpelling(s);
 
   /// Reverse mode: three WORDS to choose from (correct + 2 same-difficulty).
   List<String> _reverseOptions() {
-    final same = _all
+    final same = _levelPool
         .where((w) => w.id != current.id && w.difficulty == current.difficulty)
         .toList()
       ..shuffle();
@@ -118,9 +139,9 @@ class GameController extends ChangeNotifier {
     if (mode == GameMode.review) {
       pool = _reviewDeck();
     } else if (mode == GameMode.daily) {
-      pool = dailyDeck(_all, DateTime.now(), count: roundsPerMatch);
+      pool = dailyDeck(_levelPool, DateTime.now(), count: roundsPerMatch);
     } else {
-      pool = _all
+      pool = _levelPool
           .where(track.filter)
           .where((w) => !store.progressFor(w.id).suspended)
           .toList()
@@ -211,7 +232,7 @@ class GameController extends ChangeNotifier {
     final due = <Word>[];
     final unseen = <Word>[];
     final future = <Word>[];
-    for (final w in _all) {
+    for (final w in _levelPool) {
       final wp = store.progressFor(w.id);
       if (wp.suspended) continue;
       if (wp.seen == 0) {

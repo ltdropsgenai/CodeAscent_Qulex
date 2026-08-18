@@ -22,7 +22,13 @@ class PlacementScreen extends StatefulWidget {
 }
 
 class _PlacementScreenState extends State<PlacementScreen> {
-  static const int _questions = 10;
+  // Six, not ten. A binary search over frequency rank still narrows to one of
+  // 64 buckets in six steps, which is finer than the difficulty bands we
+  // actually act on — and the completion rate of a first-run quiz matters more
+  // here than the last bit of precision. Placement is the gate on level
+  // matching and on Listen/Spelling, so a learner abandoning it halfway is the
+  // expensive outcome.
+  static const int _questions = 6;
   static const int _minRank = 1500;
   static const int _maxRank = 9000;
 

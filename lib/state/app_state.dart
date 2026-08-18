@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../game/level.dart';
+
 /// Global app settings: UI/native language + voice on/off. Persisted.
 /// Used directly as `appState` (a singleton ChangeNotifier) so the base stays
 /// free of a DI/provider dependency — widgets listen via AnimatedBuilder.
@@ -13,6 +15,7 @@ class AppState extends ChangeNotifier {
   static const _kNewPerDay = 'qbit_new_per_day';
   static const _kIntensity = 'qbit_review_intensity';
   static const _kSeenIntro = 'qbit_seen_intro';
+  static const _kDifficulty = 'qbit_difficulty_pref';
 
   String locale = 'en';
   bool voiceOn = true;
@@ -24,6 +27,11 @@ class AppState extends ChangeNotifier {
   /// Daily "word from your collection" reminders (mobile only).
   bool remindersOn = false;
   int reminderHour = 9; // local hour, 0–23
+
+  /// Difficulty band served to the learner. Defaults to [DifficultyPref.auto],
+  /// which derives the band from the placement rank — an explicit choice here
+  /// overrides that.
+  DifficultyPref difficultyPref = DifficultyPref.auto;
 
   /// Spaced-repetition dial.
   int newPerDay = 20; // new words introduced per day
@@ -46,6 +54,9 @@ class AppState extends ChangeNotifier {
     newPerDay = p.getInt(_kNewPerDay) ?? 20;
     reviewIntensity = p.getInt(_kIntensity) ?? 1;
     seenIntro = p.getBool(_kSeenIntro) ?? false;
+    final dIdx = p.getInt(_kDifficulty) ?? 0;
+    difficultyPref =
+        DifficultyPref.values[dIdx.clamp(0, DifficultyPref.values.length - 1)];
     notifyListeners();
   }
 
@@ -54,6 +65,14 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     final p = await SharedPreferences.getInstance();
     await p.setBool(_kSeenIntro, true);
+  }
+
+  Future<void> setDifficultyPref(DifficultyPref d) async {
+    if (difficultyPref == d) return;
+    difficultyPref = d;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    await p.setInt(_kDifficulty, d.index);
   }
 
   Future<void> setNewPerDay(int n) async {

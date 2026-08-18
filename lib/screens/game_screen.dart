@@ -60,7 +60,8 @@ class _GameScreenState extends State<GameScreen> {
         store: widget.store,
         locale: appState.locale,
         mode: widget.mode,
-        recordProgress: widget.recordProgress);
+        recordProgress: widget.recordProgress,
+        difficultyPref: appState.difficultyPref);
     c.onFinished = () {
       if (widget.recordProgress) {
         widget.store.clearRoundSnapshot(_trackKey, _modeKey);
