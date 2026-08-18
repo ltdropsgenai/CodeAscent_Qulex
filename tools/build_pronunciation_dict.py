@@ -859,6 +859,17 @@ def sense_dependent(word: str, ph: str):
     """
     if word.lower() in app_heteronyms():
         return "respelled by heteronyms.dart"
+
+    # A hand-written entry has already resolved the sense. The catalogue row
+    # says which POS is meant, a person read that and chose the reading, and
+    # the choice is recorded with its reasoning in manual_pronunciations.json.
+    # Excluding it here would throw away the only thing that CAN settle these
+    # words - the gate certainly cannot, because Scribe transcribes DEZ-ert
+    # and de-SERT identically.
+    man = load_manual()
+    if man.get(word, man.get(word.lower())) == ph:
+        return None
+
     cmu = get_cmu()
     alts = cmu.get(norm_text(word))
     if alts and len({_primary_syllable(a) for a in alts}) > 1:
