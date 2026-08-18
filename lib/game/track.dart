@@ -30,9 +30,17 @@ class Track {
 /// of estimate, so the copy says "style" rather than claiming an authority
 /// that does not exist.
 ///
-/// IELTS is the one that can be properly sourced, via the Academic Word List
-/// (Coxhead 2000, 570 word families, published and freely distributed). Until
-/// that pass is done this track leans on the same tags as the others.
+/// IELTS is the one that is properly sourced. The academic track matches the
+/// Academic Word List (Coxhead 2000, TESOL Quarterly — 570 word families, the
+/// recognised basis for academic English teaching), tagged `AWL` in the
+/// catalogue. Note we do not redistribute the list: we use it to select from
+/// words we already had, which is why the tag rather than the list is what
+/// ships.
+///
+/// Coverage is partial and knowingly so. 322 of the 589 families have a
+/// representative in the catalogue; the other 267 are absent entirely, and 64
+/// of those sit in sublists 1-2, the most frequent academic vocabulary in
+/// English. See _to_delete/missing_awl.md for the backlog.
 final List<Track> kTracks = [
   Track(
     id: 'fun',
@@ -67,7 +75,7 @@ final List<Track> kTracks = [
     icon: '📘',
     title: 'IELTS & academic',
     subtitle: 'Academic English vocabulary',
-    filter: (w) => w.tags.contains('IELTS'),
+    filter: (w) => w.tags.contains('AWL') || w.tags.contains('IELTS'),
   ),
 ];
 
