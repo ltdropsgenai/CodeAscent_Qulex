@@ -136,6 +136,7 @@ PLS = OUT / "qulex_pronunciation.pls"
 DEFERRED = OUT / "deferred_no_reference.csv"
 SENSE_DEP = OUT / "sense_dependent.csv"
 HETERONYMS_DART = ROOT / "lib" / "services" / "heteronyms.dart"
+MANUAL = ROOT / "tools" / "manual_pronunciations.json"
 
 VOICE_ID = "XoUkt2bf6DlvSzRmvA8X"
 MODEL = "eleven_flash_v2"  # the only model in play that honours the dictionary
@@ -265,6 +266,36 @@ def get_cmu():
     return _CMU
 
 
+_MANUAL = None
+
+
+def load_manual():
+    """Hand-written entries for words no reference source covers.
+
+    Everything else in this file is generated and then proved. These are the
+    opposite: a person wrote them because the survey showed ElevenLabs reading
+    the word as something else entirely. They are version-controlled alongside
+    the code, not in the gitignored working directory, because they are the
+    only part of this pipeline that cannot be regenerated.
+
+    A hand-written entry counts as its own reference. That is not a loophole -
+    it is the same standing CMUdict has, just with a smaller author.
+    """
+    global _MANUAL
+    if _MANUAL is None:
+        try:
+            raw = json.loads(MANUAL.read_text(encoding="utf-8"))
+        except OSError:
+            _MANUAL = {}
+            return _MANUAL
+        _MANUAL = {k: v["ph"] for k, v in raw.items()
+                   if not k.startswith("_") and isinstance(v, dict) and v.get("ph")}
+        bad = [k for k, ph in _MANUAL.items() if not valid_arpabet(ph)]
+        if bad:
+            sys.exit(f"manual_pronunciations.json has invalid ARPAbet for: {bad}")
+    return _MANUAL
+
+
 def phones_for(word, g2p):
     """ARPAbet for one headword, preferring CMUdict token by token.
 
@@ -280,6 +311,10 @@ def phones_for(word, g2p):
     word boundaries and look each part up; fall back to g2p only for tokens
     CMUdict has never seen, which is what it is actually good for.
     """
+    hand = load_manual().get(word) or load_manual().get(word.lower())
+    if hand:
+        return hand
+
     parts = [p for p in re.split(r"[-\s]+", word.strip()) if p]
 
     # SINGLE words stay with g2p-en. It consults CMUdict too, but chooses
@@ -465,6 +500,9 @@ def has_reference(word: str) -> bool:
     own unaided reading of them is better than this, which is what every
     baseline measurement in this file has been showing all along.
     """
+    man = load_manual()
+    if word in man or word.lower() in man:
+        return True
     cmu = get_cmu()
     return all(cmu.get(t) for t in norm_text(word).split())
 
@@ -531,6 +569,9 @@ def cmudict_attested(word: str, ph: str) -> bool:
     This cannot rescue the wrong-word case the gate exists to catch: "fund"
     with F AW1 N D is not a CMUdict reading of "fund", so it stays rejected.
     """
+    man = load_manual()
+    if man.get(word, man.get(word.lower())) == ph:
+        return True
     cmu = get_cmu()
     toks = norm_text(word).split()
     variants = [()]
@@ -574,7 +615,10 @@ def judge(session, key, word, ph):
     rec["heard"] = heard
     if not ok and cmudict_attested(word, ph):
         # Recognition disagreed, but CMUdict says these phonemes are this word.
-        ok, how = True, "cmudict-attested"
+        man = load_manual()
+        how = ("hand-written"
+               if man.get(word, man.get(word.lower())) == ph else "cmudict-attested")
+        ok = True
     if not ok:
         return {**rec, "ok": False, "reason": how}
     if ratio > LONG_RATIO:
