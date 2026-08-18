@@ -532,17 +532,23 @@ class _TrackTile extends StatelessWidget {
     switch (track.id) {
       case 'esl':
         return Icons.public;
-      case 'test':
+      case 'sat':
+        return Icons.architecture_outlined;
+      case 'gre':
         return Icons.school_outlined;
+      case 'ielts':
+        return Icons.menu_book_outlined;
       default:
         return Icons.gps_fixed;
     }
   }
 
-  String get _title => Strings.t(locale,
-      track.id == 'esl' ? 'trackEsl' : track.id == 'test' ? 'trackTest' : 'trackFun');
-  String get _sub => Strings.t(locale,
-      track.id == 'esl' ? 'trackEslSub' : track.id == 'test' ? 'trackTestSub' : 'trackFunSub');
+  // Copy is keyed off the track id — `trackSat`, `trackSatSub` and so on — so
+  // adding a track needs a strings entry rather than another ternary branch.
+  String get _key =>
+      'track${track.id[0].toUpperCase()}${track.id.substring(1)}';
+  String get _title => Strings.t(locale, _key);
+  String get _sub => Strings.t(locale, '${_key}Sub');
 
   @override
   Widget build(BuildContext context) {

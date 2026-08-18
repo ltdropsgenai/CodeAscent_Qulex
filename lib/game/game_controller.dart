@@ -141,8 +141,9 @@ class GameController extends ChangeNotifier {
     } else if (mode == GameMode.daily) {
       pool = dailyDeck(_levelPool, DateTime.now(), count: roundsPerMatch);
     } else {
-      pool = _levelPool
-          .where(track.filter)
+      // poolForTrack tops up thin tag-backed tracks (IELTS matches only 41
+      // words) with comparable ones, so a track always has a round in it.
+      pool = poolForTrack(track, _levelPool)
           .where((w) => !store.progressFor(w.id).suspended)
           .toList()
         ..shuffle();
