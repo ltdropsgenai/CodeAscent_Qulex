@@ -42,6 +42,21 @@ class Voice {
 
   static const _elevenLabsTimeout = Duration(milliseconds: 2500);
 
+  /// Downloads in flight, keyed by cache path.
+  ///
+  /// speak() and prefetch() race for the same file constantly: _prefetchDeck()
+  /// starts warming the whole deck at the same moment _beginQuestion() speaks
+  /// the first word, and both compute the same path, both find it missing, and
+  /// both fetch and write it. The player then reads a file another future is
+  /// mid-way through overwriting — which is heard as a clip that cuts out part
+  /// way, or a word that never arrives at all. Sharing one future per path
+  /// means the second caller waits for the first rather than fighting it.
+  final Map<String, Future<bool>> _inFlight = {};
+
+  /// The clip currently on the player. Eviction skips it: deleting a file out
+  /// from under a playing AudioPlayer truncates whatever is being said.
+  String? _playingPath;
+
   Future<void> _ensureFallback() async {
     if (_fallbackInit) return;
     _fallbackInit = true;
@@ -84,7 +99,11 @@ class Voice {
   Future<void> _enforceCacheLimit() async {
     try {
       final dir = await _ensureCacheDir();
-      final files = await dir.list().where((e) => e is File).cast<File>().toList();
+      final files = await dir
+          .list()
+          .where((e) => e is File && !e.path.endsWith('.part'))
+          .cast<File>()
+          .toList();
       if (files.isEmpty) return;
       var total = 0;
       final withStat = <MapEntry<File, FileStat>>[];
@@ -97,6 +116,7 @@ class Voice {
       withStat.sort((a, b) => a.value.modified.compareTo(b.value.modified));
       for (final entry in withStat) {
         if (total <= _maxCacheBytes) break;
+        if (entry.key.path == _playingPath) continue; // don't cut off playback
         try {
           await entry.key.delete();
           total -= entry.value.size;
@@ -104,6 +124,24 @@ class Voice {
       }
     } catch (_) {
       // Housekeeping only — a failed sweep just means we check again next write.
+    }
+  }
+
+  /// Writes via a temp file and renames into place.
+  ///
+  /// writeAsBytes truncates first and then fills, so a reader that opens the
+  /// path mid-write gets a short file and the audio stops early. rename() is
+  /// atomic within a directory, so a player either sees the whole previous
+  /// file or the whole new one.
+  Future<void> _writeAtomic(String path, Uint8List bytes) async {
+    final tmp = File('$path.${DateTime.now().microsecondsSinceEpoch}.part');
+    try {
+      await tmp.writeAsBytes(bytes, flush: true);
+      await tmp.rename(path);
+    } catch (_) {
+      try {
+        await tmp.delete();
+      } catch (_) {}
     }
   }
 
@@ -178,18 +216,7 @@ class Voice {
       final localPath = await _localCachePath(spoken, langCode);
       if (await File(localPath).exists()) return;
 
-      final res = await Supabase.instance.client.functions.invoke(
-        'tts',
-        body: {'text': spoken, 'lang': langCode},
-      );
-      final data = res.data;
-      final url = (data is Map) ? data['url'] as String? : null;
-      if (url == null) return;
-
-      final bytes = await _download(url);
-      if (bytes == null) return;
-      await File(localPath).writeAsBytes(bytes, flush: true);
-      _enforceCacheLimit();
+      await _fetchToCache(spoken, langCode, localPath);
     } catch (_) {
       // Best-effort only — speak() will fetch (and fall back) on demand
       // if this didn't manage to warm the cache in time.
@@ -204,33 +231,59 @@ class Voice {
       if (await localFile.exists()) {
         _touchCacheEntry(localPath);
         if (gen != _generation || gen == _fallbackGeneration) return false;
+        _playingPath = localPath;
         await _player.play(DeviceFileSource(localPath));
         return true;
       }
 
-      final res = await Supabase.instance.client.functions.invoke(
-        'tts',
-        body: {'text': text, 'lang': langCode},
-      );
-      final data = res.data;
-      final url = (data is Map) ? data['url'] as String? : null;
-      if (url == null) return false;
-
-      final bytes = await _download(url);
-      if (bytes == null) return false;
-      await localFile.writeAsBytes(bytes, flush: true);
-      _enforceCacheLimit();
+      // One fetch per path, shared with any prefetch already working on it.
+      final ok = await _fetchToCache(text, langCode, localPath);
+      if (!ok) return false;
 
       // This request may have taken long enough that speak() already timed
       // out and fell back to the on-device voice (or a newer speak() call
       // started). Either way the cache write above still happened — we just
       // must not also play over whatever already spoke.
       if (gen != _generation || gen == _fallbackGeneration) return false;
+      _playingPath = localPath;
       await _player.play(DeviceFileSource(localPath));
       return true;
     } catch (_) {
       return false; // any failure — network, function error, decode — falls back
     }
+  }
+
+  /// Fetches [text] into the on-device cache exactly once per path.
+  ///
+  /// If a fetch for this path is already running — typically a deck prefetch
+  /// that started microseconds before the learner's live speak() call — this
+  /// awaits that one instead of starting a competing download and a second
+  /// write to the same file.
+  Future<bool> _fetchToCache(String text, String langCode, String path) {
+    final existing = _inFlight[path];
+    if (existing != null) return existing;
+    final job = () async {
+      try {
+        final res = await Supabase.instance.client.functions.invoke(
+          'tts',
+          body: {'text': text, 'lang': langCode},
+        );
+        final data = res.data;
+        final url = (data is Map) ? data['url'] as String? : null;
+        if (url == null) return false;
+        final bytes = await _download(url);
+        if (bytes == null) return false;
+        await _writeAtomic(path, bytes);
+        _enforceCacheLimit();
+        return true;
+      } catch (_) {
+        return false;
+      } finally {
+        _inFlight.remove(path);
+      }
+    }();
+    _inFlight[path] = job;
+    return job;
   }
 
   Future<Uint8List?> _download(String url) async {
