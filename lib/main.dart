@@ -45,28 +45,71 @@ class QulexApp extends StatelessWidget {
       title: 'Qulex',
       debugShowCheckedModeBanner: false,
       theme: buildQulexTheme(),
-      // Constrain to a phone-width column so desktop web previews look right;
-      // on a real phone the column is simply full width.
+      // The app is a reading column, so its content is capped for line length.
+      // What must NOT be capped is the backdrop: putting the photo inside the
+      // column left an iPad showing a phone-width strip floating in flat grey,
+      // which is the "no landscape, lots of blank space" complaint reviewers
+      // make about WordUp. The backdrop now fills the display and the column
+      // sits on top of it, so a large screen reads as deliberate.
       builder: (context, child) => ColoredBox(
-        color: const Color(0xFF040405),
-        // Responsive column: full width on a phone, capped + centered on
-        // tablets / landscape so the layout never stretches or overflows.
+        color: QColors.bg,
         child: LayoutBuilder(
           builder: (ctx, cons) {
-            final w = cons.maxWidth < 460 ? cons.maxWidth : 460.0;
-            return Center(
-              child: ClipRect(
-                child: SizedBox(
-                  width: w,
-                  // One continuous animated backdrop behind every route.
-                  child: Stack(
-                    children: [
-                      const AppBackground(dim: false),
-                      if (child != null) Positioned.fill(child: child),
-                    ],
+            final w = _columnWidth(cons.maxWidth);
+            final capped = w < cons.maxWidth;
+            final gutter = (cons.maxWidth - w) / 2;
+            return Stack(
+              children: [
+                // ONE backdrop, full-bleed. It used to live inside the column,
+                // which left a wide display showing a phone-width strip in a
+                // flat grey void - the "no landscape, lots of blank space"
+                // complaint reviewers make about WordUp. It must stay a single
+                // instance: AppBackground cross-fades eight photos on its own
+                // timer, so two of them drift apart and show different scenes.
+                const Positioned.fill(child: AppBackground(dim: false)),
+
+                // Scrim the exposed gutters only, never the column, so the
+                // reading area stays the brightest thing on screen.
+                if (capped) ...[
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    width: gutter,
+                    child: const IgnorePointer(
+                      child: ColoredBox(color: Color(0x9904040A)),
+                    ),
+                  ),
+                  Positioned(
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    width: gutter,
+                    child: const IgnorePointer(
+                      child: ColoredBox(color: Color(0x9904040A)),
+                    ),
+                  ),
+                ],
+
+                Center(
+                  child: SizedBox(
+                    width: w,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        // Hairline edges only when inset, so the column reads
+                        // as a deliberate panel rather than a cropped phone.
+                        border: capped
+                            ? const Border.symmetric(
+                                vertical: BorderSide(color: QColors.rule))
+                            : null,
+                      ),
+                      child: ClipRect(
+                        child: child ?? const SizedBox.shrink(),
+                      ),
+                    ),
                   ),
                 ),
-              ),
+              ],
             );
           },
         ),
@@ -76,6 +119,20 @@ class QulexApp extends StatelessWidget {
           : IntroScreen(repository: WordRepository()),
     );
   }
+}
+
+/// Content width for the available display width.
+///
+/// Deliberately conservative. Every screen in the app was laid out against a
+/// ~460pt column, so widening aggressively would risk stretching rows that
+/// were never designed for it. These steps give a tablet a visibly roomier
+/// column without re-tuning each screen, and the full-bleed backdrop behind
+/// it does most of the work of making a big display look intentional.
+double _columnWidth(double available) {
+  if (available < 460) return available; // phone: edge to edge
+  if (available < 900) return 460; // large phone, landscape phone
+  if (available < 1200) return 540; // tablet portrait
+  return 600; // tablet landscape, desktop web
 }
 
 /// Calm fallback shown in place of any widget that throws during build.
