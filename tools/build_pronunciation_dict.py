@@ -134,6 +134,8 @@ STATE = OUT / "validation_state.json"
 REJECTED = OUT / "rejected.csv"
 PLS = OUT / "qulex_pronunciation.pls"
 DEFERRED = OUT / "deferred_no_reference.csv"
+SENSE_DEP = OUT / "sense_dependent.csv"
+HETERONYMS_DART = ROOT / "lib" / "services" / "heteronyms.dart"
 
 VOICE_ID = "XoUkt2bf6DlvSzRmvA8X"
 MODEL = "eleven_flash_v2"  # the only model in play that honours the dictionary
@@ -759,6 +761,53 @@ def cmd_validate(args):
 # export
 # ---------------------------------------------------------------------------
 
+def app_heteronyms():
+    """The spellings lib/services/heteronyms.dart respells before synthesis.
+
+    Read from the Dart source rather than copied here, so the two cannot drift
+    apart silently. If that file gains an entry, this picks it up.
+    """
+    try:
+        src = HETERONYMS_DART.read_text(encoding="utf-8")
+    except OSError:
+        return set()
+    body = src.split("final Map<String, _Heteronym> _heteronyms = {", 1)
+    if len(body) < 2:
+        return set()
+    return set(re.findall(r"'([a-z]+)':\s*const _Heteronym", body[1].split("};", 1)[0]))
+
+
+def sense_dependent(word: str, ph: str):
+    """Why this spelling cannot be pinned to one pronunciation, or None.
+
+    An ElevenLabs dictionary matches on the exact string and holds one entry
+    per spelling. For a word whose pronunciation depends on which sense is on
+    screen, that is not a limitation to work around - it is a guarantee of
+    being wrong some of the time, stated confidently.
+
+    Two families:
+
+      1. The app already respells these before synthesis (heteronyms.dart), so
+         a dictionary entry for the raw spelling is unreachable dead weight -
+         and actively dangerous if any future path speaks raw text. `lead` was
+         sitting in the dictionary as L EH1 D, the metal, which is the exact
+         mispronunciation that file was written to stop.
+
+      2. CMUdict itself lists readings that differ in STRESS placement -
+         ADdress the noun against adDRESS the verb. Nothing in this pipeline
+         can tell which sense a given catalogue row means, and the gate cannot
+         even detect the difference: Scribe transcribes both as "address".
+         Pinning one is a coin flip we would be freezing into the product.
+    """
+    if word.lower() in app_heteronyms():
+        return "respelled by heteronyms.dart"
+    cmu = get_cmu()
+    alts = cmu.get(norm_text(word))
+    if alts and len({tuple(i for i, t in enumerate(a) if t.endswith("1")) for a in alts}) > 1:
+        return "CMUdict readings differ in stress placement"
+    return None
+
+
 def cmd_export(args):
     if not (CANDIDATES.exists() and STATE.exists()):
         sys.exit("Run `generate` and `validate` first.")
@@ -774,7 +823,15 @@ def cmd_export(args):
     # If candidates.json has been regenerated since the verdict, the entry is
     # unproved no matter what the verdict says.
     drifted = {w for w, v in proved.items() if v.get("ph") != cands[w]}
-    good = {w: cands[w] for w in proved if w not in overlong and w not in drifted}
+    sense = {w: r for w in proved
+             if (r := sense_dependent(w, cands[w])) is not None}
+    good = {w: cands[w] for w in proved
+            if w not in overlong and w not in drifted and w not in sense}
+    if sense:
+        SENSE_DEP.write_text(
+            "word,phonemes,why\n" +
+            "\n".join(f'"{w}","{cands[w]}","{r}"' for w, r in sorted(sense.items())),
+            encoding="utf-8")
     weak_all = [w for w, v in state.items() if v.get("ok") and v.get("v") != ORACLE_VERSION]
     weak_inscope = [w for w in weak_all if w in cands and has_reference(w)]
     weak_deferred = [w for w in weak_all if w not in set(weak_inscope)]
@@ -798,6 +855,14 @@ def cmd_export(args):
     if drifted:
         print(f"excluded (drift): {len(drifted)} entr(ies) whose phonemes changed since "
               f"they were proved.\n                  Run `validate` to re-prove them.")
+    if sense:
+        import collections as _c
+        counts = _c.Counter(sense.values())
+        print(f"excluded (sense): {len(sense)} entr(ies) whose pronunciation depends on "
+              f"which sense is meant:")
+        for why, n in counts.most_common():
+            print(f"                  {n:5}  {why}")
+        print(f"                  -> {SENSE_DEP.name}")
     print(f"proved entries : {len(good)}")
     print(f"deferred       : {deferred_n:,} words with no independent reference "
           f"(see {DEFERRED.name})")
@@ -919,6 +984,121 @@ def cmd_recheck(args):
         print("          " + ", ".join(sorted(changed["revoked"])[:12]) +
               (" ..." if len(changed["revoked"]) > 12 else ""))
     print("\nNo API calls were made. Run `export` to rebuild the .pls.")
+
+
+SURVEY = OUT / "deferred_survey.csv"
+
+
+def cmd_survey(args):
+    """Ask a cheaper question about the deferred words: does the model already
+    say them correctly on its own?
+
+    5,664 headwords have no CMUdict entry, and every attempt to invent phonemes
+    for them has fabricated - g2p-en outright, and naive compound splitting too
+    ("Compaction" as compact + ion, "Carbonation" as carbo + nation). Before
+    generating a fourth guess and building another gate around it, find out how
+    many of these words actually need help.
+
+    One synthesis, one transcription, no dictionary. If Scribe hears the word
+    back, ElevenLabs is already reading it correctly and a dictionary entry
+    could only make it worse. What is left is the real problem, and it will be
+    a great deal smaller than 5,664.
+
+    This spends 1 TTS + 1 STT per word instead of the 2 + 1 a full validation
+    costs, and it answers "how big is this" before anything is committed to.
+    """
+    try:
+        import requests
+    except ImportError:
+        sys.exit("pip install requests")
+    key = os.environ.get("ELEVENLABS_API_KEY")
+    if not key:
+        sys.exit("Set ELEVENLABS_API_KEY first.")
+    if not DEFERRED.exists():
+        sys.exit("Run `validate` once so the deferred list exists.")
+
+    rows = [ln.split(",")[0].strip('"')
+            for ln in DEFERRED.read_text(encoding="utf-8").splitlines()[1:] if ln.strip()]
+    done = {}
+    if SURVEY.exists():
+        for ln in SURVEY.read_text(encoding="utf-8").splitlines()[1:]:
+            if ln.strip():
+                parts = [c.strip('"') for c in ln.split('","')]
+                done[parts[0].lstrip('"')] = parts
+    todo = [w for w in rows if w not in done]
+    if args.limit:
+        todo = todo[: args.limit]
+    if not todo:
+        print("Nothing left to survey.")
+        return
+
+    print(f"to survey  : {len(todo):,} of {len(rows):,} deferred words "
+          f"({len(done):,} already done)")
+    print(f"API calls  : {len(todo)} TTS + {len(todo)} STT   (no dictionary applied)")
+    print(f"workers    : {args.workers}")
+    if not args.yes and input("Proceed? (y/N) ").strip().lower() not in ("y", "yes"):
+        return
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    get_cmu()
+    lock = threading.Lock()
+    fine = needs = err = 0
+
+    def one(word):
+        audio = synth(worker_session(), key, word)
+        if not audio or len(audio) < MIN_BYTES:
+            return word, None, "api error"
+        heard = transcribe(worker_session(), key, audio)
+        if heard is None:
+            return word, None, "stt error"
+        ok, how = heard_matches(word, heard)
+        return word, ok, heard
+
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = [pool.submit(one, w) for w in todo]
+        try:
+            for i, fut in enumerate(as_completed(futures), 1):
+                try:
+                    word, ok, heard = fut.result()
+                except Exception as e:  # noqa: BLE001
+                    err += 1
+                    continue
+                with lock:
+                    if ok is None:
+                        err += 1
+                    elif ok:
+                        fine += 1
+                    else:
+                        needs += 1
+                    done[word] = [word, "already-correct" if ok else
+                                  ("error" if ok is None else "needs-help"), str(heard)]
+                    if i % 25 == 0 or i == len(todo):
+                        _write_survey(done)
+                        print(f"  {i}/{len(todo)}  already-correct {fine}  "
+                              f"needs-help {needs}  err {err}", flush=True)
+        except KeyboardInterrupt:
+            with lock:
+                _write_survey(done)
+            print(f"\ninterrupted - {len(done)} surveyed and saved.")
+            pool.shutdown(wait=False, cancel_futures=True)
+            return
+
+    _write_survey(done)
+    tot = fine + needs
+    print(f"\nalready correct : {fine:,}" + (f"  ({fine/tot*100:.0f}%)" if tot else ""))
+    print(f"needs help      : {needs:,}" + (f"  ({needs/tot*100:.0f}%)" if tot else ""))
+    print(f"errors          : {err:,}")
+    print(f"\n-> {SURVEY}")
+    print("\nThe 'needs help' rows are the only deferred words worth sourcing")
+    print("phonemes for. 'already correct' means the model reads them fine and a")
+    print("dictionary entry could only make them worse.")
+
+
+def _write_survey(done):
+    SURVEY.write_text(
+        "word,verdict,heard\n" +
+        "\n".join(f'"{r[0]}","{r[1]}","{r[2]}"' for r in done.values()),
+        encoding="utf-8")
 
 
 def cmd_upload(args):
@@ -1055,6 +1235,10 @@ if __name__ == "__main__":
     sub.add_parser("selftest")
     sub.add_parser("offline")
     sub.add_parser("recheck")
+    sv = sub.add_parser("survey")
+    sv.add_argument("--limit", type=int, default=0)
+    sv.add_argument("--workers", type=int, default=6)
+    sv.add_argument("--yes", action="store_true")
     u = sub.add_parser("upload")
     u.add_argument("--name", default="Qulex validated pronunciation")
     u.add_argument("--description", default="Built and proved by tools/build_pronunciation_dict.py")
@@ -1063,4 +1247,4 @@ if __name__ == "__main__":
     {"generate": cmd_generate, "validate": cmd_validate,
      "export": cmd_export, "selftest": cmd_selftest,
      "offline": cmd_offline, "upload": cmd_upload,
-     "recheck": cmd_recheck}[a.cmd](a)
+     "recheck": cmd_recheck, "survey": cmd_survey}[a.cmd](a)
