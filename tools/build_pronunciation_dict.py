@@ -117,6 +117,8 @@ Then upload the .pls in the ElevenLabs dashboard, and set on the Edge Function:
 
 import argparse
 import json
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import re
 import sys
@@ -453,13 +455,18 @@ def heard_matches(word: str, heard: str):
     return False, f"heard '{h}'"
 
 
+# Transient failures deliberately do NOT carry ORACLE_VERSION. A word is
+# "done" only when the gate reached a verdict about it; a 429 storm or a
+# dropped socket is not a verdict. Stamping those would quietly exclude them
+# from the dictionary forever with nothing to show it happened - the exact
+# shape of failure this whole file exists to stop.
 def judge(session, key, word, ph):
     """Run all three stages against one candidate. Returns a state dict."""
     tagged = f'<phoneme alphabet="cmu-arpabet" ph="{ph}">{word}</phoneme>'
     base = synth(session, key, word)
     got = synth(session, key, tagged) if base else None
     if not base or not got:
-        return {"ok": False, "reason": "api error", "v": ORACLE_VERSION}
+        return {"ok": False, "reason": "api error"}          # unstamped: retry me
 
     ratio = len(got) / len(base)
     rec = {"v": ORACLE_VERSION, "ratio": round(ratio, 2),
@@ -474,6 +481,7 @@ def judge(session, key, word, ph):
     # Stage 3 - the entry has to be heard back as the word.
     heard = transcribe(session, key, got)
     if heard is None:
+        rec.pop("v", None)                                   # unstamped: retry me
         return {**rec, "ok": False, "reason": "stt error"}
     ok, how = heard_matches(word, heard)
     rec["heard"] = heard
@@ -487,6 +495,19 @@ def judge(session, key, word, ph):
 # ---------------------------------------------------------------------------
 # validate
 # ---------------------------------------------------------------------------
+
+# requests.Session is not documented as thread-safe, so each worker gets its
+# own rather than sharing one and hoping. Cheap next to three network calls.
+_LOCAL = threading.local()
+
+
+def worker_session():
+    import requests
+    sess = getattr(_LOCAL, "session", None)
+    if sess is None:
+        sess = _LOCAL.session = requests.Session()
+    return sess
+
 
 def cmd_validate(args):
     try:
@@ -503,17 +524,21 @@ def cmd_validate(args):
     cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
 
-    stale = [w for w, v in state.items() if v.get("v") != ORACLE_VERSION]
+    # Two different reasons a word can be un-stamped, and conflating them
+    # reads as alarming when it is routine.
+    unstamped = [(w, v) for w, v in state.items() if v.get("v") != ORACLE_VERSION]
+    retry = [w for w, v in unstamped if "error" in str(v.get("reason", ""))]
+    stale = [w for w, v in unstamped if w not in set(retry)]
     if stale:
-        print(f"note: {len(stale)} word(s) were judged by an older gate that "
-              f"could not detect wrong-word entries.\n"
-              f"      They are queued for re-validation, not trusted.\n")
+        print(f"note: {len(stale)} word(s) carry a verdict from an older, weaker gate "
+              f"that could not\n      detect wrong-word entries. Queued for "
+              f"re-validation, not trusted.")
+    if retry:
+        print(f"note: {len(retry)} word(s) previously hit a transient API error. "
+              f"Queued for retry.")
+    if stale or retry:
+        print()
 
-    # Candidates are frequency-ordered, so the default run proves the words
-    # learners meet first. That also means a clean first few hundred says
-    # nothing about the tail, where CMUdict runs out and g2p-en's neural
-    # fallback is inventing phonemes - which is precisely where the previous
-    # dictionary went wrong. Use --offset to sample there before committing.
     # Scope. Default is the words the gate can actually prove; the rest are
     # written to a work-list and deferred, NOT silently dropped.
     get_cmu()
@@ -558,28 +583,55 @@ def cmd_validate(args):
     # One STT call per word, on the tagged clip only. Single words run about
     # a second and a half, so this is an estimate, not a quote.
     print(f"~audio      : {len(todo) * 1.5 / 3600:.2f} h  <- STT billing (rough)")
+    print(f"workers     : {args.workers}  (~{len(todo) * 3.0 / args.workers / 3600:.1f} h "
+          f"at ~3s per word, vs ~{len(todo) * 3.0 / 3600:.1f} h sequential)")
     if not args.yes and input("Proceed? (y/N) ").strip().lower() not in ("y", "yes"):
         return
 
-    session = requests.Session()
     OUT.mkdir(parents=True, exist_ok=True)
-    get_cmu()  # load the recognition gate's data up front, not mid-run
+    get_cmu()      # load CMUdict once, on the main thread, before any fan-out
+    get_g2p()      # same: g2p bootstraps lazily and is not worth racing on
     passed = failed = errors = 0
+    done = 0
+    lock = threading.Lock()
 
-    for i, word in enumerate(todo, 1):
-        res = judge(session, key, word, cands[word])
-        state[word] = res
-        if res["ok"]:
-            passed += 1
-        elif "error" in res.get("reason", ""):
-            errors += 1
-        else:
-            failed += 1
+    def run_one(word):
+        return word, judge(worker_session(), key, word, cands[word])
 
-        if i % 25 == 0 or i == len(todo):
-            STATE.write_text(json.dumps(state, indent=1), encoding="utf-8")
-            print(f"  {i}/{len(todo)}  pass {passed}  reject {failed}  err {errors}",
-                  flush=True)
+    # Bounded pool. Each word is three sequential calls that mostly sit waiting
+    # on the network, so threads are the right tool - and the 429 backoff in
+    # synth()/transcribe() is what keeps a wider pool from turning into a
+    # rate-limit storm. Raise --workers only if you are not seeing retries.
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = {pool.submit(run_one, w): w for w in todo}
+        try:
+            for fut in as_completed(futures):
+                try:
+                    word, res = fut.result()
+                except Exception as e:  # noqa: BLE001 - one word must not kill the run
+                    word = futures[fut]
+                    res = {"ok": False, "reason": f"worker error: {e}"}  # unstamped
+                with lock:
+                    state[word] = res
+                    done += 1
+                    if res["ok"]:
+                        passed += 1
+                    elif "error" in res.get("reason", ""):
+                        errors += 1
+                    else:
+                        failed += 1
+                    if done % 25 == 0 or done == len(todo):
+                        STATE.write_text(json.dumps(state, indent=1), encoding="utf-8")
+                        print(f"  {done}/{len(todo)}  pass {passed}  reject {failed}  "
+                              f"err {errors}", flush=True)
+        except KeyboardInterrupt:
+            # Save what is proved before unwinding - the whole point of a
+            # resumable run is that stopping it costs nothing.
+            with lock:
+                STATE.write_text(json.dumps(state, indent=1), encoding="utf-8")
+            print(f"\ninterrupted - {done} judged and saved. Re-run to continue.")
+            pool.shutdown(wait=False, cancel_futures=True)
+            return
 
     STATE.write_text(json.dumps(state, indent=1), encoding="utf-8")
     bad = [(w, v) for w, v in state.items() if not v.get("ok")]
@@ -590,6 +642,8 @@ def cmd_validate(args):
         encoding="utf-8")
     flagged = [w for w, v in state.items() if v.get("ok") and v.get("flag")]
     print(f"\npassed {passed}   rejected {failed}   errors {errors}")
+    if errors:
+        print(f"the {errors} error(s) were NOT recorded as verdicts - re-run to retry them")
     print(f"rejections -> {REJECTED}")
     if flagged:
         print(f"{len(flagged)} passed but ran long - worth a listen: "
@@ -744,6 +798,9 @@ if __name__ == "__main__":
     v.add_argument("--scope", choices=("covered", "uncovered", "all"), default="covered",
                    help="covered (default) = only words CMUdict can vouch for; "
                         "uncovered = the deferred tail; all = everything")
+    v.add_argument("--workers", type=int, default=6,
+                   help="words validated in parallel (default 6). Each is 3 API "
+                        "calls; raise only if you are not seeing 429 retries")
     v.add_argument("--yes", action="store_true", help="skip the cost confirmation")
     sub.add_parser("export")
     sub.add_parser("selftest")
