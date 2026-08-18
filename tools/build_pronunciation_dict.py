@@ -151,6 +151,17 @@ ORACLE_VERSION = 2
 PASS_RATIO = 0.75
 # Below this, a response contains no speech at all whatever the ratio says.
 MIN_BYTES = 2048
+# Hard ceiling. Above this the clip is not the word plus a little breathing
+# room, it is the word plus other speech. Measured on the full run:
+#   reveal  3.57  heard "Rise may as to mean reveal"
+#   lapel   3.37  heard "E noninim lapel"
+#   ravine  3.08  heard "What a kind ravine"
+# All three were ACCEPTED by recognition, because the transcript really does
+# contain the headword - it just contains a sentence around it too. A learner
+# tapping "reveal" would hear a stray phrase. Recognition alone cannot catch
+# this; length alone could not catch the wrong-word case. Both bounds are load
+# bearing, for different failures.
+MAX_RATIO = 1.5
 # Advisory only. Correct entries land near 1.0; "Q Q Q Q" came back at 1.33
 # because nonsense takes longer to read out than the word does. Stage 3 is what
 # actually rejects it - this threshold only flags the entry for a human read.
@@ -477,6 +488,9 @@ def judge(session, key, word, ph):
         return {**rec, "ok": False, "reason": f"no audio ({len(got)}B)"}
     if ratio < PASS_RATIO:
         return {**rec, "ok": False, "reason": f"short ({ratio:.2f} of baseline)"}
+    if ratio > MAX_RATIO:
+        return {**rec, "ok": False, "reason": f"long ({ratio:.2f} of baseline) - "
+                                              f"extra speech around the word"}
 
     # Stage 3 - the entry has to be heard back as the word.
     heard = transcribe(session, key, got)
@@ -660,8 +674,13 @@ def cmd_export(args):
         sys.exit("Run `generate` and `validate` first.")
     cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     state = json.loads(STATE.read_text(encoding="utf-8"))
-    good = {w: cands[w] for w, v in state.items()
-            if v.get("ok") and v.get("v") == ORACLE_VERSION and w in cands}
+    proved = {w: v for w, v in state.items()
+              if v.get("ok") and v.get("v") == ORACLE_VERSION and w in cands}
+    # The length ceiling is applied here as well as in judge(), so entries
+    # proved before the ceiling existed are re-filtered from their recorded
+    # ratios rather than needing another paid run.
+    overlong = {w: v for w, v in proved.items() if v.get("ratio", 1) > MAX_RATIO}
+    good = {w: cands[w] for w in proved if w not in overlong}
     weak = sum(1 for v in state.values() if v.get("ok") and v.get("v") != ORACLE_VERSION)
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
@@ -674,6 +693,12 @@ def cmd_export(args):
     PLS.write_text("\n".join(lines), encoding="utf-8")
 
     deferred_n = sum(1 for w in cands if not has_reference(w))
+    if overlong:
+        print(f"excluded (long): {len(overlong)} entr(ies) whose clip ran over "
+              f"{MAX_RATIO}x the word:")
+        for w, v in sorted(overlong.items(), key=lambda t: -t[1].get("ratio", 0)):
+            print(f"                 {w:20} {v.get('ratio')}x  heard "
+                  f"{str(v.get('heard'))[:40]!r}")
     print(f"proved entries : {len(good)}")
     print(f"deferred       : {deferred_n:,} words with no independent reference "
           f"(see {DEFERRED.name})")
