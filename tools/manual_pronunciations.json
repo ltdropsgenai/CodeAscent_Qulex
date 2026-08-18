@@ -22,6 +22,9 @@
     "This file is version-controlled. tools/pronunciation/ is not."
   ],
 
+  "abs":          {"ph": "AE1 B Z",                          "confidence": "high",
+                   "note": "abdominal muscles. CMUdict lists both AE1 B Z and the spelled-out EY1 B IY1 EH1 S (A-B-S); g2p picked the letters. Both readings stress the first vowel, so the stress-ambiguity check cannot separate them - they differ in syllable count, not stress position. Hand-written because the catalogue means the muscles."},
+
   "adze":         {"ph": "AE1 D Z",                          "confidence": "high"},
   "aedile":       {"ph": "IY1 D AY2 L",                      "confidence": "high"},
   "adaxial":      {"ph": "AE0 D AE1 K S IY0 AH0 L",          "confidence": "high"},
