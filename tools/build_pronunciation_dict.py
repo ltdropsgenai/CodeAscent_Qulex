@@ -1121,6 +1121,12 @@ def cmd_survey(args):
         for ln in SURVEY.read_text(encoding="utf-8").splitlines()[1:]:
             if ln.strip():
                 parts = [c.strip('"') for c in ln.split('","')]
+                # An API or STT error is not a verdict. Recording one as
+                # "done" silently drops the word forever - which is exactly
+                # what happened when credits ran out mid-run and 3,367 words
+                # were written off as surveyed. Same mistake `validate` had.
+                if len(parts) > 1 and parts[1] == "error":
+                    continue
                 done[parts[0].lstrip('"')] = parts
     todo = [w for w in rows if w not in done]
     if args.limit:
@@ -1167,8 +1173,9 @@ def cmd_survey(args):
                         fine += 1
                     else:
                         needs += 1
-                    done[word] = [word, "already-correct" if ok else
-                                  ("error" if ok is None else "needs-help"), str(heard)]
+                    if ok is not None:
+                        done[word] = [word, "already-correct" if ok else "needs-help",
+                                      str(heard)]
                     if i % 25 == 0 or i == len(todo):
                         _write_survey(done)
                         print(f"  {i}/{len(todo)}  already-correct {fine}  "
@@ -1184,7 +1191,8 @@ def cmd_survey(args):
     tot = fine + needs
     print(f"\nalready correct : {fine:,}" + (f"  ({fine/tot*100:.0f}%)" if tot else ""))
     print(f"needs help      : {needs:,}" + (f"  ({needs/tot*100:.0f}%)" if tot else ""))
-    print(f"errors          : {err:,}")
+    print(f"errors          : {err:,}" +
+          ("   <- NOT recorded; re-run to retry them" if err else ""))
     print(f"\n-> {SURVEY}")
     print("\nThe 'needs help' rows are the only deferred words worth sourcing")
     print("phonemes for. 'already correct' means the model reads them fine and a")
