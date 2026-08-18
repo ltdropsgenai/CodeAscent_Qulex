@@ -861,9 +861,26 @@ def sense_dependent(word: str, ph: str):
         return "respelled by heteronyms.dart"
     cmu = get_cmu()
     alts = cmu.get(norm_text(word))
-    if alts and len({tuple(i for i, t in enumerate(a) if t.endswith("1")) for a in alts}) > 1:
+    if alts and len({_primary_syllable(a) for a in alts}) > 1:
         return "CMUdict readings differ in stress placement"
     return None
+
+
+def _primary_syllable(phones):
+    """Which SYLLABLE carries primary stress - counted in vowels, not tokens.
+
+    Counting token indices treats "W EY1 L ER0" and "HH W EY1 L ER0" as
+    different stress patterns, because the extra HH shifts every index by one.
+    They are the same word said the same way; only the wh- cluster differs.
+    That mistake excluded 95 headwords from the dictionary for an ambiguity
+    that does not exist - "already", "duty", "forgive", "coupon" among them.
+    Stress lives on vowels, so count vowels.
+    """
+    vowels = [t for t in phones if t[-1:].isdigit()]
+    for i, t in enumerate(vowels):
+        if t.endswith("1"):
+            return i
+    return -1
 
 
 def cmd_export(args):
