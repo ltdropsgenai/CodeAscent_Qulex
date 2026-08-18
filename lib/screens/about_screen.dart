@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../services/voice.dart';
@@ -39,13 +40,18 @@ class AboutScreen extends StatelessWidget {
         docBody(
             'Type: Space Mono, Spectral, and Inter. Natural voices by '
             'ElevenLabs. Built with Flutter.'),
-        // Temporary: audio diagnostics. Every speak() records how it was
-        // served — cloud voice, device fallback, or superseded — with the time
-        // it took. Remove once narration is trusted again.
-        docHeading('Audio diagnostics'),
-        docNote(Voice.instance.diagnostics.isEmpty
-            ? 'No audio attempts yet this session. Play a round, then come back.'
-            : Voice.instance.diagnostics.join('\n')),
+        // Audio diagnostics, debug builds only. Every speak() records how it
+        // was served — cloud voice, device fallback, or superseded — with the
+        // time it took. This panel is what proved the client believed playback
+        // had succeeded while the audio was silent, which moved the search off
+        // the client and onto the Edge Function. Worth keeping for the next
+        // time narration misbehaves; not worth showing a learner.
+        if (kDebugMode) ...[
+          docHeading('Audio diagnostics'),
+          docNote(Voice.instance.diagnostics.isEmpty
+              ? 'No audio attempts yet this session. Play a round, then come back.'
+              : Voice.instance.diagnostics.join('\n')),
+        ],
         docHeading('Contact'),
         docBody(
             'Questions, ideas, or bug reports are welcome at '

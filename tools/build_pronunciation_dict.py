@@ -140,6 +140,7 @@ MODEL = "eleven_flash_v2"  # the only model in play that honours the dictionary
 API = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
 STT_API = "https://api.elevenlabs.io/v1/speech-to-text"
 STT_MODEL = "scribe_v1"
+DICT_API = "https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-file"
 
 # Bump this whenever the gate changes. Entries proved by an older, weaker gate
 # are re-validated rather than trusted: the 400 words that passed under the
@@ -262,6 +263,51 @@ def get_cmu():
     return _CMU
 
 
+def phones_for(word, g2p):
+    """ARPAbet for one headword, preferring CMUdict token by token.
+
+    Handing a hyphenated compound to g2p-en as a single string produces
+    fabrications, not near misses:
+
+        stir-fry        g2p  S T ER1 F R IY0            ("stir-free")
+        deep-fry        g2p  D IY1 F R IY0              (the P is simply gone)
+        results-driven  g2p  R EH2 S T W IH1 L S V IH0 NG   ("rest wheels wing")
+
+    Measured over the full run: where g2p disagreed with token-wise CMUdict,
+    87% of those entries failed the gate. Where it agreed, 9% did. So split on
+    word boundaries and look each part up; fall back to g2p only for tokens
+    CMUdict has never seen, which is what it is actually good for.
+    """
+    parts = [p for p in re.split(r"[-\s]+", word.strip()) if p]
+
+    # SINGLE words stay with g2p-en. It consults CMUdict too, but chooses
+    # between alternate readings using part of speech, and CMUdict's first
+    # listed variant is not that choice. Overriding it would silently reset
+    # every stress-shift heteronym to an arbitrary reading:
+    #
+    #     upgrade   g2p AH1 P G R EY0 D  (UPgrade, noun)
+    #               cmu AH0 P G R EY1 D  (upGRADE, verb)
+    #     object    g2p AH0 B JH EH1 K T (obJECT, verb)
+    #               cmu AA1 B JH EH0 K T (OBject, noun)
+    #
+    # 49 headwords would have flipped that way - discount, suspect, reject,
+    # import, collect among them. On a vocabulary app, that is a regression
+    # dressed as a fix.
+    if len(parts) <= 1:
+        return " ".join(p for p in g2p(word) if str(p).strip() and p != " ")
+
+    # MULTI-token words are the ones g2p fabricates on, so look each part up.
+    cmu = get_cmu()
+    out = []
+    for part in parts:
+        entry = cmu.get(part.lower())
+        if entry:
+            out.extend(entry[0])
+        else:
+            out.extend(p for p in g2p(part) if str(p).strip() and p != " ")
+    return " ".join(out)
+
+
 def cmd_generate(args):
     try:
         from g2p_en import G2p  # noqa: F401 - imported for the error message
@@ -280,8 +326,7 @@ def cmd_generate(args):
             skipped.append((word, "non-latin or unusual characters"))
             continue
         try:
-            phones = [p for p in g2p(word) if p.strip() and p != " "]
-            ph = " ".join(phones)
+            ph = phones_for(word, g2p)
         except Exception as e:  # noqa: BLE001 - a bad word must not kill the run
             skipped.append((word, f"g2p failed: {e}"))
             # A broken environment fails on every word. Say so on the first
@@ -471,6 +516,30 @@ def heard_matches(word: str, heard: str):
 # dropped socket is not a verdict. Stamping those would quietly exclude them
 # from the dictionary forever with nothing to show it happened - the exact
 # shape of failure this whole file exists to stop.
+def cmudict_attested(word: str, ph: str) -> bool:
+    """True when CMUdict itself lists exactly these phonemes for this word.
+
+    Scribe is a statistical model with no context on a bare word, and it
+    misheard a lot of correct entries: "hot" as "Heart", "app" as "Ape",
+    "soap" as "Soak", "sink" as "Sing". Rejecting those throws away 586
+    entries that a curated human dictionary vouches for.
+
+    So when the phonemes we sent ARE a CMUdict reading, and the clip already
+    cleared the length gate, that is better evidence than one transcription.
+    This cannot rescue the wrong-word case the gate exists to catch: "fund"
+    with F AW1 N D is not a CMUdict reading of "fund", so it stays rejected.
+    """
+    cmu = get_cmu()
+    toks = norm_text(word).split()
+    variants = [()]
+    for t in toks:
+        e = cmu.get(t)
+        if not e:
+            return False
+        variants = [v + bare(x) for v in variants for x in e][:64]
+    return bare(ph.split()) in set(variants)
+
+
 def judge(session, key, word, ph):
     """Run all three stages against one candidate. Returns a state dict."""
     tagged = f'<phoneme alphabet="cmu-arpabet" ph="{ph}">{word}</phoneme>'
@@ -480,7 +549,9 @@ def judge(session, key, word, ph):
         return {"ok": False, "reason": "api error"}          # unstamped: retry me
 
     ratio = len(got) / len(base)
-    rec = {"v": ORACLE_VERSION, "ratio": round(ratio, 2),
+    # The verdict is about THIS phoneme string. Record it, so that
+    # regenerating candidates invalidates the proof instead of inheriting it.
+    rec = {"v": ORACLE_VERSION, "ph": ph, "ratio": round(ratio, 2),
            "base": len(base), "got": len(got)}
 
     # Stage 2 - silence and truncation, rejected without spending an STT call.
@@ -499,6 +570,9 @@ def judge(session, key, word, ph):
         return {**rec, "ok": False, "reason": "stt error"}
     ok, how = heard_matches(word, heard)
     rec["heard"] = heard
+    if not ok and cmudict_attested(word, ph):
+        # Recognition disagreed, but CMUdict says these phonemes are this word.
+        ok, how = True, "cmudict-attested"
     if not ok:
         return {**rec, "ok": False, "reason": how}
     if ratio > LONG_RATIO:
@@ -538,21 +612,6 @@ def cmd_validate(args):
     cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
 
-    # Two different reasons a word can be un-stamped, and conflating them
-    # reads as alarming when it is routine.
-    unstamped = [(w, v) for w, v in state.items() if v.get("v") != ORACLE_VERSION]
-    retry = [w for w, v in unstamped if "error" in str(v.get("reason", ""))]
-    stale = [w for w, v in unstamped if w not in set(retry)]
-    if stale:
-        print(f"note: {len(stale)} word(s) carry a verdict from an older, weaker gate "
-              f"that could not\n      detect wrong-word entries. Queued for "
-              f"re-validation, not trusted.")
-    if retry:
-        print(f"note: {len(retry)} word(s) previously hit a transient API error. "
-              f"Queued for retry.")
-    if stale or retry:
-        print()
-
     # Scope. Default is the words the gate can actually prove; the rest are
     # written to a work-list and deferred, NOT silently dropped.
     get_cmu()
@@ -570,7 +629,38 @@ def cmd_validate(args):
     else:
         pool = list(cands)
 
-    pending = [w for w in pool if state.get(w, {}).get("v") != ORACLE_VERSION]
+    # Report un-stamped words AFTER scoping. Reporting them before means
+    # announcing 126 words "queued for re-validation" and then saying "nothing
+    # left to validate" in the same breath, because they were never in scope.
+    inscope = set(pool)
+    unstamped = [(w, v) for w, v in state.items() if v.get("v") != ORACLE_VERSION]
+    retry = [w for w, v in unstamped if "error" in str(v.get("reason", ""))]
+    stale = [w for w, v in unstamped if w not in set(retry)]
+    s_in = [w for w in stale if w in inscope]
+    r_in = [w for w in retry if w in inscope]
+    s_out = len(stale) - len(s_in)
+    if s_in:
+        print(f"note: {len(s_in)} word(s) carry a verdict from an older, weaker gate. "
+              f"Queued for re-validation.")
+    if r_in:
+        print(f"note: {len(r_in)} word(s) hit a transient API error. Queued for retry.")
+    if s_out:
+        print(f"note: {s_out} word(s) carry old-gate verdicts but are OUT OF SCOPE "
+              f"(deferred, no\n      CMUdict reference). Re-running will not touch "
+              f"them - they need a\n      reference source, not another pass. "
+              f"See {DEFERRED.name}.")
+    if s_in or r_in or s_out:
+        print()
+
+    def proved(w):
+        v = state.get(w, {})
+        # A verdict about different phonemes is not a verdict about these ones.
+        # Note the absence of a default: `v.get("ph", cands[w])` would silently
+        # treat "we never recorded what was tested" as "it matches", which is
+        # how a regenerated candidate inherited a proof it never earned.
+        return v.get("v") == ORACLE_VERSION and v.get("ph") == cands[w]
+
+    pending = [w for w in pool if not proved(w)]
     if args.offset:
         pending = pending[args.offset:]
     todo = pending[: args.limit] if args.limit else pending
@@ -680,8 +770,14 @@ def cmd_export(args):
     # proved before the ceiling existed are re-filtered from their recorded
     # ratios rather than needing another paid run.
     overlong = {w: v for w, v in proved.items() if v.get("ratio", 1) > MAX_RATIO}
-    good = {w: cands[w] for w in proved if w not in overlong}
-    weak = sum(1 for v in state.values() if v.get("ok") and v.get("v") != ORACLE_VERSION)
+    # The file must contain the phonemes that were actually spoken and heard.
+    # If candidates.json has been regenerated since the verdict, the entry is
+    # unproved no matter what the verdict says.
+    drifted = {w for w, v in proved.items() if v.get("ph") != cands[w]}
+    good = {w: cands[w] for w in proved if w not in overlong and w not in drifted}
+    weak_all = [w for w, v in state.items() if v.get("ok") and v.get("v") != ORACLE_VERSION]
+    weak_inscope = [w for w in weak_all if w in cands and has_reference(w)]
+    weak_deferred = [w for w in weak_all if w not in set(weak_inscope)]
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<lexicon version="1.0" xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"',
@@ -699,12 +795,20 @@ def cmd_export(args):
         for w, v in sorted(overlong.items(), key=lambda t: -t[1].get("ratio", 0)):
             print(f"                 {w:20} {v.get('ratio')}x  heard "
                   f"{str(v.get('heard'))[:40]!r}")
+    if drifted:
+        print(f"excluded (drift): {len(drifted)} entr(ies) whose phonemes changed since "
+              f"they were proved.\n                  Run `validate` to re-prove them.")
     print(f"proved entries : {len(good)}")
     print(f"deferred       : {deferred_n:,} words with no independent reference "
           f"(see {DEFERRED.name})")
-    if weak:
-        print(f"excluded       : {weak} passed only the old length-only gate - "
-              f"re-run `validate` to prove them")
+    if weak_inscope:
+        print(f"excluded       : {len(weak_inscope)} passed only the old length-only "
+              f"gate - re-run `validate` to prove them")
+    if weak_deferred:
+        print(f"excluded       : {len(weak_deferred)} passed only the old gate AND have "
+              f"no CMUdict\n                 reference. A re-run cannot prove these; "
+              f"they are part of\n                 the deferred set and need a "
+              f"reference source.")
     print(f"written        : {PLS}")
     print("\nUpload it in the ElevenLabs dashboard, then set on the Edge Function:")
     print("  USE_PRONUNCIATION_DICT=true")
@@ -758,6 +862,126 @@ def cmd_offline(args):
         sys.exit(f"{bad} case(s) behaved unexpectedly - the gate is not sound.")
     print("The matching rule accepts correct and homophone-spelled transcripts")
     print("and rejects wrong-word, garbled and silent ones.")
+
+
+def cmd_recheck(args):
+    """Re-apply the current rules to measurements already paid for. Free.
+
+    Every verdict stores what was measured - the byte ratio, what Scribe heard,
+    the phonemes it applied to. When a rule changes, that stored evidence can
+    be re-judged without synthesising anything again. Use it after changing
+    MAX_RATIO, or after adding a route like cmudict-attested, instead of
+    re-running a paid pass over words that were already spoken.
+
+    It only ever re-derives from recorded evidence. Anything without a
+    recorded measurement is left alone for `validate` to handle.
+    """
+    if not (CANDIDATES.exists() and STATE.exists()):
+        sys.exit("Run `generate` and `validate` first.")
+    cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
+    state = json.loads(STATE.read_text(encoding="utf-8"))
+    get_cmu()
+
+    changed = {"rescued": [], "revoked": []}
+    for w, v in state.items():
+        if v.get("v") != ORACLE_VERSION or "ratio" not in v:
+            continue
+        ph = v.get("ph", cands.get(w))
+        if ph is None:
+            continue
+        was = bool(v.get("ok"))
+        ratio = v.get("ratio", 1.0)
+
+        if ratio > MAX_RATIO:
+            now, how = False, f"long ({ratio:.2f} of baseline) - extra speech around the word"
+        elif ratio < PASS_RATIO or v.get("got", MIN_BYTES) < MIN_BYTES:
+            now, how = False, v.get("reason", "short")
+        else:
+            heard = v.get("heard")
+            if heard is None:
+                continue
+            now, how = heard_matches(w, heard)
+            if not now and cmudict_attested(w, ph):
+                now, how = True, "cmudict-attested"
+
+        if now != was:
+            changed["rescued" if now else "revoked"].append(w)
+            v["ok"] = now
+            (v.__setitem__("how", how) if now else v.__setitem__("reason", how))
+
+    STATE.write_text(json.dumps(state, indent=1), encoding="utf-8")
+    print(f"rescued : {len(changed['rescued'])}  (now pass under the current rules)")
+    if changed["rescued"]:
+        print("          " + ", ".join(sorted(changed["rescued"])[:12]) +
+              (" ..." if len(changed["rescued"]) > 12 else ""))
+    print(f"revoked : {len(changed['revoked'])}  (no longer pass)")
+    if changed["revoked"]:
+        print("          " + ", ".join(sorted(changed["revoked"])[:12]) +
+              (" ..." if len(changed["revoked"]) > 12 else ""))
+    print("\nNo API calls were made. Run `export` to rebuild the .pls.")
+
+
+def cmd_upload(args):
+    """Upload the .pls and print the two ids the Edge Function needs.
+
+    The dashboard shows the dictionary but makes the version id awkward to
+    find, and the version is what the API actually pins to. Creating it here
+    means both values come straight from the response, with no transcription
+    step to get wrong.
+
+    It also reports version_rules_num - how many rules ElevenLabs says it
+    accepted. If that is lower than the number of lexemes we sent, entries were
+    dropped on their side, silently, which is exactly the failure mode that
+    started all of this. Better to see it now than to wonder later why a word
+    still sounds wrong.
+    """
+    try:
+        import requests
+    except ImportError:
+        sys.exit("pip install requests")
+    key = os.environ.get("ELEVENLABS_API_KEY")
+    if not key:
+        sys.exit("Set ELEVENLABS_API_KEY first.")
+    if not PLS.exists():
+        sys.exit("Run `export` first - no .pls to upload.")
+
+    raw = PLS.read_text(encoding="utf-8")
+    sent = raw.count("<lexeme>")
+    print(f"file    : {PLS}")
+    print(f"lexemes : {sent:,}")
+    print(f"name    : {args.name}")
+    if not args.yes and input("Upload? (y/N) ").strip().lower() not in ("y", "yes"):
+        return
+
+    r = requests.post(
+        DICT_API,
+        headers={"xi-api-key": key},
+        files={"file": (PLS.name, raw.encode("utf-8"), "application/octet-stream")},
+        data={"name": args.name, "description": args.description},
+        timeout=300,
+    )
+    if r.status_code != 200:
+        sys.exit(f"HTTP {r.status_code}: {r.text[:500]}")
+    d = r.json()
+    accepted = d.get("version_rules_num")
+
+    print()
+    print("Set these three on the Supabase Edge Function")
+    print("(Project -> Edge Functions -> Secrets), then redeploy `tts`:")
+    print()
+    print("  USE_PRONUNCIATION_DICT=true")
+    print(f"  PRONUNCIATION_DICT_ID={d.get('id')}")
+    print(f"  PRONUNCIATION_DICT_VERSION={d.get('version_id')}")
+    print()
+    print(f"rules accepted by ElevenLabs : {accepted}")
+    if isinstance(accepted, int) and accepted != sent:
+        print(f"  MISMATCH - {sent:,} lexemes sent, {accepted:,} accepted. "
+              f"{sent - accepted:,} were dropped\n"
+              f"  server-side without an error. Do NOT enable this dictionary "
+              f"until that is\n  understood - silent drops are how the last one "
+              f"got through.")
+    else:
+        print("  matches what was sent - nothing dropped server-side.")
 
 
 def cmd_selftest(args):
@@ -830,7 +1054,13 @@ if __name__ == "__main__":
     sub.add_parser("export")
     sub.add_parser("selftest")
     sub.add_parser("offline")
+    sub.add_parser("recheck")
+    u = sub.add_parser("upload")
+    u.add_argument("--name", default="Qulex validated pronunciation")
+    u.add_argument("--description", default="Built and proved by tools/build_pronunciation_dict.py")
+    u.add_argument("--yes", action="store_true", help="skip the confirmation")
     a = ap.parse_args()
     {"generate": cmd_generate, "validate": cmd_validate,
      "export": cmd_export, "selftest": cmd_selftest,
-     "offline": cmd_offline}[a.cmd](a)
+     "offline": cmd_offline, "upload": cmd_upload,
+     "recheck": cmd_recheck}[a.cmd](a)
