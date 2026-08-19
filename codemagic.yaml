@@ -220,9 +220,21 @@ workflows:
       vars:
         BUNDLE_ID: "com.codeascent.qbit"
         FLUTTER_VERSION: *flutter_version
-        # Override this when starting the build. There is no sensible default:
-        # a patch aimed at the wrong release is worse than no patch.
-        RELEASE_VERSION: ""
+        # RELEASE_VERSION is deliberately NOT declared here. Supply it when you
+        # start the build ("Specify build configuration" -> Environment
+        # variables), e.g. RELEASE_VERSION=0.1.0+33.
+        #
+        # It used to be declared as "" to document that it needs setting. That
+        # was worse than useless: Codemagic validates every env var value and
+        # an empty string satisfies none of string/int/float/bool, so the whole
+        # file was rejected as invalid and the Start-build dialog refused to
+        # offer ANY workflow — including qbit-test. A config file that
+        # documents an intention by breaking the UI is not documenting it.
+        #
+        # There is still no default, on purpose: shorebird's own fallback is
+        # --release-version=latest, and a patch aimed at the wrong release is
+        # worse than no patch. The first script step fails loudly if it is
+        # unset, which is where that intention belongs.
       flutter: *flutter_version
       xcode: latest
       cocoapods: default
