@@ -144,7 +144,7 @@ PLS = OUT / "qulex_pronunciation.pls"
 # re-export cannot quietly undo it.
 #
 # One grapheme per line; blank lines and lines starting with # are ignored.
-DENYLIST = OUT / "denylist.txt"
+DENYLIST = ROOT / "tools" / "pronunciation_denylist.txt"
 
 
 def load_denylist() -> set:

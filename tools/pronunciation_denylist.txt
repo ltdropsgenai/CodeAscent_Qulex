@@ -1,0 +1,17 @@
+# Headwords excluded from the pronunciation dictionary because a human heard
+# ElevenLabs render them wrong, regardless of what validate/export concluded.
+#
+# Why this file has to exist: the validation oracle transcribes the clip with
+# Scribe and compares the text to the headword. That cannot distinguish a
+# correct reading from a wrong one that still lands on the same spelling, so a
+# CMUdict-correct entry can pass with how=exact and still sound wrong. Ears are
+# the only detector. Record the verdict here so a re-export cannot undo it.
+#
+# Format: one grapheme per line. Trailing # comments allowed.
+
+sacred     # 2026-08-19. Dictionary said S EY1 K R AH0 D (CMUdict-correct);
+           # engine rendered a three-syllable "say-creh-dee". The plain
+           # no-dictionary reading is correct, confirmed by listening A/B.
+           # Removed live from dict hhmzVr6q8JMjvf5DlYGd -> version
+           # OsjRRoPZmWN9pDESC0Hh. Validation had passed it: ok=true,
+           # how=exact, ratio=1.0.
