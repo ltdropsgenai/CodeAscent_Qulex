@@ -1,10 +1,9 @@
 // Supabase Edge Function: dict-setup
 //
-// One-time/admin utility to create and populate a Qulex pronunciation
-// dictionary in ElevenLabs, using the same ELEVENLABS_API_KEY secret the
-// `tts` function already uses (so it's guaranteed to hit the correct
-// production ElevenLabs account). Not part of the normal request path —
-// called manually a handful of times while setting this up, then left idle.
+// Admin utility for the Qulex pronunciation dictionary in ElevenLabs, using
+// the same ELEVENLABS_API_KEY secret the `tts` function already uses (so it
+// is guaranteed to hit the correct production ElevenLabs account). Not part
+// of the normal request path.
 //
 // SECURITY NOTE. This used to read:
 //
@@ -18,8 +17,7 @@
 // design.
 //
 // It now fails closed. With no DICT_ADMIN_TOKEN set, every request is refused,
-// including one that guesses the old value. Set a real secret when you next
-// need this:
+// including one that guesses the old value. Set a real secret before use:
 //
 //     supabase secrets set DICT_ADMIN_TOKEN="$(openssl rand -hex 32)"
 //
@@ -89,6 +87,16 @@ Deno.serve(async (req) => {
       });
     }
 
+    if (action === "list") {
+      const res = await fetch(
+        "https://api.elevenlabs.io/v1/pronunciation-dictionaries",
+        { headers: { "xi-api-key": ELEVEN_KEY } },
+      );
+      const data = await res.json();
+      if (!res.ok) return json({ error: "elevenlabs error", detail: data }, 502);
+      return json(data);
+    }
+
     if (action === "create") {
       const res = await fetch(
         "https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-rules",
@@ -135,6 +143,50 @@ Deno.serve(async (req) => {
         return json({ error: "elevenlabs error", detail }, 502);
       }
       return json({ deleted: dictionary_id });
+    }
+
+    // Remove one or more graphemes from the live dictionary, returning a new
+    // version_id. This is the maintenance path for a bad entry.
+    //
+    // It exists because of "sacred": the dictionary said S EY1 K R AH0 D,
+    // which is CMUdict-correct, and ElevenLabs still rendered it with an extra
+    // syllable, while the plain no-dictionary reading was right. Nothing in
+    // the validation pipeline could have caught that — its oracle was a Scribe
+    // transcript, and both readings transcribe back to "sacred" — so bad
+    // entries surface one user report at a time, and each needs to be pullable
+    // without rebuilding all 11,173.
+    //
+    // Removing beats a Word.say override: `say` only rewrites the HEADWORD,
+    // and "sacred" also appears inside 28 other entries' definitions and
+    // examples, where the dictionary would still apply.
+    if (action === "remove_rules") {
+      const { dictionary_id, rule_strings } = body;
+      if (!dictionary_id) return json({ error: "dictionary_id required" }, 400);
+      if (!Array.isArray(rule_strings) || rule_strings.length === 0) {
+        return json({ error: "rule_strings must be a non-empty array" }, 400);
+      }
+      const res = await fetch(
+        `https://api.elevenlabs.io/v1/pronunciation-dictionaries/${dictionary_id}/remove-rules`,
+        {
+          method: "POST",
+          headers: {
+            "xi-api-key": ELEVEN_KEY,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ rule_strings }),
+        },
+      );
+      const data = await res.json();
+      if (!res.ok) return json({ error: "elevenlabs error", detail: data }, 502);
+      // The caller MUST now point PRONUNCIATION_DICT_VERSION at this id, or
+      // the removal has no effect on what the app actually plays.
+      return json({
+        removed: rule_strings,
+        new_version_id: data.version_id ?? data.id ?? null,
+        next_step:
+          "set PRONUNCIATION_DICT_VERSION to new_version_id, or nothing changes",
+        raw: data,
+      });
     }
 
     if (action === "add_rules") {

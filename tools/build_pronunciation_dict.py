@@ -133,6 +133,29 @@ CANDIDATES = OUT / "candidates.json"
 STATE = OUT / "validation_state.json"
 REJECTED = OUT / "rejected.csv"
 PLS = OUT / "qulex_pronunciation.pls"
+
+# Headwords that must never ship in the dictionary, whatever validation says.
+#
+# The oracle cannot catch a wrong-but-recognizable reading: it asks Scribe to
+# transcribe the clip and checks the text, and "SAY-krid" and "say-creh-dee"
+# both transcribe to "sacred". So an entry can be CMUdict-correct, pass with
+# how=exact, and still be read wrong by the engine. The only detector we have
+# is a person listening, and this file is where that verdict is recorded so a
+# re-export cannot quietly undo it.
+#
+# One grapheme per line; blank lines and lines starting with # are ignored.
+DENYLIST = OUT / "denylist.txt"
+
+
+def load_denylist() -> set:
+    if not DENYLIST.exists():
+        return set()
+    out = set()
+    for line in DENYLIST.read_text(encoding="utf-8").splitlines():
+        line = line.split("#", 1)[0].strip()
+        if line:
+            out.add(line)
+    return out
 DEFERRED = OUT / "deferred_no_reference.csv"
 SENSE_DEP = OUT / "sense_dependent.csv"
 HETERONYMS_DART = ROOT / "lib" / "services" / "heteronyms.dart"
@@ -911,8 +934,10 @@ def cmd_export(args):
     drifted = {w for w, v in proved.items() if v.get("ph") != cands[w]}
     sense = {w: r for w in proved
              if (r := sense_dependent(w, cands[w])) is not None}
+    denied = load_denylist()
     good = {w: cands[w] for w in proved
-            if w not in overlong and w not in drifted and w not in sense}
+            if w not in overlong and w not in drifted and w not in sense
+            and w not in denied}
     if sense:
         SENSE_DEP.write_text(
             "word,phonemes,why\n" +
@@ -930,6 +955,13 @@ def cmd_export(args):
                      f"<phoneme>{escape(good[w])}</phoneme></lexeme>")
     lines.append("</lexicon>")
     PLS.write_text("\n".join(lines), encoding="utf-8")
+
+    denied_hit = sorted(denied & set(proved))
+    if denied_hit:
+        print(f"excluded (denylist): {len(denied_hit)} entr(ies) a human heard "
+              f"the engine get wrong despite a passing verdict "
+              f"-> {', '.join(denied_hit[:8])}"
+              f"{' ...' if len(denied_hit) > 8 else ''}")
 
     deferred_n = sum(1 for w in cands if not has_reference(w))
     if overlong:
