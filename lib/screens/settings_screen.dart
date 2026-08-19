@@ -227,10 +227,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         const SizedBox(height: 15),
         Text(Strings.t(locale, 'reviewIntensity'),
-            style: QType.serif(size: 16.5, color: QColors.cream)),
+            style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
         const SizedBox(height: 3),
         Text(Strings.t(locale, 'reviewIntensitySub'),
-            style: QType.mono(size: 11.5, color: QColors.dim, spacing: 0.3)),
+            style: QType.mono(size: 13, color: QColors.dim, spacing: 0.2)),
         const SizedBox(height: 12),
         QSegment(
           labels: labels,
@@ -262,10 +262,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         const SizedBox(height: 15),
         Text(Strings.t(locale, 'difficultyTitle'),
-            style: QType.serif(size: 16.5, color: QColors.cream)),
+            style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
         const SizedBox(height: 3),
         Text(Strings.t(locale, 'difficultySub'),
-            style: QType.mono(size: 11.5, color: QColors.dim, spacing: 0.3)),
+            style: QType.mono(size: 13, color: QColors.dim, spacing: 0.2)),
         const SizedBox(height: 12),
         QSegment(
           labels: labels,
@@ -282,11 +282,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _promise(IconData icon, String text) => Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, size: 16, color: QColors.coral),
+          Icon(icon, size: 18, color: QColors.coral),
           const SizedBox(width: 12),
           Expanded(
             child: Text(text,
-                style: QType.sans(size: 13.5, color: QColors.muted, height: 1.45)),
+                style: QType.sans(size: 15, color: QColors.muted, height: 1.45)),
           ),
         ],
       );

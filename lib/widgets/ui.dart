@@ -20,7 +20,7 @@ class QLabel extends StatelessWidget {
   Widget build(BuildContext context) => Padding(
         padding: padding,
         child: Text(text.toUpperCase(),
-            style: QType.mono(size: 11, color: QColors.muted, spacing: 2.5)),
+            style: QType.mono(size: 12.5, color: QColors.muted, spacing: 2.2)),
       );
 }
 
@@ -62,19 +62,19 @@ class QRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 15),
       child: Row(children: [
         if (icon != null) ...[
-          Icon(icon, size: 18, color: QColors.coral),
+          Icon(icon, size: 20, color: QColors.coral),
           const SizedBox(width: 14),
         ],
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title, style: QType.serif(size: 16.5, color: QColors.cream)),
+              Text(title, style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
               if (sub != null) ...[
-                const SizedBox(height: 3),
+                const SizedBox(height: 5),
                 Text(sub!,
                     style: QType.mono(
-                        size: 11.5, color: QColors.muted, spacing: 0.3)),
+                        size: 13, color: QColors.muted, spacing: 0.2)),
               ],
             ],
           ),
@@ -82,7 +82,7 @@ class QRow extends StatelessWidget {
         if (trailing != null)
           Padding(padding: const EdgeInsets.only(left: 12), child: trailing!)
         else if (onTap != null)
-          const Icon(Icons.chevron_right, size: 20, color: QColors.dim),
+          const Icon(Icons.chevron_right, size: 22, color: QColors.dim),
       ]),
     );
     if (onTap != null) {
@@ -210,7 +210,7 @@ class QSegment extends StatelessWidget {
                 ),
                 child: Text(labels[i].toUpperCase(),
                     style: QType.mono(
-                        size: 10.5,
+                        size: 12,
                         spacing: 1,
                         color: i == index ? QColors.coral : QColors.muted)),
               ),
@@ -263,7 +263,7 @@ class QButton extends StatelessWidget {
             const SizedBox(width: 8),
           ],
           Text(label.toUpperCase(),
-              style: QType.mono(size: 12, spacing: 1.5, color: fg)),
+              style: QType.mono(size: 13, spacing: 1.3, color: fg)),
         ],
       ),
     );

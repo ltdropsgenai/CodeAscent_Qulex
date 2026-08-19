@@ -7,7 +7,7 @@ import '../l10n/strings.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/word_drift.dart';
-import 'home_screen.dart';
+import 'handoff_screen.dart';
 import 'splash_screen.dart';
 
 /// Qulex's launch title sequence, played on **every** cold start.
@@ -25,8 +25,8 @@ import 'splash_screen.dart';
 /// download. See [WordDrift] for the drift field.
 ///
 /// Where it hands off depends on whether this is a first run: a brand-new
-/// install continues into [SplashScreen]'s pitch, and everyone else goes
-/// straight to [HomeScreen]. This screen never sets `seenIntro` itself —
+/// install continues into [SplashScreen]'s pitch, and everyone else goes to
+/// [HandoffScreen] and then Home. This screen never sets `seenIntro` itself —
 /// only finishing the pitch does — so an app killed mid-pitch simply sees it
 /// again next launch instead of losing it.
 class IntroScreen extends StatefulWidget {
@@ -100,9 +100,12 @@ class _IntroScreenState extends State<IntroScreen>
     if (_advanced || !mounted) return;
     _advanced = true;
     _autoAdvance?.cancel();
-    // First run continues into the pitch; everyone else goes straight in.
+    // First run continues into the pitch; everyone else gets the one-line
+    // handoff and then Home. Nothing routes straight to Home from here — the
+    // cut from a title sequence to a populated dashboard was the thing that
+    // read badly.
     final Widget next = appState.seenIntro
-        ? HomeScreen(repository: widget.repository)
+        ? HandoffScreen(repository: widget.repository)
         : SplashScreen(repository: widget.repository);
     Navigator.of(context).pushReplacement(PageRouteBuilder(
       transitionDuration: const Duration(milliseconds: 420),

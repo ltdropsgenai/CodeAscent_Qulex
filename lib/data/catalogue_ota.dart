@@ -320,14 +320,20 @@ class CatalogueOta {
     } catch (_) {}
   }
 
-  /// Fire-and-forget wrapper for app code: schedules a check for [after] from
-  /// now and swallows everything.
+  /// Schedules a check for [after] from now and swallows everything.
   ///
-  /// Deliberately returns void. A caller that awaited this would put the
-  /// network back on the path this whole class exists to keep it off.
-  void scheduleCheck({Duration after = const Duration(seconds: 12)}) {
-    if (kIsWeb) return;
-    Timer(after, () {
+  /// Deliberately does not return a Future. A caller that awaited this would
+  /// put the network back on the path this whole class exists to keep it off.
+  ///
+  /// It DOES return the timer, and the caller is expected to cancel it on
+  /// dispose. The first version returned void and armed an unowned timer —
+  /// which outlives the screen that armed it, keeps the isolate awake for
+  /// twelve seconds after the app is done with it, and shows up in widget
+  /// tests as "a Timer is still pending even after the widget tree was
+  /// disposed". Nothing in this class needs to outlive its caller.
+  Timer? scheduleCheck({Duration after = const Duration(seconds: 12)}) {
+    if (kIsWeb) return null;
+    return Timer(after, () {
       unawaited(check().catchError((_) => CatalogueCheckOutcome.failed));
     });
   }

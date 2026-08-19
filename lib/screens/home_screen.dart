@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import '../data/catalogue_ota.dart';
 import '../data/progress_store.dart';
@@ -37,6 +39,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   final ProgressStore _store = ProgressStore();
   late Future<List<Word>> _future;
+  Timer? _otaCheck;
   int _selected = 0;
   GameMode _gameType = GameMode.quickPlay;
 
@@ -70,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     // Look for a newer word list — well after first frame, on a timer, never
     // awaited. Anything it finds is installed for the NEXT cold start; this
     // session keeps the catalogue it already parsed. See CatalogueOta.
-    CatalogueOta.instance.scheduleCheck();
+    _otaCheck = CatalogueOta.instance.scheduleCheck();
   }
 
   @override
@@ -85,6 +88,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _otaCheck?.cancel();
     _store.dispose(); // flushes anything pending
     super.dispose();
   }

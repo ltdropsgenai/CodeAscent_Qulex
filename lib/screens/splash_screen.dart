@@ -5,7 +5,7 @@ import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
-import 'home_screen.dart';
+import 'handoff_screen.dart';
 
 /// Qulex's differentiators, front and center. On first launch this is gated
 /// behind the animated [IntroScreen] and shown once (`appState.seenIntro`),
@@ -31,8 +31,10 @@ class SplashScreen extends StatelessWidget {
     // the very first screen a new user sees. Build our own if we weren't given
     // one; WordRepository is stateless.
     final repo = repository ?? WordRepository();
+    // Via the handoff, same as the returning-user path — a first run should
+    // not be the one launch that cuts straight to a full dashboard.
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => HomeScreen(repository: repo)),
+      MaterialPageRoute(builder: (_) => HandoffScreen(repository: repo)),
     );
   }
 
