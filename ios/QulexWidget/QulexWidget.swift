@@ -60,34 +60,59 @@ struct QulexWidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
     var entry: Provider.Entry
 
+    // .accessoryRectangular is iOS 16+. The app's deployment target is 15.0,
+    // so every reference to that case - including a switch over it - has to
+    // sit inside an availability check or the archive fails to compile.
+    @ViewBuilder
     var body: some View {
-        switch family {
-        case .accessoryRectangular:
-            // Lock screen: no colour, no background — the system tints it.
-            VStack(alignment: .leading, spacing: 2) {
-                Text(entry.word).font(.headline).lineLimit(1)
-                Text(entry.meaning).font(.caption2).lineLimit(2)
+        if #available(iOS 16.0, *) {
+            if family == .accessoryRectangular {
+                lockScreen
+            } else {
+                homeScreen
             }
-        default:
-            VStack(alignment: .leading, spacing: 6) {
-                Text("WORD OF THE MOMENT")
-                    .font(.system(size: 9, weight: .medium))
-                    .kerning(1.1)
-                    .foregroundColor(.qCoral)
-                Text(entry.word)
-                    .font(.system(size: 22, weight: .bold))
-                    .foregroundColor(.qCream)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                Text(entry.meaning)
-                    .font(.system(size: 12))
-                    .foregroundColor(.white.opacity(0.69))
-                    .lineLimit(family == .systemSmall ? 3 : 2)
-                Spacer(minLength: 0)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
+        } else {
+            homeScreen
         }
     }
+
+    // Lock screen: no colour and no background - the system tints it.
+    private var lockScreen: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(entry.word).font(.headline).lineLimit(1)
+            Text(entry.meaning).font(.caption2).lineLimit(2)
+        }
+    }
+
+    private var homeScreen: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text("WORD OF THE MOMENT")
+                .font(.system(size: 9, weight: .medium))
+                .kerning(1.1)
+                .foregroundColor(.qCoral)
+            Text(entry.word)
+                .font(.system(size: 22, weight: .bold))
+                .foregroundColor(.qCream)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+            Text(entry.meaning)
+                .font(.system(size: 12))
+                .foregroundColor(.white.opacity(0.69))
+                .lineLimit(family == .systemSmall ? 3 : 2)
+            Spacer(minLength: 0)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+// Families are also version-gated: listing .accessoryRectangular
+// unconditionally is the same compile error in a different place.
+private func supportedWidgetFamilies() -> [WidgetFamily] {
+    var families: [WidgetFamily] = [.systemSmall, .systemMedium]
+    if #available(iOS 16.0, *) {
+        families.append(.accessoryRectangular)
+    }
+    return families
 }
 
 @main
@@ -107,6 +132,6 @@ struct QulexWidget: Widget {
         }
         .configurationDisplayName("Word of the moment")
         .description("A word from your own pile, waiting on your home screen.")
-        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular])
+        .supportedFamilies(supportedWidgetFamilies())
     }
 }
