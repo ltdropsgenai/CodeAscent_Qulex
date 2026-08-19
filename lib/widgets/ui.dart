@@ -72,9 +72,14 @@ class QRow extends StatelessWidget {
               Text(title, style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
               if (sub != null) ...[
                 const SizedBox(height: 5),
+                // Sans, not mono. Space Mono is a wide face with a small
+                // x-height: once these lines were big enough to read, they
+                // were also wide enough to wrap three times beside a stepper.
+                // Mono stays where it belongs — short uppercase labels and
+                // buttons. These are sentences.
                 Text(sub!,
-                    style: QType.mono(
-                        size: 13, color: QColors.muted, spacing: 0.2)),
+                    style: QType.sans(
+                        size: 13, color: QColors.muted, height: 1.4)),
               ],
             ],
           ),

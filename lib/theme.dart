@@ -50,6 +50,30 @@ class QType {
   static const fontSerif = 'Spectral';
   static const fontSans = 'Inter';
 
+  /// Every font size in the app passes through here.
+  ///
+  /// Raising individual numbers by hand did not fix "the print is tiny on
+  /// mobile", twice, because the problem was never one screen. It was the
+  /// bottom of the scale everywhere: captions at 9-11pt, subtitles at 11.5,
+  /// body prose at 13.5, against platform defaults of 17pt (iOS body) and
+  /// 14sp (Material body-medium). One screen at a time was always going to
+  /// miss the next one — About, Privacy and the Account screen were still
+  /// untouched after the first pass.
+  ///
+  /// The correction is WEIGHTED, not a flat multiplier: +28% at the small end,
+  /// tapering to nothing by 30pt. A flat factor big enough to rescue an 11pt
+  /// label would have pushed the 44pt handoff word and the 58pt title mark out
+  /// of layouts that were already tuned. It is also continuous, so the curve
+  /// stays monotonic — an early version bucketed the ranges and made 14pt text
+  /// render larger than 15pt text.
+  ///
+  /// This does not replace the OS text-size setting, which Flutter applies on
+  /// top of whatever comes out of here. It fixes the default.
+  static double scaled(double size) {
+    final t = ((size - 12) / 18).clamp(0.0, 1.0);
+    return size * (1.28 - 0.28 * t);
+  }
+
   static TextStyle mono({
     double size = 12,
     FontWeight weight = FontWeight.w700,
@@ -58,7 +82,7 @@ class QType {
   }) =>
       TextStyle(
         fontFamily: fontMono,
-        fontSize: size,
+        fontSize: scaled(size),
         fontWeight: weight,
         color: color,
         letterSpacing: spacing,
@@ -73,7 +97,7 @@ class QType {
   }) =>
       TextStyle(
         fontFamily: fontSerif,
-        fontSize: size,
+        fontSize: scaled(size),
         fontWeight: weight,
         color: color,
         height: height,
@@ -88,7 +112,7 @@ class QType {
   }) =>
       TextStyle(
         fontFamily: fontSans,
-        fontSize: size,
+        fontSize: scaled(size),
         fontWeight: weight,
         color: color,
         height: height,

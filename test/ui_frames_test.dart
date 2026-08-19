@@ -11,6 +11,7 @@ import 'package:qulex/screens/settings_screen.dart';
 import 'package:qulex/state/app_state.dart';
 import 'package:qulex/theme.dart';
 import 'package:qulex/widgets/app_background.dart';
+import 'package:qulex/widgets/doc_scaffold.dart';
 
 import 'font_loader.dart';
 
@@ -75,6 +76,40 @@ void main() {
     await tester.pump(const Duration(milliseconds: 400));
     await expectLater(find.byKey(const ValueKey('shot')),
         matchesGoldenFile('frames/settings_bottom.png'));
+  }, skip: !kCapture);
+
+  testWidgets('capture a doc page', (tester) async {
+    tester.view.physicalSize = const Size(390 * 3, 844 * 3);
+    tester.view.devicePixelRatio = 3.0;
+    addTearDown(tester.view.reset);
+    await appState.load();
+    // DocScaffold with sample prose rather than AboutScreen itself: that
+    // screen reaches into Voice, and audioplayers has no implementation in a
+    // test binding. What is under inspection here is the prose type, which
+    // this renders identically.
+    await tester.pumpWidget(_frame(DocScaffold(
+      title: 'About',
+      children: [
+        docNote('Qulex - Version 0.1.0 (beta) - by CodeAscent'),
+        docBody(
+            'Qulex is a fast, gamified way to build real vocabulary. You play '
+            'short rounds, meet words in context, and a spaced-repetition '
+            'system brings each word back exactly when you are about to '
+            'forget it.'),
+        docHeading('Built to be different'),
+        docBody(
+            'Qulex is multilingual from day one: word meanings are shown in '
+            'your own language across English, Spanish, Portuguese, Italian '
+            'and French, with more to come.'),
+      ],
+    )));
+    await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 600)));
+    for (var i = 0; i < 12; i++) {
+      await tester.pump(const Duration(milliseconds: 100));
+    }
+    await expectLater(find.byKey(const ValueKey('shot')),
+        matchesGoldenFile('frames/doc_about.png'));
   }, skip: !kCapture);
 
   testWidgets('capture the handoff flashes', (tester) async {

@@ -230,7 +230,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
         const SizedBox(height: 3),
         Text(Strings.t(locale, 'reviewIntensitySub'),
-            style: QType.mono(size: 13, color: QColors.dim, spacing: 0.2)),
+            style: QType.sans(size: 13, color: QColors.dim, height: 1.4)),
         const SizedBox(height: 12),
         QSegment(
           labels: labels,
@@ -265,7 +265,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
         const SizedBox(height: 3),
         Text(Strings.t(locale, 'difficultySub'),
-            style: QType.mono(size: 13, color: QColors.dim, spacing: 0.2)),
+            style: QType.sans(size: 13, color: QColors.dim, height: 1.4)),
         const SizedBox(height: 12),
         QSegment(
           labels: labels,
