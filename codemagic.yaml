@@ -54,6 +54,14 @@ workflows:
             --type IOS_APP_STORE \
             --certificate-key @env:CERTIFICATE_PRIVATE_KEY \
             --create
+          # The widget extension is a separate bundle id and needs its own
+          # profile. Without this the archive fails at signing, not at compile,
+          # which reads as a mysterious codesign error rather than a missing
+          # profile.
+          app-store-connect fetch-signing-files "com.codeascent.qbit.QulexWidget" \
+            --type IOS_APP_STORE \
+            --certificate-key @env:CERTIFICATE_PRIVATE_KEY \
+            --create
           keychain add-certificates
           xcode-project use-profiles
       - name: Build iOS IPA
