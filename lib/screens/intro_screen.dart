@@ -43,7 +43,22 @@ class IntroScreen extends StatefulWidget {
 
 class _IntroScreenState extends State<IntroScreen>
     with SingleTickerProviderStateMixin {
-  static const _fullRun = Duration(milliseconds: 2800);
+  // Long enough to actually be a title sequence.
+  //
+  // The first version ran 2800ms and felt like it barely happened — but the
+  // duration was never the real problem. initState kicked off a 24MB
+  // json.decode of the word catalogue on this isolate to feed the drift field
+  // real vocabulary. That parse measures ~1.2s on a fast desktop and more on a
+  // phone, and json.decode is synchronous: no frames are produced while it
+  // runs, yet the AnimationController and the auto-advance Timer both keep
+  // counting wall-clock. So most of the sequence played to a frozen screen and
+  // then advanced immediately. The catalogue warm-up is gone (the built-in
+  // deck reads better anyway, and HomeScreen loads the catalogue itself), and
+  // with the main isolate free the timeline below is what you actually see.
+  static const _fullRun = Duration(milliseconds: 3800);
+
+  // Reduce-motion stays short on purpose: someone who has asked the OS for
+  // less animation does not want a longer one.
   static const _reducedRun = Duration(milliseconds: 900);
 
   late final AnimationController _c;
@@ -52,36 +67,12 @@ class _IntroScreenState extends State<IntroScreen>
   bool _reduceMotion = false;
   bool _started = false;
 
-  /// Real catalogue words for the drift field, once they arrive. The intro
-  /// never waits on this — it opens on the built-in deck and swaps in live
-  /// words if the load happens to win the race.
-  List<String> _catalogue = const [];
-
   @override
   void initState() {
     super.initState();
+    // Duration is set in didChangeDependencies, where reduce-motion is
+    // readable; this just creates the controller.
     _c = AnimationController(vsync: this, duration: _fullRun);
-    _warmCatalogue();
-  }
-
-  /// Loads the catalogue off the critical path purely to feed the drift
-  /// field. Failure is not an error here — the built-in deck is the fallback,
-  /// and HomeScreen does its own load regardless.
-  Future<void> _warmCatalogue() async {
-    try {
-      final words = await widget.repository.loadAll();
-      if (!mounted) return;
-      final sample = <String>[];
-      // Walk with a stride so the sample spans the whole frequency range
-      // rather than 60 words that all start with "a".
-      final stride = words.length > 240 ? words.length ~/ 240 : 1;
-      for (var i = 0; i < words.length && sample.length < 240; i += stride) {
-        sample.add(words[i].word);
-      }
-      if (sample.length >= 24) setState(() => _catalogue = sample);
-    } catch (_) {
-      // Built-in deck it is.
-    }
   }
 
   @override
@@ -136,16 +127,24 @@ class _IntroScreenState extends State<IntroScreen>
         body: AnimatedBuilder(
           animation: _c,
           builder: (context, _) {
-            final driftT = _seg(0.00, 0.14, Curves.easeOut);
-            final markT = _seg(0.06, 0.42, Curves.easeOutBack);
-            final slashT = _seg(0.28, 0.55, Curves.easeOutCubic);
-            final sweepT = _seg(0.40, 0.68, Curves.easeInOutCubic);
-            final subT = _seg(0.55, 0.80, Curves.easeOut);
-            final hintT = _seg(0.45, 0.62, Curves.easeOut);
+            // Beats, as fractions of _fullRun (3800ms):
+            //   field up      0    - 380ms
+            //   mark settles  190  - 1290ms
+            //   slash swings  910  - 1750ms
+            //   light sweeps  1370 - 2280ms
+            //   line rises    1820 - 2580ms
+            //   HOLD          2580 - 3500ms   <- the beat that was missing
+            //   lift away     3500 - 3800ms
+            final driftT = _seg(0.00, 0.10, Curves.easeOut);
+            final markT = _seg(0.05, 0.34, Curves.easeOutBack);
+            final slashT = _seg(0.24, 0.46, Curves.easeOutCubic);
+            final sweepT = _seg(0.36, 0.60, Curves.easeInOutCubic);
+            final subT = _seg(0.48, 0.68, Curves.easeOut);
+            final hintT = _seg(0.42, 0.55, Curves.easeOut);
             // Everything lifts away together on the last beat, so the
             // cross-fade into the next screen starts from calm rather than
             // from a full-strength title card.
-            final outT = _seg(0.90, 1.00, Curves.easeIn);
+            final outT = _seg(0.92, 1.00, Curves.easeIn);
             final exit = 1.0 - outT * 0.35;
 
             return Stack(
@@ -155,7 +154,6 @@ class _IntroScreenState extends State<IntroScreen>
                 // clear down the middle for the mark.
                 Positioned.fill(
                   child: WordDrift(
-                    words: _catalogue,
                     strength: driftT * exit,
                     clearCenter: 0.26,
                     seed: widget.driftSeed,

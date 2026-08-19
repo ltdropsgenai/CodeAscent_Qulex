@@ -62,7 +62,8 @@ void main() {
       ),
     ));
 
-    const marks = <int>[150, 450, 800, 1150, 1500, 1750, 2000, 2400];
+    // Sampled across the 3800ms timeline, including the hold.
+    const marks = <int>[200, 700, 1200, 1700, 2200, 2700, 3200, 3700];
     var elapsed = 0;
     for (final m in marks) {
       await tester.pump(Duration(milliseconds: m - elapsed));
