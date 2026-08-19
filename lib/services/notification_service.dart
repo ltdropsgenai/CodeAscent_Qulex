@@ -91,7 +91,11 @@ class NotificationService {
     for (var i = 0; i < picks.length; i++) {
       final w = picks[i];
       final meaning = w.glossFor(locale).correct;
-      final when = base.add(Duration(days: i));
+      // Rebuilt at the target wall-clock time on each day rather than
+      // `base.add(Duration(days: i))`, which adds 24 absolute hours and so
+      // drifts the reminder by an hour either side of a DST change — a 9am
+      // reminder quietly becoming an 8am or 10am one for a week.
+      final when = _fireOn(base, i, hour, minute);
       final androidDetails = AndroidNotificationDetails(
         'qbit_daily',
         'Daily word reminders',
@@ -156,6 +160,11 @@ class NotificationService {
     }
     return out;
   }
+
+  /// [base] shifted by [days] CALENDAR days, keeping the same wall-clock time.
+  tz.TZDateTime _fireOn(tz.TZDateTime base, int days, int hour, int minute) =>
+      tz.TZDateTime(
+          tz.local, base.year, base.month, base.day + days, hour, minute);
 
   tz.TZDateTime _firstFire(int hour, int minute) {
     final now = tz.TZDateTime.now(tz.local);

@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb, TargetPlatform;
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -49,6 +50,13 @@ class Voice {
     _playerInit = true;
     try {
       await _player.setReleaseMode(ReleaseMode.stop);
+      // _playingPath exists so the LRU sweep won't delete a file out from
+      // under the player mid-sentence. It was set but never cleared, so the
+      // last clip played stayed exempt from eviction indefinitely — and with
+      // a full cache the sweep would keep skipping it and free less than it
+      // meant to. Clearing on completion keeps the exemption to the clip that
+      // is genuinely playing.
+      _player.onPlayerComplete.listen((_) => _playingPath = null);
     } catch (_) {}
   }
 
@@ -79,6 +87,65 @@ class Voice {
   /// The clip currently on the player. Eviction skips it: deleting a file out
   /// from under a playing AudioPlayer truncates whatever is being said.
   String? _playingPath;
+
+  bool get _isIOS => !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
+
+  bool _sessionReady = false;
+
+  /// Claim the iOS audio session up front.
+  ///
+  /// THIS IS WHY THE WORD WASN'T READ ON iOS UNTIL YOU TAPPED SOMETHING.
+  ///
+  /// The two audio paths treat the session completely differently:
+  ///
+  ///   * audioplayers (the ElevenLabs clips) sets the category to `playback`
+  ///     and calls setActive(true) itself, every time it plays.
+  ///   * flutter_tts (the on-device fallback) touches the session ONLY if you
+  ///     call setSharedInstance / setIosAudioCategory. We called neither.
+  ///
+  /// So before any cloud clip had played, the session was still iOS's default
+  /// `soloAmbient` — which is silenced by the Ring/Silent switch. The fallback
+  /// voice ran, reported success, and produced nothing anyone could hear. The
+  /// moment audioplayers played one clip, the session flipped to `playback`
+  /// and stayed there, and from then on the device voice worked.
+  ///
+  /// That is exactly the reported shape: silent at the start of a question,
+  /// audible after tapping the speaker icon, and audible again on the reveal —
+  /// because by then something had gone through audioplayers. It also explains
+  /// why Android was never affected: Android's TTS doesn't depend on a shared
+  /// session being activated first.
+  ///
+  /// Called from main() so the session is right before the first question,
+  /// not after the first failure.
+  Future<void> warmUp() async {
+    if (_sessionReady) return;
+    _sessionReady = true;
+    try {
+      // Only the iOS half is specified; passing no `android` keeps
+      // audioplayers' Android defaults exactly as they are, which is the
+      // configuration that already works well.
+      await AudioPlayer.global.setAudioContext(AudioContext(
+        iOS: AudioContextIOS(
+          category: AVAudioSessionCategory.playback,
+          options: const {AVAudioSessionOptions.duckOthers},
+        ),
+      ));
+    } catch (_) {}
+    if (_isIOS) {
+      try {
+        // setSharedInstance(true) activates the session; passing false would
+        // DEACTIVATE it and cut off audioplayers, so it is never called.
+        await _fallbackTts.setSharedInstance(true);
+        await _fallbackTts.setIosAudioCategory(
+          IosTextToSpeechAudioCategory.playback,
+          const [IosTextToSpeechAudioCategoryOptions.duckOthers],
+          IosTextToSpeechAudioMode.voicePrompt,
+        );
+      } catch (_) {}
+    }
+    await _ensureFallback();
+    await _ensurePlayer();
+  }
 
   Future<void> _ensureFallback() async {
     if (_fallbackInit) return;
@@ -309,6 +376,14 @@ class Voice {
     final existing = _inFlight[path];
     if (existing != null) return existing;
     final job = () async {
+      // An async body runs synchronously up to its first await. Without this
+      // yield, a throw before that point (Supabase configured but not
+      // initialized) would run the finally — and therefore _inFlight.remove —
+      // BEFORE the assignment below ever executed, leaving a completed `false`
+      // future stuck in the map for that path for the life of the process.
+      // Every later request for that word would short-circuit to failure,
+      // permanently and silently.
+      await null;
       try {
         final res = await Supabase.instance.client.functions.invoke(
           'tts',
@@ -332,21 +407,55 @@ class Voice {
     return job;
   }
 
+  /// Largest clip we will accept. The longest thing we ever synthesize is a
+  /// definition or an example sentence; anything past this is not our audio.
+  static const _maxClipBytes = 4 * 1024 * 1024;
+
+  /// Independent of speak()'s 2.5s timeout. That one bounds how long the
+  /// LEARNER waits before the on-device voice takes over — it does not stop
+  /// the fetch, which carries on in the background to warm the cache. This is
+  /// what stops that background fetch running forever.
+  static const _downloadTimeout = Duration(seconds: 12);
+
+  /// An MP3 begins with an ID3 tag or a frame sync. Checking is cheap, and it
+  /// is the difference between caching audio and caching a captive-portal
+  /// login page under a .mp3 name — which would then be replayed as silence
+  /// from disk on every future attempt at that word, for as long as
+  /// _cacheVersion stays put.
+  static bool _looksLikeMp3(Uint8List b) {
+    if (b.length < 4) return false;
+    if (b[0] == 0x49 && b[1] == 0x44 && b[2] == 0x33) return true; // "ID3"
+    return b[0] == 0xFF && (b[1] & 0xE0) == 0xE0; // frame sync
+  }
+
   Future<Uint8List?> _download(String url) async {
+    HttpClient? client;
     try {
-      final client = HttpClient();
+      client = HttpClient()..connectionTimeout = const Duration(seconds: 8);
       final req = await client.getUrl(Uri.parse(url));
-      final resp = await req.close();
-      if (resp.statusCode != 200) {
-        client.close(force: true);
-        return null;
+      final resp = await req.close().timeout(_downloadTimeout);
+      if (resp.statusCode != 200) return null;
+      if (resp.contentLength > _maxClipBytes) return null;
+
+      // Accumulate with a running ceiling rather than folding blindly: a
+      // response that never ends would otherwise grow this list until the
+      // process died.
+      final builder = BytesBuilder(copy: false);
+      await for (final chunk in resp.timeout(_downloadTimeout)) {
+        builder.add(chunk);
+        if (builder.length > _maxClipBytes) return null;
       }
-      final bytes = await resp.fold<List<int>>(
-          <int>[], (acc, chunk) => acc..addAll(chunk));
-      client.close();
-      return Uint8List.fromList(bytes);
+      final bytes = builder.takeBytes();
+      if (!_looksLikeMp3(bytes)) return null;
+      return bytes;
     } catch (_) {
       return null;
+    } finally {
+      // Was outside any finally, so a throw mid-stream leaked the client and
+      // its socket. Repeated failures leaked one apiece.
+      try {
+        client?.close(force: true);
+      } catch (_) {}
     }
   }
 
@@ -367,7 +476,9 @@ class Voice {
   }
 
   Future<void> _speakViaFallback(String text, String langCode) async {
-    await _ensureFallback();
+    // Belt and braces: main() calls warmUp(), but if anything ever speaks
+    // before that, claim the session here rather than talking into a muted one.
+    await warmUp();
     try {
       await _fallbackTts.setLanguage(Strings.ttsLang[langCode] ?? 'en-US');
       await _fallbackTts.speak(text);
@@ -377,6 +488,7 @@ class Voice {
   }
 
   Future<void> stop() async {
+    _playingPath = null;
     try {
       await _player.stop();
     } catch (_) {}

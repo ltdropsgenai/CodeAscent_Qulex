@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../l10n/strings.dart';
-import '../services/sync_service.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
 import '../widgets/wordmark.dart';
@@ -101,10 +100,17 @@ class PaywallScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(6)),
                     ),
                     onPressed: () async {
+                      // LOCAL ONLY, on purpose. This used to mirror the
+                      // entitlement to the cloud, which meant the client was
+                      // the authority on who has Pro — and since RLS let any
+                      // signed-in user write their own entitlements row, Pro
+                      // was self-grantable with one REST call using the anon
+                      // key that ships in the binary. The table is read-only
+                      // to clients now and a store webhook writes it, so this
+                      // developer toggle unlocks the build in front of you and
+                      // nothing else. It does not survive a reinstall, which
+                      // is the correct behaviour for a test unlock.
                       await appState.setPro(!appState.isPro);
-                      // Mirror the entitlement to the cloud so it survives a
-                      // reinstall (no-op when signed out / backend unset).
-                      await SyncService.instance.pushEntitlement(appState.isPro);
                       if (context.mounted && appState.isPro) {
                         Navigator.of(context).maybePop();
                       }

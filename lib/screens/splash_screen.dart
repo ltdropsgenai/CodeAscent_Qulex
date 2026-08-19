@@ -23,11 +23,17 @@ class SplashScreen extends StatelessWidget {
       return;
     }
     await appState.markIntroSeen();
-    if (context.mounted) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => HomeScreen(repository: repository!)),
-      );
-    }
+    if (!context.mounted) return;
+    // `repository!` used to be a force-unwrap here. It happened to be safe
+    // because the only caller that reaches this branch always supplies one and
+    // the Settings caller returns above — but that is a property of the call
+    // sites, not of this method, and it is one refactor away from a crash on
+    // the very first screen a new user sees. Build our own if we weren't given
+    // one; WordRepository is stateless.
+    final repo = repository ?? WordRepository();
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (_) => HomeScreen(repository: repo)),
+    );
   }
 
   @override

@@ -1,5 +1,9 @@
+import 'dart:async';
 import 'dart:convert';
+
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../game/daily.dart' show ymd;
 import '../game/srs.dart';
 import '../models/progress.dart';
 
@@ -21,33 +25,116 @@ class ProgressStore {
   int newPerDay = 20; // cap on brand-new words introduced per day
   double intervalScale = 1.0; // <1 = more frequent reviews, >1 = more relaxed
 
-  String _ymd(DateTime d) =>
-      '${d.year.toString().padLeft(4, '0')}-'
-      '${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
+  /// Sections that could not be read on the last [load], in plain language.
+  ///
+  /// Empty is the normal case. Non-empty means we started that section from
+  /// scratch rather than refusing to start at all — the UI should say so once,
+  /// because silently resetting someone's streak is worse than telling them.
+  final List<String> loadWarnings = [];
+
+  String _ymd(DateTime d) => ymd(d);
+
+  // ---------------------------------------------------------------------------
+  // Load
+  //
+  // Every section is parsed independently and every one can fail without taking
+  // the others — or the app — with it. This used to be four unguarded
+  // json.decode + cast expressions in a row, so a single truncated write (a
+  // process killed mid-setString, a device out of space) threw out of load(),
+  // out of HomeScreen's _load(), and into the FutureBuilder's error branch,
+  // where the only offer was "Failed to load: FormatException". There was no
+  // way back except reinstalling, which deletes the very progress the screen
+  // was failing to read.
+  //
+  // A damaged value is moved aside rather than discarded, so it can still be
+  // recovered from a support request instead of being gone for good.
+  // ---------------------------------------------------------------------------
 
   Future<void> load() async {
     final p = await SharedPreferences.getInstance();
-    final rawWords = p.getString(_kWords);
-    if (rawWords != null) {
-      final m = json.decode(rawWords) as Map<String, dynamic>;
-      _words.clear();
-      m.forEach((k, v) =>
-          _words[k] = WordProgress.fromJson(v as Map<String, dynamic>));
-    }
-    final rawProfile = p.getString(_kProfile);
-    if (rawProfile != null) {
+    loadWarnings.clear();
+
+    await _section(p, _kWords, 'word progress', () {
+      final raw = p.getString(_kWords);
+      if (raw == null) return;
+      final m = json.decode(raw) as Map<String, dynamic>;
+      final parsed = <String, WordProgress>{};
+      var skipped = 0;
+      m.forEach((k, v) {
+        // One bad entry costs one word, not the whole history.
+        try {
+          parsed[k] = WordProgress.fromJson((v as Map).cast<String, dynamic>());
+        } catch (_) {
+          skipped++;
+        }
+      });
+      _words
+        ..clear()
+        ..addAll(parsed);
+      if (skipped > 0) {
+        loadWarnings.add('$skipped word${skipped == 1 ? '' : 's'} had damaged '
+            'progress and were reset.');
+      }
+    });
+
+    await _section(p, _kProfile, 'your profile and streak', () {
+      final raw = p.getString(_kProfile);
+      if (raw == null) return;
       profile =
-          PlayerProfile.fromJson(json.decode(rawProfile) as Map<String, dynamic>);
+          PlayerProfile.fromJson(json.decode(raw) as Map<String, dynamic>);
+    });
+
+    await _section(p, _kFlagged, 'reported words', () {
+      _flagged
+        ..clear()
+        ..addAll(p.getStringList(_kFlagged) ?? const []);
+    });
+
+    await _section(p, _kRoundSnapshots, 'unfinished rounds', () {
+      _roundSnapshots.clear();
+      final raw = p.getString(_kRoundSnapshots);
+      if (raw == null) return;
+      final m = json.decode(raw) as Map<String, dynamic>;
+      m.forEach((k, v) {
+        try {
+          _roundSnapshots[k] = (v as Map).cast<String, dynamic>();
+        } catch (_) {/* one unusable snapshot, not all of them */}
+      });
+    });
+
+    // Drop rounds nobody is coming back to (see _snapshotTtl).
+    _pruneSnapshots();
+  }
+
+  /// Runs one section of [load], containing any failure to that section.
+  Future<void> _section(SharedPreferences p, String key, String label,
+      void Function() body) async {
+    try {
+      body();
+    } catch (e) {
+      loadWarnings.add('Could not read $label — starting that part fresh.');
+      await _quarantine(p, key);
     }
-    _flagged
-      ..clear()
-      ..addAll(p.getStringList(_kFlagged) ?? const []);
-    final rawSnapshots = p.getString(_kRoundSnapshots);
-    _roundSnapshots.clear();
-    if (rawSnapshots != null) {
-      final m = json.decode(rawSnapshots) as Map<String, dynamic>;
-      m.forEach((k, v) => _roundSnapshots[k] = (v as Map).cast<String, dynamic>());
+  }
+
+  /// Moves an unreadable value out of the way so the next launch is clean,
+  /// keeping one copy for diagnosis. A single slot, overwritten, so repeated
+  /// failures can't grow storage without bound.
+  Future<void> _quarantine(SharedPreferences p, String key) async {
+    try {
+      final raw = p.getString(key);
+      if (raw != null) {
+        await p.setString('${key}__corrupt', raw);
+      } else {
+        final list = p.getStringList(key);
+        if (list != null) await p.setStringList('${key}__corrupt', list);
+      }
+      await p.remove(key);
+    } catch (_) {
+      // If we can't even quarantine it, removing it is still worth trying.
+      try {
+        await p.remove(key);
+      } catch (_) {}
     }
   }
 
@@ -56,7 +143,23 @@ class ProgressStore {
   // so returning to the same track+mode can offer Resume vs Start New instead
   // of silently discarding an unfinished round.
 
+  /// How long an unfinished round stays on offer. `savedAtMillis` was always
+  /// recorded and never read, so a round abandoned months ago was still met
+  /// with "Resume — question 4 of 10", about words the learner has since
+  /// forgotten they were mid-way through.
+  static const _snapshotTtl = Duration(days: 30);
+
   String _roundKey(String trackId, String mode) => '$trackId|$mode';
+
+  bool _isFresh(Map<String, dynamic> snap) {
+    final saved = (snap['savedAtMillis'] as num?)?.toInt();
+    if (saved == null) return true; // pre-dates the field; give it the benefit
+    return DateTime.now().millisecondsSinceEpoch - saved <=
+        _snapshotTtl.inMilliseconds;
+  }
+
+  void _pruneSnapshots() =>
+      _roundSnapshots.removeWhere((_, snap) => !_isFresh(snap));
 
   /// Save (or overwrite) the in-progress round for [trackId]/[mode].
   Future<void> saveRoundSnapshot(
@@ -66,9 +169,16 @@ class ProgressStore {
     await p.setString(_kRoundSnapshots, json.encode(_roundSnapshots));
   }
 
-  /// The saved in-progress round for [trackId]/[mode], if any.
-  Map<String, dynamic>? roundSnapshot(String trackId, String mode) =>
-      _roundSnapshots[_roundKey(trackId, mode)];
+  /// The saved in-progress round for [trackId]/[mode], if any and still fresh.
+  Map<String, dynamic>? roundSnapshot(String trackId, String mode) {
+    final snap = _roundSnapshots[_roundKey(trackId, mode)];
+    if (snap == null) return null;
+    if (!_isFresh(snap)) {
+      _roundSnapshots.remove(_roundKey(trackId, mode));
+      return null;
+    }
+    return snap;
+  }
 
   /// Clear the saved round for [trackId]/[mode] (round finished or discarded).
   Future<void> clearRoundSnapshot(String trackId, String mode) async {
@@ -86,15 +196,70 @@ class ProgressStore {
 
   bool isFlagged(String wordId) => _flagged.contains(wordId);
 
-  Future<void> _save() async {
-    final p = await SharedPreferences.getInstance();
-    final m = {for (final e in _words.entries) e.key: e.value.toJson()};
-    await p.setString(_kWords, json.encode(m));
-    await p.setString(_kProfile, json.encode(profile.toJson()));
+  // ---------------------------------------------------------------------------
+  // Save
+  //
+  // Writes are coalesced. This used to re-encode the ENTIRE word map on every
+  // single answer: measured at 5.7ms and 229KB with 4,000 words known, which
+  // extrapolates to roughly 20ms and ~900KB per answer across the full 16,808
+  // catalogue — on the UI isolate, in a game built around an 8-second timer,
+  // and a lot of flash churn for one integer changing.
+  //
+  // In-memory state is still updated synchronously, so nothing downstream can
+  // read a stale value; only the trip to disk is deferred. [flush] forces it,
+  // and callers who are about to lose the process (app backgrounded, round
+  // finished, cloud push) call it.
+  // ---------------------------------------------------------------------------
+
+  static const _saveDebounce = Duration(milliseconds: 700);
+  Timer? _saveTimer;
+  Future<void>? _saveInFlight;
+  bool _dirty = false;
+
+  void _scheduleSave() {
+    _dirty = true;
+    _saveTimer?.cancel();
+    _saveTimer = Timer(_saveDebounce, () {
+      _saveTimer = null;
+      flush();
+    });
   }
 
-  WordProgress progressFor(String wordId) =>
-      _words[wordId] ?? WordProgress();
+  /// Write pending changes now. Safe to call at any time, including when
+  /// nothing is pending. Never throws — a failed write leaves [_dirty] set so
+  /// the next attempt retries rather than silently dropping the change.
+  Future<void> flush() async {
+    _saveTimer?.cancel();
+    _saveTimer = null;
+    if (!_dirty) return _saveInFlight ?? Future<void>.value();
+    // Serialize concurrent flushes so two encodes can't interleave writes.
+    final pending = _saveInFlight;
+    if (pending != null) {
+      await pending;
+      if (!_dirty) return;
+    }
+    final job = _writeNow();
+    _saveInFlight = job;
+    try {
+      await job;
+    } finally {
+      if (identical(_saveInFlight, job)) _saveInFlight = null;
+    }
+  }
+
+  Future<void> _writeNow() async {
+    _dirty = false;
+    try {
+      final p = await SharedPreferences.getInstance();
+      final m = {for (final e in _words.entries) e.key: e.value.toJson()};
+      await p.setString(_kWords, json.encode(m));
+      await p.setString(_kProfile, json.encode(profile.toJson()));
+    } catch (_) {
+      _dirty = true; // keep it pending; the next flush retries
+    }
+  }
+
+  WordProgress progressFor(String wordId) => _words[wordId] ?? WordProgress();
 
   /// Record one answer and reschedule the word via the Leitner system.
   Future<void> recordAnswer(String wordId, bool correct, int nowMillis) async {
@@ -107,7 +272,7 @@ class ProgressStore {
     profile.lifetimeSeen += 1;
     if (correct) profile.lifetimeCorrect += 1;
     if (wasUnseen) _bumpNewIntro(nowMillis);
-    await _save();
+    _scheduleSave();
   }
 
   void _bumpNewIntro(int nowMillis) {
@@ -133,7 +298,7 @@ class ProgressStore {
     wp.suspended = true;
     wp.box = Srs.maxBox;
     if (wp.seen == 0) wp.seen = 1; // counts toward "known"
-    await _save();
+    _scheduleSave();
   }
 
   /// Bring all "known/suspended" words back into rotation (due now, box eased).
@@ -148,19 +313,24 @@ class ProgressStore {
         n++;
       }
     }
-    if (n > 0) await _save();
+    if (n > 0) await flush(); // a deliberate bulk action; don't defer it
     return n;
   }
 
-  int knownSuspendedCount() =>
-      _words.values.where((w) => w.suspended).length;
+  int knownSuspendedCount() => _words.values.where((w) => w.suspended).length;
+
+  /// True when there is nothing left to review — every word the learner has
+  /// met is suspended and none are due. Lets callers say something useful
+  /// instead of dealing an empty round.
+  bool get allSuspended =>
+      _words.isNotEmpty && _words.values.every((w) => w.suspended);
 
   // --- Adaptive placement ---
   int get placementRank => profile.placementRank;
   bool get placed => profile.placementRank > 0;
   Future<void> savePlacement(int rank) async {
     profile.placementRank = rank;
-    await _save();
+    await flush(); // one-off and consequential; write it through
   }
 
   /// Update the daily streak. Call once when a match completes.
@@ -175,7 +345,7 @@ class ProgressStore {
       profile.bestStreak = profile.streak;
     }
     profile.lastPlayedYmd = todayYmd;
-    await _save();
+    await flush(); // end of a round — the process may not be around much longer
   }
 
   /// Record a completed Daily Challenge.
@@ -183,7 +353,7 @@ class ProgressStore {
     profile.dailyYmd = todayYmd;
     profile.dailyScore = score;
     profile.dailyAccuracy = accuracy;
-    await _save();
+    await flush();
   }
 
   bool dailyDoneToday(String todayYmd) => profile.dailyYmd == todayYmd;
@@ -217,24 +387,31 @@ class ProgressStore {
   /// progress is lost across devices; when false, remote replaces local.
   Future<void> importState(Map<String, dynamic> remote,
       {bool merge = true}) async {
-    final rWords = (remote['words'] as Map?)?.cast<String, dynamic>() ?? const {};
+    final rWords =
+        (remote['words'] as Map?)?.cast<String, dynamic>() ?? const {};
     final rProfile = (remote['profile'] as Map?)?.cast<String, dynamic>();
 
     if (!merge) _words.clear();
     rWords.forEach((k, v) {
-      final incoming =
-          WordProgress.fromJson((v as Map).cast<String, dynamic>());
-      final existing = _words[k];
-      _words[k] = (existing == null || !merge)
-          ? incoming
-          : _mergeWord(existing, incoming);
+      // A remote row is data we did not write and cannot vouch for; one bad
+      // entry must not abort the whole sync.
+      try {
+        final incoming =
+            WordProgress.fromJson((v as Map).cast<String, dynamic>());
+        final existing = _words[k];
+        _words[k] = (existing == null || !merge)
+            ? incoming
+            : _mergeWord(existing, incoming);
+      } catch (_) {/* skip this word */}
     });
 
     if (rProfile != null) {
-      final rp = PlayerProfile.fromJson(rProfile);
-      profile = merge ? _mergeProfile(profile, rp) : rp;
+      try {
+        final rp = PlayerProfile.fromJson(rProfile);
+        profile = merge ? _mergeProfile(profile, rp) : rp;
+      } catch (_) {/* keep the local profile */}
     }
-    await _save();
+    await flush();
   }
 
   WordProgress _mergeWord(WordProgress a, WordProgress b) {
@@ -271,7 +448,17 @@ class ProgressStore {
       newIntroCount: base.newIntroCount,
       // Placement is a "current level", not a lifetime max — the most recently
       // played profile's value wins so a re-take isn't overridden.
-      placementRank: base.placementRank > 0 ? base.placementRank : mx(a.placementRank, b.placementRank),
+      placementRank: base.placementRank > 0
+          ? base.placementRank
+          : mx(a.placementRank, b.placementRank),
     );
+  }
+
+  /// Stop the debounce timer. Call from dispose paths; pending changes are
+  /// written first so nothing is lost.
+  Future<void> dispose() async {
+    await flush();
+    _saveTimer?.cancel();
+    _saveTimer = null;
   }
 }

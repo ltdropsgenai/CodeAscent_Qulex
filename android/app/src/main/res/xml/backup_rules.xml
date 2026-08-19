@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and below. See data_extraction_rules.xml for 12+. -->
+<full-backup-content>
+    <!-- Everything the app persists lives in this one file: word progress,
+         the profile and streak, and qbit_is_pro. Keeping it out of cloud
+         backup means a restored backup cannot carry an entitlement onto a
+         new device. Progress moves between devices through cloud sync, which
+         is account-bound and server-checked. -->
+    <exclude domain="sharedpref" path="FlutterSharedPreferences.xml"/>
+</full-backup-content>

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /// Qulex palette — CodeAscent design language, Qulex's own coral / night-city world.
 class QColors {
@@ -25,14 +24,40 @@ class QColors {
 }
 
 /// Type helpers (Space Mono for labels, Spectral serif for hero, Inter for body).
+///
+/// The three families are BUNDLED (see `fonts:` in pubspec.yaml), not fetched.
+/// They used to come from `google_fonts`, which downloads from
+/// fonts.gstatic.com on first use — so a cold start rendered in Roboto for its
+/// first few hundred milliseconds (most visibly during the title sequence, the
+/// one moment the app is purely brand), and a first launch with no network
+/// never got the brand faces at all.
+///
+/// The bundled .ttf files are the exact ones google_fonts was downloading, so
+/// nothing about the rendering changes — it just happens before the first frame
+/// instead of after it, deterministically, offline, with no third-party request
+/// at startup.
+///
+/// Only the weights actually used are shipped:
+///   Space Mono  400, 700          Spectral  500, 600, 400-italic
+///   Inter       500, 600, 700
+/// A request for an unshipped weight is resolved by the engine to the nearest
+/// bundled one (CSS font-matching), which is exactly what google_fonts did —
+/// e.g. the single `mono(weight: w500)` call resolves to 400 either way. If you
+/// need a genuinely new weight, add the .ttf and declare it, rather than
+/// letting the engine approximate it.
 class QType {
+  static const fontMono = 'Space Mono';
+  static const fontSerif = 'Spectral';
+  static const fontSans = 'Inter';
+
   static TextStyle mono({
     double size = 12,
     FontWeight weight = FontWeight.w700,
     Color color = QColors.ink,
     double spacing = 2,
   }) =>
-      GoogleFonts.spaceMono(
+      TextStyle(
+        fontFamily: fontMono,
         fontSize: size,
         fontWeight: weight,
         color: color,
@@ -46,7 +71,8 @@ class QType {
     double height = 1.0,
     FontStyle style = FontStyle.normal,
   }) =>
-      GoogleFonts.spectral(
+      TextStyle(
+        fontFamily: fontSerif,
         fontSize: size,
         fontWeight: weight,
         color: color,
@@ -60,7 +86,8 @@ class QType {
     Color color = QColors.ink,
     double height = 1.3,
   }) =>
-      GoogleFonts.inter(
+      TextStyle(
+        fontFamily: fontSans,
         fontSize: size,
         fontWeight: weight,
         color: color,

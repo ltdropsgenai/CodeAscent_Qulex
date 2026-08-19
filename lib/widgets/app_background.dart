@@ -59,9 +59,17 @@ class _AppBackgroundState extends State<AppBackground>
     super.didChangeDependencies();
     if (!_precached) {
       _precached = true;
-      for (final s in _kScenes) {
-        precacheImage(AssetImage(s), context, onError: (_, __) {});
-      }
+      // Only the scene on screen and the one after it.
+      //
+      // This used to precache all eight. assets/backgrounds/ is ~16MB on disk
+      // and each photo decodes to roughly 8MB of ARGB, so the image cache
+      // filled to ~60MB during launch, on the UI isolate, competing with the
+      // title sequence's first frames — which is where jank and low-memory
+      // kills come from on cheaper Android hardware. The rotation is 20
+      // seconds wide; there is no reason to hold scene eight in memory before
+      // scene two has been shown.
+      _warm(_order[0]);
+      if (_order.length > 1) _warm(_order[1]);
     }
     final rm = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
     if (rm != _reduceMotion) {
@@ -81,9 +89,17 @@ class _AppBackgroundState extends State<AppBackground>
     _roter = Timer.periodic(const Duration(seconds: 20), (_) => _advance());
   }
 
+  void _warm(String asset) {
+    if (!mounted) return;
+    precacheImage(AssetImage(asset), context, onError: (_, __) {});
+  }
+
   void _advance() {
     if (!mounted) return;
     final next = _order[(_pos + 1) % _order.length];
+    // Warm the one after next while this crossfade plays, so the following
+    // transition is just as smooth without holding the whole set resident.
+    _warm(_order[(_pos + 2) % _order.length]);
     setState(() => _incoming = next);
     _fade
       ..reset()

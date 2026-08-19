@@ -30,6 +30,23 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<!-- Supabase OAuth redirect target. AuthService passes
+	     io.codeascent.qbit://login-callback as `redirectTo`; without this the
+	     scheme is unclaimed, the provider's redirect dead-ends in Safari and
+	     the session never reaches the app. Sign-in could not complete. -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.codeascent.qbit.oauth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>io.codeascent.qbit</string>
+			</array>
+		</dict>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

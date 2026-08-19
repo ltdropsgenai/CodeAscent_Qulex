@@ -7,6 +7,7 @@ import '../services/heteronyms.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
+import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 
 /// Pronunciation practice: hear the target, say it back, get scored by
@@ -234,10 +235,9 @@ class _PronounceScreenState extends State<PronounceScreen> {
                 ]),
                 const SizedBox(height: 30),
                 Row(children: [
-                  Flexible(
-                    child: Text(w.word,
-                        style: QType.serif(size: 44, color: QColors.cream)),
-                  ),
+                  // Same treatment as the game screen: a long headword scales
+                  // down instead of breaking across two lines.
+                  Expanded(child: HeroWord(w.word, maxSize: 44)),
                   const SizedBox(width: 14),
                   GestureDetector(
                     onTap: _speakPrompt,

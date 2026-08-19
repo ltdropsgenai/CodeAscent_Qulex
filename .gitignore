@@ -72,3 +72,8 @@ vo_heteronyms/
 tools/pronunciation/
 # Diagnostic probe output (regenerate with probe_tts.ps1)
 vo_probe/
+
+# Golden captures from the opt-in frame tests. Rasterized by the host font
+# engine, so they only match the machine that made them - regenerate with
+#   QULEX_CAPTURE=1 flutter test --update-goldens
+test/frames/

@@ -6,6 +6,7 @@ import '../models/word.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../theme.dart';
+import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
 
 /// A ~10-question adaptive placement quiz. It binary-searches over word
@@ -177,8 +178,7 @@ class _PlacementScreenState extends State<PlacementScreen> {
         Text(Strings.t(locale, 'placementPrompt').toUpperCase(),
             style: QType.mono(size: 11, color: QColors.muted, spacing: 3)),
         const SizedBox(height: 12),
-        Text(w.word,
-            style: QType.serif(size: 40, color: QColors.cream, height: 1.05)),
+        HeroWord(w.word, maxSize: 40),
         const Spacer(flex: 1),
         for (final opt in _options)
           _POpt(

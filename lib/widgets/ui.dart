@@ -274,3 +274,111 @@ class QButton extends StatelessWidget {
     );
   }
 }
+
+/// A headword set as large as it can be while still fitting on ONE line.
+///
+/// Long entries used to wrap mid-word — "osseointegration" broke after
+/// "osseointegratio", leaving a single orphaned "n" on the second line under a
+/// 46pt serif. There is no good place to break an unhyphenated word, so the
+/// answer is not to break it: measure, and step the size down until it fits.
+///
+/// Multi-word headwords (the catalogue has a few — "grand jeté") are allowed
+/// to wrap at a space rather than shrink to nothing, so the size floor is a
+/// real floor: below it we let the phrase take a second line at the space.
+class HeroWord extends StatelessWidget {
+  final String text;
+  final double maxSize;
+  final double minSize;
+  final Color color;
+  final double height;
+
+  const HeroWord(
+    this.text, {
+    super.key,
+    this.maxSize = 46,
+    this.minSize = 20,
+    this.color = QColors.cream,
+    this.height = 1.05,
+  });
+
+  /// The style [Text] will ACTUALLY render with.
+  ///
+  /// Text merges its `style` into the inherited DefaultTextStyle whenever
+  /// `inherit` is true, which it is by default — and Material's default body
+  /// style carries a `letterSpacing`. Measuring the bare QType.serif style
+  /// therefore under-measures every headword by a few pixels per character,
+  /// which is precisely enough to make a 20-character word that "fits" render
+  /// with an ellipsis. Measure what will be drawn, not what was asked for.
+  TextStyle _style(BuildContext context, double size) {
+    final base = QType.serif(size: size, color: color, height: height);
+    final inherited = DefaultTextStyle.of(context).style;
+    return base.inherit ? inherited.merge(base) : base;
+  }
+
+  bool _fits(TextStyle style, double maxWidth, TextScaler scaler) {
+    final tp = TextPainter(
+      text: TextSpan(text: text, style: style),
+      textDirection: TextDirection.ltr,
+      textScaler: scaler,
+      maxLines: 1,
+    )..layout(maxWidth: double.infinity);
+    // A hair of slack: the paragraph builder and TextPainter can disagree by
+    // a sub-pixel, and being one pixel optimistic here costs an ellipsis.
+    return tp.width <= maxWidth - 0.5;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, cons) {
+        final maxWidth = cons.maxWidth;
+        if (!maxWidth.isFinite || maxWidth <= 0 || text.isEmpty) {
+          return Text(text,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: _style(context, maxSize));
+        }
+        // Honour the OS text-size setting in the measurement, or the word fits
+        // here and overflows on a phone with larger type.
+        final scaler = MediaQuery.textScalerOf(context);
+
+        // A single token has no break opportunity, so it shrinks as far as it
+        // needs to. A phrase does — "spike-timing-dependent plasticity" is a
+        // real catalogue entry — so it stops shrinking well above the floor
+        // and takes a second line at a space instead, which reads far better
+        // than 20pt type.
+        final hasBreak = text.contains(' ') || text.contains('-');
+        final floor = hasBreak ? maxSize * 0.62 : minSize;
+
+        var size = maxSize;
+        if (!_fits(_style(context, maxSize), maxWidth, scaler)) {
+          // Binary search for the largest whole point size that fits: about
+          // five layouts of one short string, rather than stepping down one
+          // point at a time.
+          var lo = floor, hi = maxSize;
+          while (hi - lo > 0.5) {
+            final mid = (lo + hi) / 2;
+            if (_fits(_style(context, mid), maxWidth, scaler)) {
+              lo = mid;
+            } else {
+              hi = mid;
+            }
+          }
+          size = lo;
+        }
+
+        final style = _style(context, size);
+        final oneLine = _fits(style, maxWidth, scaler);
+        return Text(
+          text,
+          maxLines: oneLine ? 1 : 2,
+          softWrap: !oneLine,
+          // Only reachable for a phrase that still overruns two lines; a single
+          // token always has a size that fits, so it never ellipsises.
+          overflow: TextOverflow.ellipsis,
+          style: style,
+        );
+      },
+    );
+  }
+}

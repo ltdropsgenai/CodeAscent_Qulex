@@ -68,37 +68,22 @@ class SyncService {
     } catch (_) {/* best-effort; next full sync reconciles */}
   }
 
-  /// Once-Pro-always-Pro: the effective entitlement is local OR remote, and we
-  /// write it back wherever it's missing.
+  /// Read the entitlement the SERVER believes in, and adopt it.
+  ///
+  /// This used to be a two-way reconcile that wrote `is_pro` back from the
+  /// client, and the RLS policy allowed it: `entitlements_own` was ALL with
+  /// `with_check (auth.uid() = user_id)`, so the row only had to be yours —
+  /// nothing constrained the value. Anyone signed in could grant themselves
+  /// Pro with a single REST call using the anon key that ships in the binary,
+  /// and because the old rule was `remotePro || localPro` it stuck forever.
+  ///
+  /// The table is now client-readable only, written exclusively by a
+  /// store-webhook function holding the service role. So the server is the
+  /// authority and this just follows it.
   Future<void> _reconcileEntitlement(String uid) async {
     final row =
         await _c.from('entitlements').select().eq('user_id', uid).maybeSingle();
     final remotePro = (row?['is_pro'] as bool?) ?? false;
-    final localPro = appState.isPro;
-    final effective = remotePro || localPro;
-    if (effective != localPro) await appState.setPro(effective);
-    if (effective != remotePro) {
-      await _c.from('entitlements').upsert({
-        'user_id': uid,
-        'is_pro': effective,
-        'source': 'client',
-        'updated_at': _nowUtc(),
-      });
-    }
-  }
-
-  /// Push an entitlement change immediately (e.g. right after a purchase/test
-  /// unlock) so it isn't lost if the app closes before the next full sync.
-  Future<void> pushEntitlement(bool isPro) async {
-    final uid = _uid;
-    if (!_enabled || uid == null) return;
-    try {
-      await _c.from('entitlements').upsert({
-        'user_id': uid,
-        'is_pro': isPro,
-        'source': 'client',
-        'updated_at': _nowUtc(),
-      });
-    } catch (_) {/* best-effort; next full sync will reconcile */}
+    if (remotePro != appState.isPro) await appState.setPro(remotePro);
   }
 }

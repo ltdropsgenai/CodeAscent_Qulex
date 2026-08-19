@@ -115,16 +115,38 @@ class GameController extends ChangeNotifier {
   List<String> currentOptions = const [];
   String? chosen;
   bool wasCorrect = false;
-  double remainingMs = totalMs.toDouble();
   bool timedOut = false;
 
+  /// The countdown, on its own channel.
+  ///
+  /// This used to be a plain field updated inside a 16ms Timer that called
+  /// notifyListeners() on every tick — so the entire question screen rebuilt
+  /// sixty times a second, for the full eight seconds of every timed question,
+  /// on top of the background's Ken Burns animation. Only the progress bar
+  /// actually changes. Listening to this notifier instead of the controller
+  /// keeps the rebuild to the two-pixel bar that needs it.
+  final ValueNotifier<double> remaining =
+      ValueNotifier<double>(totalMs.toDouble());
+
+  double get remainingMs => remaining.value;
+  set remainingMs(double v) => remaining.value = v;
+
+  /// True when the deck came back empty and no round could be dealt. The
+  /// screen shows an explanation instead of a scoreboard for zero questions.
+  bool dealtEmpty = false;
+
   Timer? _timer;
+  int _prefetchGeneration = 0;
 
   /// Fired once, right when the round transitions to [Phase.finished] —
   /// GameScreen uses this to clear any saved mid-round snapshot.
   VoidCallback? onFinished;
 
   Word get current => _deck[index];
+
+  /// The id of the nth dealt word. Exposed so tests can compare two dealt
+  /// decks without reaching into private state.
+  String deckIdAt(int i) => _deck[i].id;
   int get total => _deck.length;
   bool get isLast => index == _deck.length - 1;
   double get progress => (remainingMs / totalMs).clamp(0.0, 1.0);
@@ -135,19 +157,8 @@ class GameController extends ChangeNotifier {
   int get vocabRank => store.vocabRank();
 
   void start(Track track) {
-    final List<Word> pool;
-    if (mode == GameMode.review) {
-      pool = _reviewDeck();
-    } else if (mode == GameMode.daily) {
-      pool = dailyDeck(_levelPool, DateTime.now(), count: roundsPerMatch);
-    } else {
-      // poolForTrack tops up thin tag-backed tracks (IELTS matches only 41
-      // words) with comparable ones, so a track always has a round in it.
-      pool = poolForTrack(track, _levelPool)
-          .where((w) => !store.progressFor(w.id).suspended)
-          .toList()
-        ..shuffle();
-    }
+    final pool = _deal(track);
+
     _deck
       ..clear()
       ..addAll(pool.take(roundsPerMatch));
@@ -156,8 +167,85 @@ class GameController extends ChangeNotifier {
     streak = 0;
     bestStreak = 0;
     correctCount = 0;
+    timedOut = false;
+    chosen = null;
+
+    // A round with no words is a real outcome, not an impossible one — see
+    // [_deal]. It has to be handled here, because _beginQuestion() reads
+    // `current`, and `current` on an empty deck is a RangeError thrown out of
+    // GameScreen.initState(), which leaves the learner staring at the generic
+    // error panel on a route they can only back out of.
+    dealtEmpty = _deck.isEmpty;
+    if (dealtEmpty) {
+      _timer?.cancel();
+      phase = Phase.finished;
+      notifyListeners();
+      return;
+    }
+
+    phase = Phase.question;
     _prefetchDeck();
     _beginQuestion();
+  }
+
+  /// Deals the pool for [track], widening rather than coming back empty.
+  ///
+  /// Two paths could legitimately produce nothing, and both were reachable:
+  ///
+  ///  * A track whose tag doesn't intersect the learner's difficulty band.
+  ///    Setting difficulty to Easy and opening the GRE track is the clean
+  ///    example — of 367 GRE-tagged words in the catalogue, 240 are hard and
+  ///    127 medium, and not one is easy. `matchLevel` doesn't rescue it either,
+  ///    because 2,892 easy words is far above its minimum, so there is nothing
+  ///    to trigger a fallback.
+  ///  * Review mode once every word the learner has met is marked known.
+  ///
+  /// So we step outwards: the track at the learner's level, then the track
+  /// across the whole catalogue, then anything at all. Serving a slightly
+  /// off-level word beats serving a dead screen. Only if the catalogue itself
+  /// is empty do we give up, and then we say so.
+  List<Word> _deal(Track track) {
+    if (mode == GameMode.review) {
+      final due = _reviewDeck();
+      if (due.isNotEmpty) return due;
+      // Nothing due and nothing new — fall back to a plain round over
+      // whatever isn't suspended, then to everything.
+      final unsuspended = _levelPool
+          .where((w) => !store.progressFor(w.id).suspended)
+          .toList()
+        ..shuffle();
+      if (unsuspended.isNotEmpty) return unsuspended;
+      return List<Word>.from(_all)..shuffle();
+    }
+
+    if (mode == GameMode.daily) {
+      // Drawn from the WHOLE catalogue, deliberately: the Daily Challenge is
+      // the one thing here that is meant to be the same for everybody on a
+      // given day. Passing the level-filtered pool made it neither shared nor
+      // stable — finishing a placement mid-day changed today's deck.
+      final deck = dailyDeck(_all, DateTime.now(), count: roundsPerMatch);
+      if (deck.isNotEmpty) return deck;
+      return List<Word>.from(_all)..shuffle();
+    }
+
+    bool playable(Word w) => !store.progressFor(w.id).suspended;
+
+    // poolForTrack tops up thin tag-backed tracks (IELTS matches only 41
+    // words) with comparable ones, so a track normally has a round in it.
+    final atLevel = poolForTrack(track, _levelPool).where(playable).toList()
+      ..shuffle();
+    if (atLevel.isNotEmpty) return atLevel;
+
+    final anyLevel = poolForTrack(track, _all).where(playable).toList()
+      ..shuffle();
+    if (anyLevel.isNotEmpty) return anyLevel;
+
+    final anything = _all.where(playable).toList()..shuffle();
+    if (anything.isNotEmpty) return anything;
+
+    // Everything is suspended. Rather than a dead end, let the screen offer
+    // "bring my mastered words back" — see ProgressStore.allSuspended.
+    return const [];
   }
 
   /// True once a round has been dealt and isn't finished yet — used to decide
@@ -184,6 +272,8 @@ class GameController extends ChangeNotifier {
     final byId = {for (final w in _all) w.id: w};
     final restored = ids.map((id) => byId[id]).whereType<Word>().toList();
     if (restored.isEmpty) throw StateError('snapshot words unavailable');
+    dealtEmpty = false;
+    phase = Phase.question;
     _deck
       ..clear()
       ..addAll(restored);
@@ -205,9 +295,21 @@ class GameController extends ChangeNotifier {
   /// concurrency so it doesn't starve the current question's live request.
   void _prefetchDeck() {
     final words = List<Word>.from(_deck);
+    // Bumped by dispose() and by the next start(), so a learner who answers one
+    // question and leaves doesn't keep eighteen downloads running on their
+    // cellular data for a round that no longer exists.
+    final generation = ++_prefetchGeneration;
     () async {
+      // Let the live request for the CURRENT word get out first. The deck
+      // warm-up starts at the same instant _beginQuestion() speaks, and while
+      // both share one fetch for word[0], words 1-3 were competing with it for
+      // bandwidth and Edge Function concurrency — making the very request the
+      // learner is waiting on the slowest of the batch.
+      await Future<void>.delayed(const Duration(milliseconds: 350));
+      if (generation != _prefetchGeneration) return;
       const batchSize = 3;
       for (var i = 0; i < words.length; i += batchSize) {
+        if (generation != _prefetchGeneration) return; // round is over
         final batch = words.skip(i).take(batchSize);
         await Future.wait(batch.map((w) async {
           await Voice.instance.prefetch(w.word,
@@ -294,12 +396,15 @@ class GameController extends ChangeNotifier {
     _timer?.cancel();
     if (timed) {
       _timer = Timer.periodic(const Duration(milliseconds: _tickMs), (_) {
-        remainingMs -= _tickMs;
-        if (remainingMs <= 0) {
-          remainingMs = 0;
-          _onTimeout();
+        final next = remaining.value - _tickMs;
+        if (next <= 0) {
+          remaining.value = 0;
+          _onTimeout(); // this one IS a state change, and does notify
+        } else {
+          // Only the countdown moved. Listeners of `remaining` (the progress
+          // bar) repaint; nothing else rebuilds.
+          remaining.value = next;
         }
-        notifyListeners();
       });
     }
     notifyListeners();
@@ -390,14 +495,13 @@ class GameController extends ChangeNotifier {
 
   void _registerStreak() {
     final now = DateTime.now();
-    final yesterday = now.subtract(const Duration(days: 1));
-    store.registerPlay(_ymd(now), _ymd(yesterday));
+    // previousDay() does calendar arithmetic. `now.subtract(Duration(days: 1))`
+    // subtracts 24 absolute hours, which names the wrong day on the morning
+    // after a spring-forward and quietly reset the streak. See daily.dart.
+    store.registerPlay(_ymd(now), _ymd(previousDay(now)));
   }
 
-  String _ymd(DateTime d) =>
-      '${d.year.toString().padLeft(4, '0')}-'
-      '${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
+  String _ymd(DateTime d) => ymd(d);
 
   int _difficultyBonus(String d) {
     switch (d) {
@@ -413,6 +517,8 @@ class GameController extends ChangeNotifier {
   @override
   void dispose() {
     _timer?.cancel();
+    _prefetchGeneration++; // stop any deck warm-up still in flight
+    remaining.dispose();
     super.dispose();
   }
 }

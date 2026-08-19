@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'data/word_repository.dart';
-import 'screens/home_screen.dart';
 import 'screens/intro_screen.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 import 'services/supabase_config.dart';
+import 'services/voice.dart';
 import 'services/widget_service.dart';
 import 'state/app_state.dart';
 import 'theme.dart';
@@ -31,6 +31,9 @@ Future<void> main() async {
   }
   // Prepare local notifications (no-op on web/desktop). Scheduling happens from
   // the home screen once words + progress are loaded.
+  // Claim the audio session before the first question rather than after the
+  // first inaudible one — see Voice.warmUp().
+  await Voice.instance.warmUp();
   await NotificationService.instance.init();
   await WidgetService.instance.init();
   runApp(const QulexApp());
@@ -114,9 +117,10 @@ class QulexApp extends StatelessWidget {
           },
         ),
       ),
-      home: appState.seenIntro
-          ? HomeScreen(repository: WordRepository())
-          : IntroScreen(repository: WordRepository()),
+      // The title sequence plays on every cold start and routes onward
+      // itself: a first run continues into the pitch, everyone else lands
+      // straight on Home. See IntroScreen.
+      home: IntroScreen(repository: WordRepository()),
     );
   }
 }

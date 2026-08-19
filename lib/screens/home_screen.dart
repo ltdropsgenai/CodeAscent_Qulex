@@ -33,7 +33,7 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   final ProgressStore _store = ProgressStore();
   late Future<List<Word>> _future;
   int _selected = 0;
@@ -42,6 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    // Progress writes are debounced (they used to re-encode the whole word map
+    // on every answer). That means the last few answers can still be in memory
+    // when the OS takes the app away, so flush on the way out.
+    WidgetsBinding.instance.addObserver(this);
     SyncService.instance.attach(_store);
     _future = _load();
     // Once local is ready: pull cloud progress if signed in, and refresh the
@@ -63,6 +67,26 @@ class _HomeScreenState extends State<HomeScreen> {
           .update(words: words, store: _store, locale: appState.locale);
     }).catchError((_) {});
   }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.detached ||
+        state == AppLifecycleState.hidden) {
+      _store.flush();
+    }
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _store.dispose(); // flushes anything pending
+    super.dispose();
+  }
+
+  /// Set once if [ProgressStore.load] had to reset a damaged section, so the
+  /// learner is told rather than quietly wondering where their streak went.
+  bool _dataResetDismissed = false;
 
   Future<List<Word>> _load() async {
     await _store.load();
@@ -144,6 +168,9 @@ class _HomeScreenState extends State<HomeScreen> {
     } on _CancelOpen {
       return;
     }
+    // _resolveResume() can show a dialog and await the answer, so this widget
+    // may be gone by the time we get here.
+    if (!mounted) return;
     await Navigator.of(context).push(PageRouteBuilder(
       transitionDuration: const Duration(milliseconds: 320),
       reverseTransitionDuration: const Duration(milliseconds: 240),
@@ -276,15 +303,56 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: CircularProgressIndicator(color: QColors.coral));
                 }
                 if (snap.hasError) {
+                  // Learner-readable, and it offers something to do. Damaged
+                  // local progress no longer reaches here at all — load()
+                  // recovers section by section — so this is now about the
+                  // bundled catalogue, where retrying is the useful move.
                   return Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Text('Failed to load:\n${snap.error}',
-                        textAlign: TextAlign.center,
-                        style: QType.sans(color: QColors.coral)),
-                  ));
+                    child: Padding(
+                      padding: const EdgeInsets.all(28),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.refresh,
+                              color: QColors.coral, size: 30),
+                          const SizedBox(height: 14),
+                          Text(Strings.t(locale, 'loadFailed'),
+                              textAlign: TextAlign.center,
+                              style: QType.sans(
+                                  size: 14.5, color: QColors.ink, height: 1.45)),
+                          const SizedBox(height: 18),
+                          OutlinedButton(
+                            style: OutlinedButton.styleFrom(
+                              side: const BorderSide(color: QColors.rule),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 22, vertical: 13),
+                            ),
+                            onPressed: () =>
+                                setState(() => _future = _load()),
+                            child: Text(Strings.t(locale, 'retry'),
+                                style: QType.mono(
+                                    size: 12, color: QColors.ink, spacing: 1.5)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
                 }
-                return _buildHome(context, snap.data ?? const <Word>[], locale);
+                return Column(
+                  children: [
+                    if (_store.loadWarnings.isNotEmpty && !_dataResetDismissed)
+                      _DataResetBanner(
+                        locale: locale,
+                        details: _store.loadWarnings,
+                        onDismiss: () =>
+                            setState(() => _dataResetDismissed = true),
+                      ),
+                    Expanded(
+                      child: _buildHome(
+                          context, snap.data ?? const <Word>[], locale),
+                    ),
+                  ],
+                );
               },
             ),
           ),
@@ -796,6 +864,72 @@ class _GoProChip extends StatelessWidget {
           Text(Strings.t(locale, 'goPro').toUpperCase(),
               style: QType.mono(size: 11, color: QColors.coral, spacing: 1.5)),
         ]),
+      ),
+    );
+  }
+}
+
+
+/// A one-time notice that some saved data could not be read and was reset.
+///
+/// ProgressStore.load() now recovers section by section instead of throwing,
+/// which is what stopped a single damaged byte from bricking the app — but
+/// recovering silently would mean a learner's streak simply vanishes with no
+/// explanation. Saying so once is the smaller cost.
+class _DataResetBanner extends StatelessWidget {
+  final String locale;
+  final List<String> details;
+  final VoidCallback onDismiss;
+
+  const _DataResetBanner({
+    required this.locale,
+    required this.details,
+    required this.onDismiss,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.fromLTRB(20, 12, 20, 0),
+      padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
+      decoration: BoxDecoration(
+        color: QColors.panel,
+        border: Border.all(color: QColors.rule),
+        borderRadius: BorderRadius.circular(kQRadius),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.info_outline, size: 17, color: QColors.amber),
+          const SizedBox(width: 11),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(Strings.t(locale, 'dataResetNotice'),
+                    style: QType.sans(
+                        size: 13, color: QColors.ink, height: 1.4)),
+                for (final d in details) ...[
+                  const SizedBox(height: 4),
+                  Text('· $d',
+                      style: QType.sans(
+                          size: 11.5, color: QColors.muted, height: 1.35)),
+                ],
+              ],
+            ),
+          ),
+          const SizedBox(width: 6),
+          GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: onDismiss,
+            child: Padding(
+              padding: const EdgeInsets.all(4),
+              child: Text(Strings.t(locale, 'dataResetDismiss'),
+                  style: QType.mono(
+                      size: 10, color: QColors.coral, spacing: 1.2)),
+            ),
+          ),
+        ],
       ),
     );
   }

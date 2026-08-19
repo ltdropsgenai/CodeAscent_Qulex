@@ -83,6 +83,9 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void dispose() {
     Voice.instance.stop();
+    // Saves are debounced now, so the last answers of a round may still be
+    // sitting in memory when the screen goes away. Push them through.
+    widget.store.flush();
     c.dispose();
     super.dispose();
   }
@@ -142,6 +145,20 @@ class _GameScreenState extends State<GameScreen> {
               child: AnimatedBuilder(
                 animation: c,
                 builder: (context, _) {
+                  // No deck could be dealt at all — show why, and a way out.
+                  // A scoreboard for zero questions is not an explanation.
+                  if (c.dealtEmpty) {
+                    return _EmptyDeckView(
+                      locale: c.locale,
+                      canResurface: widget.store.allSuspended,
+                      onResurface: () async {
+                        await widget.store.resurfaceMastered();
+                        if (!mounted) return;
+                        c.start(widget.track);
+                      },
+                      onChangePath: () => Navigator.of(context).pop(),
+                    );
+                  }
                   if (c.phase == Phase.finished) {
                     return _ResultView(
                       c: c,
@@ -195,7 +212,6 @@ class _GameViewState extends State<_GameView> {
     final w = c.current;
     final g = w.glossFor(locale);
     final revealed = c.phase == Phase.revealed;
-    final warn = c.progress <= 0.375;
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
@@ -243,13 +259,23 @@ class _GameViewState extends State<_GameView> {
           const SizedBox(height: 12),
           // timer or review label
           if (c.timed)
+            // Listens to the countdown directly rather than to the controller,
+            // so a 16ms tick repaints two pixels of bar instead of rebuilding
+            // the whole question screen sixty times a second.
             ClipRRect(
               borderRadius: BorderRadius.circular(2),
-              child: LinearProgressIndicator(
-                value: c.progress,
-                minHeight: 2,
-                backgroundColor: const Color(0x1FFFFFFF),
-                valueColor: AlwaysStoppedAnimation<Color>(warn ? QColors.amber : QColors.coral),
+              child: ValueListenableBuilder<double>(
+                valueListenable: c.remaining,
+                builder: (_, __, ___) {
+                  final p = c.progress;
+                  return LinearProgressIndicator(
+                    value: p,
+                    minHeight: 2,
+                    backgroundColor: const Color(0x1FFFFFFF),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                        p <= 0.375 ? QColors.amber : QColors.coral),
+                  );
+                },
               ),
             )
           else
@@ -409,7 +435,8 @@ class _GameViewState extends State<_GameView> {
     }
     // Classic (and Listen after reveal): the word + pronounce button.
     return Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-      Flexible(child: Text(w.word, style: QType.serif(size: 46, color: QColors.cream))),
+      // Scales down rather than wrapping mid-word — see HeroWord.
+      Expanded(child: HeroWord(w.word)),
       const SizedBox(width: 14),
       _SayButton(word: w),
     ]);
@@ -910,6 +937,94 @@ class _GameScrim extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+
+/// Shown when no round could be dealt.
+///
+/// Reached when a track has nothing that matches the learner's difficulty (the
+/// GRE track with difficulty set to Easy is the clean case — no GRE-tagged word
+/// in the catalogue is easy), or when every word they have met is marked known.
+/// Both used to throw a RangeError out of initState and land on the generic
+/// error panel, which told the learner nothing and offered them nothing.
+class _EmptyDeckView extends StatelessWidget {
+  final String locale;
+  final bool canResurface;
+  final Future<void> Function() onResurface;
+  final VoidCallback onChangePath;
+
+  const _EmptyDeckView({
+    required this.locale,
+    required this.canResurface,
+    required this.onResurface,
+    required this.onChangePath,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(28, 20, 28, 28),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(children: [
+            IconButton(
+              onPressed: onChangePath,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+              icon: const Icon(Icons.arrow_back, color: QColors.muted, size: 19),
+            ),
+            const SizedBox(width: 4),
+            const Wordmark(size: 19),
+          ]),
+          const Spacer(),
+          const Icon(Icons.inbox_outlined, size: 34, color: QColors.coral),
+          const SizedBox(height: 18),
+          Text(Strings.t(locale, 'noWordsTitle'),
+              style: QType.serif(
+                  size: 26, color: QColors.cream, height: 1.15)),
+          const SizedBox(height: 10),
+          Text(Strings.t(locale, 'noWordsBody'),
+              style: QType.sans(size: 14, color: QColors.muted, height: 1.45)),
+          const Spacer(flex: 2),
+          if (canResurface) ...[
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                style: FilledButton.styleFrom(
+                  backgroundColor: QColors.coral,
+                  foregroundColor: const Color(0xFF160603),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(kQRadius)),
+                ),
+                onPressed: () => onResurface(),
+                child: Text(Strings.t(locale, 'noWordsResurface'),
+                    style: QType.mono(
+                        size: 12, color: const Color(0xFF160603), spacing: 1.6)),
+              ),
+            ),
+            const SizedBox(height: 10),
+          ],
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                side: const BorderSide(color: QColors.rule),
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(kQRadius)),
+              ),
+              onPressed: onChangePath,
+              child: Text(Strings.t(locale, 'noWordsCta'),
+                  style: QType.mono(
+                      size: 12, color: QColors.ink, spacing: 1.6)),
+            ),
+          ),
+        ],
       ),
     );
   }
