@@ -87,8 +87,11 @@ void main() {
       HandoffScreen(repository: WordRepository()),
     ));
 
-    // Across the 1400ms run: through all three flash cycles and the hold.
-    const marks = <int>[60, 140, 260, 400, 520, 660, 800, 940, 1100, 1350];
+    // Across the 5000ms run: the arrival, all three flash cycles, and the
+    // long hold where the drift field and the widening rule carry it.
+    const marks = <int>[
+      120, 400, 620, 900, 1200, 1450, 2000, 2800, 3600, 4800
+    ];
     var elapsed = 0;
     for (final m in marks) {
       await tester.pump(Duration(milliseconds: m - elapsed));
