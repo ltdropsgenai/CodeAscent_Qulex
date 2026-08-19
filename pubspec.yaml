@@ -20,6 +20,16 @@ dependencies:
   flutter_timezone: ^3.0.1
   speech_to_text: ^7.0.0
   home_widget: ^0.6.0
+  # Pure-Dart, no platform channels — which matters: Shorebird can patch
+  # pure-Dart code over the air but cannot patch a new native dependency into
+  # an already-released binary. Used by CatalogueOta to verify a downloaded
+  # word list against the SHA-256 in its manifest.
+  crypto: ^3.0.3
+  convert: ^3.1.1
+  # Joining and comparing filesystem paths. Direct, not transitive, because
+  # CatalogueOta depends on it for correctness rather than convenience — see
+  # the note above _payloadName().
+  path: ^1.9.0
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +42,7 @@ flutter:
   assets:
     - assets/words.json
     - assets/backgrounds/
+    - shorebird.yaml
 
   # Bundled, not downloaded. google_fonts fetched these from fonts.gstatic.com
   # on first use, so a cold start rendered in Roboto until the download landed

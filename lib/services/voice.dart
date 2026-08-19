@@ -4,6 +4,7 @@ import 'dart:typed_data';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb, TargetPlatform;
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -165,7 +166,7 @@ class Voice {
     // which defeats the point of an offline cache. Support dir persists
     // across app runs/updates and isn't user-visible.
     final base = await getApplicationSupportDirectory();
-    final dir = Directory('${base.path}/qulex_tts_cache');
+    final dir = Directory(p.join(base.path, 'qulex_tts_cache'));
     if (!await dir.exists()) await dir.create(recursive: true);
     return _cacheDir = dir;
   }
@@ -206,7 +207,13 @@ class Voice {
       withStat.sort((a, b) => a.value.modified.compareTo(b.value.modified));
       for (final entry in withStat) {
         if (total <= _maxCacheBytes) break;
-        if (entry.key.path == _playingPath) continue; // don't cut off playback
+        // p.equals, not ==. Directory.list() hands back whatever separator
+        // the platform uses, while _playingPath came from p.join; on Windows
+        // those are two different strings for the same file, so a raw ==
+        // silently stops guarding and the sweep deletes the clip mid-playback.
+        if (_playingPath != null && p.equals(entry.key.path, _playingPath!)) {
+          continue; // don't cut off playback
+        }
         try {
           await entry.key.delete();
           total -= entry.value.size;
@@ -472,7 +479,7 @@ class Voice {
   Future<String> _localCachePath(String text, String langCode) async {
     final dir = await _ensureCacheDir();
     final key = _hash('$_cacheVersion|$langCode|$text');
-    return '${dir.path}/$key.mp3';
+    return p.join(dir.path, '$key.mp3');
   }
 
   Future<void> _speakViaFallback(String text, String langCode) async {

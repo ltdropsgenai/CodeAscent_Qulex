@@ -1,6 +1,32 @@
 # Codemagic CI/CD for Qulex (CodeAscent)
-# Builds iOS + Android on a cloud Mac (no local Mac required) and ships to
-# TestFlight (internal) and Google Play internal testing.
+#
+# Two workflows, and the difference between them is the whole point:
+#
+#   qbit-test   builds and ships a store release. Minutes to build, days to
+#               review, and every learner has to update.
+#   qbit-patch  ships Dart changes to phones that already have the app. No
+#               store, no review, no update prompt. Minutes end to end.
+#
+# A patch only works against a release that Shorebird itself produced, which is
+# why qbit-test runs `shorebird release` rather than `flutter build`. Skip that
+# once and the builds it produces can never be patched — the code push is
+# decided at release time, not at patch time.
+#
+# WHAT A PATCH CANNOT CHANGE. Dart only. Not the Kotlin/Swift widget
+# extensions, not AndroidManifest.xml or Info.plist, not a new plugin with
+# native code, not the Flutter version, not assets compiled into the binary.
+# Any of those needs a real build through qbit-test. The word list is the
+# exception and does not need either — see tools/publish_catalogue.py.
+
+definitions:
+  # Pinned deliberately. `flutter: stable` floated, which meant every build
+  # analysed, tested and compiled against whatever shipped that week — and with
+  # code push in the picture that is worse than untidy: Shorebird builds a
+  # patch with the Flutter version its RELEASE was built with, so a release
+  # built against a version that has since moved on is a patch that cannot be
+  # reproduced. Bump this on purpose, in its own commit, and check the new
+  # version against `shorebird flutter versions list` first.
+  flutter_version: &flutter_version 3.47.0
 
 workflows:
   qbit-test:
@@ -12,28 +38,78 @@ workflows:
     environment:
       groups:
         - google_credentials
+        # Holds SHOREBIRD_TOKEN — an API key from the Shorebird console under
+        # Account -> API Keys. (`shorebird login:ci` used to mint these and has
+        # been removed; the variable name is unchanged.) Until the group exists
+        # the build still runs — it just produces an ordinary, un-patchable
+        # release and says so loudly in the log.
+        - shorebird
       android_signing:
         - qbit_upload_keystore
       vars:
         BUNDLE_ID: "com.codeascent.qbit"
         PACKAGE_NAME: "com.codeascent.qbit"
         APP_STORE_APPLE_ID: 6799828872
-      flutter: stable
+        FLUTTER_VERSION: *flutter_version
+        BUILD_NAME: "0.1.0"
+      flutter: *flutter_version
       xcode: latest
       cocoapods: default
     scripts:
       - name: Flutter packages
         script: flutter pub get
+
+      - name: Install Shorebird
+        script: |
+          curl --proto '=https' --tlsv1.2 \
+            https://raw.githubusercontent.com/shorebirdtech/install/main/install.sh \
+            -sSf | bash
+          echo PATH="$HOME/.shorebird/bin:$PATH" >> $CM_ENV
+
+      # Decides once, up front, whether this build can produce a patchable
+      # release, and prints the answer. Both prerequisites are things a human
+      # has to do by hand exactly once, and neither leaves a trace anywhere
+      # else — so "why can't I patch build 34?" is a question the build log for
+      # build 34 should already answer.
+      - name: Check the code-push prerequisites
+        script: |
+          CAN_PATCH=1
+          if [ ! -f shorebird.yaml ]; then
+            echo "shorebird.yaml is missing — run 'shorebird init' in the repo and commit it."
+            CAN_PATCH=0
+          fi
+          if [ -z "$SHOREBIRD_TOKEN" ]; then
+            echo "SHOREBIRD_TOKEN is not set — create an API key at"
+            echo "console.shorebird.dev (Account -> API Keys) and add it to the"
+            echo "Codemagic 'shorebird' variable group, marked Secure."
+            CAN_PATCH=0
+          fi
+          if [ "$CAN_PATCH" = "1" ]; then
+            echo "=============================================================="
+            echo " Code push ENABLED. This release can be patched over the air."
+            echo "=============================================================="
+          else
+            echo "=============================================================="
+            echo " Code push DISABLED. This build will ship normally, but no"
+            echo " patch will ever reach it. Fix the above and rebuild if you"
+            echo " want this version to be patchable."
+            echo "=============================================================="
+          fi
+          echo "CAN_PATCH=$CAN_PATCH" >> $CM_ENV
+
       - name: Generate app icons
         script: dart run flutter_launcher_icons
+
       # Was `flutter analyze || true`, which swallowed every failure. CI stayed
       # green for months over a test file that could not compile. Infos are
       # still non-fatal (there is a backlog of deprecation notices), but
       # warnings and errors now stop the build.
       - name: Static analysis
         script: flutter analyze --no-fatal-infos
+
       - name: Unit tests
         script: flutter test
+
       - name: Write Android key.properties from Codemagic keystore
         script: |
           cat > "$CM_BUILD_DIR/android/key.properties" <<KEYS
@@ -42,11 +118,26 @@ workflows:
           keyAlias=$CM_KEY_ALIAS
           keyPassword=$CM_KEY_PASSWORD
           KEYS
+
+      # QULEX_BUILD_NUMBER is how a published catalogue can say "not for builds
+      # older than this" and be believed. Without the define the app reads 0,
+      # which takes ordinary content pushes and declines gated ones — safe, but
+      # it means a gated push would silently never arrive. See CatalogueOta.
       - name: Build Android App Bundle
         script: |
-          flutter build appbundle --release \
-            --build-name=0.1.0 \
-            --build-number=$BUILD_NUMBER
+          if [ "$CAN_PATCH" = "1" ]; then
+            shorebird release android \
+              --flutter-version=$FLUTTER_VERSION \
+              --build-name=$BUILD_NAME \
+              --build-number=$BUILD_NUMBER \
+              --dart-define=QULEX_BUILD_NUMBER=$BUILD_NUMBER
+          else
+            flutter build appbundle --release \
+              --build-name=$BUILD_NAME \
+              --build-number=$BUILD_NUMBER \
+              --dart-define=QULEX_BUILD_NUMBER=$BUILD_NUMBER
+          fi
+
       - name: Set up iOS code signing (create cert + profile if missing)
         script: |
           keychain initialize
@@ -64,12 +155,32 @@ workflows:
             --create
           keychain add-certificates
           xcode-project use-profiles
+
       - name: Build iOS IPA
         script: |
-          flutter build ipa --release \
-            --build-name=0.1.0 \
-            --build-number=$BUILD_NUMBER \
-            --export-options-plist=/Users/builder/export_options.plist
+          if [ "$CAN_PATCH" = "1" ]; then
+            shorebird release ios \
+              --flutter-version=$FLUTTER_VERSION \
+              --build-name=$BUILD_NAME \
+              --build-number=$BUILD_NUMBER \
+              --dart-define=QULEX_BUILD_NUMBER=$BUILD_NUMBER \
+              --export-options-plist=/Users/builder/export_options.plist
+          else
+            flutter build ipa --release \
+              --build-name=$BUILD_NAME \
+              --build-number=$BUILD_NUMBER \
+              --dart-define=QULEX_BUILD_NUMBER=$BUILD_NUMBER \
+              --export-options-plist=/Users/builder/export_options.plist
+          fi
+
+      # The release version a patch has to name. Printed rather than inferred,
+      # because getting it wrong is how a patch lands on the wrong build.
+      - name: Note the patchable release version
+        script: |
+          if [ "$CAN_PATCH" = "1" ]; then
+            echo "Patch this release with:"
+            echo "  RELEASE_VERSION=$BUILD_NAME+$BUILD_NUMBER  (qbit-patch workflow)"
+          fi
     artifacts:
       - build/**/outputs/bundle/**/*.aab
       - build/ios/ipa/*.ipa
@@ -85,3 +196,120 @@ workflows:
         credentials: $PLAY_SERVICE_ACCOUNT_JSON
         track: internal
         submit_as_draft: false
+
+  # ---------------------------------------------------------------------------
+  # Code push. Start this manually and set RELEASE_VERSION to the release you
+  # are patching, e.g. 0.1.0+34 — the number qbit-test printed at the end of
+  # that build. Patched devices pick it up on their next launch.
+  #
+  # It runs analyze and the full test suite first, and they are not optional.
+  # A store release has review as a backstop; a patch has nothing between this
+  # workflow and every phone that has the app.
+  # ---------------------------------------------------------------------------
+  qbit-patch:
+    name: Qulex — code push (patch a shipped release)
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: Qbit_ASC_Key
+    environment:
+      groups:
+        - shorebird
+      android_signing:
+        - qbit_upload_keystore
+      vars:
+        BUNDLE_ID: "com.codeascent.qbit"
+        FLUTTER_VERSION: *flutter_version
+        # Override this when starting the build. There is no sensible default:
+        # a patch aimed at the wrong release is worse than no patch.
+        RELEASE_VERSION: ""
+      flutter: *flutter_version
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Require a release to patch
+        script: |
+          if [ -z "$RELEASE_VERSION" ]; then
+            echo "RELEASE_VERSION is empty. Set it when starting the build, to"
+            echo "the version qbit-test printed for the release you are patching"
+            echo "(e.g. 0.1.0+34). Shorebird will otherwise pick a release for"
+            echo "you, and it will not be the one you meant."
+            exit 1
+          fi
+          if [ -z "$SHOREBIRD_TOKEN" ]; then
+            echo "SHOREBIRD_TOKEN is not set — see the qbit-test workflow."
+            exit 1
+          fi
+          if [ ! -f shorebird.yaml ]; then
+            echo "shorebird.yaml is missing — run 'shorebird init' and commit it."
+            exit 1
+          fi
+          # A patch is compiled fresh, so its --dart-define values come from
+          # THIS build, not from the release it is patching. Miss one and the
+          # constant silently changes underneath a shipped app: leave
+          # QULEX_BUILD_NUMBER out and every patched device starts reporting
+          # build 0, which quietly excludes it from every gated content push.
+          # It is recoverable in exactly the same number of ways as any other
+          # wrong constant in a shipped binary, i.e. one: another patch.
+          PATCH_BUILD_NUMBER="${RELEASE_VERSION##*+}"
+          case "$PATCH_BUILD_NUMBER" in
+            ''|*[!0-9]*)
+              echo "RELEASE_VERSION '$RELEASE_VERSION' has no +<build> suffix."
+              echo "Use the full version qbit-test printed, e.g. 0.1.0+34."
+              exit 1
+              ;;
+          esac
+          echo "PATCH_BUILD_NUMBER=$PATCH_BUILD_NUMBER" >> $CM_ENV
+          echo "patching release $RELEASE_VERSION (build $PATCH_BUILD_NUMBER)"
+
+      - name: Flutter packages
+        script: flutter pub get
+
+      - name: Install Shorebird
+        script: |
+          curl --proto '=https' --tlsv1.2 \
+            https://raw.githubusercontent.com/shorebirdtech/install/main/install.sh \
+            -sSf | bash
+          echo PATH="$HOME/.shorebird/bin:$PATH" >> $CM_ENV
+
+      - name: Static analysis
+        script: flutter analyze --no-fatal-infos
+
+      - name: Unit tests
+        script: flutter test
+
+      - name: Write Android key.properties from Codemagic keystore
+        script: |
+          cat > "$CM_BUILD_DIR/android/key.properties" <<KEYS
+          storeFile=$CM_KEYSTORE_PATH
+          storePassword=$CM_KEYSTORE_PASSWORD
+          keyAlias=$CM_KEY_ALIAS
+          keyPassword=$CM_KEY_PASSWORD
+          KEYS
+
+      - name: Patch Android
+        script: |
+          shorebird patch android \
+            --release-version="$RELEASE_VERSION" \
+            --dart-define=QULEX_BUILD_NUMBER=$PATCH_BUILD_NUMBER
+
+      - name: Set up iOS code signing
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "com.codeascent.qbit" \
+            --type IOS_APP_STORE \
+            --certificate-key @env:CERTIFICATE_PRIVATE_KEY \
+            --create
+          app-store-connect fetch-signing-files "com.codeascent.qbit.QulexWidget" \
+            --type IOS_APP_STORE \
+            --certificate-key @env:CERTIFICATE_PRIVATE_KEY \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles
+
+      - name: Patch iOS
+        script: |
+          shorebird patch ios \
+            --release-version="$RELEASE_VERSION" \
+            --dart-define=QULEX_BUILD_NUMBER=$PATCH_BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist

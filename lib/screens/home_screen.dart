@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../data/catalogue_ota.dart';
 import '../data/progress_store.dart';
 import '../data/word_repository.dart';
 import '../game/daily.dart';
@@ -66,6 +67,10 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       WidgetService.instance
           .update(words: words, store: _store, locale: appState.locale);
     }).catchError((_) {});
+    // Look for a newer word list — well after first frame, on a timer, never
+    // awaited. Anything it finds is installed for the NEXT cold start; this
+    // session keeps the catalogue it already parsed. See CatalogueOta.
+    CatalogueOta.instance.scheduleCheck();
   }
 
   @override
