@@ -193,8 +193,12 @@ def main():
     s = s.replace("\t\t\t\t97C146EF1CF9000F007C117D /* Products */,",
                   f"\t\t\t\t{U['group']} /* {NAME} */,\n\t\t\t\t97C146EF1CF9000F007C117D /* Products */,", 1)
     # embed phase + dependency on Runner
-    s = s.replace("\t\t\t\t3B06AD1E1E4923F5004D2608 /* Thin Binary */,\n\t\t\t);",
-                  f"\t\t\t\t3B06AD1E1E4923F5004D2608 /* Thin Binary */,\n\t\t\t\t{U['embed']} /* Embed App Extensions */,\n\t\t\t);", 1)
+    # Embed BEFORE "Thin Binary", not after. Flutter's Thin Binary script
+    # rewrites Runner.app, and copying the .appex into Runner.app/PlugIns
+    # depends on that script having run - putting the copy afterwards closes
+    # a loop and Xcode fails with "Cycle inside Runner".
+    s = s.replace("\t\t\t\t3B06AD1E1E4923F5004D2608 /* Thin Binary */,",
+                  f"\t\t\t\t{U['embed']} /* Embed App Extensions */,\n\t\t\t\t3B06AD1E1E4923F5004D2608 /* Thin Binary */,", 1)
     s = re.sub(r'(/\* Runner \*/ = \{\s*\n\s*isa = PBXNativeTarget;(?:.|\n)*?dependencies = \(\n)(\s*\);)',
                lambda m: m.group(1) + f"\t\t\t\t{U['dep']} /* PBXTargetDependency */,\n" + m.group(2), s, count=1)
     # Runner needs the App Group entitlement too, in every configuration
