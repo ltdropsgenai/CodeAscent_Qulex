@@ -5,6 +5,8 @@ import '../game/level.dart';
 import '../l10n/strings.dart';
 import '../models/word.dart';
 import '../services/notification_service.dart';
+import '../services/offline_audio.dart';
+import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../a11y.dart';
 import '../layout.dart';
@@ -187,6 +189,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     trailing: QToggle(
                       value: appState.voiceOn,
                       onChanged: (_) => appState.toggleVoice(),
+                      semanticLabel: Strings.t(locale, 'voice'),
                     ),
                     last: !NotificationService.instance.supported,
                   ),
@@ -197,9 +200,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       trailing: QToggle(
                         value: appState.remindersOn,
                         onChanged: (_) => _toggleReminders(),
+                        semanticLabel: Strings.t(locale, 'dailyReminders'),
                       ),
-                      last: true,
                     ),
+                  _offlineVoice(locale),
                   const SizedBox(height: 30),
 
                   // ── promise ──
@@ -308,6 +312,112 @@ class _SettingsScreenState extends State<SettingsScreen> {
         const QRule(),
       ],
     );
+  }
+
+  /// The offline-voice block: a description, a live progress line, a download
+  /// or stop button, and the Wi-Fi top-up toggle.
+  ///
+  /// Deliberately one block rather than two rows. The toggle is meaningless on
+  /// its own — "top up on Wi-Fi" tops up WHAT? — and a learner who has never
+  /// downloaded anything needs to see the button and the switch together to
+  /// understand that one is the manual version of the other.
+  Widget _offlineVoice(String locale) {
+    return ValueListenableBuilder<OfflineProgress>(
+      valueListenable: OfflineAudio.instance.progress,
+      builder: (context, prog, _) {
+        final running = prog.running;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            QRow(
+              title: Strings.t(locale, 'offlineVoice'),
+              sub: Strings.t(locale, 'offlineVoiceSub'),
+              trailing: QButton(
+                Strings.t(locale, running ? 'offlineStop' : 'offlineDownload'),
+                // Disabled with the voice off rather than hidden: hiding it
+                // would leave someone wondering where the feature went, and
+                // the reason is one row above.
+                onTap: !appState.voiceOn
+                    ? null
+                    : (running
+                        ? OfflineAudio.instance.cancel
+                        : () => _startOfflineDownload(locale)),
+              ),
+            ),
+            if (running || prog.total > 0 || prog.stoppedBecause != null)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (running) ...[
+                      // Announced as a value rather than left as a bare bar,
+                      // for the same reason the game's timer is.
+                      Semantics(
+                        label: Strings.t(locale, 'offlineVoice'),
+                        value: '${(prog.fraction * 100).round()}%',
+                        child: ExcludeSemantics(
+                          child: LinearProgressIndicator(
+                            value: prog.fraction,
+                            minHeight: 2,
+                            backgroundColor: const Color(0x1FFFFFFF),
+                            valueColor: const AlwaysStoppedAnimation<Color>(
+                                QColors.coral),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text('${prog.done} / ${prog.total}',
+                          style: QType.mono(size: 11.5, color: QColors.muted)),
+                    ] else
+                      Text(
+                        prog.stoppedBecause ??
+                            '${prog.total} ${Strings.t(locale, 'offlineReady')}',
+                        style: QType.sans(size: 13, color: QColors.muted),
+                      ),
+                    if (_cacheBytes != null) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        '${_mb(_cacheBytes!)} ${Strings.t(locale, 'offlineCacheUse')} '
+                        '${_mb(Voice.instance.cacheCapacityBytes)}',
+                        style: QType.mono(size: 11, color: QColors.dim),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            QRow(
+              title: Strings.t(locale, 'offlineAuto'),
+              sub: Strings.t(locale, 'offlineAutoSub'),
+              trailing: QToggle(
+                value: appState.offlineAudioAuto,
+                onChanged: (v) => appState.setOfflineAudioAuto(v),
+                semanticLabel: Strings.t(locale, 'offlineAuto'),
+              ),
+              last: true,
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  static String _mb(int bytes) =>
+      '${(bytes / (1024 * 1024)).toStringAsFixed(bytes > 10 * 1024 * 1024 ? 0 : 1)}MB';
+
+  int? _cacheBytes;
+
+  Future<void> _startOfflineDownload(String locale) async {
+    // The words the learner is actually about to meet — due reviews first,
+    // then the new ones the daily cap will introduce. Downloading the whole
+    // catalogue would be a 2.5M credit job for audio nobody has asked to hear.
+    // Shared with the background top-up so the two cannot disagree.
+    final plan =
+        OfflineAudio.upcomingWords(widget.words, widget.store.progressFor);
+
+    await OfflineAudio.instance.download(plan, locale: locale);
+    final size = await Voice.instance.cacheSizeBytes();
+    if (mounted) setState(() => _cacheBytes = size);
   }
 
   Widget _promise(IconData icon, String text) => Row(

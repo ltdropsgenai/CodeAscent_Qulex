@@ -284,6 +284,23 @@ workflows:
             -sSf | bash
           echo PATH="$HOME/.shorebird/bin:$PATH" >> $CM_ENV
 
+      # MUST match qbit-test. This is not housekeeping — leaving it out is what
+      # made code push unusable.
+      #
+      # flutter_launcher_icons REWRITES icon assets into the build tree. The
+      # release built by qbit-test therefore contains generated icons; a patch
+      # built without this step does not, so the two asset trees differ, and
+      # `shorebird patch` refuses the whole patch with UnpatchableChangeException
+      # rather than shipping a binary whose assets do not match the release it
+      # is patching. It is right to refuse. The fix is to generate the same
+      # icons on both sides.
+      #
+      # If you ever add another asset-generating step to qbit-test, add it here
+      # too, or code push breaks again in exactly this way and the error will
+      # not tell you which step is missing.
+      - name: Generate app icons
+        script: dart run flutter_launcher_icons
+
       - name: Static analysis
         script: flutter analyze --no-fatal-infos
 

@@ -19,6 +19,11 @@ dependencies:
   timezone: ^0.9.4
   flutter_timezone: ^3.0.1
   speech_to_text: ^7.0.0
+  # Used only to answer "is this connection unmetered?" for the background
+  # top-up of the offline voice cache. NATIVE, so it cannot be added to a
+  # released binary over the air — this dependency is why the offline-voice
+  # feature needs a full store build rather than a Shorebird patch.
+  connectivity_plus: ^6.0.5
   home_widget: ^0.6.0
   # Pure-Dart, no platform channels — which matters: Shorebird can patch
   # pure-Dart code over the air but cannot patch a new native dependency into
@@ -36,13 +41,17 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.14.1
+  # Used only by test/ci_workflows_test.dart, which parses codemagic.yaml to
+  # prove the two Shorebird workflows generate the same assets. Already in the
+  # lockfile as a transitive dependency; declared here because a test imports it
+  # directly.
+  yaml: ^3.1.2
 
 flutter:
   uses-material-design: true
   assets:
     - assets/words.json
     - assets/backgrounds/
-    - shorebird.yaml
 
   # Bundled, not downloaded. google_fonts fetched these from fonts.gstatic.com
   # on first use, so a cold start rendered in Roboto until the download landed

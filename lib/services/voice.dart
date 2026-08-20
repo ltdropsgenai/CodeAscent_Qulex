@@ -343,6 +343,50 @@ class Voice {
     }
   }
 
+  /// Whether [text] is already sitting in the on-device cache.
+  ///
+  /// Exposed so OfflineAudio can report honest progress and skip work rather
+  /// than re-deriving the cache path itself — the path depends on the
+  /// respelling dictionary, which only this class knows about.
+  Future<bool> isCached(
+    String text, {
+    String langCode = 'en',
+    String? headword,
+    String? headwordPos,
+    String? sayAs,
+  }) async {
+    try {
+      final spoken = ttsRespell(text,
+          headword: headword, headwordPos: headwordPos, headwordSay: sayAs);
+      return await File(await _localCachePath(spoken, langCode)).exists();
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Bytes currently held in the durable clip cache.
+  Future<int> cacheSizeBytes() async {
+    try {
+      final dir = await _ensureCacheDir();
+      if (!await dir.exists()) return 0;
+      var total = 0;
+      await for (final e in dir.list()) {
+        if (e is File) {
+          try {
+            total += await e.length();
+          } catch (_) {/* vanished mid-sweep */}
+        }
+      }
+      return total;
+    } catch (_) {
+      return 0;
+    }
+  }
+
+  /// The ceiling the LRU sweep enforces. Read by the UI so "you have used
+  /// 40MB of 150MB" cannot drift away from the number that is actually applied.
+  int get cacheCapacityBytes => _maxCacheBytes;
+
   Future<bool> _speakViaElevenLabs(String text, String langCode, int gen) async {
     if (!SupabaseConfig.isConfigured) return false;
     try {

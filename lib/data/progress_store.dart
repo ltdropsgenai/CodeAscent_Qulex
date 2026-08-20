@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../game/daily.dart' show ymd;
 import '../game/srs.dart';
 import '../models/progress.dart';
+import 'review_log.dart';
 
 /// Persists learning progress locally (shared_preferences works on web +
 /// mobile + desktop). Swap for a Supabase-backed store later without touching
@@ -113,6 +114,19 @@ class ProgressStore {
 
     // Drop rounds nobody is coming back to (see _snapshotTtl).
     _pruneSnapshots();
+
+    // NOT awaited. Two reasons, and the second one bit immediately.
+    //
+    // Correctness: the only thing load() produces is a COUNT, for Settings to
+    // say how far off personalisation is. Nothing about answering a question
+    // depends on it, so making the launch path wait would be paying latency for
+    // a label.
+    //
+    // Testability: it reaches path_provider, and a platform channel never
+    // completes inside testWidgets' fake async zone. Awaiting it hung every
+    // widget test that builds a screen owning a ProgressStore — which is most
+    // of them — with no error, just a suite that never finished.
+    unawaited(ReviewLog.instance.load());
   }
 
   /// Runs one section of [load], containing any failure to that section.
@@ -240,6 +254,11 @@ class ProgressStore {
   Future<void> flush() async {
     _saveTimer?.cancel();
     _saveTimer = null;
+    // The review log rides on the same beats as the progress it describes, so
+    // an answer costs one buffered append rather than a file write per tap.
+    // Deliberately BEFORE the early return: the log can have pending lines when
+    // the progress map does not.
+    unawaited(ReviewLog.instance.flush());
     if (!_dirty) return _saveInFlight ?? Future<void>.value();
     // Serialize concurrent flushes so two encodes can't interleave writes.
     final pending = _saveInFlight;
@@ -301,6 +320,7 @@ class ProgressStore {
         : (wp.seen > 0 && wp.stability > 0 ? wp.stability : null);
 
     final wasGraduated = wp.state == SrsState.review;
+    final phaseBefore = wp.state;
 
     final out = Fsrs.review(
       state: wp.state,
@@ -322,6 +342,16 @@ class ProgressStore {
     wp.step = out.step;
     wp.lastReviewMillis = nowMillis;
     wp.dueAtMillis = nowMillis + out.wait.inMilliseconds;
+
+    // Buffered, not written — see ReviewLog. The phase recorded is the one the
+    // word was in when the question was ASKED, because that is the input an
+    // optimiser replays against, not the state this call just produced.
+    ReviewLog.instance.record(
+      wordId: wordId,
+      atMillis: nowMillis,
+      grade: grade,
+      phaseBefore: phaseBefore,
+    );
 
     profile.lifetimeSeen += 1;
     if (correct) profile.lifetimeCorrect += 1;

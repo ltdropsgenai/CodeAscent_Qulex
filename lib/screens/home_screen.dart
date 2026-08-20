@@ -11,6 +11,7 @@ import '../l10n/strings.dart';
 import '../models/word.dart';
 import '../services/auth_service.dart';
 import '../services/notification_service.dart';
+import '../services/offline_audio.dart';
 import '../services/sync_service.dart';
 import '../services/widget_service.dart';
 import '../state/app_state.dart';
@@ -42,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   final ProgressStore _store = ProgressStore();
   late Future<List<Word>> _future;
   Timer? _otaCheck;
+  Timer? _audioTopUp;
   int _selected = 0;
   GameMode _gameType = GameMode.quickPlay;
 
@@ -76,6 +78,21 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     // awaited. Anything it finds is installed for the NEXT cold start; this
     // session keeps the catalogue it already parsed. See CatalogueOta.
     _otaCheck = CatalogueOta.instance.scheduleCheck();
+
+    // Offline voice top-up. Later than the catalogue check on purpose: it is
+    // the least urgent thing the app does, it is bandwidth rather than a 200
+    // byte read, and it must never compete with the audio for the round the
+    // learner is starting right now. It also does nothing at all unless they
+    // turned it on AND the connection is unmetered — see
+    // OfflineAudio.topUpIfAllowed.
+    _audioTopUp = Timer(const Duration(seconds: 45), () {
+      if (!mounted) return;
+      _future.then((words) {
+        if (!mounted) return;
+        unawaited(OfflineAudio.instance.topUpIfAllowed(
+            OfflineAudio.upcomingWords(words, _store.progressFor)));
+      }).catchError((_) {});
+    });
   }
 
   @override
@@ -91,6 +108,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _otaCheck?.cancel();
+    _audioTopUp?.cancel();
+    OfflineAudio.instance.cancel();
     _store.dispose(); // flushes anything pending
     super.dispose();
   }

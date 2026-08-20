@@ -16,9 +16,19 @@ class AppState extends ChangeNotifier {
   static const _kIntensity = 'qbit_review_intensity';
   static const _kSeenIntro = 'qbit_seen_intro';
   static const _kDifficulty = 'qbit_difficulty_pref';
+  static const _kOfflineAuto = 'qbit_offline_audio_auto';
 
   String locale = 'en';
   bool voiceOn = true;
+
+  /// Whether Qulex may quietly top up the offline voice cache in the
+  /// background.
+  ///
+  /// Defaults to OFF, and stays off until someone says otherwise. Downloading
+  /// audio nobody asked for is the kind of thing that turns up on a data bill,
+  /// and the fact that it is gated on an unmetered connection is a promise made
+  /// by code the learner cannot see. Opt-in is the only honest default.
+  bool offlineAudioAuto = false;
 
   /// Whether the player has been through the splash/intro screen. False on a
   /// brand-new install — that's when we show the differentiator pitch.
@@ -61,6 +71,7 @@ class AppState extends ChangeNotifier {
     reminderHour = p.getInt(_kReminderHour) ?? 9;
     newPerDay = p.getInt(_kNewPerDay) ?? 20;
     reviewIntensity = p.getInt(_kIntensity) ?? 1;
+    offlineAudioAuto = p.getBool(_kOfflineAuto) ?? false;
     seenIntro = p.getBool(_kSeenIntro) ?? false;
     final dIdx = p.getInt(_kDifficulty) ?? 0;
     difficultyPref =
@@ -95,6 +106,13 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     final p = await SharedPreferences.getInstance();
     await p.setInt(_kIntensity, reviewIntensity);
+  }
+
+  Future<void> setOfflineAudioAuto(bool v) async {
+    offlineAudioAuto = v;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    await p.setBool(_kOfflineAuto, v);
   }
 
   Future<void> setReminders(bool v) async {
