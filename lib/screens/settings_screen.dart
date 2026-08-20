@@ -6,6 +6,8 @@ import '../l10n/strings.dart';
 import '../models/word.dart';
 import '../services/notification_service.dart';
 import '../state/app_state.dart';
+import '../a11y.dart';
+import '../layout.dart';
 import '../theme.dart';
 import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
@@ -66,7 +68,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void _open(Widget page) {
     Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 240),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 240)),
       pageBuilder: (_, __, ___) => page,
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -83,23 +85,52 @@ class _SettingsScreenState extends State<SettingsScreen> {
           builder: (context, _) {
             final locale = appState.locale;
             final n = widget.store.knownSuspendedCount();
-            return SingleChildScrollView(
+            // A settings page is a single stack of controls; widening it just
+            // strands each toggle a long way from its label. It stays a
+            // reading column and centres on a large display.
+            return ReadingColumn(
+                child: SingleChildScrollView(
               padding: const EdgeInsets.fromLTRB(24, 18, 24, 40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // ── header ──
                   Row(children: [
-                    const Wordmark(size: 22),
-                    const SizedBox(width: 10),
-                    Text(Strings.t(locale, 'settings').toUpperCase(),
-                        style: QType.mono(
-                            size: 13, color: QColors.coral, spacing: 3)),
+                    // The brand mark yields to the page title when the type is
+                    // large. Which page you are on is information; which app
+                    // you are in, on a screen you just navigated to, is not.
+                    if (A11y.textScale(context) < 1.35) ...[
+                      const Wordmark(size: 22),
+                      const SizedBox(width: 10),
+                    ],
+                    // Flexible, not a bare Text followed by a Spacer: at 2x
+                    // Dynamic Type "SETTINGS" in 13pt tracked-out mono is wide
+                    // enough to push the close button off the right edge. It
+                    // did — adaptive_frames_test.dart caught it at capture time
+                    // as a 12px RenderFlex overflow.
+                    Flexible(
+                      child: Text(Strings.t(locale, 'settings').toUpperCase(),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: QType.mono(
+                              size: 13,
+                              color: QColors.coral,
+                              // 3pt of tracking on a 13pt word is 20% of its
+                              // width; at 2x that is what pushed it into an
+                              // ellipsis. Give the letters back their space
+                              // when the type is already large.
+                              spacing:
+                                  A11y.textScale(context) >= 1.35 ? 1 : 3)),
+                    ),
                     const Spacer(),
-                    GestureDetector(
-                      behavior: HitTestBehavior.opaque,
-                      onTap: () => Navigator.of(context).maybePop(),
-                      child: const Icon(Icons.close, color: QColors.muted),
+                    Semantics(
+                      button: true,
+                      label: Strings.t(locale, 'close'),
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onTap: () => Navigator.of(context).maybePop(),
+                        child: const Icon(Icons.close, color: QColors.muted),
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 26),
@@ -209,7 +240,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       last: true),
                 ],
               ),
-            );
+            ));
           },
         ),
       ),
@@ -237,7 +268,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           index: appState.reviewIntensity,
           onChanged: (i) {
             appState.setReviewIntensity(i);
-            widget.store.intervalScale = appState.intensityScale;
+            widget.store.desiredRetention = appState.retentionTarget;
           },
         ),
         const SizedBox(height: 15),

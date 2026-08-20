@@ -468,10 +468,17 @@ class GameController extends ChangeNotifier {
   void _record(bool correct) {
     if (!recordProgress) return; // custom sets don't touch the SRS
     // Fire-and-forget; the store persists asynchronously.
+    //
+    // The countdown goes with it. FSRS grades on a four-point scale and Qulex
+    // only knows right/wrong, so the clock is what fills the gap: an answer
+    // given in the first two seconds and one scraped in at the buzzer are not
+    // the same evidence about how well the word is known. Untimed modes pass
+    // null and every correct answer there grades as Good. See Fsrs.gradeFor.
     store.recordAnswer(
       current.id,
       correct,
       DateTime.now().millisecondsSinceEpoch,
+      clockLeft: timed ? (remainingMs / totalMs).clamp(0.0, 1.0) : null,
     );
   }
 

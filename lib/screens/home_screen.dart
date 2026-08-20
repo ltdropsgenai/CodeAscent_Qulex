@@ -14,6 +14,8 @@ import '../services/notification_service.dart';
 import '../services/sync_service.dart';
 import '../services/widget_service.dart';
 import '../state/app_state.dart';
+import '../a11y.dart';
+import '../layout.dart';
 import '../theme.dart';
 import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
@@ -101,22 +103,22 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     await _store.load();
     // Apply the learner's spaced-repetition dial to the store.
     _store.newPerDay = appState.newPerDay;
-    _store.intervalScale = appState.intensityScale;
+    _store.desiredRetention = appState.retentionTarget;
     return widget.repository.loadAll();
   }
 
   Future<void> _openSettings(List<Word> words) async {
     await Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 280),
-      reverseTransitionDuration: const Duration(milliseconds: 200),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 280)),
+      reverseTransitionDuration: A11y.duration(context, const Duration(milliseconds: 200)),
       pageBuilder: (_, __, ___) => SettingsScreen(store: _store, words: words),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
     ));
     // Re-apply in case the dial changed while we were away.
     _store.newPerDay = appState.newPerDay;
-    _store.intervalScale = appState.intensityScale;
+    _store.desiredRetention = appState.retentionTarget;
     if (mounted) setState(() {});
   }
 
@@ -181,8 +183,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     // may be gone by the time we get here.
     if (!mounted) return;
     await Navigator.of(context).push(PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 320),
-      reverseTransitionDuration: const Duration(milliseconds: 240),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 320)),
+      reverseTransitionDuration: A11y.duration(context, const Duration(milliseconds: 240)),
       pageBuilder: (_, __, ___) => GameScreen(
         words: words,
         track: kTracks[_selected],
@@ -211,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
   Future<void> _openPlacement(List<Word> words) async {
     await Navigator.of(context).push(PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 300),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 300)),
       pageBuilder: (_, __, ___) =>
           PlacementScreen(words: words, store: _store),
       transitionsBuilder: (_, anim, __, child) =>
@@ -223,7 +225,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Future<void> _openSets(List<Word> words) async {
     await Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 280),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 280)),
       pageBuilder: (_, __, ___) =>
           SetsListScreen(library: words, store: _store),
       transitionsBuilder: (_, anim, __, child) =>
@@ -235,8 +237,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Future<void> _openAccount() async {
     await Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 280),
-      reverseTransitionDuration: const Duration(milliseconds: 200),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 280)),
+      reverseTransitionDuration: A11y.duration(context, const Duration(milliseconds: 200)),
       pageBuilder: (_, __, ___) => const AccountScreen(),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -261,8 +263,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Future<void> _openPaywall() async {
     await Navigator.of(context).push(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 280),
-      reverseTransitionDuration: const Duration(milliseconds: 200),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 280)),
+      reverseTransitionDuration: A11y.duration(context, const Duration(milliseconds: 200)),
       pageBuilder: (_, __, ___) => const PaywallScreen(),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -374,11 +376,16 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     final known = _store.knownCount();
     final streak = _store.profile.streak;
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(24, 18, 24, 26),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+    // Home is the one screen with enough distinct blocks to genuinely use a
+    // wide display, so it is the one that splits. Everything above the fold on
+    // a phone — who you are, how you are doing, today's challenge — goes left;
+    // everything you came here to press goes right. On a phone the same two
+    // lists are simply concatenated into the single column they always were,
+    // in the same order, so nothing moves for the majority of users.
+    final wide = QLayout.isWide(context);
+    final pad = QLayout.pagePadding(context);
+
+    final identity = <Widget>[
           // language + voice controls
           Row(
             children: [
@@ -396,7 +403,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               if (AuthService.instance.enabled)
                 IconButton(
                   onPressed: _openAccount,
+                  tooltip: Strings.t(locale, 'account'),
                   icon: Icon(
+                      semanticLabel: Strings.t(locale, 'account'),
                       AuthService.instance.isSignedIn
                           ? Icons.account_circle
                           : Icons.account_circle_outlined,
@@ -407,7 +416,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 ),
               IconButton(
                 onPressed: () => _openSettings(words),
-                icon: const Icon(Icons.tune, color: QColors.dim, size: 21),
+                tooltip: Strings.t(locale, 'settings'),
+                icon: Icon(Icons.tune,
+                    color: QColors.dim,
+                    size: 21,
+                    semanticLabel: Strings.t(locale, 'settings')),
               ),
             ],
           ),
@@ -422,6 +435,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               style: QType.mono(size: 11.5, color: QColors.coral, spacing: 3)),
           const SizedBox(height: 10),
           Text(Strings.t(locale, 'tagline'),
+              // Keyed so home_wide_test.dart can check where the two panes
+              // actually land, rather than eyeballing a screenshot.
+              key: const ValueKey('home-tagline'),
               style: QType.serif(size: 23, weight: FontWeight.w500, color: QColors.ink, height: 1.25)),
           const SizedBox(height: 22),
           _StatStrip(vocabRank: _store.vocabRank(), streak: streak, known: known, locale: locale),
@@ -436,7 +452,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             _PlacementCard(locale: locale, onTap: () => _openPlacement(words)),
             const SizedBox(height: 20),
           ],
+    ];
+
+    final play = <Widget>[
           Text(Strings.t(locale, 'quickPlay').toUpperCase(),
+              key: const ValueKey('home-play-heading'),
               style: QType.mono(size: 11, color: QColors.muted, spacing: 2.5)),
           const SizedBox(height: 10),
           _RuledList(children: [
@@ -469,6 +489,37 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
           _CoralButton(
             label: Strings.t(locale, 'startQuickPlay'),
             onPressed: words.isEmpty ? null : () => _startSelected(words),
+          ),
+    ];
+
+    if (!wide) {
+      return SingleChildScrollView(
+        padding: pad,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [...identity, ...play],
+        ),
+      );
+    }
+
+    return SingleChildScrollView(
+      padding: pad,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // 5:6 rather than 1:1 — the right column carries the track list and
+          // the mode chips, which need more room than the stat strip does.
+          Expanded(
+            flex: 5,
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: identity),
+          ),
+          const SizedBox(width: 40),
+          Expanded(
+            flex: 6,
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start, children: play),
           ),
         ],
       ),
@@ -530,18 +581,29 @@ class _StatStrip extends StatelessWidget {
     );
   }
 
-  Widget _div() => Container(width: 1, height: 40, color: QColors.rule);
+  Widget _div() => ExcludeSemantics(
+      child: Container(width: 1, height: 40, color: QColors.rule));
 
   Widget _cell(String n, String l, Color c) => Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 13),
-          child: Column(children: [
-            Text(n, style: QType.serif(size: 22, color: c)),
-            const SizedBox(height: 3),
-            Text(l.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: QType.mono(size: 10.5, color: QColors.muted, spacing: 1.2)),
-          ]),
+        // Read as "Day streak, 7" rather than as "7" and then, separately,
+        // "DAY STREAK" — which is what an un-merged column of two Texts sounds
+        // like.
+        child: Semantics(
+          label: l,
+          value: n,
+          child: ExcludeSemantics(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 13),
+              child: Column(children: [
+                Text(n, style: QType.serif(size: 22, color: c)),
+                const SizedBox(height: 3),
+                Text(l.toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: QType.mono(
+                        size: 10.5, color: QColors.muted, spacing: 1.2)),
+              ]),
+            ),
+          ),
         ),
       );
 }
@@ -575,13 +637,23 @@ class _DailyBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return Semantics(
+      button: true,
+      label: Strings.t(locale, 'dailyChallenge'),
+      hint: Strings.t(locale, done ? 'dailyDone' : 'dailySub'),
+      onTap: onTap,
+      child: MergeSemantics(
+          child: InkWell(
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 11),
         child: Row(children: [
-          Icon(done ? Icons.check_circle : Icons.calendar_today_outlined,
-              color: QColors.coral, size: 22),
+          ExcludeSemantics(
+            child: Icon(
+                done ? Icons.check_circle : Icons.calendar_today_outlined,
+                color: QColors.coral,
+                size: A11y.scale(context, 22)),
+          ),
           const SizedBox(width: 14),
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -594,6 +666,7 @@ class _DailyBanner extends StatelessWidget {
           ),
         ]),
       ),
+    )),
     );
   }
 }

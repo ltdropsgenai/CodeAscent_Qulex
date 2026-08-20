@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../a11y.dart';
 import '../theme.dart';
 
 /// Qulex editorial UI kit.
@@ -19,8 +20,15 @@ class QLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: padding,
-        child: Text(text.toUpperCase(),
-            style: QType.mono(size: 12.5, color: QColors.muted, spacing: 2.2)),
+        child: Semantics(
+          // These are the only structural signposts on a long settings page.
+          // Marked as headers so VoiceOver's rotor can jump between sections
+          // instead of forcing a swipe through every row.
+          header: true,
+          child: Text(text.toUpperCase(),
+              style:
+                  QType.mono(size: 12.5, color: QColors.muted, spacing: 2.2)),
+        ),
       );
 }
 
@@ -29,10 +37,12 @@ class QRule extends StatelessWidget {
   final double indent;
   const QRule({super.key, this.indent = 0});
   @override
-  Widget build(BuildContext context) => Container(
-        margin: EdgeInsets.only(left: indent),
-        height: 1,
-        color: QColors.rule,
+  Widget build(BuildContext context) => ExcludeSemantics(
+        child: Container(
+          margin: EdgeInsets.only(left: indent),
+          height: 1,
+          color: QColors.rule,
+        ),
       );
 }
 
@@ -56,42 +66,97 @@ class QRow extends StatelessWidget {
     this.last = false,
   });
 
+  /// Above this text scale the row stops being a row.
+  ///
+  /// A trailing control has a minimum width that does not shrink — the stepper
+  /// is two 44pt buttons around a number — so as the type grows, the title's
+  /// share of a 390pt phone collapses. At 2x it collapsed to about 30pt and
+  /// "New words per day" rendered one character per line, straight down the
+  /// screen. Below the threshold the row reads better side by side; above it,
+  /// stacking is the only layout that fits. iOS does the same thing to its own
+  /// list rows at the larger Dynamic Type sizes.
+  static const double _stackAboveScale = 1.35;
+
   @override
   Widget build(BuildContext context) {
+    final stacked = A11y.textScale(context) >= _stackAboveScale;
+
+    final titleBlock = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(title,
+            style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
+        if (sub != null) ...[
+          const SizedBox(height: 5),
+          // Sans, not mono. Space Mono is a wide face with a small x-height:
+          // once these lines were big enough to read, they were also wide
+          // enough to wrap three times beside a stepper. Mono stays where it
+          // belongs — short uppercase labels and buttons. These are sentences.
+          Text(sub!,
+              style: QType.sans(size: 13, color: QColors.muted, height: 1.4)),
+        ],
+      ],
+    );
+
+    final leading = icon == null
+        ? null
+        // Purely decorative: the title beside it already says what this row is,
+        // so announcing the icon would make every row start with noise.
+        : ExcludeSemantics(
+            child: Icon(icon,
+                size: A11y.scale(context, 20), color: QColors.coral));
+
+    final trail = trailing ??
+        (onTap != null
+            ? ExcludeSemantics(
+                child: Icon(Icons.chevron_right,
+                    size: A11y.scale(context, 22), color: QColors.dim))
+            : null);
+
     Widget row = Padding(
       padding: const EdgeInsets.symmetric(vertical: 15),
-      child: Row(children: [
-        if (icon != null) ...[
-          Icon(icon, size: 20, color: QColors.coral),
-          const SizedBox(width: 14),
-        ],
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title, style: QType.serif(size: 18, color: QColors.cream, height: 1.2)),
-              if (sub != null) ...[
-                const SizedBox(height: 5),
-                // Sans, not mono. Space Mono is a wide face with a small
-                // x-height: once these lines were big enough to read, they
-                // were also wide enough to wrap three times beside a stepper.
-                // Mono stays where it belongs — short uppercase labels and
-                // buttons. These are sentences.
-                Text(sub!,
-                    style: QType.sans(
-                        size: 13, color: QColors.muted, height: 1.4)),
+      child: stacked
+          ? Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(children: [
+                  if (leading != null) ...[
+                    leading,
+                    SizedBox(width: A11y.scale(context, 14)),
+                  ],
+                  Expanded(child: titleBlock),
+                ]),
+                if (trail != null) ...[
+                  const SizedBox(height: 12),
+                  // Left-aligned under the title rather than right-aligned in
+                  // space: at this type size the eye is already tracking the
+                  // left margin.
+                  Align(alignment: Alignment.centerLeft, child: trail),
+                ],
               ],
-            ],
-          ),
-        ),
-        if (trailing != null)
-          Padding(padding: const EdgeInsets.only(left: 12), child: trailing!)
-        else if (onTap != null)
-          const Icon(Icons.chevron_right, size: 22, color: QColors.dim),
-      ]),
+            )
+          : Row(children: [
+              if (leading != null) ...[
+                leading,
+                SizedBox(width: A11y.scale(context, 14)),
+              ],
+              Expanded(child: titleBlock),
+              if (trail != null)
+                Padding(padding: const EdgeInsets.only(left: 12), child: trail),
+            ]),
     );
+
     if (onTap != null) {
-      row = InkWell(onTap: onTap, child: row);
+      row = Semantics(
+        button: true,
+        // The title alone is the label; the subtitle becomes the hint, which is
+        // how a screen reader distinguishes "what is this" from "what will
+        // happen". Merging descendants stops the row being read as three
+        // separate unrelated fragments.
+        label: title,
+        hint: sub,
+        child: MergeSemantics(child: InkWell(onTap: onTap, child: row)),
+      );
     }
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -104,33 +169,50 @@ class QRow extends StatelessWidget {
 class QToggle extends StatelessWidget {
   final bool value;
   final ValueChanged<bool> onChanged;
-  const QToggle({super.key, required this.value, required this.onChanged});
+
+  /// What the toggle controls, for a screen reader. The row beside it usually
+  /// supplies this via MergeSemantics, but a bare toggle needs its own.
+  final String? semanticLabel;
+
+  const QToggle(
+      {super.key,
+      required this.value,
+      required this.onChanged,
+      this.semanticLabel});
+
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
+    return Semantics(
+      // `toggled` is what makes VoiceOver say "on"/"off" and offer the right
+      // gesture, rather than reading an unlabelled tap target.
+      toggled: value,
+      label: semanticLabel,
       onTap: () => onChanged(!value),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 160),
-        width: 46,
-        height: 26,
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-          color: value ? QColors.coral.withOpacity(0.16) : Colors.transparent,
-          border:
-              Border.all(color: value ? QColors.coral : QColors.rule, width: 1),
-          borderRadius: BorderRadius.circular(kQRadius),
-        ),
-        child: AnimatedAlign(
-          duration: const Duration(milliseconds: 160),
-          curve: Curves.easeOut,
-          alignment: value ? Alignment.centerRight : Alignment.centerLeft,
-          child: Container(
-            width: 16,
-            height: 18,
-            decoration: BoxDecoration(
-              color: value ? QColors.coral : QColors.muted,
-              borderRadius: BorderRadius.circular(kQRadius),
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => onChanged(!value),
+        child: AnimatedContainer(
+          duration: A11y.duration(context, const Duration(milliseconds: 160)),
+          width: A11y.scale(context, 46),
+          height: A11y.scale(context, 26),
+          padding: const EdgeInsets.all(3),
+          decoration: BoxDecoration(
+            color: value ? QColors.coral.withOpacity(0.16) : Colors.transparent,
+            border: Border.all(
+                color: value ? QColors.coral : QColors.rule, width: 1),
+            borderRadius: BorderRadius.circular(kQRadius),
+          ),
+          child: AnimatedAlign(
+            duration: A11y.duration(context, const Duration(milliseconds: 160)),
+            curve: Curves.easeOut,
+            alignment: value ? Alignment.centerRight : Alignment.centerLeft,
+            child: Container(
+              width: A11y.scale(context, 16),
+              height: A11y.scale(context, 18),
+              decoration: BoxDecoration(
+                color: value ? QColors.coral : QColors.muted,
+                borderRadius: BorderRadius.circular(kQRadius),
+              ),
             ),
           ),
         ),
@@ -144,38 +226,78 @@ class QStepper extends StatelessWidget {
   final Object value;
   final VoidCallback onMinus;
   final VoidCallback onPlus;
-  const QStepper(
-      {super.key,
-      required this.value,
-      required this.onMinus,
-      required this.onPlus});
+
+  /// What is being stepped, e.g. "New words per day". Without it a screen
+  /// reader announces two unlabelled buttons around a bare number.
+  final String? semanticLabel;
+
+  const QStepper({
+    super.key,
+    required this.value,
+    required this.onMinus,
+    required this.onPlus,
+    this.semanticLabel,
+  });
+
   @override
   Widget build(BuildContext context) {
+    // Three nodes, each of which says what it is: the value announces
+    // "New words per day, 20", and the two buttons name what they change.
+    //
+    // The tempting alternative is ONE node with `slider: true` plus increase
+    // and decrease actions, which is the swipe-up/swipe-down gesture VoiceOver
+    // users expect from a stepper. Flutter asserts that such a node also
+    // supplies increasedValue and decreasedValue, and this widget takes an
+    // opaque Object rather than a number, so it cannot compute either. Labelled
+    // buttons are less elegant and actually work. (The assert is not
+    // theoretical — it fired in adaptive_frames_test.dart on the first try.)
+    final label = semanticLabel;
     return Row(mainAxisSize: MainAxisSize.min, children: [
-      _btn(Icons.remove, onMinus),
-      Container(
-        width: 46,
-        alignment: Alignment.center,
-        child: Text('$value',
-            style: QType.serif(size: 22, color: QColors.coral)),
+      _btn(context, Icons.remove, onMinus,
+          label == null ? null : 'Decrease $label'),
+      Semantics(
+        label: label,
+        value: '$value',
+        readOnly: true,
+        child: ExcludeSemantics(
+          child: Container(
+            width: A11y.scale(context, 46),
+            alignment: Alignment.center,
+            child: Text('$value',
+                style: QType.serif(size: 22, color: QColors.coral)),
+          ),
+        ),
       ),
-      _btn(Icons.add, onPlus),
+      _btn(context, Icons.add, onPlus,
+          label == null ? null : 'Increase $label'),
     ]);
   }
 
-  Widget _btn(IconData i, VoidCallback onTap) => InkWell(
+  Widget _btn(BuildContext context, IconData i, VoidCallback onTap,
+      String? label) {
+    // Grows with the text size beside it, and never smaller than the 44pt
+    // minimum touch target both platforms ask for. The old fixed 34 was under
+    // it on every device.
+    final side = A11y.scale(context, 44);
+    return Semantics(
+      button: true,
+      label: label,
+      onTap: onTap,
+      child: InkWell(
         onTap: onTap,
         child: Container(
-          width: 34,
-          height: 34,
+          width: side,
+          height: side,
           alignment: Alignment.center,
           decoration: BoxDecoration(
             border: Border.all(color: QColors.rule, width: 1),
             borderRadius: BorderRadius.circular(kQRadius),
           ),
-          child: Icon(i, size: 18, color: QColors.muted),
+          child: Icon(i, size: A11y.scale(context, 18), color: QColors.muted),
         ),
-      );
+      ),
+    );
+  }
 }
 
 /// Hairline-divided segmented control; active cell = coral text + underline.
@@ -189,40 +311,106 @@ class QSegment extends StatelessWidget {
       required this.labels,
       required this.index,
       required this.onChanged});
+
+  /// Above this text scale the control stops being horizontal.
+  ///
+  /// Three cells across a 390pt phone gives each about 128pt. At 2x, "RELAXED"
+  /// in tracked-out mono needs more than that, so it wrapped mid-word:
+  /// "RELAX / ED", "NORMA / L". There is no amount of shrinking that fixes
+  /// three long words on a narrow phone — the layout has to change. Stacked,
+  /// each option gets the full width and the selected one is marked by a bar on
+  /// the leading edge instead of an underline.
+  static const double _stackAboveScale = 1.35;
+
   @override
   Widget build(BuildContext context) {
+    final stacked = A11y.textScale(context) >= _stackAboveScale;
+
+    Widget cell(int i, {required bool vertical}) {
+      final active = i == index;
+      return Semantics(
+        // A segmented control is a radio group. Saying so is what makes a
+        // screen reader announce "Normal, selected, 2 of 3" instead of reading
+        // three loose words with no indication which is active — which matters
+        // more here than anywhere else in the app, because selection is
+        // signalled by colour alone.
+        inMutuallyExclusiveGroup: true,
+        selected: active,
+        button: true,
+        label: labels[i],
+        onTap: () => onChanged(i),
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () => onChanged(i),
+          // Deliberately NOT a Container with `alignment` set. A Container that
+          // has an alignment and bounded constraints tries to be as big as
+          // possible, and the fixed `height: 42` this replaced was the only
+          // thing holding that back — swap it for a minHeight and the control
+          // silently grows to fill its parent. It did, immediately; see
+          // adaptive_frames_test.dart.
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: A11y.scale(context, 42)),
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                border: vertical
+                    ? Border(
+                        left: BorderSide(
+                            color: active ? QColors.coral : Colors.transparent,
+                            width: 2))
+                    : Border(
+                        bottom: BorderSide(
+                            color: active ? QColors.coral : Colors.transparent,
+                            width: 2)),
+              ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: vertical ? 14 : 4, vertical: 10),
+                child: Align(
+                  alignment:
+                      vertical ? Alignment.centerLeft : Alignment.center,
+                  heightFactor: 1,
+                  child: Text(labels[i].toUpperCase(),
+                      textAlign: vertical ? TextAlign.left : TextAlign.center,
+                      style: QType.mono(
+                          size: 12,
+                          spacing: 1,
+                          color: active ? QColors.coral : QColors.muted)),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: QColors.rule, width: 1),
         borderRadius: BorderRadius.circular(kQRadius),
       ),
-      child: Row(children: [
-        for (var i = 0; i < labels.length; i++) ...[
-          if (i > 0) Container(width: 1, height: 40, color: QColors.rule),
-          Expanded(
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => onChanged(i),
-              child: Container(
-                height: 42,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                        color: i == index ? QColors.coral : Colors.transparent,
-                        width: 2),
+      child: stacked
+          ? Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                for (var i = 0; i < labels.length; i++) ...[
+                  if (i > 0) const QRule(),
+                  cell(i, vertical: true),
+                ],
+              ],
+            )
+          : Row(children: [
+              for (var i = 0; i < labels.length; i++) ...[
+                if (i > 0)
+                  ExcludeSemantics(
+                    child: Container(
+                        width: 1,
+                        height: A11y.scale(context, 40),
+                        color: QColors.rule),
                   ),
-                ),
-                child: Text(labels[i].toUpperCase(),
-                    style: QType.mono(
-                        size: 12,
-                        spacing: 1,
-                        color: i == index ? QColors.coral : QColors.muted)),
-              ),
-            ),
-          ),
-        ],
-      ]),
+                Expanded(child: cell(i, vertical: false)),
+              ],
+            ]),
     );
   }
 }
@@ -264,18 +452,32 @@ class QButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           if (icon != null) ...[
-            Icon(icon, size: 15, color: fg),
-            const SizedBox(width: 8),
+            ExcludeSemantics(
+                child: Icon(icon, size: A11y.scale(context, 15), color: fg)),
+            SizedBox(width: A11y.scale(context, 8)),
           ],
-          Text(label.toUpperCase(),
-              style: QType.mono(size: 13, spacing: 1.3, color: fg)),
+          Flexible(
+            child: Text(label.toUpperCase(),
+                textAlign: TextAlign.center,
+                style: QType.mono(size: 13, spacing: 1.3, color: fg)),
+          ),
         ],
       ),
     );
-    return Opacity(
-      opacity: enabled ? 1 : 0.5,
-      child: GestureDetector(
-          behavior: HitTestBehavior.opaque, onTap: onTap, child: child),
+    return Semantics(
+      button: true,
+      // Announced in sentence case, not the SHOUTING the button is set in —
+      // VoiceOver reads all-caps text letter by letter on some voices.
+      label: label,
+      enabled: enabled,
+      onTap: onTap,
+      child: ExcludeSemantics(
+        child: Opacity(
+          opacity: enabled ? 1 : 0.5,
+          child: GestureDetector(
+              behavior: HitTestBehavior.opaque, onTap: onTap, child: child),
+        ),
+      ),
     );
   }
 }

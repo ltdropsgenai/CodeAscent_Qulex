@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../a11y.dart';
+
 import '../data/custom_set_store.dart';
 import '../data/progress_store.dart';
 import '../game/game_controller.dart';
@@ -36,7 +38,7 @@ class _SetsListScreenState extends State<SetsListScreen> {
   Future<void> _openEditor([CustomSet? existing]) async {
     final saved = await Navigator.of(context).push<bool>(PageRouteBuilder(
       opaque: true,
-      transitionDuration: const Duration(milliseconds: 240),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 240)),
       pageBuilder: (_, __, ___) =>
           SetEditorScreen(existing: existing, setStore: _setStore),
       transitionsBuilder: (_, anim, __, child) =>
@@ -50,7 +52,7 @@ class _SetsListScreenState extends State<SetsListScreen> {
         library: widget.library, locale: appState.locale);
     if (words.isEmpty) return;
     Navigator.of(context).push(PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 300),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 300)),
       pageBuilder: (_, __, ___) => GameScreen(
         words: words,
         track: kTracks.first,

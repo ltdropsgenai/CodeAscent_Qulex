@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../a11y.dart';
+
 import '../data/word_repository.dart';
 import '../l10n/strings.dart';
 import '../state/app_state.dart';
@@ -78,7 +80,7 @@ class _IntroScreenState extends State<IntroScreen>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _reduceMotion = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
+    _reduceMotion = A11y.reduceMotion(context);
     if (_started) return;
     _started = true;
     // Started here rather than in initState so the run length can honour the
@@ -108,7 +110,7 @@ class _IntroScreenState extends State<IntroScreen>
         ? HandoffScreen(repository: widget.repository)
         : SplashScreen(repository: widget.repository);
     Navigator.of(context).pushReplacement(PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 420),
+      transitionDuration: A11y.duration(context, const Duration(milliseconds: 420)),
       pageBuilder: (_, __, ___) => next,
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),

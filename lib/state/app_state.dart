@@ -37,8 +37,16 @@ class AppState extends ChangeNotifier {
   int newPerDay = 20; // new words introduced per day
   int reviewIntensity = 1; // 0 relaxed, 1 normal, 2 intense
 
-  /// Interval multiplier for the chosen intensity (relaxed reviews less often).
-  double get intensityScale => const [2.0, 1.0, 0.5][reviewIntensity.clamp(0, 2)];
+  /// The recall probability FSRS aims for at each intensity.
+  ///
+  /// This used to be a raw interval multiplier (2.0 / 1.0 / 0.5). FSRS derives
+  /// the interval from a retention target instead, which is both the correct
+  /// input for the model and a more meaningful promise: "intense" now means
+  /// "keep 95% of what you have learned", not "multiply everything by a half".
+  /// Higher retention costs more reviews for less forgetting — that trade is
+  /// the whole point of the control.
+  double get retentionTarget =>
+      const [0.85, 0.90, 0.95][reviewIntensity.clamp(0, 2)];
 
   /// Whether the user has Qulex Pro. Currently persisted locally; on mobile this
   /// gets driven by RevenueCat's "pro" entitlement (see PurchaseService drop-in).

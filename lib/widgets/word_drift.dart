@@ -1,6 +1,8 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+
+import '../a11y.dart';
 import 'package:flutter/scheduler.dart';
 
 import '../theme.dart';
@@ -57,12 +59,36 @@ class WordDrift extends StatefulWidget {
 /// A hand-picked deck: words that set well in a serif and that say something
 /// about the library's range. Used when no catalogue words are supplied.
 const List<String> kDriftWords = <String>[
-  'perspicacious', 'ephemeral', 'quixotic', 'salient', 'obdurate',
-  'lucid', 'halcyon', 'sonorous', 'intrepid', 'nascent',
-  'eloquent', 'sanguine', 'tenacity', 'verdant', 'zenith',
-  'candour', 'august', 'reticent', 'limpid', 'arcane',
-  'cogent', 'redolent', 'stoic', 'vestige', 'wry',
-  'prescient', 'laconic', 'fastidious', 'ineffable', 'susurrus',
+  'perspicacious',
+  'ephemeral',
+  'quixotic',
+  'salient',
+  'obdurate',
+  'lucid',
+  'halcyon',
+  'sonorous',
+  'intrepid',
+  'nascent',
+  'eloquent',
+  'sanguine',
+  'tenacity',
+  'verdant',
+  'zenith',
+  'candour',
+  'august',
+  'reticent',
+  'limpid',
+  'arcane',
+  'cogent',
+  'redolent',
+  'stoic',
+  'vestige',
+  'wry',
+  'prescient',
+  'laconic',
+  'fastidious',
+  'ineffable',
+  'susurrus',
 ];
 
 class _DriftToken {
@@ -146,7 +172,7 @@ class _WordDriftState extends State<WordDrift>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final rm = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
+    final rm = A11y.reduceMotion(context);
     if (rm == _reduceMotion) return;
     _reduceMotion = rm;
     if (_reduceMotion) {
@@ -341,8 +367,8 @@ class _DriftPainter extends CustomPainter {
             text: t.word,
             style: QType.serif(
               size: t.size,
-              color: (t.accent ? QColors.coral : QColors.cream)
-                  .withOpacity(alpha),
+              color:
+                  (t.accent ? QColors.coral : QColors.cream).withOpacity(alpha),
               weight: FontWeight.w400,
               style: FontStyle.italic,
             ),

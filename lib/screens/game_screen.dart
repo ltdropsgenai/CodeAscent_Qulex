@@ -8,6 +8,8 @@ import '../models/word.dart';
 import '../services/tutor.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
+import '../a11y.dart';
+import '../layout.dart';
 import '../theme.dart';
 import '../widgets/ui.dart';
 import '../widgets/wordmark.dart';
@@ -213,7 +215,12 @@ class _GameViewState extends State<_GameView> {
     final g = w.glossFor(locale);
     final revealed = c.phase == Phase.revealed;
 
-    return Padding(
+    // A question is one prompt and three answers stacked vertically. It reads
+    // no better at 1,100pt than at 720, so on a wide display it centres rather
+    // than stretching the answer rows into runways.
+    return ReadingColumn(
+      maxWidth: 720,
+      child: Padding(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -223,38 +230,76 @@ class _GameViewState extends State<_GameView> {
             IconButton(
               onPressed: onExit,
               padding: EdgeInsets.zero,
-              constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
-              icon: const Icon(Icons.arrow_back, color: QColors.muted, size: 19),
+              constraints: const BoxConstraints(minWidth: 44, minHeight: 44),
+              tooltip: Strings.t(locale, 'a11yQuit'),
+              icon: Icon(Icons.arrow_back,
+                  color: QColors.muted,
+                  size: 19,
+                  semanticLabel: Strings.t(locale, 'a11yQuit')),
             ),
             const SizedBox(width: 4),
             const Wordmark(size: 19),
             const Spacer(),
-            _stat('${c.streak}', QColors.coral),
-            Container(width: 1, height: 16, color: QColors.rule, margin: const EdgeInsets.symmetric(horizontal: 12)),
-            _stat('${c.score}', const Color(0xFF7FA6FF)),
+            Semantics(
+              label: Strings.t(locale, 'a11yStreak'),
+              value: '${c.streak}',
+              child:
+                  ExcludeSemantics(child: _stat('${c.streak}', QColors.coral)),
+            ),
+            ExcludeSemantics(
+              child: Container(
+                  width: 1,
+                  height: 16,
+                  color: QColors.rule,
+                  margin: const EdgeInsets.symmetric(horizontal: 12)),
+            ),
+            Semantics(
+              label: Strings.t(locale, 'a11yScore'),
+              value: '${c.score}',
+              child: ExcludeSemantics(
+                  child: _stat('${c.score}', const Color(0xFF7FA6FF))),
+            ),
             AnimatedBuilder(
               animation: appState,
-              builder: (_, __) => IconButton(
-                onPressed: () => appState.toggleVoice(),
-                icon: Icon(appState.voiceOn ? Icons.volume_up : Icons.volume_off,
-                    color: appState.voiceOn ? QColors.muted : QColors.dim, size: 19),
+              builder: (_, __) => Semantics(
+                toggled: appState.voiceOn,
+                label: Strings.t(locale, 'voice'),
+                child: IconButton(
+                  onPressed: () => appState.toggleVoice(),
+                  tooltip: Strings.t(locale, 'voice'),
+                  icon: Icon(
+                      appState.voiceOn ? Icons.volume_up : Icons.volume_off,
+                      color: appState.voiceOn ? QColors.muted : QColors.dim,
+                      size: 19),
+                ),
               ),
             ),
           ]),
           const Divider(color: QColors.rule, height: 20),
           // ticks
-          Row(
-            children: List.generate(c.total, (i) {
-              final col = i < c.index
-                  ? QColors.coral
-                  : (i == c.index ? QColors.cream : const Color(0x22FFFFFF));
-              return Expanded(
-                child: Container(
-                    height: 2,
-                    margin: EdgeInsets.only(right: i == c.total - 1 ? 0 : 4),
-                    color: col),
-              );
-            }),
+          // The tick strip is the only indication of how far through the round
+          // you are, and it is pure colour — invisible to a screen reader and
+          // to anyone who cannot tell coral from cream. One spoken value
+          // carries the same information.
+          Semantics(
+            label: Strings.t(locale, 'a11yQuestionOf'),
+            value: '${c.index + 1} / ${c.total}',
+            child: ExcludeSemantics(
+              child: Row(
+                children: List.generate(c.total, (i) {
+                  final col = i < c.index
+                      ? QColors.coral
+                      : (i == c.index ? QColors.cream : const Color(0x22FFFFFF));
+                  return Expanded(
+                    child: Container(
+                        height: 2,
+                        margin:
+                            EdgeInsets.only(right: i == c.total - 1 ? 0 : 4),
+                        color: col),
+                  );
+                }),
+              ),
+            ),
           ),
           const SizedBox(height: 12),
           // timer or review label
@@ -268,12 +313,22 @@ class _GameViewState extends State<_GameView> {
                 valueListenable: c.remaining,
                 builder: (_, __, ___) {
                   final p = c.progress;
-                  return LinearProgressIndicator(
-                    value: p,
-                    minHeight: 2,
-                    backgroundColor: const Color(0x1FFFFFFF),
-                    valueColor: AlwaysStoppedAnimation<Color>(
-                        p <= 0.375 ? QColors.amber : QColors.coral),
+                  return Semantics(
+                    // Announced in whole seconds rather than as a percentage,
+                    // and NOT as a live region: re-announcing every 16ms tick
+                    // would talk over the question itself. A screen-reader user
+                    // can query it whenever they want to know.
+                    label: Strings.t(locale, 'a11yTimeLeft'),
+                    value: '${(c.remainingMs / 1000).ceil()}',
+                    child: ExcludeSemantics(
+                      child: LinearProgressIndicator(
+                        value: p,
+                        minHeight: 2,
+                        backgroundColor: const Color(0x1FFFFFFF),
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                            p <= 0.375 ? QColors.amber : QColors.coral),
+                      ),
+                    ),
                   );
                 },
               ),
@@ -285,23 +340,39 @@ class _GameViewState extends State<_GameView> {
               Text(Strings.t(locale, 'review'),
                   style: QType.mono(size: 11, color: QColors.coral, spacing: 1.5)),
             ]),
-          // Everything between the timer and the Next button scrolls now.
-          // The "Explain this word" panel expands inline on tap; inside a plain
+          // Everything between the timer and the Next button scrolls. The
+          // "Explain this word" panel expands inline on tap; inside a plain
           // Column the two Spacers just collapsed and then the Next button was
           // pushed off the bottom of the screen with no way to reach it, which
-          // left the round unfinishable. IntrinsicHeight plus a min-height of
-          // the viewport keeps the original spread-out layout while the content
-          // fits, and starts scrolling only once it doesn't.
+          // left the round unfinishable. A min-height of the viewport keeps the
+          // original spread-out layout while the content fits, and starts
+          // scrolling only once it doesn't.
+          //
+          // THE ALIGN IS LOAD-BEARING, and it replaced an IntrinsicHeight
+          // wrapped around a Column with `Spacer()` above and `Spacer(flex: 2)`
+          // below. That construction was broken: IntrinsicHeight has to measure
+          // its child, the child contains HeroWord, and HeroWord is a
+          // LayoutBuilder, which cannot answer an intrinsic query. In debug it
+          // threw "LayoutBuilder does not support returning intrinsic
+          // dimensions" and the question was replaced by the error panel; in
+          // release the assert is compiled out and LayoutBuilder silently
+          // reports an intrinsic height of zero, so the spread was simply
+          // wrong. game_a11y_test.dart is what surfaced it.
+          //
+          // Align needs no intrinsics: given a minHeight it fills, given a
+          // taller child it grows, and the -0.34 y reproduces the 1 : 2 split
+          // the two Spacers used to give.
           Expanded(
             child: LayoutBuilder(
               builder: (context, constraints) => SingleChildScrollView(
                 child: ConstrainedBox(
                   constraints: BoxConstraints(minHeight: constraints.maxHeight),
-                  child: IntrinsicHeight(
+                  child: Align(
+                    alignment: const Alignment(0, -0.34),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                      const Spacer(),
                       // meta
                       Row(children: [
                         _DiffTag(difficulty: w.difficulty),
@@ -331,23 +402,36 @@ class _GameViewState extends State<_GameView> {
                       else
                         for (final opt in c.currentOptions)
                           _Option(
+                            // Keyed so game_a11y_test.dart can tap a specific
+                            // answer without knowing what the round dealt.
+                            key: ValueKey(
+                                'opt-${c.currentOptions.indexOf(opt)}'),
                             label: opt,
                             index: c.currentOptions.indexOf(opt),
                             state: _stateFor(opt, c.correctAnswer, revealed, c.chosen),
                             onTap: revealed ? null : () => c.choose(opt),
+                            locale: locale,
                           ),
                       if (revealed) ...[
                         const SizedBox(height: 8),
                         TweenAnimationBuilder<double>(
                           key: ValueKey(c.index),
                           tween: Tween(begin: 0.0, end: 1.0),
-                          duration: const Duration(milliseconds: 260),
+                          duration: A11y.duration(
+                              context, const Duration(milliseconds: 260)),
                           curve: Curves.easeOut,
                           builder: (_, t, child) => Opacity(
                             opacity: t.clamp(0.0, 1.0),
                             child: Transform.translate(offset: Offset(0, (1 - t) * 8), child: child),
                           ),
-                          child: _Reveal(c: c, g: g, locale: locale),
+                          // The verdict panel appears after the answer lands,
+                          // so it is the one thing on this screen that should
+                          // interrupt: a live region makes a screen reader
+                          // announce it without the user going looking.
+                          child: Semantics(
+                            liveRegion: true,
+                            child: _Reveal(c: c, g: g, locale: locale),
+                          ),
                         ),
                       ],
                       if (revealed && !c.currentKnown) ...[
@@ -365,7 +449,6 @@ class _GameViewState extends State<_GameView> {
                           ),
                         ),
                       ],
-                      const Spacer(flex: 2),
                       ],
                     ),
                   ),
@@ -380,6 +463,7 @@ class _GameViewState extends State<_GameView> {
             onPressed: revealed ? c.next : null,
           ),
         ],
+      ),
       ),
     );
   }
@@ -515,7 +599,14 @@ class _Option extends StatelessWidget {
   final int index;
   final _OptState state;
   final VoidCallback? onTap;
-  const _Option({required this.label, required this.index, required this.state, required this.onTap});
+  final String locale;
+  const _Option(
+      {super.key,
+      required this.label,
+      required this.index,
+      required this.state,
+      required this.onTap,
+      required this.locale});
 
   @override
   Widget build(BuildContext context) {
@@ -541,26 +632,49 @@ class _Option extends StatelessWidget {
         break;
     }
     const keys = ['A', 'B', 'C'];
-    return Opacity(
-      opacity: opacity,
-      child: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(kQRadius),
-          onTap: onTap,
-          child: Container(
-            padding: const EdgeInsets.all(15),
-            decoration: BoxDecoration(
-              color: bg,
-              border: Border.all(color: border),
+
+    // After the reveal, right and wrong are signalled by border colour alone —
+    // coral against amber, which is the single worst pair in the palette for a
+    // red-green colour deficiency, and invisible to a screen reader entirely.
+    // The verdict goes into the semantic label so words carry it too.
+    final verdict = switch (state) {
+      _OptState.correct => Strings.t(locale, 'a11yCorrect'),
+      _OptState.wrong => Strings.t(locale, 'a11yWrong'),
+      _ => null,
+    };
+
+    return Semantics(
+      button: true,
+      enabled: onTap != null,
+      label: verdict == null ? label : '$label, $verdict',
+      onTap: onTap,
+      child: ExcludeSemantics(
+        child: Opacity(
+          opacity: opacity,
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: InkWell(
               borderRadius: BorderRadius.circular(kQRadius),
+              onTap: onTap,
+              child: Container(
+                // A tappable answer must clear the 44pt minimum target on both
+                // platforms, and must grow when the type does — a 16pt answer
+                // at 2x text is 32pt and used to spill out of a fixed box.
+                constraints: BoxConstraints(minHeight: A11y.scale(context, 52)),
+                padding: const EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: bg,
+                  border: Border.all(color: border),
+                  borderRadius: BorderRadius.circular(kQRadius),
+                ),
+                child: Row(children: [
+                  Text(index >= 0 && index < 3 ? keys[index] : '?',
+                      style: QType.mono(size: 12, color: keyColor, spacing: 1)),
+                  const SizedBox(width: 14),
+                  Expanded(child: Text(label, style: QType.sans(size: 16))),
+                ]),
+              ),
             ),
-            child: Row(children: [
-              Text(index >= 0 && index < 3 ? keys[index] : '?',
-                  style: QType.mono(size: 12, color: keyColor, spacing: 1)),
-              const SizedBox(width: 14),
-              Expanded(child: Text(label, style: QType.sans(size: 16))),
-            ]),
           ),
         ),
       ),
@@ -699,7 +813,7 @@ class _Reveal extends StatelessWidget {
             ),
             onPressed: () => Navigator.of(context).push(PageRouteBuilder(
               opaque: true,
-              transitionDuration: const Duration(milliseconds: 240),
+              transitionDuration: A11y.duration(context, const Duration(milliseconds: 240)),
               pageBuilder: (_, __, ___) => PronounceScreen(word: c.current),
               transitionsBuilder: (_, anim, __, child) =>
                   FadeTransition(opacity: anim, child: child),

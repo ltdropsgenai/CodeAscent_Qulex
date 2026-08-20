@@ -23,7 +23,16 @@ class ProgressStore {
 
   /// Learner-tunable spaced-repetition settings (driven by app settings).
   int newPerDay = 20; // cap on brand-new words introduced per day
-  double intervalScale = 1.0; // <1 = more frequent reviews, >1 = more relaxed
+
+  /// The probability of recall FSRS aims for when it picks an interval.
+  ///
+  /// This is the one dial that replaces the old `intervalScale`, and it is a
+  /// better dial: it is expressed in the thing the learner actually cares about
+  /// ("I want to remember 90% of what I review") rather than in an opaque
+  /// multiplier, and FSRS derives the interval from it directly. Raising it
+  /// means shorter intervals and more reviews; lowering it means fewer reviews
+  /// and more forgetting. 0.90 is the FSRS default, and Anki's.
+  double desiredRetention = 0.90;
 
   /// Sections that could not be read on the last [load], in plain language.
   ///
@@ -261,18 +270,75 @@ class ProgressStore {
 
   WordProgress progressFor(String wordId) => _words[wordId] ?? WordProgress();
 
-  /// Record one answer and reschedule the word via the Leitner system.
-  Future<void> recordAnswer(String wordId, bool correct, int nowMillis) async {
+  /// Record one answer and reschedule the word through FSRS.
+  ///
+  /// [clockLeft] is the fraction of the question timer still unspent when the
+  /// answer landed, or null in untimed modes. It is what lets a binary
+  /// right/wrong game produce the four-way grade FSRS wants — see
+  /// [Fsrs.gradeFor].
+  Future<void> recordAnswer(String wordId, bool correct, int nowMillis,
+      {double? clockLeft}) async {
     final wp = _words.putIfAbsent(wordId, WordProgress.new);
     final wasUnseen = wp.seen == 0;
+    final grade = Fsrs.gradeFor(correct: correct, clockLeft: clockLeft);
+
+    // Elapsed time drives the whole stability update, so it has to be honest.
+    //
+    // Three cases, and the third is the subtle one:
+    //
+    //  * A first sight has no elapsed time and does not need one — the initial
+    //    stability comes from the grade alone.
+    //  * A normal review measures it.
+    //  * A record MIGRATED off the Leitner boxes has a due date but no review
+    //    timestamp, because the old model never stored one. Passing null there
+    //    made retrievability 1.0, and a review at R=1 buys exactly zero
+    //    stability — so the first answer after upgrading was silently thrown
+    //    away. Instead, assume the word is due: elapsed == stability gives
+    //    R = 0.9, which is precisely the assumption the old scheduler was
+    //    making when it wrote that due date in the first place.
+    final double? elapsedDays = wp.lastReviewMillis > 0
+        ? (nowMillis - wp.lastReviewMillis) / 86400000.0
+        : (wp.seen > 0 && wp.stability > 0 ? wp.stability : null);
+
+    final wasGraduated = wp.state == SrsState.review;
+
+    final out = Fsrs.review(
+      state: wp.state,
+      step: wp.step,
+      stability: wp.stability,
+      difficulty: wp.difficulty,
+      elapsedDays: elapsedDays,
+      grade: grade,
+      desiredRetention: desiredRetention,
+      fuzzSeed: '$wordId:${wp.seen}',
+    );
+
     wp.seen += 1;
     if (correct) wp.correct += 1;
-    wp.box = Srs.nextBox(wp.box, correct);
-    wp.dueAtMillis = Srs.dueFrom(nowMillis, wp.box, scale: intervalScale);
+    if (!correct && wasGraduated) wp.lapses += 1;
+    wp.stability = out.stability;
+    wp.difficulty = out.difficulty;
+    wp.state = out.state;
+    wp.step = out.step;
+    wp.lastReviewMillis = nowMillis;
+    wp.dueAtMillis = nowMillis + out.wait.inMilliseconds;
+
     profile.lifetimeSeen += 1;
     if (correct) profile.lifetimeCorrect += 1;
     if (wasUnseen) _bumpNewIntro(nowMillis);
     _scheduleSave();
+  }
+
+  /// Modelled probability the learner would recall [wordId] right now.
+  ///
+  /// Exposed because it is the genuinely new thing FSRS gives the UI that
+  /// boxes could not: an "about to forget" signal that is a number rather than
+  /// a bucket.
+  double retrievabilityOf(String wordId, int nowMillis) {
+    final wp = _words[wordId];
+    if (wp == null || wp.seen == 0 || wp.lastReviewMillis == 0) return 0;
+    return Fsrs.retrievability(
+        (nowMillis - wp.lastReviewMillis) / 86400000.0, wp.stability);
   }
 
   void _bumpNewIntro(int nowMillis) {
@@ -296,19 +362,28 @@ class ProgressStore {
   Future<void> markKnown(String wordId) async {
     final wp = _words.putIfAbsent(wordId, WordProgress.new);
     wp.suspended = true;
-    wp.box = Srs.maxBox;
+    // Saying "I know this" is a claim about long-term memory, so it is recorded
+    // as one: a year of stability, graduated. If the learner later resurfaces
+    // the word (below) that stability is what it comes back with, eased.
+    wp.state = SrsState.review;
+    wp.step = -1;
+    wp.stability = wp.stability > 365.0 ? wp.stability : 365.0;
+    if (wp.difficulty <= 0) wp.difficulty = Fsrs.initialDifficulty(Grade.good);
     if (wp.seen == 0) wp.seen = 1; // counts toward "known"
     _scheduleSave();
   }
 
-  /// Bring all "known/suspended" words back into rotation (due now, box eased).
+  /// Bring all "known/suspended" words back into rotation, due now.
   Future<int> resurfaceMastered() async {
     final now = DateTime.now().millisecondsSinceEpoch;
     var n = 0;
     for (final wp in _words.values) {
       if (wp.suspended) {
         wp.suspended = false;
-        wp.box = wp.box > 2 ? 2 : wp.box;
+        // Asking to see these again means the "I know it" claim was optimistic,
+        // so the schedule is cut back rather than kept. A week of stability puts
+        // them in rotation without throwing away that they were once solid.
+        wp.stability = wp.stability > 7.0 ? 7.0 : wp.stability;
         wp.dueAtMillis = now;
         n++;
       }
@@ -358,8 +433,9 @@ class ProgressStore {
 
   bool dailyDoneToday(String todayYmd) => profile.dailyYmd == todayYmd;
 
-  /// Words considered "known" (reached box 2+).
-  int knownCount() => _words.values.where((w) => w.box >= 2).length;
+  /// Words the model expects to survive three weeks. See [WordProgress.isKnown]
+  /// for why the bar moved up from the old one-hour definition.
+  int knownCount() => _words.values.where((w) => w.isKnown).length;
 
   /// Words that have been seen and are now due for review (excludes known ones).
   int dueCount(int nowMillis) => _words.values
@@ -415,14 +491,26 @@ class ProgressStore {
   }
 
   WordProgress _mergeWord(WordProgress a, WordProgress b) {
-    // The record with more exposure wins the schedule; box never regresses.
+    // The record with more exposure wins the schedule. Stability takes the max
+    // rather than the winner's, for the same reason the old code never let a
+    // box regress: two devices that both taught you the word should not
+    // subtract from each other.
     final win = b.seen > a.seen ? b : a;
     final other = identical(win, a) ? b : a;
+    double mxd(double x, double y) => x > y ? x : y;
+    int mxi(int x, int y) => x > y ? x : y;
     return WordProgress(
-      box: win.box > other.box ? win.box : other.box,
+      stability: mxd(win.stability, other.stability),
+      // Difficulty follows the record that saw more of the word; averaging two
+      // independently-fitted difficulties would mean something in neither.
+      difficulty: win.difficulty > 0 ? win.difficulty : other.difficulty,
+      state: win.state,
+      step: win.step,
       seen: win.seen,
-      correct: win.correct > other.correct ? win.correct : other.correct,
+      correct: mxi(win.correct, other.correct),
+      lapses: mxi(win.lapses, other.lapses),
       dueAtMillis: win.dueAtMillis,
+      lastReviewMillis: mxi(win.lastReviewMillis, other.lastReviewMillis),
       // "Known" on either device wins, so a suspension is never lost on sync.
       suspended: win.suspended || other.suspended,
     );

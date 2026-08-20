@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+
+import '../a11y.dart';
 import '../theme.dart';
 
 /// Rotating photoreal study-scene backdrop with slow Ken Burns motion and a
@@ -25,24 +27,6 @@ const _kScenes = <String>[
   'assets/backgrounds/bg_06.png',
   'assets/backgrounds/bg_07.png',
   'assets/backgrounds/bg_08.png',
-  // Photographs from a trip to the Dominican Republic, graded to match the
-  // eight above rather than dropped in as shot — see tools/prepare_backgrounds.py.
-  // Tropical noon is the opposite of what this app needs behind cream text, so
-  // each one is desaturated, warmed, crushed and exposure-matched to the same
-  // mean brightness as the originals. bg_16 additionally uses a contre-jour
-  // curve that collapses the two figures into silhouette: the people in these
-  // are the author and his partner, and none of them should be identifiable.
-  //
-  // JPEG, not PNG. The eight above average 2MB each; these average 150KB and
-  // are indistinguishable at these tones.
-  'assets/backgrounds/bg_09.jpg',
-  'assets/backgrounds/bg_10.jpg',
-  'assets/backgrounds/bg_11.jpg',
-  'assets/backgrounds/bg_12.jpg',
-  'assets/backgrounds/bg_13.jpg',
-  'assets/backgrounds/bg_14.jpg',
-  'assets/backgrounds/bg_15.jpg',
-  'assets/backgrounds/bg_16.jpg',
 ];
 
 const Color _kBase = Color(0xFF07070A);
@@ -77,19 +61,11 @@ class _AppBackgroundState extends State<AppBackground>
     super.didChangeDependencies();
     if (!_precached) {
       _precached = true;
-      // Only the scene on screen and the one after it.
-      //
-      // This used to precache all eight. assets/backgrounds/ is ~16MB on disk
-      // and each photo decodes to roughly 8MB of ARGB, so the image cache
-      // filled to ~60MB during launch, on the UI isolate, competing with the
-      // title sequence's first frames — which is where jank and low-memory
-      // kills come from on cheaper Android hardware. The rotation is 20
-      // seconds wide; there is no reason to hold scene eight in memory before
-      // scene two has been shown.
-      _warm(_order[0]);
-      if (_order.length > 1) _warm(_order[1]);
+      for (final s in _kScenes) {
+        precacheImage(AssetImage(s), context, onError: (_, __) {});
+      }
     }
-    final rm = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
+    final rm = A11y.reduceMotion(context);
     if (rm != _reduceMotion) {
       _reduceMotion = rm;
       _applyMotion();
@@ -107,17 +83,9 @@ class _AppBackgroundState extends State<AppBackground>
     _roter = Timer.periodic(const Duration(seconds: 20), (_) => _advance());
   }
 
-  void _warm(String asset) {
-    if (!mounted) return;
-    precacheImage(AssetImage(asset), context, onError: (_, __) {});
-  }
-
   void _advance() {
     if (!mounted) return;
     final next = _order[(_pos + 1) % _order.length];
-    // Warm the one after next while this crossfade plays, so the following
-    // transition is just as smooth without holding the whole set resident.
-    _warm(_order[(_pos + 2) % _order.length]);
     setState(() => _incoming = next);
     _fade
       ..reset()

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../layout.dart';
 import '../theme.dart';
 import 'wordmark.dart';
 
@@ -15,7 +16,11 @@ class DocScaffold extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: SafeArea(
-        child: SingleChildScrollView(
+        // Prose gets no better past a comfortable measure, so on a wide
+        // display the page stays a reading column and centres instead of
+        // stretching a paragraph to 1,100pt. See QLayout.readingWidth.
+        child: ReadingColumn(
+          child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(24, 18, 24, 40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,12 +35,17 @@ class DocScaffold extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () => Navigator.of(context).maybePop(),
-                  icon: const Icon(Icons.close, color: QColors.muted),
+                  // An icon-only control is invisible to a screen reader
+                  // without this; it reads as "button" and nothing else.
+                  tooltip: 'Close',
+                  icon: const Icon(Icons.close,
+                      color: QColors.muted, semanticLabel: 'Close'),
                 ),
               ]),
               const SizedBox(height: 10),
               ...children,
             ],
+          ),
           ),
         ),
       ),

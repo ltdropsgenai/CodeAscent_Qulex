@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../a11y.dart';
+
 import '../data/word_repository.dart';
 import '../l10n/strings.dart';
 import '../state/app_state.dart';
@@ -71,8 +73,7 @@ class HandoffScreen extends StatefulWidget {
   /// WINDOW, not the run, so lengthening the beat slows nothing down and
   /// shortening it is what would trip the test.
   static double get flashesPerSecond =>
-      flashCount /
-      (fullRun.inMilliseconds * (flashTo - flashFrom) / 1000);
+      flashCount / (fullRun.inMilliseconds * (flashTo - flashFrom) / 1000);
 
   /// Opacity of the line at controller position [t] (0..1).
   ///
@@ -87,8 +88,7 @@ class HandoffScreen extends StatefulWidget {
       return Curves.easeOut.transform((t / arriveTo).clamp(0.0, 1.0));
     }
     if (t >= flashTo) return 1.0;
-    final phase =
-        ((t - flashFrom) / (flashTo - flashFrom) * flashCount) % 1.0;
+    final phase = ((t - flashFrom) / (flashTo - flashFrom) * flashCount) % 1.0;
     double v;
     if (phase < 0.18) {
       v = Curves.easeOut.transform(phase / 0.18);
@@ -124,7 +124,7 @@ class _HandoffScreenState extends State<HandoffScreen>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _reduceMotion = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
+    _reduceMotion = A11y.reduceMotion(context);
     if (_started) return;
     _started = true;
     final run =
@@ -146,7 +146,8 @@ class _HandoffScreenState extends State<HandoffScreen>
     _advanced = true;
     _autoAdvance?.cancel();
     Navigator.of(context).pushReplacement(PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 420),
+      transitionDuration:
+          A11y.duration(context, const Duration(milliseconds: 420)),
       pageBuilder: (_, __, ___) => HomeScreen(repository: widget.repository),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -210,14 +211,13 @@ class _HandoffScreenState extends State<HandoffScreen>
                       // line that closes the title sequence. It does not
                       // flash — one moving thing at a time.
                       Opacity(
-                        opacity: (_c.value / HandoffScreen.arriveTo)
-                            .clamp(0.0, 1.0),
+                        opacity:
+                            (_c.value / HandoffScreen.arriveTo).clamp(0.0, 1.0),
                         child: Container(
                           // Widens for the entire beat, easing out, so there
                           // is always one thing still moving.
                           width: 56 +
-                              108 *
-                                  Curves.easeInOutCubic.transform(_c.value),
+                              108 * Curves.easeInOutCubic.transform(_c.value),
                           height: 2,
                           color: QColors.coral,
                         ),
@@ -244,8 +244,7 @@ class _HandoffScreenState extends State<HandoffScreen>
                   child: Text(
                     Strings.t(locale, 'introSkipHint'),
                     textAlign: TextAlign.center,
-                    style:
-                        QType.mono(size: 10, color: QColors.dim, spacing: 3),
+                    style: QType.mono(size: 10, color: QColors.dim, spacing: 3),
                   ),
                 ),
               ),
