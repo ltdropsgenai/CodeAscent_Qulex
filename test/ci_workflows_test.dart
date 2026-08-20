@@ -93,6 +93,30 @@ void main() {
     }
   });
 
+  test('shorebird.yaml is declared as a Flutter asset', () {
+    // Build 37 failed on this exact line being absent, after an edit to
+    // pubspec.yaml's dev_dependencies dropped it as collateral. The error
+    // arrives from `shorebird release`, twelve steps into CI, on a machine
+    // nobody is watching — six minutes to find out about a one-line omission
+    // that `flutter test` and `flutter analyze` both pass straight over,
+    // because nothing in a normal build cares whether that asset is declared.
+    //
+    // Guarded here rather than trusted, because the line reads like ordinary
+    // asset housekeeping and gives no hint that removing it breaks releases.
+    final shorebird = File('shorebird.yaml');
+    if (!shorebird.existsSync()) {
+      // No Shorebird in this checkout — nothing to guard. Stated explicitly so
+      // a future removal of code push does not leave a mysteriously
+      // always-passing test behind.
+      return;
+    }
+    final pubspec = File('pubspec.yaml').readAsStringSync();
+    expect(pubspec, contains('- shorebird.yaml'),
+        reason: 'pubspec.yaml must list shorebird.yaml under flutter/assets or '
+            '`shorebird release` refuses to build, and it will only tell you '
+            'in CI');
+  });
+
   test('no workflow declares an environment variable as an empty string', () {
     // One `RELEASE_VERSION: ""` invalidated the whole file and broke the
     // Start-build dialog for EVERY workflow, not just its own. API-triggered

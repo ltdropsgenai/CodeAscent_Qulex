@@ -52,6 +52,10 @@ flutter:
   assets:
     - assets/words.json
     - assets/backgrounds/
+    # REQUIRED BY SHOREBIRD. Without it `shorebird release` refuses to build
+    # at all — see build 37, which failed here. It is an ordinary Flutter asset
+    # line and looks droppable; it is not.
+    - shorebird.yaml
 
   # Bundled, not downloaded. google_fonts fetched these from fonts.gstatic.com
   # on first use, so a cold start rendered in Roboto until the download landed
