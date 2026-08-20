@@ -23,7 +23,7 @@ import 'package:path_provider/path_provider.dart';
 ///
 /// Never reuse or lower a number. Clients compare with `>`, so going backwards
 /// silently strands them on whatever they last downloaded.
-const int kBundledCatalogueGeneration = 1;
+const int kBundledCatalogueGeneration = 2;
 
 /// Where the published catalogue lives. A public Storage bucket, read straight
 /// off the CDN — no Edge Function invocation, no auth, no per-read cost.

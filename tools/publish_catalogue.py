@@ -240,6 +240,33 @@ def cmd_publish(args) -> None:
             and not live.get("disabled"):
         print("\nalready published, unchanged. Nothing to do.")
         return
+    # The mistake this exists for. Publishing the SAME generation number with
+    # DIFFERENT bytes looks like it works — the upload succeeds, the manifest
+    # updates, the CDN serves it — and reaches nobody at all.
+    #
+    # Clients record the generation they installed and take an update only when
+    # published > installed (CatalogueOta._shouldTake). Anything already on
+    # generation N therefore ignores a second, different generation N forever,
+    # and a client freshly built from this tree bundles it anyway. Meanwhile the
+    # previous payload for that generation has been overwritten, so a client
+    # part-way through downloading the old one fails its sha256 check.
+    #
+    # This happened on 20 Aug 2026: 15,000 new example sentences were published
+    # as generation 1 over the top of generation 1, because the source constant
+    # had not been bumped. The upload was clean and the effect was zero.
+    if isinstance(live.get("generation"), int) \
+            and live["generation"] == generation \
+            and live.get("sha256") != sha:
+        die(
+            f"generation {generation} is already published with different "
+            f"content.\n"
+            f"  live sha256   {live.get('sha256')}\n"
+            f"  this tree     {sha}\n"
+            "No client would ever take this: an install already on generation "
+            f"{generation} only accepts something NEWER, and a fresh build "
+            "bundles this content anyway. Bump kBundledCatalogueGeneration in "
+            "lib/data/catalogue_ota.dart, commit, and publish that instead."
+        )
     if isinstance(live.get("generation"), int) and live["generation"] > generation:
         die(
             f"generation {live['generation']} is already published, which is "
