@@ -23,6 +23,16 @@ const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 const BUCKET = "tts-cache";
 
+// Optional. When set, a caller presenting it in x-admin-token skips the daily
+// per-caller budget below — and nothing else. Used by tools/warm_audio.py to
+// pre-generate the example-sentence clips for the most common words, so the
+// ElevenLabs spend happens once, centrally, instead of landing on whichever
+// learner happens to meet a word first.
+//
+// FAILS CLOSED. An unset secret means no request is ever admin, rather than
+// every request being admin — which is the shape this mistake usually takes.
+const TTS_ADMIN_TOKEN = Deno.env.get("TTS_ADMIN_TOKEN");
+
 // The longest thing the app ever asks for is a definition or an example
 // sentence. The longest example in the shipped catalogue is comfortably under
 // 300 characters; 400 leaves room without leaving room for abuse.
@@ -131,6 +141,30 @@ function stripInvisible(v: string): string {
 }
 
 /** Who to bill this to. See the note in the explain function. */
+/// Constant-time string compare.
+///
+/// A plain `===` on a secret leaks its length and, in principle, its prefix
+/// through timing. The window is small over the public internet and the cost of
+/// not caring is a bypass of the only thing standing between an anonymous
+/// caller and an uncapped ElevenLabs bill.
+function timingSafeEqual(a: string, b: string): boolean {
+  const ab = new TextEncoder().encode(a);
+  const bb = new TextEncoder().encode(b);
+  if (ab.length !== bb.length) return false;
+  let diff = 0;
+  for (let i = 0; i < ab.length; i++) diff |= ab[i] ^ bb[i];
+  return diff === 0;
+}
+
+/// True only for the bulk-warming tool: the secret must be configured AND
+/// presented. Grants exactly one privilege — skipping the daily budget.
+function isAdmin(req: Request): boolean {
+  if (!TTS_ADMIN_TOKEN) return false;
+  const given = req.headers.get("x-admin-token");
+  if (!given) return false;
+  return timingSafeEqual(given, TTS_ADMIN_TOKEN);
+}
+
 function callerBucket(req: Request): string {
   try {
     const auth = req.headers.get("authorization") ?? "";
@@ -218,8 +252,15 @@ Deno.serve(async (req) => {
       return json(req, { url: pub.publicUrl, cached: true });
     }
 
-    // 2) A miss means we are about to spend money. Check the budget first.
-    const { data: within, error: budgetErr } = await supabase.rpc(
+    // 2) A miss means we are about to spend money. Check the budget first —
+    //    unless this is the warming tool, which is deliberately spending it in
+    //    bulk on the developer's own instruction. Logged either way, so a
+    //    surprising bill has something to read.
+    const admin = isAdmin(req);
+    if (admin) console.log("admin warm", safeLang, text.length, "chars");
+    const { data: within, error: budgetErr } = admin
+        ? { data: true, error: null }
+        : await supabase.rpc(
       "consume_budget",
       {
         p_bucket: callerBucket(req),

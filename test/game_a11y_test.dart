@@ -9,6 +9,7 @@ import 'package:qulex/data/progress_store.dart';
 import 'package:qulex/data/word_repository.dart';
 import 'package:qulex/game/track.dart';
 import 'package:qulex/models/word.dart';
+import 'package:qulex/l10n/strings.dart';
 import 'package:qulex/screens/game_screen.dart';
 import 'package:qulex/state/app_state.dart';
 import 'package:qulex/theme.dart';
@@ -51,7 +52,7 @@ void main() {
   });
 
   Future<ProgressStore> pumpGame(WidgetTester tester, Size size,
-      {double textScale = 1.0}) async {
+      {double textScale = 1.0, Key? key}) async {
     tester.view.physicalSize = Size(size.width * 3, size.height * 3);
     tester.view.devicePixelRatio = 3.0;
     addTearDown(tester.view.reset);
@@ -59,7 +60,8 @@ void main() {
     final store = ProgressStore();
     await store.load();
     await tester.pumpWidget(_frame(
-      GameScreen(words: words, track: kTracks.first, store: store),
+      GameScreen(
+          key: key, words: words, track: kTracks.first, store: store),
       textScale: textScale,
     ));
     for (var i = 0; i < 8; i++) {
@@ -131,5 +133,36 @@ void main() {
     await pumpGame(tester, const Size(1194, 834));
     await expectLater(find.byKey(const ValueKey('shot')),
         matchesGoldenFile('frames/game_tablet.png'));
+  }, skip: !kCapture);
+
+  testWidgets('capture the reveal, in English and in Spanish', (tester) async {
+    // The panel that changed. A Spanish learner used to see an English
+    // headword, a Spanish definition and a SPANISH example — and never the
+    // word they are learning inside an English sentence. English now leads and
+    // is tappable to hear; the native line follows as the translation.
+    for (final loc in ['en', 'es']) {
+      await appState.setLocale(loc);
+      // KEYED, and it has to be. GameController reads appState.locale ONCE, in
+      // GameScreen.initState. Pumping a second GameScreen of the same type at
+      // the same position makes Flutter reuse the existing State, initState
+      // never runs again, and the controller keeps the first locale — so the
+      // Spanish capture came out in English while `appState.locale` said 'es'
+      // and the obvious assertion passed. A distinct key forces a new State.
+      await pumpGame(tester, const Size(390, 844), key: ValueKey('game-$loc'));
+      expect(appState.locale, loc);
+      // The screen must actually BE in that language. `appState.locale` being
+      // right is not the same claim, and was true while the capture came out
+      // in English — twice, for two different reasons.
+      expect(find.text(Strings.t(loc, 'ask').toUpperCase()), findsOneWidget,
+          reason: 'the capture is in the wrong language');
+      await tester.tap(find.byKey(const ValueKey('opt-0')));
+      for (var i = 0; i < 8; i++) {
+        await tester.pump(const Duration(milliseconds: 60));
+      }
+      expect(tester.takeException(), isNull, reason: 'reveal in $loc');
+      await expectLater(find.byKey(const ValueKey('shot')),
+          matchesGoldenFile('frames/game_reveal_$loc.png'));
+    }
+    await appState.setLocale('en');
   }, skip: !kCapture);
 }

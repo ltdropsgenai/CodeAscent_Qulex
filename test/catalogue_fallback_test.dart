@@ -4,9 +4,13 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:qulex/data/catalogue_ota.dart';
+
 import 'package:qulex/data/word_repository.dart';
 
 import 'catalogue_ota_test.dart' show catalogueJson;
+/// One generation newer than whatever this build bundles — see the same
+/// constant in catalogue_ota_test.dart for why this is not a literal.
+const int kNewer = kBundledCatalogueGeneration + 1;
 
 /// Installs [raw] as generation [generation] by hand — bypassing the download
 /// entirely, because what is under test here is the READ side: which file
@@ -42,7 +46,7 @@ void main() {
   });
 
   test('reads the installed catalogue instead of the bundled asset', () async {
-    await installByHand(dir, catalogueJson('ota1', 'petrichor'), 2);
+    await installByHand(dir, catalogueJson('ota1', 'petrichor'), kNewer);
 
     final words = await WordRepository().loadAll();
 
@@ -56,7 +60,7 @@ void main() {
     // path can tell it is bad until something tries to parse it. This is the
     // failure a SHA-256 cannot catch: a file can be exactly the bytes that
     // were published and still describe something this build cannot model.
-    await installByHand(dir, '[{"id":"x","this":"is not a Word"}]', 2);
+    await installByHand(dir, '[{"id":"x","this":"is not a Word"}]', kNewer);
 
     final words = await WordRepository().loadAll();
 

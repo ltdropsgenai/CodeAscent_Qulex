@@ -6,6 +6,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:qulex/data/catalogue_ota.dart';
 
+/// One generation newer than whatever this build bundles.
+///
+/// These tests used to hard-code `generation: 2` against a bundled
+/// constant of 1. Bumping the constant to 2 to publish the example
+/// sentences turned thirteen of them red at once, because "2" had
+/// silently meant "newer" rather than "two". Expressed relatively, they
+/// survive every future bump.
+const int kNewer = kBundledCatalogueGeneration + 1;
+
 /// A stand-in bucket on loopback. Serving over real HTTP (rather than mocking
 /// HttpClient) is deliberate: the parts most likely to be wrong here are the
 /// streaming gzip inflate, the byte counting and the digest — none of which a
@@ -127,7 +136,7 @@ void main() {
         ..sort();
 
   test('installs a newer catalogue and points at it', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
 
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
 
@@ -135,24 +144,24 @@ void main() {
     expect(path, isNotNull);
     expect(File(path!).readAsStringSync(), contains('aurora'));
     // No .part left behind, and exactly one payload kept.
-    expect(await names(), ['active.json', 'catalogue-2.json', 'state.json']);
+    expect(await names(), ['active.json', 'catalogue-${kNewer}.json', 'state.json']);
   });
 
   test('ignores a catalogue no newer than the bundled one', () async {
-    // kBundledCatalogueGeneration is 1, so generation 1 is a no-op: the asset
+    // Publishing the generation the app already bundles is a no-op: the asset
     // in the binary is already this content.
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 1));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kBundledCatalogueGeneration));
 
     expect(await ota.check(force: true), CatalogueCheckOutcome.upToDate);
     expect(await ota.activeCataloguePath(), isNull);
-    expect(bucket.hits.containsKey('words-g1.json.gz'), isFalse,
+    expect(bucket.hits.containsKey('words-g${kBundledCatalogueGeneration}.json.gz'), isFalse,
         reason: 'must not spend 6MB of a learner\'s data to learn nothing');
   });
 
   test('refuses a catalogue that declares it needs a newer build', () async {
     ota.appBuild = 30;
     serveManifest(
-        publish(catalogueJson('w1', 'aurora'), generation: 2, minAppBuild: 31));
+        publish(catalogueJson('w1', 'aurora'), generation: kNewer, minAppBuild: 31));
 
     expect(await ota.check(force: true), CatalogueCheckOutcome.upToDate);
     expect(await ota.activeCataloguePath(), isNull);
@@ -164,7 +173,7 @@ void main() {
   });
 
   test('rejects a payload whose hash does not match the manifest', () async {
-    final m = publish(catalogueJson('w1', 'aurora'), generation: 2);
+    final m = publish(catalogueJson('w1', 'aurora'), generation: kNewer);
     // One flipped hex digit — the shape stays valid, the content does not.
     m['sha256'] = 'f${(m['sha256'] as String).substring(1)}';
     serveManifest(m);
@@ -176,7 +185,7 @@ void main() {
   });
 
   test('rejects a payload that is shorter than the manifest says', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     bucket.truncateAfter = 40; // cut the gzip stream mid-member
 
     expect(await ota.check(force: true), CatalogueCheckOutcome.failed);
@@ -188,7 +197,7 @@ void main() {
     // A gzip bomb in miniature: the manifest claims a small catalogue, the
     // blob expands to far more. Nothing here is hashed or kept.
     final honest = catalogueJson('w1', 'aurora');
-    final m = publish(honest, generation: 2);
+    final m = publish(honest, generation: kNewer);
     bucket.files[m['path'] as String] =
         gzip.encode(utf8.encode(List.filled(400000, 'x').join()));
     serveManifest(m);
@@ -198,7 +207,7 @@ void main() {
   });
 
   test('ignores a manifest whose path tries to leave the bucket', () async {
-    final m = publish(catalogueJson('w1', 'aurora'), generation: 2);
+    final m = publish(catalogueJson('w1', 'aurora'), generation: kNewer);
     m['path'] = '../../object/public/tts-cache/en/a2923ae.mp3';
     serveManifest(m);
 
@@ -207,7 +216,7 @@ void main() {
   });
 
   test('ignores a manifest in a schema it does not understand', () async {
-    final m = publish(catalogueJson('w1', 'aurora'), generation: 2);
+    final m = publish(catalogueJson('w1', 'aurora'), generation: kNewer);
     m['schema'] = 99;
     serveManifest(m);
 
@@ -223,13 +232,13 @@ void main() {
 
   test('withdraws an installed catalogue when the manifest is disabled',
       () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
     expect(await ota.activeCataloguePath(), isNotNull);
 
     // Same generation, now withdrawn. This is the rollback path: it does not
     // need a new catalogue, a new build, or a version bump.
-    final off = publish(catalogueJson('w1', 'aurora'), generation: 2);
+    final off = publish(catalogueJson('w1', 'aurora'), generation: kNewer);
     off['disabled'] = true;
     serveManifest(off);
 
@@ -241,7 +250,7 @@ void main() {
 
   test('drops the downloaded copy once a build ships the same generation',
       () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
 
     // Simulate the store update: the pointer now names a generation that is
@@ -259,47 +268,47 @@ void main() {
   });
 
   test('drops a pointer whose payload went missing', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
-    await File(p.join(dir.path, 'catalogue-2.json')).delete();
+    await File(p.join(dir.path, 'catalogue-${kNewer}.json')).delete();
 
     expect(await ota.activeCataloguePath(), isNull);
     expect(await File(p.join(dir.path, 'active.json')).exists(), isFalse);
   });
 
   test('drops a pointer whose payload is the wrong length', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
     // Truncation after install — bit rot, a full disk, an interrupted copy.
-    await File(p.join(dir.path, 'catalogue-2.json')).writeAsString('[');
+    await File(p.join(dir.path, 'catalogue-${kNewer}.json')).writeAsString('[');
 
     expect(await ota.activeCataloguePath(), isNull);
     expect(await names(), ['state.json']);
   });
 
   test('does not re-download a generation it already has', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
-    expect(bucket.hits['words-g2.json.gz'], 1);
+    expect(bucket.hits['words-g${kNewer}.json.gz'], 1);
 
     expect(await ota.check(force: true), CatalogueCheckOutcome.upToDate);
-    expect(bucket.hits['words-g2.json.gz'], 1);
+    expect(bucket.hits['words-g${kNewer}.json.gz'], 1);
   });
 
   test('replaces an older download and deletes it', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
 
-    serveManifest(publish(catalogueJson('w2', 'petrichor'), generation: 3));
+    serveManifest(publish(catalogueJson('w2', 'petrichor'), generation: kNewer + 1));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
 
     final path = await ota.activeCataloguePath();
     expect(File(path!).readAsStringSync(), contains('petrichor'));
-    expect(await names(), ['active.json', 'catalogue-3.json', 'state.json']);
+    expect(await names(), ['active.json', 'catalogue-${kNewer + 1}.json', 'state.json']);
   });
 
   test('rate-limits itself between checks, and counts failures', () async {
-    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: 2));
+    serveManifest(publish(catalogueJson('w1', 'aurora'), generation: kNewer));
     expect(await ota.check(force: true), CatalogueCheckOutcome.installed);
     // The whole point: a background timer that fires often must not turn into
     // a request per firing.

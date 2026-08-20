@@ -143,6 +143,15 @@ class OfflineAudio {
   /// classic mode speaks the meaning and every other mode speaks the word — a
   /// download that only covered one of them would leave half the round robotic
   /// and look like a bug.
+  /// What a run would fetch, as text+language pairs. Exposed for tests: the
+  /// planning is the part with judgement in it, and the downloading is
+  /// plumbing.
+  @visibleForTesting
+  List<({String text, String lang})> planFor(List<Word> words, String locale) =>
+      _plan(words, OfflineScope.upcoming, locale)
+          .map((c) => (text: c.text, lang: c.lang))
+          .toList();
+
   List<_Clip> _plan(List<Word> words, OfflineScope scope, String locale) {
     final out = <_Clip>[];
     for (final w in words.take(maxWordsPerRun)) {
@@ -150,6 +159,19 @@ class OfflineAudio {
       final gloss = w.glossFor(locale);
       if (gloss.correct.isNotEmpty) {
         out.add(_Clip(gloss.correct, locale, w));
+      }
+      // The ENGLISH example sentence, whatever the learner's own language.
+      //
+      // This is the clip that matters most and the one that was missing. A
+      // headword spoken alone is a word in isolation; the thing a learner
+      // actually needs — and the thing WordUp's film clips provide — is the
+      // word inside connected speech, with the stress and linking that only
+      // appear in a sentence. It is always English because English is what is
+      // being learned; the native-language sentence is a comprehension aid and
+      // is not worth the credits.
+      final en = w.glossFor('en');
+      if (en.example.isNotEmpty) {
+        out.add(_Clip(en.example, 'en', w));
       }
     }
     return out;

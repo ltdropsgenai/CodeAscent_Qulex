@@ -583,10 +583,10 @@ void main() {
       for (var i = 0; i < 30; i++) {
         var now = 1770000000000;
         for (var r = 0; r < 5; r++) {
-          await s.recordAnswer('w\$i', true, now, clockLeft: 0.9);
-          now = s.progressFor('w\$i').dueAtMillis;
+          await s.recordAnswer('w$i', true, now, clockLeft: 0.9);
+          now = s.progressFor('w$i').dueAtMillis;
         }
-        due.add(s.progressFor('w\$i').dueAtMillis ~/ day);
+        due.add(s.progressFor('w$i').dueAtMillis ~/ day);
       }
       expect(due.length, greaterThan(1),
           reason: '30 identically-answered words all came back the same day');

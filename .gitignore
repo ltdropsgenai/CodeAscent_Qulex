@@ -77,3 +77,8 @@ vo_probe/
 # engine, so they only match the machine that made them - regenerate with
 #   QULEX_CAPTURE=1 flutter test --update-goldens
 test/frames/
+
+# Test and tool scratch state — regenerated, never reviewed.
+test/failures/
+tools/.example_batches.json
+tools/.warm_audio_state.json

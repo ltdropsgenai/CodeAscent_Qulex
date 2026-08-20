@@ -748,6 +748,111 @@ class _SpellInput extends StatelessWidget {
   }
 }
 
+/// One example sentence, tappable to hear it.
+///
+/// The speaker is part of the tap target rather than a separate button: the
+/// sentence IS the control, and a 14pt icon on its own is well under the 44pt
+/// minimum both platforms ask for.
+class _SpokenExample extends StatelessWidget {
+  final String text;
+  final String langCode;
+  final Word word;
+  final bool primary;
+  final String locale;
+
+  const _SpokenExample({
+    required this.text,
+    required this.langCode,
+    required this.word,
+    required this.locale,
+    this.primary = true,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final style = QType.sans(
+      size: primary ? 14 : 13,
+      color: primary ? QColors.ink : QColors.dim,
+      height: 1.5,
+    ).copyWith(fontStyle: FontStyle.italic);
+
+    final line = Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Expanded(child: Text('“$text”', style: style)),
+      if (primary) ...[
+        const SizedBox(width: 8),
+        Padding(
+          padding: const EdgeInsets.only(top: 2),
+          child: ExcludeSemantics(
+            child: Icon(Icons.volume_up,
+                size: A11y.scale(context, 15), color: QColors.coral),
+          ),
+        ),
+      ],
+    ]);
+
+    if (!primary) return line;
+
+    return Semantics(
+      button: true,
+      label: Strings.t(locale, 'a11yHearSentence'),
+      hint: text,
+      onTap: () => _speak(),
+      child: ExcludeSemantics(
+        child: InkWell(
+          onTap: _speak,
+          child: Padding(
+            // Pads the row out to a comfortable target without moving the
+            // sentence off the left margin it shares with everything else.
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: line,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _speak() => Voice.instance.speak(text,
+      langCode: langCode,
+      headword: word.word,
+      headwordPos: word.pos,
+      sayAs: word.say);
+}
+
+/// The example block: English first and audible, the learner's own language
+/// beneath it as a translation. For an English learner the two are the same
+/// sentence, so only one is shown.
+List<Widget> _examples(
+    BuildContext context, GameController c, Gloss g, String locale) {
+  final w = c.current;
+  final en = w.glossFor('en');
+  final native = locale == 'en' ? null : g;
+  final out = <Widget>[];
+
+  void pair(String english, String? translated) {
+    if (english.isEmpty) return;
+    out.add(_SpokenExample(
+        text: english, langCode: 'en', word: w, locale: locale));
+    if (translated != null && translated.isNotEmpty) {
+      out.add(Padding(
+        padding: const EdgeInsets.only(top: 2, bottom: 2),
+        child: _SpokenExample(
+            text: translated,
+            langCode: locale,
+            word: w,
+            locale: locale,
+            primary: false),
+      ));
+    }
+  }
+
+  pair(en.example, native?.example);
+  if ((en.example2 ?? '').isNotEmpty) {
+    out.add(const SizedBox(height: 4));
+    pair(en.example2!, native?.example2);
+  }
+  return out;
+}
+
 class _Reveal extends StatelessWidget {
   final GameController c;
   final Gloss g;
@@ -773,12 +878,23 @@ class _Reveal extends StatelessWidget {
               style: QType.sans(size: 13, color: QColors.amber)),
         ],
         const SizedBox(height: 7),
-        if (g.example.isNotEmpty)
-          Text('“${g.example}”', style: QType.sans(size: 13.5, color: QColors.muted, height: 1.5).copyWith(fontStyle: FontStyle.italic)),
-        if ((g.example2 ?? '').isNotEmpty) ...[
-          const SizedBox(height: 5),
-          Text('“${g.example2}”', style: QType.sans(size: 13.5, color: QColors.muted, height: 1.5).copyWith(fontStyle: FontStyle.italic)),
-        ],
+
+        // THE EXAMPLE SENTENCES, IN ENGLISH, AND AUDIBLE.
+        //
+        // Two changes here, and the first was a real hole. A learner whose
+        // language was Spanish previously saw the English headword, a Spanish
+        // definition and a SPANISH example sentence — and never once saw the
+        // word they are learning used in an English sentence. The example, the
+        // single most useful thing on this panel, was in the wrong language for
+        // the thing being taught. The English sentence now leads and the
+        // learner's own language follows underneath as the translation.
+        //
+        // And they can be heard. A word spoken alone is a word in isolation;
+        // hearing it inside a sentence is where stress and linking live, and it
+        // is the part of a WordUp film clip that carries the learning — the
+        // part Qulex can match in five languages, offline, for credits rather
+        // than licences. See offline_audio.dart's _plan.
+        ..._examples(context, c, g, locale),
         const SizedBox(height: 6),
         Row(children: [
           if (c.currentFlagged)

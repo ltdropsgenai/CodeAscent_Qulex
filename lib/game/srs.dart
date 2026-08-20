@@ -89,6 +89,34 @@ class Fsrs {
     0.6621, //  w18 short-term offset
   ];
 
+  /// The weights actually in force.
+  ///
+  /// Defaults to [w] and is replaced by [usePersonalised] once a learner has
+  /// enough history for FsrsOptimiser to fit their own. Every formula below
+  /// reads THIS, not [w] — the published defaults stay untouched as the thing
+  /// a fit is measured against and the thing to fall back to.
+  static List<double> _active = w;
+  static List<double> get p => _active;
+
+  /// True when scheduling is running on parameters fitted to this learner.
+  static bool get isPersonalised => !identical(_active, w);
+
+  /// Adopts a fitted parameter vector.
+  ///
+  /// Rejects anything the wrong length or containing a non-finite value and
+  /// keeps the defaults instead. This is loaded from disk at launch, so it is
+  /// exactly the path a corrupted preference travels down, and the scheduler
+  /// running on garbage is not a failure the learner could ever diagnose.
+  static bool usePersonalised(List<double> fitted) {
+    if (fitted.length != w.length) return false;
+    if (fitted.any((v) => !v.isFinite)) return false;
+    _active = List<double>.unmodifiable(fitted);
+    return true;
+  }
+
+  /// Reverts to the published defaults.
+  static void useDefaults() => _active = w;
+
   /// The forgetting curve's shape. DECAY = -0.5 is FSRS-5's power law; FACTOR
   /// is derived from it so that R = 0.9 exactly when elapsed == stability,
   /// which is what makes "stability" mean "days until 90% recall".
@@ -143,37 +171,37 @@ class Fsrs {
     return (s / factor) * (math.pow(r, 1 / decay) - 1);
   }
 
-  static double initialStability(Grade g) => math.max(w[g.value - 1], 0.1);
+  static double initialStability(Grade g) => math.max(p[g.value - 1], 0.1);
 
   static double initialDifficulty(Grade g) =>
-      _clampD(w[4] - math.exp(w[5] * (g.value - 1)) + 1);
+      _clampD(p[4] - math.exp(p[5] * (g.value - 1)) + 1);
 
   /// Difficulty after a review, with linear damping and mean reversion toward
   /// D0(Easy). The damping is what stops a run of misses pinning a word at 10
   /// forever; the reversion is what stops difficulty drifting on a long tail of
   /// easy answers.
   static double nextDifficulty(double d, Grade g) {
-    final deltaD = -(w[6] * (g.value - 3));
+    final deltaD = -(p[6] * (g.value - 3));
     final damped = d + (10.0 - d) * deltaD / 9.0;
-    return _clampD(w[7] * initialDifficulty(Grade.easy) + (1 - w[7]) * damped);
+    return _clampD(p[7] * initialDifficulty(Grade.easy) + (1 - p[7]) * damped);
   }
 
   /// Stability after a review on the same day. Deliberately small: seeing a
   /// word twice in one session is worth much less than seeing it twice a week
   /// apart, and a scheduler that does not model this can be farmed by drilling.
   static double shortTermStability(double s, Grade g) =>
-      _clampS(s * math.exp(w[17] * (g.value - 3 + w[18])));
+      _clampS(s * math.exp(p[17] * (g.value - 3 + p[18])));
 
   /// Stability after a successful review.
   static double recallStability(double d, double s, double r, Grade g) {
-    final hardPenalty = g == Grade.hard ? w[15] : 1.0;
-    final easyBonus = g == Grade.easy ? w[16] : 1.0;
+    final hardPenalty = g == Grade.hard ? p[15] : 1.0;
+    final easyBonus = g == Grade.easy ? p[16] : 1.0;
     return _clampS(s *
         (1 +
-            math.exp(w[8]) *
+            math.exp(p[8]) *
                 (11 - d) *
-                math.pow(s, -w[9]) *
-                (math.exp(w[10] * (1 - r)) - 1) *
+                math.pow(s, -p[9]) *
+                (math.exp(p[10] * (1 - r)) - 1) *
                 hardPenalty *
                 easyBonus));
   }
@@ -181,11 +209,11 @@ class Fsrs {
   /// Stability after a lapse. Clamped so a lapse can never *increase*
   /// stability — the second term is FSRS-5's short-term-consistent ceiling.
   static double forgetStability(double d, double s, double r) {
-    final longTerm = w[11] *
-        math.pow(d, -w[12]) *
-        (math.pow(s + 1, w[13]) - 1) *
-        math.exp((1 - r) * w[14]);
-    final ceiling = s / math.exp(w[17] * w[18]);
+    final longTerm = p[11] *
+        math.pow(d, -p[12]) *
+        (math.pow(s + 1, p[13]) - 1) *
+        math.exp((1 - r) * p[14]);
+    final ceiling = s / math.exp(p[17] * p[18]);
     return _clampS(math.min(longTerm.toDouble(), ceiling));
   }
 

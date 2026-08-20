@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../data/progress_store.dart';
@@ -9,6 +10,8 @@ import '../services/offline_audio.dart';
 import '../services/voice.dart';
 import '../state/app_state.dart';
 import '../a11y.dart';
+import '../game/fsrs_optimiser.dart';
+import '../data/review_log.dart';
 import '../layout.dart';
 import '../theme.dart';
 import '../widgets/ui.dart';
@@ -156,6 +159,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   _intensity(locale),
                   _difficulty(locale),
+                  _personalise(locale),
                   QRow(
                     title: Strings.t(locale, 'resurface'),
                     sub: Strings.t(locale, 'resurfaceSub').replaceFirst('{n}', '$n'),
@@ -321,6 +325,66 @@ class _SettingsScreenState extends State<SettingsScreen> {
   /// its own — "top up on Wi-Fi" tops up WHAT? — and a learner who has never
   /// downloaded anything needs to see the button and the switch together to
   /// understand that one is the manual version of the other.
+  /// Retrains the scheduler on this learner's own history.
+  ///
+  /// Deliberately a manual action rather than something that happens quietly.
+  /// Changing the scheduler changes when every word comes back; a learner who
+  /// notices their reviews shifting should be able to point at the moment they
+  /// asked for it. It also states the outcome plainly, INCLUDING when the fit
+  /// was declined — "we tried and your own data did not beat the defaults" is a
+  /// real result and hiding it would make the button feel broken.
+  Widget _personalise(String locale) {
+    final log = ReviewLog.instance;
+    final ready = log.canFit;
+    final sub = _fitMessage ??
+        (ready
+            ? Strings.t(locale, 'personaliseReady')
+            : '${Strings.t(locale, 'personaliseLocked')} '
+                '(${log.count}/${ReviewLog.fitThreshold})');
+    return QRow(
+      title: Strings.t(locale, 'personalise'),
+      sub: sub,
+      trailing: QButton(
+        Strings.t(locale, appState.fsrsPersonalised ? 'personaliseAgain' : 'personaliseRun'),
+        onTap: (!ready || _fitting) ? null : () => _runFit(locale),
+      ),
+    );
+  }
+
+  bool _fitting = false;
+  String? _fitMessage;
+
+  Future<void> _runFit(String locale) async {
+    setState(() {
+      _fitting = true;
+      _fitMessage = Strings.t(locale, 'personaliseWorking');
+    });
+    try {
+      final history = await ReviewLog.instance.readAll();
+      // Off the UI isolate: sixty steps x thirty-eight replays of the whole
+      // history is seconds of arithmetic, and doing it inline would freeze
+      // Settings mid-tap.
+      final result = await compute(FsrsOptimiser.fit, history);
+      if (!mounted) return;
+      if (result.improved) {
+        await appState.setFsrsWeights(result.weights);
+        if (!mounted) return;
+        setState(() => _fitMessage =
+            '${Strings.t(locale, 'personaliseDone')} '
+            '(${result.improvementPercent.toStringAsFixed(0)}%, '
+            '${result.reviewsUsed})');
+      } else {
+        setState(() => _fitMessage = result.declined);
+      }
+    } catch (_) {
+      if (mounted) {
+        setState(() => _fitMessage = Strings.t(locale, 'personaliseFailed'));
+      }
+    } finally {
+      if (mounted) setState(() => _fitting = false);
+    }
+  }
+
   Widget _offlineVoice(String locale) {
     return ValueListenableBuilder<OfflineProgress>(
       valueListenable: OfflineAudio.instance.progress,

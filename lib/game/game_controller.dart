@@ -322,6 +322,18 @@ class GameController extends ChangeNotifier {
               headword: w.word,
               headwordPos: w.pos,
               sayAs: w.say);
+          // The English example sentence, so tapping it on the reveal plays
+          // instantly rather than racing a cold fetch. Always English: it is
+          // the language being learned, and hearing the word inside a sentence
+          // is the whole point of the clip.
+          final example = w.glossFor('en').example;
+          if (example.isNotEmpty) {
+            await Voice.instance.prefetch(example,
+                langCode: 'en',
+                headword: w.word,
+                headwordPos: w.pos,
+                sayAs: w.say);
+          }
         }));
       }
     }();

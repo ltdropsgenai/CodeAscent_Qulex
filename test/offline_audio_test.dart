@@ -22,8 +22,19 @@ Word _w(String id) => Word.fromJson({
         'en': {
           'correct': 'a meaning for $id',
           'distractors': const ['x', 'y'],
-          'example': const {'text': 'A sentence.', 'source': 'generated'},
-        }
+          'example': const {
+            'text': 'An English sentence.',
+            'source': 'generated'
+          },
+        },
+        'es': {
+          'correct': 'un significado',
+          'distractors': const ['x', 'y'],
+          'example': const {
+            'text': 'Una frase en espanol.',
+            'source': 'generated'
+          },
+        },
       },
     });
 
@@ -54,6 +65,32 @@ void main() {
       expect(plan.first.id, 'w_40',
           reason: 'a review you owe today matters more than a word you have '
               'never met');
+    });
+
+    test('the English example sentence is fetched, in every locale', () async {
+      // The clip that carries the learning. A headword on its own is a word in
+      // isolation; the sentence is where stress and linking live, and it is the
+      // part of a rival's film clip that Qulex can actually match.
+      //
+      // ALWAYS English, even for a Spanish learner: English is the language
+      // being learned. The Spanish sentence is a reading aid and is not worth
+      // the ElevenLabs credits.
+      for (final loc in ['en', 'es']) {
+        final plan = OfflineAudio.instance.planFor([_w('w_1')], loc);
+        expect(plan.any((c) => c.text == 'An English sentence.' && c.lang == 'en'),
+            isTrue,
+            reason: 'no English sentence clip planned for locale $loc');
+        expect(plan.any((c) => c.text == 'Una frase en espanol.'), isFalse,
+            reason: 'the native-language sentence is not worth the credits');
+      }
+    });
+
+    test('a locale still gets its own definition spoken', () async {
+      // The DEFINITION does follow the learner's language — that is the thing
+      // they need to understand, as opposed to the thing they need to hear.
+      final plan = OfflineAudio.instance.planFor([_w('w_1')], 'es');
+      expect(plan.any((c) => c.text == 'un significado' && c.lang == 'es'),
+          isTrue);
     });
 
     test('suspended words are never downloaded', () async {

@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../game/srs.dart';
+
 import '../game/level.dart';
 
 /// Global app settings: UI/native language + voice on/off. Persisted.
@@ -17,6 +19,7 @@ class AppState extends ChangeNotifier {
   static const _kSeenIntro = 'qbit_seen_intro';
   static const _kDifficulty = 'qbit_difficulty_pref';
   static const _kOfflineAuto = 'qbit_offline_audio_auto';
+  static const _kFsrsWeights = 'qbit_fsrs_weights';
 
   String locale = 'en';
   bool voiceOn = true;
@@ -29,6 +32,13 @@ class AppState extends ChangeNotifier {
   /// and the fact that it is gated on an unmetered connection is a promise made
   /// by code the learner cannot see. Opt-in is the only honest default.
   bool offlineAudioAuto = false;
+
+  /// FSRS weights fitted to this learner, or null while the published defaults
+  /// are in force. Stored as a comma-separated list rather than JSON because it
+  /// is nineteen doubles and nothing else, forever.
+  List<double>? fsrsWeights;
+
+  bool get fsrsPersonalised => fsrsWeights != null;
 
   /// Whether the player has been through the splash/intro screen. False on a
   /// brand-new install — that's when we show the differentiator pitch.
@@ -72,6 +82,19 @@ class AppState extends ChangeNotifier {
     newPerDay = p.getInt(_kNewPerDay) ?? 20;
     reviewIntensity = p.getInt(_kIntensity) ?? 1;
     offlineAudioAuto = p.getBool(_kOfflineAuto) ?? false;
+    // Applied to the scheduler as it is read, so a personalised learner is
+    // personalised from the first question of the session rather than from
+    // whenever something happens to touch Settings.
+    fsrsWeights = null;
+    final raw = p.getString(_kFsrsWeights);
+    if (raw != null) {
+      final parsed = raw.split(',').map(double.tryParse).toList();
+      if (!parsed.contains(null)) {
+        final vals = parsed.cast<double>();
+        if (Fsrs.usePersonalised(vals)) fsrsWeights = vals;
+      }
+    }
+    if (fsrsWeights == null) Fsrs.useDefaults();
     seenIntro = p.getBool(_kSeenIntro) ?? false;
     final dIdx = p.getInt(_kDifficulty) ?? 0;
     difficultyPref =
@@ -113,6 +136,20 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     final p = await SharedPreferences.getInstance();
     await p.setBool(_kOfflineAuto, v);
+  }
+
+  /// Adopts fitted weights, or clears them when [values] is null.
+  Future<void> setFsrsWeights(List<double>? values) async {
+    final p = await SharedPreferences.getInstance();
+    if (values == null || !Fsrs.usePersonalised(values)) {
+      Fsrs.useDefaults();
+      fsrsWeights = null;
+      await p.remove(_kFsrsWeights);
+    } else {
+      fsrsWeights = values;
+      await p.setString(_kFsrsWeights, values.join(','));
+    }
+    notifyListeners();
   }
 
   Future<void> setReminders(bool v) async {
