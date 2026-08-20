@@ -140,7 +140,6 @@ function stripInvisible(v: string): string {
   return out.replace(/\s+/g, " ").trim();
 }
 
-/** Who to bill this to. See the note in the explain function. */
 /// Constant-time string compare.
 ///
 /// A plain `===` on a secret leaks its length and, in principle, its prefix
@@ -165,6 +164,7 @@ function isAdmin(req: Request): boolean {
   return timingSafeEqual(given, TTS_ADMIN_TOKEN);
 }
 
+/** Who to bill this to. See the note in the explain function. */
 function callerBucket(req: Request): string {
   try {
     const auth = req.headers.get("authorization") ?? "";
