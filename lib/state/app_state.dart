@@ -20,6 +20,8 @@ class AppState extends ChangeNotifier {
   static const _kDifficulty = 'qbit_difficulty_pref';
   static const _kOfflineAuto = 'qbit_offline_audio_auto';
   static const _kFsrsWeights = 'qbit_fsrs_weights';
+  static const _kFsrsFitNote = 'qbit_fsrs_fit_note';
+  static const _kFsrsNudged = 'qbit_fsrs_nudged';
 
   String locale = 'en';
   bool voiceOn = true;
@@ -39,6 +41,25 @@ class AppState extends ChangeNotifier {
   List<double>? fsrsWeights;
 
   bool get fsrsPersonalised => fsrsWeights != null;
+
+  /// What the last fit actually did, in a form that survives leaving Settings.
+  ///
+  /// Stored as a code rather than a sentence — 'ok:14:823', or 'no:' plus a
+  /// [FitDecline] name — because the learner can change language afterwards and
+  /// a saved English sentence would still be English tomorrow. Settings turns
+  /// it back into words at the moment it draws the row.
+  ///
+  /// This exists because the outcome used to live in a State field: run a fit,
+  /// read "no better than the defaults", leave the screen, and the result was
+  /// gone. Next visit the button looked untouched, so the honest answer read as
+  /// a button that had done nothing.
+  String? fsrsFitNote;
+
+  /// Whether the learner has already been told personalisation is available.
+  ///
+  /// One-shot. Crossing the review threshold is worth interrupting for once;
+  /// a banner that comes back every launch until you obey it is nagging.
+  bool fsrsNudged = false;
 
   /// Whether the player has been through the splash/intro screen. False on a
   /// brand-new install — that's when we show the differentiator pitch.
@@ -95,6 +116,8 @@ class AppState extends ChangeNotifier {
       }
     }
     if (fsrsWeights == null) Fsrs.useDefaults();
+    fsrsFitNote = p.getString(_kFsrsFitNote);
+    fsrsNudged = p.getBool(_kFsrsNudged) ?? false;
     seenIntro = p.getBool(_kSeenIntro) ?? false;
     final dIdx = p.getInt(_kDifficulty) ?? 0;
     difficultyPref =
@@ -136,6 +159,27 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     final p = await SharedPreferences.getInstance();
     await p.setBool(_kOfflineAuto, v);
+  }
+
+  /// Records the outcome of the last fit. See [fsrsFitNote] for the format.
+  Future<void> setFsrsFitNote(String? note) async {
+    fsrsFitNote = note;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    if (note == null) {
+      await p.remove(_kFsrsFitNote);
+    } else {
+      await p.setString(_kFsrsFitNote, note);
+    }
+  }
+
+  /// Marks the personalisation nudge as spent. Never unset — see [fsrsNudged].
+  Future<void> markFsrsNudged() async {
+    if (fsrsNudged) return;
+    fsrsNudged = true;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    await p.setBool(_kFsrsNudged, true);
   }
 
   /// Adopts fitted weights, or clears them when [values] is null.

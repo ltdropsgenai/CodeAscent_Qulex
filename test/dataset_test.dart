@@ -30,6 +30,9 @@ List<Word> loadCatalogue() {
 void main() {
   test('every entry parses and the catalogue is non-trivial', () {
     final words = loadCatalogue();
+    // The exact figure is asserted in bundled_catalogue_test.dart, which owns
+    // the identity of the shipped file. This one only cares that there is a
+    // real catalogue here to run the rest of the checks against.
     expect(words.length, greaterThan(1000));
   });
 

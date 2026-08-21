@@ -34,13 +34,21 @@ void main() {
       var t = 1770000000000 + c * 3600000;
       double? s;
       var d = 5.0;
+      int? last;
       for (var i = 0; i < reviewsPerCard; i++) {
         Grade g;
         if (s == null) {
           g = Grade.good;
           s = math.max(truth[g.value - 1], 0.1);
         } else {
-          final elapsed = (t - (t - day * (1 + rng.nextInt(3)))) / 86400000.0;
+          // The gap the learner actually waited, which is also the gap the log
+          // will show. The first version of this drew a FRESH random interval
+          // here while advancing `t` by a different one, so every outcome was
+          // generated from a delay that appears nowhere in the history the
+          // optimiser reads. Labels that do not match their own features are
+          // noise, and a fit that improves on noise (see the coin-flip test)
+          // proves nothing about a fit on a learner.
+          final elapsed = (t - last!) / 86400000.0;
           final r = math.pow(1 + factor * elapsed / s, Fsrs.decay).toDouble();
           // Recall happens with probability r under the TRUE parameters.
           final passed = rng.nextDouble() < r;
@@ -62,6 +70,7 @@ void main() {
               .clamp(1.0, 10.0);
         }
         out.add(rec('w_$c', t, g));
+        last = t;
         t += day * (1 + rng.nextInt(3));
       }
     }
@@ -159,6 +168,36 @@ void main() {
           reason: 'declined with: ${r.declined}');
       expect(r.fittedLoss, lessThan(r.baselineLoss));
       expect(r.improvementPercent, greaterThan(0));
+    });
+
+    test('the fit generalises to a fresh history from the same learner', () {
+      // fit()'s own holdout is still data the optimiser chose the split for.
+      // This is the stronger claim: simulate the SAME learner again from a
+      // different seed, and ask whether the fitted weights predict that history
+      // better than the published defaults do. Nothing in this second history
+      // was seen during training or during the accept/reject decision.
+      final truth = List<double>.from(Fsrs.w)
+        ..[8] = Fsrs.w[8] * 0.55
+        ..[10] = Fsrs.w[10] * 0.6;
+      final r = FsrsOptimiser.fit(synthetic(truth: truth, seed: 7));
+      expect(r.improved, isTrue, reason: 'declined with: ${r.declined}');
+
+      final fresh = synthetic(truth: truth, seed: 4242, cards: 90);
+      final withDefaults = FsrsOptimiser.debugLoss(fresh, Fsrs.w);
+      final withFit = FsrsOptimiser.debugLoss(fresh, r.weights!);
+      expect(withFit, lessThan(withDefaults),
+          reason: 'the fit only beat its own holdout, not the learner');
+    });
+
+    test('a learner who IS the average is left alone or barely moved', () {
+      // The mirror of the premise. When the defaults already describe someone,
+      // there is nothing to win, and a fit that claims a large improvement here
+      // is fitting noise. Either outcome is acceptable; a big number is not.
+      final r = FsrsOptimiser.fit(synthetic(truth: Fsrs.w, seed: 21));
+      if (r.improved) {
+        expect(r.improvementPercent, lessThan(12),
+            reason: 'nothing to learn from a learner the defaults already fit');
+      }
     });
 
     test('every fitted weight stays inside the model bounds', () {

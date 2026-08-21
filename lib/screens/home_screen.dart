@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import '../data/catalogue_ota.dart';
+import '../data/review_log.dart';
 import '../data/progress_store.dart';
 import '../data/word_repository.dart';
 import '../game/daily.dart';
@@ -377,6 +378,29 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         onDismiss: () =>
                             setState(() => _dataResetDismissed = true),
                       ),
+                    // Personalisation used to be discoverable only by opening
+                    // Settings and reading a counter, which meant the optimiser
+                    // could sit finished and unused indefinitely. This is the
+                    // one moment it is worth interrupting for, and it is shown
+                    // once.
+                    ValueListenableBuilder<int>(
+                      valueListenable: ReviewLog.instance.banked,
+                      builder: (context, banked, _) {
+                        if (appState.fsrsNudged ||
+                            appState.fsrsPersonalised ||
+                            banked < ReviewLog.fitThreshold) {
+                          return const SizedBox.shrink();
+                        }
+                        return _TuneBanner(
+                          locale: locale,
+                          onTap: () {
+                            appState.markFsrsNudged();
+                            _openSettings(snap.data ?? const <Word>[]);
+                          },
+                          onDismiss: () => appState.markFsrsNudged(),
+                        );
+                      },
+                    ),
                     Expanded(
                       child: _buildHome(
                           context, snap.data ?? const <Word>[], locale),
@@ -977,6 +1001,90 @@ class _GoProChip extends StatelessWidget {
 /// which is what stopped a single damaged byte from bricking the app — but
 /// recovering silently would mean a learner's streak simply vanishes with no
 /// explanation. Saying so once is the smaller cost.
+/// One-shot invitation to retrain the scheduler, shown when the review log
+/// first gets deep enough for a fit to mean anything.
+///
+/// Coral rather than amber: [_DataResetBanner] reports damage and this reports
+/// something becoming available, and two notices in the same colour would read
+/// as two versions of the same warning.
+class _TuneBanner extends StatelessWidget {
+  final String locale;
+  final VoidCallback onTap;
+  final VoidCallback onDismiss;
+
+  const _TuneBanner({
+    required this.locale,
+    required this.onTap,
+    required this.onDismiss,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      container: true,
+      child: Container(
+        key: const ValueKey('tune-banner'),
+        margin: const EdgeInsets.fromLTRB(20, 12, 20, 0),
+        padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
+        decoration: BoxDecoration(
+          color: QColors.panel,
+          border: Border.all(color: QColors.rule),
+          borderRadius: BorderRadius.circular(kQRadius),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Icon(Icons.tune, size: 17, color: QColors.coral),
+            const SizedBox(width: 11),
+            Expanded(
+              child: Text(Strings.t(locale, 'personaliseNudge'),
+                  style:
+                      QType.sans(size: 13, color: QColors.ink, height: 1.4)),
+            ),
+            const SizedBox(width: 6),
+            // Two plain buttons rather than a card-wide tap plus a close
+            // affordance: the dismiss target has to be reachable and nameable
+            // to a screen reader, and "the whole banner is a button except
+            // this corner" is exactly the pattern that is not.
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: onTap,
+                  child: Semantics(
+                    button: true,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: Text(Strings.t(locale, 'personaliseNudgeCta'),
+                          style: QType.mono(
+                              size: 10, color: QColors.coral, spacing: 1.2)),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: onDismiss,
+                  child: Semantics(
+                    button: true,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: Text(
+                          Strings.t(locale, 'personaliseNudgeDismiss'),
+                          style: QType.mono(
+                              size: 10, color: QColors.muted, spacing: 1.2)),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _DataResetBanner extends StatelessWidget {
   final String locale;
   final List<String> details;

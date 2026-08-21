@@ -25,6 +25,30 @@ import 'package:path_provider/path_provider.dart';
 /// silently strands them on whatever they last downloaded.
 const int kBundledCatalogueGeneration = 2;
 
+/// The identity of the asset THIS build bundles: how many entries it holds and
+/// what it hashes to.
+///
+/// These exist because the generation number above is a promise the file itself
+/// cannot keep. `assets/words.json` is a bare JSON array — it carries no
+/// version, no count, no checksum — so a regenerated catalogue committed
+/// without bumping the constant produces a build that says "I am generation 2"
+/// while carrying generation 3's words. That has happened twice: once because a
+/// PowerShell `#` turned the bump into a comment, and once because the commit
+/// contained only words.json. Both times the mistake was invisible until a
+/// publish failed.
+///
+/// bundled_catalogue_test.dart hashes the real asset against these, so the
+/// three constants can only move together, and tools/publish_catalogue.py
+/// checks the same three before it will publish. The SHA is the same number the
+/// published manifest records, which is what makes "the binary and the bucket
+/// hold the same catalogue" a checkable claim rather than a habit.
+///
+/// To change the catalogue: regenerate the asset, then bump all three in the
+/// same commit. The test tells you the values it wanted.
+const int kBundledCatalogueEntries = 16808;
+const String kBundledCatalogueSha256 =
+    '2b7d9046c9ca479d92b29b5c774653c48918e5000009bbc14971635f13862e1c';
+
 /// Where the published catalogue lives. A public Storage bucket, read straight
 /// off the CDN — no Edge Function invocation, no auth, no per-read cost.
 ///

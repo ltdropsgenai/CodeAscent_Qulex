@@ -337,6 +337,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final log = ReviewLog.instance;
     final ready = log.canFit;
     final sub = _fitMessage ??
+        fitNoteText(locale, appState.fsrsFitNote) ??
         (ready
             ? Strings.t(locale, 'personaliseReady')
             : '${Strings.t(locale, 'personaliseLocked')} '
@@ -365,17 +366,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
       // history is seconds of arithmetic, and doing it inline would freeze
       // Settings mid-tap.
       final result = await compute(FsrsOptimiser.fit, history);
+      // The note is written before the mounted check on purpose. A learner who
+      // backs out of Settings while sixty gradient steps are running has still
+      // had the fit computed, and throwing the answer away would mean the next
+      // visit says nothing happened.
+      final note = fitNote(result);
+      if (result.improved) await appState.setFsrsWeights(result.weights);
+      await appState.setFsrsFitNote(note);
+      // Whatever the outcome, the learner has now been in here and asked. The
+      // banner has nothing left to tell them.
+      await appState.markFsrsNudged();
       if (!mounted) return;
-      if (result.improved) {
-        await appState.setFsrsWeights(result.weights);
-        if (!mounted) return;
-        setState(() => _fitMessage =
-            '${Strings.t(locale, 'personaliseDone')} '
-            '(${result.improvementPercent.toStringAsFixed(0)}%, '
-            '${result.reviewsUsed})');
-      } else {
-        setState(() => _fitMessage = result.declined);
-      }
+      setState(() => _fitMessage = fitNoteText(locale, note));
     } catch (_) {
       if (mounted) {
         setState(() => _fitMessage = Strings.t(locale, 'personaliseFailed'));
@@ -495,4 +497,38 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ],
       );
+}
+
+/// Encodes a fit outcome for storage. See [AppState.fsrsFitNote].
+///
+/// A code, not a sentence: 'ok:<percent>:<reviews>' or 'no:<FitDecline.name>'.
+/// [FitResult.declined] carries the English prose and stays where it is useful
+/// — tests and logs — but nothing a learner reads comes from it.
+String fitNote(FitResult r) => r.improved
+    ? 'ok:${r.improvementPercent.toStringAsFixed(0)}:${r.reviewsUsed}'
+    : 'no:${(r.reason ?? FitDecline.noImprovement).name}';
+
+/// Turns a stored [fitNote] back into a sentence in [locale].
+///
+/// Returns null for null or unreadable input rather than a placeholder, so the
+/// caller falls back to the row's normal subtitle. A note written by a future
+/// version, or half-written, must not turn the row into an error message.
+String? fitNoteText(String locale, String? note) {
+  if (note == null || note.isEmpty) return null;
+  final parts = note.split(':');
+  if (parts.length == 3 && parts.first == 'ok') {
+    return '${Strings.t(locale, 'personaliseDone')} '
+        '(${parts[1]}%, ${parts[2]})';
+  }
+  if (parts.length == 2 && parts.first == 'no') {
+    return switch (parts[1]) {
+      'tooFewReviews' => Strings.t(locale, 'personaliseDeclineFew'),
+      'noHistory' => Strings.t(locale, 'personaliseDeclineNone'),
+      'tooFewWords' => Strings.t(locale, 'personaliseDeclineWords'),
+      'noGradable' => Strings.t(locale, 'personaliseDeclineUngradable'),
+      'noImprovement' => Strings.t(locale, 'personaliseDeclineWorse'),
+      _ => null,
+    };
+  }
+  return null;
 }

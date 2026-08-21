@@ -64,8 +64,10 @@ class ReviewLog {
     _storageDirOverride = d;
     _file = null;
     _loaded = false;
+    _loading = null;
     _knownCount = 0;
     _pending.clear();
+    _banked.value = 0;
   }
 
   Directory? _storageDirOverride;
@@ -96,10 +98,28 @@ class ReviewLog {
   int _knownCount = 0;
   bool _loaded = false;
 
+  /// The in-flight [load], so [flush] can wait for the initial count before
+  /// appending to the same file. Without it the two race on every launch: the
+  /// read starts, an append lands, and then the read's stale newline count is
+  /// written over a total that had already grown. The lost reviews are still on
+  /// disk — it is the COUNT that goes backwards — but the count is what gates
+  /// personalisation, so it is worth one await.
+  Future<void>? _loading;
+
   /// Reviews banked so far, including ones still in the buffer.
   int get count => _knownCount + _pending.length;
 
   bool get canFit => count >= fitThreshold;
+
+  /// Fires when the on-disk total changes, so a screen can notice the moment
+  /// personalisation becomes available instead of only finding out because the
+  /// learner happened to open Settings.
+  ///
+  /// Deliberately driven by [load] and [flush] rather than [record]: buffered
+  /// lines are not yet durable, and a notification per answer would rebuild
+  /// listeners mid-round for a number nobody is looking at.
+  ValueListenable<int> get banked => _banked;
+  final ValueNotifier<int> _banked = ValueNotifier<int>(0);
 
   static String _phase(SrsState s) => switch (s) {
         SrsState.fresh => 'n', // new
@@ -130,9 +150,13 @@ class ReviewLog {
   }
 
   /// Counts what is already on disk. Cheap, and only done once per launch.
-  Future<void> load() async {
-    if (_loaded || kIsWeb) return;
+  Future<void> load() {
+    if (_loaded || kIsWeb) return _loading ?? Future<void>.value();
     _loaded = true;
+    return _loading = _load();
+  }
+
+  Future<void> _load() async {
     try {
       final f = await _handle();
       if (!await f.exists()) {
@@ -151,6 +175,8 @@ class ReviewLog {
       // A missing or unreadable log is not a reason to stop the app working.
       // It costs future personalisation accuracy and nothing else.
       _knownCount = 0;
+    } finally {
+      _banked.value = _knownCount;
     }
   }
 
@@ -174,8 +200,33 @@ class ReviewLog {
   /// Called from ProgressStore.flush(), so the log is written on exactly the
   /// same beats the progress it describes is — one fsync-ish moment per round
   /// rather than one per answer.
-  Future<void> flush() async {
-    if (kIsWeb || _pending.isEmpty) return;
+  ///
+  /// SERIALISED. Two flushes can genuinely overlap — ProgressStore fires one
+  /// without awaiting it, and the debounce timer can fire another — and the
+  /// unserialised version let the second one return while the first was still
+  /// mid-write. Awaiting flush() then meant "someone else is writing your
+  /// lines", not "your lines are on disk", which is not a contract anything can
+  /// be built on. Each call now waits its turn, so when it returns, everything
+  /// buffered before it was called is durable.
+  Future<void> flush() {
+    if (kIsWeb) return Future<void>.value();
+    final next = _tail.then((_) => _flush());
+    // The chain must never end in an unhandled error, or one failed write would
+    // poison every flush after it.
+    _tail = next.catchError((Object _) {});
+    return next;
+  }
+
+  Future<void> _tail = Future<void>.value();
+
+  Future<void> _flush() async {
+    if (_pending.isEmpty) return;
+    // Ordering, not mutual exclusion: the append below is safe at any time, but
+    // the count it increments is only meaningful once load() has established
+    // what was already there.
+    final loading = _loading;
+    if (loading != null) await loading;
+    if (_pending.isEmpty) return;
     final batch = List<String>.from(_pending);
     _pending.clear();
     try {
@@ -184,6 +235,7 @@ class ReviewLog {
           mode: FileMode.append, flush: false);
       _knownCount += batch.length;
       if (_knownCount > maxEntries) await _compact();
+      _banked.value = _knownCount;
     } catch (_) {
       // Dropped rather than retried forever. A lost batch is a slightly worse
       // future fit; a retry loop on a full disk is a hang.
@@ -252,6 +304,7 @@ class ReviewLog {
   Future<void> clear() async {
     _pending.clear();
     _knownCount = 0;
+    _banked.value = 0;
     if (kIsWeb) return;
     try {
       final f = await _handle();

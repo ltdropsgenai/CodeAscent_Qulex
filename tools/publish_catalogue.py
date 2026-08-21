@@ -14,8 +14,9 @@ catalogue-admin Edge Function.
 HOW A CONTENT PUSH WORKS
 
 1. Edit assets/words.json.
-2. Bump kBundledCatalogueGeneration in lib/data/catalogue_ota.dart, in the same
-   commit. Clients compare the published generation against the constant
+2. Bump kBundledCatalogueGeneration, kBundledCatalogueEntries and
+   kBundledCatalogueSha256 in lib/data/catalogue_ota.dart, in the same commit.
+   `flutter test test/bundled_catalogue_test.dart` prints the values it wanted. Clients compare the published generation against the constant
    compiled into their own binary and only take a HIGHER one, so this number is
    what makes the push visible — and what makes a later store build reclaim the
    downloaded copy.
@@ -31,6 +32,11 @@ WHAT THIS DELIBERATELY WILL NOT DO
   mismatch means the repo and the bucket disagree about what the current
   catalogue is, and the next person to look would have no way to tell which is
   right.
+- Publish a catalogue the source tree does not describe. kBundledCatalogueEntries
+  and kBundledCatalogueSha256 pin the asset this build bundles; if the file has
+  changed and they have not, the generation number is a lie and the publish
+  would reach nobody. This is the reverse of the check above and the one that
+  actually shipped twice.
 - Publish a catalogue this app cannot parse. Every entry is decoded first,
   against the same required fields Word.fromJson enforces. A SHA-256 proves the
   bytes arrived intact; it says nothing about whether they mean anything, and
@@ -150,6 +156,51 @@ def bundled_generation() -> int:
     return int(m.group(1))
 
 
+def bundled_identity() -> tuple[int, str]:
+    """Reads kBundledCatalogueEntries and kBundledCatalogueSha256 out of Dart.
+
+    The generation number is a claim the asset itself cannot back up — a bare
+    JSON array carries no version. These two are what tie the number to the
+    bytes, and the app's bundled_catalogue_test.dart asserts the same pair, so
+    a mismatch is caught by whichever runs first.
+    """
+    src = OTA_SOURCE.read_text(encoding="utf-8")
+    n = re.search(
+        r"^const\s+int\s+kBundledCatalogueEntries\s*=\s*(\d+)\s*;", src, re.M)
+    h = re.search(
+        r"^const\s+String\s+kBundledCatalogueSha256\s*=\s*\n?\s*'([0-9a-f]{64})'\s*;",
+        src, re.M)
+    if not n or not h:
+        die("could not find kBundledCatalogueEntries / kBundledCatalogueSha256 "
+            f"in {OTA_SOURCE}")
+    return int(n.group(1)), h.group(1)
+
+
+def check_identity(raw: bytes, entries: int) -> None:
+    """Refuses to publish an asset the source tree does not describe.
+
+    The generation check below catches a bumped constant with an unchanged
+    file. This catches the opposite, which is the one that actually shipped
+    twice: a regenerated catalogue committed with the constants untouched. The
+    publish would otherwise succeed and put content in the bucket that no
+    client will ever take, because every install already believes it has that
+    generation.
+    """
+    want_entries, want_sha = bundled_identity()
+    sha = hashlib.sha256(raw).hexdigest()
+    if entries != want_entries or sha != want_sha:
+        die(
+            "assets/words.json does not match the constants in the source "
+            "tree.\n"
+            f"  file     {entries} entries, sha256 {sha}\n"
+            f"  constant {want_entries} entries, sha256 {want_sha}\n\n"
+            "Bump kBundledCatalogueGeneration, kBundledCatalogueEntries and "
+            "kBundledCatalogueSha256 together, in the same commit as the "
+            "catalogue. Publishing content the binaries do not describe means "
+            "the repo and the bucket disagree about what the catalogue is."
+        )
+
+
 def check_parseable(raw: bytes) -> int:
     """Decodes the catalogue the way the app does, and returns the entry count.
 
@@ -222,6 +273,7 @@ def cmd_publish(args) -> None:
     raw = WORDS.read_bytes()
 
     count = check_parseable(raw)
+    check_identity(raw, count)
     sha = hashlib.sha256(raw).hexdigest()
     # mtime=0 so the same catalogue always gzips to the same bytes. A publish
     # that changes nothing should be visibly a no-op, not a new blob.

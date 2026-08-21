@@ -64,8 +64,10 @@ void main() {
 
     final words = await WordRepository().loadAll();
 
-    // The real catalogue, not the one-entry decoy.
-    expect(words.length, greaterThan(1000));
+    // The real catalogue, not the one-entry decoy — and ALL of it. This used
+    // to assert "more than 1000", which a fallback that silently truncated the
+    // bundled asset would have passed.
+    expect(words.length, kBundledCatalogueEntries);
     // ...and the bad copy is gone, so the next launch does not retry it.
     expect(await CatalogueOta.instance.activeCataloguePath(), isNull);
     expect(await File(p.join(dir.path, 'active.json')).exists(), isFalse);
@@ -73,7 +75,24 @@ void main() {
   });
 
   test('uses the bundled asset when nothing has been installed', () async {
+    // The offline first run, and the reason the whole 38MB file is in the
+    // binary: no network, no OTA download, nothing installed — and every word
+    // is still there.
     final words = await WordRepository().loadAll();
-    expect(words.length, greaterThan(1000));
+    expect(words.length, kBundledCatalogueEntries);
+  });
+
+  test('an installed catalogue never leaves the learner with fewer words',
+      () async {
+    // The OTA path can only ever REPLACE the bundled list, so a published
+    // catalogue smaller than the one in the binary is a downgrade the learner
+    // did not ask for. Nothing stops it today; this records what happens so a
+    // future change to _shouldTake has to answer for it.
+    await installByHand(dir, catalogueJson('ota1', 'petrichor'), kNewer);
+    final words = await WordRepository().loadAll();
+    expect(words, hasLength(1),
+        reason: 'if this ever fails, the read side started merging rather than '
+            'replacing, and the fallback tests above no longer mean what they '
+            'say');
   });
 }

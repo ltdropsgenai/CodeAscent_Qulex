@@ -49,6 +49,29 @@ import 'package:flutter/foundation.dart';
 import '../data/review_log.dart';
 import 'srs.dart';
 
+/// Why a fit was declined, in a form the UI can translate.
+///
+/// Every one of these is a legitimate outcome rather than an error: the honest
+/// answer to "retrain the model on my answers" is sometimes "your own data does
+/// not beat the defaults yet". Naming the cases means the screen can say which
+/// one happened instead of showing the same shrug for all five.
+enum FitDecline {
+  /// Fewer than [ReviewLog.fitThreshold] reviews banked.
+  tooFewReviews,
+
+  /// No history at all.
+  noHistory,
+
+  /// Too few distinct words to hold any of them back as a test.
+  tooFewWords,
+
+  /// History exists but contains nothing the model can be scored against.
+  noGradable,
+
+  /// A fit was computed and lost to the defaults on unseen words.
+  noImprovement,
+}
+
 /// The outcome of a fitting run.
 class FitResult {
   /// The fitted weights, or null when the defaults were kept.
@@ -64,7 +87,16 @@ class FitResult {
   final int reviewsUsed;
 
   /// Plain-language reason the defaults were kept, or null on success.
+  ///
+  /// English, and deliberately kept as well as [reason]: it is what a test
+  /// failure and a debug print should say. Anything a learner reads comes from
+  /// [reason] through the string table instead — Qulex ships in five languages
+  /// and an untranslated sentence in the middle of a translated screen is the
+  /// most visible kind of unfinished.
   final String? declined;
+
+  /// Machine-readable form of [declined], for the UI to localise.
+  final FitDecline? reason;
 
   const FitResult({
     this.weights,
@@ -72,6 +104,7 @@ class FitResult {
     required this.fittedLoss,
     required this.reviewsUsed,
     this.declined,
+    this.reason,
   });
 
   bool get improved => weights != null;
@@ -136,7 +169,8 @@ class FsrsOptimiser {
           fittedLoss: 0,
           reviewsUsed: history.length,
           declined: 'Needs at least ${ReviewLog.fitThreshold} reviews; '
-              'there are ${history.length}.');
+              'there are ${history.length}.',
+          reason: FitDecline.tooFewReviews);
     }
     final cards = _byCard(history);
     if (cards.isEmpty) {
@@ -144,7 +178,8 @@ class FsrsOptimiser {
           baselineLoss: 0,
           fittedLoss: 0,
           reviewsUsed: 0,
-          declined: 'No review history yet.');
+          declined: 'No review history yet.',
+          reason: FitDecline.noHistory);
     }
 
     // Split by CARD, not by review. Splitting mid-card would let the training
@@ -162,7 +197,8 @@ class FsrsOptimiser {
           baselineLoss: 0,
           fittedLoss: 0,
           reviewsUsed: used,
-          declined: 'Not enough distinct words to judge a fit honestly.');
+          declined: 'Not enough distinct words to judge a fit honestly.',
+          reason: FitDecline.tooFewWords);
     }
 
     final baseline = _loss(holdout, Fsrs.w);
@@ -171,7 +207,8 @@ class FsrsOptimiser {
           baselineLoss: 0,
           fittedLoss: 0,
           reviewsUsed: used,
-          declined: 'History has no gradable reviews in it.');
+          declined: 'History has no gradable reviews in it.',
+          reason: FitDecline.noGradable);
     }
 
     var w = List<double>.from(Fsrs.w);
@@ -206,6 +243,7 @@ class FsrsOptimiser {
         reviewsUsed: used,
         declined: 'The fitted parameters were no better than the defaults on '
             'words they had not seen, so the defaults were kept.',
+        reason: FitDecline.noImprovement,
       );
     }
 
@@ -235,6 +273,15 @@ class FsrsOptimiser {
     }
     return (s ?? 0, d ?? 0);
   }
+
+  /// Mean log loss of [w] over [history], for tests that need to ask whether a
+  /// fit generalises to data the optimiser never saw — neither its training
+  /// split nor its own holdout. Without this seam the only available evidence
+  /// is the optimiser grading its own homework, which is what a holdout inside
+  /// fit() unavoidably is.
+  @visibleForTesting
+  static double debugLoss(List<ReviewRecord> history, List<double> w) =>
+      _loss(_byCard(history).values.toList(), w);
 
   // ---------------------------------------------------------------------------
 
