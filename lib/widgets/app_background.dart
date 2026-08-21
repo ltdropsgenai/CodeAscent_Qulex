@@ -27,7 +27,36 @@ const _kScenes = <String>[
   'assets/backgrounds/bg_06.png',
   'assets/backgrounds/bg_07.png',
   'assets/backgrounds/bg_08.png',
+  // Photographs from a trip to the Dominican Republic, graded to match the
+  // eight above rather than dropped in as shot — see tools/prepare_backgrounds.py.
+  // Tropical noon is the opposite of what this app needs behind cream text, so
+  // each one is desaturated, warmed, crushed and exposure-matched to the same
+  // mean brightness as the originals. bg_16 additionally uses a contre-jour
+  // curve that collapses the two figures into silhouette: the people in these
+  // are the author and his partner, and none of them should be identifiable.
+  //
+  // JPEG, not PNG. The eight above average 2MB each; these average 150KB and
+  // are indistinguishable at these tones.
+  //
+  // RESTORED 21 Aug 2026. These eight lines were deleted in 2845dab, not on
+  // purpose: files were restored from a stale snapshot and this list quietly
+  // went back to its pre-41ce6cc state. Nothing failed, because pubspec bundles
+  // the whole backgrounds/ directory — so the images kept shipping inside every
+  // build and simply stopped being drawn. backgrounds_test.dart now compares
+  // this list against the directory in both directions, so a scene that stops
+  // being drawn fails a test instead of going unnoticed for two days.
+  'assets/backgrounds/bg_09.jpg',
+  'assets/backgrounds/bg_10.jpg',
+  'assets/backgrounds/bg_11.jpg',
+  'assets/backgrounds/bg_12.jpg',
+  'assets/backgrounds/bg_13.jpg',
+  'assets/backgrounds/bg_14.jpg',
+  'assets/backgrounds/bg_15.jpg',
+  'assets/backgrounds/bg_16.jpg',
 ];
+
+/// The scene list, for tests. See backgrounds_test.dart.
+const List<String> kBackgroundScenes = _kScenes;
 
 const Color _kBase = Color(0xFF07070A);
 
