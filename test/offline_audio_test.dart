@@ -167,6 +167,56 @@ void main() {
     });
   });
 
+  group('the kill switch', () {
+    // Bulk downloading is off. These tests are what stops it coming back by
+    // accident, and what will tell whoever turns it back on what has to be
+    // true first.
+    test('one tap can never again outspend the day', () {
+      const perRun = OfflineAudio.maxWordsPerRun * OfflineAudio.clipsPerWord;
+      if (OfflineAudio.bulkDownloadEnabled) {
+        expect(perRun, lessThanOrEqualTo(OfflineAudio.serverCallsPerDay),
+            reason: 'bulkDownloadEnabled is true while one run plans $perRun '
+                'synthesis requests against a daily budget of '
+                '${OfflineAudio.serverCallsPerDay}. That is the 21 Aug 2026 '
+                'incident exactly: the overspill comes back 429, Voice.speak() '
+                'cannot tell a 429 from any other failure, and every learner '
+                'on that IP gets the device voice until UTC midnight.');
+      } else {
+        expect(perRun, greaterThan(OfflineAudio.serverCallsPerDay),
+            reason: 'the numbers now line up, so the reason the switch is off '
+                'has gone away. Reconsider bulkDownloadEnabled.');
+      }
+    });
+
+    test('the manual download does nothing while the switch is off', () async {
+      if (OfflineAudio.bulkDownloadEnabled) return;
+      if (!appState.voiceOn) await appState.toggleVoice();
+      expect(await OfflineAudio.instance.download([_w('w_1')]), 0);
+      expect(OfflineAudio.instance.isRunning, isFalse);
+    });
+
+    test('the background top-up does nothing while the switch is off, even '
+        'opted in and on Wi-Fi', () async {
+      if (OfflineAudio.bulkDownloadEnabled) return;
+      // The dangerous path: this runs on a launch timer with nobody watching,
+      // so a learner who turned the toggle on weeks ago would otherwise keep
+      // re-spending the whole daily budget every single launch.
+      await appState.setOfflineAudioAuto(true);
+      OfflineAudio.instance.connectivityProbe = () async => true;
+      expect(await OfflineAudio.instance.topUpIfAllowed([_w('w_1')]), 0);
+      await appState.setOfflineAudioAuto(false);
+    });
+
+    test('the learner keeps their opt-in for when it comes back', () async {
+      // The switch gates behaviour, not the stored preference. Clearing it
+      // would silently discard a choice the learner made.
+      await appState.setOfflineAudioAuto(true);
+      await OfflineAudio.instance.topUpIfAllowed([_w('w_1')]);
+      expect(appState.offlineAudioAuto, isTrue);
+      await appState.setOfflineAudioAuto(false);
+    });
+  });
+
   group('the download itself', () {
     test('refuses to run when voice is switched off', () async {
       if (appState.voiceOn) await appState.toggleVoice();
@@ -175,7 +225,12 @@ void main() {
       expect(OfflineAudio.instance.progress.value.stoppedBecause, isNotNull,
           reason: 'a button that silently does nothing reads as broken');
       if (!appState.voiceOn) await appState.toggleVoice();
-    });
+    },
+        skip: OfflineAudio.bulkDownloadEnabled
+            ? null
+            : 'bulk download is switched off — see '
+                'OfflineAudio.bulkDownloadEnabled. This runs again the moment '
+                'it comes back.');
 
     test('an empty plan finishes rather than hanging', () async {
       await expectLater(OfflineAudio.instance.download(const []), completion(0));

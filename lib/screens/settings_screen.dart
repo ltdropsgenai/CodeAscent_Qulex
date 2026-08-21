@@ -207,7 +207,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         semanticLabel: Strings.t(locale, 'dailyReminders'),
                       ),
                     ),
-                  _offlineVoice(locale),
+                  // Hidden, not disabled: a greyed-out button invites a tap
+                  // and a support question. See OfflineAudio.bulkDownloadEnabled.
+                  if (OfflineAudio.bulkDownloadEnabled) _offlineVoice(locale),
                   const SizedBox(height: 30),
 
                   // ── promise ──

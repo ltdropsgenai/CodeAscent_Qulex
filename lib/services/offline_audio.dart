@@ -65,6 +65,47 @@ class OfflineAudio {
   /// Test seam. Returns true when the connection is unmetered.
   Future<bool> Function()? connectivityProbe;
 
+  /// Master switch for bulk voice downloading. OFF since 21 Aug 2026.
+  ///
+  /// THE ARITHMETIC. One run plans [maxWordsPerRun] (600) words x three clips
+  /// each — headword, definition, English example — which is 1,800 synthesis
+  /// requests. The tts Edge Function allows MAX_CALLS_PER_DAY = 600. A single
+  /// tap therefore spends three days of budget in one go, and everything past
+  /// call 600 comes back 429. Voice.speak() cannot tell a 429 from any other
+  /// failure, so it falls back to flutter_tts — and the learner's audio turns
+  /// robotic for the rest of the UTC day, with no error anywhere, because
+  /// Voice.prefetch() swallows its exceptions by design.
+  ///
+  /// That is not a hypothetical. On 21 Aug 2026 one tap recorded 1,809 calls
+  /// against the 600 cap and the voice silently reverted.
+  ///
+  /// TURNED OFF RATHER THAN RESIZED, because the right number is not known
+  /// yet. It depends on a decision nobody has made: whether headwords and
+  /// definitions get warmed server-side (cache hits return before the budget
+  /// check, so a warmed download costs nothing), or the cap is raised, or the
+  /// run is chunked across days. Picking one at speed is how the 1,800-vs-600
+  /// mismatch got here in the first place.
+  ///
+  /// NORMAL PLAY IS UNAFFECTED. GameController still warms each round's deck
+  /// through Voice.prefetch — roughly 30-50 clips a round — and every clip it
+  /// fetches is cached on device and plays offline afterwards. What is gone is
+  /// only the bulk pre-download of words nobody has reached yet.
+  ///
+  /// To restore: flip this to true. Both entry points come back, and so does
+  /// the Settings block. Do not do it without changing one of the two numbers
+  /// above — offline_audio_test.dart asserts the mismatch and will tell you.
+  static const bool bulkDownloadEnabled = false;
+
+  /// What the tts Edge Function permits per caller per day.
+  ///
+  /// Mirrored from supabase/functions/tts/index.ts. Duplicated deliberately:
+  /// the client had no idea what the server's limit was, which is precisely
+  /// how it came to ask for three times it. A test compares the two.
+  static const int serverCallsPerDay = 600;
+
+  /// Clips requested per word by [_plan].
+  static const int clipsPerWord = 3;
+
   /// The most a single download will ever touch.
   ///
   /// Not a performance guard — a correctness one. Each new clip is a request
@@ -186,6 +227,7 @@ class OfflineAudio {
     OfflineScope scope = OfflineScope.upcoming,
     String? locale,
   }) async {
+    if (!bulkDownloadEnabled) return 0;
     if (isRunning) return 0;
     if (!appState.voiceOn) {
       progress.value = const OfflineProgress(
@@ -267,6 +309,12 @@ class OfflineAudio {
   /// three separate reasons to do nothing, each of which would otherwise be a
   /// surprise on somebody's data bill.
   Future<int> topUpIfAllowed(List<Word> upcoming) async {
+    // First, and before the opt-in check: this runs on a launch timer with
+    // nobody watching, so a learner who switched the toggle on weeks ago would
+    // otherwise keep re-spending the whole daily budget every launch without
+    // ever touching the button. The stored preference is left alone so that
+    // flipping [bulkDownloadEnabled] back restores their actual choice.
+    if (!bulkDownloadEnabled) return 0;
     if (!appState.offlineAudioAuto) return 0;
     if (isRunning) return 0;
     if (!await onUnmeteredConnection()) return 0;
