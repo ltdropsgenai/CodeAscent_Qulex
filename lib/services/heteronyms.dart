@@ -50,7 +50,15 @@ final Map<String, _Heteronym> _heteronyms = {
   'lead': const _Heteronym('leed'),
   'bow': const _Heteronym('beau', {'verb': 'bough'}),
   'tear': const _Heteronym('tier', {'verb': 'tare'}),
-  'close': const _Heteronym('klohss', {'verb': 'klohz'}),
+  // The default is the word itself — i.e. leave it alone. English has no
+  // reliable respelling for the /kloʊs/ "near" reading: the -ose spelling is
+  // /oʊs/ in "dose" and "gross" but /ɒs/ in "loss", so anything invented here
+  // is a coin flip. The previous values were 'klohss' and 'klohz', which are
+  // dictionary notation rather than English, and a neural voice read them as
+  // the nonsense tokens they are — reported 21 Aug 2026 as "close" being
+  // spoken "clause". 'cloze' is a real English word (the cloze test) and is
+  // unambiguously /kloʊz/.
+  'close': const _Heteronym('close', {'verb': 'cloze'}),
   'minute': const _Heteronym('minit', {'adjective': 'mynoot'}),
 };
 
@@ -77,8 +85,9 @@ bool isHeteronym(String word) => _heteronyms.containsKey(word.toLowerCase());
 ///  2. [headwordPos] — a byPos rule, where POS reliably picks the sense.
 ///  3. The generic default for that spelling.
 ///
-/// Non-headword tokens (heteronyms occurring inside a definition or example
-/// sentence) can only ever use 2 or 3 — we don't know their sense.
+/// Non-headword tokens are left exactly as written. We do not know their
+/// sense, and the model reading the sentence has more context than we do —
+/// see the note inside the function.
 String ttsRespell(
   String text, {
   String? headword,
@@ -91,6 +100,30 @@ String ttsRespell(
     final token = m.group(0)!;
     final lower = token.toLowerCase();
     final isHead = head != null && head == lower;
+
+    // ONLY THE HEADWORD IS EVER RESPELLED.
+    //
+    // A heteronym occurring elsewhere in a definition or example sentence has
+    // a sense we do not know, and the generic default was a fixed guess that
+    // is wrong about as often as it is right: "he read the book" became
+    // "reed", "the bow of the ship" became "beau", "a lead pipe" became
+    // "leed", and every one of the 71 English texts containing "close" got the
+    // "near" reading whether or not it was a verb. 328 texts in the catalogue
+    // were being rewritten this way.
+    //
+    // The premise at the top of this file — that the engine "picks one fixed
+    // reading with no notion of context" — was true of the engines it was
+    // written for. It is not true of the model Qulex actually calls, which
+    // reads a whole sentence and disambiguates heteronyms from context. So
+    // substituting inside a sentence now DESTROYS the information the model
+    // would have used and replaces it with our guess. Confirmed by listening
+    // to both versions of the same seven sentences on 21 Aug 2026.
+    //
+    // The headword is different, and still worth respelling: it is frequently
+    // spoken alone, where there is no context to disambiguate from, and it is
+    // the one token whose sense we genuinely know — from the catalogue row's
+    // own `say` field, or from its part of speech.
+    if (!isHead) return token;
 
     String respelled;
     if (isHead && headwordSay != null && headwordSay.isNotEmpty) {

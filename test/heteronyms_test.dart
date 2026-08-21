@@ -34,13 +34,19 @@ void main() {
   group('byPos rules that remain sound', () {
     test('wind', () {
       expect(ttsRespell('wind', headword: 'wind', headwordPos: 'verb'), 'wined');
-      expect(ttsRespell('wind'), 'winned');
+      // The default still applies to a headword with no POS and no `say` —
+      // what changed is that it no longer applies to the word when it turns up
+      // in somebody else's sentence.
+      expect(ttsRespell('wind', headword: 'wind'), 'winned');
+      expect(ttsRespell('wind'), 'wind');
     });
     test('tear', () {
       expect(ttsRespell('tear', headword: 'tear', headwordPos: 'verb'), 'tare');
     });
     test('close', () {
-      expect(ttsRespell('close', headword: 'close', headwordPos: 'verb'), 'klohz');
+      // 'cloze' — a real English word — not the old 'klohz', which was
+      // dictionary notation and was spoken as the nonsense token it is.
+      expect(ttsRespell('close', headword: 'close', headwordPos: 'verb'), 'cloze');
     });
     test('minute', () {
       expect(ttsRespell('minute', headword: 'minute', headwordPos: 'adjective'), 'mynoot');
@@ -79,12 +85,43 @@ void main() {
       );
     });
 
-    test('non-headword heteronyms fall back to the generic default', () {
+    test('non-headword heteronyms are left exactly as written', () {
+      // This used to assert the opposite — 'She had a minit to reed.' — and
+      // that example passed only by luck: both guesses happen to be right in
+      // THAT sentence. "he read the book" and "the bow of the ship" got the
+      // same fixed defaults and came out wrong.
       expect(
         ttsRespell('She had a minute to read.',
             headword: 'lead', headwordPos: 'noun', headwordSay: 'leed'),
-        'She had a minit to reed.',
+        'She had a minute to read.',
       );
+    });
+
+    test('the headword is still respelled inside its own sentence', () {
+      // The gate is on identity, not position — the one token whose sense we
+      // actually know must keep its pronunciation.
+      expect(
+        ttsRespell('Wind the clock and read on.',
+            headword: 'wind', headwordPos: 'verb'),
+        'Wined the clock and read on.',
+      );
+    });
+
+    test('every sense of a non-headword survives untouched', () {
+      // The six sentences that were listened to on 21 Aug 2026. Each one has
+      // an unambiguous sense to a human reader and the model gets them right
+      // from context; the old code overwrote all of them.
+      const cases = [
+        'Please close the gate behind you.',
+        'A bond between close friends.',
+        'He read the book yesterday.',
+        'The bow of the ship.',
+        'A lead pipe.',
+        'A minute amount.',
+      ];
+      for (final c in cases) {
+        expect(ttsRespell(c), c, reason: 'rewrote: $c');
+      }
     });
 
     test('sentence-initial capitalization is preserved', () {

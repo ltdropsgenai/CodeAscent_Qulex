@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:qulex/models/word.dart';
+import 'package:qulex/services/heteronyms.dart';
 
 /// Integrity checks on the shipped word catalogue.
 ///
@@ -77,6 +78,32 @@ void main() {
           orElse: () => throw StateError('${entry.key} missing from catalogue'));
       expect(w.say, entry.value, reason: '${entry.key} lost its pronunciation pin');
     }
+  });
+
+  // The bug this replaces a guess with a measurement. 'close' carried a byPos
+  // rule keyed on 'verb', but 'close' is not a headword, so that rule could
+  // never fire — which hid the fact that the only thing ever running was the
+  // default, 'klohss', dictionary notation spoken as nonsense in all 71
+  // English texts containing the word. A unit test asserted the byPos rule and
+  // passed, exercising a path production never takes. This one walks the real
+  // catalogue instead.
+  test('no catalogue sentence is rewritten behind the learner\'s back', () {
+    final words = loadCatalogue();
+    final rewritten = <String>[];
+    for (final w in words) {
+      final g = w.glossFor('en');
+      for (final text in [g.correct, g.example, g.example2 ?? '']) {
+        if (text.isEmpty) continue;
+        // No headword passed: this is the sentence as the TTS layer sees it
+        // when it speaks a definition or example.
+        if (ttsRespell(text) != text) rewritten.add(text);
+      }
+    }
+    expect(rewritten, isEmpty,
+        reason: '${rewritten.length} texts would be spoken as something other '
+            'than what they say. Substituting a fixed respelling into a '
+            'sentence overwrites a sense the model can read from context and '
+            'ours cannot. First few: ${rewritten.take(3).join(" | ")}');
   });
 
   test('say is null for ordinary words', () {
