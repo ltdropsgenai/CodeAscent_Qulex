@@ -1,4 +1,29 @@
 {
+  "Biot": {
+    "confidence": "medium",
+    "note": "French physicist; final t is silent",
+    "ph": "B IY1 OW0"
+  },
+  "LUT": {
+    "confidence": "medium",
+    "note": "look-up table; said as a word by most practitioners, spelled out by some",
+    "ph": "L AH1 T"
+  },
+  "Nernst": {
+    "confidence": "medium",
+    "note": "German surname; NAIRNST is closer to the original than NERNST",
+    "ph": "N ER1 N S T"
+  },
+  "Urlinie": {
+    "confidence": "medium",
+    "note": "German, Schenkerian analysis; OOR-lee-nee-uh",
+    "ph": "UH1 R L IY2 N IY0 AH0"
+  },
+  "Ursatz": {
+    "confidence": "medium",
+    "note": "German, Schenkerian analysis; OOR-zahts",
+    "ph": "UH1 R Z AA2 T S"
+  },
   "_README": [
     "Hand-written ARPAbet for headwords no reference source covers.",
     "",
@@ -21,887 +46,2269 @@
     "",
     "This file is version-controlled. tools/pronunciation/ is not."
   ],
-
-  "address":        {"ph": "AH0 D R EH1 S",                 "confidence": "high",
-                   "note": "verb: uh-DRESS"},
-  "affix":          {"ph": "AE1 F IH0 K S",                 "confidence": "high",
-                   "note": "noun: AF-iks"},
-  "ally":           {"ph": "AE1 L AY0",                     "confidence": "high",
-                   "note": "noun: AL-eye"},
-  "annex":          {"ph": "AH0 N EH1 K S",                 "confidence": "high",
-                   "note": "verb: uh-NEKS"},
-  "atoll":          {"ph": "AE1 T AA2 L",                   "confidence": "high",
-                   "note": "noun: A-tol"},
-  "combine":        {"ph": "K AH0 M B AY1 N",               "confidence": "high",
-                   "note": "verb: kum-BINE"},
-  "compound":       {"ph": "K AH0 M P AW1 N D",             "confidence": "high",
-                   "note": "verb: kum-POUND"},
-  "compress":       {"ph": "K AH0 M P R EH1 S",             "confidence": "high",
-                   "note": "verb: kum-PRESS"},
-  "concrete":       {"ph": "K AA1 N K R IY0 T",             "confidence": "high",
-                   "note": "noun: KON-kreet"},
-  "console":        {"ph": "K AH0 N S OW1 L",               "confidence": "high",
-                   "note": "verb: kun-SOLE"},
-  "contest":        {"ph": "K AA1 N T EH0 S T",             "confidence": "high",
-                   "note": "noun: KON-test"},
-  "contrast":       {"ph": "K AH0 N T R AE1 S T",           "confidence": "high",
-                   "note": "verb: kun-TRAST"},
-  "converse":       {"ph": "K AH0 N V ER1 S",               "confidence": "high",
-                   "note": "verb: kun-VERSE"},
-  "convict":        {"ph": "K AH0 N V IH1 K T",             "confidence": "high",
-                   "note": "verb: kun-VIKT"},
-  "costume":        {"ph": "K AA1 S T UW0 M",               "confidence": "high",
-                   "note": "noun: KOS-toom"},
-  "decade":         {"ph": "D EH1 K EY0 D",                 "confidence": "high",
-                   "note": "noun: DEK-ade"},
-  "defect":         {"ph": "D IY1 F EH0 K T",               "confidence": "high",
-                   "note": "noun: DEE-fekt"},
-  "desert":         {"ph": "D EH1 Z ER0 T",                 "confidence": "high",
-                   "note": "noun: DEZ-ert, the arid place"},
-  "detour":         {"ph": "D IY1 T UH0 R",                 "confidence": "high",
-                   "note": "noun: DEE-toor"},
-  "discharge":      {"ph": "D IH1 S CH AA2 R JH",           "confidence": "high",
-                   "note": "noun: DIS-charj"},
-  "discount":       {"ph": "D IH1 S K AW0 N T",             "confidence": "high",
-                   "note": "noun: DIS-kount"},
-  "excerpt":        {"ph": "EH1 K S ER0 P T",               "confidence": "high",
-                   "note": "noun: EK-serpt"},
-  "excess":         {"ph": "EH1 K S EH2 S",                 "confidence": "high",
-                   "note": "noun: EK-sess"},
-  "excise":         {"ph": "EH1 K S AY0 Z",                 "confidence": "high",
-                   "note": "noun: EK-size, the tax"},
-  "exploit":        {"ph": "EH1 K S P L OY2 T",             "confidence": "high",
-                   "note": "noun: EKS-ploit"},
-  "implant":        {"ph": "IH1 M P L AE2 N T",             "confidence": "high",
-                   "note": "noun: IM-plant"},
-  "import":         {"ph": "IH0 M P AO1 R T",               "confidence": "high",
-                   "note": "verb: im-PORT"},
-  "imprint":        {"ph": "IH0 M P R IH1 N T",             "confidence": "high",
-                   "note": "verb: im-PRINT"},
-  "impulse":        {"ph": "IH1 M P AH0 L S",               "confidence": "high",
-                   "note": "noun: IM-puls"},
-  "incline":        {"ph": "IH1 N K L AY0 N",               "confidence": "high",
-                   "note": "noun: IN-kline"},
-  "object":         {"ph": "AH0 B JH EH1 K T",              "confidence": "high",
-                   "note": "verb: ub-JEKT"},
-  "predate":        {"ph": "P R IY0 D EY1 T",               "confidence": "high",
-                   "note": "verb: pree-DATE"},
-  "preschool":      {"ph": "P R IY1 S K UW2 L",             "confidence": "high",
-                   "note": "noun: PREE-skool"},
-  "produce":        {"ph": "P R OW1 D UW0 S",               "confidence": "high",
-                   "note": "noun: PRO-doos, the goods"},
-  "project":        {"ph": "P R AA1 JH EH0 K T",            "confidence": "high",
-                   "note": "noun: PRAH-jekt"},
-  "protest":        {"ph": "P R AH0 T EH1 S T",             "confidence": "high",
-                   "note": "verb: pruh-TEST"},
-  "recall":         {"ph": "R IH0 K AO1 L",                 "confidence": "high",
-                   "note": "verb: ri-KAWL"},
-  "recap":          {"ph": "R IY1 K AE2 P",                 "confidence": "high",
-                   "note": "noun: REE-kap"},
-  "recess":         {"ph": "R IY1 S EH0 S",                 "confidence": "high",
-                   "note": "noun: REE-sess"},
-  "redress":        {"ph": "R IH0 D R EH1 S",               "confidence": "high",
-                   "note": "verb: ri-DRESS"},
-  "refill":         {"ph": "R IY0 F IH1 L",                 "confidence": "high",
-                   "note": "verb: ree-FILL"},
-  "refund":         {"ph": "R IH0 F AH1 N D",               "confidence": "high",
-                   "note": "verb: ri-FUND"},
-  "regress":        {"ph": "R IH0 G R EH1 S",               "confidence": "high",
-                   "note": "verb: ri-GRESS"},
-  "reject":         {"ph": "R IH0 JH EH1 K T",              "confidence": "high",
-                   "note": "verb: ri-JEKT"},
-  "resume":         {"ph": "R IY0 Z UW1 M",                 "confidence": "high",
-                   "note": "verb: ri-ZOOM. The noun resume/CV is REZ-oo-may - different row if ever added"},
-  "retake":         {"ph": "R IY1 T EY1 K",                 "confidence": "high",
-                   "note": "noun: REE-take"},
-  "surcharge":      {"ph": "S ER1 CH AA2 R JH",             "confidence": "high",
-                   "note": "noun: SUR-charj"},
-  "survey":         {"ph": "S ER0 V EY1",                   "confidence": "high",
-                   "note": "verb: sur-VAY"},
-  "transfer":       {"ph": "T R AE0 N S F ER1",             "confidence": "high",
-                   "note": "verb: trans-FER"},
-  "transport":      {"ph": "T R AE0 N S P AO1 R T",         "confidence": "high",
-                   "note": "verb: trans-PORT"},
-  "update":         {"ph": "AH0 P D EY1 T",                 "confidence": "high",
-                   "note": "verb: up-DATE"},
-  "upgrade":        {"ph": "AH0 P G R EY1 D",               "confidence": "high",
-                   "note": "verb: up-GRADE"},
-  "upswing":        {"ph": "AH1 P S W IH2 NG",              "confidence": "high",
-                   "note": "noun: UP-swing"},
-  "upturn":         {"ph": "AH1 P T ER2 N",                 "confidence": "high",
-                   "note": "noun: UP-turn"},
-  "digest":         {"ph": "D AY0 JH EH1 S T",              "confidence": "high",
-                   "note": "verb: dye-JEST"},
-  "erode":          {"ph": "IH0 R OW1 D",                   "confidence": "high",
-                   "note": "verb: ih-ROHD"},
-  "erupt":          {"ph": "IH0 R AH1 P T",                 "confidence": "high",
-                   "note": "verb: ih-RUPT"},
-  "escrow":         {"ph": "EH1 S K R OW0",                 "confidence": "high",
-                   "note": "noun: ES-kroh"},
-  "essay":          {"ph": "EH1 S EY2",                     "confidence": "high",
-                   "note": "noun: ES-ay"},
-  "ferment":        {"ph": "F ER0 M EH1 N T",               "confidence": "high",
-                   "note": "verb: fer-MENT"},
-  "forearm":        {"ph": "F AO1 R AA2 R M",               "confidence": "high",
-                   "note": "noun: FOR-arm"},
-  "gamete":         {"ph": "G AE1 M IY0 T",                 "confidence": "high",
-                   "note": "noun: GAM-eet"},
-  "offset":         {"ph": "AO0 F S EH1 T",                 "confidence": "high",
-                   "note": "verb: off-SET"},
-  "purport":        {"ph": "P ER0 P AO1 R T",               "confidence": "high",
-                   "note": "verb: per-PORT"},
-  "ratchet":        {"ph": "R AE1 CH AH0 T",                "confidence": "high",
-                   "note": "noun: RATCH-et"},
-  "segment":        {"ph": "S EH1 G M AH0 N T",             "confidence": "high",
-                   "note": "noun: SEG-ment"},
-  "suspect":        {"ph": "S AH0 S P EH1 K T",             "confidence": "high",
-                   "note": "verb: suh-SPEKT"},
-  "traverse":       {"ph": "T R AH0 V ER1 S",               "confidence": "high",
-                   "note": "verb: truh-VERSE"},
-  "curie":          {"ph": "K Y UH1 R IY0",                 "confidence": "medium",
-                   "note": "noun: KYOO-ree, the unit"},
-  "debut":          {"ph": "D EY0 B Y UW1",                 "confidence": "high",
-                   "note": "noun: day-BYOO. A noun taking LATER stress - the rule would have said DAY-byoo"},
-  "baton":          {"ph": "B AH0 T AA1 N",                 "confidence": "high",
-                   "note": "noun: buh-TON. Rule would have said BAT-on"},
-  "buffet":         {"ph": "B AH0 F EY1",                   "confidence": "high",
-                   "note": "noun: buh-FAY, the meal. BUFF-it is the verb meaning to strike - opposite of the rule"},
-  "brioche":        {"ph": "B R IY2 OW1 SH",                "confidence": "medium",
-                   "note": "noun: bree-OHSH. BREE-ohsh is also heard"},
-  "massif":         {"ph": "M AE0 S IY1 F",                 "confidence": "high",
-                   "note": "noun: ma-SEEF. Rule would have said MASS-if"},
-  "syringe":        {"ph": "S ER0 IH1 N JH",                "confidence": "high",
-                   "note": "noun: suh-RINJ. Rule would have said SIR-inj"},
-
-  "cache":          {"ph": "K AE1 SH",                      "confidence": "high",
-                   "note": "noun: cash. CMUdict's other reading is cachet, a different word"},
-  "rep":            {"ph": "R EH1 P",                       "confidence": "high",
-                   "note": "noun: rep. CMUdict's other reading spells out representative"},
-  "spring":         {"ph": "S P R IH1 NG",                  "confidence": "high",
-                   "note": "verb: spring. The other CMUdict entry is malformed"},
-  "emergence":      {"ph": "IH0 M ER1 JH AH0 N S",          "confidence": "high",
-                   "note": "noun: i-MER-jens. EE-mergence is wrong"},
-  "emergency":      {"ph": "IH0 M ER1 JH AH0 N S IY0",      "confidence": "high",
-                   "note": "noun: i-MER-jen-see. EE-mergency is wrong"},
-  "umbrella":       {"ph": "AH0 M B R EH1 L AH0",           "confidence": "high",
-                   "note": "noun: um-BREL-uh. UM-brella is wrong"},
-  "hors":           {"ph": "AO1 R",                         "confidence": "medium",
-                   "note": "from hors d'oeuvre; the H is silent"},
-  "abstract":       {"ph": "AE1 B S T R AE2 K T",           "confidence": "high",
-                   "note": "adjective: AB-strakt. ab-STRAKT is the verb"},
-  "compact":        {"ph": "K AH0 M P AE1 K T",             "confidence": "high",
-                   "note": "adjective: kum-PAKT. KOM-pakt is the noun"},
-  "content":        {"ph": "K AH0 N T EH1 N T",             "confidence": "high",
-                   "note": "adjective: kun-TENT, satisfied. KON-tent is the noun"},
-  "attribute":      {"ph": "AE1 T R AH0 B Y UW2 T",         "confidence": "high",
-                   "note": "noun: AT-truh-byoot. uh-TRIB-yoot is the verb"},
-  "conjugate":      {"ph": "K AA1 N JH AH0 G EY2 T",        "confidence": "high",
-                   "note": "verb: KON-juh-gate"},
-  "inbound":        {"ph": "IH1 N B AW0 N D",               "confidence": "high",
-                   "note": "adjective: IN-bound"},
-  "upright":        {"ph": "AH1 P R AY2 T",                 "confidence": "high",
-                   "note": "adjective: UP-rite"},
-  "uprising":       {"ph": "AH1 P R AY2 Z IH0 NG",          "confidence": "high",
-                   "note": "noun: UP-rye-zing"},
-  "improvise":      {"ph": "IH1 M P R AH0 V AY2 Z",         "confidence": "high",
-                   "note": "verb: IM-pruh-vize"},
-  "infiltrate":     {"ph": "IH0 N F IH1 L T R EY2 T",       "confidence": "high",
-                   "note": "verb: in-FIL-trate"},
-  "refinance":      {"ph": "R IY2 F AH0 N AE1 N S",         "confidence": "high",
-                   "note": "verb: ree-fuh-NANS"},
-  "adverse":        {"ph": "AE0 D V ER1 S",                 "confidence": "high",
-                   "note": "adjective: ad-VURS"},
-  "concave":        {"ph": "K AA0 N K EY1 V",               "confidence": "high",
-                   "note": "adjective: kon-KAYV"},
-  "convex":         {"ph": "K AH0 N V EH1 K S",             "confidence": "high",
-                   "note": "adjective: kon-VEKS"},
-  "overt":          {"ph": "OW0 V ER1 T",                   "confidence": "high",
-                   "note": "adjective: oh-VURT"},
-  "oblate":         {"ph": "AA1 B L EY0 T",                 "confidence": "high",
-                   "note": "adjective: OB-late"},
-  "obsolete":       {"ph": "AA2 B S AH0 L IY1 T",           "confidence": "high",
-                   "note": "adjective: ob-suh-LEET"},
-  "fertile":        {"ph": "F ER1 T AH0 L",                 "confidence": "high",
-                   "note": "adjective: FUR-tl (US)"},
-  "hostile":        {"ph": "HH AA1 S T AH0 L",              "confidence": "high",
-                   "note": "adjective: HOSS-tl (US)"},
-  "versatile":      {"ph": "V ER1 S AH0 T AH0 L",           "confidence": "high",
-                   "note": "adjective: VUR-suh-tl (US)"},
-  "disparate":      {"ph": "D IH1 S P ER0 IH0 T",           "confidence": "high",
-                   "note": "adjective: DIS-puh-rit"},
-  "formidable":     {"ph": "F AO1 R M AH0 D AH0 B AH0 L",   "confidence": "high",
-                   "note": "adjective: FOR-mid-uh-bl"},
-  "grandiose":      {"ph": "G R AE1 N D IY0 OW2 S",         "confidence": "high",
-                   "note": "adjective: GRAN-dee-ohs"},
-  "litigious":      {"ph": "L IH0 T IH1 JH AH0 S",          "confidence": "high",
-                   "note": "adjective: li-TIJ-us"},
-  "protean":        {"ph": "P R OW1 T IY0 AH0 N",           "confidence": "medium",
-                   "note": "adjective: PRO-tee-un; pro-TEE-un also heard"},
-  "vehement":       {"ph": "V IY1 AH0 M AH0 N T",           "confidence": "high",
-                   "note": "adjective: VEE-uh-ment"},
-  "sometimes":      {"ph": "S AH1 M T AY2 M Z",             "confidence": "high",
-                   "note": "adverb: SUM-times"},
-  "intravenously":  {"ph": "IH0 N T R AH0 V IY1 N AH0 S L IY0", "confidence": "high",
-                   "note": "adverb: in-truh-VEE-nus-lee"},
-  "abdomen":        {"ph": "AE1 B D AH0 M AH0 N",           "confidence": "high",
-                   "note": "noun: AB-duh-men (US)"},
-  "anchovy":        {"ph": "AE1 N CH OW2 V IY0",            "confidence": "high",
-                   "note": "noun: AN-cho-vee"},
-  "anemone":        {"ph": "AH0 N EH1 M AH0 N IY0",         "confidence": "high",
-                   "note": "noun: uh-NEM-uh-nee"},
-  "angelica":       {"ph": "AE0 N JH EH1 L IH0 K AH0",      "confidence": "high",
-                   "note": "noun: an-JEL-i-ka"},
-  "antecedent":     {"ph": "AE2 N T IH0 S IY1 D AH0 N T",   "confidence": "high",
-                   "note": "noun: an-tuh-SEE-dent"},
-  "archipelago":    {"ph": "AA2 R K AH0 P EH1 L AH0 G OW2", "confidence": "high",
-                   "note": "noun: ar-kuh-PEL-uh-go"},
-  "arithmetic":     {"ph": "ER0 IH1 TH M AH0 T IH2 K",      "confidence": "high",
-                   "note": "noun: uh-RITH-muh-tik. The other reading is the adjective"},
-  "atheism":        {"ph": "EY1 TH IY0 IH2 Z AH0 M",        "confidence": "high",
-                   "note": "noun: AY-thee-izm"},
-  "behemoth":       {"ph": "B AH0 HH IY1 M AH0 TH",         "confidence": "high",
-                   "note": "noun: buh-HEE-muth"},
-  "buffeting":      {"ph": "B AH1 F AH0 T IH0 NG",          "confidence": "high",
-                   "note": "noun: BUFF-it-ing, from the verb to strike"},
-  "banshee":        {"ph": "B AE1 N SH IY0",                "confidence": "high",
-                   "note": "noun: BAN-shee"},
-  "communique":     {"ph": "K AH0 M Y UW1 N AH0 K EY2",     "confidence": "high",
-                   "note": "noun: kuh-MYOO-nuh-kay"},
-  "cooperation":    {"ph": "K OW0 AA2 P ER0 EY1 SH AH0 N",  "confidence": "high",
-                   "note": "noun: koh-op-uh-RAY-shun"},
-  "detritus":       {"ph": "D IH0 T R AY1 T AH0 S",         "confidence": "high",
-                   "note": "noun: di-TRY-tus"},
-  "dispatcher":     {"ph": "D IH0 S P AE1 CH ER0",          "confidence": "high",
-                   "note": "noun: dis-PATCH-er"},
-  "dossier":        {"ph": "D AO2 S IY0 EY1",               "confidence": "medium",
-                   "note": "noun: DOSS-ee-ay"},
-  "duopoly":        {"ph": "D Y UW0 AA1 P AH0 L IY0",       "confidence": "high",
-                   "note": "noun: doo-OP-uh-lee"},
-  "gondola":        {"ph": "G AA1 N D AH0 L AH0",           "confidence": "high",
-                   "note": "noun: GON-duh-luh"},
-  "ingenue":        {"ph": "AA1 N JH AH0 N UW2",            "confidence": "medium",
-                   "note": "noun: AN-zhuh-noo, French origin"},
-  "kilometer":      {"ph": "K AH0 L AA1 M AH0 T ER0",       "confidence": "medium",
-                   "note": "noun: kuh-LOM-uh-ter; KIL-o-meter also common"},
-  "liaison":        {"ph": "L IY0 EY1 Z AA2 N",             "confidence": "high",
-                   "note": "noun: lee-AY-zon"},
-  "liberalization": {"ph": "L IH2 B AH0 R AH0 L IH0 Z EY1 SH AH0 N", "confidence": "high",
-                   "note": "noun"},
-  "nationalization": {"ph": "N AE2 SH AH0 N AH0 L AH0 Z EY1 SH AH0 N", "confidence": "high",
-                   "note": "noun"},
-  "rationalization": {"ph": "R AE2 SH AH0 N AH0 L IH0 Z EY1 SH AH0 N", "confidence": "high",
-                   "note": "noun"},
-  "neuropathy":     {"ph": "N UH2 R AO1 P AH0 TH IY0",      "confidence": "high",
-                   "note": "noun: nuh-ROP-uh-thee"},
-  "pergola":        {"ph": "P ER1 G AH0 L AH0",             "confidence": "high",
-                   "note": "noun: PUR-guh-luh"},
-  "plethora":       {"ph": "P L EH1 TH ER0 AH0",            "confidence": "high",
-                   "note": "noun: PLETH-uh-ruh"},
-  "pyroxene":       {"ph": "P AY1 R AA0 K S IY2 N",         "confidence": "medium",
-                   "note": "noun: PY-rok-seen"},
-  "reagent":        {"ph": "R IY0 EY1 JH AH0 N T",          "confidence": "high",
-                   "note": "noun: ree-AY-jent"},
-  "sobriquet":      {"ph": "S OW1 B R AH0 K EY2",           "confidence": "medium",
-                   "note": "noun: SO-bruh-kay"},
-  "sophia":         {"ph": "S OW0 F IY1 AH0",               "confidence": "medium",
-                   "note": "noun: so-FEE-uh"},
-  "electrophoresis": {"ph": "IH0 L EH2 K T R OW0 F ER0 IY1 S IH0 S", "confidence": "medium",
-                   "note": "noun: i-lek-tro-fuh-REE-sis"},
-
-  "sudsy":          {"ph": "S AH1 D Z IY0",                 "confidence": "high",
-                   "note": "SUD-zee"},
-  "purl":           {"ph": "P ER1 L",                       "confidence": "high",
-                   "note": "PURL, the knitting stitch"},
-  "bitrate":        {"ph": "B IH1 T R EY2 T",               "confidence": "high",
-                   "note": "BIT-rate; was read as 'betrayed'"},
-  "promisee":       {"ph": "P R AA2 M AH0 S IY1",           "confidence": "high",
-                   "note": "prom-ih-SEE, the legal party"},
-  "naan":           {"ph": "N AA1 N",                       "confidence": "high",
-                   "note": "NAHN"},
-  "streusel":       {"ph": "S T R UW1 Z AH0 L",             "confidence": "high",
-                   "note": "STROO-zul"},
-  "onomatopoeia":   {"ph": "AA2 N AH0 M AE2 T AH0 P IY1 AH0", "confidence": "high",
-                   "note": "on-uh-mat-uh-PEE-uh"},
-  "finial":         {"ph": "F IH1 N IY0 AH0 L",             "confidence": "high",
-                   "note": "FIN-ee-ul"},
-  "rooibos":        {"ph": "R OY1 B AO0 S",                 "confidence": "high",
-                   "note": "ROY-bos, the tea"},
-  "piste":          {"ph": "P IY1 S T",                     "confidence": "high",
-                   "note": "PEEST"},
-  "col":            {"ph": "K AA1 L",                       "confidence": "high",
-                   "note": "KOL, the mountain pass"},
-  "settee":         {"ph": "S EH0 T IY1",                   "confidence": "high",
-                   "note": "seh-TEE"},
-  "binaural":       {"ph": "B IH0 N AO1 R AH0 L",           "confidence": "medium",
-                   "note": "bin-AW-rul; by-NAW-rul also heard"},
-  "sepal":          {"ph": "S IY1 P AH0 L",                 "confidence": "high",
-                   "note": "SEE-pul"},
-  "choux":          {"ph": "SH UW1",                        "confidence": "high",
-                   "note": "SHOO, the pastry. No final s"},
-  "ciabatta":       {"ph": "CH AH0 B AA1 T AH0",            "confidence": "high",
-                   "note": "chuh-BAH-tuh"},
-  "litotes":        {"ph": "L AY1 T AH0 T IY2 Z",           "confidence": "high",
-                   "note": "LY-tuh-teez"},
-  "sencha":         {"ph": "S EH1 N CH AH0",                "confidence": "high",
-                   "note": "SEN-chah"},
-  "corm":           {"ph": "K AO1 R M",                     "confidence": "high",
-                   "note": "KORM; was read as 'quorum'"},
-  "peen":           {"ph": "P IY1 N",                       "confidence": "high",
-                   "note": "PEEN, as in ball-peen"},
-  "scherzo":        {"ph": "S K EH1 R T S OW0",             "confidence": "high",
-                   "note": "SKERT-so"},
-  "deesser":        {"ph": "D IY1 EH1 S ER0",               "confidence": "high",
-                   "note": "dee-ESS-er, the audio tool"},
-  "legatee":        {"ph": "L EH2 G AH0 T IY1",             "confidence": "high",
-                   "note": "leg-uh-TEE; not 'legacy'"},
-  "coulis":         {"ph": "K UW0 L IY1",                   "confidence": "high",
-                   "note": "koo-LEE, final s silent"},
-  "debone":         {"ph": "D IY0 B OW1 N",                 "confidence": "high",
-                   "note": "dee-BONE"},
-  "lungo":          {"ph": "L UH1 NG G OW0",                "confidence": "high",
-                   "note": "LOONG-go, the coffee"},
-  "lyse":           {"ph": "L AY1 Z",                       "confidence": "high",
-                   "note": "LYZE, rhymes with rise"},
-  "taupe":          {"ph": "T OW1 P",                       "confidence": "high",
-                   "note": "TOHP, not 'top'"},
-  "caryatid":       {"ph": "K AE2 R IY0 AE1 T IH0 D",       "confidence": "high",
-                   "note": "kar-ee-AT-id"},
-  "cornice":        {"ph": "K AO1 R N IH0 S",               "confidence": "high",
-                   "note": "KOR-nis"},
-  "dehum":          {"ph": "D IY0 HH AH1 M",                "confidence": "medium",
-                   "note": "dee-HUM, short for dehumidify"},
-  "serac":          {"ph": "S AH0 R AA1 K",                 "confidence": "high",
-                   "note": "suh-RAHK, the ice pinnacle"},
-  "tatting":        {"ph": "T AE1 T IH0 NG",                "confidence": "high",
-                   "note": "TAT-ing, the lacework"},
-  "glissade":       {"ph": "G L IH0 S AA1 D",               "confidence": "high",
-                   "note": "glih-SAHD"},
-  "bract":          {"ph": "B R AE1 K T",                   "confidence": "high",
-                   "note": "BRAKT"},
-  "cuvee":          {"ph": "K UW0 V EY1",                   "confidence": "high",
-                   "note": "koo-VAY"},
-  "lede":           {"ph": "L IY1 D",                       "confidence": "high",
-                   "note": "LEED, the opening of a news story"},
-  "ratatouille":    {"ph": "R AE2 T AH0 T UW1 IY0",         "confidence": "high",
-                   "note": "rat-uh-TOO-ee"},
-  "mattock":        {"ph": "M AE1 T AH0 K",                 "confidence": "high",
-                   "note": "MAT-uk"},
-  "cloisonne":      {"ph": "K L OY2 Z AH0 N EY1",           "confidence": "high",
-                   "note": "kloy-zuh-NAY"},
-  "cotyledon":      {"ph": "K AA2 T AH0 L IY1 D AH0 N",     "confidence": "high",
-                   "note": "kot-uh-LEE-dun; not 'cotillion'"},
-  "tendinous":      {"ph": "T EH1 N D AH0 N AH0 S",         "confidence": "high",
-                   "note": "TEN-dih-nus; not 'tenderness'"},
-  "detent":         {"ph": "D IY0 T EH1 N T",               "confidence": "high",
-                   "note": "dee-TENT, the catch mechanism"},
-  "cezve":          {"ph": "JH EH1 Z V EH0",                "confidence": "medium",
-                   "note": "JEZ-veh, the Turkish coffee pot"},
-  "chitin":         {"ph": "K AY1 T AH0 N",                 "confidence": "high",
-                   "note": "KY-tin; not 'cheating'"},
-  "gaiwan":         {"ph": "G AY1 W AA0 N",                 "confidence": "medium",
-                   "note": "GY-wahn, the tea vessel"},
-  "kith":           {"ph": "K IH1 TH",                      "confidence": "high",
-                   "note": "KITH, as in kith and kin"},
-  "knurl":          {"ph": "N ER1 L",                       "confidence": "high",
-                   "note": "NURL; the k is silent"},
-  "marl":           {"ph": "M AA1 R L",                     "confidence": "high",
-                   "note": "MARL, the soil; not 'moral'"},
-  "raceme":         {"ph": "R EY0 S IY1 M",                 "confidence": "high",
-                   "note": "ray-SEEM"},
-  "spiracle":       {"ph": "S P AY1 R AH0 K AH0 L",         "confidence": "high",
-                   "note": "SPY-ruh-kul; not 'spherical'"},
-  "vaunt":          {"ph": "V AO1 N T",                     "confidence": "high",
-                   "note": "VAWNT; not 'want'"},
-  "escutcheon":     {"ph": "IH0 S K AH1 CH AH0 N",          "confidence": "high",
-                   "note": "ih-SKUCH-un"},
-  "descry":         {"ph": "D IH0 S K R AY1",               "confidence": "high",
-                   "note": "dih-SKRY; not 'describe'"},
-  "dirigiste":      {"ph": "D IH2 R IY0 ZH IY1 S T",        "confidence": "medium",
-                   "note": "dee-ree-ZHEEST, French origin"},
-  "enfeoff":        {"ph": "EH0 N F EH1 F",                 "confidence": "medium",
-                   "note": "en-FEF, the feudal term"},
-  "oud":            {"ph": "UW1 D",                         "confidence": "high",
-                   "note": "OOD, the instrument; not 'old'"},
-  "phloem":         {"ph": "F L OW1 EH0 M",                 "confidence": "high",
-                   "note": "FLOH-em"},
-
-  "azurite":        {"ph": "AE1 ZH ER0 AY2 T",                "confidence": "high",
-                   "note": "AZH-uh-rite"},
-  "bainite":        {"ph": "B EY1 N AY2 T",                   "confidence": "high",
-                   "note": "BAY-nite"},
-  "bakhoor":        {"ph": "B AA0 K UH1 R",                   "confidence": "medium",
-                   "note": "bah-KHOOR, the incense"},
-  "barratry":       {"ph": "B AE1 R AH0 T R IY0",             "confidence": "high",
-                   "note": "BAR-uh-tree"},
-  "barrique":       {"ph": "B AA0 R IY1 K",                   "confidence": "high",
-                   "note": "bah-REEK, the barrel"},
-  "bathos":         {"ph": "B EY1 TH AA0 S",                  "confidence": "high",
-                   "note": "BAY-thos"},
-  "berceuse":       {"ph": "B EH0 R S UW1 Z",                 "confidence": "high",
-                   "note": "bair-SOOZ"},
-  "bigarade":       {"ph": "B IH2 G AH0 R AA1 D",             "confidence": "high",
-                   "note": "big-uh-RAHD"},
-  "bilabial":       {"ph": "B AY0 L EY1 B IY0 AH0 L",         "confidence": "high",
-                   "note": "by-LAY-bee-ul"},
-  "binodal":        {"ph": "B AY0 N OW1 D AH0 L",             "confidence": "high",
-                   "note": "by-NOH-dul"},
-  "birefringence":  {"ph": "B AY2 R AH0 F R IH1 N JH AH0 N S", "confidence": "high",
-                   "note": "by-ruh-FRIN-jens"},
-  "bistre":         {"ph": "B IH1 S T ER0",                   "confidence": "high",
-                   "note": "BIS-ter, the pigment"},
-  "bokeh":          {"ph": "B OW1 K EY0",                     "confidence": "high",
-                   "note": "BOH-kay"},
-  "bourree":        {"ph": "B UH0 R EY1",                     "confidence": "high",
-                   "note": "boo-RAY, the dance"},
-  "brunaille":      {"ph": "B R UW0 N AY1",                   "confidence": "medium",
-                   "note": "broo-NY"},
-  "byssus":         {"ph": "B IH1 S AH0 S",                   "confidence": "high",
-                   "note": "BIS-us; not 'business'"},
-  "camaieu":        {"ph": "K AE2 M AY0 UW1",                 "confidence": "medium",
-                   "note": "kam-eye-YUH"},
-  "careenage":      {"ph": "K AH0 R IY1 N IH0 JH",            "confidence": "high",
-                   "note": "kuh-REE-nij"},
-  "casuistry":      {"ph": "K AE1 ZH UW0 IH0 S T R IY0",      "confidence": "high",
-                   "note": "KAZH-oo-is-tree"},
-  "caturra":        {"ph": "K AH0 T UH1 R AH0",               "confidence": "medium",
-                   "note": "kuh-TOO-ruh, the coffee varietal"},
-  "cautery":        {"ph": "K AO1 T ER0 IY0",                 "confidence": "high",
-                   "note": "KAW-tuh-ree; not 'coterie'"},
-  "chalumeau":      {"ph": "SH AE2 L AH0 M OW1",              "confidence": "high",
-                   "note": "shal-uh-MOH"},
-  "champaca":       {"ph": "CH AE1 M P AH0 K AH0",            "confidence": "medium",
-                   "note": "CHAM-puh-kuh"},
-  "chancre":        {"ph": "SH AE1 NG K ER0",                 "confidence": "high",
-                   "note": "SHANG-ker, soft ch"},
-  "chelicerae":     {"ph": "K AH0 L IH1 S ER0 IY2",           "confidence": "high",
-                   "note": "kuh-LIS-uh-ree, hard c"},
-  "chenille":       {"ph": "SH AH0 N IY1 L",                  "confidence": "high",
-                   "note": "shuh-NEEL"},
-  "chinois":        {"ph": "SH IY0 N W AA1",                  "confidence": "high",
-                   "note": "sheen-WAH, the strainer"},
-  "chocks":         {"ph": "CH AA1 K S",                      "confidence": "high",
-                   "note": "CHOKS"},
-  "cilium":         {"ph": "S IH1 L IY0 AH0 M",               "confidence": "high",
-                   "note": "SIL-ee-um; not 'psyllium'"},
-  "cinquain":       {"ph": "S IH1 NG K EY2 N",                "confidence": "high",
-                   "note": "SIN-kane"},
-  "cistus":         {"ph": "S IH1 S T AH0 S",                 "confidence": "high",
-                   "note": "SIS-tus; not 'sisters'"},
-  "claque":         {"ph": "K L AE1 K",                       "confidence": "high",
-                   "note": "KLAK; not 'clock'"},
-  "clerihew":       {"ph": "K L EH1 R AH0 HH Y UW2",          "confidence": "high",
-                   "note": "KLER-ih-hyoo"},
-  "cliometrics":    {"ph": "K L AY2 OW0 M EH1 T R IH0 K S",   "confidence": "high",
-                   "note": "kly-oh-MET-riks"},
-  "cnidocyte":      {"ph": "N AY1 D AH0 S AY2 T",             "confidence": "high",
-                   "note": "NY-duh-site; the c is silent"},
-  "codetta":        {"ph": "K OW0 D EH1 T AH0",               "confidence": "high",
-                   "note": "koh-DET-uh"},
-  "collenchyma":    {"ph": "K AH0 L EH1 NG K AH0 M AH0",      "confidence": "high",
-                   "note": "kuh-LENG-kih-muh"},
-  "corymb":         {"ph": "K AO1 R IH0 M",                   "confidence": "high",
-                   "note": "KOR-im"},
-  "coumarin":       {"ph": "K UW1 M ER0 IH0 N",               "confidence": "high",
-                   "note": "KOO-muh-rin"},
-  "couvade":        {"ph": "K UW0 V AA1 D",                   "confidence": "high",
-                   "note": "koo-VAHD"},
-  "craquelure":     {"ph": "K R AE1 K AH0 L UH2 R",           "confidence": "high",
-                   "note": "KRAK-uh-loor"},
-  "cretonne":       {"ph": "K R IH0 T AA1 N",                 "confidence": "high",
-                   "note": "kri-TAHN"},
-  "cuirassier":     {"ph": "K W IH2 R AH0 S IH1 R",           "confidence": "medium",
-                   "note": "kwir-uh-SEER"},
-  "curtilage":      {"ph": "K ER1 T AH0 L IH0 JH",            "confidence": "high",
-                   "note": "KUR-tuh-lij"},
-  "cyma":           {"ph": "S AY1 M AH0",                     "confidence": "high",
-                   "note": "SY-muh"},
-  "danseur":        {"ph": "D AA0 N S ER1",                   "confidence": "high",
-                   "note": "dahn-SUR"},
-  "dasein":         {"ph": "D AA1 Z AY2 N",                   "confidence": "medium",
-                   "note": "DAH-zine, Heidegger's term"},
-  "dehiscence":     {"ph": "D IH0 HH IH1 S AH0 N S",          "confidence": "high",
-                   "note": "dih-HIS-uns"},
-  "deixis":         {"ph": "D AY1 K S IH0 S",                 "confidence": "high",
-                   "note": "DIKE-sis"},
-  "depouiller":     {"ph": "D EY2 P UW0 Y EY1",               "confidence": "medium",
-                   "note": "day-poo-YAY"},
-  "derecho":        {"ph": "D ER0 EY1 CH OW0",                "confidence": "high",
-                   "note": "duh-RAY-choh"},
-  "dhikr":          {"ph": "Z IH1 K ER0",                     "confidence": "medium",
-                   "note": "ZIK-r, the Islamic practice"},
-  "distich":        {"ph": "D IH1 S T IH0 K",                 "confidence": "high",
-                   "note": "DIS-tik; not 'the Stig'"},
-  "djinn":          {"ph": "JH IH1 N",                        "confidence": "high",
-                   "note": "JIN"},
-  "dollyeochagi":   {"ph": "D AA2 L Y AH0 CH AA1 G IY0",      "confidence": "medium",
-                   "note": "dol-yuh-CHA-gee, taekwondo kick"},
-  "dop":            {"ph": "D AA1 P",                         "confidence": "high",
-                   "note": "DOP"},
-  "duxelles":       {"ph": "D UW0 K S EH1 L",                 "confidence": "high",
-                   "note": "dook-SEL"},
-  "ebauche":        {"ph": "EY0 B OW1 SH",                    "confidence": "high",
-                   "note": "ay-BOHSH"},
-  "echinus":        {"ph": "IH0 K AY1 N AH0 S",               "confidence": "high",
-                   "note": "ih-KY-nus"},
-  "eisegesis":      {"ph": "AY2 S AH0 JH IY1 S IH0 S",        "confidence": "high",
-                   "note": "eye-suh-JEE-sis"},
-  "eiswein":        {"ph": "AY1 S V AY2 N",                   "confidence": "high",
-                   "note": "ICE-vine, German w"},
-  "ekkyklema":      {"ph": "EH2 K IH0 K L IY1 M AH0",         "confidence": "medium",
-                   "note": "ek-ee-KLEE-muh"},
-  "elemi":          {"ph": "EH1 L AH0 M IY0",                 "confidence": "high",
-                   "note": "EL-uh-mee"},
-  "embusen":        {"ph": "EH0 M B UW1 Z EH0 N",             "confidence": "medium",
-                   "note": "em-BOO-zen, karate term"},
-  "empi":           {"ph": "EH1 M P IY0",                     "confidence": "medium",
-                   "note": "EM-pee, the kata"},
-  "enantiomer":     {"ph": "IH0 N AE1 N T IY0 AH0 M ER0",     "confidence": "high",
-                   "note": "ih-NAN-tee-uh-mer"},
-  "enceinte":       {"ph": "AA0 N S AE1 N T",                 "confidence": "medium",
-                   "note": "ahn-SANT"},
-  "enthymeme":      {"ph": "EH1 N TH AH0 M IY2 M",            "confidence": "high",
-                   "note": "EN-thuh-meem"},
-  "epode":          {"ph": "EH1 P OW2 D",                     "confidence": "high",
-                   "note": "EP-ode"},
-  "equinus":        {"ph": "IH0 K W AY1 N AH0 S",             "confidence": "high",
-                   "note": "ih-KWY-nus; not 'Aquinas'"},
-  "erotema":        {"ph": "EH2 R AH0 T IY1 M AH0",           "confidence": "medium",
-                   "note": "er-uh-TEE-muh"},
-  "euryhaline":     {"ph": "Y UH2 R IY0 HH EY1 L AY2 N",      "confidence": "high",
-                   "note": "yoor-ee-HAY-line"},
-  "exurb":          {"ph": "EH1 K S ER2 B",                   "confidence": "high",
-                   "note": "EKS-urb; not 'excerpts'"},
-  "failli":         {"ph": "F AA0 Y IY1",                     "confidence": "medium",
-                   "note": "fah-YEE, the ballet step"},
-  "farruca":        {"ph": "F AA0 R UW1 K AH0",               "confidence": "medium",
-                   "note": "fah-ROO-kah"},
-  "fiqh":           {"ph": "F IH1 K",                         "confidence": "medium",
-                   "note": "FIK, Islamic jurisprudence"},
-  "foehn":          {"ph": "F ER1 N",                         "confidence": "medium",
-                   "note": "FURN, the wind; also FAYN"},
-  "fornix":         {"ph": "F AO1 R N IH0 K S",               "confidence": "high",
-                   "note": "FOR-niks"},
-  "frit":           {"ph": "F R IH1 T",                       "confidence": "high",
-                   "note": "FRIT"},
-  "frottage":       {"ph": "F R AH0 T AA1 ZH",                "confidence": "high",
-                   "note": "fruh-TAHZH"},
-  "furl":           {"ph": "F ER1 L",                         "confidence": "high",
-                   "note": "FURL; not 'furrow'"},
-  "futtock":        {"ph": "F AH1 T AH0 K",                   "confidence": "high",
-                   "note": "FUT-uk"},
-  "gastrique":      {"ph": "G AE0 S T R IY1 K",               "confidence": "high",
-                   "note": "gas-TREEK"},
-  "gerund":         {"ph": "JH EH1 R AH0 N D",                "confidence": "high",
-                   "note": "JER-und"},
-  "graupel":        {"ph": "G R AW1 P AH0 L",                 "confidence": "high",
-                   "note": "GROW-pul"},
-  "greenschist":    {"ph": "G R IY1 N SH IH0 S T",            "confidence": "high",
-                   "note": "GREEN-shist"},
-  "greywacke":      {"ph": "G R EY1 W AE2 K IY0",             "confidence": "high",
-                   "note": "GRAY-wak-ee"},
-  "grisaille":      {"ph": "G R IH0 Z AY1",                   "confidence": "high",
-                   "note": "gri-ZY"},
-  "guipure":        {"ph": "G IH0 P Y UH1 R",                 "confidence": "medium",
-                   "note": "gi-PYOOR"},
-  "gurjun":         {"ph": "G ER1 JH AH0 N",                  "confidence": "medium",
-                   "note": "GUR-jun"},
-  "guttae":         {"ph": "G AH1 T IY0",                     "confidence": "high",
-                   "note": "GUT-ee"},
-  "gyokuro":        {"ph": "G Y OW0 K UH1 R OW0",             "confidence": "medium",
-                   "note": "gyoh-KOO-roh, the tea"},
-  "gyre":           {"ph": "JH AY1 R",                        "confidence": "high",
-                   "note": "JYRE"},
-  "haecceity":      {"ph": "HH EH0 K S IY1 AH0 T IY0",        "confidence": "medium",
-                   "note": "hek-SEE-ih-tee"},
-  "halophyte":      {"ph": "HH AE1 L AH0 F AY2 T",            "confidence": "high",
-                   "note": "HAL-uh-fite"},
-  "haustellate":    {"ph": "HH AO1 S T AH0 L EY2 T",          "confidence": "medium",
-                   "note": "HAW-stuh-late"},
-  "haustorium":     {"ph": "HH AO0 S T AO1 R IY0 AH0 M",      "confidence": "high",
-                   "note": "haw-STOR-ee-um"},
-  "hedione":        {"ph": "HH EH2 D IY0 OW1 N",              "confidence": "medium",
-                   "note": "hed-ee-OWN, the aroma chemical"},
-  "hemistich":      {"ph": "HH EH1 M IH0 S T IH0 K",          "confidence": "high",
-                   "note": "HEM-ih-stik"},
-  "hipped":         {"ph": "HH IH1 P T",                      "confidence": "high",
-                   "note": "HIPT, as in hipped roof"},
-  "hocket":         {"ph": "HH AA1 K AH0 T",                  "confidence": "high",
-                   "note": "HOK-it"},
-  "hybridoma":      {"ph": "HH AY2 B R AH0 D OW1 M AH0",      "confidence": "high",
-                   "note": "hy-brih-DOH-muh"},
-  "hypha":          {"ph": "HH AY1 F AH0",                    "confidence": "high",
-                   "note": "HY-fuh; not 'Haifa'"},
-
-  "ikkyo":          {"ph": "IY1 K Y OW0",                     "confidence": "medium",
-                   "note": "EE-kyoh, the aikido technique"},
-  "inchoate":       {"ph": "IH0 N K OW1 AH0 T",               "confidence": "high",
-                   "note": "in-KOH-it; not 'in Kuwait'"},
-  "incuse":         {"ph": "IH0 N K Y UW1 Z",                 "confidence": "high",
-                   "note": "in-KYOOZ"},
-  "indehiscent":    {"ph": "IH2 N D IH0 HH IH1 S AH0 N T",    "confidence": "high",
-                   "note": "in-dih-HIS-unt"},
-  "ionone":         {"ph": "AY1 AH0 N OW2 N",                 "confidence": "high",
-                   "note": "EYE-uh-nohn"},
-  "kamae":          {"ph": "K AA0 M AY1",                     "confidence": "medium",
-                   "note": "kah-MY, the stance"},
-  "kanibasami":     {"ph": "K AA2 N IY0 B AA0 S AA1 M IY0",   "confidence": "medium",
-                   "note": "kah-nee-bah-SAH-mee"},
-  "kata":           {"ph": "K AA1 T AH0",                     "confidence": "high",
-                   "note": "KAH-tuh"},
-  "keirin":         {"ph": "K EY1 R IH0 N",                   "confidence": "medium",
-                   "note": "KAY-rin, the cycling event"},
-  "kinetochore":    {"ph": "K IH0 N EH1 T AH0 K AO2 R",       "confidence": "high",
-                   "note": "kih-NET-uh-kor"},
-  "koine":          {"ph": "K OY1 N EY0",                     "confidence": "high",
-                   "note": "KOY-nay"},
-  "kommos":         {"ph": "K AA1 M AO0 S",                   "confidence": "medium",
-                   "note": "KOM-os"},
-  "kore":           {"ph": "K AO1 R EY0",                     "confidence": "medium",
-                   "note": "KOR-ay, the Greek statue"},
-  "kuchipudi":      {"ph": "K UW2 CH IH0 P UW1 D IY0",        "confidence": "medium",
-                   "note": "koo-chi-POO-dee, the dance"},
-  "lasya":          {"ph": "L AA1 S Y AH0",                   "confidence": "medium",
-                   "note": "LAHS-yuh"},
-  "lenition":       {"ph": "L AH0 N IH1 SH AH0 N",            "confidence": "high",
-                   "note": "luh-NISH-un"},
-  "linalool":       {"ph": "L IH0 N AE1 L OW0 AO2 L",         "confidence": "high",
-                   "note": "lih-NAL-oh-ol"},
-  "maegeri":        {"ph": "M AY0 G EH1 R IY0",               "confidence": "medium",
-                   "note": "my-GEH-ree, the front kick"},
-  "malicia":        {"ph": "M AA0 L IY1 S IY0 AH0",           "confidence": "medium",
-                   "note": "mah-LEE-see-ah, capoeira term"},
-  "margravate":     {"ph": "M AA1 R G R AH0 V EY2 T",         "confidence": "medium",
-                   "note": "MAR-gruh-vate"},
-  "mechane":        {"ph": "M AH0 K AA1 N EY0",               "confidence": "medium",
-                   "note": "muh-KAH-nay, the Greek stage crane"},
-  "meialua":        {"ph": "M EY2 AH0 L UW1 AH0",             "confidence": "medium",
-                   "note": "may-uh-LOO-uh, capoeira kick"},
-  "meiofauna":      {"ph": "M AY1 OW0 F AO2 N AH0",           "confidence": "high",
-                   "note": "MY-oh-faw-nuh"},
-  "mezzala":        {"ph": "M EH0 T S AA1 L AH0",             "confidence": "medium",
-                   "note": "met-SAH-lah, the football role"},
-  "monomial":       {"ph": "M AH0 N OW1 M IY0 AH0 L",         "confidence": "high",
-                   "note": "muh-NOH-mee-ul"},
-  "mystagogy":      {"ph": "M IH1 S T AH0 G OW2 JH IY0",      "confidence": "medium",
-                   "note": "MIS-tuh-goh-jee"},
-  "nacre":          {"ph": "N EY1 K ER0",                     "confidence": "high",
-                   "note": "NAY-ker, mother-of-pearl"},
-  "nankeen":        {"ph": "N AE0 N K IY1 N",                 "confidence": "high",
-                   "note": "nan-KEEN"},
-  "naos":           {"ph": "N EY1 AA0 S",                     "confidence": "medium",
-                   "note": "NAY-os"},
-  "nerikomi":       {"ph": "N EH2 R IY0 K OW1 M IY0",         "confidence": "medium",
-                   "note": "neh-ree-KOH-mee, the ceramic technique"},
-  "neroli":         {"ph": "N EH1 R AH0 L IY0",               "confidence": "high",
-                   "note": "NER-uh-lee"},
-  "notan":          {"ph": "N OW1 T AA0 N",                   "confidence": "medium",
-                   "note": "NOH-tahn"},
-  "numen":          {"ph": "N UW1 M EH0 N",                   "confidence": "high",
-                   "note": "NOO-men; not 'Newman'"},
-  "nunciature":     {"ph": "N AH1 N SH AH0 CH UH2 R",         "confidence": "medium",
-                   "note": "NUN-shuh-choor"},
-  "oakum":          {"ph": "OW1 K AH0 M",                     "confidence": "high",
-                   "note": "OH-kum"},
-  "odissi":         {"ph": "OW0 D IY1 S IY0",                 "confidence": "medium",
-                   "note": "oh-DEE-see, the dance"},
-  "oenology":       {"ph": "IY0 N AA1 L AH0 JH IY0",          "confidence": "high",
-                   "note": "ee-NOL-uh-jee"},
-  "ogee":           {"ph": "OW1 JH IY0",                      "confidence": "high",
-                   "note": "OH-jee"},
-  "oinochoe":       {"ph": "OY0 N AA1 K OW0 IY0",             "confidence": "medium",
-                   "note": "oy-NOK-oh-ee"},
-  "ophicleide":     {"ph": "AA1 F IH0 K L AY2 D",             "confidence": "medium",
-                   "note": "OF-ih-klide"},
-  "opsonin":        {"ph": "AA1 P S AH0 N IH0 N",             "confidence": "high",
-                   "note": "OP-suh-nin"},
-  "orgeat":         {"ph": "AO1 R ZH AA0 T",                  "confidence": "high",
-                   "note": "OR-zhat, the syrup"},
-  "osphresis":      {"ph": "AA0 S F R IY1 S IH0 S",           "confidence": "medium",
-                   "note": "os-FREE-sis"},
-  "ousia":          {"ph": "UW1 S IY0 AH0",                   "confidence": "medium",
-                   "note": "OO-see-uh"},
-  "parquetry":      {"ph": "P AA1 R K AH0 T R IY0",           "confidence": "high",
-                   "note": "PAR-kih-tree"},
-  "pawl":           {"ph": "P AO1 L",                         "confidence": "high",
-                   "note": "PAWL, the ratchet catch"},
-  "paysanne":       {"ph": "P EY0 Z AA1 N",                   "confidence": "high",
-                   "note": "pay-ZAN, the cut"},
-  "pedicellaria":   {"ph": "P EH2 D IH0 S AH0 L EH1 R IY0 AH0", "confidence": "medium",
-                   "note": "ped-ih-suh-LAIR-ee-uh"},
-  "pedipalp":       {"ph": "P EH1 D AH0 P AE2 L P",           "confidence": "high",
-                   "note": "PED-ih-palp"},
-  "percale":        {"ph": "P ER0 K EY1 L",                   "confidence": "high",
-                   "note": "per-KAYL"},
-  "pheon":          {"ph": "F IY1 AA0 N",                     "confidence": "medium",
-                   "note": "FEE-on, the heraldic arrowhead"},
-  "phratry":        {"ph": "F R EY1 T R IY0",                 "confidence": "high",
-                   "note": "FRAY-tree"},
-  "pileus":         {"ph": "P AY1 L IY0 AH0 S",               "confidence": "high",
-                   "note": "PY-lee-us"},
-  "pilus":          {"ph": "P AY1 L AH0 S",                   "confidence": "high",
-                   "note": "PY-lus"},
-  "poniard":        {"ph": "P AA1 N Y ER0 D",                 "confidence": "high",
-                   "note": "PON-yerd"},
-  "pycnocline":     {"ph": "P IH1 K N AH0 K L AY2 N",         "confidence": "high",
-                   "note": "PIK-nuh-kline"},
-  "qiyas":          {"ph": "K IY0 Y AA1 S",                   "confidence": "medium",
-                   "note": "kee-YAHS"},
-  "quoin":          {"ph": "K OY1 N",                         "confidence": "high",
-                   "note": "KOIN; not 'queen'"},
-  "racemic":        {"ph": "R EY0 S IY1 M IH0 K",             "confidence": "high",
-                   "note": "ray-SEE-mik"},
-  "rachis":         {"ph": "R EY1 K IH0 S",                   "confidence": "high",
-                   "note": "RAY-kis; not 'rockies'"},
-  "rammuay":        {"ph": "R AA1 M UW0 AY2",                 "confidence": "medium",
-                   "note": "RAHM-moo-ay"},
-  "redolence":      {"ph": "R EH1 D AH0 L AH0 N S",           "confidence": "high",
-                   "note": "RED-uh-lens"},
-  "rille":          {"ph": "R IH1 L",                         "confidence": "high",
-                   "note": "RIL, the lunar channel"},
-  "rive":           {"ph": "R AY1 V",                         "confidence": "high",
-                   "note": "RIVE, rhymes with drive"},
-  "ruche":          {"ph": "R UW1 SH",                        "confidence": "high",
-                   "note": "ROOSH; not 'rouge'"},
-  "saignee":        {"ph": "S EH0 N Y EY1",                   "confidence": "medium",
-                   "note": "sen-YAY, the winemaking method"},
-  "seiche":         {"ph": "S EY1 SH",                        "confidence": "high",
-                   "note": "SAYSH, the standing wave"},
-  "seme":           {"ph": "S IY1 M",                         "confidence": "medium",
-                   "note": "SEEM"},
-  "seoinage":       {"ph": "S EY2 OY0 N AA1 G EY0",           "confidence": "medium",
-                   "note": "say-oy-NAH-gay, the judo throw"},
-  "sessile":        {"ph": "S EH1 S AH0 L",                   "confidence": "high",
-                   "note": "SES-il"},
-  "setae":          {"ph": "S IY1 T IY0",                     "confidence": "high",
-                   "note": "SEE-tee, plural of seta"},
-  "settlor":        {"ph": "S EH1 T L ER0",                   "confidence": "high",
-                   "note": "SET-lor, the legal party"},
-  "shihonage":      {"ph": "SH IY2 HH OW0 N AA1 G EY0",       "confidence": "medium",
-                   "note": "shee-hoh-NAH-gay"},
-  "shinai":         {"ph": "SH IH0 N AY1",                    "confidence": "medium",
-                   "note": "shih-NY, the bamboo sword"},
-  "shuto":          {"ph": "SH UW1 T OW0",                    "confidence": "medium",
-                   "note": "SHOO-toh"},
-  "simul":          {"ph": "S IH1 M AH0 L",                   "confidence": "high",
-                   "note": "SIM-ul"},
-  "sinecure":       {"ph": "S AY1 N AH0 K Y UH2 R",           "confidence": "high",
-                   "note": "SY-nih-kyoor"},
-  "sissonne":       {"ph": "S IY0 S AH1 N",                   "confidence": "medium",
-                   "note": "see-SUN, the ballet jump"},
-  "soigneur":       {"ph": "S W AA0 N Y ER1",                 "confidence": "medium",
-                   "note": "swahn-YUR"},
-  "sondage":        {"ph": "S OW0 N D AA1 ZH",                "confidence": "medium",
-                   "note": "sohn-DAHZH"},
-  "sophrosyne":     {"ph": "S AH0 F R AA1 S AH0 N IY0",       "confidence": "medium",
-                   "note": "suh-FROS-uh-nee"},
-  "soredium":       {"ph": "S AH0 R IY1 D IY0 AH0 M",         "confidence": "high",
-                   "note": "suh-REE-dee-um"},
-  "souplesse":      {"ph": "S UW0 P L EH1 S",                 "confidence": "medium",
-                   "note": "soo-PLES"},
-  "staysail":       {"ph": "S T EY1 S AH0 L",                 "confidence": "high",
-                   "note": "STAY-sul; sail reduces to -sul"},
-  "suberin":        {"ph": "S UW1 B ER0 IH0 N",               "confidence": "high",
-                   "note": "SOO-buh-rin"},
-  "suboxic":        {"ph": "S AH0 B AA1 K S IH0 K",           "confidence": "high",
-                   "note": "sub-OK-sik; not 'Suboxone'"},
-  "sunnah":         {"ph": "S UH1 N AH0",                     "confidence": "medium",
-                   "note": "SOON-nah"},
-  "syncytial":      {"ph": "S IH0 N S IH1 SH AH0 L",          "confidence": "high",
-                   "note": "sin-SISH-ul"},
-  "taqlid":         {"ph": "T AA0 K L IY1 D",                 "confidence": "medium",
-                   "note": "tahk-LEED"},
-  "teep":           {"ph": "T IY1 P",                         "confidence": "high",
-                   "note": "TEEP, the muay thai push kick"},
-  "tenaille":       {"ph": "T AH0 N EY1",                     "confidence": "medium",
-                   "note": "tuh-NAY, the fortification"},
-  "terrine":        {"ph": "T AH0 R IY1 N",                   "confidence": "high",
-                   "note": "tuh-REEN"},
-  "theodicy":       {"ph": "TH IY0 AA1 D AH0 S IY0",          "confidence": "high",
-                   "note": "thee-OD-ih-see"},
-  "thurible":       {"ph": "TH UH1 R AH0 B AH0 L",            "confidence": "high",
-                   "note": "THOOR-ih-bul"},
-  "toile":          {"ph": "T W AA1 L",                       "confidence": "high",
-                   "note": "TWAHL"},
-  "tubeless":       {"ph": "T UW1 B L AH0 S",                 "confidence": "high",
-                   "note": "TOOB-lis"},
-  "ullage":         {"ph": "AH1 L IH0 JH",                    "confidence": "high",
-                   "note": "UL-ij; not 'college'"},
-  "ummah":          {"ph": "UH1 M AH0",                       "confidence": "medium",
-                   "note": "OO-mah"},
-  "uncial":         {"ph": "AH1 N SH AH0 L",                  "confidence": "high",
-                   "note": "UN-shul"},
-  "unguled":        {"ph": "AH1 NG G Y AH0 L D",              "confidence": "medium",
-                   "note": "UNG-gyuld, heraldic"},
-  "vair":           {"ph": "V EH1 R",                         "confidence": "high",
-                   "note": "VAIR, the heraldic fur"},
-  "venire":         {"ph": "V AH0 N AY1 R IY0",               "confidence": "high",
-                   "note": "vuh-NY-ree, the jury pool"},
-  "verjus":         {"ph": "V EH1 R ZH UW0",                  "confidence": "medium",
-                   "note": "VER-zhoo"},
-  "virgule":        {"ph": "V ER1 G Y UW2 L",                 "confidence": "high",
-                   "note": "VUR-gyool, the slash"},
-  "virion":         {"ph": "V AY1 R IY0 AA2 N",               "confidence": "high",
-                   "note": "VY-ree-on"},
-  "vug":            {"ph": "V AH1 G",                         "confidence": "high",
-                   "note": "VUG, the rock cavity; not 'vogue'"},
-  "zugzwang":       {"ph": "Z UH1 G Z W AA2 NG",              "confidence": "medium",
-                   "note": "ZOOG-tsvang, the chess term"},
-  "zwitterion":     {"ph": "Z W IH1 T ER0 AY2 AA0 N",         "confidence": "high",
-                   "note": "TSVIT-er-eye-on"},
-
-  "abs":          {"ph": "AE1 B Z",                          "confidence": "high",
-                   "note": "abdominal muscles. CMUdict lists both AE1 B Z and the spelled-out EY1 B IY1 EH1 S (A-B-S); g2p picked the letters. Both readings stress the first vowel, so the stress-ambiguity check cannot separate them - they differ in syllable count, not stress position. Hand-written because the catalogue means the muscles."},
-
-  "adze":         {"ph": "AE1 D Z",                          "confidence": "high"},
-  "aedile":       {"ph": "IY1 D AY2 L",                      "confidence": "high"},
-  "adaxial":      {"ph": "AE0 D AE1 K S IY0 AH0 L",          "confidence": "high"},
-  "abaxial":      {"ph": "AE0 B AE1 K S IY0 AH0 L",          "confidence": "high"},
-  "achene":       {"ph": "EY0 K IY1 N",                      "confidence": "high"},
-  "aril":         {"ph": "AE1 R AH0 L",                      "confidence": "high"},
-  "assumpsit":    {"ph": "AH0 S AH1 M P S IH0 T",            "confidence": "high"},
-  "alkyd":        {"ph": "AE1 L K IH0 D",                    "confidence": "high"},
-  "amide":        {"ph": "AE1 M AY2 D",                      "confidence": "high"},
-  "amine":        {"ph": "AH0 M IY1 N",                      "confidence": "medium",
-                   "note": "chemistry also says AM-een (AE1 M IY0 N); uh-MEEN chosen as commoner"},
-  "anamnesis":    {"ph": "AE2 N AE0 M N IY1 S IH0 S",        "confidence": "high"},
-  "appellee":     {"ph": "AE2 P AH0 L IY1",                  "confidence": "high"},
-  "assignor":     {"ph": "AE2 S IH0 N AO1 R",                "confidence": "high"},
-  "abaft":        {"ph": "AH0 B AE1 F T",                    "confidence": "high"},
-  "ablaut":       {"ph": "AA1 B L AW2 T",                    "confidence": "high"},
-  "alee":         {"ph": "AH0 L IY1",                        "confidence": "high"},
-  "alkane":       {"ph": "AE1 L K EY2 N",                    "confidence": "high"},
-  "allosteric":   {"ph": "AE2 L OW0 S T EH1 R IH0 K",        "confidence": "high"},
-  "annealed":     {"ph": "AH0 N IY1 L D",                    "confidence": "high"},
-  "animalic":     {"ph": "AE2 N AH0 M AE1 L IH0 K",          "confidence": "high"},
-  "appurtenance": {"ph": "AH0 P ER1 T AH0 N AH0 N S",        "confidence": "high"},
-  "argillic":     {"ph": "AA0 R JH IH1 L IH0 K",             "confidence": "high"},
-  "antheridium":  {"ph": "AE2 N TH ER0 IH1 D IY0 AH0 M",     "confidence": "high"},
-  "armillary":    {"ph": "AA1 R M AH0 L EH2 R IY0",          "confidence": "high"},
-  "akinesia":     {"ph": "EY2 K IH0 N IY1 ZH AH0",           "confidence": "high"},
-  "amygdule":     {"ph": "AH0 M IH1 G D UW2 L",              "confidence": "high"},
-  "apeiron":      {"ph": "AH0 P AY1 R AA2 N",                "confidence": "high"},
-  "adipocere":    {"ph": "AE1 D AH0 P OW0 S IH2 R",          "confidence": "high"},
-  "adynaton":     {"ph": "AH0 D IH1 N AH0 T AA2 N",          "confidence": "high"},
-  "arhat":        {"ph": "AA1 R HH AH2 T",                   "confidence": "high"},
-  "auteur":       {"ph": "OW0 T ER1",                        "confidence": "high"},
-  "adstrate":     {"ph": "AE1 D S T R EY2 T",                "confidence": "medium",
-                   "note": "rare linguistics term; stress on the first syllable by analogy with substrate"},
-  "allemande":    {"ph": "AE1 L AH0 M AE2 N D",              "confidence": "medium",
-                   "note": "French origin; the dance is also said al-uh-MAHND"},
-  "LUT":          {"ph": "L AH1 T",                          "confidence": "medium",
-                   "note": "look-up table; said as a word by most practitioners, spelled out by some"},
-  "Nernst":       {"ph": "N ER1 N S T",                      "confidence": "medium",
-                   "note": "German surname; NAIRNST is closer to the original than NERNST"},
-  "Biot":         {"ph": "B IY1 OW0",                        "confidence": "medium",
-                   "note": "French physicist; final t is silent"},
-  "Ursatz":       {"ph": "UH1 R Z AA2 T S",                  "confidence": "medium",
-                   "note": "German, Schenkerian analysis; OOR-zahts"},
-  "Urlinie":      {"ph": "UH1 R L IY2 N IY0 AH0",            "confidence": "medium",
-                   "note": "German, Schenkerian analysis; OOR-lee-nee-uh"},
-  "aggadah":      {"ph": "AH0 G AA1 D AH0",                  "confidence": "medium",
-                   "note": "Hebrew; ah-gah-DAH is also common"},
-  "abhinaya":     {"ph": "AH0 B HH IH0 N AA1 Y AH0",         "confidence": "medium",
-                   "note": "Sanskrit; the aspirated bh has no ARPAbet equivalent"},
-  "abbozzo":      {"ph": "AH0 B AO1 T S OW0",                "confidence": "medium",
-                   "note": "Italian; double z is ts"}
+  "abaft": {
+    "confidence": "high",
+    "ph": "AH0 B AE1 F T"
+  },
+  "abaxial": {
+    "confidence": "high",
+    "ph": "AE0 B AE1 K S IY0 AH0 L"
+  },
+  "abbozzo": {
+    "confidence": "medium",
+    "note": "Italian; double z is ts",
+    "ph": "AH0 B AO1 T S OW0"
+  },
+  "abdomen": {
+    "confidence": "high",
+    "note": "noun: AB-duh-men (US)",
+    "ph": "AE1 B D AH0 M AH0 N"
+  },
+  "abhinaya": {
+    "confidence": "medium",
+    "note": "Sanskrit; the aspirated bh has no ARPAbet equivalent",
+    "ph": "AH0 B HH IH0 N AA1 Y AH0"
+  },
+  "ablaut": {
+    "confidence": "high",
+    "ph": "AA1 B L AW2 T"
+  },
+  "abs": {
+    "confidence": "high",
+    "note": "abdominal muscles. CMUdict lists both AE1 B Z and the spelled-out EY1 B IY1 EH1 S (A-B-S); g2p picked the letters. Both readings stress the first vowel, so the stress-ambiguity check cannot separate them - they differ in syllable count, not stress position. Hand-written because the catalogue means the muscles.",
+    "ph": "AE1 B Z"
+  },
+  "abstract": {
+    "confidence": "high",
+    "note": "adjective: AB-strakt. ab-STRAKT is the verb",
+    "ph": "AE1 B S T R AE2 K T"
+  },
+  "achene": {
+    "confidence": "high",
+    "ph": "EY0 K IY1 N"
+  },
+  "adaxial": {
+    "confidence": "high",
+    "ph": "AE0 D AE1 K S IY0 AH0 L"
+  },
+  "address": {
+    "confidence": "high",
+    "note": "verb: uh-DRESS",
+    "ph": "AH0 D R EH1 S"
+  },
+  "adipocere": {
+    "confidence": "high",
+    "ph": "AE1 D AH0 P OW0 S IH2 R"
+  },
+  "adstrate": {
+    "confidence": "medium",
+    "note": "rare linguistics term; stress on the first syllable by analogy with substrate",
+    "ph": "AE1 D S T R EY2 T"
+  },
+  "adverse": {
+    "confidence": "high",
+    "note": "adjective: ad-VURS",
+    "ph": "AE0 D V ER1 S"
+  },
+  "adynaton": {
+    "confidence": "high",
+    "ph": "AH0 D IH1 N AH0 T AA2 N"
+  },
+  "adze": {
+    "confidence": "high",
+    "ph": "AE1 D Z"
+  },
+  "aedile": {
+    "confidence": "high",
+    "ph": "IY1 D AY2 L"
+  },
+  "affix": {
+    "confidence": "high",
+    "note": "noun: AF-iks",
+    "ph": "AE1 F IH0 K S"
+  },
+  "aggadah": {
+    "confidence": "medium",
+    "note": "Hebrew; ah-gah-DAH is also common",
+    "ph": "AH0 G AA1 D AH0"
+  },
+  "akinesia": {
+    "confidence": "high",
+    "ph": "EY2 K IH0 N IY1 ZH AH0"
+  },
+  "alee": {
+    "confidence": "high",
+    "ph": "AH0 L IY1"
+  },
+  "alkane": {
+    "confidence": "high",
+    "ph": "AE1 L K EY2 N"
+  },
+  "alkyd": {
+    "confidence": "high",
+    "ph": "AE1 L K IH0 D"
+  },
+  "allemande": {
+    "confidence": "medium",
+    "note": "French origin; the dance is also said al-uh-MAHND",
+    "ph": "AE1 L AH0 M AE2 N D"
+  },
+  "allosteric": {
+    "confidence": "high",
+    "ph": "AE2 L OW0 S T EH1 R IH0 K"
+  },
+  "ally": {
+    "confidence": "high",
+    "note": "noun: AL-eye",
+    "ph": "AE1 L AY0"
+  },
+  "amide": {
+    "confidence": "high",
+    "ph": "AE1 M AY2 D"
+  },
+  "amine": {
+    "confidence": "medium",
+    "note": "chemistry also says AM-een (AE1 M IY0 N); uh-MEEN chosen as commoner",
+    "ph": "AH0 M IY1 N"
+  },
+  "amygdule": {
+    "confidence": "high",
+    "ph": "AH0 M IH1 G D UW2 L"
+  },
+  "anamnesis": {
+    "confidence": "high",
+    "ph": "AE2 N AE0 M N IY1 S IH0 S"
+  },
+  "anchovy": {
+    "confidence": "high",
+    "note": "noun: AN-cho-vee",
+    "ph": "AE1 N CH OW2 V IY0"
+  },
+  "anemone": {
+    "confidence": "high",
+    "note": "noun: uh-NEM-uh-nee",
+    "ph": "AH0 N EH1 M AH0 N IY0"
+  },
+  "angelica": {
+    "confidence": "high",
+    "note": "noun: an-JEL-i-ka",
+    "ph": "AE0 N JH EH1 L IH0 K AH0"
+  },
+  "animalic": {
+    "confidence": "high",
+    "ph": "AE2 N AH0 M AE1 L IH0 K"
+  },
+  "annealed": {
+    "confidence": "high",
+    "ph": "AH0 N IY1 L D"
+  },
+  "annex": {
+    "confidence": "high",
+    "note": "verb: uh-NEKS",
+    "ph": "AH0 N EH1 K S"
+  },
+  "antecedent": {
+    "confidence": "high",
+    "note": "noun: an-tuh-SEE-dent",
+    "ph": "AE2 N T IH0 S IY1 D AH0 N T"
+  },
+  "antheridium": {
+    "confidence": "high",
+    "ph": "AE2 N TH ER0 IH1 D IY0 AH0 M"
+  },
+  "apeiron": {
+    "confidence": "high",
+    "ph": "AH0 P AY1 R AA2 N"
+  },
+  "aperitif": {
+    "confidence": "medium",
+    "note": "uh-peh-ruh-TEEF; the drink. Stress on the last syllable, not the first",
+    "ph": "AH0 P EH2 R AH0 T IY1 F"
+  },
+  "appellee": {
+    "confidence": "high",
+    "ph": "AE2 P AH0 L IY1"
+  },
+  "appurtenance": {
+    "confidence": "high",
+    "ph": "AH0 P ER1 T AH0 N AH0 N S"
+  },
+  "archipelago": {
+    "confidence": "high",
+    "note": "noun: ar-kuh-PEL-uh-go",
+    "ph": "AA2 R K AH0 P EH1 L AH0 G OW2"
+  },
+  "argillic": {
+    "confidence": "high",
+    "ph": "AA0 R JH IH1 L IH0 K"
+  },
+  "arhat": {
+    "confidence": "high",
+    "ph": "AA1 R HH AH2 T"
+  },
+  "aril": {
+    "confidence": "high",
+    "ph": "AE1 R AH0 L"
+  },
+  "arithmetic": {
+    "confidence": "high",
+    "note": "noun: uh-RITH-muh-tik. The other reading is the adjective",
+    "ph": "ER0 IH1 TH M AH0 T IH2 K"
+  },
+  "armillary": {
+    "confidence": "high",
+    "ph": "AA1 R M AH0 L EH2 R IY0"
+  },
+  "assignor": {
+    "confidence": "high",
+    "ph": "AE2 S IH0 N AO1 R"
+  },
+  "assumpsit": {
+    "confidence": "high",
+    "ph": "AH0 S AH1 M P S IH0 T"
+  },
+  "atheism": {
+    "confidence": "high",
+    "note": "noun: AY-thee-izm",
+    "ph": "EY1 TH IY0 IH2 Z AH0 M"
+  },
+  "atoll": {
+    "confidence": "high",
+    "note": "noun: A-tol",
+    "ph": "AE1 T AA2 L"
+  },
+  "attribute": {
+    "confidence": "high",
+    "note": "noun: AT-truh-byoot. uh-TRIB-yoot is the verb",
+    "ph": "AE1 T R AH0 B Y UW2 T"
+  },
+  "auteur": {
+    "confidence": "high",
+    "ph": "OW0 T ER1"
+  },
+  "azurite": {
+    "confidence": "high",
+    "note": "AZH-uh-rite",
+    "ph": "AE1 ZH ER0 AY2 T"
+  },
+  "bainite": {
+    "confidence": "high",
+    "note": "BAY-nite",
+    "ph": "B EY1 N AY2 T"
+  },
+  "bakhoor": {
+    "confidence": "medium",
+    "note": "bah-KHOOR, the incense",
+    "ph": "B AA0 K UH1 R"
+  },
+  "banshee": {
+    "confidence": "high",
+    "note": "noun: BAN-shee",
+    "ph": "B AE1 N SH IY0"
+  },
+  "barratry": {
+    "confidence": "high",
+    "note": "BAR-uh-tree",
+    "ph": "B AE1 R AH0 T R IY0"
+  },
+  "barrique": {
+    "confidence": "high",
+    "note": "bah-REEK, the barrel",
+    "ph": "B AA0 R IY1 K"
+  },
+  "bathos": {
+    "confidence": "high",
+    "note": "BAY-thos",
+    "ph": "B EY1 TH AA0 S"
+  },
+  "baton": {
+    "confidence": "high",
+    "note": "noun: buh-TON. Rule would have said BAT-on",
+    "ph": "B AH0 T AA1 N"
+  },
+  "behemoth": {
+    "confidence": "high",
+    "note": "noun: buh-HEE-muth",
+    "ph": "B AH0 HH IY1 M AH0 TH"
+  },
+  "berceuse": {
+    "confidence": "high",
+    "note": "bair-SOOZ",
+    "ph": "B EH0 R S UW1 Z"
+  },
+  "bigarade": {
+    "confidence": "high",
+    "note": "big-uh-RAHD",
+    "ph": "B IH2 G AH0 R AA1 D"
+  },
+  "bilabial": {
+    "confidence": "high",
+    "note": "by-LAY-bee-ul",
+    "ph": "B AY0 L EY1 B IY0 AH0 L"
+  },
+  "binaural": {
+    "confidence": "medium",
+    "note": "bin-AW-rul; by-NAW-rul also heard",
+    "ph": "B IH0 N AO1 R AH0 L"
+  },
+  "binodal": {
+    "confidence": "high",
+    "note": "by-NOH-dul",
+    "ph": "B AY0 N OW1 D AH0 L"
+  },
+  "birefringence": {
+    "confidence": "high",
+    "note": "by-ruh-FRIN-jens",
+    "ph": "B AY2 R AH0 F R IH1 N JH AH0 N S"
+  },
+  "bistre": {
+    "confidence": "high",
+    "note": "BIS-ter, the pigment",
+    "ph": "B IH1 S T ER0"
+  },
+  "bitrate": {
+    "confidence": "high",
+    "note": "BIT-rate; was read as 'betrayed'",
+    "ph": "B IH1 T R EY2 T"
+  },
+  "bokeh": {
+    "confidence": "high",
+    "note": "BOH-kay",
+    "ph": "B OW1 K EY0"
+  },
+  "boucle": {
+    "confidence": "medium",
+    "note": "boo-KLAY; the looped yarn. Not 'buckle', not 'BOO-kul'",
+    "ph": "B UW0 K L EY1"
+  },
+  "bourree": {
+    "confidence": "high",
+    "note": "boo-RAY, the dance",
+    "ph": "B UH0 R EY1"
+  },
+  "bract": {
+    "confidence": "high",
+    "note": "BRAKT",
+    "ph": "B R AE1 K T"
+  },
+  "brioche": {
+    "confidence": "medium",
+    "note": "noun: bree-OHSH. BREE-ohsh is also heard",
+    "ph": "B R IY2 OW1 SH"
+  },
+  "brunaille": {
+    "confidence": "medium",
+    "note": "broo-NY",
+    "ph": "B R UW0 N AY1"
+  },
+  "buffet": {
+    "confidence": "high",
+    "note": "noun: buh-FAY, the meal. BUFF-it is the verb meaning to strike - opposite of the rule",
+    "ph": "B AH0 F EY1"
+  },
+  "buffeting": {
+    "confidence": "high",
+    "note": "noun: BUFF-it-ing, from the verb to strike",
+    "ph": "B AH1 F AH0 T IH0 NG"
+  },
+  "byssus": {
+    "confidence": "high",
+    "note": "BIS-us; not 'business'",
+    "ph": "B IH1 S AH0 S"
+  },
+  "cache": {
+    "confidence": "high",
+    "note": "noun: cash. CMUdict's other reading is cachet, a different word",
+    "ph": "K AE1 SH"
+  },
+  "camaieu": {
+    "confidence": "medium",
+    "note": "kam-eye-YUH",
+    "ph": "K AE2 M AY0 UW1"
+  },
+  "careenage": {
+    "confidence": "high",
+    "note": "kuh-REE-nij",
+    "ph": "K AH0 R IY1 N IH0 JH"
+  },
+  "caryatid": {
+    "confidence": "high",
+    "note": "kar-ee-AT-id",
+    "ph": "K AE2 R IY0 AE1 T IH0 D"
+  },
+  "casuistry": {
+    "confidence": "high",
+    "note": "KAZH-oo-is-tree",
+    "ph": "K AE1 ZH UW0 IH0 S T R IY0"
+  },
+  "caturra": {
+    "confidence": "medium",
+    "note": "kuh-TOO-ruh, the coffee varietal",
+    "ph": "K AH0 T UH1 R AH0"
+  },
+  "cautery": {
+    "confidence": "high",
+    "note": "KAW-tuh-ree; not 'coterie'",
+    "ph": "K AO1 T ER0 IY0"
+  },
+  "cezve": {
+    "confidence": "medium",
+    "note": "JEZ-veh, the Turkish coffee pot",
+    "ph": "JH EH1 Z V EH0"
+  },
+  "chalumeau": {
+    "confidence": "high",
+    "note": "shal-uh-MOH",
+    "ph": "SH AE2 L AH0 M OW1"
+  },
+  "champaca": {
+    "confidence": "medium",
+    "note": "CHAM-puh-kuh",
+    "ph": "CH AE1 M P AH0 K AH0"
+  },
+  "chancre": {
+    "confidence": "high",
+    "note": "SHANG-ker, soft ch",
+    "ph": "SH AE1 NG K ER0"
+  },
+  "chelicerae": {
+    "confidence": "high",
+    "note": "kuh-LIS-uh-ree, hard c",
+    "ph": "K AH0 L IH1 S ER0 IY2"
+  },
+  "chenille": {
+    "confidence": "high",
+    "note": "shuh-NEEL",
+    "ph": "SH AH0 N IY1 L"
+  },
+  "chinois": {
+    "confidence": "high",
+    "note": "sheen-WAH, the strainer",
+    "ph": "SH IY0 N W AA1"
+  },
+  "chitin": {
+    "confidence": "high",
+    "note": "KY-tin; not 'cheating'",
+    "ph": "K AY1 T AH0 N"
+  },
+  "chocks": {
+    "confidence": "high",
+    "note": "CHOKS",
+    "ph": "CH AA1 K S"
+  },
+  "choux": {
+    "confidence": "high",
+    "note": "SHOO, the pastry. No final s",
+    "ph": "SH UW1"
+  },
+  "ciabatta": {
+    "confidence": "high",
+    "note": "chuh-BAH-tuh",
+    "ph": "CH AH0 B AA1 T AH0"
+  },
+  "cilium": {
+    "confidence": "high",
+    "note": "SIL-ee-um; not 'psyllium'",
+    "ph": "S IH1 L IY0 AH0 M"
+  },
+  "cinquain": {
+    "confidence": "high",
+    "note": "SIN-kane",
+    "ph": "S IH1 NG K EY2 N"
+  },
+  "cistus": {
+    "confidence": "high",
+    "note": "SIS-tus; not 'sisters'",
+    "ph": "S IH1 S T AH0 S"
+  },
+  "claque": {
+    "confidence": "high",
+    "note": "KLAK; not 'clock'",
+    "ph": "K L AE1 K"
+  },
+  "clerihew": {
+    "confidence": "high",
+    "note": "KLER-ih-hyoo",
+    "ph": "K L EH1 R AH0 HH Y UW2"
+  },
+  "cliometrics": {
+    "confidence": "high",
+    "note": "kly-oh-MET-riks",
+    "ph": "K L AY2 OW0 M EH1 T R IH0 K S"
+  },
+  "cloisonne": {
+    "confidence": "high",
+    "note": "kloy-zuh-NAY",
+    "ph": "K L OY2 Z AH0 N EY1"
+  },
+  "cnidocyte": {
+    "confidence": "high",
+    "note": "NY-duh-site; the c is silent",
+    "ph": "N AY1 D AH0 S AY2 T"
+  },
+  "codetta": {
+    "confidence": "high",
+    "note": "koh-DET-uh",
+    "ph": "K OW0 D EH1 T AH0"
+  },
+  "col": {
+    "confidence": "high",
+    "note": "KOL, the mountain pass",
+    "ph": "K AA1 L"
+  },
+  "collenchyma": {
+    "confidence": "high",
+    "note": "kuh-LENG-kih-muh",
+    "ph": "K AH0 L EH1 NG K AH0 M AH0"
+  },
+  "combine": {
+    "confidence": "high",
+    "note": "verb: kum-BINE",
+    "ph": "K AH0 M B AY1 N"
+  },
+  "communique": {
+    "confidence": "high",
+    "note": "noun: kuh-MYOO-nuh-kay",
+    "ph": "K AH0 M Y UW1 N AH0 K EY2"
+  },
+  "compact": {
+    "confidence": "high",
+    "note": "adjective: kum-PAKT. KOM-pakt is the noun",
+    "ph": "K AH0 M P AE1 K T"
+  },
+  "compound": {
+    "confidence": "high",
+    "note": "verb: kum-POUND",
+    "ph": "K AH0 M P AW1 N D"
+  },
+  "compress": {
+    "confidence": "high",
+    "note": "verb: kum-PRESS",
+    "ph": "K AH0 M P R EH1 S"
+  },
+  "concave": {
+    "confidence": "high",
+    "note": "adjective: kon-KAYV",
+    "ph": "K AA0 N K EY1 V"
+  },
+  "concrete": {
+    "confidence": "high",
+    "note": "noun: KON-kreet",
+    "ph": "K AA1 N K R IY0 T"
+  },
+  "conjugate": {
+    "confidence": "high",
+    "note": "verb: KON-juh-gate",
+    "ph": "K AA1 N JH AH0 G EY2 T"
+  },
+  "console": {
+    "confidence": "high",
+    "note": "verb: kun-SOLE",
+    "ph": "K AH0 N S OW1 L"
+  },
+  "content": {
+    "confidence": "high",
+    "note": "adjective: kun-TENT, satisfied. KON-tent is the noun",
+    "ph": "K AH0 N T EH1 N T"
+  },
+  "contest": {
+    "confidence": "high",
+    "note": "noun: KON-test",
+    "ph": "K AA1 N T EH0 S T"
+  },
+  "contrast": {
+    "confidence": "high",
+    "note": "verb: kun-TRAST",
+    "ph": "K AH0 N T R AE1 S T"
+  },
+  "converse": {
+    "confidence": "high",
+    "note": "verb: kun-VERSE",
+    "ph": "K AH0 N V ER1 S"
+  },
+  "convex": {
+    "confidence": "high",
+    "note": "adjective: kon-VEKS",
+    "ph": "K AH0 N V EH1 K S"
+  },
+  "convict": {
+    "confidence": "high",
+    "note": "verb: kun-VIKT",
+    "ph": "K AH0 N V IH1 K T"
+  },
+  "cooperation": {
+    "confidence": "high",
+    "note": "noun: koh-op-uh-RAY-shun",
+    "ph": "K OW0 AA2 P ER0 EY1 SH AH0 N"
+  },
+  "corm": {
+    "confidence": "high",
+    "note": "KORM; was read as 'quorum'",
+    "ph": "K AO1 R M"
+  },
+  "cornice": {
+    "confidence": "high",
+    "note": "KOR-nis",
+    "ph": "K AO1 R N IH0 S"
+  },
+  "corymb": {
+    "confidence": "high",
+    "note": "KOR-im",
+    "ph": "K AO1 R IH0 M"
+  },
+  "costume": {
+    "confidence": "high",
+    "note": "noun: KOS-toom",
+    "ph": "K AA1 S T UW0 M"
+  },
+  "cotyledon": {
+    "confidence": "high",
+    "note": "kot-uh-LEE-dun; not 'cotillion'",
+    "ph": "K AA2 T AH0 L IY1 D AH0 N"
+  },
+  "coulis": {
+    "confidence": "high",
+    "note": "koo-LEE, final s silent",
+    "ph": "K UW0 L IY1"
+  },
+  "coumarin": {
+    "confidence": "high",
+    "note": "KOO-muh-rin",
+    "ph": "K UW1 M ER0 IH0 N"
+  },
+  "couvade": {
+    "confidence": "high",
+    "note": "koo-VAHD",
+    "ph": "K UW0 V AA1 D"
+  },
+  "couverture": {
+    "confidence": "medium",
+    "note": "koo-ver-TOOR; the chocolate. Final syllable is -toor, not -ture",
+    "ph": "K UW2 V ER0 T UH1 R"
+  },
+  "craquelure": {
+    "confidence": "high",
+    "note": "KRAK-uh-loor",
+    "ph": "K R AE1 K AH0 L UH2 R"
+  },
+  "cretonne": {
+    "confidence": "high",
+    "note": "kri-TAHN",
+    "ph": "K R IH0 T AA1 N"
+  },
+  "cuirassier": {
+    "confidence": "medium",
+    "note": "kwir-uh-SEER",
+    "ph": "K W IH2 R AH0 S IH1 R"
+  },
+  "curie": {
+    "confidence": "medium",
+    "note": "noun: KYOO-ree, the unit",
+    "ph": "K Y UH1 R IY0"
+  },
+  "curtilage": {
+    "confidence": "high",
+    "note": "KUR-tuh-lij",
+    "ph": "K ER1 T AH0 L IH0 JH"
+  },
+  "cuvee": {
+    "confidence": "high",
+    "note": "koo-VAY",
+    "ph": "K UW0 V EY1"
+  },
+  "cyma": {
+    "confidence": "high",
+    "note": "SY-muh",
+    "ph": "S AY1 M AH0"
+  },
+  "danseur": {
+    "confidence": "high",
+    "note": "dahn-SUR",
+    "ph": "D AA0 N S ER1"
+  },
+  "dasein": {
+    "confidence": "medium",
+    "note": "DAH-zine, Heidegger's term",
+    "ph": "D AA1 Z AY2 N"
+  },
+  "debone": {
+    "confidence": "high",
+    "note": "dee-BONE",
+    "ph": "D IY0 B OW1 N"
+  },
+  "debut": {
+    "confidence": "high",
+    "note": "noun: day-BYOO. A noun taking LATER stress - the rule would have said DAY-byoo",
+    "ph": "D EY0 B Y UW1"
+  },
+  "decade": {
+    "confidence": "high",
+    "note": "noun: DEK-ade",
+    "ph": "D EH1 K EY0 D"
+  },
+  "deesser": {
+    "confidence": "high",
+    "note": "dee-ESS-er, the audio tool",
+    "ph": "D IY1 EH1 S ER0"
+  },
+  "defect": {
+    "confidence": "high",
+    "note": "noun: DEE-fekt",
+    "ph": "D IY1 F EH0 K T"
+  },
+  "dehiscence": {
+    "confidence": "high",
+    "note": "dih-HIS-uns",
+    "ph": "D IH0 HH IH1 S AH0 N S"
+  },
+  "dehum": {
+    "confidence": "medium",
+    "note": "dee-HUM, short for dehumidify",
+    "ph": "D IY0 HH AH1 M"
+  },
+  "deixis": {
+    "confidence": "high",
+    "note": "DIKE-sis",
+    "ph": "D AY1 K S IH0 S"
+  },
+  "depouiller": {
+    "confidence": "medium",
+    "note": "day-poo-YAY",
+    "ph": "D EY2 P UW0 Y EY1"
+  },
+  "derecho": {
+    "confidence": "high",
+    "note": "duh-RAY-choh",
+    "ph": "D ER0 EY1 CH OW0"
+  },
+  "descry": {
+    "confidence": "high",
+    "note": "dih-SKRY; not 'describe'",
+    "ph": "D IH0 S K R AY1"
+  },
+  "desert": {
+    "confidence": "high",
+    "note": "noun: DEZ-ert, the arid place",
+    "ph": "D EH1 Z ER0 T"
+  },
+  "detent": {
+    "confidence": "high",
+    "note": "dee-TENT, the catch mechanism",
+    "ph": "D IY0 T EH1 N T"
+  },
+  "detour": {
+    "confidence": "high",
+    "note": "noun: DEE-toor",
+    "ph": "D IY1 T UH0 R"
+  },
+  "detritus": {
+    "confidence": "high",
+    "note": "noun: di-TRY-tus",
+    "ph": "D IH0 T R AY1 T AH0 S"
+  },
+  "dhikr": {
+    "confidence": "medium",
+    "note": "ZIK-r, the Islamic practice",
+    "ph": "Z IH1 K ER0"
+  },
+  "digest": {
+    "confidence": "high",
+    "note": "verb: dye-JEST",
+    "ph": "D AY0 JH EH1 S T"
+  },
+  "dirigiste": {
+    "confidence": "medium",
+    "note": "dee-ree-ZHEEST, French origin",
+    "ph": "D IH2 R IY0 ZH IY1 S T"
+  },
+  "discharge": {
+    "confidence": "high",
+    "note": "noun: DIS-charj",
+    "ph": "D IH1 S CH AA2 R JH"
+  },
+  "discount": {
+    "confidence": "high",
+    "note": "noun: DIS-kount",
+    "ph": "D IH1 S K AW0 N T"
+  },
+  "disparate": {
+    "confidence": "high",
+    "note": "adjective: DIS-puh-rit",
+    "ph": "D IH1 S P ER0 IH0 T"
+  },
+  "dispatcher": {
+    "confidence": "high",
+    "note": "noun: dis-PATCH-er",
+    "ph": "D IH0 S P AE1 CH ER0"
+  },
+  "distich": {
+    "confidence": "high",
+    "note": "DIS-tik; not 'the Stig'",
+    "ph": "D IH1 S T IH0 K"
+  },
+  "djinn": {
+    "confidence": "high",
+    "note": "JIN",
+    "ph": "JH IH1 N"
+  },
+  "dollyeochagi": {
+    "confidence": "medium",
+    "note": "dol-yuh-CHA-gee, taekwondo kick",
+    "ph": "D AA2 L Y AH0 CH AA1 G IY0"
+  },
+  "dop": {
+    "confidence": "high",
+    "note": "DOP",
+    "ph": "D AA1 P"
+  },
+  "dossier": {
+    "confidence": "medium",
+    "note": "noun: DOSS-ee-ay",
+    "ph": "D AO2 S IY0 EY1"
+  },
+  "duopoly": {
+    "confidence": "high",
+    "note": "noun: doo-OP-uh-lee",
+    "ph": "D Y UW0 AA1 P AH0 L IY0"
+  },
+  "duxelles": {
+    "confidence": "high",
+    "note": "dook-SEL",
+    "ph": "D UW0 K S EH1 L"
+  },
+  "ebauche": {
+    "confidence": "high",
+    "note": "ay-BOHSH",
+    "ph": "EY0 B OW1 SH"
+  },
+  "echinus": {
+    "confidence": "high",
+    "note": "ih-KY-nus",
+    "ph": "IH0 K AY1 N AH0 S"
+  },
+  "eisegesis": {
+    "confidence": "high",
+    "note": "eye-suh-JEE-sis",
+    "ph": "AY2 S AH0 JH IY1 S IH0 S"
+  },
+  "eiswein": {
+    "confidence": "high",
+    "note": "ICE-vine, German w",
+    "ph": "AY1 S V AY2 N"
+  },
+  "ekkyklema": {
+    "confidence": "medium",
+    "note": "ek-ee-KLEE-muh",
+    "ph": "EH2 K IH0 K L IY1 M AH0"
+  },
+  "electrophoresis": {
+    "confidence": "medium",
+    "note": "noun: i-lek-tro-fuh-REE-sis",
+    "ph": "IH0 L EH2 K T R OW0 F ER0 IY1 S IH0 S"
+  },
+  "elemi": {
+    "confidence": "high",
+    "note": "EL-uh-mee",
+    "ph": "EH1 L AH0 M IY0"
+  },
+  "embusen": {
+    "confidence": "medium",
+    "note": "em-BOO-zen, karate term",
+    "ph": "EH0 M B UW1 Z EH0 N"
+  },
+  "emergence": {
+    "confidence": "high",
+    "note": "noun: i-MER-jens. EE-mergence is wrong",
+    "ph": "IH0 M ER1 JH AH0 N S"
+  },
+  "emergency": {
+    "confidence": "high",
+    "note": "noun: i-MER-jen-see. EE-mergency is wrong",
+    "ph": "IH0 M ER1 JH AH0 N S IY0"
+  },
+  "empi": {
+    "confidence": "medium",
+    "note": "EM-pee, the kata",
+    "ph": "EH1 M P IY0"
+  },
+  "enantiomer": {
+    "confidence": "high",
+    "note": "ih-NAN-tee-uh-mer",
+    "ph": "IH0 N AE1 N T IY0 AH0 M ER0"
+  },
+  "enceinte": {
+    "confidence": "medium",
+    "note": "ahn-SANT",
+    "ph": "AA0 N S AE1 N T"
+  },
+  "enfeoff": {
+    "confidence": "medium",
+    "note": "en-FEF, the feudal term",
+    "ph": "EH0 N F EH1 F"
+  },
+  "enthymeme": {
+    "confidence": "high",
+    "note": "EN-thuh-meem",
+    "ph": "EH1 N TH AH0 M IY2 M"
+  },
+  "epode": {
+    "confidence": "high",
+    "note": "EP-ode",
+    "ph": "EH1 P OW2 D"
+  },
+  "equinus": {
+    "confidence": "high",
+    "note": "ih-KWY-nus; not 'Aquinas'",
+    "ph": "IH0 K W AY1 N AH0 S"
+  },
+  "erode": {
+    "confidence": "high",
+    "note": "verb: ih-ROHD",
+    "ph": "IH0 R OW1 D"
+  },
+  "erotema": {
+    "confidence": "medium",
+    "note": "er-uh-TEE-muh",
+    "ph": "EH2 R AH0 T IY1 M AH0"
+  },
+  "erupt": {
+    "confidence": "high",
+    "note": "verb: ih-RUPT",
+    "ph": "IH0 R AH1 P T"
+  },
+  "escrow": {
+    "confidence": "high",
+    "note": "noun: ES-kroh",
+    "ph": "EH1 S K R OW0"
+  },
+  "escutcheon": {
+    "confidence": "high",
+    "note": "ih-SKUCH-un",
+    "ph": "IH0 S K AH1 CH AH0 N"
+  },
+  "essay": {
+    "confidence": "high",
+    "note": "noun: ES-ay",
+    "ph": "EH1 S EY2"
+  },
+  "euryhaline": {
+    "confidence": "high",
+    "note": "yoor-ee-HAY-line",
+    "ph": "Y UH2 R IY0 HH EY1 L AY2 N"
+  },
+  "excerpt": {
+    "confidence": "high",
+    "note": "noun: EK-serpt",
+    "ph": "EH1 K S ER0 P T"
+  },
+  "excess": {
+    "confidence": "high",
+    "note": "noun: EK-sess",
+    "ph": "EH1 K S EH2 S"
+  },
+  "excise": {
+    "confidence": "high",
+    "note": "noun: EK-size, the tax",
+    "ph": "EH1 K S AY0 Z"
+  },
+  "exploit": {
+    "confidence": "high",
+    "note": "noun: EKS-ploit",
+    "ph": "EH1 K S P L OY2 T"
+  },
+  "exurb": {
+    "confidence": "high",
+    "note": "EKS-urb; not 'excerpts'",
+    "ph": "EH1 K S ER2 B"
+  },
+  "failli": {
+    "confidence": "medium",
+    "note": "fah-YEE, the ballet step",
+    "ph": "F AA0 Y IY1"
+  },
+  "farruca": {
+    "confidence": "medium",
+    "note": "fah-ROO-kah",
+    "ph": "F AA0 R UW1 K AH0"
+  },
+  "ferment": {
+    "confidence": "high",
+    "note": "verb: fer-MENT",
+    "ph": "F ER0 M EH1 N T"
+  },
+  "fertile": {
+    "confidence": "high",
+    "note": "adjective: FUR-tl (US)",
+    "ph": "F ER1 T AH0 L"
+  },
+  "finial": {
+    "confidence": "high",
+    "note": "FIN-ee-ul",
+    "ph": "F IH1 N IY0 AH0 L"
+  },
+  "fiqh": {
+    "confidence": "medium",
+    "note": "FIK, Islamic jurisprudence",
+    "ph": "F IH1 K"
+  },
+  "foehn": {
+    "confidence": "medium",
+    "note": "FURN, the wind; also FAYN",
+    "ph": "F ER1 N"
+  },
+  "forearm": {
+    "confidence": "high",
+    "note": "noun: FOR-arm",
+    "ph": "F AO1 R AA2 R M"
+  },
+  "formidable": {
+    "confidence": "high",
+    "note": "adjective: FOR-mid-uh-bl",
+    "ph": "F AO1 R M AH0 D AH0 B AH0 L"
+  },
+  "fornix": {
+    "confidence": "high",
+    "note": "FOR-niks",
+    "ph": "F AO1 R N IH0 K S"
+  },
+  "frit": {
+    "confidence": "high",
+    "note": "FRIT",
+    "ph": "F R IH1 T"
+  },
+  "frottage": {
+    "confidence": "high",
+    "note": "fruh-TAHZH",
+    "ph": "F R AH0 T AA1 ZH"
+  },
+  "furl": {
+    "confidence": "high",
+    "note": "FURL; not 'furrow'",
+    "ph": "F ER1 L"
+  },
+  "futtock": {
+    "confidence": "high",
+    "note": "FUT-uk",
+    "ph": "F AH1 T AH0 K"
+  },
+  "gaiwan": {
+    "confidence": "medium",
+    "note": "GY-wahn, the tea vessel",
+    "ph": "G AY1 W AA0 N"
+  },
+  "gamete": {
+    "confidence": "high",
+    "note": "noun: GAM-eet",
+    "ph": "G AE1 M IY0 T"
+  },
+  "gastrique": {
+    "confidence": "high",
+    "note": "gas-TREEK",
+    "ph": "G AE0 S T R IY1 K"
+  },
+  "gerund": {
+    "confidence": "high",
+    "note": "JER-und",
+    "ph": "JH EH1 R AH0 N D"
+  },
+  "glissade": {
+    "confidence": "high",
+    "note": "glih-SAHD",
+    "ph": "G L IH0 S AA1 D"
+  },
+  "gondola": {
+    "confidence": "high",
+    "note": "noun: GON-duh-luh",
+    "ph": "G AA1 N D AH0 L AH0"
+  },
+  "grandiose": {
+    "confidence": "high",
+    "note": "adjective: GRAN-dee-ohs",
+    "ph": "G R AE1 N D IY0 OW2 S"
+  },
+  "graupel": {
+    "confidence": "high",
+    "note": "GROW-pul",
+    "ph": "G R AW1 P AH0 L"
+  },
+  "greenschist": {
+    "confidence": "high",
+    "note": "GREEN-shist",
+    "ph": "G R IY1 N SH IH0 S T"
+  },
+  "greywacke": {
+    "confidence": "high",
+    "note": "GRAY-wak-ee",
+    "ph": "G R EY1 W AE2 K IY0"
+  },
+  "grisaille": {
+    "confidence": "high",
+    "note": "gri-ZY",
+    "ph": "G R IH0 Z AY1"
+  },
+  "guipure": {
+    "confidence": "medium",
+    "note": "gi-PYOOR",
+    "ph": "G IH0 P Y UH1 R"
+  },
+  "gurjun": {
+    "confidence": "medium",
+    "note": "GUR-jun",
+    "ph": "G ER1 JH AH0 N"
+  },
+  "guttae": {
+    "confidence": "high",
+    "note": "GUT-ee",
+    "ph": "G AH1 T IY0"
+  },
+  "gyokuro": {
+    "confidence": "medium",
+    "note": "gyoh-KOO-roh, the tea",
+    "ph": "G Y OW0 K UH1 R OW0"
+  },
+  "gyre": {
+    "confidence": "high",
+    "note": "JYRE",
+    "ph": "JH AY1 R"
+  },
+  "haecceity": {
+    "confidence": "medium",
+    "note": "hek-SEE-ih-tee",
+    "ph": "HH EH0 K S IY1 AH0 T IY0"
+  },
+  "halophyte": {
+    "confidence": "high",
+    "note": "HAL-uh-fite",
+    "ph": "HH AE1 L AH0 F AY2 T"
+  },
+  "haustellate": {
+    "confidence": "medium",
+    "note": "HAW-stuh-late",
+    "ph": "HH AO1 S T AH0 L EY2 T"
+  },
+  "haustorium": {
+    "confidence": "high",
+    "note": "haw-STOR-ee-um",
+    "ph": "HH AO0 S T AO1 R IY0 AH0 M"
+  },
+  "hedione": {
+    "confidence": "medium",
+    "note": "hed-ee-OWN, the aroma chemical",
+    "ph": "HH EH2 D IY0 OW1 N"
+  },
+  "hemistich": {
+    "confidence": "high",
+    "note": "HEM-ih-stik",
+    "ph": "HH EH1 M IH0 S T IH0 K"
+  },
+  "hipped": {
+    "confidence": "high",
+    "note": "HIPT, as in hipped roof",
+    "ph": "HH IH1 P T"
+  },
+  "hocket": {
+    "confidence": "high",
+    "note": "HOK-it",
+    "ph": "HH AA1 K AH0 T"
+  },
+  "hors": {
+    "confidence": "medium",
+    "note": "from hors d'oeuvre; the H is silent",
+    "ph": "AO1 R"
+  },
+  "hostile": {
+    "confidence": "high",
+    "note": "adjective: HOSS-tl (US)",
+    "ph": "HH AA1 S T AH0 L"
+  },
+  "hybridoma": {
+    "confidence": "high",
+    "note": "hy-brih-DOH-muh",
+    "ph": "HH AY2 B R AH0 D OW1 M AH0"
+  },
+  "hypha": {
+    "confidence": "high",
+    "note": "HY-fuh; not 'Haifa'",
+    "ph": "HH AY1 F AH0"
+  },
+  "ikkyo": {
+    "confidence": "medium",
+    "note": "EE-kyoh, the aikido technique",
+    "ph": "IY1 K Y OW0"
+  },
+  "implant": {
+    "confidence": "high",
+    "note": "noun: IM-plant",
+    "ph": "IH1 M P L AE2 N T"
+  },
+  "import": {
+    "confidence": "high",
+    "note": "verb: im-PORT",
+    "ph": "IH0 M P AO1 R T"
+  },
+  "imprint": {
+    "confidence": "high",
+    "note": "verb: im-PRINT",
+    "ph": "IH0 M P R IH1 N T"
+  },
+  "improvise": {
+    "confidence": "high",
+    "note": "verb: IM-pruh-vize",
+    "ph": "IH1 M P R AH0 V AY2 Z"
+  },
+  "impulse": {
+    "confidence": "high",
+    "note": "noun: IM-puls",
+    "ph": "IH1 M P AH0 L S"
+  },
+  "inbound": {
+    "confidence": "high",
+    "note": "adjective: IN-bound",
+    "ph": "IH1 N B AW0 N D"
+  },
+  "inchoate": {
+    "confidence": "high",
+    "note": "in-KOH-it; not 'in Kuwait'",
+    "ph": "IH0 N K OW1 AH0 T"
+  },
+  "incline": {
+    "confidence": "high",
+    "note": "noun: IN-kline",
+    "ph": "IH1 N K L AY0 N"
+  },
+  "incuse": {
+    "confidence": "high",
+    "note": "in-KYOOZ",
+    "ph": "IH0 N K Y UW1 Z"
+  },
+  "indehiscent": {
+    "confidence": "high",
+    "note": "in-dih-HIS-unt",
+    "ph": "IH2 N D IH0 HH IH1 S AH0 N T"
+  },
+  "infiltrate": {
+    "confidence": "high",
+    "note": "verb: in-FIL-trate",
+    "ph": "IH0 N F IH1 L T R EY2 T"
+  },
+  "ingenue": {
+    "confidence": "medium",
+    "note": "noun: AN-zhuh-noo, French origin",
+    "ph": "AA1 N JH AH0 N UW2"
+  },
+  "intravenously": {
+    "confidence": "high",
+    "note": "adverb: in-truh-VEE-nus-lee",
+    "ph": "IH0 N T R AH0 V IY1 N AH0 S L IY0"
+  },
+  "ionone": {
+    "confidence": "high",
+    "note": "EYE-uh-nohn",
+    "ph": "AY1 AH0 N OW2 N"
+  },
+  "kamae": {
+    "confidence": "medium",
+    "note": "kah-MY, the stance",
+    "ph": "K AA0 M AY1"
+  },
+  "kanibasami": {
+    "confidence": "medium",
+    "note": "kah-nee-bah-SAH-mee",
+    "ph": "K AA2 N IY0 B AA0 S AA1 M IY0"
+  },
+  "kata": {
+    "confidence": "high",
+    "note": "KAH-tuh",
+    "ph": "K AA1 T AH0"
+  },
+  "keirin": {
+    "confidence": "medium",
+    "note": "KAY-rin, the cycling event",
+    "ph": "K EY1 R IH0 N"
+  },
+  "kilometer": {
+    "confidence": "medium",
+    "note": "noun: kuh-LOM-uh-ter; KIL-o-meter also common",
+    "ph": "K AH0 L AA1 M AH0 T ER0"
+  },
+  "kinetochore": {
+    "confidence": "high",
+    "note": "kih-NET-uh-kor",
+    "ph": "K IH0 N EH1 T AH0 K AO2 R"
+  },
+  "kith": {
+    "confidence": "high",
+    "note": "KITH, as in kith and kin",
+    "ph": "K IH1 TH"
+  },
+  "knurl": {
+    "confidence": "high",
+    "note": "NURL; the k is silent",
+    "ph": "N ER1 L"
+  },
+  "koine": {
+    "confidence": "high",
+    "note": "KOY-nay",
+    "ph": "K OY1 N EY0"
+  },
+  "kommos": {
+    "confidence": "medium",
+    "note": "KOM-os",
+    "ph": "K AA1 M AO0 S"
+  },
+  "kore": {
+    "confidence": "medium",
+    "note": "KOR-ay, the Greek statue",
+    "ph": "K AO1 R EY0"
+  },
+  "kuchipudi": {
+    "confidence": "medium",
+    "note": "koo-chi-POO-dee, the dance",
+    "ph": "K UW2 CH IH0 P UW1 D IY0"
+  },
+  "lahar": {
+    "confidence": "high",
+    "note": "luh-HAR; the volcanic mudflow",
+    "ph": "L AH0 HH AA1 R"
+  },
+  "lasya": {
+    "confidence": "medium",
+    "note": "LAHS-yuh",
+    "ph": "L AA1 S Y AH0"
+  },
+  "lede": {
+    "confidence": "high",
+    "note": "LEED, the opening of a news story",
+    "ph": "L IY1 D"
+  },
+  "legatee": {
+    "confidence": "high",
+    "note": "leg-uh-TEE; not 'legacy'",
+    "ph": "L EH2 G AH0 T IY1"
+  },
+  "lenition": {
+    "confidence": "high",
+    "note": "luh-NISH-un",
+    "ph": "L AH0 N IH1 SH AH0 N"
+  },
+  "liaison": {
+    "confidence": "high",
+    "note": "noun: lee-AY-zon",
+    "ph": "L IY0 EY1 Z AA2 N"
+  },
+  "liberalization": {
+    "confidence": "high",
+    "note": "noun",
+    "ph": "L IH2 B AH0 R AH0 L IH0 Z EY1 SH AH0 N"
+  },
+  "linalool": {
+    "confidence": "high",
+    "note": "lih-NAL-oh-ol",
+    "ph": "L IH0 N AE1 L OW0 AO2 L"
+  },
+  "litigious": {
+    "confidence": "high",
+    "note": "adjective: li-TIJ-us",
+    "ph": "L IH0 T IH1 JH AH0 S"
+  },
+  "litotes": {
+    "confidence": "high",
+    "note": "LY-tuh-teez",
+    "ph": "L AY1 T AH0 T IY2 Z"
+  },
+  "lungo": {
+    "confidence": "high",
+    "note": "LOONG-go, the coffee",
+    "ph": "L UH1 NG G OW0"
+  },
+  "lyse": {
+    "confidence": "high",
+    "note": "LYZE, rhymes with rise",
+    "ph": "L AY1 Z"
+  },
+  "maegeri": {
+    "confidence": "medium",
+    "note": "my-GEH-ree, the front kick",
+    "ph": "M AY0 G EH1 R IY0"
+  },
+  "malicia": {
+    "confidence": "medium",
+    "note": "mah-LEE-see-ah, capoeira term",
+    "ph": "M AA0 L IY1 S IY0 AH0"
+  },
+  "margravate": {
+    "confidence": "medium",
+    "note": "MAR-gruh-vate",
+    "ph": "M AA1 R G R AH0 V EY2 T"
+  },
+  "marl": {
+    "confidence": "high",
+    "note": "MARL, the soil; not 'moral'",
+    "ph": "M AA1 R L"
+  },
+  "massif": {
+    "confidence": "high",
+    "note": "noun: ma-SEEF. Rule would have said MASS-if",
+    "ph": "M AE0 S IY1 F"
+  },
+  "mattock": {
+    "confidence": "high",
+    "note": "MAT-uk",
+    "ph": "M AE1 T AH0 K"
+  },
+  "mechane": {
+    "confidence": "medium",
+    "note": "muh-KAH-nay, the Greek stage crane",
+    "ph": "M AH0 K AA1 N EY0"
+  },
+  "meialua": {
+    "confidence": "medium",
+    "note": "may-uh-LOO-uh, capoeira kick",
+    "ph": "M EY2 AH0 L UW1 AH0"
+  },
+  "meiofauna": {
+    "confidence": "high",
+    "note": "MY-oh-faw-nuh",
+    "ph": "M AY1 OW0 F AO2 N AH0"
+  },
+  "mezzala": {
+    "confidence": "medium",
+    "note": "met-SAH-lah, the football role",
+    "ph": "M EH0 T S AA1 L AH0"
+  },
+  "monomial": {
+    "confidence": "high",
+    "note": "muh-NOH-mee-ul",
+    "ph": "M AH0 N OW1 M IY0 AH0 L"
+  },
+  "mystagogy": {
+    "confidence": "medium",
+    "note": "MIS-tuh-goh-jee",
+    "ph": "M IH1 S T AH0 G OW2 JH IY0"
+  },
+  "naan": {
+    "confidence": "high",
+    "note": "NAHN",
+    "ph": "N AA1 N"
+  },
+  "nacre": {
+    "confidence": "high",
+    "note": "NAY-ker, mother-of-pearl",
+    "ph": "N EY1 K ER0"
+  },
+  "nankeen": {
+    "confidence": "high",
+    "note": "nan-KEEN",
+    "ph": "N AE0 N K IY1 N"
+  },
+  "naos": {
+    "confidence": "medium",
+    "note": "NAY-os",
+    "ph": "N EY1 AA0 S"
+  },
+  "nationalization": {
+    "confidence": "high",
+    "note": "noun",
+    "ph": "N AE2 SH AH0 N AH0 L AH0 Z EY1 SH AH0 N"
+  },
+  "nerikomi": {
+    "confidence": "medium",
+    "note": "neh-ree-KOH-mee, the ceramic technique",
+    "ph": "N EH2 R IY0 K OW1 M IY0"
+  },
+  "neroli": {
+    "confidence": "high",
+    "note": "NER-uh-lee",
+    "ph": "N EH1 R AH0 L IY0"
+  },
+  "neuropathy": {
+    "confidence": "high",
+    "note": "noun: nuh-ROP-uh-thee",
+    "ph": "N UH2 R AO1 P AH0 TH IY0"
+  },
+  "notan": {
+    "confidence": "medium",
+    "note": "NOH-tahn",
+    "ph": "N OW1 T AA0 N"
+  },
+  "numen": {
+    "confidence": "high",
+    "note": "NOO-men; not 'Newman'",
+    "ph": "N UW1 M EH0 N"
+  },
+  "nunciature": {
+    "confidence": "medium",
+    "note": "NUN-shuh-choor",
+    "ph": "N AH1 N SH AH0 CH UH2 R"
+  },
+  "oakum": {
+    "confidence": "high",
+    "note": "OH-kum",
+    "ph": "OW1 K AH0 M"
+  },
+  "object": {
+    "confidence": "high",
+    "note": "verb: ub-JEKT",
+    "ph": "AH0 B JH EH1 K T"
+  },
+  "oblate": {
+    "confidence": "high",
+    "note": "adjective: OB-late",
+    "ph": "AA1 B L EY0 T"
+  },
+  "obsolete": {
+    "confidence": "high",
+    "note": "adjective: ob-suh-LEET",
+    "ph": "AA2 B S AH0 L IY1 T"
+  },
+  "odissi": {
+    "confidence": "medium",
+    "note": "oh-DEE-see, the dance",
+    "ph": "OW0 D IY1 S IY0"
+  },
+  "oenology": {
+    "confidence": "high",
+    "note": "ee-NOL-uh-jee",
+    "ph": "IY0 N AA1 L AH0 JH IY0"
+  },
+  "offset": {
+    "confidence": "high",
+    "note": "verb: off-SET",
+    "ph": "AO0 F S EH1 T"
+  },
+  "ogee": {
+    "confidence": "high",
+    "note": "OH-jee",
+    "ph": "OW1 JH IY0"
+  },
+  "oinochoe": {
+    "confidence": "medium",
+    "note": "oy-NOK-oh-ee",
+    "ph": "OY0 N AA1 K OW0 IY0"
+  },
+  "onomatopoeia": {
+    "confidence": "high",
+    "note": "on-uh-mat-uh-PEE-uh",
+    "ph": "AA2 N AH0 M AE2 T AH0 P IY1 AH0"
+  },
+  "ophicleide": {
+    "confidence": "medium",
+    "note": "OF-ih-klide",
+    "ph": "AA1 F IH0 K L AY2 D"
+  },
+  "opsonin": {
+    "confidence": "high",
+    "note": "OP-suh-nin",
+    "ph": "AA1 P S AH0 N IH0 N"
+  },
+  "orgeat": {
+    "confidence": "high",
+    "note": "OR-zhat, the syrup",
+    "ph": "AO1 R ZH AA0 T"
+  },
+  "osphresis": {
+    "confidence": "medium",
+    "note": "os-FREE-sis",
+    "ph": "AA0 S F R IY1 S IH0 S"
+  },
+  "oud": {
+    "confidence": "high",
+    "note": "OOD, the instrument; not 'old'",
+    "ph": "UW1 D"
+  },
+  "ousia": {
+    "confidence": "medium",
+    "note": "OO-see-uh",
+    "ph": "UW1 S IY0 AH0"
+  },
+  "overt": {
+    "confidence": "high",
+    "note": "adjective: oh-VURT",
+    "ph": "OW0 V ER1 T"
+  },
+  "paratope": {
+    "confidence": "high",
+    "note": "PAR-uh-tope; stress on par-, final syllable rhymes with hope, not top",
+    "ph": "P AE1 R AH0 T OW2 P"
+  },
+  "parquetry": {
+    "confidence": "high",
+    "note": "PAR-kih-tree",
+    "ph": "P AA1 R K AH0 T R IY0"
+  },
+  "pawl": {
+    "confidence": "high",
+    "note": "PAWL, the ratchet catch",
+    "ph": "P AO1 L"
+  },
+  "paysanne": {
+    "confidence": "high",
+    "note": "pay-ZAN, the cut",
+    "ph": "P EY0 Z AA1 N"
+  },
+  "pedicellaria": {
+    "confidence": "medium",
+    "note": "ped-ih-suh-LAIR-ee-uh",
+    "ph": "P EH2 D IH0 S AH0 L EH1 R IY0 AH0"
+  },
+  "pedipalp": {
+    "confidence": "high",
+    "note": "PED-ih-palp",
+    "ph": "P EH1 D AH0 P AE2 L P"
+  },
+  "peen": {
+    "confidence": "high",
+    "note": "PEEN, as in ball-peen",
+    "ph": "P IY1 N"
+  },
+  "percale": {
+    "confidence": "high",
+    "note": "per-KAYL",
+    "ph": "P ER0 K EY1 L"
+  },
+  "pergola": {
+    "confidence": "high",
+    "note": "noun: PUR-guh-luh",
+    "ph": "P ER1 G AH0 L AH0"
+  },
+  "pheon": {
+    "confidence": "medium",
+    "note": "FEE-on, the heraldic arrowhead",
+    "ph": "F IY1 AA0 N"
+  },
+  "phloem": {
+    "confidence": "high",
+    "note": "FLOH-em",
+    "ph": "F L OW1 EH0 M"
+  },
+  "phratry": {
+    "confidence": "high",
+    "note": "FRAY-tree",
+    "ph": "F R EY1 T R IY0"
+  },
+  "pileus": {
+    "confidence": "high",
+    "note": "PY-lee-us",
+    "ph": "P AY1 L IY0 AH0 S"
+  },
+  "pilus": {
+    "confidence": "high",
+    "note": "PY-lus",
+    "ph": "P AY1 L AH0 S"
+  },
+  "piste": {
+    "confidence": "high",
+    "note": "PEEST",
+    "ph": "P IY1 S T"
+  },
+  "plainchant": {
+    "confidence": "high",
+    "note": "PLAYN-chant; one word, both halves said plainly",
+    "ph": "P L EY1 N CH AE2 N T"
+  },
+  "plethora": {
+    "confidence": "high",
+    "note": "noun: PLETH-uh-ruh",
+    "ph": "P L EH1 TH ER0 AH0"
+  },
+  "pneumatology": {
+    "confidence": "high",
+    "note": "noo-muh-TOL-uh-jee; silent p, stress on -tol-",
+    "ph": "N UW2 M AH0 T AA1 L AH0 JH IY0"
+  },
+  "poniard": {
+    "confidence": "high",
+    "note": "PON-yerd",
+    "ph": "P AA1 N Y ER0 D"
+  },
+  "predate": {
+    "confidence": "high",
+    "note": "verb: pree-DATE",
+    "ph": "P R IY0 D EY1 T"
+  },
+  "preschool": {
+    "confidence": "high",
+    "note": "noun: PREE-skool",
+    "ph": "P R IY1 S K UW2 L"
+  },
+  "produce": {
+    "confidence": "high",
+    "note": "noun: PRO-doos, the goods",
+    "ph": "P R OW1 D UW0 S"
+  },
+  "project": {
+    "confidence": "high",
+    "note": "noun: PRAH-jekt",
+    "ph": "P R AA1 JH EH0 K T"
+  },
+  "promisee": {
+    "confidence": "high",
+    "note": "prom-ih-SEE, the legal party",
+    "ph": "P R AA2 M AH0 S IY1"
+  },
+  "protean": {
+    "confidence": "medium",
+    "note": "adjective: PRO-tee-un; pro-TEE-un also heard",
+    "ph": "P R OW1 T IY0 AH0 N"
+  },
+  "protest": {
+    "confidence": "high",
+    "note": "verb: pruh-TEST",
+    "ph": "P R AH0 T EH1 S T"
+  },
+  "purl": {
+    "confidence": "high",
+    "note": "PURL, the knitting stitch",
+    "ph": "P ER1 L"
+  },
+  "purport": {
+    "confidence": "high",
+    "note": "verb: per-PORT",
+    "ph": "P ER0 P AO1 R T"
+  },
+  "pycnocline": {
+    "confidence": "high",
+    "note": "PIK-nuh-kline",
+    "ph": "P IH1 K N AH0 K L AY2 N"
+  },
+  "pyroxene": {
+    "confidence": "medium",
+    "note": "noun: PY-rok-seen",
+    "ph": "P AY1 R AA0 K S IY2 N"
+  },
+  "qiyas": {
+    "confidence": "medium",
+    "note": "kee-YAHS",
+    "ph": "K IY0 Y AA1 S"
+  },
+  "quoin": {
+    "confidence": "high",
+    "note": "KOIN; not 'queen'",
+    "ph": "K OY1 N"
+  },
+  "raceme": {
+    "confidence": "high",
+    "note": "ray-SEEM",
+    "ph": "R EY0 S IY1 M"
+  },
+  "racemic": {
+    "confidence": "high",
+    "note": "ray-SEE-mik",
+    "ph": "R EY0 S IY1 M IH0 K"
+  },
+  "rachis": {
+    "confidence": "high",
+    "note": "RAY-kis; not 'rockies'",
+    "ph": "R EY1 K IH0 S"
+  },
+  "rammuay": {
+    "confidence": "medium",
+    "note": "RAHM-moo-ay",
+    "ph": "R AA1 M UW0 AY2"
+  },
+  "ratatouille": {
+    "confidence": "high",
+    "note": "rat-uh-TOO-ee",
+    "ph": "R AE2 T AH0 T UW1 IY0"
+  },
+  "ratchet": {
+    "confidence": "high",
+    "note": "noun: RATCH-et",
+    "ph": "R AE1 CH AH0 T"
+  },
+  "rationalization": {
+    "confidence": "high",
+    "note": "noun",
+    "ph": "R AE2 SH AH0 N AH0 L IH0 Z EY1 SH AH0 N"
+  },
+  "reagent": {
+    "confidence": "high",
+    "note": "noun: ree-AY-jent",
+    "ph": "R IY0 EY1 JH AH0 N T"
+  },
+  "recall": {
+    "confidence": "high",
+    "note": "verb: ri-KAWL",
+    "ph": "R IH0 K AO1 L"
+  },
+  "recap": {
+    "confidence": "high",
+    "note": "noun: REE-kap",
+    "ph": "R IY1 K AE2 P"
+  },
+  "recess": {
+    "confidence": "high",
+    "note": "noun: REE-sess",
+    "ph": "R IY1 S EH0 S"
+  },
+  "redolence": {
+    "confidence": "high",
+    "note": "RED-uh-lens",
+    "ph": "R EH1 D AH0 L AH0 N S"
+  },
+  "redress": {
+    "confidence": "high",
+    "note": "verb: ri-DRESS",
+    "ph": "R IH0 D R EH1 S"
+  },
+  "refill": {
+    "confidence": "high",
+    "note": "verb: ree-FILL",
+    "ph": "R IY0 F IH1 L"
+  },
+  "refinance": {
+    "confidence": "high",
+    "note": "verb: ree-fuh-NANS",
+    "ph": "R IY2 F AH0 N AE1 N S"
+  },
+  "refund": {
+    "confidence": "high",
+    "note": "verb: ri-FUND",
+    "ph": "R IH0 F AH1 N D"
+  },
+  "regenerative": {
+    "confidence": "high",
+    "note": "ri-JEN-er-uh-tiv; stress on -jen-, said correctly inside the phrase 'regenerative cooling' but not alone",
+    "ph": "R IH0 JH EH1 N ER0 AH0 T IH0 V"
+  },
+  "regress": {
+    "confidence": "high",
+    "note": "verb: ri-GRESS",
+    "ph": "R IH0 G R EH1 S"
+  },
+  "reject": {
+    "confidence": "high",
+    "note": "verb: ri-JEKT",
+    "ph": "R IH0 JH EH1 K T"
+  },
+  "rep": {
+    "confidence": "high",
+    "note": "noun: rep. CMUdict's other reading spells out representative",
+    "ph": "R EH1 P"
+  },
+  "resume": {
+    "confidence": "high",
+    "note": "verb: ri-ZOOM. The noun resume/CV is REZ-oo-may - different row if ever added",
+    "ph": "R IY0 Z UW1 M"
+  },
+  "retake": {
+    "confidence": "high",
+    "note": "noun: REE-take",
+    "ph": "R IY1 T EY1 K"
+  },
+  "rille": {
+    "confidence": "high",
+    "note": "RIL, the lunar channel",
+    "ph": "R IH1 L"
+  },
+  "rive": {
+    "confidence": "high",
+    "note": "RIVE, rhymes with drive",
+    "ph": "R AY1 V"
+  },
+  "rooibos": {
+    "confidence": "high",
+    "note": "ROY-bos, the tea",
+    "ph": "R OY1 B AO0 S"
+  },
+  "ruche": {
+    "confidence": "high",
+    "note": "ROOSH; not 'rouge'",
+    "ph": "R UW1 SH"
+  },
+  "saignee": {
+    "confidence": "medium",
+    "note": "sen-YAY, the winemaking method",
+    "ph": "S EH0 N Y EY1"
+  },
+  "sangha": {
+    "confidence": "medium",
+    "note": "SANG-guh; the Buddhist community. The h is not aspirated in English use",
+    "ph": "S AE1 NG G AH0"
+  },
+  "sarcomere": {
+    "confidence": "high",
+    "note": "SAR-kuh-meer; the muscle unit. Final syllable is -meer, not -mere",
+    "ph": "S AA1 R K AH0 M IH2 R"
+  },
+  "scherzo": {
+    "confidence": "high",
+    "note": "SKERT-so",
+    "ph": "S K EH1 R T S OW0"
+  },
+  "segment": {
+    "confidence": "high",
+    "note": "noun: SEG-ment",
+    "ph": "S EH1 G M AH0 N T"
+  },
+  "seiche": {
+    "confidence": "high",
+    "note": "SAYSH, the standing wave",
+    "ph": "S EY1 SH"
+  },
+  "seme": {
+    "confidence": "medium",
+    "note": "SEEM",
+    "ph": "S IY1 M"
+  },
+  "sencha": {
+    "confidence": "high",
+    "note": "SEN-chah",
+    "ph": "S EH1 N CH AH0"
+  },
+  "seoinage": {
+    "confidence": "medium",
+    "note": "say-oy-NAH-gay, the judo throw",
+    "ph": "S EY2 OY0 N AA1 G EY0"
+  },
+  "sepal": {
+    "confidence": "high",
+    "note": "SEE-pul",
+    "ph": "S IY1 P AH0 L"
+  },
+  "serac": {
+    "confidence": "high",
+    "note": "suh-RAHK, the ice pinnacle",
+    "ph": "S AH0 R AA1 K"
+  },
+  "sessile": {
+    "confidence": "high",
+    "note": "SES-il",
+    "ph": "S EH1 S AH0 L"
+  },
+  "setae": {
+    "confidence": "high",
+    "note": "SEE-tee, plural of seta",
+    "ph": "S IY1 T IY0"
+  },
+  "settee": {
+    "confidence": "high",
+    "note": "seh-TEE",
+    "ph": "S EH0 T IY1"
+  },
+  "settlor": {
+    "confidence": "high",
+    "note": "SET-lor, the legal party",
+    "ph": "S EH1 T L ER0"
+  },
+  "shihonage": {
+    "confidence": "medium",
+    "note": "shee-hoh-NAH-gay",
+    "ph": "SH IY2 HH OW0 N AA1 G EY0"
+  },
+  "shinai": {
+    "confidence": "medium",
+    "note": "shih-NY, the bamboo sword",
+    "ph": "SH IH0 N AY1"
+  },
+  "shuto": {
+    "confidence": "medium",
+    "note": "SHOO-toh",
+    "ph": "SH UW1 T OW0"
+  },
+  "simul": {
+    "confidence": "high",
+    "note": "SIM-ul",
+    "ph": "S IH1 M AH0 L"
+  },
+  "sinecure": {
+    "confidence": "high",
+    "note": "SY-nih-kyoor",
+    "ph": "S AY1 N AH0 K Y UH2 R"
+  },
+  "sissonne": {
+    "confidence": "medium",
+    "note": "see-SUN, the ballet jump",
+    "ph": "S IY0 S AH1 N"
+  },
+  "sobriquet": {
+    "confidence": "medium",
+    "note": "noun: SO-bruh-kay",
+    "ph": "S OW1 B R AH0 K EY2"
+  },
+  "soigneur": {
+    "confidence": "medium",
+    "note": "swahn-YUR",
+    "ph": "S W AA0 N Y ER1"
+  },
+  "sometimes": {
+    "confidence": "high",
+    "note": "adverb: SUM-times",
+    "ph": "S AH1 M T AY2 M Z"
+  },
+  "sondage": {
+    "confidence": "medium",
+    "note": "sohn-DAHZH",
+    "ph": "S OW0 N D AA1 ZH"
+  },
+  "sophia": {
+    "confidence": "medium",
+    "note": "noun: so-FEE-uh",
+    "ph": "S OW0 F IY1 AH0"
+  },
+  "sophrosyne": {
+    "confidence": "medium",
+    "note": "suh-FROS-uh-nee",
+    "ph": "S AH0 F R AA1 S AH0 N IY0"
+  },
+  "soredium": {
+    "confidence": "high",
+    "note": "suh-REE-dee-um",
+    "ph": "S AH0 R IY1 D IY0 AH0 M"
+  },
+  "souplesse": {
+    "confidence": "medium",
+    "note": "soo-PLES",
+    "ph": "S UW0 P L EH1 S"
+  },
+  "spiracle": {
+    "confidence": "high",
+    "note": "SPY-ruh-kul; not 'spherical'",
+    "ph": "S P AY1 R AH0 K AH0 L"
+  },
+  "spring": {
+    "confidence": "high",
+    "note": "verb: spring. The other CMUdict entry is malformed",
+    "ph": "S P R IH1 NG"
+  },
+  "staysail": {
+    "confidence": "high",
+    "note": "STAY-sul; sail reduces to -sul",
+    "ph": "S T EY1 S AH0 L"
+  },
+  "streusel": {
+    "confidence": "high",
+    "note": "STROO-zul",
+    "ph": "S T R UW1 Z AH0 L"
+  },
+  "suberin": {
+    "confidence": "high",
+    "note": "SOO-buh-rin",
+    "ph": "S UW1 B ER0 IH0 N"
+  },
+  "suboxic": {
+    "confidence": "high",
+    "note": "sub-OK-sik; not 'Suboxone'",
+    "ph": "S AH0 B AA1 K S IH0 K"
+  },
+  "sudsy": {
+    "confidence": "high",
+    "note": "SUD-zee",
+    "ph": "S AH1 D Z IY0"
+  },
+  "sunnah": {
+    "confidence": "medium",
+    "note": "SOON-nah",
+    "ph": "S UH1 N AH0"
+  },
+  "surcharge": {
+    "confidence": "high",
+    "note": "noun: SUR-charj",
+    "ph": "S ER1 CH AA2 R JH"
+  },
+  "survey": {
+    "confidence": "high",
+    "note": "verb: sur-VAY",
+    "ph": "S ER0 V EY1"
+  },
+  "suspect": {
+    "confidence": "high",
+    "note": "verb: suh-SPEKT",
+    "ph": "S AH0 S P EH1 K T"
+  },
+  "syncytial": {
+    "confidence": "high",
+    "note": "sin-SISH-ul",
+    "ph": "S IH0 N S IH1 SH AH0 L"
+  },
+  "syringe": {
+    "confidence": "high",
+    "note": "noun: suh-RINJ. Rule would have said SIR-inj",
+    "ph": "S ER0 IH1 N JH"
+  },
+  "taqlid": {
+    "confidence": "medium",
+    "note": "tahk-LEED",
+    "ph": "T AA0 K L IY1 D"
+  },
+  "tatting": {
+    "confidence": "high",
+    "note": "TAT-ing, the lacework",
+    "ph": "T AE1 T IH0 NG"
+  },
+  "taupe": {
+    "confidence": "high",
+    "note": "TOHP, not 'top'",
+    "ph": "T OW1 P"
+  },
+  "teep": {
+    "confidence": "high",
+    "note": "TEEP, the muay thai push kick",
+    "ph": "T IY1 P"
+  },
+  "tenace": {
+    "confidence": "medium",
+    "note": "TEH-nuhs; the bridge holding. Rhymes with 'tenets' minus the t",
+    "ph": "T EH1 N AH0 S"
+  },
+  "tenaille": {
+    "confidence": "medium",
+    "note": "tuh-NAY, the fortification",
+    "ph": "T AH0 N EY1"
+  },
+  "tendinous": {
+    "confidence": "high",
+    "note": "TEN-dih-nus; not 'tenderness'",
+    "ph": "T EH1 N D AH0 N AH0 S"
+  },
+  "terrine": {
+    "confidence": "high",
+    "note": "tuh-REEN",
+    "ph": "T AH0 R IY1 N"
+  },
+  "theodicy": {
+    "confidence": "high",
+    "note": "thee-OD-ih-see",
+    "ph": "TH IY0 AA1 D AH0 S IY0"
+  },
+  "thurible": {
+    "confidence": "high",
+    "note": "THOOR-ih-bul",
+    "ph": "TH UH1 R AH0 B AH0 L"
+  },
+  "toile": {
+    "confidence": "high",
+    "note": "TWAHL",
+    "ph": "T W AA1 L"
+  },
+  "transfer": {
+    "confidence": "high",
+    "note": "verb: trans-FER",
+    "ph": "T R AE0 N S F ER1"
+  },
+  "transport": {
+    "confidence": "high",
+    "note": "verb: trans-PORT",
+    "ph": "T R AE0 N S P AO1 R T"
+  },
+  "traverse": {
+    "confidence": "high",
+    "note": "verb: truh-VERSE",
+    "ph": "T R AH0 V ER1 S"
+  },
+  "tubeless": {
+    "confidence": "high",
+    "note": "TOOB-lis",
+    "ph": "T UW1 B L AH0 S"
+  },
+  "ullage": {
+    "confidence": "high",
+    "note": "UL-ij; not 'college'",
+    "ph": "AH1 L IH0 JH"
+  },
+  "umbrella": {
+    "confidence": "high",
+    "note": "noun: um-BREL-uh. UM-brella is wrong",
+    "ph": "AH0 M B R EH1 L AH0"
+  },
+  "ummah": {
+    "confidence": "medium",
+    "note": "OO-mah",
+    "ph": "UH1 M AH0"
+  },
+  "uncial": {
+    "confidence": "high",
+    "note": "UN-shul",
+    "ph": "AH1 N SH AH0 L"
+  },
+  "unguled": {
+    "confidence": "medium",
+    "note": "UNG-gyuld, heraldic",
+    "ph": "AH1 NG G Y AH0 L D"
+  },
+  "update": {
+    "confidence": "high",
+    "note": "verb: up-DATE",
+    "ph": "AH0 P D EY1 T"
+  },
+  "upgrade": {
+    "confidence": "high",
+    "note": "verb: up-GRADE",
+    "ph": "AH0 P G R EY1 D"
+  },
+  "upright": {
+    "confidence": "high",
+    "note": "adjective: UP-rite",
+    "ph": "AH1 P R AY2 T"
+  },
+  "uprising": {
+    "confidence": "high",
+    "note": "noun: UP-rye-zing",
+    "ph": "AH1 P R AY2 Z IH0 NG"
+  },
+  "upswing": {
+    "confidence": "high",
+    "note": "noun: UP-swing",
+    "ph": "AH1 P S W IH2 NG"
+  },
+  "upturn": {
+    "confidence": "high",
+    "note": "noun: UP-turn",
+    "ph": "AH1 P T ER2 N"
+  },
+  "vair": {
+    "confidence": "high",
+    "note": "VAIR, the heraldic fur",
+    "ph": "V EH1 R"
+  },
+  "vaunt": {
+    "confidence": "high",
+    "note": "VAWNT; not 'want'",
+    "ph": "V AO1 N T"
+  },
+  "vehement": {
+    "confidence": "high",
+    "note": "adjective: VEE-uh-ment",
+    "ph": "V IY1 AH0 M AH0 N T"
+  },
+  "venire": {
+    "confidence": "high",
+    "note": "vuh-NY-ree, the jury pool",
+    "ph": "V AH0 N AY1 R IY0"
+  },
+  "verjus": {
+    "confidence": "medium",
+    "note": "VER-zhoo",
+    "ph": "V EH1 R ZH UW0"
+  },
+  "versatile": {
+    "confidence": "high",
+    "note": "adjective: VUR-suh-tl (US)",
+    "ph": "V ER1 S AH0 T AH0 L"
+  },
+  "virgule": {
+    "confidence": "high",
+    "note": "VUR-gyool, the slash",
+    "ph": "V ER1 G Y UW2 L"
+  },
+  "virion": {
+    "confidence": "high",
+    "note": "VY-ree-on",
+    "ph": "V AY1 R IY0 AA2 N"
+  },
+  "vug": {
+    "confidence": "high",
+    "note": "VUG, the rock cavity; not 'vogue'",
+    "ph": "V AH1 G"
+  },
+  "zugzwang": {
+    "confidence": "medium",
+    "note": "ZOOG-tsvang, the chess term",
+    "ph": "Z UH1 G Z W AA2 NG"
+  },
+  "zwitterion": {
+    "confidence": "high",
+    "note": "TSVIT-er-eye-on",
+    "ph": "Z W IH1 T ER0 AY2 AA0 N"
+  }
 }

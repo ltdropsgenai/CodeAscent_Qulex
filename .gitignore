@@ -82,3 +82,5 @@ test/frames/
 test/failures/
 tools/.example_batches.json
 tools/.warm_audio_state.json
+
+tools/.warm_audio_state*.json
