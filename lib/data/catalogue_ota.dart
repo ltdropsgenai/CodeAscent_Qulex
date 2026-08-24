@@ -23,7 +23,7 @@ import 'package:path_provider/path_provider.dart';
 ///
 /// Never reuse or lower a number. Clients compare with `>`, so going backwards
 /// silently strands them on whatever they last downloaded.
-const int kBundledCatalogueGeneration = 2;
+const int kBundledCatalogueGeneration = 3;
 
 /// The identity of the asset THIS build bundles: how many entries it holds and
 /// what it hashes to.
@@ -47,7 +47,7 @@ const int kBundledCatalogueGeneration = 2;
 /// same commit. The test tells you the values it wanted.
 const int kBundledCatalogueEntries = 16808;
 const String kBundledCatalogueSha256 =
-    '2b7d9046c9ca479d92b29b5c774653c48918e5000009bbc14971635f13862e1c';
+    '7350b3aaf31bf4058c1d0de11d17e1639dee5438420b84d85f34581bcc6e4052';
 
 /// Where the published catalogue lives. A public Storage bucket, read straight
 /// off the CDN — no Edge Function invocation, no auth, no per-read cost.

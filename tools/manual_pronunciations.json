@@ -46,6 +46,32 @@
     "",
     "This file is version-controlled. tools/pronunciation/ is not."
   ],
+  "_UNCONFIRMED": {
+    "failed_blind_replication_2026_08_24": {
+      "aperitif": "AH0 P EH2 R AH0 T IY1 F",
+      "boucle": "B UW0 K L EY1",
+      "couverture": "K UW2 V ER0 T UH1 R",
+      "plainchant": "P L EY1 N CH AE2 N T",
+      "tenace": "T EH1 N AH0 S"
+    },
+    "still_untested": [
+      "pneumatology",
+      "regenerative"
+    ],
+    "why": [
+      "Words a survey once heard as wrong that did NOT reproduce when the same",
+      "cached clip was played back blind, interleaved with known-good controls,",
+      "on 24 Aug 2026. Five of nine first-pass failures flipped to 'right'.",
+      "",
+      "They are listed rather than kept because a hand-written override for a word",
+      "the engine already says correctly does not leave it alone - it replaces a",
+      "correct reading with a guess. These are exactly the loanwords where a",
+      "hand-written ARPAbet is least trustworthy.",
+      "",
+      "Listed, not deleted, so a later survey that draws one of them again can see",
+      "it has been tested twice and what the discarded guess was."
+    ]
+  },
   "abaft": {
     "confidence": "high",
     "ph": "AH0 B AE1 F T"
@@ -220,11 +246,6 @@
     "confidence": "high",
     "ph": "AH0 P AY1 R AA2 N"
   },
-  "aperitif": {
-    "confidence": "medium",
-    "note": "uh-peh-ruh-TEEF; the drink. Stress on the last syllable, not the first",
-    "ph": "AH0 P EH2 R AH0 T IY1 F"
-  },
   "appellee": {
     "confidence": "high",
     "ph": "AE2 P AH0 L IY1"
@@ -375,11 +396,6 @@
     "confidence": "high",
     "note": "BOH-kay",
     "ph": "B OW1 K EY0"
-  },
-  "boucle": {
-    "confidence": "medium",
-    "note": "boo-KLAY; the looped yarn. Not 'buckle', not 'BOO-kul'",
-    "ph": "B UW0 K L EY1"
   },
   "bourree": {
     "confidence": "high",
@@ -680,11 +696,6 @@
     "confidence": "high",
     "note": "koo-VAHD",
     "ph": "K UW0 V AA1 D"
-  },
-  "couverture": {
-    "confidence": "medium",
-    "note": "koo-ver-TOOR; the chocolate. Final syllable is -toor, not -ture",
-    "ph": "K UW2 V ER0 T UH1 R"
   },
   "craquelure": {
     "confidence": "high",
@@ -1368,7 +1379,7 @@
   },
   "lahar": {
     "confidence": "high",
-    "note": "luh-HAR; the volcanic mudflow",
+    "note": "luh-HAR; the volcanic mudflow; heard wrong twice, the second time blind (24 Aug)",
     "ph": "L AH0 HH AA1 R"
   },
   "lasya": {
@@ -1628,7 +1639,7 @@
   },
   "paratope": {
     "confidence": "high",
-    "note": "PAR-uh-tope; stress on par-, final syllable rhymes with hope, not top",
+    "note": "PAR-uh-tope; stress on par-, final syllable rhymes with hope, not top; heard wrong twice, the second time blind (24 Aug)",
     "ph": "P AE1 R AH0 T OW2 P"
   },
   "parquetry": {
@@ -1700,11 +1711,6 @@
     "confidence": "high",
     "note": "PEEST",
     "ph": "P IY1 S T"
-  },
-  "plainchant": {
-    "confidence": "high",
-    "note": "PLAYN-chant; one word, both halves said plainly",
-    "ph": "P L EY1 N CH AE2 N T"
   },
   "plethora": {
     "confidence": "high",
@@ -1923,12 +1929,12 @@
   },
   "sangha": {
     "confidence": "medium",
-    "note": "SANG-guh; the Buddhist community. The h is not aspirated in English use",
+    "note": "SANG-guh; the Buddhist community. The h is not aspirated in English use; heard wrong twice, the second time blind (24 Aug)",
     "ph": "S AE1 NG G AH0"
   },
   "sarcomere": {
     "confidence": "high",
-    "note": "SAR-kuh-meer; the muscle unit. Final syllable is -meer, not -mere",
+    "note": "SAR-kuh-meer; the muscle unit. Final syllable is -meer, not -mere; heard wrong twice, the second time blind (24 Aug)",
     "ph": "S AA1 R K AH0 M IH2 R"
   },
   "scherzo": {
@@ -2145,11 +2151,6 @@
     "confidence": "high",
     "note": "TEEP, the muay thai push kick",
     "ph": "T IY1 P"
-  },
-  "tenace": {
-    "confidence": "medium",
-    "note": "TEH-nuhs; the bridge holding. Rhymes with 'tenets' minus the t",
-    "ph": "T EH1 N AH0 S"
   },
   "tenaille": {
     "confidence": "medium",
