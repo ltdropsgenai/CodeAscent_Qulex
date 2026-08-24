@@ -69,7 +69,7 @@ _to_delete/
 vo_heteronyms/
 
 # Pronunciation pipeline working files (regenerate with tools/build_pronunciation_dict.py)
-tools/pronunciation/
+tools/pronunciation/*
 # Diagnostic probe output (regenerate with probe_tts.ps1)
 vo_probe/
 

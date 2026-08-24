@@ -1,0 +1,892 @@
+{
+ "abalakov": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "adroitness": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "anhedral": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "anosmia": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "anuria": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "aperitif": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 1
+ },
+ "apprehensiveness": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "ashlar": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "astrolabe": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "audax": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "austenite": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "avunculocal": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "bergschrund": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "bioturbation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "bodger": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "boucle": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 1
+ },
+ "bracketing": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "brumation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "buskin": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "carabineer": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "centroid": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "chromatin": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "copepod": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "corticobulbar": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "couverture": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 1
+ },
+ "crudo": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "deodorize": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "dingbat": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "downsample": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "drolly": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "dynast": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "enterotoxin": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "eutectic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "extensor": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "faience": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "felsic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "fimbria": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "flanker": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "fresnel": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "fuzzer": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "googly": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "gradebook": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "grammaticalization": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "hatchment": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "hereditarily": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "horchata": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "hyperemia": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "hypergamy": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "lahar": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 0,
+  "settled": "wrong",
+  "wrong": 2
+ },
+ "laxism": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "linter": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "lymphotropic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "meeple": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "mellifluous": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "mesocycle": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "metacognition": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "minty": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "mitotic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "nanoindentation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "nectary": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "neuroleptic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "nosocomial": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "nyctinasty": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "oligopsony": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "oliguria": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "opioid": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "osteology": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "overdub": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "palliate": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "paratope": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 0,
+  "settled": "wrong",
+  "wrong": 2
+ },
+ "phaneritic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "phylogenetic": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "pickaxe": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "pinnate": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "placentation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "plainchant": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 1
+ },
+ "powerlifting": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "prosthetist": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "pyrogen": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "pyromania": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "quadrangle": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "remittitur": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "ricotta": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "ripieno": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "rubato": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "sangha": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 0,
+  "settled": "wrong",
+  "wrong": 2
+ },
+ "sarcomere": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 0,
+  "settled": "wrong",
+  "wrong": 2
+ },
+ "scalene": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "serpentinize": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "spatially": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "springy": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "stanchion": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "stateful": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "stealthily": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "stenohaline": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "supercooling": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "supererogation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "swale": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "tanka": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "tenace": {
+  "batches": [
+   "sample100-seed1",
+   "words-blind-control-24aug"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 1
+ },
+ "tessitura": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "thematics": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "trapezoid": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "uchikomi": {
+  "batches": [
+   "sample100-seed2",
+   "words-blind-control-24aug"
+  ],
+  "right": 2,
+  "settled": "right",
+  "wrong": 0
+ },
+ "untag": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "upzoning": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "uxoricide": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "variometer": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ },
+ "venation": {
+  "batches": [
+   "sample100-seed2"
+  ],
+  "right": 1,
+  "settled": null,
+  "wrong": 0
+ }
+}
