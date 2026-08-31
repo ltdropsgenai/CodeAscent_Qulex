@@ -195,6 +195,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       onChanged: (_) => appState.toggleVoice(),
                       semanticLabel: Strings.t(locale, 'voice'),
                     ),
+                  ),
+                  // Disabled rather than hidden with the voice off, matching
+                  // the offline-download row: hiding a control leaves someone
+                  // hunting for a feature that is one row above them.
+                  QRow(
+                    title: Strings.t(locale, 'accent'),
+                    sub: Strings.t(locale, 'accentSub'),
+                    trailing: _AccentPicker(
+                      value: appState.accent,
+                      enabled: appState.voiceOn,
+                      locale: locale,
+                      onChanged: (a) => appState.setAccent(a),
+                    ),
                     last: !NotificationService.instance.supported,
                   ),
                   if (NotificationService.instance.supported)
@@ -533,4 +546,63 @@ String? fitNoteText(String locale, String? note) {
     };
   }
   return null;
+}
+
+/// Two mutually exclusive accents. A segmented pair rather than a switch,
+/// because a switch implies one of them is "off" and neither is.
+class _AccentPicker extends StatelessWidget {
+  final String value;
+  final bool enabled;
+  final String locale;
+  final ValueChanged<String> onChanged;
+  const _AccentPicker({
+    required this.value,
+    required this.enabled,
+    required this.locale,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    Widget seg(String code, String label) {
+      final on = value == code;
+      return Semantics(
+        inMutuallyExclusiveGroup: true,
+        selected: on,
+        enabled: enabled,
+        button: true,
+        label: label,
+        child: GestureDetector(
+          onTap: enabled ? () => onChanged(code) : null,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+            decoration: BoxDecoration(
+              color: on ? QColors.coral.withOpacity(0.16) : Colors.transparent,
+              border: Border.all(
+                  color: on ? QColors.coral : QColors.rule, width: 1),
+              borderRadius: BorderRadius.circular(999),
+            ),
+            child: ExcludeSemantics(
+              child: Text(
+                label,
+                style: QType.mono(
+                  size: 11,
+                  color: !enabled
+                      ? QColors.dim
+                      : (on ? QColors.coral : QColors.muted),
+                  spacing: 0.8,
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Row(mainAxisSize: MainAxisSize.min, children: [
+      seg('us', Strings.t(locale, 'accentUs')),
+      const SizedBox(width: 6),
+      seg('uk', Strings.t(locale, 'accentUk')),
+    ]);
+  }
 }

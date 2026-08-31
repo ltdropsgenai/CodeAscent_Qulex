@@ -11,12 +11,30 @@ class Gloss {
   /// optional bonus context, not something every word is guaranteed to have.
   final String? example2;
 
+  /// A sentence somebody actually wrote, rather than one generated for
+  /// teaching. English only, on purpose: [example] and [example2] are a
+  /// parallel translation set across all five languages, and swapping one
+  /// side of that pair would put a mismatched sentence under the English —
+  /// the exact fault this app shipped in August. A citation is a different
+  /// thing from a teaching example, so it sits beside them and is never
+  /// translated. Null for words no corpus attests, which is most of the
+  /// hard tail.
+  final String? attested;
+
+  /// Licence and source line for [attested]. Required whenever [attested] is
+  /// set — the corpus is CC-BY and attribution is a condition of use, not a
+  /// nicety, so the two fields travel together or not at all.
+  final String? attestedCredit;
+
   const Gloss({
     required this.correct,
     required this.distractors,
     required this.example,
     this.example2,
-  });
+    this.attested,
+    this.attestedCredit,
+  }) : assert(attested == null || attestedCredit != null,
+            'an attested sentence must carry its attribution');
 
   factory Gloss.fromJson(Map<String, dynamic> j) => Gloss(
         correct: j['correct'] as String,
@@ -24,6 +42,9 @@ class Gloss {
             (j['distractors'] as List).map((e) => e as String).toList(),
         example: ((j['example'] as Map<String, dynamic>)['text']) as String,
         example2: (j['example2'] as Map<String, dynamic>?)?['text'] as String?,
+        attested: (j['attested'] as Map<String, dynamic>?)?['text'] as String?,
+        attestedCredit:
+            (j['attested'] as Map<String, dynamic>?)?['attribution'] as String?,
       );
 
   /// Correct answer + distractors, shuffled for display.
@@ -54,6 +75,22 @@ class Word {
   /// Audio only — never shown on screen. Today it holds a trick-spelling
   /// ("leed", "wined"); when a model with per-request phoneme control lands
   /// it can hold IPA instead, without touching call sites.
+  ///
+  /// WRITING ONE. Where a syllable can be read two ways, spell it with a real
+  /// English word rather than inventing a spelling. "paratope" shipped as
+  /// "parra-tope" and was heard as PAR-uh-*top*; "parra-taupe" fixed it,
+  /// because *taupe* has exactly one reading and *tope* does not. An invented
+  /// spelling is a guess about a model's grapheme rules; a real word is a fact
+  /// about English.
+  ///
+  /// That is a rule for ambiguous syllables, not a rule for rewriting. Tested
+  /// against a listener the same day, "sarcomeer" beat both "sar-kuh-meer" and
+  /// the real-word "sar-kuh-mere". An invented spelling that already sounds
+  /// right is not improved by making it more principled.
+  ///
+  /// Never ship one unheard. Every override in this catalogue that needed a
+  /// second pass was one nobody had listened to:
+  ///   tools/pronunciation_survey.py build --say word=respelling
   final String? say;
 
   final int freqRank;

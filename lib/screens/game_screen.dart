@@ -850,6 +850,27 @@ List<Widget> _examples(
     out.add(const SizedBox(height: 4));
     pair(en.example2!, native?.example2);
   }
+
+  // A sentence somebody actually wrote, shown as a citation rather than as a
+  // third teaching example. It is deliberately NOT paired with a translation:
+  // example/example2 are a parallel set across all five languages, and putting
+  // an untranslated sentence into that pairing is how a Spanish learner ends up
+  // reading an English line with an unrelated Spanish one beneath it.
+  final attested = en.attested;
+  final credit = en.attestedCredit;
+  if (attested != null && attested.isNotEmpty && credit != null) {
+    out.add(const SizedBox(height: 12));
+    out.add(Text(Strings.t(locale, 'attestedLabel').toUpperCase(),
+        style: QType.mono(size: 10, color: QColors.dim, spacing: 1.6)));
+    out.add(const SizedBox(height: 4));
+    out.add(_SpokenExample(
+        text: attested, langCode: 'en', word: w, locale: locale));
+    out.add(Padding(
+      padding: const EdgeInsets.only(top: 3),
+      child: Text(credit,
+          style: QType.mono(size: 9.5, color: QColors.dim, spacing: 0.4)),
+    ));
+  }
   return out;
 }
 

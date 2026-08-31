@@ -22,9 +22,26 @@ class AppState extends ChangeNotifier {
   static const _kFsrsWeights = 'qbit_fsrs_weights';
   static const _kFsrsFitNote = 'qbit_fsrs_fit_note';
   static const _kFsrsNudged = 'qbit_fsrs_nudged';
+  static const _kAccent = 'qbit_accent';
 
   String locale = 'en';
   bool voiceOn = true;
+
+  /// Which English accent the cloud voice speaks in: 'us' or 'uk'.
+  ///
+  /// Defaults to 'us', which is the voice every clip in every cache was made
+  /// with. Switching is not free and the cost is invisible: the voice id is
+  /// part of both the server cache key and the on-device path, so a learner
+  /// who switches starts from an empty cache and re-warms it one word at a
+  /// time under the 600/day cap. Nobody who leaves this alone pays anything.
+  ///
+  /// Held as a string rather than an enum because it goes on the wire to the
+  /// tts function, which resolves unknown values to its own default rather
+  /// than failing — a client and a server disagreeing about an accent should
+  /// produce the wrong accent, not silence.
+  String accent = 'us';
+
+  static const accents = ['us', 'uk'];
 
   /// Whether Qulex may quietly top up the offline voice cache in the
   /// background.
@@ -97,6 +114,8 @@ class AppState extends ChangeNotifier {
     final p = await SharedPreferences.getInstance();
     locale = p.getString(_kLocale) ?? 'en';
     voiceOn = p.getBool(_kVoice) ?? true;
+    final a = p.getString(_kAccent);
+    accent = accents.contains(a) ? a! : 'us';
     isPro = p.getBool(_kPro) ?? false;
     remindersOn = p.getBool(_kReminders) ?? false;
     reminderHour = p.getInt(_kReminderHour) ?? 9;
@@ -230,6 +249,16 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     final p = await SharedPreferences.getInstance();
     await p.setBool(_kVoice, voiceOn);
+  }
+
+  /// Pick the accent the cloud voice speaks in. Ignores anything not in
+  /// [accents] rather than storing a value the server would refuse.
+  Future<void> setAccent(String a) async {
+    if (!accents.contains(a) || a == accent) return;
+    accent = a;
+    notifyListeners();
+    final p = await SharedPreferences.getInstance();
+    await p.setString(_kAccent, a);
   }
 }
 

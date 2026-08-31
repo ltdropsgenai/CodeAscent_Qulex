@@ -74,7 +74,12 @@ class OfflineAudio {
   /// call 600 comes back 429. Voice.speak() cannot tell a 429 from any other
   /// failure, so it falls back to flutter_tts — and the learner's audio turns
   /// robotic for the rest of the UTC day, with no error anywhere, because
-  /// Voice.prefetch() swallows its exceptions by design.
+  /// Voice.prefetch() reported nothing back.
+  ///
+  /// That reporting gap is now closed — prefetch() returns whether the clip
+  /// is cached, and the run below counts the falses — so a repeat would at
+  /// least be visible. The arithmetic above is still wrong, which is why this
+  /// stays off.
   ///
   /// That is not a hypothetical. On 21 Aug 2026 one tap recorded 1,809 calls
   /// against the 600 cap and the voice silently reverted.
@@ -269,15 +274,21 @@ class OfflineAudio {
         final i = index++;
         if (i >= todo.length) return;
         final c = todo[i];
+        // The bool is the signal, not the exception. prefetch() cannot throw
+        // for an ordinary network or budget failure — it returns false — and
+        // counting only thrown exceptions is what let a run that downloaded
+        // nothing report 100%.
+        var cached = false;
         try {
-          await Voice.instance.prefetch(c.text,
+          cached = await Voice.instance.prefetch(c.text,
               langCode: c.lang,
               headword: c.word.word,
               headwordPos: c.word.pos,
               sayAs: c.word.say);
         } catch (_) {
-          failures++;
+          cached = false;
         }
+        if (!cached) failures++;
         done++;
         progress.value =
             OfflineProgress(done: done, total: todo.length, running: true);

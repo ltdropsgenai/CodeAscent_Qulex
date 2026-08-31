@@ -128,11 +128,19 @@ def die(msg: str) -> "None":
     raise SystemExit(1)
 
 
-def synth(base: str, anon: str, admin: str, text: str) -> tuple[bool, str, str]:
-    """Returns (ok, public_url, detail). Same call the app makes."""
+def synth(base: str, anon: str, admin: str, text: str,
+          accent: str = "us") -> tuple[bool, str, str]:
+    """Returns (ok, public_url, detail). Same call the app makes.
+
+    The accent goes on the wire because the voice id is part of the cache
+    key on both sides. A respelling verified against one voice says nothing
+    about the other: "sarcomeer" is tuned to how Victoria reads it, and
+    James Oxford may not read it the same way.
+    """
     req = urllib.request.Request(
         f"{base}/functions/v1/tts",
-        data=json.dumps({"text": text, "lang": "en"}).encode("utf-8"),
+        data=json.dumps({"text": text, "lang": "en", "accent": accent})
+        .encode("utf-8"),
         headers={
             "Content-Type": "application/json",
             "Authorization": f"Bearer {anon}",
@@ -170,6 +178,32 @@ def load_risk(args: argparse.Namespace) -> tuple[list[dict], str]:
     rows = list(csv.DictReader(RISK.open(encoding="utf-8")))
     if not rows:
         die(f"{RISK} is empty")
+
+    if getattr(args, "say", None):
+        # Verify a respelling the way the APP will speak it, not the way the
+        # catalogue spells it. Word.say replaces the synthesis text at runtime,
+        # so a survey of the headword tests something the learner never hears —
+        # which is why the five overrides in build 44 shipped unverified.
+        # The row is LABELLED with the headword and SPOKEN as the respelling,
+        # so the listener judges "did that sound like sarcomere?" without being
+        # told what trick produced it.
+        pairs = []
+        for chunk in args.say.split(","):
+            if "=" not in chunk:
+                die(f"--say wants word=respelling, got {chunk!r}")
+            head, _, spoken = chunk.partition("=")
+            pairs.append((head.strip(), spoken.strip()))
+        if not pairs:
+            die("--say listed nothing")
+        by = {r["word"].lower(): r for r in rows}
+        picked = []
+        for head, spoken in pairs:
+            base = dict(by.get(head.lower()) or {"word": head, "difficulty": ""})
+            base["word"] = head
+            base["speak"] = spoken
+            picked.append(base)
+        digest = hashlib.sha256(args.say.encode()).hexdigest()[:8]
+        return picked, f"say-{digest}"
 
     if args.words:
         want = [w.strip().lower() for w in args.words.split(",") if w.strip()]
@@ -212,6 +246,11 @@ def cmd_build(args: argparse.Namespace) -> None:
     base = os.environ.get("SUPABASE_URL", DEFAULT_URL).rstrip("/")
 
     rows, batch = load_risk(args)
+    if getattr(args, "accent", "us") != "us":
+        # Anything that changes the audio has to change the filename. This rule
+        # was learned twice: two --words batches once wrote the same file and
+        # the second destroyed the first after its clips were paid for.
+        batch = f"{batch}-{args.accent}"
 
     # Controls are the default, not a flag you remember to pass. A batch that
     # cannot reproduce its own known verdicts is not evidence about the words
@@ -247,8 +286,12 @@ def cmd_build(args: argparse.Namespace) -> None:
         # otherwise have to. If a frame fixes these words, one change to
         # Voice.speak fixes every one of them at once and no ARPAbet gets
         # written by hand at all.
-        spoken = args.carrier.replace("{word}", r["word"]) if args.carrier else r["word"]
-        ok, url, detail = synth(base, anon, admin, spoken)
+        # A row may carry its own synthesis text (--say), which the carrier
+        # then wraps if both are in play. Controls never carry one, so they
+        # are still spoken as themselves and remain valid controls.
+        source = r.get("speak") or r["word"]
+        spoken = args.carrier.replace("{word}", source) if args.carrier else source
+        ok, url, detail = synth(base, anon, admin, spoken, args.accent)
         if not ok:
             failed += 1
             print(f"  FAILED {r['word']}: {detail}")
@@ -271,8 +314,31 @@ def cmd_build(args: argparse.Namespace) -> None:
         die("nothing synthesized — check the token and try one word by hand")
     out.sort(key=lambda d: [r["word"] for r in rows].index(d["word"]))
     fresh = sum(1 for d in out if d["state"] == "new")
-    print(f"  {len(out)} ready ({fresh} newly synthesized, {len(out)-fresh} already cached), "
+    cached = len(out) - fresh
+    print(f"  {len(out)} ready ({fresh} newly synthesized, {cached} already cached), "
           f"{failed} failed")
+
+    # A cache hit in a non-default accent is evidence the server never heard
+    # about the accent. The voice id is part of the cache key, so the first
+    # batch in a new voice CANNOT hit the cache — every clip is new by
+    # construction. If it does, the deployed tts function is still resolving
+    # every request to the default voice and this batch is that voice wearing
+    # the wrong filename.
+    #
+    # Caught the hard way: the first --accent uk run reported 6 of 11 cached,
+    # which was the whole batch quietly being Victoria, because the accent
+    # routing was written and not deployed.
+    if args.accent != "us" and cached:
+        print()
+        print(f"  !! {cached} of {len(out)} clips came back CACHED in accent "
+              f"'{args.accent}'.")
+        print("     The voice id is part of the cache key, so a clip in a new")
+        print("     accent cannot already exist. Either the tts function has")
+        print("     not been deployed with accent routing, or it does not")
+        print("     recognise this accent and fell back to the default voice.")
+        print("     DO NOT judge this batch as evidence about "
+              f"'{args.accent}' — it is almost certainly the default voice.")
+        print("     Check: supabase functions deploy tts, then rebuild.")
 
     if args.carrier:
         # The FRAME goes in the name, not just the fact that there is one.
@@ -606,6 +672,13 @@ def main() -> None:
     b.add_argument("--no-controls", action="store_true",
                    help="build without controls. The result measures the words "
                         "but not the listener; merge cannot vouch for it")
+    b.add_argument("--accent", default="us", choices=("us", "uk"),
+                   help="which voice speaks the batch (default us). A batch is "
+                        "only evidence about the accent it was synthesized in")
+    b.add_argument("--say", default=None,
+                   help="verify respellings as the app speaks them: "
+                        "word=respelling,word2=respelling2. The row is labelled "
+                        "with the word and spoken as the respelling")
     b.add_argument("--traps", action="store_true",
                    help="only words carrying an orthographic trap (silent onset, "
                         "-ative, -atory, -ology, eu/oe/ae)")

@@ -46,7 +46,20 @@ const MAX_CHARS_PER_DAY = 60000;
 
 // One flagship voice used consistently across English word audio and all
 // five answer languages.
-const VOICE_ID = "XoUkt2bf6DlvSzRmvA8X"; // "Victoria - Calm, Warm and Friendly"
+// Two voices, keyed by the accent the learner picked. Plain constants rather
+// than secrets on purpose: an ElevenLabs voice id is a public identifier, and
+// this file's whole recent history is about values that lived only in the
+// Supabase dashboard where no test, no CI step and no review could see them.
+// A voice id in the repository is one a build can assert on.
+const VOICE_US = "XoUkt2bf6DlvSzRmvA8X"; // "Victoria - Calm, Warm and Friendly"
+const VOICE_UK = "Y0JCNRp49WKQ4t7j0A6P"; // "James Oxford"
+const VOICE_BY_ACCENT: Record<string, string> = { us: VOICE_US, uk: VOICE_UK };
+const DEFAULT_ACCENT = "us";
+
+// Every clip ever warmed was made with VOICE_US, and the voice id is part of
+// the cache key, so a learner switching to UK starts from an empty cache and
+// warms it one word at a time under the daily cap. That is intended: it costs
+// nothing for the people who never switch.
 
 // English gets eleven_flash_v2: lower latency, and — critically — it's one
 // of only two ElevenLabs models that honor pronunciation dictionaries
@@ -191,6 +204,27 @@ function hashKey(s: string): string {
   return h.toString(16);
 }
 
+// Say out loud, once per cold start, what this deployment will actually do.
+//
+// USE_PRONUNCIATION_DICT was set to true on 18 Aug against a comment in this
+// file saying to re-enable only with a dictionary validated by synthesis. It
+// stayed true for three days and mispronounced 1,715 possessives. Nothing in
+// the repository could see it: the value lives only in Supabase, so no test,
+// no CI step and no code review could observe it, and finding it took
+// reimplementing this file's cache-key hash in Python to prove that 40
+// known-warmed clips did not exist under the no-dictionary key.
+//
+// One line turns that into a single query_logs call. It runs at module load,
+// not per request, so it costs nothing per call and cannot be missed in a
+// noisy log.
+console.log(
+  `tts boot: dictionary=${USE_PRONUNCIATION_DICT ? "ON" : "off"}` +
+    ` id=${PRONUNCIATION_DICT_ID || "-"}` +
+    ` version=${PRONUNCIATION_DICT_VERSION || "-"}` +
+    ` voices=us:${VOICE_US},uk:${VOICE_UK} model_en=${MODEL_ENGLISH}` +
+    ` cap=${MAX_CALLS_PER_DAY}/day`,
+);
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: cors(req) });
@@ -223,6 +257,15 @@ Deno.serve(async (req) => {
 
     const safeLang = (typeof body.lang === "string" ? body.lang : "en")
       .toString().slice(0, 5);
+
+    // Accent is a per-request choice, not deployment state, because two
+    // learners on the same deployment can want different ones. An unknown
+    // value falls back rather than erroring: a client sending nonsense should
+    // hear the default voice, not silence.
+    const askedAccent = (typeof body.accent === "string" ? body.accent : "")
+      .toLowerCase();
+    const accent = askedAccent in VOICE_BY_ACCENT ? askedAccent : DEFAULT_ACCENT;
+    const voiceId = VOICE_BY_ACCENT[accent];
     const isEnglish = safeLang.toLowerCase().startsWith("en");
     const modelId = isEnglish ? MODEL_ENGLISH : MODEL_MULTILINGUAL;
     const useDict = isEnglish && USE_PRONUNCIATION_DICT &&
@@ -234,7 +277,7 @@ Deno.serve(async (req) => {
     const dictTag = useDict
       ? `dict:${PRONUNCIATION_DICT_ID}:${PRONUNCIATION_DICT_VERSION}`
       : "nodict";
-    const key = hashKey(`${safeLang}|${VOICE_ID}|${modelId}|${dictTag}|${text}`);
+    const key = hashKey(`${safeLang}|${voiceId}|${modelId}|${dictTag}|${text}`);
     const dir = safeLang;
     const fileName = `${key}.mp3`;
     const path = `${dir}/${fileName}`;
@@ -294,7 +337,7 @@ Deno.serve(async (req) => {
     }
 
     const elevenRes = await fetch(
-      `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
+      `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
       {
         method: "POST",
         headers: {

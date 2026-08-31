@@ -321,25 +321,49 @@ class Voice {
   /// playing anything. Call this ahead of time (e.g. for a whole deck of
   /// upcoming quiz words) so the real [speak] call later hits an instant
   /// on-device cache hit instead of racing a cold network fetch.
-  Future<void> prefetch(
+  /// Warm one clip into the on-device cache. Returns whether the clip is
+  /// actually there afterwards.
+  ///
+  /// THIS RETURN VALUE EXISTS BECAUSE ITS ABSENCE COST A DAY OF BUDGET.
+  ///
+  /// The old signature was Future<void> with a bare `catch (_) {}` and a
+  /// comment saying "best-effort only". Three layers then each assumed a
+  /// different one would notice a failure, and none did:
+  ///
+  ///   * _fetchToCache already catches everything and returns false. It does
+  ///     not throw. It never did.
+  ///   * prefetch discarded that bool, so its own try/catch guarded nothing.
+  ///   * OfflineAudio wrapped prefetch in try/catch waiting for an exception
+  ///     that could not arrive, so its failure counter stayed at zero.
+  ///
+  /// On 20 Aug a bulk download planned 1,800 synthesis requests against a
+  /// 600/day cap. Everything past call 600 came back 429, 1,200 clips were
+  /// never written, the progress bar ran to 100% reporting success, and the
+  /// learner's audio silently reverted to the robotic device voice for the
+  /// rest of the UTC day. Nothing in the app could tell that had happened.
+  ///
+  /// Callers that genuinely do not care may ignore the result — the deck
+  /// warmer does. A caller reporting progress to a person must not.
+  Future<bool> prefetch(
     String text, {
     String langCode = 'en',
     String? headword,
     String? headwordPos,
     String? sayAs,
   }) async {
-    if (!appState.voiceOn) return;
-    if (!SupabaseConfig.isConfigured) return;
+    if (!appState.voiceOn) return false;
+    if (!SupabaseConfig.isConfigured) return false;
     try {
       final spoken = ttsRespell(text,
           headword: headword, headwordPos: headwordPos, headwordSay: sayAs);
       final localPath = await _localCachePath(spoken, langCode);
-      if (await File(localPath).exists()) return;
+      if (await File(localPath).exists()) return true;
 
-      await _fetchToCache(spoken, langCode, localPath);
+      return await _fetchToCache(spoken, langCode, localPath);
     } catch (_) {
-      // Best-effort only — speak() will fetch (and fall back) on demand
-      // if this didn't manage to warm the cache in time.
+      // speak() will still fetch, and fall back, on demand. The difference is
+      // that the caller now learns this clip is not cached.
+      return false;
     }
   }
 
@@ -438,7 +462,7 @@ class Voice {
       try {
         final res = await Supabase.instance.client.functions.invoke(
           'tts',
-          body: {'text': text, 'lang': langCode},
+          body: {'text': text, 'lang': langCode, 'accent': appState.accent},
         );
         final data = res.data;
         final url = (data is Map) ? data['url'] as String? : null;
@@ -522,7 +546,17 @@ class Voice {
 
   Future<String> _localCachePath(String text, String langCode) async {
     final dir = await _ensureCacheDir();
-    final key = _hash('$_cacheVersion|$langCode|$text');
+    // The accent is part of the path for the same reason the voice id is part
+    // of the server's cache key: a clip made by one voice is not a substitute
+    // for the other. Leaving it out would serve the old voice from disk and
+    // make the setting look broken for every word already downloaded.
+    //
+    // 'us' contributes nothing to the hash, on purpose. Every clip ever cached
+    // was made before accents existed, and they were all made with the US
+    // voice — so the default keeps its existing namespace and nobody who never
+    // switches loses a single already-downloaded file.
+    final accentTag = appState.accent == 'us' ? '' : '|${appState.accent}';
+    final key = _hash('$_cacheVersion$accentTag|$langCode|$text');
     return p.join(dir.path, '$key.mp3');
   }
 
