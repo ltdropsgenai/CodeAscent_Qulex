@@ -1,0 +1,37 @@
+# Line-ending policy. Without this file git has no rule, and on Windows a file
+# written with CRLF sits permanently "modified" against an LF index — 3,610
+# insertions and 3,610 deletions across four files, none of them real.
+#
+# That is not cosmetic. A `git status` that is never clean is a `git status`
+# nobody reads, and this repository has already lost work to exactly that:
+# tools/pronunciation_survey.py lived untracked for days, and the verdict
+# ledger silently failed to commit, both visible in output that scrolled past.
+#
+# text=auto  - git normalises to LF in the object database
+# eol=lf     - and checks out LF everywhere, so Windows, the Codemagic mac
+#              runner and any cloud container all see identical bytes.
+* text=auto eol=lf
+
+# Windows shells need CRLF or they misbehave.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Never touch these. text=auto guesses well but guessing on a 38MB asset or a
+# signing profile is not worth the one time it guesses wrong.
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.ico       binary
+*.webp      binary
+*.mp3       binary
+*.wav       binary
+*.ttf       binary
+*.otf       binary
+*.woff      binary
+*.woff2     binary
+*.jar       binary
+*.keystore  binary
+*.p12       binary
+*.mobileprovision binary
