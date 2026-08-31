@@ -44,8 +44,6 @@ const MAX_TEXT_LEN = 400;
 const MAX_CALLS_PER_DAY = 600;
 const MAX_CHARS_PER_DAY = 60000;
 
-// One flagship voice used consistently across English word audio and all
-// five answer languages.
 // Two voices, keyed by the accent the learner picked. Plain constants rather
 // than secrets on purpose: an ElevenLabs voice id is a public identifier, and
 // this file's whole recent history is about values that lived only in the
@@ -55,11 +53,12 @@ const VOICE_US = "XoUkt2bf6DlvSzRmvA8X"; // "Victoria - Calm, Warm and Friendly"
 const VOICE_UK = "Y0JCNRp49WKQ4t7j0A6P"; // "James Oxford"
 const VOICE_BY_ACCENT: Record<string, string> = { us: VOICE_US, uk: VOICE_UK };
 const DEFAULT_ACCENT = "us";
-
+//
 // Every clip ever warmed was made with VOICE_US, and the voice id is part of
 // the cache key, so a learner switching to UK starts from an empty cache and
 // warms it one word at a time under the daily cap. That is intended: it costs
-// nothing for the people who never switch.
+// nothing for the people who never switch, and the same voice id keeps every
+// existing cache entry valid.
 
 // English gets eleven_flash_v2: lower latency, and — critically — it's one
 // of only two ElevenLabs models that honor pronunciation dictionaries
