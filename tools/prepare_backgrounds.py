@@ -94,6 +94,69 @@ PLAN = [
      # figures are already near-black by this point; it exists so that the
      # anonymity does not depend on the exact luminance of one afternoon.
      "darken": [(0.44, 0.34, 0.72, 0.46, 0.55)]},
+
+    # ================= second batch, 3 Sep 2026 =================
+    # Fifteen photographs went in; six came out. The nine that were dropped are
+    # listed under REJECTED below, with the reason, because "why isn't my photo
+    # in there" is a question worth being able to answer a year from now.
+    {"src": "117ad0c1-image.jpg", "out": "bg_17.jpg", "focus": (0.5, 0.45),
+     "note": "the falls, the two of them at the foot of it",
+     # Same trick as bg_16 and for the same reason: the water behind them is the
+     # brightest thing in the frame, so a luminance pivot takes the figures to
+     # black and leaves the falls lit. Both faces go with them.
+     "contre_jour": (0.62, 13.0)},
+    {"src": "4d3bc61c-image.jpg", "out": "bg_18.jpg", "focus": (0.5, 0.45),
+     "note": "the falls, the lift",
+     "contre_jour": (0.62, 13.0),
+     # Her head sits in a bright gap in the water and survived the pivot as a
+     # faint profile. This puts it back into shadow.
+     "darken": [(0.42, 0.38, 0.60, 0.50, 0.55)]},
+    {"src": "c5a7eef0-image.jpg", "out": "bg_19.jpg", "focus": (0.5, 0.55),
+     "note": "the towers and the pool - nobody in frame"},
+    {"src": "d32dbca5-image.jpg", "out": "bg_20.jpg", "focus": (0.5, 0.55),
+     "note": "the pool and the palms - nobody in frame"},
+    {"src": "d6e247f8-image.jpg", "out": "bg_21.jpg", "focus": (0.5, 0.5),
+     # Indoors, and the faces are the brightest thing in the room, so the
+     # contre-jour curve would have done the exact opposite here of what it does
+     # at the falls. Cropped instead: below the chins there is no face to treat,
+     # and what is left - the bazin, the wax print, the glass - is the better
+     # half of the photograph anyway.
+     "pre_crop": (0.0, 0.50, 1.0, 1.0),
+     "note": "the restaurant table, cropped below the faces"},
+    {"src": "7afd621b-image.jpg", "out": "bg_22.jpg", "focus": (0.5, 0.5),
+     # 533x533 upscaled ~2.6x, which is more than anything else here and would
+     # be obvious on a sharp subject. It is not obvious on this one: petals are
+     # smooth gradients, and the grade takes it to a third of its brightness.
+     # The extra desaturation is because the grade alone left it at sat 140
+     # against a set that runs 42-102 - the one image that announced itself.
+     "desat": 0.45,
+     "note": "the rose"},
+
+    # --- REJECTED, second batch ---
+    #
+    # Six close portraits (21b49121 with his mother, 60c44872 in the kitchen,
+    # 70216879 the black-and-white coat, 75ea2c4f and 99f0200a in the car,
+    # db6fd1a7 against the slate wall). Not primarily a face problem: a frame
+    # filled edge to edge by one person is the wrong subject for a backdrop,
+    # and no crop of it is a landscape. Silhouetting a portrait leaves a
+    # portrait-shaped hole.
+    #
+    # 71ac7102, the macaw. The best photograph of the fifteen and the one that
+    # cannot be used. His face measures BRIGHTER than the falls behind it
+    # (mean luminance 0.60 against 0.52), so the contre-jour pivot that works
+    # on bg_16, bg_17 and bg_18 would light him and darken the water - exactly
+    # backwards. Cropping fails too: the bird's beak overlaps his cheek, so
+    # every vertical cut that loses the face loses the bird's head, and the one
+    # crop that kept both pulled two strangers at the water's edge into frame
+    # in sharp focus, trading his privacy for theirs. That leaves a blur, and a
+    # blur over a face is the thing this script exists to avoid.
+    #
+    # 3c409059, the carry at the falls. She is front-lit and stayed bright
+    # through the pivot while he went to silhouette, so the composition ends up
+    # centred on her hips at full exposure. Fine as a holiday photo, wrong
+    # behind a vocabulary card.
+    #
+    # e67bb0bc is a WordUp screenshot that came in with the batch.
 ]
 
 
@@ -101,6 +164,22 @@ def load(path: Path) -> Image.Image:
     im = Image.open(path)
     im = ImageOps.exif_transpose(im)  # iPhone photos are rotated by tag
     return im.convert("RGB")
+
+
+def pre_crop(im: Image.Image, box) -> Image.Image:
+    """Crops the SOURCE to [box] (fractions) before anything else happens.
+
+    The escape hatch for a photograph whose faces cannot be treated, only
+    excluded. `focus` cannot do this job: it slides the portrait window around
+    but the window is always full-height on a photo taller than 9:16, so a face
+    at the top of the frame survives every focus value there is. Cropping the
+    source first is the only way to make the face not be in the picture, which
+    is a stronger guarantee than any amount of blur and — unlike a blur — does
+    not announce that something was hidden.
+    """
+    w, h = im.size
+    x0, y0, x1, y1 = box
+    return im.crop((int(x0 * w), int(y0 * h), int(x1 * w), int(y1 * h)))
 
 
 def crop_portrait(im: Image.Image, focus: tuple[float, float]) -> Image.Image:
@@ -236,15 +315,20 @@ def grade(im: Image.Image) -> Image.Image:
     return im
 
 
-def process(src_dir: Path, out_dir: Path) -> None:
+def process(src_dir: Path, out_dir: Path, only=None) -> None:
     from PIL import ImageStat
     out_dir.mkdir(parents=True, exist_ok=True)
     for item in PLAN:
+        if only and item["out"] not in only:
+            continue
         src = src_dir / item["src"]
         if not src.exists():
             print(f"  MISSING {item['src']}")
             continue
-        im = crop_portrait(load(src), item.get("focus", (0.5, 0.5)))
+        im = load(src)
+        if "pre_crop" in item:
+            im = pre_crop(im, item["pre_crop"])
+        im = crop_portrait(im, item.get("focus", (0.5, 0.5)))
         if "contre_jour" in item:
             pivot, steep = item["contre_jour"]
             im = contre_jour(im, pivot, steep)
@@ -255,6 +339,8 @@ def process(src_dir: Path, out_dir: Path) -> None:
             im = apply_blur(im, item["blur"])
         if "darken" in item:
             im = apply_darken(im, item["darken"])
+        if "desat" in item:
+            im = ImageEnhance.Color(im).enhance(item["desat"])
         im = grade(im)
         dst = out_dir / item["out"]
         im.save(dst, "JPEG", quality=84, optimize=True, progressive=True)
@@ -295,11 +381,13 @@ def main() -> None:
     ap.add_argument("--out", type=Path,
                     default=Path(__file__).resolve().parent.parent /
                     "assets" / "backgrounds")
+    ap.add_argument("--only", nargs="*", default=None,
+                    help="process only these output names, e.g. bg_17.jpg")
     ap.add_argument("--convert-existing", action="store_true",
                     help="also re-encode the original bg_*.png as JPEG")
     args = ap.parse_args()
     print(f"writing to {args.out}")
-    process(args.src, args.out)
+    process(args.src, args.out, only=args.only)
     if args.convert_existing:
         print("converting the originals:")
         convert_existing(args.out)

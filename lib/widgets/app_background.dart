@@ -53,6 +53,20 @@ const _kScenes = <String>[
   'assets/backgrounds/bg_14.jpg',
   'assets/backgrounds/bg_15.jpg',
   'assets/backgrounds/bg_16.jpg',
+  // A second batch of photographs, 3 Sep 2026, through the same script.
+  // Fifteen went in and six came out: bg_17 and bg_18 are the falls, and take
+  // the contre-jour curve that turns the two figures into silhouette; bg_19 and
+  // bg_20 have nobody in them; bg_21 is a restaurant table cropped below the
+  // chins, because indoors the faces are the brightest thing in the room and
+  // the curve would have lit them rather than hidden them; bg_22 is a rose.
+  // The nine that were dropped, and why each one could not be made anonymous
+  // without looking redacted, are written down in tools/prepare_backgrounds.py.
+  'assets/backgrounds/bg_17.jpg',
+  'assets/backgrounds/bg_18.jpg',
+  'assets/backgrounds/bg_19.jpg',
+  'assets/backgrounds/bg_20.jpg',
+  'assets/backgrounds/bg_21.jpg',
+  'assets/backgrounds/bg_22.jpg',
 ];
 
 /// The scene list, for tests. See backgrounds_test.dart.

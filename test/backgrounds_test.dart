@@ -51,9 +51,10 @@ void main() {
   });
 
   test('the personal photographs are among them', () {
-    // Named explicitly rather than counted. A count passes if eight files are
-    // swapped for eight others; the point of these eight is which ones they are.
-    for (var i = 9; i <= 16; i++) {
+    // Named explicitly rather than counted. A count passes if fourteen files
+    // are swapped for fourteen others; the point of these is which ones they
+    // are. bg_09..bg_16 arrived 19 Aug 2026, bg_17..bg_22 on 3 Sep.
+    for (var i = 9; i <= 22; i++) {
       final path = 'assets/backgrounds/bg_${i.toString().padLeft(2, '0')}.jpg';
       expect(kBackgroundScenes, contains(path));
       expect(File(path).existsSync(), isTrue);
