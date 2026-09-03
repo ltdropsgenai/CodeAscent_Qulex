@@ -92,6 +92,18 @@ class Word {
   /// "mullight" beat "mull-ight" — what decides it is whether each piece has
   /// one reading, not how the pieces are joined.
   ///
+  /// That said, prefer ONE token. Across seven -ite words tested head to head
+  /// on 3 Sep, the run-together spelling won six times and the syllable-split
+  /// spelling lost every one of those: "saprolight" over "sap-ruh-light",
+  /// "ignimbright" over "ig-nim-bright", "cristobalight" over
+  /// "kris-toh-buh-light". Hyphens fragment a word the voice would otherwise
+  /// stress correctly. Split it only to prevent a wrong reading — "parratope"
+  /// invites *parrot*, so "parra-taupe" earns its hyphen.
+  ///
+  /// A respelling cannot invent a phoneme the voice will not make. Both
+  /// attempts to keep tsavorite's initial /ts/ failed; "sav-uh-right" won by
+  /// conceding it, which is the correct answer rather than a compromise.
+  ///
   /// Never ship one unheard. Every override in this catalogue that needed a
   /// second pass was one nobody had listened to:
   ///   tools/pronunciation_survey.py build --say word=respelling

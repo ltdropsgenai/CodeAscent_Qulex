@@ -65,6 +65,35 @@ def survey_path(batch: str) -> Path:
 
 
 LEDGER = PRON / "verdict_ledger.json"
+CATALOGUE = ROOT / "assets" / "words.json"
+
+_CAT: dict | None = None
+
+
+def catalogue_meta() -> dict:
+    """Difficulty for every headword, for the ones risk.csv leaves out.
+
+    risk.csv holds 3,784 words; the catalogue holds 16,808. --words used to
+    silently skip anything outside the smaller file, which on 3 Sep dropped 19
+    of 60 requested words — including `mullite`, the known-wrong anchor the
+    batch was built around, and two of the five words in a recorded prediction.
+    A survey tool that quietly declines to survey what it was asked to survey
+    is worse than one that errors.
+    """
+    global _CAT
+    if _CAT is None:
+        _CAT = {}
+        try:
+            for w in json.loads(CATALOGUE.read_text(encoding="utf-8")):
+                _CAT[w["word"].lower()] = {
+                    "word": w["word"],
+                    "difficulty": w.get("difficulty", ""),
+                    "traps": "",
+                    "espeak_untrusted_guess": "",
+                }
+        except (OSError, ValueError):
+            pass
+    return _CAT
 
 
 def controls_path(batch: str) -> Path:
@@ -208,13 +237,28 @@ def load_risk(args: argparse.Namespace) -> tuple[list[dict], str]:
     if args.words:
         want = [w.strip().lower() for w in args.words.split(",") if w.strip()]
         by = {r["word"].lower(): r for r in rows}
-        picked, missing = [], []
+        cat = catalogue_meta()
+        picked, from_cat, invented = [], [], []
         for w in want:
-            (picked.append(by[w]) if w in by else missing.append(w))
-        if missing:
-            print(f"not in the risk list, skipped: {', '.join(missing)}")
+            if w in by:
+                picked.append(by[w])
+            elif w in cat:
+                picked.append(dict(cat[w]))
+                from_cat.append(w)
+            else:
+                # Not a catalogue word at all — still synthesize it. That is how
+                # a respelling candidate gets heard before it becomes a `say`.
+                picked.append({"word": w, "difficulty": "",
+                               "traps": "", "espeak_untrusted_guess": ""})
+                invented.append(w)
+        if from_cat:
+            print(f"{len(from_cat)} not in the risk list, taken from the "
+                  f"catalogue instead: {', '.join(from_cat)}")
+        if invented:
+            print(f"{len(invented)} not in the catalogue, synthesized as given: "
+                  f"{', '.join(invented)}")
         if not picked:
-            die("none of those words are in the risk list")
+            die("no words given")
         # The name carries a digest of the list. Two --words batches used to
         # both write survey-words.html, and the second destroyed the first
         # after its clips had been paid for. Anything that changes the audio
