@@ -88,6 +88,10 @@ class Word {
   /// the real-word "sar-kuh-mere". An invented spelling that already sounds
   /// right is not improved by making it more principled.
   ///
+  /// Hyphens are not the variable. "parra-taupe" beat "parratope" while
+  /// "mullight" beat "mull-ight" — what decides it is whether each piece has
+  /// one reading, not how the pieces are joined.
+  ///
   /// Never ship one unheard. Every override in this catalogue that needed a
   /// second pass was one nobody had listened to:
   ///   tools/pronunciation_survey.py build --say word=respelling
