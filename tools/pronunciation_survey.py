@@ -68,6 +68,8 @@ LEDGER = PRON / "verdict_ledger.json"
 CATALOGUE = ROOT / "assets" / "words.json"
 
 _CAT: dict | None = None
+_RANK: dict = {}
+_FIXED: set = set()
 
 
 def catalogue_meta() -> dict:
@@ -91,9 +93,35 @@ def catalogue_meta() -> dict:
                     "traps": "",
                     "espeak_untrusted_guess": "",
                 }
+                _RANK[w["word"].lower()] = w.get("freqRank") or 10 ** 6
+                if w.get("say"):
+                    _FIXED.add(w["word"].lower())
         except (OSError, ValueError):
             pass
     return _CAT
+
+
+def fixed_words() -> set:
+    """Words that already carry a `say` override - permanently barred from
+    being used as a control.
+
+    7 Sep 2026, at the user's instruction, and he was right to give it.
+    Controls were drawn from the verdict ledger's settled words, and the
+    settled-WRONG set was exactly four entries - lahar, paratope, sangha,
+    sarcomere - every one of them a word he had personally reported, judged
+    twice, and watched us fix. Every batch drew three of those four. So the
+    reward for finding a mispronunciation was to be made to listen to it
+    again, forever, in every batch after.
+
+    Worse, it had stopped being measurement. A control works only while the
+    listener cannot tell it from the words under test; once he could name them
+    on sight he was scoring his memory, not his ear. We were charging him time
+    for data we had stopped collecting.
+
+    A fixed word is finished. It does not come back.
+    """
+    catalogue_meta()
+    return _FIXED
 
 
 def controls_path(batch: str) -> Path:
@@ -120,31 +148,83 @@ def save_ledger(led: dict) -> None:
     LEDGER.write_text(json.dumps(led, indent=1, sort_keys=True), encoding="utf-8")
 
 
-def pick_controls(rows: list[dict], exclude: set[str], n: int, seed: int
-                  ) -> tuple[list[dict], dict]:
-    """Words with a settled past verdict, to be hidden inside a fresh batch.
+MANGLE = (
+    # Each recipe breaks a word in a DIFFERENT way, so a listener cannot learn
+    # "the odd one out always has an extra syllable at the end" and start
+    # scoring the recipe instead of the sound.
+    ("a spurious final syllable", lambda w: w + "uh"),
+    ("a spurious syllable in the middle", lambda w: w[:3] + "uh" + w[3:]),
+    ("the first vowel replaced", lambda w: _swap_first_vowel(w)),
+)
 
-    On 24 Aug a blind re-listen of nine words previously heard wrong reproduced
-    only four of them, while nine previously heard right reproduced all nine.
-    The measurement, not the audio, was the unreliable part - and nothing in
-    this tool could have revealed that, because every batch until then was
-    judged by someone who knew they were hunting for faults.
 
-    Half known-wrong and half known-right. Known-right alone would only prove
-    the listener can say yes.
+def _swap_first_vowel(w: str) -> str:
+    for i, ch in enumerate(w):
+        if ch in "aeiou":
+            return w[:i] + "oo" + w[i + 1:]
+    return w + "uh"
+
+
+def manufacture_controls(exclude: set, n: int, batch: str
+                         ) -> tuple[list[dict], dict]:
+    """Controls built to order from words nobody has judged, instead of drawn
+    from the ledger's handful of settled ones.
+
+    THE PROBLEM THIS REPLACES. Controls used to be past verdicts replayed. That
+    works exactly once. The settled-wrong pool was four words, all of them
+    words the user had reported and we had fixed, so every batch made him
+    re-listen to the same three - and once he could recognise them they stopped
+    being controls at all. See fixed_words().
+
+    THE CONSTRUCTION. A control needs a clip whose correct verdict is known
+    before anyone listens. It does not need a word with a history. So: take an
+    ordinary high-frequency word nobody has ever judged. Spoken plainly, the
+    engine says it correctly - `harbor` is not where these voices fail - and
+    the expected verdict is `right`. Spoken through one of the MANGLE recipes,
+    it is unambiguously broken and the expected verdict is `wrong`. The word on
+    the label is real either way, so nothing about the row gives it away.
+
+    That makes the supply unbounded and non-repeating. With ~1,200 eligible
+    words and six per batch, a word recurs about every two hundred batches.
+
+    THE CAVEAT, stated because nobody else will. A manufactured error may be
+    easier to catch than a natural one - `harboruh` is more obviously wrong
+    than a subtly misstressed `sarcomere`. If so, control agreement will read
+    higher than the listener's true reliability, and the CONTROL_FLOOR becomes
+    a weaker guard than it looks. It is not a fake guard: a listener who cannot
+    hear `harboruh` is not listening at all, and that is the failure mode that
+    matters most. But do not read 100% agreement as proof of a fine ear.
     """
+    cat = catalogue_meta()
     led = load_ledger()
-    by = {r["word"].lower(): r for r in rows}
-    settled = {w: v for w, v in led.items()
-               if v.get("settled") in ("right", "wrong") and w not in exclude and w in by}
-    wrong = sorted(w for w, v in settled.items() if v["settled"] == "wrong")
-    right = sorted(w for w, v in settled.items() if v["settled"] == "right")
-    rng = random.Random(seed ^ 0x5EED)
-    rng.shuffle(wrong)
-    rng.shuffle(right)
-    want_w = min(len(wrong), n // 2)
-    chosen = wrong[:want_w] + right[: n - want_w]
-    return [by[w] for w in chosen], {w: settled[w]["settled"] for w in chosen}
+    banned = fixed_words() | set(led) | {w.lower() for w in exclude}
+    pool = sorted(w for w in cat
+                  if w not in banned
+                  and _RANK.get(w, 10 ** 6) <= 2500
+                  and w.isalpha() and 4 <= len(w) <= 12)
+    if len(pool) < n:
+        return [], {}
+    # Seeded from the BATCH NAME, not from --seed. --seed defaults to 1, so
+    # seeding from it would hand every batch the same six control words and
+    # reintroduce the exact problem this function exists to remove. The batch
+    # name is a digest of what was asked for, so a different request draws
+    # different controls and REBUILDING the same request draws the same ones —
+    # which is what makes a rebuild resume the verdicts already entered.
+    rng = random.Random(int(hashlib.sha256(batch.encode()).hexdigest()[:8], 16))
+    picked = rng.sample(pool, n)
+    rows, expected = [], {}
+    for i, w in enumerate(picked):
+        base = dict(cat[w])
+        if i < n // 2:                      # half broken on purpose
+            base["speak"] = MANGLE[i % len(MANGLE)][1](w)
+            expected[w] = "wrong"
+        else:                               # half left alone
+            expected[w] = "right"
+        rows.append(base)
+    return rows, expected
+
+
+
 MANUAL = ROOT / "tools" / "manual_pronunciations.json"
 # Below this, a batch's controls have failed and the batch is not merged.
 # 24 Aug: a batch judged unblind reproduced 4 of 9 of its own prior failures.
@@ -301,21 +381,22 @@ def cmd_build(args: argparse.Namespace) -> None:
     # it was built to measure.
     control_map: dict = {}
     if args.controls > 0 and not args.no_controls:
-        allrows = list(csv.DictReader(RISK.open(encoding="utf-8")))
-        picked, control_map = pick_controls(
-            allrows, {r["word"].lower() for r in rows}, args.controls, args.seed)
+        # Scale to the batch. Six controls in an eleven-row batch is 55%
+        # overhead for a guard that does not get six times better.
+        want = min(args.controls, max(2, len(rows) // 5))
+        picked, control_map = manufacture_controls(
+            {r["word"].lower() for r in rows}, want, batch)
         if picked:
             rows = rows + picked
-            random.Random(args.seed ^ 0xC0FFEE).shuffle(rows)
+            random.Random(int(hashlib.sha256(
+                (batch + 'mix').encode()).hexdigest()[:8], 16)).shuffle(rows)
             batch = f"{batch}-c{len(picked)}"
             print(f"{len(picked)} hidden controls mixed in "
-                  f"({sum(1 for v in control_map.values() if v=='wrong')} known-wrong, "
-                  f"{sum(1 for v in control_map.values() if v=='right')} known-right)")
-        elif load_ledger():
-            print("no eligible controls in the ledger yet — this batch is unguarded")
+                  f"({sum(1 for v in control_map.values() if v=='wrong')} broken on "
+                  f"purpose, {sum(1 for v in control_map.values() if v=='right')} "
+                  f"left alone) — all of them words you have never judged")
         else:
-            print("verdict ledger is empty — this batch is unguarded. "
-                  "Merge one survey and the next batch will carry controls.")
+            print("could not build controls — this batch is unguarded")
 
     print(f"synthesizing {len(rows)} headwords through the live tts function…")
 
@@ -445,6 +526,20 @@ def cmd_merge(args: argparse.Namespace) -> None:
     raw = json.loads(p.read_text(encoding="utf-8"))
     if isinstance(raw, dict) and "verdicts" in raw:
         batch, offered, verdicts = raw.get("batch", "?"), raw.get("words", []), raw["verdicts"]
+        # Browser storage is keyed by batch name and outlives a rebuild, so a
+        # page rebuilt after the tool changed can hand back verdicts for rows
+        # it no longer contains. The say-1049b4a7 download on 7 Sep carried a
+        # bare "glissade" left over from the build whose five candidate rows
+        # all collided on one key. Those are not judgements about this batch
+        # and must not be counted in its rate or written to the ledger.
+        keys = raw.get("keys")
+        if keys:
+            stale = {k: v for k, v in verdicts.items() if k not in set(keys)}
+            if stale:
+                print(f"dropping {len(stale)} verdict(s) for rows not in this "
+                      f"batch (left in browser storage by an earlier build): "
+                      f"{', '.join(sorted(stale))}")
+                verdicts = {k: v for k, v in verdicts.items() if k in set(keys)}
     else:  # the first survey downloaded a bare map, before batches existed
         batch, offered, verdicts = "(unlabelled)", [], raw
     judged = len(verdicts)
@@ -488,6 +583,21 @@ def cmd_merge(args: argparse.Namespace) -> None:
             return
 
     scored = {w: v for w, v in verdicts.items() if w not in controls}
+    # Respelling candidates carry a compound key (word=respelling). They are
+    # judgements about a CANDIDATE, not about the catalogue word, and must not
+    # reach the ledger or the work list: `glissade=glissod` is not a headword,
+    # and a null entry under that name would sit in manual_pronunciations.json
+    # forever waiting for a phoneme nobody can write.
+    cand = {k: v for k, v in scored.items() if "=" in k}
+    scored = {k: v for k, v in scored.items() if "=" not in k}
+    if cand:
+        print(f"\n{len(cand)} respelling candidate(s) — reported, not merged:")
+        for k, v in sorted(cand.items(), key=lambda kv: (kv[0], kv[1])):
+            head, _, spoken = k.partition("=")
+            print(f"    {head:<16} spoken as {spoken:<16} {v}")
+        winners = [k.partition("=")[2] for k, v in cand.items() if v == "right"]
+        print("    winners: " + (", ".join(sorted(winners)) if winners
+                                 else "none — no candidate was heard right"))
     wrong = [w for w, v in scored.items() if v == "wrong"]
     unsure = [w for w, v in scored.items() if v == "unsure"]
     right = [w for w, v in scored.items() if v == "right"]
@@ -531,10 +641,74 @@ def cmd_merge(args: argparse.Namespace) -> None:
         print(f"  {w}")
 
 
+REFERENCE = PRON / "reference.json"
+
+
+def load_reference() -> dict:
+    """Accepted English pronunciations, keyed by word. See reference.json.
+
+    A listener cannot judge `bigarade` against nothing. Until now the page
+    asked "is that right?" about words most people have never heard said
+    aloud, which quietly turned the survey into a test of how French the clip
+    sounded — and for words like `persillade` and `chamois`, the more French
+    it sounds the more WRONG it is.
+
+    The reference is hidden until the verdict is in, so the judgement is still
+    made cold. It is there to catch the case where you were about to be right
+    for the wrong reason, not to tell you the answer in advance.
+    """
+    if not REFERENCE.exists():
+        return {}
+    try:
+        return json.loads(REFERENCE.read_text(encoding="utf-8")).get("words", {})
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"warning: reference.json unreadable ({e}); building without it")
+        return {}
+
+
 def render(items: list[dict], batch: str) -> str:
+    # A UNIQUE key per row, because the page stores verdicts in a map and a
+    # map cannot hold five answers under one name.
+    #
+    # 7 Sep 2026: `--say glissade=A,glissade=B,...` builds five rows all
+    # LABELLED glissade — that is the whole design, the listener must not know
+    # which respelling produced which clip. But the page keyed verdicts by
+    # `word`, so the five rows shared one slot: judging the second overwrote
+    # the first, every row lit up with the same answer, the counter still read
+    # "5 of 5 judged", and the download carried a single verdict. Silent, and
+    # the failure looks exactly like success.
+    #
+    # A word that appears once keeps its own name as the key, so every batch
+    # built before today and every batch of distinct words after it is
+    # byte-identical to what it was. Only a duplicated label gets a compound
+    # key, and only because it has to.
+    from collections import Counter
+    seen = Counter(d["word"] for d in items)
+    for d in items:
+        d["key"] = (d["word"] if seen[d["word"]] == 1
+                    else f'{d["word"]}={d.get("spoken") or d["word"]}')
+    dupes = sorted({d["word"] for d in items if seen[d["word"]] > 1})
+    if dupes:
+        print(f"{len(dupes)} label(s) appear on more than one row and are keyed "
+              f"by what was spoken: {', '.join(dupes)}")
     data = json.dumps(items)
+    ref = load_reference()
+    have = sum(1 for d in items if d["word"].lower() in ref)
+    print(f"reference available for {have} of {len(items)} rows"
+          + ("" if have else " — tools/pronunciation/reference.json is missing or empty"))
     rows = []
     for i, d in enumerate(items):
+        r = ref.get(d["word"].lower())
+        if r:
+            bits = ["<b>" + escape(" &nbsp;or&nbsp; ".join(r["accepted"])) + "</b>"]
+            if r.get("avoid"):
+                bits.append("not: " + escape(r["avoid"]))
+            if r.get("note"):
+                bits.append(escape(r["note"]))
+            body = " &middot; ".join(bits).replace("&amp;nbsp;", "&nbsp;")
+        else:
+            body = "<i>no reference recorded &mdash; judge on your ear alone, " \
+                   "and mark unsure if you cannot</i>"
         rows.append(f'''<li class="row" data-i="{i}" id="row{i}">
   <div class="idx">{i+1}</div>
   <div class="main">
@@ -547,6 +721,7 @@ def render(items: list[dict], batch: str) -> str:
     <button class="v bad"    data-v="wrong"  data-i="{i}">Wrong</button>
     <button class="v meh"    data-v="unsure" data-i="{i}">Unsure</button>
   </div>
+  <div class="ref" id="ref{i}" hidden>{body}</div>
 </li>''')
     return (TEMPLATE.replace("__ROWS__", "\n".join(rows))
             .replace("__DATA__", data).replace("__BATCH__", batch))
@@ -571,7 +746,16 @@ h1{font-family:ui-serif,Georgia,serif;font-size:28px;margin:0 0 8px;font-weight:
 ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
 .row{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:14px;
  background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
-.row.done{opacity:.42}
+/* Dim the judged row's LABEL only. Dimming the whole row would take the
+   reference down with it, and the reference is the one thing you need to be
+   able to read after answering. (Opacity on the parent cannot be undone by a
+   child — it makes a stacking context — so the dimming has to be applied to
+   the specific children instead.) */
+.row.done > .idx, .row.done > .main{opacity:.42}
+.ref{grid-column:1/-1;margin:8px 0 2px;padding:8px 11px;border-left:2px solid var(--teal);
+ background:rgba(47,165,160,.07);font-size:13px;color:var(--muted);line-height:1.45}
+.ref b{color:var(--cream);font-family:ui-monospace,Menlo,monospace;font-size:12.5px}
+.ref i{color:var(--amber);font-style:normal}
 .row.cur{border-color:var(--coral);box-shadow:0 0 0 1px var(--coral)}
 .idx{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);
  font-variant-numeric:tabular-nums}
@@ -608,6 +792,11 @@ kbd{font-family:ui-monospace,Menlo,monospace;font-size:11px;border:1px solid var
 Speech-to-text already passed every one of these words — it can only tell that the right
 word was recognised, never that it was said with the right stress. That is what your ear
 is for.</p>
+<p class="sub">Once you answer, the accepted English pronunciation appears under the row
+where one is on record. <b>The standard is accepted English, not French</b> &mdash; several of
+these have a settled English form a long way from the original, and a clip that matches it is
+right. If your verdict and the reference disagree, replay the clip and change your answer;
+that is what it is for.</p>
 <p class="sub"><kbd>space</kbd> replay · <kbd>1</kbd> right · <kbd>2</kbd> wrong ·
 <kbd>3</kbd> unsure · <kbd>↑</kbd><kbd>↓</kbd> move. Answering advances and plays the next.</p>
 <div class="rule"></div>
@@ -645,9 +834,13 @@ function focusRow(i){
 function paint(){
   let done=0, bad=0;
   ITEMS.forEach((it,i)=>{
-    const v = verdicts[it.word];
+    const v = verdicts[it.key];
     const row = document.getElementById('row'+i);
     row.classList.toggle('done', !!v);
+    // Revealed only once a verdict exists. Showing it earlier would make the
+    // page a reading test rather than a listening one.
+    const rf = document.getElementById('ref'+i);
+    if(rf) rf.hidden = !v;
     row.querySelectorAll('.v').forEach(b=>b.classList.toggle('sel', b.dataset.v===v));
     if(v){ done++; if(v==='wrong') bad++; }
   });
@@ -656,7 +849,7 @@ function paint(){
   document.getElementById('tot').textContent = ITEMS.length;
 }
 function setV(i, v){
-  verdicts[ITEMS[i].word] = v;
+  verdicts[ITEMS[i].key] = v;
   try { localStorage.setItem(KEY, JSON.stringify(verdicts)); } catch(e){}
   paint();
   const next = i+1;
@@ -681,7 +874,8 @@ document.getElementById('dl').addEventListener('click', ()=>{
   // The batch and its word list travel WITH the verdicts. Without them a rate
   // cannot be computed honestly: you would not know which words were offered,
   // only which were answered.
-  const payload = {batch: BATCH, words: ITEMS.map(i=>i.word), verdicts: verdicts};
+  const payload = {batch: BATCH, words: ITEMS.map(i=>i.word),
+                   keys: ITEMS.map(i=>i.key), verdicts: verdicts};
   const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob); a.download = 'verdicts-' + BATCH + '.json'; a.click();
@@ -711,8 +905,9 @@ def main() -> None:
                    help="speak each word inside a frame, e.g. \"The word is "
                         "{word}.\" — tests whether context fixes the reading")
     b.add_argument("--controls", type=int, default=6,
-                   help="hidden control words with a settled past verdict, mixed "
-                        "into the batch and scored at merge (default 6)")
+                   help="upper bound on hidden controls mixed into the batch and "
+                        "scored at merge (default 6, scaled down for small "
+                        "batches). Never a word you have already judged or fixed")
     b.add_argument("--no-controls", action="store_true",
                    help="build without controls. The result measures the words "
                         "but not the listener; merge cannot vouch for it")
