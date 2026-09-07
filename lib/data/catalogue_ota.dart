@@ -47,7 +47,7 @@ const int kBundledCatalogueGeneration = 6;
 /// same commit. The test tells you the values it wanted.
 const int kBundledCatalogueEntries = 16808;
 const String kBundledCatalogueSha256 =
-    '0867541c212ba4c70aa020678d2a58dcff29ad787a763681871394aa446c8ee7';
+    '431a836e2b98dc1ca53c1fd4beb87a431d9d15bf2fce43705c83375a35d5057c';
 
 /// Where the published catalogue lives. A public Storage bucket, read straight
 /// off the CDN — no Edge Function invocation, no auth, no per-read cost.
